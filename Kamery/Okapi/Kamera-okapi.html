@@ -21,7 +21,7 @@
         <div id="zegarek" style="font-weight:bold; background-color: #15a374; margin-right: 40%; margin-left: 40%; border: 3px solid black; font-size: 30px; color:white; text-align: center;"></div>
         <p class="cień akapit">Okapi jest jednym z gatunków, które można zobaczyć praktycznie o każdej porze, nawet nie będąc w zoo! Pozwala na to kamera online, która nagrywa zwierzęta w&nbspukryciu. Takie zastosowanie kamery pomaga nam jako dozorcom i opiekunom lepiej poznać
             zachowania między osobnikami w stadzie, a gościom pozwala na oglądanie życia swoich ulubionych towarzyszy.</p><br>
-        <center><video id="kamera" autoplay loop style="width: 80%;"></video></center>
+        <center><span id="kamera"></span></center>
         <center>
             <h1>Harmonogram działania kamery</h1>
         </center>
@@ -68,7 +68,7 @@
         var data = new Date();
         var godzinka = data.getHours();
         if (godzinka >= 0) {
-            document.getElementById("kamera").innerHTML = "<source src='https://r6---sn-f5f7ln7y.googlevideo.com/videoplayback?expire=1672345587&ei=09utY6y6FZXs7ATj06aABg&ip=2a01:114f:d08:1a00:75c0:ac3f:3188:493d&id=db699c5bc3de3f17&itag=18&source=picasa&begin=0&requiressl=yes&mh=Z_&mm=32&mn=sn-f5f7ln7y&ms=su&mv=m&mvi=6&pl=44&sc=yes&susc=ph&app=fife&ic=51&eaua=bF5a0V42SMY&pcm2=yes&mime=video/mp4&vprv=1&prv=1&dur=17.182&lmt=1672338155074174&mt=1672338052&authuser=1&cpn=P7eZTKJRvJYJR7AZ&c=WEB_EMBEDDED_PLAYER&cver=1.20221218.00.00&txp=0010224&sparams=expire,ei,ip,id,itag,source,requiressl,susc,app,ic,eaua,pcm2,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhANxNeETFn7uFjw2mJ_tnaVIk_i6ev2MFWmsatkUL5ECiAiEAzaCcmc-FDYuFjRud5607Re6fVtlJhL7f7uIyDIhi1HE=&lsparams=mh,mm,mn,ms,mv,mvi,pl,sc&lsig=AG3C_xAwRAIgLwsW-XzhHHnaOR-pOHtCeEg_YFF1rd2F-Gaycb7-u64CIHtu4sEJDj8YgkpE3ng8KdSY9OSTcqlsiRONJnOYdeCg'>";
+            document.getElementById("kamera").innerHTML = "<iframe width='1200' height='600' src='https://www.youtube.com/embed/ZNZAeb9F0zI?&loop=1&playlist=ZNZAeb9F0zI;rel=0&amp;controls=0&amp;autoplay=1&amp;mute=1&amp;start=0' frameborder='0' allow='autoplay; encrypted-media'></iframe>";
         }
         zegar();
     </script>
