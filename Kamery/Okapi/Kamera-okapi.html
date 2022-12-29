@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/Styl.css">
+    <meta charset="UTF-8">
+    <title>Kamera - Okapi</title>
+    <link rel="shortcut icon" href="/Ikony/Planet Zoo.png">
+</head>
+
+<body onselectstart="return false;">
+    <div class="cień" style="color: white;">
+        <div>
+            <a href="/Kamery na żywo.html">
+                <p class="powrot"><b>◄ Wróć do Kamer na żywo</b></p>
+            </a>
+        </div>
+
+        <h1 class="naglowek cień" style="margin-top: -6px;">Kamera - Okapi</h1><br>
+        <center><img src='/Zoopedia/Ikonki/Okapi.png' style='margin-bottom:-20px; margin-top: -20px;' alt='Okapi'></center>
+        <div id="zegarek" style="font-weight:bold; background-color: #15a374; margin-right: 40%; margin-left: 40%; border: 3px solid black; font-size: 30px; color:white; text-align: center;"></div>
+        <p class="cień akapit">Okapi jest jednym z gatunków, które można zobaczyć praktycznie o każdej porze, nawet nie będąc w zoo! Pozwala na to kamera online, która nagrywa zwierzęta w&nbspukryciu. Takie zastosowanie kamery pomaga nam jako dozorcom i opiekunom lepiej poznać
+            zachowania między osobnikami w stadzie, a gościom pozwala na oglądanie życia swoich ulubionych towarzyszy.</p><br>
+        <center><video id="kamera" autoplay loop style="width: 80%;"></video></center>
+        <center>
+            <h1>Harmonogram działania kamery</h1>
+        </center>
+        <table style="margin: auto;">
+            <tr>
+                <th>Wiosna</th>
+                <th>Lato</th>
+                <th>Jesień</th>
+                <th>Zima</th>
+            </tr>
+            <tr>
+                <td>7:00 - 21:00</td>
+                <td>6:00 - 22:00</td>
+                <td>7:00 - 21:00</td>
+                <td><b>Wyłączona</b></td>
+            </tr>
+        </table>
+        <p class="cień akapit">Kamera nie zawsze jest aktywna. Pory nocne są <b>wyłączone</b> z monitoringu, aby zapewnić zwierzętom odrobinę prywatności. Zimą jest ograniczona ilość dostępnych kamer dla każdego gatunku. Jest to spowodowane sposobem życia określonych gatunków
+            w danym klimacie.<br><br>Okapi mają dostępną jedną kamerę: <i>z wybiegu</i>.</p><br>
+    </div>
+    <footer>
+        <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z Planet Zoo!</h2>
+        <center>
+            <a href="https://store.steampowered.com/app/703080/Planet_Zoo/?l=polish"><img class="stopka" src="/Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 30px; padding-right: 30px;"></a>
+            <a href="https://forums.frontier.co.uk/categories/planet-zoo/"><img class="stopka" src="/Ikony/Frontier_logo.png" alt="Logo Frontier" style="margin: 20px; padding-right: 70px;"></a>
+            <a href="https://twitter.com/planetzoogame"><img class="stopka_znaczki" src="/Ikony/logo twitter.png" alt="Logo Twitter" style="margin: 15px; padding-right: 30px;"></a>
+            <a href="https://www.youtube.com/planetzoogame"><img class="stopka_znaczki" src="/Ikony/logo youtube.png" alt="Logo Youtube" style="margin: 20px;"></a>
+        </center>
+        <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script type="text/javascript">
+        function zegar() {
+            var data = new Date();
+            var godzina = data.getHours();
+            var min = data.getMinutes();
+            var sek = data.getSeconds();
+            var terazjest = "" + godzina +
+                ((min < 10) ? ":0" : ":") + min +
+                ((sek < 10) ? ":0" : ":") + sek;
+            document.getElementById("zegarek").innerHTML = terazjest;
+            setTimeout("zegar()", 1000);
+        }
+        //ZIMA
+        var data = new Date();
+        var godzinka = data.getHours();
+        if (godzinka >= 0) {
+            document.getElementById("kamera").innerHTML = "<source src='/Kamery/Okapi/Zima.webm'>";
+        }
+        zegar();
+    </script>
+
+</body>
+
+</html>
