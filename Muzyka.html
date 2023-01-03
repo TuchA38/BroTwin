@@ -6,11 +6,57 @@
     <meta charset="UTF-8">
     <title>Muzyka</title>
     <link rel="shortcut icon" href="Ikony/Planet Zoo.png">
-    <script>
-        function odtwarzanie1() {
-            document.getElementById('Muzyka').innerHTML = "Playlista oficjalnej ścieżki dźwiękowej Planet Zoo<br><audio style='text-shadow: white 0.1em 0.1em 0.2em;' controls autoplay preload loop><br><source src='Muzyka/Planet Zoo In-Game Soundtrack.mp3' type='audio/mp3'><br></audio>";
+    <style>
+        #playlist,
+        #playlist1 {
+            list-style: none;
         }
-
+        
+        #playlist li a,
+        #playlist1 li a {
+            color: rgb(250, 156, 15);
+            text-decoration: none;
+        }
+        
+        #playlist .current-song a,
+        #playlist1 .current-song a {
+            color: rgb(250, 156, 15);
+            font-weight: bold;
+            text-shadow: black 0.1em 0.1em 0.2em;
+        }
+        
+        .przerwa,
+        .przerwa_n,
+        .przerwa_m {
+            list-style: none;
+        }
+        
+        li.przerwa {
+            break-before: column;
+        }
+        
+        .content-box {
+            columns: 3;
+            text-align: left;
+        }
+        
+        .content-box-tytuly {
+            columns: 3;
+            margin-left: -80px;
+        }
+        
+        .content-box>li.przerwa_n {
+            display: flex;
+            margin-left: -208%;
+        }
+        
+        .content-box>li.przerwa_m {
+            display: flex;
+            margin-left: -104%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script>
         function odtwarzanie11() {
             document.getElementById('Muzyka').innerHTML = "Afryka: Lista odtwarzania<br><audio style='text-shadow: white 0.1em 0.1em 0.2em;' controls autoplay loop><br><source src='Muzyka/Afryka - Lista odtwarzania.mp3' type='audio/mp3'><br></audio>";
         }
@@ -133,7 +179,7 @@
         }
 
         function muzyka163() {
-            document.getElementById('Muzyka').innerHTML = "25. Planet Zoo: Ogon merdający wielkim psem<br><audio controls style='text-shadow: white 0.1em 0.1em 0.2em;' autoplay loop><br><source src='Muzyka/Planet Zoo - Ogon merdający wielkim psem.mp3' type='audio/mp3'><br></audio>";
+            document.getElementById('Muzyka').innerHTML = "25. Planet Zoo: Ogon merdający wielkim psem<br><audio controls  style='text-shadow: white 0.1em 0.1em 0.2em;' autoplay loop><br><source src='Muzyka/Planet Zoo - Ogon merdający wielkim psem.mp3' type='audio/mp3'><br></audio>";
         }
     </script>
     <style>
@@ -187,113 +233,192 @@
         <center>
             <img src="Muzyka/You, me & Other Animals - The music of Planet Zoo.jpg" alt="Muzyka" width="90%" style="border: 1px solid white;">
             <div style="margin-left: 300px; margin-right: 300px; margin-top: -100px;" id="Muzyka">
-                <p style="margin-bottom: 0px; margin-top: 0px;">Playlista oficjalnej ścieżki dźwiękowej Planet Zoo</p>
-                <audio controls style="text-shadow: white 0.1em 0.1em 0.2em;">
-                    <source src="Muzyka/Planet Zoo In-Game Soundtrack.mp3" type="audio/mp3">
+                <p id="tytul" style="margin-bottom: 0px; margin-top: 0px;">Playlista oficjalnej ścieżki dźwiękowej Planet Zoo</p>
+                <audio src="" controls id="audioPlayer" autoplay>
                 </audio>
+
             </div>
         </center>
         <br>
-        <b style="font-size: 20px;">Podstawowa wersja Planet Zoo</b><br>Fundamentalna wersja gry posiada aż <b>25</b> wspaniałych utworów, których można słuchać całymi dniami. Możesz słuchać ich wszystkich w jednej playliście, z podziałem na kategorie
-        lub każdego z osobna.
+        <b style="font-size: 25px;">Podstawowa wersja Planet Zoo</b><br>Fundamentalna wersja gry posiada aż <b>25</b> wspaniałych utworów, których można słuchać całymi dniami. Możesz słuchać ich wszystkich w jednej playliście!
+        <br><br>
         <center>
+
             <table>
                 <tr>
-                    <th colspan="6"><a class="powrot playlista" onclick="odtwarzanie1()"> Playlista oficjalnej ścieżki dźwiękowej Planet Zoo</a></th>
+                    <th colspan="6 ">
+                        <ul id='playlist'>
+                            <li class="current-song">
+                                <a href='Muzyka/Afryka - Zarośnięta sawanna.mp3' style="font-size:25px; margin-left: 15%;">Playlista oficjalnej ścieżki dźwiękowej Planet Zoo<span style="font-size:20px; float:right; color: white; margin-right: 2%;" onclick="location.reload()">Zresetuj ustawienia</span></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Afryka - Saharyjska oaza.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Afryka - Gwiazdy nad Kalahari.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Afryka - Kenijskie łańcuchy górskie.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Afryka - Moczary pod Maputo.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Afryka - Gaje namorzynowe.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Indie - Łąka w Himalajach.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Indie - Delta Gangesu.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Indie - Figowcowy baldachim.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Indie - Bengalska gęstwina.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Ameryka Północna - Ogromne sekwoje.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Ameryka Północna - Lasy Karoliny.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Ameryka Północna - Preriowe stepy.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Ameryka Północna - Bagniska.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Azja - Dorzecze Jangcy.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Azja - Kras południowy.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Azja - Mongolskie stepy.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Azja - Tajga.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Klasyka - Trąbowcowa historia.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Klasyka - Ty, ja i starsze zwierzęta.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Klasyka - Merdające tango.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Klasyka - Karuzela strunowców.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Planet Zoo - Niedźwiedzia radość.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Planet Zoo - Ty, ja i reszta zwierząt.mp3'></a>
+                            </li>
+                            <li>
+                                <a href='Muzyka/Planet Zoo - Ogon merdający wielkim psem.mp3'></a>
+                            </li>
+                        </ul>
+                    </th>
                 </tr>
                 <tr>
-                    <th colspan="2"><a class="cień playlista" onclick="odtwarzanie11()"> Afryka: Lista&nbsp;odtwarzania</a></th>
-                    <th colspan="2"><a class="cień playlista" onclick="odtwarzanie12()"> Indie: Lista&nbsp;odtwarzania</a></th>
-                    <th colspan="2"><a class="cień playlista" onclick="odtwarzanie13()"> Ameryka Północna: Lista&nbsp;odtwarzania</a></th>
+                    <th colspan="2 "><a class="cień playlista " onclick="odtwarzanie11() "> Afryka: Lista&nbsp;odtwarzania</a></th>
+                    <th colspan="2 "><a class="cień playlista " onclick="odtwarzanie12() "> Indie: Lista&nbsp;odtwarzania</a></th>
+                    <th colspan="2 "><a class="cień playlista " onclick="odtwarzanie13() "> Ameryka Północna: Lista&nbsp;odtwarzania</a></th>
 
                 </tr>
                 <tr>
-                    <th class="cień">1.</th>
-                    <td onclick="muzyka111()" class="muzyka">Afryka: Zarośnięta sawanna</td>
-                    <th class="cień">7.</th>
-                    <td onclick="muzyka121()" class="muzyka">Indie: Łąka w Himalajach</td>
-                    <th class="cień">11.</th>
-                    <td onclick="muzyka131()" class="muzyka">Ameryka Północna: Ogromne sekwoje</td>
+                    <th class="cień ">1.</th>
+                    <td onclick="muzyka111() " class="muzyka ">Afryka: Zarośnięta sawanna</td>
+                    <th class="cień ">7.</th>
+                    <td onclick="muzyka121() " class="muzyka ">Indie: Łąka w Himalajach</td>
+                    <th class="cień ">11.</th>
+                    <td onclick="muzyka131() " class="muzyka ">Ameryka Północna: Ogromne sekwoje</td>
 
                 </tr>
                 <tr>
-                    <th class="cień">2.</th>
-                    <td onclick="muzyka112()" class="muzyka">Afryka: Saharyjska oaza</td>
-                    <th class="cień">8.</th>
-                    <td onclick="muzyka122()" class="muzyka">Indie: Delta Gangesu</td>
-                    <th class="cień">12.</th>
-                    <td onclick="muzyka132()" class="muzyka">Ameryka Północna: Lasy Karoliny</td>
+                    <th class="cień ">2.</th>
+                    <td onclick="muzyka112() " class="muzyka ">Afryka: Saharyjska oaza</td>
+                    <th class="cień ">8.</th>
+                    <td onclick="muzyka122() " class="muzyka ">Indie: Delta Gangesu</td>
+                    <th class="cień ">12.</th>
+                    <td onclick="muzyka132() " class="muzyka ">Ameryka Północna: Lasy Karoliny</td>
 
                 </tr>
                 <tr>
-                    <th class="cień">3.</th>
-                    <td onclick="muzyka113()" class="muzyka">Afryka: Gwiazdy nad Kalahari</td>
-                    <th class="cień">9.</th>
-                    <td onclick="muzyka123()" class="muzyka">Indie: Figowcowy baldachim</td>
-                    <th class="cień">13.</th>
-                    <td onclick="muzyka133()" class="muzyka">Ameryka Północna: Preriowe stepy</td>
+                    <th class="cień ">3.</th>
+                    <td onclick="muzyka113() " class="muzyka ">Afryka: Gwiazdy nad Kalahari</td>
+                    <th class="cień ">9.</th>
+                    <td onclick="muzyka123() " class="muzyka ">Indie: Figowcowy baldachim</td>
+                    <th class="cień ">13.</th>
+                    <td onclick="muzyka133() " class="muzyka ">Ameryka Północna: Preriowe stepy</td>
 
                 </tr>
                 <tr>
-                    <th class="cień">4.</th>
-                    <td onclick="muzyka114()" class="muzyka">Afryka: Kenijskie łańcuchy górskie</td>
-                    <th class="cień">10.</th>
-                    <td onclick="muzyka124()" class="muzyka">Indie: Bengalska gęstwina</td>
-                    <th class="cień">14.</th>
-                    <td onclick="muzyka134()" class="muzyka">Ameryka Północna: Bagniska</td>
+                    <th class="cień ">4.</th>
+                    <td onclick="muzyka114() " class="muzyka ">Afryka: Kenijskie łańcuchy górskie</td>
+                    <th class="cień ">10.</th>
+                    <td onclick="muzyka124() " class="muzyka ">Indie: Bengalska gęstwina</td>
+                    <th class="cień ">14.</th>
+                    <td onclick="muzyka134() " class="muzyka ">Ameryka Północna: Bagniska</td>
 
                 </tr>
                 <tr>
-                    <th class="cień">5.</th>
-                    <td onclick="muzyka115()" class="muzyka">Afryka: Moczary pod Maputo</td>
-                    <th rowspan="2" class="cień"></th>
-                    <td rowspan="2"></td>
-                    <th rowspan="2" class="cień"></th>
-                    <td rowspan="2"></td>
+                    <th class="cień ">5.</th>
+                    <td onclick="muzyka115() " class="muzyka ">Afryka: Moczary pod Maputo</td>
+                    <th rowspan="2 " class="cień "></th>
+                    <td rowspan="2 "></td>
+                    <th rowspan="2 " class="cień "></th>
+                    <td rowspan="2 "></td>
 
                 </tr>
                 <tr>
-                    <th class="cień">6.</th>
-                    <td onclick="muzyka116()" class="muzyka">Afryka: Gaje namorzynowe</td>
+                    <th class="cień ">6.</th>
+                    <td onclick="muzyka116() " class="muzyka ">Afryka: Gaje namorzynowe</td>
                 </tr>
                 <tr>
-                    <th colspan="2"><a class="cień playlista" onclick="odtwarzanie14()"> Azja: Lista&nbsp;odtwarzania</a></th>
-                    <th colspan="2"><a class="cień playlista" onclick="odtwarzanie15()"> Klasyka: Lista&nbsp;odtwarzania</a></th>
-                    <th colspan="2"><a class="cień playlista" onclick="odtwarzanie16()"> Planet Zoo: Lista&nbsp;odtwarzania</a></th>
+                    <th colspan="2 "><a class="cień playlista " onclick="odtwarzanie14() "> Azja: Lista&nbsp;odtwarzania</a></th>
+                    <th colspan="2 "><a class="cień playlista " onclick="odtwarzanie15() "> Klasyka: Lista&nbsp;odtwarzania</a></th>
+                    <th colspan="2 "><a class="cień playlista " onclick="odtwarzanie16() "> Planet Zoo: Lista&nbsp;odtwarzania</a></th>
 
                 </tr>
                 <tr>
-                    <th class="cień">15.</th>
-                    <td onclick="muzyka141()" class="muzyka">Azja: Dorzecze Jangcy</td>
-                    <th class="cień">19.</th>
-                    <td onclick="muzyka151()" class="muzyka">Klasyka: Trąbowcowa historia</td>
-                    <th class="cień">23.</th>
-                    <td onclick="muzyka161()" class="muzyka">Planet Zoo: Niedźwiedzia radość</td>
+                    <th class="cień ">15.</th>
+                    <td onclick="muzyka141() " class="muzyka ">Azja: Dorzecze Jangcy</td>
+                    <th class="cień ">19.</th>
+                    <td onclick="muzyka151() " class="muzyka ">Klasyka: Trąbowcowa historia</td>
+                    <th class="cień ">23.</th>
+                    <td onclick="muzyka161() " class="muzyka ">Planet Zoo: Niedźwiedzia radość</td>
 
                 </tr>
                 <tr>
-                    <th class="cień">16.</th>
-                    <td onclick="muzyka142()" class="muzyka">Azja: Kras południowy</td>
-                    <th class="cień">20.</th>
-                    <td onclick="muzyka152()" class="muzyka">Klasyka: Ty, ja i starsze zwierzęta</td>
-                    <th class="cień">24.</th>
-                    <td onclick="muzyka162()" class="muzyka">Planet Zoo: Ty, ja i reszta zwierząt</td>
+                    <th class="cień ">16.</th>
+                    <td onclick="muzyka142() " class="muzyka ">Azja: Kras południowy</td>
+                    <th class="cień ">20.</th>
+                    <td onclick="muzyka152() " class="muzyka ">Klasyka: Ty, ja i starsze zwierzęta</td>
+                    <th class="cień ">24.</th>
+                    <td onclick="muzyka162() " class="muzyka ">Planet Zoo: Ty, ja i reszta zwierząt</td>
 
                 </tr>
                 <tr>
-                    <th class="cień">17.</th>
-                    <td onclick="muzyka143()" class="muzyka">Azja: Mongolskie stepy</td>
-                    <th class="cień">21.</th>
-                    <td onclick="muzyka153()" class="muzyka">Klasyka: Merdające tango</td>
-                    <th class="cień">25.</th>
-                    <td onclick="muzyka163()" class="muzyka">Planet Zoo: Ogon merdający wielkim psem</td>
+                    <th class="cień ">17.</th>
+                    <td onclick="muzyka143() " class="muzyka ">Azja: Mongolskie stepy</td>
+                    <th class="cień ">21.</th>
+                    <td onclick="muzyka153() " class="muzyka ">Klasyka: Merdające tango</td>
+                    <th class="cień ">25.</th>
+                    <td onclick="muzyka163() " class="muzyka ">Planet Zoo: Ogon merdający wielkim psem</td>
 
                 </tr>
                 <tr>
-                    <th class="cień">18.</th>
-                    <td onclick="muzyka144()" class="muzyka">Azja: Tajga</td>
-                    <th class="cień">22.</th>
-                    <td onclick="muzyka154()" class="muzyka">Klasyka: Karuzela strunowców</td>
+                    <th class="cień ">18.</th>
+                    <td onclick="muzyka144() " class="muzyka ">Azja: Tajga</td>
+                    <th class="cień ">22.</th>
+                    <td onclick="muzyka154() " class="muzyka ">Klasyka: Karuzela strunowców</td>
                     <th></th>
                     <td></td>
 
@@ -301,13 +426,19 @@
             </table>
             <br>
             <footer>
-                <h2 style="color: white; text-align: center;" class="cień">Sklep internetowy Steam!</h2>
+                <h2 style="color: white; text-align: center; " class="cień ">Sklep internetowy Steam!</h2>
                 <center>
-                    <a href="https://store.steampowered.com/app/1098120/Planet_Zoo_Deluxe_Upgrade_Pack/?curator_clanid=34948692"><img class="stopka" src="Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 30px; padding-right: 30px;"></a>
+                    <a href="https://store.steampowered.com/app/1098120/Planet_Zoo_Deluxe_Upgrade_Pack/?curator_clanid=34948692 "><img class="stopka " src="/Ikony/Steam_logo.png " alt="Logo Steam " style="margin: 30px; padding-right: 30px; "></a>
                 </center>
             </footer>
-            <script src="/comp.js"></script>
-            <script src="/gallery.js"></script>
+            <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+            <script src="audioPlayer.js "></script>
+            <script>
+                audioPlayer();
+                audioPlayer1();
+            </script>
+            <script src="comp.js "></script>
+            <script src="gallery.js "></script>
 
 </body>
 
