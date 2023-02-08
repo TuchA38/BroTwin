@@ -1,4 +1,6 @@
-<html lang="pl" class="translated-ltr"><head>
+<html lang="pl" class="translated-ltr">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="description" lang="en" content="Filter and refine content categories, and view them in a collapsed group, with this JavaScript and CSS3 filter.">
@@ -6,7 +8,7 @@
     <!-- http://blog.fofwebdesign.co.uk/28-content-filter-refine-with-multi-category-select-show-selected-or-hide-selected -->
     <link rel="stylesheet" type="text/css" href="Styl.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="shortcut icon" href="Ikony/Planet Zoo.png">
+    <link rel="shortcut icon" href="/Ikony/Planet Zoo.png">
 </head>
 
 <body onselectstart="return false;">
@@ -52,7 +54,7 @@
         </header>
         <div style="clear: both;"></div>
         <center>
-            <img style="width: 80px; margin-top: 32px;" src="Ikony/zoopedia.png" alt="Zoopedia">
+            <img style="width: 80px; margin-top: 32px;" src="/Ikony/zoopedia.png" alt="Zoopedia">
         </center>
         <h1 class="tytul cień" style="margin-top: -6px;">Zoopedia</h1>
         <p class="cień opis" style="margin-top: -25px;"><i>Witaj w Zoopedii Planet Zoo!<br> Dogłębnie tutaj opisano każde zwierzę, które znajduje się w naszym zoo.<br> Dowiedz się więcej informacji na temat danego gatunku w Zoopedii.<br> Życzymy miłego czytania!</i>
@@ -60,11 +62,11 @@
 
         <span class="filter-categories">
             <table style="text-align: center; margin: auto;">
-                <tbody><tr>
+                <tr>
                     <th colspan="2" class="filtr">
                         <center><span><input type="checkbox" id="filter-all-1" class="filter-input filter-all all" name="filter-1" checked="" onclick="location.reload()"><label for="filter-all-1" class="filter-label info-all"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i>Zresetuj filtry</i></font></font></label></span></center>
         </th>
-        <th colspan="3" class="filtr cień" style="color: rgb(250, 156, 15); text-align: center; font-size: 25px; font-weight: bold; margin-top: -16px;"><i id="text">Ilość zwierząt: </i><i><span id="ilosc">99</span></i>
+        <th colspan="3" class="filtr cień" style="color: rgb(250, 156, 15); text-align: center; font-size: 25px; font-weight: bold; margin-top: -16px;"><i id="text">Ilość zwierząt: </i><i><span id="ilosc">108</i></span>
         </th>
         <th colspan="2" class="filtr"><img style="width: 80px; margin-bottom: 2px;" src="Ikony/lupa.png" alt="lupa"><br><input type="text" autocomplete="off" name="szukaj" class="cień" placeholder="Wyszukaj nazwę gatunku..."></th>
         </tr>
@@ -91,19 +93,20 @@
             <td class="zoopedia"><span><input type="checkbox" id="antarktyda" class="filter-input" name="filter-1"><label for="antarktyda" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Antarktyda</font></font></label></span></td>
         </tr>
         <tr>
-            <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Status zagrożenia:</font></font></span>
-        </th></tr>
+            <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Status zagrożenia:</font></font></span></td>
+        </tr>
         <tr>
-            <form action="*"></form>
+            <form action="*">
                 <td class="zoopedia"><span><input type="radio" id="status0" class="filter-input" name="filter-1"><label for="status0" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zbyt mało danych</font></font></label></span></td>
                 <td class="zoopedia"><span><input type="radio" id="status1" class="filter-input" name="filter-1"><label for="status1" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Najmniej zagrożony</font></font></label></span></td>
                 <td class="zoopedia"><span><input type="radio" id="status2" class="filter-input" name="filter-1"><label for="status2" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bliskie zagrożenia</font></font></label></span></td>
                 <td class="zoopedia"><span><input type="radio" id="status3" class="filter-input" name="filter-1"><label for="status3" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Narażone</font></font></label></span></td>
                 <td class="zoopedia"><span><input type="radio" id="status4" class="filter-input" name="filter-1"><label for="status4" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zagrożone</font></font></label></span></td>
-                <td colspan="2" class="zoopedia"><span><input type="radio" id="status5" class="filter-input" name="filter-1"><label for="status5" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Krytycznie zagrożone</font></font></label></span></td>
-            
+                <td class="zoopedia"><span><input type="radio" id="status5" class="filter-input" name="filter-1"><label for="status5" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Krytycznie zagrożone</font></font></label></span></td>
+                <td class="zoopedia"><span><input type="radio" id="status6" class="filter-input" name="filter-1"><label for="status6" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wymarłe na wolności</font></font></label></span></td>
+            </form>
         </tr>
-        </tbody></table>
+        </table>
         </span>
         <br>
         <div class="cień">
@@ -875,7 +878,7 @@
         <br>
     </div>
     <div class="filter-mask"></div>
-    
+    </div>
     <span class="scrollTopButton"></span>
     <footer>
         <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z Planet Zoo!</h2>
@@ -1014,6 +1017,6 @@
         });
     </script>
 
+</body>
 
-
-</body></html>
+</html>

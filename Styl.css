@@ -566,7 +566,7 @@ td {
 }
 
 th.zoopedia {
-    font-size: 23px;
+    font-size: 22px;
     background: linear-gradient(#0d7955, #084b33);
     opacity: 90%;
 }
@@ -585,7 +585,7 @@ td.filtr {
 }
 
 td.zoopedia {
-    font-size: 18px;
+    font-size: 16.5px;
     background: linear-gradient(#ebebeb, #686868);
     color: black;
     opacity: 90%;
