@@ -421,6 +421,12 @@ iframe {
     padding: 10px;
 }
 
+#powrot {
+    width: 33%;
+    float: left;
+    padding: 2px;
+}
+
 #historia {
     text-align: left;
     font-size: 20px;
