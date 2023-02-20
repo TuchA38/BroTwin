@@ -661,6 +661,13 @@ td.zoopedia {
     padding: 6px;
 }
 
+.wy {
+    background: linear-gradient(rgb(59, 59, 59), rgb(0, 0, 0));
+    border: white 2px solid;
+    border-radius: 5%;
+    padding: 6px;
+}
+
 .galeria {
     float: left;
     margin: 1px;
