@@ -1,5 +1,5 @@
 let allMusic = [{
-        name: "Udu Child",
+        name: "Dziecko Udu",
         artist: "Tropical Pack",
         img: "music",
         src: "music-100"
@@ -11,13 +11,13 @@ let allMusic = [{
         src: "music-101"
     },
     {
-        name: "Eyes on the Baby Monitor",
+        name: "Oczy małego warana",
         artist: "Tropical Pack",
         img: "music",
         src: "music-102"
     },
     {
-        name: "The Long Arm of the Lar",
+        name: "Długie ramię gibona",
         artist: "Tropical Pack",
         img: "music",
         src: "music-103"
