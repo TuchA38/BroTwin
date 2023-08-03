@@ -400,25 +400,25 @@ let allMusic = [{
         src: "music-67"
     },
     {
-        name: "Pakiet Ameryka Północna - Pasmo Appalachów",
+        name: "Pakiet Ameryki Północnej - Pasmo Appalachów",
         artist: "North America Pack",
         img: "music",
         src: "music-68"
     },
     {
-        name: "Pakiet Ameryka Północna - Kreolski specjał",
+        name: "Pakiet Ameryki Północnej - Kreolski specjał",
         artist: "North America Pack",
         img: "music",
         src: "music-69"
     },
     {
-        name: "Pakiet Ameryka Północna - Różnorodność Bayou",
+        name: "Pakiet Ameryki Północnej - Różnorodność Bayou",
         artist: "North America Pack",
         img: "music",
         src: "music-70"
     },
     {
-        name: "Pakiet Ameryka Północna - Mandolina wśród wiatru",
+        name: "Pakiet Ameryki Północnej - Mandolina wśród wiatru",
         artist: "North America Pack",
         img: "music",
         src: "music-71"
@@ -592,7 +592,7 @@ let allMusic = [{
         src: "music-99"
     },
     {
-        name: "Pakiet Tropikalny - Udu Child",
+        name: "Pakiet Tropikalny - Dziecko Udu",
         artist: "Tropical Pack",
         img: "music",
         src: "music-100"
@@ -604,13 +604,13 @@ let allMusic = [{
         src: "music-101"
     },
     {
-        name: "Pakiet Tropikalny - Eyes on the Baby Monitor",
+        name: "Pakiet Tropikalny - Oczy małego warana",
         artist: "Tropical Pack",
         img: "music",
         src: "music-102"
     },
     {
-        name: "Pakiet Tropikalny - The Long Arm of the Lar",
+        name: "Pakiet Tropikalny - Długie ramię gibona",
         artist: "Tropical Pack",
         img: "music",
         src: "music-103"
@@ -638,5 +638,71 @@ let allMusic = [{
         artist: "Arid Pack",
         img: "music",
         src: "music-107"
+    },
+    {
+        name: "Zwiastun - Pakiet Arktyczny",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-108"
+    },
+    {
+        name: "Zwiastun - Pakiet Ameryka Południowa",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-109"
+    },
+    {
+        name: "Zwiastun - Pakiet Australia",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-110"
+    },
+    {
+        name: "Zwiastun - Pakiet Wodny",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-111"
+    },
+    {
+        name: "Zwiastun - Pakiet Azji Południowo-Wschodniej",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-112"
+    },
+    {
+        name: "Zwiastun - Pakiet Afryka",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-113"
+    },
+    {
+        name: "Zwiastun - Pakiet Ameryki Północnej",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-114"
+    },
+    {
+        name: "Zwiastun - Pakiet Europa",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-115"
+    },
+    {
+        name: "Zwiastun - Pakiet Mokradeł",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-116"
+    },
+    {
+        name: "Zwiastun - Pakiet Ochrona przyrody",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-117"
+    },
+    {
+        name: "Zwiastun - Pakiet Zmierzch",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-118"
     }
 ];
