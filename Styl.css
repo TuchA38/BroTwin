@@ -4,6 +4,12 @@ body {
     cursor: default;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+}
+
 ol.menu {
     list-style-type: none;
     font-size: 30px;
