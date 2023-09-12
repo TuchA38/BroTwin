@@ -51,7 +51,7 @@ ol.menu>li:first-child {
 /* wygląd elementów - li - wszystkich dzieci elementu - ol - po najechaniu kursorem myszki na element - li */
 
 ol.menu>li:hover {
-    opacity: 95%;
+    opacity: 85%;
 }
 
 
@@ -60,6 +60,7 @@ ol.menu>li:hover {
 ol.menu>li:hover>a {
     text-shadow: black 0.1em 0.1em 0.2em;
     font-weight: bold;
+    animation: fadeIn ease-in .1s backwards;
 }
 
 
@@ -67,6 +68,7 @@ ol.menu>li:hover>a {
 
 ol.menu>li:hover>ul {
     display: block;
+    animation: fadeIn ease-in .3s backwards;
 }
 
 
