@@ -6,93 +6,214 @@
     <meta charset="UTF-8">
     <title>Muzyka</title>
     <link rel="shortcut icon" href="Ikony/Planet Zoo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script>
         function album1() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album22()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album2()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 500px; border: 0px;" class="animacja" src="Muzyka/Afryka/index.html"></iframe></center>';
+            document.getElementById("a23").classList.remove("visible");
+            document.getElementById("a23").classList.add("hidden");
+            document.getElementById("a2").classList.remove("visible");
+            document.getElementById("a2").classList.add("hidden");
+            document.getElementById("a1").classList.remove("hidden");
+            document.getElementById("a1").classList.toggle("visible");
+
         }
 
         function album2() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album1()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album3()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Indie/index.html"></iframe></center>';
+            document.getElementById("a1").classList.remove("visible");
+            document.getElementById("a1").classList.add("hidden");
+            document.getElementById("a3").classList.remove("visible");
+            document.getElementById("a3").classList.add("hidden");
+            document.getElementById("a2").classList.remove("hidden");
+            document.getElementById("a2").classList.toggle("visible");
         }
 
         function album3() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album2()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album4()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Ameryka Północna/index.html"></iframe></center>';
+            document.getElementById("a2").classList.remove("visible");
+            document.getElementById("a2").classList.add("hidden");
+            document.getElementById("a4").classList.remove("visible");
+            document.getElementById("a4").classList.add("hidden");
+            document.getElementById("a3").classList.remove("hidden");
+            document.getElementById("a3").classList.toggle("visible");
         }
 
         function album4() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album3()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album5()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Azja/index.html"></iframe></center>';
+            document.getElementById("a3").classList.remove("visible");
+            document.getElementById("a3").classList.add("hidden");
+            document.getElementById("a5").classList.remove("visible");
+            document.getElementById("a5").classList.add("hidden");
+            document.getElementById("a4").classList.remove("hidden");
+            document.getElementById("a4").classList.toggle("visible");
         }
 
         function album5() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album4()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album6()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Klasyka/index.html"></iframe></center>';
+            document.getElementById("a4").classList.remove("visible");
+            document.getElementById("a4").classList.add("hidden");
+            document.getElementById("a6").classList.remove("visible");
+            document.getElementById("a6").classList.add("hidden");
+            document.getElementById("a5").classList.remove("hidden");
+            document.getElementById("a5").classList.toggle("visible");
         }
 
         function album6() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album5()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album7()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Planet_Zoo/index.html"></iframe></center>';
+            document.getElementById("a5").classList.remove("visible");
+            document.getElementById("a5").classList.add("hidden");
+            document.getElementById("a7").classList.remove("visible");
+            document.getElementById("a7").classList.add("hidden");
+            document.getElementById("a6").classList.remove("hidden");
+            document.getElementById("a6").classList.toggle("visible");
         }
 
         function album7() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album6()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album8()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Delux/index.html"></iframe></center>';
+            document.getElementById("a6").classList.remove("visible");
+            document.getElementById("a6").classList.add("hidden");
+            document.getElementById("a8").classList.remove("visible");
+            document.getElementById("a8").classList.add("hidden");
+            document.getElementById("a7").classList.remove("hidden");
+            document.getElementById("a7").classList.toggle("visible");
         }
 
         function album8() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album7()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album9()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Arctic/index.html"></iframe></center>';
+            document.getElementById("a7").classList.remove("visible");
+            document.getElementById("a7").classList.add("hidden");
+            document.getElementById("a9").classList.remove("visible");
+            document.getElementById("a9").classList.add("hidden");
+            document.getElementById("a8").classList.remove("hidden");
+            document.getElementById("a8").classList.toggle("visible");
         }
 
         function album9() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album8()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album10()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/South America/index.html"></iframe></center>';
+            document.getElementById("a8").classList.remove("visible");
+            document.getElementById("a8").classList.add("hidden");
+            document.getElementById("a10").classList.remove("visible");
+            document.getElementById("a10").classList.add("hidden");
+            document.getElementById("a9").classList.remove("hidden");
+            document.getElementById("a9").classList.toggle("visible");
         }
 
         function album10() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album9()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album11()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Australia/index.html"></iframe></center>';
+            document.getElementById("a9").classList.remove("visible");
+            document.getElementById("a9").classList.add("hidden");
+            document.getElementById("a11").classList.remove("visible");
+            document.getElementById("a11").classList.add("hidden");
+            document.getElementById("a10").classList.remove("hidden");
+            document.getElementById("a10").classList.toggle("visible");
         }
 
         function album11() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album10()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album12()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Aquatic/index.html"></iframe></center>';
+            document.getElementById("a10").classList.remove("visible");
+            document.getElementById("a10").classList.add("hidden");
+            document.getElementById("a12").classList.remove("visible");
+            document.getElementById("a12").classList.add("hidden");
+            document.getElementById("a11").classList.remove("hidden");
+            document.getElementById("a11").classList.toggle("visible");
         }
 
         function album12() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album11()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album13()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Southeast Asia/index.html"></iframe></center>';
+            document.getElementById("a11").classList.remove("visible");
+            document.getElementById("a11").classList.add("hidden");
+            document.getElementById("a13").classList.remove("visible");
+            document.getElementById("a13").classList.add("hidden");
+            document.getElementById("a12").classList.remove("hidden");
+            document.getElementById("a12").classList.toggle("visible");
         }
 
         function album13() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album12()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album14()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Africa/index.html"></iframe></iframe></center>';
+            document.getElementById("a12").classList.remove("visible");
+            document.getElementById("a12").classList.add("hidden");
+            document.getElementById("a14").classList.remove("visible");
+            document.getElementById("a14").classList.add("hidden");
+            document.getElementById("a13").classList.remove("hidden");
+            document.getElementById("a13").classList.toggle("visible");
         }
 
         function album14() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album13()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album15()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/North America/index.html"></iframe></center>';
+            document.getElementById("a13").classList.remove("visible");
+            document.getElementById("a13").classList.add("hidden");
+            document.getElementById("a15").classList.remove("visible");
+            document.getElementById("a15").classList.add("hidden");
+            document.getElementById("a14").classList.remove("hidden");
+            document.getElementById("a14").classList.toggle("visible");
         }
 
         function album15() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album14()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album16()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Europe/index.html"></iframe></center>';
+            document.getElementById("a14").classList.remove("visible");
+            document.getElementById("a14").classList.add("hidden");
+            document.getElementById("a16").classList.remove("visible");
+            document.getElementById("a16").classList.add("hidden");
+            document.getElementById("a15").classList.remove("hidden");
+            document.getElementById("a15").classList.toggle("visible");
         }
 
         function album16() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album15()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album17()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Conservation/index.html"></iframe></center>';
+            document.getElementById("a15").classList.remove("visible");
+            document.getElementById("a15").classList.add("hidden");
+            document.getElementById("a17").classList.remove("visible");
+            document.getElementById("a17").classList.add("hidden");
+            document.getElementById("a16").classList.remove("hidden");
+            document.getElementById("a16").classList.toggle("visible");
         }
 
         function album17() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album16()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album18()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Lo-fi/index.html"></iframe></center>';
+            document.getElementById("a16").classList.remove("visible");
+            document.getElementById("a16").classList.add("hidden");
+            document.getElementById("a18").classList.remove("visible");
+            document.getElementById("a18").classList.add("hidden");
+            document.getElementById("a17").classList.remove("hidden");
+            document.getElementById("a17").classList.toggle("visible");
         }
 
         function album18() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album17()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album19()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Twilight/index.html"></iframe></center>';
+            document.getElementById("a17").classList.remove("visible");
+            document.getElementById("a17").classList.add("hidden");
+            document.getElementById("a19").classList.remove("visible");
+            document.getElementById("a19").classList.add("hidden");
+            document.getElementById("a18").classList.remove("hidden");
+            document.getElementById("a18").classList.toggle("visible");
         }
 
         function album19() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album18()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album20()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Grasslands/index.html"></iframe></center>';
+            document.getElementById("a18").classList.remove("visible");
+            document.getElementById("a18").classList.add("hidden");
+            document.getElementById("a20").classList.remove("visible");
+            document.getElementById("a20").classList.add("hidden");
+            document.getElementById("a19").classList.remove("hidden");
+            document.getElementById("a19").classList.toggle("visible");
         }
 
         function album20() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album19()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album21()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Tropical/index.html"></iframe></center>';
+            document.getElementById("a19").classList.remove("visible");
+            document.getElementById("a19").classList.add("hidden");
+            document.getElementById("a21").classList.remove("visible");
+            document.getElementById("a21").classList.add("hidden");
+            document.getElementById("a20").classList.remove("hidden");
+            document.getElementById("a20").classList.toggle("visible");
         }
 
         function album21() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album20()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album22()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Arid/index.html"></iframe></center>';
+            document.getElementById("a20").classList.remove("visible");
+            document.getElementById("a20").classList.add("hidden");
+            document.getElementById("a22").classList.remove("visible");
+            document.getElementById("a22").classList.add("hidden");
+            document.getElementById("a21").classList.remove("hidden");
+            document.getElementById("a21").classList.toggle("visible");
         }
 
         function album22() {
-            document.getElementById('info').innerHTML = '<center style="margin-top: 15%;"><img class="next" style="position: relative;" onclick="album21()" src="Ikony/left.png" alt="Lewo"><img class="next" onclick="album1()" style="margin-left: 380px; position: relative;" src="Ikony/right.png" alt="Prawo"></center><center style="margin-top: -340px;"><iframe style="height: 660px; width: 350px; border: 0px;" class="animacja" src="Muzyka/Zwiastuny/index.html"></iframe></center>';
+            document.getElementById("a21").classList.remove("visible");
+            document.getElementById("a21").classList.add("hidden");
+            document.getElementById("a23").classList.remove("visible");
+            document.getElementById("a23").classList.add("hidden");
+            document.getElementById("a22").classList.remove("hidden");
+            document.getElementById("a22").classList.toggle("visible");
+        }
+
+        function album23() {
+            document.getElementById("a22").classList.remove("visible");
+            document.getElementById("a22").classList.add("hidden");
+            document.getElementById("a1").classList.remove("visible");
+            document.getElementById("a1").classList.add("hidden");
+            document.getElementById("a23").classList.remove("hidden");
+            document.getElementById("a23").classList.toggle("visible");
         }
     </script>
     <style>
@@ -102,8 +223,16 @@
             cursor: pointer;
         }
         
-        .animacja {
-            animation: fadeIn ease-in .5s backwards;
+        .visible {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity .5s linear;
+        }
+        
+        .hidden {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility .5s, opacity .5s linear;
         }
     </style>
 </head>
@@ -122,18 +251,149 @@
             <p class="cień opis" style="margin-top: -25px;"><i>Witaj w zbiorze Muzyki Planet Zoo!<br>Zebrano tutaj wszystkie przeboje, które występują w grze.<br>Utwory otworzyły się w nowej karcie, dlatego można zwiedzać inne strony słuchając muzyki w tle.<br>Zobacz jakie tytuły noszą oraz jak one brzmią.<br> Życzymy miłego słuchania!</i>
             </p>
             <br>
-            <b style="font-size: 25px;">Wszystkie utwory Planet Zoo</b><br>Cały zbiór melodii liczy aż <b>118</b> wspaniałych utworów, których w większości twórcą jest <b>J.J. Ipsen</b>. Poniższa playlista pozwala słuchać ich wszystkich w jednym miejscu!
+            <b style="font-size: 25px;">Wszystkie utwory Planet Zoo</b><br>Cały zbiór melodii liczy aż <b>122</b> wspaniałych utworów, których w większości twórcą jest <b>J.J. Ipsen</b>. Poniższa playlista pozwala słuchać ich wszystkich w jednym miejscu!
             <br><br>
             <center><iframe style="height: 818px; width: 850px; border: 0px; margin-bottom: -15px; user-select: none;" src="Muzyka/Planet Zoo/index.html"></iframe></center>
             <b style="font-size: 25px;">Spis utworów podzielonych na kategorie</b><br>Poniżej znajdują się wszystkie niesamowite utwory, które podzielone są na albumy. Można wybrać odpowiedni utwór, albo słuchać całej playlisty albumu!
             <br><br><br>
-            <div id="info" class="animacja">
+            <div id="a1" class="visible">
                 <center style="margin-top: 15%;">
-                    <img class="next" style="position: relative;" onclick="album22() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album2() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                    <img class="next" style="position: relative;" onclick="album23() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album2() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
                 <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Afryka/index.html "></iframe>
                 </center>
             </div>
-
+            <div id="a2" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album1() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album3() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Indie/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a3" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album2() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album4() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Ameryka Północna/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a4" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album3() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album5() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Azja/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a5" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album4() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album6() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Klasyka/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a6" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album5() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album7() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Planet_Zoo/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a7" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album6() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album8() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Delux/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a8" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album7() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album9() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Arctic/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a9" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album8() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album10() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/South America/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a10" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album9() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album11() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Australia/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a11" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album10() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album12() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Aquatic/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a12" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album11() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album13() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Southeast Asia/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a13" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album12() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album14() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Africa/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a14" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album13() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album15() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/North America/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a15" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album14() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album16() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Europe/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a16" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album15() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album17() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Conservation/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a17" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album16() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album18() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Lo-fi/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a18" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album17() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album19() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Twilight/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a19" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album18() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album20() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Grasslands/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a20" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album19() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album21() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Tropical/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a21" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album20() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album22() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Arid/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a22" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album21() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album23() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Oceania/index.html "></iframe>
+                </center>
+            </div>
+            <div id="a23" class="hidden">
+                <center style="margin-top: -27.35%;">
+                    <img class="next" style="position: relative;" onclick="album22() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album1() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
+                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Zwiastuny/index.html "></iframe>
+                </center>
+            </div>
             <footer>
                 <h2 style="color: white; text-align: center; " class="cień ">Sklep internetowy Steam!</h2>
                 <center>
