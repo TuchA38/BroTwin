@@ -14,6 +14,29 @@
         html {
             scroll-behavior: smooth;
         }
+        
+        .wybor,
+        .wybor2 {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            margin-top: -100px;
+            transition: 0.5s;
+        }
+        
+        input {
+            opacity: 0;
+            margin-top: -20px;
+            transition: 0.5s;
+        }
+        
+        td {
+            transition: 0.5s;
+        }
+        
+        td.zoopedia:hover {
+            opacity: 80%;
+        }
     </style>
 </head>
 
@@ -52,7 +75,7 @@
                     <li><a href="#">Internetowe Zoo</a>
                         <ul>
                             <li><a href="Mapa Zoo.html">Mapa Zoo</a></li>
-                            <li><a href="Kamery na żywo.html">Kamery na żywo</a></li>
+                            <li><a href="Informacje dnia.html">Informacje dnia</a></li>
                         </ul>
                     </li>
                 </ol>
@@ -71,47 +94,48 @@
             <span class="filter-categories">
             <table style="text-align: center; margin: auto;">
                 <tr>
-                    <th colspan="2" class="filtr">
-                        <center><span><input type="checkbox" id="filter-all-1" class="filter-input filter-all all" name="filter-1" checked="" onclick="location.reload()"><label for="filter-all-1" class="filter-label info-all"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i>Zresetuj filtry</i></font></font></label></span></center>
-            </th>
-            <th colspan="3" class="filtr cień" style="color: rgb(250, 156, 15); text-align: center; font-size: 25px; font-weight: bold; margin-top: -16px;"><i id="text">Ilość zwierząt: </i><i><span id="ilosc">166</i></span>
+                    <td colspan="2" class="filtr zoopedia" style="background: linear-gradient(#0d684a, #063626);">
+                        <center><input type="checkbox" id="filter-all-1" class="filter-input filter-all all" name="filter-1" checked="" onclick="location.reload()"><label for="filter-all-1" class="filter-label info-all"><span class="wybor" style="height: 100%; padding-top: 50px; padding-bottom: 50px; margin-top: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="cień" style="font-size: 24px;"><b>Zresetuj filtry</b></i></font></font></span></label>
+            </center>
+            </td>
+            <th colspan="3" class="filtr cień" style="color:  rgb(211, 224, 92);; text-align: center; font-size: 25px; font-weight: bold; margin-top: -16px;"><i><span id="text">Ilość zwierząt:&nbsp</span></i><i><span id="ilosc">171</span></i>
             </th>
             <th colspan="2" class="filtr"><img style="width: 80px; margin-bottom: 2px;" src="Ikony/lupa.png" alt="lupa"><br><input type="text" autocomplete="off" name="szukaj" class="cień" placeholder="Wyszukaj nazwę gatunku..."></th>
             </tr>
             <tr>
-                <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Kategoria:</font></font></span></th>
+                <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;" class="cień">Kategoria:</font></font></span></th>
             </tr>
             <tr>
-                <td colspan="2" class="zoopedia"><span><input type="radio" id="ssaki" class="filter-input" name="filter-1"><label for="ssaki" class="filter-label info-ssaki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ssaki</font></font></label></span></td>
-                <td class="zoopedia"><span><input type="radio" id="ptaki" class="filter-input" name="filter-1"><label for="ptaki" class="filter-label info-ptaki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ptaki</font></font></label></span></td>
-                <td class="zoopedia"><span><input type="radio" id="gady" class="filter-input" name="filter-1"><label for="gady" class="filter-label info-gady"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gady</font></font></label></span></td>
-                <td class="zoopedia"><span><input type="radio" id="plazy" class="filter-input" name="filter-1"><label for="plazy" class="filter-label info-plazy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Płazy</font></font></label></span></td>
-                <td colspan="2" class="zoopedia"><span><input type="radio" id="stawonogi" class="filter-input" name="filter-1"><label for="stawonogi" class="filter-label info-stawonogi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Stawonogi</font></font></label></span></td>
+                <td colspan="2" class="zoopedia"><input type="radio" id="ssaki" class="filter-input" name="filter-1"><label for="ssaki" class="filter-label info-ssaki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Ssaki</span></font></font></label></td>
+                <td class="zoopedia"><input type="radio" id="ptaki" class="filter-input" name="filter-1"><label for="ptaki" class="filter-label info-ptaki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Ptaki</span></font></font></label></td>
+                <td class="zoopedia"><input type="radio" id="gady" class="filter-input" name="filter-1"><label for="gady" class="filter-label info-gady"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Gady</span></font></font></label></td>
+                <td class="zoopedia"><input type="radio" id="plazy" class="filter-input" name="filter-1"><label for="plazy" class="filter-label info-plazy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Płazy</span></font></font></label></td>
+                <td colspan="2" class="zoopedia"><input type="radio" id="stawonogi" class="filter-input" name="filter-1"><label for="stawonogi" class="filter-label info-stawonogi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Stawonogi</span></font></font></label></td>
             </tr>
             <tr>
-                <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Kontynent:</font></font></span></th>
+                <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;" class="cień">Kontynent:</font></font></span></th>
             </tr>
             <tr>
-                <td class="zoopedia"><span><input type="checkbox" id="afryka" class="filter-input" name="filter-1"><label for="afryka" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Afryka</font></font></label></span></td>
-                <td class="zoopedia"><span><input type="checkbox" id="azja" class="filter-input" name="filter-1"><label for="azja" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Azja</font></font></label></span></td>
-                <td class="zoopedia"><span><input type="checkbox" id="amerykapolnocna" class="filter-input" name="filter-1"><label for="amerykapolnocna" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ameryka Północna</font></font></label></span></td>
-                <td class="zoopedia"><span><input type="checkbox" id="amerykapoludniowa" class="filter-input" name="filter-1"><label for="amerykapoludniowa" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ameryka Południowa</font></font></label></span></td>
-                <td class="zoopedia"><span><input type="checkbox" id="europa" class="filter-input" name="filter-1"><label for="europa" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Europa</font></font></label></span></td>
-                <td class="zoopedia"><span><input type="checkbox" id="australia" class="filter-input" name="filter-1"><label for="australia" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Australia i Oceania</font></font></label></span></td>
-                <td class="zoopedia"><span><input type="checkbox" id="antarktyda" class="filter-input" name="filter-1"><label for="antarktyda" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Antarktyda</font></font></label></span></td>
+                <td class="zoopedia"><input type="checkbox" id="afryka" class="filter-input" name="filter-1"><label for="afryka" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Afryka</span></font></font></label></td>
+                <td class="zoopedia"><input type="checkbox" id="azja" class="filter-input" name="filter-1"><label for="azja" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Azja</span></font></font></label></td>
+                <td class="zoopedia"><input type="checkbox" id="amerykapolnocna" class="filter-input" name="filter-1"><label for="amerykapolnocna" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Ameryka Północna</span></font></font></label></td>
+                <td class="zoopedia"><input type="checkbox" id="amerykapoludniowa" class="filter-input" name="filter-1"><label for="amerykapoludniowa" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Ameryka Południowa</span></font></font></label></td>
+                <td class="zoopedia"><input type="checkbox" id="europa" class="filter-input" name="filter-1"><label for="europa" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Europa</span></font></font></label></td>
+                <td class="zoopedia"><input type="checkbox" id="australia" class="filter-input" name="filter-1"><label for="australia" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Australia i Oceania</span></font></font></label></td>
+                <td class="zoopedia"><input type="checkbox" id="antarktyda" class="filter-input" name="filter-1"><label for="antarktyda" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Antarktyda</span></font></font></label></td>
             </tr>
             <tr>
-                <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;">Status zagrożenia:</font></font></span></td>
+                <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;" class="cień">Status zagrożenia:</font></font></span></td>
             </tr>
             <tr>
                 <form action="*">
-                    <td class="zoopedia"><span><input type="radio" id="status0" class="filter-input" name="filter-1"><label for="status0" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zbyt mało danych</font></font></label></span></td>
-                    <td class="zoopedia"><span><input type="radio" id="status1" class="filter-input" name="filter-1"><label for="status1" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Najmniej zagrożony</font></font></label></span></td>
-                    <td class="zoopedia"><span><input type="radio" id="status2" class="filter-input" name="filter-1"><label for="status2" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bliskie zagrożenia</font></font></label></span></td>
-                    <td class="zoopedia"><span><input type="radio" id="status3" class="filter-input" name="filter-1"><label for="status3" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Narażone</font></font></label></span></td>
-                    <td class="zoopedia"><span><input type="radio" id="status4" class="filter-input" name="filter-1"><label for="status4" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zagrożone</font></font></label></span></td>
-                    <td class="zoopedia"><span><input type="radio" id="status5" class="filter-input" name="filter-1"><label for="status5" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Krytycznie zagrożone</font></font></label></span></td>
-                    <td class="zoopedia"><span><input type="radio" id="status6" class="filter-input" name="filter-1"><label for="status6" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Wymarłe na wolności</font></font></label></span></td>
+                    <td class="zoopedia"><input type="radio" id="status0" class="filter-input" name="filter-1"><label for="status0" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Zbyt mało danych</span></font></font></label></td>
+                    <td class="zoopedia"><input type="radio" id="status1" class="filter-input" name="filter-1"><label for="status1" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Najmniej zagrożony</span></font></font></label></td>
+                    <td class="zoopedia"><input type="radio" id="status2" class="filter-input" name="filter-1"><label for="status2" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Bliskie zagrożenia</span></font></font></label></td>
+                    <td class="zoopedia"><input type="radio" id="status3" class="filter-input" name="filter-1"><label for="status3" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Narażone</span></font></font></label></td>
+                    <td class="zoopedia"><input type="radio" id="status4" class="filter-input" name="filter-1"><label for="status4" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Zagrożone</span></font></font></label></td>
+                    <td class="zoopedia"><input type="radio" id="status5" class="filter-input" name="filter-1"><label for="status5" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Krytycznie zagrożone</span></font></font></label></td>
+                    <td class="zoopedia"><input type="radio" id="status6" class="filter-input" name="filter-1"><label for="status6" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Wymarłe na wolności</span></font></font></label></td>
                 </form>
             </tr>
             </table>
@@ -257,6 +281,13 @@
                             <p style="margin: 0%;" id="Daniel_zwyczajny"></p>
                             <a href="Zoopedia/Daniel zwyczajny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Daniel zwyczajny.jpg" alt="Daniel zwyczajny" width="90%"></a>
                             <p class="podpis">Daniel zwyczajny</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ssaki status4">
+                        <div id="zdjecie" class="filter-item australia ssaki status4">
+                            <p style="margin: 0%;" id="Diabeł tasmański"></p>
+                            <a href="Zoopedia/Diabeł tasmański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Diabeł tasmański.jpg" alt="Diabeł tasmański" width="90%"></a>
+                            <p class="podpis">Diabeł tasmański</p>
                         </div>
                     </div>
                     <div class="filter-item australia ssaki status3">
@@ -518,6 +549,13 @@
                             <p class="podpis">Kazuar hełmiasty</p>
                         </div>
                     </div>
+                    <div class="filter-item australia ptaki status3">
+                        <div id="zdjecie" class="filter-item australia ptaki status3">
+                            <p style="margin: 0%;" id="Kiwi północny"></p>
+                            <a href="Zoopedia/Kiwi północny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kiwi północny.jpg" alt="Kiwi północny" width="90%"></a>
+                            <p class="podpis">Kiwi północny</p>
+                        </div>
+                    </div>
                     <div class="filter-item australia ssaki status3">
                         <div id="zdjecie" class="filter-item australia ssaki status3">
                             <p style="margin: 0%;" id="Koala"></p>
@@ -565,6 +603,13 @@
                             <p style="margin: 0%;" id="Krokuta_cętkowana"></p>
                             <a href="Zoopedia/Krokuta cętkowana.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Krokuta cętkowana.jpg" alt="Krokuta cętkowana" width="90%"></a>
                             <p class="podpis">Krokuta cętkowana</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ssaki status3">
+                        <div id="zdjecie" class="filter-item australia ssaki status3">
+                            <p style="margin: 0%;" id="Kuoka"></p>
+                            <a href="Zoopedia/Kuoka.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kuoka.jpg" alt="Kuoka" width="90%"></a>
+                            <p class="podpis">Kuoka</p>
                         </div>
                     </div>
                     <div class="filter-item amerykapoludniowa ssaki status1">
@@ -910,6 +955,13 @@
                             <p class="podpis">Pingwin królewski</p>
                         </div>
                     </div>
+                    <div class="filter-item australia ptaki status1">
+                        <div id="zdjecie" class="filter-item australia ptaki status1">
+                            <p style="margin: 0%;" id="Pingwin mały"></p>
+                            <a href="Zoopedia/Pingwin mały.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pingwin mały.jpg" alt="Pingwin mały" width="90%"></a>
+                            <p class="podpis">Pingwin mały</p>
+                        </div>
+                    </div>
                     <div class="filter-item afryka ptaki status4">
                         <div id="zdjecie" class="filter-item afryka ptaki status4">
                             <p style="margin: 0%;" id="Pingwin_przylądkowy"></p>
@@ -964,6 +1016,13 @@
                             <p style="margin: 0%;" id="Rudawiec_nilowy"></p>
                             <a href="Zoopedia/Rudawiec nilowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Rudawiec nilowy.jpg" alt="Rudawiec nilowy" width="90%"></a>
                             <p class="podpis">Rudawiec nilowy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ssaki status4">
+                        <div id="zdjecie" class="filter-item australia ssaki status4">
+                            <p style="margin: 0%;" id="Rudawka okularowa"></p>
+                            <a href="Zoopedia/Rudawka okularowa.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Rudawka okularowa.jpg" alt="Rudawka okularowa" width="90%"></a>
+                            <p class="podpis">Rudawka okularowa</p>
                         </div>
                     </div>
                     <div class="filter-item europa azja stawonogi status1">
@@ -1285,7 +1344,7 @@
             </div>
             <div class="filter-no-item">
                 <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit; font-size: 19px;"><i>Przepraszamy, żadne zwierzę nie pasuje do wybranych filtrów...</i></font>
+                    <font style="vertical-align: inherit; font-size: 19px;"><i>Przepraszamy, ale żadne zwierzę nie pasuje do wybranych filtrów...</i></font>
                 </font>
             </div>
             <br>
@@ -1304,7 +1363,7 @@
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </footer>
     <script>
-        var razem = 166;
+        var razem = 171;
         document.getElementById("ilosc").innerHTML = razem;
 
         function addClassAll(el, cls) {
@@ -1333,8 +1392,8 @@
             result = result.filter(div => div.textContent.toUpperCase().includes(currentWord));
             article.textContent = '';
             result.forEach(name => article.appendChild(name));
-            document.getElementById("text").innerHTML = "Poniżej znajdują się wyniki wyszukiwania";
-            document.getElementById("ilosc").style = "opacity:0; margin:-15px";
+            document.getElementById("text").innerHTML = "Poniżej znajdują się<br>najbardziej pasujące zwierzęta<br>do wpisanej frazy";
+            document.getElementById("ilosc").style = "opacity:0; margin:-15px;";
         }
         searchInput.addEventListener('input', searchWord);
 
