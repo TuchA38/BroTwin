@@ -640,69 +640,93 @@ let allMusic = [{
         src: "music-107"
     },
     {
-        name: "Zwiastun - Pakiet Arktyczny",
-        artist: "Planet Zoo",
+        name: "Pakiet Oceania - Raj pingwinów",
+        artist: "Oceania Pack",
         img: "music",
         src: "music-108"
     },
     {
-        name: "Zwiastun - Pakiet Ameryka Południowa",
-        artist: "Planet Zoo",
+        name: "Pakiet Oceania - Krocz z wdziękiem kuoki",
+        artist: "Oceania Pack",
         img: "music",
         src: "music-109"
     },
     {
-        name: "Zwiastun - Pakiet Australia",
-        artist: "Planet Zoo",
+        name: "Pakiet Oceania - Kiwi na luzaku",
+        artist: "Oceania Pack",
         img: "music",
         src: "music-110"
     },
     {
-        name: "Zwiastun - Pakiet Wodny",
-        artist: "Planet Zoo",
+        name: "Pakiet Oceania - Latające rudawki",
+        artist: "Oceania Pack",
         img: "music",
         src: "music-111"
     },
     {
-        name: "Zwiastun - Pakiet Azji Południowo-Wschodniej",
+        name: "Zwiastun - Pakiet Arktyczny",
         artist: "Planet Zoo",
         img: "music",
         src: "music-112"
     },
     {
-        name: "Zwiastun - Pakiet Afryka",
+        name: "Zwiastun - Pakiet Ameryka Południowa",
         artist: "Planet Zoo",
         img: "music",
         src: "music-113"
     },
     {
-        name: "Zwiastun - Pakiet Ameryki Północnej",
+        name: "Zwiastun - Pakiet Australia",
         artist: "Planet Zoo",
         img: "music",
         src: "music-114"
     },
     {
-        name: "Zwiastun - Pakiet Europa",
+        name: "Zwiastun - Pakiet Wodny",
         artist: "Planet Zoo",
         img: "music",
         src: "music-115"
     },
     {
-        name: "Zwiastun - Pakiet Mokradeł",
+        name: "Zwiastun - Pakiet Azji Południowo-Wschodniej",
         artist: "Planet Zoo",
         img: "music",
         src: "music-116"
     },
     {
-        name: "Zwiastun - Pakiet Ochrona przyrody",
+        name: "Zwiastun - Pakiet Afryka",
         artist: "Planet Zoo",
         img: "music",
         src: "music-117"
     },
     {
-        name: "Zwiastun - Pakiet Zmierzch",
+        name: "Zwiastun - Pakiet Ameryki Północnej",
         artist: "Planet Zoo",
         img: "music",
         src: "music-118"
+    },
+    {
+        name: "Zwiastun - Pakiet Europa",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-119"
+    },
+    {
+        name: "Zwiastun - Pakiet Mokradeł",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-120"
+    },
+    {
+        name: "Zwiastun - Pakiet Ochrona przyrody",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-121"
+    },
+    {
+        name: "Zwiastun - Pakiet Zmierzch",
+        artist: "Planet Zoo",
+        img: "music",
+        src: "music-122"
     }
 ];
