@@ -442,6 +442,7 @@ iframe {
     color: white;
     float: left;
     padding: 10px;
+    transition: 0.5s;
 }
 
 #powrot {
@@ -466,6 +467,7 @@ iframe {
     float: left;
     padding: 3px;
     clear: both;
+    transition: 0.5s;
 }
 
 .kolumna2_aktualizacje {
@@ -476,6 +478,7 @@ iframe {
     float: left;
     padding: 5px;
     padding-left: 10px;
+    transition: 0.5s;
 }
 
 .kolumna {
@@ -485,6 +488,7 @@ iframe {
     margin: 2px;
     opacity: 90%;
     text-align: center;
+    transition: 0.5s;
 }
 
 .kolumna2 {
@@ -495,16 +499,17 @@ iframe {
     border: white solid 2px;
     margin: 1px;
     text-align: center;
+    transition: 0.5s;
 }
 
 .kolumna:hover {
     opacity: 70%;
-    transition: all 0.3s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .kolumna2:hover {
     opacity: 70%;
-    transition: all 0.3s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .info {
