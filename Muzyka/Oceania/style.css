@@ -108,7 +108,7 @@ body {
     height: 6px;
     width: 100%;
     border-radius: 50px;
-    background: #ecc969;
+    background: #f59dd3;
     cursor: pointer;
 }
 
@@ -117,7 +117,7 @@ body {
     width: 0%;
     position: relative;
     border-radius: inherit;
-    background: linear-gradient(#b68a12, #7a5f0d);
+    background: linear-gradient(#8b3469, #562041);
 }
 
 .progress-bar::before {
@@ -157,7 +157,7 @@ body {
 .controls i {
     font-size: 28px;
     user-select: none;
-    background: linear-gradient(#b68a12, #7a5f0d);
+    background: linear-gradient(#8b3469, #562041);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -185,7 +185,7 @@ body {
     justify-content: center;
     border-radius: 50%;
     background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%);
-    box-shadow: 0px 0px 5px #7a5f0d;
+    box-shadow: 0px 0px 5px #562041;
 }
 
 .play-pause::before {
@@ -194,7 +194,7 @@ body {
     height: 43px;
     width: 43px;
     border-radius: inherit;
-    background: linear-gradient(#b68a12, #7a5f0d);
+    background: linear-gradient(#8b3469, #562041);
 }
 
 .play-pause i {
@@ -289,5 +289,5 @@ ul li .audio-duration {
 ul li.playing {
     pointer-events: none;
     font-weight: bold;
-    color: #c59915;
+    color: #ad4184;
 }
