@@ -12,10 +12,10 @@ body {
 
 ol.menu {
     list-style-type: none;
-    font-size: 30px;
+    font-size: 1.65vw;
     height: 2em;
     line-height: 2em;
-    margin-left: -35px;
+    margin-left: -40px;
     margin-bottom: 0px;
 }
 
@@ -34,8 +34,8 @@ ol.menu a {
 
 ol.menu>li {
     float: left;
-    width: 300px;
-    margin-left: 1px;
+    width: 19.89%;
+    margin-left: 0.1%;
     background: linear-gradient(#107e59, #0b6144);
     height: 2em;
 }
@@ -141,7 +141,7 @@ input {
 
 input[type=text] {
     opacity: 100%;
-    padding: 10px;
+    padding: 1%;
     margin: 0%;
     color: white;
     font-weight: bold;
@@ -223,8 +223,10 @@ input[type=radio]:checked+label {
 }
 
 .scrollTopButton {
-    width: 60px;
-    height: 60px;
+    width: 4%;
+    min-width: 4vw;
+    height: auto;
+    min-height: 4vw;
     position: fixed;
     visibility: hidden;
     overflow: hidden;
@@ -232,6 +234,7 @@ input[type=radio]:checked+label {
     border: white 1px solid;
     border-radius: 100%;
     background-image: url("Ikony/scrollup.png");
+    background-size: cover;
     right: 20px;
     bottom: 20px;
     transition: all 0.5s ease-in-out;
@@ -240,6 +243,7 @@ input[type=radio]:checked+label {
 .scrollTopButton.show {
     visibility: visible;
     cursor: pointer;
+    animation: fadeIn ease-in .5s backwards;
     transition: all 0.5s ease-in-out;
 }
 
@@ -266,17 +270,18 @@ header {
 
 footer {
     clear: both;
+    font-size: 1.1vw;
     border: 3px solid black;
     background: linear-gradient(#07412d, #052b1e);
     margin: -8px;
 }
 
 .stopka {
-    width: 250px;
+    width: 17%;
 }
 
 .stopka_znaczki {
-    width: 120px;
+    width: 8%;
 }
 
 img.stopka:hover {
@@ -379,13 +384,13 @@ td.muzyka {
 
 .tytul {
     text-align: center;
-    font-size: 50px;
+    font-size: 3.3vw;
     color: white;
 }
 
 .opis {
     text-align: center;
-    font-size: 30px;
+    font-size: 2vw;
     color: white;
 }
 
@@ -395,7 +400,7 @@ td.muzyka {
 
 .pojecia {
     color: white;
-    font-size: 20px;
+    font-size: 1.3vw;
 }
 
 .powrot {
@@ -424,25 +429,26 @@ td.muzyka {
 
 video,
 iframe {
-    margin-top: -8px;
-    margin-bottom: 20px;
-    border: white solid 3px;
+    margin-top: -1%;
+    margin-bottom: 0.5%;
+    border: white solid 2px;
 }
 
 .podpis_filmu {
     text-align: left;
     width: 80%;
-    margin-top: -20px;
+    margin: 0%;
     color: white;
+    font-size: 1vw;
 }
 
 #kolumna {
     width: 48%;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.3vw;
     color: white;
     float: left;
-    padding: 10px;
+    padding: 1%;
     transition: 0.5s;
 }
 
@@ -582,18 +588,17 @@ th,
 td {
     border: black solid 2px;
     border-collapse: collapse;
-    margin: 3px;
-    padding: 5px;
+    margin: 1%;
 }
 
 th {
-    font-size: 20px;
+    font-size: 1.35vw;
     background-color: #666;
     opacity: 90%;
 }
 
 td {
-    font-size: 17px;
+    font-size: 1.15vw;
     background-color: #ddd;
     color: black;
     opacity: 90%;
@@ -607,13 +612,13 @@ th.zoopedia {
 }
 
 th.filtr {
-    font-size: 25px;
+    font-size: 1.6vw;
     background: linear-gradient(#0d684a, #063626);
     opacity: 90%;
 }
 
 td.filtr {
-    font-size: 22px;
+    font-size: 1.4vw;
     background: linear-gradient(#0d7955, #084b33);
     opacity: 90%;
     text-shadow: black 0.1em 0.1em 0.2em;
@@ -699,8 +704,8 @@ td.zoopedia {
 
 .galeria {
     float: left;
-    margin: 1px;
-    margin-left: 0px;
+    margin-left: 0.5%;
+    margin-bottom: 0.5%;
     border: white solid 2px;
     border-radius: 10%;
     transition: .5s ease-out .1s;
