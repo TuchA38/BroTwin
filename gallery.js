@@ -108,16 +108,30 @@
                 elementWidth = element[0].firstChild.naturalWidth,
                 windowScale = windowHeight / windowWidth,
                 elementScale = elementHeight / elementWidth;
-
-            if (windowHeight < elementHeight && (elementScale = windowScale)) {
-                element[0].style.height = windowHeight + "px";
-                element[0].style.width = (windowHeight / elementHeight) * elementWidth + "px";
-            } else if (windowWidth < elementWidth && (elementScale < windowScale)) {
-                element[0].style.width = windowWidth + "px";
-                element[0].style.height = (windowWidth / elementWidth) * elementHeight + "px";
+            if (windowHeight < windowWidth) {
+                if (windowHeight < elementHeight && (elementScale = windowScale)) {
+                    element[0].style.height = windowHeight + "px";
+                    element[0].style.width = (windowHeight / elementHeight) * elementWidth + "px";
+                } else if (windowWidth < elementWidth && (elementScale < windowScale)) {
+                    element[0].style.width = windowWidth + "px";
+                    element[0].style.height = (windowWidth / elementWidth) * elementHeight + "px";
+                } else {
+                    element[0].style.height = elementHeight + "px";
+                    element[0].style.width = elementWidth + "px";
+                }
             } else {
-                element[0].style.height = elementHeight + "px";
-                element[0].style.width = elementWidth + "px";
+                windowHeight = window.innerHeight * 0.25;
+                windowWidth = window.innerWidth * 0.25;
+                if (windowHeight < elementHeight && (elementScale = windowScale)) {
+                    element[0].style.height = windowHeight + "px";
+                    element[0].style.width = (windowHeight / elementHeight) * elementWidth + "px";
+                } else if (windowWidth < elementWidth && (elementScale < windowScale)) {
+                    element[0].style.width = windowWidth + "px";
+                    element[0].style.height = (windowWidth / elementWidth) * elementHeight + "px";
+                } else {
+                    element[0].style.height = elementHeight + "px";
+                    element[0].style.width = elementWidth + "px";
+                }
             }
         };
 
@@ -272,7 +286,7 @@
         gallery.show = function() {
             gallery.mask.addClass(settings.activeNameClass);
             if (settings.hiddenScroll) {
-                body[0].style.marginRight = gallery.getScrollBar() + "px";
+                body[0].style.marginRight = gallery.getScrollBar() + "%";
                 html.addClass(settings.hiddenScrollClass);
             }
         };
