@@ -257,7 +257,7 @@ body {
 
 header {
     clear: both;
-    border: 3px solid black;
+    border: solid black 0.2vw;
     background: linear-gradient(#0a5c3f, #084630);
     margin: -8px;
 }
@@ -271,9 +271,10 @@ header {
 footer {
     clear: both;
     font-size: 1.1vw;
-    border: 3px solid black;
+    border: solid black 0.2vw;
     background: linear-gradient(#07412d, #052b1e);
     margin: -8px;
+    margin-top: 1%;
 }
 
 .stopka {
@@ -431,7 +432,7 @@ video,
 iframe {
     margin-top: -1%;
     margin-bottom: 0.5%;
-    border: white solid 2px;
+    border: white solid 0.15vw;
 }
 
 .podpis_filmu {
@@ -586,7 +587,7 @@ a {
 table,
 th,
 td {
-    border: black solid 2px;
+    border: black solid 0.15vw;
     border-collapse: collapse;
     margin: 1%;
 }
@@ -706,7 +707,7 @@ td.zoopedia {
     float: left;
     margin-left: 0.5%;
     margin-bottom: 0.5%;
-    border: white solid 2px;
+    border: white solid 0.15vw;
     border-radius: 10%;
     transition: .5s ease-out .1s;
 }
