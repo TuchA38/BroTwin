@@ -2,6 +2,14 @@ html,
 body {
     font: 1em/1.75 Verdana, Arial, Helvetica, sans-serif;
     cursor: default;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    /* To rozciąga zawartość, aby wypełnić dostępną przestrzeń */
 }
 
 @keyframes fadeIn {
@@ -96,7 +104,7 @@ ol.menu>li>ul>li {
 /* wygląd elementu - a - w części rozwijanej */
 
 ol.menu>li>ul>li>a {
-    border-top: 1px solid rgb(0, 0, 0);
+    border-top: 0.15vw solid rgb(0, 0, 0);
 }
 
 
@@ -274,7 +282,7 @@ footer {
     border: solid black 0.2vw;
     background: linear-gradient(#07412d, #052b1e);
     margin: -8px;
-    margin-top: 1%;
+    margin-top: auto;
 }
 
 .stopka {
