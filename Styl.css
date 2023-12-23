@@ -517,7 +517,9 @@ iframe {
     opacity: 90%;
     text-shadow: black 0.1em 0.1em 0.2em;
     border: white solid 0.15vw;
-    margin: 1%;
+    border-collapse: collapse;
+    margin: 0%;
+    margin-top: -1%;
     text-align: center;
     transition: 0.5s;
 }
