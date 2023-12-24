@@ -190,15 +190,11 @@ input[type=radio]:checked+label {
     color: rgb(211, 224, 92);
     font-weight: normal;
     text-shadow: black 0.1em 0.1em 0.2em;
-    margin: 0%;
-    padding: 0%;
 }
 
 .aktualizacje input[type=radio]+label {
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
-    margin: -10%;
-    padding: 0%;
 }
 
 .info-all {
