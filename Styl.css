@@ -380,7 +380,7 @@ td.muzyka {
 
 .akapit {
     text-align: left;
-    font-size: large;
+    font-size: 1.2vw;
     color: white;
 }
 
@@ -414,7 +414,7 @@ td.muzyka {
 
 .powrot {
     text-align: left;
-    font-size: 25px;
+    font-size: 1.6vw;
     color: rgb(250, 156, 15);
     text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -462,9 +462,9 @@ iframe {
 }
 
 #powrot {
-    width: 33%;
+    width: 50%;
     float: left;
-    padding: 2px;
+    padding: 0%;
 }
 
 #historia {
