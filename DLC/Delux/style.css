@@ -32,10 +32,10 @@ body {
 
 .wrapper {
     width: 680px;
-    padding: 5px 10px;
+    padding: 2vw 4vw;
     overflow: hidden;
     position: relative;
-    border-radius: 15px;
+    border-radius: 3vw;
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0px 6px 15px var(--lightbshadow);
 }
@@ -55,7 +55,7 @@ body {
 }
 
 .top-bar i {
-    font-size: 30px;
+    font-size: 3vw;
     color: var(--lightblack);
 }
 
@@ -64,14 +64,15 @@ body {
 }
 
 .top-bar span {
-    font-size: 18px;
-    margin-left: -3px;
+    font-size: 3.2vw;
     color: var(--lightblack);
 }
 
 .img-area {
     width: 100%;
-    height: 476px;
+    height: auto;
+    min-height: 50vw;
+    max-height: 50vw;
     overflow: hidden;
     margin-top: 15px;
     border-radius: 15px;
@@ -94,19 +95,19 @@ body {
 }
 
 .song-details .name {
-    font-size: 21px;
+    font-size: 3.7vw;
 }
 
 .song-details .artist {
-    font-size: 18px;
+    font-size: 3.2vw;
     opacity: 0.9;
-    line-height: 35px;
+    line-height: 3vw;
 }
 
 .progress-area {
     height: 6px;
     width: 100%;
-    border-radius: 50px;
+    border-radius: 5%;
     background: #8ff1d1;
     cursor: pointer;
 }
@@ -145,16 +146,17 @@ body {
 }
 
 .song-timer span {
-    font-size: 13px;
+    font-size: 2vw;
     color: var(--lightblack);
 }
 
 .controls {
-    margin: 20px 0 5px 0;
+    margin: 2% 0 5px 0;
+    margin-top: 6vw;
 }
 
 .controls i {
-    font-size: 28px;
+    font-size: 5vw;
     user-select: none;
     background: linear-gradient(#139469, #0d684a);
     background-clip: text;
@@ -164,42 +166,42 @@ body {
 
 .controls i:nth-child(2),
 .controls i:nth-child(4) {
-    font-size: 43px;
+    font-size: 8vw;
 }
 
 .controls #prev {
-    margin-right: -13px;
+    margin-right: -1%;
 }
 
 .controls #next {
-    margin-left: -13px;
+    margin-left: -1%;
 }
 
 .controls .play-pause {
-    height: 54px;
-    width: 54px;
+    height: 5vw;
+    width: 5vw;
     display: flex;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%);
-    box-shadow: 0px 0px 5px #0d684a;
+    box-shadow: 0vw 0vw 5vw #0d684a;
 }
 
 .play-pause::before {
     position: absolute;
     content: "";
-    height: 43px;
-    width: 43px;
+    height: 8vw;
+    width: 8vw;
     border-radius: inherit;
     background: linear-gradient(#139469, #0d684a);
 }
 
 .play-pause i {
-    height: 43px;
-    width: 43px;
-    line-height: 43px;
+    height: 8vw;
+    width: 8vw;
+    line-height: 8vw;
     text-align: center;
     background: inherit;
     background-clip: text;
@@ -232,49 +234,51 @@ body {
 .header .row {
     display: flex;
     align-items: center;
-    font-size: 19px;
+    font-size: 3vw;
     color: var(--lightblack);
 }
 
 .header .row i {
     cursor: default;
+    font-size: 6vw;
 }
 
 .header .row span {
-    margin-left: 5px;
+    margin-left: 1%;
 }
 
 .header #close {
-    font-size: 22px;
+    font-size: 4vw;
     color: var(--lightblack);
 }
 
 .music-list ul {
-    margin: 10px 0;
-    max-height: 260px;
+    margin: 0.2%;
+    max-height: 50vw;
     overflow: auto;
 }
 
 .music-list ul::-webkit-scrollbar {
-    width: 0px;
+    width: 0%;
 }
 
 .music-list ul li {
     list-style: none;
     display: flex;
     cursor: pointer;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
+    padding-bottom: 1%;
+    margin-bottom: 1%;
     color: var(--lightblack);
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 0.15vw solid #E5E5E5;
+    font-size: 2.4vw;
 }
 
 .music-list ul li:last-child {
-    border-bottom: 0px;
+    border-bottom: 0%;
 }
 
 .music-list ul li .row span {
-    font-size: 17px;
+    font-size: 2.5vw;
 }
 
 .music-list ul li .row p {
@@ -282,7 +286,7 @@ body {
 }
 
 ul li .audio-duration {
-    font-size: 16px;
+    font-size: 2.5vw;
 }
 
 ul li.playing {
