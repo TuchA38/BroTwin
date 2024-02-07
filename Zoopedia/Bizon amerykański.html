@@ -4,33 +4,51 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bizon amerykański</title>
     <link rel="shortcut icon" href="Ikonki/Bizon amerykański.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Bizon_amerykański" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Bizon_amerykański" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Bizon amerykański.jpg" alt="Bizon amerykański"><b>Bizon amerykański</b><br><i style="font-size: 27px;">(Bison bison bison)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Bizon amerykański.jpg" alt="Bizon amerykański">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Ssaki</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Parzystokopytne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Wołowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Bydło</i></div>
+                </div>
+                <p class="naglowek"><b>Bizon amerykański</b><br><i style="font-size: 1.8vw;">(Bison bison bison)</i></p>
                 <p class="info"><b class="bz">Bliski zagrożenia</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: 80 000</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: 80 000</p>
             </div>
             <hr>
-            <p class="akapit">Bizon amerykański <i>(Bison bison bison)</i> jest dużym przedstawicielem kopytnych, występującym na terenie Stanów Zjednoczonych i Kanady. Charakteryzuje się dużą głową, wydatnym garbem nad łopatkami i solidnymi przednimi kończynami, pokrytymi
-                kudłatym futrem. Kończyny tylne zwierzęcia są mniej umięśnione i pokryte cieńszą warstwą sierści. Obie płcie mają rogi o podobnej wielkości, ale samce są znacznie cięższe ze względu na większą masę mięśniową.<br>
+            <p class="akapit">Bizon amerykański <i>(Bison bison bison)</i> jest dużym przedstawicielem kopytnych, występującym na terenie Stanów Zjednoczonych i Kanady. Charakteryzuje się dużą głową, wydatnym garbem nad łopatkami i&nbsp;solidnymi przednimi kończynami,
+                pokrytymi kudłatym futrem. Kończyny tylne zwierzęcia są mniej umięśnione i&nbsp;pokryte cieńszą warstwą sierści. Obie płcie mają rogi o&nbsp;podobnej wielkości, ale samce są znacznie cięższe ze względu na większą masę mięśniową.<br>
                 <br> Bizon amerykański nie jest obecnie gatunkiem zagrożonym, jednak w XIX wieku niemal wyginął na skutek polowań. Pierwotna, populacja tego gatunku w czasach przed europejską kolonizacją, wynoszacą 50 milionów osobników, została gwałtownie
-                zredukowana do zaledwie 1000 sztuk. Bizon znalazł się pod ochroną w początku XX&nbspwieku. Dzięki przeprowadzanym w niewoli programom hodowlanym, a następnie ponownemu wprowadzeniu gatunku do środowiska naturalnego, udało się zapobiec
+                zredukowana do zaledwie 1000 sztuk. Bizon znalazł się pod ochroną w początku XX&nbsp;wieku. Dzięki przeprowadzanym w niewoli programom hodowlanym, a następnie ponownemu wprowadzeniu gatunku do środowiska naturalnego, udało się zapobiec
                 jego całkowitemu wymarciu. Obecnie populacja bizona amerykańskiego jest stabilna, choć nadal zagrożona ze względu na utratę siedlisk. Dużą rolę odgrywa tu także ryzyko zmniejszenia różnorodności genetycznej z powodu gwałtownego zdziesiątkowania
                 i niemal wymarcia gatunku, po którym nastąpiła sztuczna selekcja osobników na skutek udomowienia.
             </p>
@@ -48,7 +66,7 @@
                         <tr>
                             <td style=" text-align: center;">Ameryka Północna</td>
                             <td style=" text-align: center;">Kanada, Stany Zjednoczone</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Step.png" alt="step"><img id="biom" src="../Ikony/Tajga.png" alt="tajga"></td>
+                            <td style=" text-align: center;"><img id="biom" style="width:2.6vw;" src="../Ikony/Step.png" alt="step"><img id="biom" style="width:2.6vw;" src="../Ikony/Tajga.png" alt="tajga"></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Bizon amerykański.jpg">
@@ -63,7 +81,7 @@
                             <td>3-15<br>(maks. 1 samiec, samice do 14)</td>
                         </tr>
                         <tr>
-                            <th>Wielkość grupy kawalerskiej samców<br>(bez młodych osobników)</th>
+                            <th>Wielkość&nbsp;grupy&nbsp;kawalerskiej&nbsp;samców<br>(bez młodych osobników)</th>
                             <td>3-15</td>
                         </tr>
                         <tr>
@@ -93,19 +111,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 1,70 m wysokości w kłębie &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 1,70 m wysokości w kłębie &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;1,70 m wysokości w kłębie</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;1,70 m wysokości w kłębie</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 26 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 26 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;26 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;26 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 725 kg &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 450 kg &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;725 kg &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;450 kg</div>
                             </td>
                         </tr>
                     </table>
@@ -144,13 +163,13 @@
             <div class="info4">
                 <p style="text-align: center;"><b>Potrzeby społeczne</b></p>
                 <p class="akapit">Bizony żyją w stadach o złożonej dynamice społecznej, liczących od 15 do 400 osobników. Samice żyją w spokrewnionych grupach wraz ze swoim potomstwem, natomiast młode samce przebywają w tzw. „stadach kawalerskich”, dopóki nie osiągną rozmiarów
-                    dojrzałych osobników w wieku około 6 lat. Wtedy stają się samotnymi bykami dominującymi.</p>
+                    dojrzałych osobników w&nbsp;wieku około 6 lat. Wtedy stają się samotnymi bykami dominującymi.</p>
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
-                <p class="akapit">W okresie godowym byki próbują dołączać do grup samic i pilnować ich pojedynczych członkiń, nie pozwalając na zbliżanie się do nich innych samców. Byk dominujący ma większe szanse powodzenia, dlatego też ma okazję do&nbspkopulacji z większą
-                    liczbą samic. Ciąża trwa średnio 285 dni, a na świat przychodzi jedno cielę. Cielęta płci żeńskiej pozostają ze stadem matki przez całe życie, a młode samce odchodzą w wieku 2-3 lat i dołączają do stada kawalerskiego. Pozostają w nim
-                    do momentu osiągnięcia wieku i rozmiarów pozwalających na uzyskanie pozycji byka dominującego.
+                <p class="akapit">W okresie godowym byki próbują dołączać do grup samic i pilnować ich pojedynczych członkiń, nie pozwalając na zbliżanie się do nich innych samców. Byk dominujący ma większe szanse powodzenia, dlatego też ma okazję do&nbsp;kopulacji z większą
+                    liczbą samic. Ciąża trwa średnio 285 dni, a&nbsp;na świat przychodzi jedno cielę. Cielęta płci żeńskiej pozostają ze stadem matki przez całe życie, a młode samce odchodzą w wieku 2-3 lat i&nbsp;dołączają do stada kawalerskiego. Pozostają
+                    w nim do momentu osiągnięcia wieku i&nbsp;rozmiarów pozwalających na uzyskanie pozycji byka dominującego.
                 </p>
             </div>
             <div style="clear: both;"></div>
