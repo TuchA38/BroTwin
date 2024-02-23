@@ -12,6 +12,13 @@
 </head>
 
 <body onselectstart="return false;">
+    <div id="popup" class="cień">
+        <center>
+            <p style="margin-top: -3%;">Wybierz swoją wersję, aby dostosować swoje wrażenia:</p><br>
+            <button class="button cień opcja" style="width: 40%;" onclick="wybierzWersje('pc')"><img class="wybor" style="width:90%; margin-top: -1%;" src="Ikony/Planet Zoo_pc.png" alt="PC"></button>
+            <button class="button cień opcja" style="width: 40%;" onclick="wybierzWersje('console')"><img class="wybor" style="width:90%; margin-top: -1%;" src="Ikony/Planet Zoo_konsola.png" alt="PC"></button>
+        </center>
+    </div>
     <div class="content">
         <div id="demo1">
             <header>
@@ -52,8 +59,14 @@
                 </center>
             </header>
             <div style="clear: both;"></div>
-            <div style="animation: fadeIn ease-in .5s backwards;">
-                <h1 class="tytul cień" style="margin-top: -6px;">Strona główna</h1>
+            <div style="animation: fadeIn ease-in .5s backwards; ">
+                <div id="sidebar" class="cień">
+                    <center>
+                        <p style="margin-top: -2%;">Wersja:</p>
+                        <button class="button" onclick="otworzPopup()"><img style="width:62%; margin-top: -10%; transition: .5s ease-out .1s;" src="Ikony/pc_konsola.png" alt="PC/Konsola"></button>
+                    </center>
+                </div>
+                <h1 class="tytul cień" style="margin-top: -6%;">Strona główna</h1>
                 <center>
                     <img style="width:32%; margin-top: -1%;" src="Ikony/Planet Zoo_logo.png" alt="Zoopedia">
                 </center>
@@ -68,7 +81,7 @@
                 <div id="kolumna" class="cień">
                     <p style="text-align: center; font-size: 1.6vw; margin-top: -1%;"><i>Symulacja działania</i></p>
                     <p>Poznaj świat niesamowitych zwierząt. Od figlarnych lwiątek po potężne słonie - każde zwierzę w Planet Zoo to myśląca, czująca jednostka o&nbsp;charakterystycznym wyglądzie i osobowości. Twórz szczegółowe siedliska, aby przenieść naturalne
-                        środowisko zwierząt do domu, badaj i&nbsp;zarządzaj każdym gatunkiem, aby umożliwić mu rozwój, i pomóż zwierzętom założyć rodziny, aby przekazać ich geny przyszłym pokoleniom.
+                        środowisko zwierząt do domu, badaj i zarządzaj każdym gatunkiem, aby umożliwić mu rozwój, i pomóż zwierzętom założyć rodziny, aby przekazać ich geny przyszłym pokoleniom.
                     </p>
                 </div>
                 <div id="kolumna" class="cień">
@@ -80,8 +93,8 @@
                 <div style="clear: both;"></div>
                 <div id="kolumna" class="cień">
                     <p style="text-align: center; font-size: 1.6vw; margin-top: -1%;"><i>Nieograniczona kreatywność</i></p>
-                    <p>Potężne narzędzia konstrukcyjne Planet Zoo pozwalają bez wysiłku uczynić Twoje zoo wyjątkowym. Każda kreatywna decyzja ma wpływ na życie zwierząt i&nbsp;doświadczenia odwiedzających. Daj się ponieść wyobraźni i&nbsp;wykopuj jeziora
-                        i&nbsp;rzeki, wznoś wzgórza i góry, rzeźb ścieżki i jaskinie, buduj wspaniałe ogrody zoologiczne, mając do wyboru unikalne tematy i setki elementów budowlanych.
+                    <p>Potężne narzędzia konstrukcyjne Planet Zoo pozwalają bez wysiłku uczynić Twoje zoo wyjątkowym. Każda kreatywna decyzja ma wpływ na życie zwierząt i&nbsp;doświadczenia odwiedzających. Daj się ponieść wyobraźni i wykopuj jeziora i&nbsp;rzeki,
+                        wznoś wzgórza i góry, rzeźb ścieżki i jaskinie, buduj wspaniałe ogrody zoologiczne, mając do wyboru unikalne tematy i setki elementów budowlanych.
                     </p>
                 </div>
                 <div id="kolumna" class="cień">
@@ -174,8 +187,7 @@
                     </table>
                     <div><img src="Ikony/Pegi3.png" width="10%" style="margin: 1.4%"><img src="Ikony/Cobra_logo.png" width="10%" style="margin: 1.4%"></div>
                 </center>
-                <div style="clear: both; margin-top: 30px;"></div>
-                <span class="scrollTopButton"></span>
+                <div style="clear: both;"></div>
             </div>
         </div>
     </div>
@@ -206,8 +218,24 @@
                 }, 500, 'linear');
             });
         });
-    </script>
 
+        function wybierzWersje(wersja) {
+            localStorage.setItem('wybor_wersji', wersja);
+            if (wersja === 'pc') {
+                window.location.href = 'Strona główna.html';
+            } else if (wersja === 'console') {
+                window.location.href = 'Strona główna - konsola.html';
+            }
+        }
+
+        function otworzPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+        if (localStorage.getItem('wybor_wersji') === null) {
+            otworzPopup();
+        }
+    </script>
+    <span class="scrollTopButton" onclick="scrollToTop()"></span>
 </body>
 
 </html>

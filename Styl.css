@@ -7,6 +7,83 @@ body {
     min-height: 100vh;
 }
 
+@media only screen and (max-width: 600px) {
+    #popup {
+        text-align: center;
+    }
+    .button {
+        display: block;
+        margin-bottom: 2%;
+    }
+    .button.opcja {
+        margin-left: -30%;
+    }
+    .wybor {
+        min-width: 180%;
+        height: auto;
+        margin-top: 2%;
+    }
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(44, 255, 185);
+    padding: 5%;
+    border-radius: 5%;
+    color: white;
+    z-index: 2000;
+    font-size: 2vw;
+    animation: fadeIn ease-in .3s backwards;
+    border: white 0.2vw solid;
+    width: 80%;
+    height: 70%;
+}
+
+#popup::before {
+    content: "";
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(7, 68, 48, 0.7);
+    /* Przyciemnione tło */
+    z-index: -1000;
+    /* Umieść pod popupem */
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 0%;
+    transition: .3s ease-out .1s;
+}
+
+.button:hover {
+    opacity: 70%;
+}
+
+#sidebar {
+    position: relative;
+    transform: translateY(15%);
+    background-color: #16aa79;
+    border: white 0.1vw solid;
+    color: white;
+    opacity: 90%;
+    padding: 1%;
+    width: 8vw;
+    border-radius: 10%;
+    font-size: 1.2vw;
+    z-index: 1000;
+}
+
 .content {
     flex: 1;
     /* To rozciąga zawartość, aby wypełnić dostępną przestrzeń */
@@ -489,10 +566,10 @@ iframe {
 
 #historia {
     text-align: left;
-    font-size: 20px;
+    font-size: 1.3vw;
     color: white;
     float: left;
-    padding: 10px;
+    padding: 1%;
 }
 
 .kolumna1_aktualizacje {
