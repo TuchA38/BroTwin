@@ -7,6 +7,46 @@ body {
     min-height: 100vh;
 }
 
+
+/* WebKit (Chrome, Safari, Opera) */
+
+::-webkit-scrollbar {
+    width: 2vw;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #08583e;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #13c489;
+    border-radius: 0.15vw #0b7957;
+}
+
+
+/* Firefox */
+
+* {
+    scrollbar-width: 2vw;
+    scrollbar-color: #13c489 #08583e;
+}
+
+
+/* Edge i Internet Explorer */
+
+*::-webkit-scrollbar {
+    width: 2vw;
+}
+
+*::-webkit-scrollbar-track {
+    background: #08583e;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #13c489;
+    border-radius: 0.15vw #0b7957;
+}
+
 @media only screen and (max-width: 600px) {
     #popup {
         text-align: center;
