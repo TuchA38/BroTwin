@@ -11,7 +11,7 @@ body {
 /* WebKit (Chrome, Safari, Opera) */
 
 ::-webkit-scrollbar {
-    width: 2vw;
+    width: 1vw;
 }
 
  ::-webkit-scrollbar-track {
@@ -27,7 +27,7 @@ body {
 /* Firefox */
 
 * {
-    scrollbar-width: 2vw;
+    scrollbar-width: 1vw;
     scrollbar-color: #13c489 #08583e;
 }
 
@@ -35,7 +35,7 @@ body {
 /* Edge i Internet Explorer */
 
 *::-webkit-scrollbar {
-    width: 2vw;
+    width: 1vw;
 }
 
 *::-webkit-scrollbar-track {
