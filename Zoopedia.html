@@ -20,14 +20,14 @@
             width: 100%;
             height: 100%;
             cursor: pointer;
-            margin-top: -100px;
             transition: 0.5s;
         }
         
         input {
             opacity: 0;
-            margin-top: -20px;
+            margin-bottom: -5vw;
             transition: 0.5s;
+            max-width: 0.1vw;
         }
         
         td {
@@ -89,9 +89,8 @@
                 <h1 class="tytul cień" style="margin-top: -0.5%;">Zoopedia</h1>
                 <p class="cień opis" style="margin-top: -2%;"><i>Witaj w Zoopedii Planet Zoo!<br> Dogłębnie tutaj opisano każde zwierzę, które znajduje się w naszym zoo.<br> Dowiedz się więcej informacji na temat danego gatunku w Zoopedii.<br> Życzymy miłego czytania!</i>
                 </p>
-
                 <span class="filter-categories">
-            <table style="text-align: center; margin: auto; width: 90%;">
+            <table style="text-align: center; margin: auto; width: 95%;">
                 <tr>
                     <td colspan="2" class="filtr zoopedia" style="background: linear-gradient(#0d684a, #063626);">
                         <center><input type="checkbox" id="filter-all-1" class="filter-input filter-all all" name="filter-1" checked="" onclick="location.reload()"><label for="filter-all-1" class="filter-label info-all"><span class="wybor" style="height: 100%; padding-top: 1%; padding-bottom: 1%; margin-top: 0%;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="cień" style="font-size: 1.6vw;"><b>Zresetuj filtry</b></i></font></font></span></label>
@@ -99,7 +98,7 @@
                 </td>
                 <th colspan="3" class="filtr cień" style="color:  rgb(211, 224, 92); text-align: center; font-size: 1.6vw; font-weight: bold; margin-top: -1%;"><i><span id="text" style="width: 100%;">Ilość zwierząt:</span></i><i><span id="ilosc">172</span></i>
                 </th>
-                <th colspan="2" class="filtr"><img style="width: 10%; margin-bottom: 1%;" src="Ikony/lupa.png" alt="lupa"><br><input type="text" autocomplete="off" name="szukaj" class="cień" placeholder="Wyszukaj nazwę gatunku..."></th>
+                <th colspan="2" class="filtr"><img style="width: 10%; margin-bottom: 1%;" src="Ikony/lupa.png" alt="lupa"><br><input type="text" autocomplete="off" name="szukaj" class="cień" style="min-width: 25vw;" placeholder="Wyszukaj nazwę gatunku..."></th>
                 </tr>
                 <tr>
                     <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;" class="cień">Kategoria:</font></font></span></th>
@@ -116,13 +115,13 @@
                     <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;" class="cień">Kontynent:</font></font></span></th>
                 </tr>
                 <tr>
-                    <td class="zoopedia"><input type="checkbox" id="afryka" class="filter-input" name="filter-1"><label for="afryka" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Afryka</span></font></font></label></td>
-                    <td class="zoopedia"><input type="checkbox" id="azja" class="filter-input" name="filter-1"><label for="azja" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Azja</span></font></font></label></td>
-                    <td class="zoopedia"><input type="checkbox" id="amerykapolnocna" class="filter-input" name="filter-1"><label for="amerykapolnocna" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Ameryka Północna</span></font></font></label></td>
-                    <td class="zoopedia"><input type="checkbox" id="amerykapoludniowa" class="filter-input" name="filter-1"><label for="amerykapoludniowa" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Ameryka Południowa</span></font></font></label></td>
-                    <td class="zoopedia"><input type="checkbox" id="europa" class="filter-input" name="filter-1"><label for="europa" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Europa</span></font></font></label></td>
-                    <td class="zoopedia"><input type="checkbox" id="australia" class="filter-input" name="filter-1"><label for="australia" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Australia i Oceania</span></font></font></label></td>
-                    <td class="zoopedia"><input type="checkbox" id="antarktyda" class="filter-input" name="filter-1"><label for="antarktyda" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Antarktyda</span></font></font></label></td>
+                    <td class="zoopedia" style="width: 13vw;"><input type="checkbox" id="afryka" class="filter-input" name="filter-1"><label for="afryka" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Afryka</span></font></font></label></td>
+                    <td class="zoopedia" style="width: 13vw;"><input type="checkbox" id="azja" class="filter-input" name="filter-1"><label for="azja" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Azja</span></font></font></label></td>
+                    <td class="zoopedia" style="width: 13vw;"><input type="checkbox" id="amerykapolnocna" class="filter-input" name="filter-1"><label for="amerykapolnocna" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Ameryka Północna</span></font></font></label></td>
+                    <td class="zoopedia" style="width: 14vw;"><input type="checkbox" id="amerykapoludniowa" class="filter-input" name="filter-1"><label for="amerykapoludniowa" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Ameryka Południowa</span></font></font></label></td>
+                    <td class="zoopedia" style="width: 8vw;"><input type="checkbox" id="europa" class="filter-input" name="filter-1"><label for="europa" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Europa</span></font></font></label></td>
+                    <td class="zoopedia" style="width: 14vw;"><input type="checkbox" id="australia" class="filter-input" name="filter-1"><label for="australia" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Australia i Oceania</span></font></font></label></td>
+                    <td class="zoopedia" style="width: 15vw;"><input type="checkbox" id="antarktyda" class="filter-input" name="filter-1"><label for="antarktyda" class="filter-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor">Antarktyda</span></font></font></label></td>
                 </tr>
                 <tr>
                     <th colspan="7" class="zoopedia"><span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;" class="cień">Status zagrożenia:</font></font></span></td>
@@ -140,152 +139,151 @@
                 </tr>
                 </table>
                 </span>
-                <br>
                 <div class="cień">
-                    <article class="filter-wrap">
+                    <article class="filter-wrap" style="margin-top: 1vw;">
                         <center>
                             <div class="filter-item afryka mieczaki status0">
-                                <div id="zdjecie" class="filter-item afryka mieczaki status0" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item afryka mieczaki status0" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Achatina_zwyczajna"></p>
                                     <a href="Zoopedia/Achatina zwyczajna.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Achatina zwyczajna.jpg" alt="Achatina zwyczajna" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Achatina zwyczajna</p>
                                 </div>
                             </div>
                             <div class="filter-item afryka ssaki status5">
-                                <div id="zdjecie" class="filter-item afryka ssaki status5" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item afryka ssaki status5" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Adaks"></p>
                                     <a href="Zoopedia/Adaks.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Adaks.jpg" alt="Adaks" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Adaks</p>
                                 </div>
                             </div>
                             <div class="filter-item amerykapolnocna plazy status5">
-                                <div id="zdjecie" class="filter-item amerykapolnocna plazy status5" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item amerykapolnocna plazy status5" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Aksolotl_meksykański"></p>
                                     <a href="Zoopedia/Aksolotl meksykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Aksolotl meksykański.jpg" alt="Aksolotl meksykański" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Aksolotl meksykański</p>
                                 </div>
                             </div>
                             <div class="filter-item amerykapolnocna gady status1">
-                                <div id="zdjecie" class="filter-item amerykapolnocna gady status1" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item amerykapolnocna gady status1" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Aligator_amerykański"></p>
                                     <a href="Zoopedia/Aligator amerykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Aligator amerykański.jpg" alt="Aligator amerykański" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Aligator amerykański</p>
                                 </div>
                             </div>
                             <div class="filter-item amerykapoludniowa gady status1">
-                                <div id="zdjecie" class="filter-item amerykapoludniowa gady status1" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item amerykapoludniowa gady status1" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Anakonda_żółta"></p>
                                     <a href="Zoopedia/Anakonda żółta.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Anakonda żółta.jpg" alt="Anakonda żółta" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Anakonda żółta</p>
                                 </div>
                             </div>
                             <div class="filter-item afryka ssaki status1">
-                                <div id="zdjecie" class="filter-item afryka ssaki status1" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item afryka ssaki status1" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Antylopowiec_szablorogi"></p>
                                     <a href="Zoopedia/Antylopowiec szablorogi.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Antylopowiec szablorogi.jpg" alt="Antylopowiec szablorogi" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Antylopowiec szablorogi</p>
                                 </div>
                             </div>
                             <div class="filter-item azja ssaki status3">
-                                <div id="zdjecie" class="filter-item azja ssaki status3" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item azja ssaki status3" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Babirussa_sulaweska"></p>
                                     <a href="Zoopedia/Babirussa sulaweska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Babirussa sulaweska.jpg" alt="Babirussa sulaweska" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Babirussa sulaweska</p>
                                 </div>
                             </div>
                             <div class="filter-item afryka ssaki status2">
-                                <div id="zdjecie" class="filter-item afryka ssaki status2" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item afryka ssaki status2" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Bawół_afrykański"></p>
                                     <a href="Zoopedia/Bawół afrykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bawół afrykański.jpg" alt="Bawół afrykański" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Bawół afrykański</p>
                                 </div>
                             </div>
                             <div class="filter-item azja ssaki status4">
-                                <div id="zdjecie" class="filter-item azja ssaki status4" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item azja ssaki status4" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Bawół_indyjski"></p>
                                     <a href="Zoopedia/Bawół indyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bawół indyjski.jpg" alt="Bawół indyjski" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Bawół indyjski</p>
                                 </div>
                             </div>
                             <div class="filter-item azja ssaki status3">
-                                <div id="zdjecie" class="filter-item azja ssaki status3" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item azja ssaki status3" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Binturong"></p>
                                     <a href="Zoopedia/Binturong.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Binturong.jpg" alt="Binturong" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Binturong</p>
                                 </div>
                             </div>
                             <div class="filter-item azja ssaki status3">
-                                <div id="zdjecie" class="filter-item azja ssaki status3" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item azja ssaki status3" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Biruang_malajski"></p>
                                     <a href="Zoopedia/Biruang malajski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Biruang malajski.jpg" alt="Biruang malajski" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Biruang malajski</p>
                                 </div>
                             </div>
                             <div class="filter-item amerykapolnocna ssaki status2">
-                                <div id="zdjecie" class="filter-item amerykapolnocna ssaki status2" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item amerykapolnocna ssaki status2" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Bizon_amerykański"></p>
                                     <a href="Zoopedia/Bizon amerykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bizon amerykański.jpg" alt="Bizon amerykański" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Bizon amerykański</p>
                                 </div>
                             </div>
                             <div class="filter-item amerykapoludniowa gady status1">
-                                <div id="zdjecie" class="filter-item amerykapoludniowa gady status1" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item amerykapoludniowa gady status1" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Boa_dusiciel"></p>
                                     <a href="Zoopedia/Boa dusiciel.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Boa dusiciel.jpg" alt="Boa dusiciel" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Boa dusiciel</p>
                                 </div>
                             </div>
                             <div class="filter-item afryka ssaki status2">
-                                <div id="zdjecie" class="filter-item afryka ssaki status2" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item afryka ssaki status2" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Bongo"></p>
                                     <a href="Zoopedia/Bongo.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bongo.jpg" alt="Bongo" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Bongo</p>
                                 </div>
                             </div>
                             <div class="filter-item europa ssaki status1">
-                                <div id="zdjecie" class="filter-item europa ssaki status1" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item europa ssaki status1" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Borsuk_europejski"></p>
                                     <a href="Zoopedia/Borsuk europejski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Borsuk europejski.jpg" alt="Borsuk europejski" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Borsuk europejski</p>
                                 </div>
                             </div>
                             <div class="filter-item amerykapolnocna ssaki status1">
-                                <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Bóbr_kanadyjski"></p>
                                     <a href="Zoopedia/Bóbr kanadyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bóbr kanadyjski.jpg" alt="Bóbr kanadyjski" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Bóbr kanadyjski</p>
                                 </div>
                             </div>
                             <div class="filter-item amerykapoludniowa stawonogi status0">
-                                <div id="zdjecie" class="filter-item amerykapoludniowa stawonogi status0" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item amerykapoludniowa stawonogi status0" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Chrząszcz_tytan"></p>
                                     <a href="Zoopedia/Chrząszcz tytan.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Chrząszcz tytan.jpg" alt="Chrząszcz tytan" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Chrząszcz tytan</p>
                                 </div>
                             </div>
                             <div class="filter-item azja ssaki status4">
-                                <div id="zdjecie" class="filter-item azja ssaki status4" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item azja ssaki status4" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Cyjon_rudy"></p>
                                     <a href="Zoopedia/Cyjon rudy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Cyjon rudy.jpg" alt="Cyjon rudy" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Cyjon rudy</p>
                                 </div>
                             </div>
                             <div class="filter-item amerykapolnocna amerykapoludniowa azja australia stawonogi status4">
-                                <div id="zdjecie" class="filter-item amerykapolnocna amerykapoludniowa azja australia stawonogi status4" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item amerykapolnocna amerykapoludniowa azja australia stawonogi status4" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Danaid_wędrowny"></p>
                                     <a href="Zoopedia/Danaid wędrowny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Danaid wędrowny.jpg" alt="Danaid wędrowny" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Danaid wędrowny</p>
                                 </div>
                             </div>
                             <div class="filter-item europa ssaki status1">
-                                <div id="zdjecie" class="filter-item europa ssaki status1" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item europa ssaki status1" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Daniel_zwyczajny"></p>
                                     <a href="Zoopedia/Daniel zwyczajny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Daniel zwyczajny.jpg" alt="Daniel zwyczajny" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Daniel zwyczajny</p>
                                 </div>
                             </div>
                             <div class="filter-item australia ssaki status4">
-                                <div id="zdjecie" class="filter-item australia ssaki status4" style="margin-left: 3%; margin-right: -3%;">
+                                <div id="zdjecie" class="filter-item australia ssaki status4" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Diabeł_tasmański"></p>
                                     <a href="Zoopedia/Diabeł tasmański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Diabeł tasmański.jpg" alt="Diabeł tasmański" width="90%"></a>
                                     <p class="podpis" style="margin-left: -8%;">Diabeł tasmański</p>
