@@ -96,7 +96,7 @@
                         <center><input type="checkbox" id="filter-all-1" class="filter-input filter-all all" name="filter-1" checked="" onclick="location.reload()"><label for="filter-all-1" class="filter-label info-all"><span class="wybor" style="height: 100%; padding-top: 1%; padding-bottom: 1%; margin-top: 0%;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="cień" style="font-size: 1.6vw;"><b>Zresetuj filtry</b></i></font></font></span></label>
                 </center>
                 </td>
-                <th colspan="3" class="filtr cień" style="color:  rgb(211, 224, 92); text-align: center; font-size: 1.6vw; font-weight: bold; margin-top: -1%;"><i><span id="text" style="width: 100%;">Ilość zwierząt:</span></i><i><span id="ilosc">172</span></i>
+                <th colspan="3" class="filtr cień" style="color:  rgb(211, 224, 92); text-align: center; font-size: 1.6vw; font-weight: bold; margin-top: -1%;"><i><span id="text" style="width: 100%;">Ilość zwierząt:</span></i><i><span id="ilosc"></span></i>
                 </th>
                 <th colspan="2" class="filtr"><img style="width: 10%; margin-bottom: 1%;" src="Ikony/lupa.png" alt="lupa"><br><input type="text" autocomplete="off" name="szukaj" class="cień" style="min-width: 25vw;" placeholder="Wyszukaj nazwę gatunku..."></th>
                 </tr>
@@ -290,17 +290,24 @@
                                 </div>
                             </div>
                             <div class="filter-item australia ssaki status3">
-                                <div id="zdjecie" class="filter-item australia ssaki status3">
+                                <div id="zdjecie" class="filter-item australia ssaki status3" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Dingo"></p>
                                     <a href="Zoopedia/Dingo.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Dingo.jpg" alt="Dingo" width="90%"></a>
-                                    <p class="podpis">Dingo</p>
+                                    <p class="podpis" style="margin-left: -8%;">Dingo</p>
                                 </div>
                             </div>
                             <div class="filter-item europa plazy status2">
-                                <div id="zdjecie" class="filter-item europa plazy status2">
+                                <div id="zdjecie" class="filter-item europa plazy status2" style="margin-left: 3.3%; margin-right: -3.3%;">
                                     <p style="margin: 0%;" id="Dunajska_traszka_grzebieniasta"></p>
                                     <a href="Zoopedia/Dunajska traszka grzebieniasta.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Dunajska traszka grzebieniasta.jpg" alt="Dunajska traszka grzebieniasta" width="90%"></a>
-                                    <p class="podpis">Dunajska traszka grzebieniasta</p>
+                                    <p class="podpis" style="margin-left: -8%;">Dunajska traszka grzebieniasta</p>
+                                </div>
+                            </div>
+                            <div class="filter-item europa azja afryka ssaki status1">
+                                <div id="zdjecie" class="filter-item europa azja afryka ssaki status1" style="margin-left: 3.3%; margin-right: -3.3%;">
+                                    <p style="margin: 0%;" id="Dzik_euroazjatycki"></p>
+                                    <a href="Zoopedia/Dzik euroazjatycki.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Dzik euroazjatycki.jpg" alt="Dzik euroazjatycki" width="90%"></a>
+                                    <p class="podpis" style="margin-left: -8%;">Dzik euroazjatycki</p>
                                 </div>
                             </div>
                             <div class="filter-item afryka ssaki status1">
@@ -1370,7 +1377,7 @@
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </footer>
     <script>
-        var razem = 172;
+        var razem = 173;
         document.getElementById("ilosc").innerHTML = razem;
 
         function addClassAll(el, cls) {
