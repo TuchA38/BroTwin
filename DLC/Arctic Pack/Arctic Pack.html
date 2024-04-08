@@ -22,6 +22,40 @@
         body {
             background: linear-gradient(#1b97b1, #106383);
         }
+        /* WebKit (Chrome, Safari, Opera) */
+        
+         ::-webkit-scrollbar {
+            width: 1vw;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #0d4f69;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #25bcde;
+            border-radius: 0.15vw #0b5b7b;
+        }
+        /* Firefox */
+        
+        * {
+            scrollbar-width: 1vw;
+            scrollbar-color: #25bcde #0d4f69;
+        }
+        /* Edge i Internet Explorer */
+        
+        *::-webkit-scrollbar {
+            width: 1vw;
+        }
+        
+        *::-webkit-scrollbar-track {
+            background: #0d4f69;
+        }
+        
+        *::-webkit-scrollbar-thumb {
+            background: #25bcde;
+            border-radius: 0.15vw #0b5b7b;
+        }
     </style>
 </head>
 
