@@ -4,32 +4,50 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fenek pustynny</title>
     <link rel="shortcut icon" href="Ikonki/Fenek pustynny.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Fenek_pustynny" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Fenek_pustynny" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Fenek pustynny.jpg" alt="Fenek pustynny"><b>Fenek pustynny</b><br><i style="font-size: 27px;">(Vulpes zerda)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Fenek pustynny.jpg" alt="Fenek pustynny">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Ssaki</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Drapieżne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Psowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Lis</i></div>
+                </div>
+                <p class="naglowek"><b>Fenek pustynny</b><br><i style="font-size: 1.8vw;">(Vulpes zerda)</i></p>
                 <p class="info"><b class="nz">Najmniej zagrożony</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: Nieznana</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
-            <p class="akapit">Fenek pustynny <i>(Vulpes zerda)</i> to drobny gatunek z rodziny psowatych występujący na Saharze. Futro na grzbiecie, głowie i ogonie jest koloru piasku, zaś na nogach, brzuchu i twarzy - białe. Najbardziej charakterystyczna cechą zwierzęcia
-                są bardzo duże, spiczaste uszy. Fenek pustynny ma niewielkie wymiary - od 18 do 22 cm wzrostu w kłębie oraz od 34 do 40&nbspcm długości. Długość ogona wynosi do 25 cm, a uszu - od&nbsp9 do 10 cm. Osobniki tego gatunku ważą od 0,8 do 1,9
-                kg. Samce są nieznacznie większe od samic. Fenek pustynny nie jest uznawany za gatunek zagrożony - choć jego populacja jest nieznana, uważa się, że fenki pustynne są dość liczne.
+            <p class="akapit">Fenek pustynny <i>(Vulpes zerda)</i> to drobny gatunek z rodziny psowatych występujący na Saharze. Futro na grzbiecie, głowie i&nbsp;ogonie jest koloru piasku, zaś na nogach, brzuchu i&nbsp;<span class="keeptogether">twarzy - białe</span>.
+                Najbardziej charakterystyczna cechą zwierzęcia są bardzo duże, spiczaste uszy. Fenek pustynny ma niewielkie wymiary - od 18 do 22 cm wzrostu w kłębie oraz od 34 do 40&nbsp;cm długości. Długość ogona wynosi do 25&nbsp;cm, a&nbsp;<span class="keeptogether">uszu - od</span>                9 do 10 cm. Osobniki tego gatunku ważą od 0,8 do 1,9 kg. Samce są nieznacznie większe od samic. Fenek pustynny nie jest uznawany za gatunek <span class="keeptogether">zagrożony - choć</span> jego populacja jest nieznana, uważa się, że
+                fenki pustynne są dość liczne.
             </p>
             <hr>
             <div style="clear: both;"></div>
@@ -44,8 +62,8 @@
                         </tr>
                         <tr>
                             <td style=" text-align: center;">Afryka</td>
-                            <td style=" text-align: center;">Maroko, Algieria, Tunezja, Libia, Egipt, Sahara Zachodnia, Mauretania, Mali, Niger, Czad, Sudan</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Pustynia.png" alt="pustynia"></td>
+                            <td style=" text-align: center;"><span class="keeptogether">Maroko, Algieria, Tunezja, Libia, Egipt,</span><br>Sahara Zachodnia, Mauretania, Mali,<br>Niger, Czad, Sudan</td>
+                            <td style=" text-align: center;"><img id="biom" style="width:2.6vw;" src="../Ikony/Pustynia.png" alt="pustynia"></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Fenek pustynny.jpg">
@@ -60,7 +78,7 @@
                             <td>1-10<br>(samce do 6, samice do 6)</td>
                         </tr>
                         <tr>
-                            <th>Wielkość grupy kawalerskiej samców<br>(bez młodych osobników)</th>
+                            <th>Wielkość&nbsp;grupy&nbsp;kawalerskiej&nbsp;samców<br>(bez młodych osobników)</th>
                             <td>1-5</td>
                         </tr>
                         <tr>
@@ -90,19 +108,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 39,5 cm długości &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 37 cm długości &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;39,5 cm długości</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;37 cm długości</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 12 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 12 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;12 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;12 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 1,3 kg &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 1,3 kg &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;1,3 kg &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;1,3 kg</div>
                             </td>
                         </tr>
                     </table>
@@ -146,16 +165,14 @@
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
-                <p class="akapit">W watasze fenków pustynnych żyje samiec alfa i samica alfa oraz pierwsze i&nbspdrugie pokolenie potomstwa. Watahy są połączone więzami krwi. Osobniki alfa są monogamiczne i nie współżyją z innymi. Gdy samica zbliża się do okresu rui, między
-                    samcem i samicą alfa nawiązuje się więź. W sezonie rozrodczym samica jest płodna przez 6-8 dni. Samiec alfa poznaje samicę gotową do kopulacji po zmianach hormonalnych i zapachu moczu. Osobniki alfa kopulują w tym okresie wielokrotnie.
-                    Po kopulacji samiec staje się agresywny i niezwykle opiekuńczy wobec samicy i ich nory.
-                    <br>
-                    <br>Samice alfa rodzą jeden miot w roku, przeciętnie od 2 do 4 szczeniąt, choć może być ich nawet 6. W chwili narodzin młody osobnik waży około 50 g. Po urodzeniu samica zostaje w norze z młodymi przez 2 tygodnie. W tym okresie samiec
-                    przynosi jej pożywienie. Gdy szczenięta osiągną 2.-5. tydzień życia, samica zacznie opuszczać norę, często wracając, aby je nakarmić.
-                    <br>
-                    <br>Młode opuszczają norę po raz pierwszy w wieku 5 tygodni i stopniowo się uniezależniają. Rezygnują z mleka matki po osiągnięciu 2.-3. miesiąca życia i&nbspstają się w pełni niezależne w wieku 6 miesięcy. Młode fenki pozostają w&nbspgrupie
-                    rodzinnej do ukończenia 1.-2. roku życia. Opuszczają watahę, gdy osiągną dojrzałość płciową lub gdy rywalizacja o jedzenie w grupie stanie się zbyt intensywna. Przez pewien czas mogą żyć samotnie lub wraz z&nbsprodzeństwem. Samotne
-                    fenki pustynne mogą połączyć się w parę z innym samotnym przedstawicielem tego gatunku płci przeciwnej i poszukać własnego terytorium. Gdy je znajdą, taka para fenków pustynnych założy własną watahę i stanie się samcem i samicą alfa.
+                <p class="akapit">W watasze fenków pustynnych żyje samiec alfa i samica alfa oraz pierwsze i&nbsp;drugie pokolenie potomstwa. Watahy są połączone więzami krwi. Osobniki alfa są monogamiczne i nie współżyją z innymi. Gdy samica zbliża się do okresu rui,
+                    między samcem i samicą alfa nawiązuje się więź. W sezonie rozrodczym samica jest płodna przez 6-8 dni. Samiec alfa poznaje samicę gotową do kopulacji po zmianach hormonalnych i zapachu moczu. Osobniki alfa kopulują w tym okresie wielokrotnie.
+                    Po kopulacji samiec staje się agresywny i niezwykle opiekuńczy wobec samicy i ich nory.<br><br>Samice alfa rodzą jeden miot w roku, przeciętnie od 2 do 4 szczeniąt, choć może być ich nawet 6. W chwili narodzin młody osobnik waży około
+                    50 g. Po urodzeniu samica zostaje w norze z młodymi przez 2 tygodnie. W tym okresie samiec przynosi jej pożywienie. Gdy szczenięta osiągną <span class="keeptogether">2.-5. tydzień</span> życia, samica zacznie opuszczać norę, często
+                    wracając, aby je nakarmić.<br><br>Młode opuszczają norę po raz pierwszy w wieku 5 tygodni i stopniowo się uniezależniają. Rezygnują z mleka matki po osiągnięciu 2.-3. miesiąca życia i&nbsp;stają się w pełni niezależne w wieku 6 miesięcy.
+                    Młode fenki pozostają w&nbsp;grupie rodzinnej do ukończenia 1.-2. roku życia. Opuszczają watahę, gdy osiągną dojrzałość płciową lub gdy rywalizacja o jedzenie w grupie stanie się zbyt intensywna. Przez pewien czas mogą żyć samotnie
+                    lub wraz z&nbsp;rodzeństwem. Samotne fenki pustynne mogą połączyć się w parę z innym samotnym przedstawicielem tego gatunku płci przeciwnej i poszukać własnego terytorium. Gdy je znajdą, taka para fenków pustynnych założy własną watahę
+                    i stanie się samcem i samicą alfa.
                 </p>
             </div>
             <div style="clear: both;"></div>
@@ -164,10 +181,10 @@
                 <p><b>Ciekawostki</b></p>
                 <ul class="akapit">
                     <li>Fenek pustynny jest najmniejszym gatunkiem z rodziny psowatych.</li>
-                    <li>Fenki pustynne komunikują się z watahą przy pomocy szerokiego wachlarza dźwięków, świergocząc, skomląc, wyjąc, warcząc i&nbsprycząc.</li>
+                    <li>Fenki pustynne komunikują się z watahą przy pomocy szerokiego wachlarza dźwięków, świergocząc, skomląc, wyjąc, warcząc i&nbsp;rycząc.</li>
                     <li>Osobniki mają bardzo duże uszy, które odprowadzają ciepło i pozwalają słyszeć zwierzynę pod ziemią.</li>
                     <li>Opuszki łapek fenka pustynnego są pokryte grubą warstwą futra, dzięki czemu może on chodzić po gorącym piasku Sahary.</li>
-                    <li>Podobnie jak wiele zwierząt żyjących na pustyni, fenki pustynne mogą przetrwać bez dostępu do źródeł wody, czerpiąc wodę z&nbsprosy i z pożywienia.</li>
+                    <li>Podobnie jak wiele zwierząt żyjących na pustyni, fenki pustynne mogą przetrwać bez dostępu do źródeł wody, czerpiąc wodę z&nbsp;rosy i z pożywienia.</li>
                 </ul>
             </div>
             <div class="ciekawostkao">
