@@ -4,27 +4,45 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grzechotnik teksaski</title>
     <link rel="shortcut icon" href="Ikonki/Grzechotnik teksaski.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Grzechotnik_teksaski" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Grzechotnik_teksaski" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Grzechotnik teksaski.jpg" alt="Grzechotnik teksaski"><b>Grzechotnik teksaski</b><br><i style="font-size: 27px;">(Crotalus atrox)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Grzechotnik teksaski.jpg" alt="Grzechotnik teksaski">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Gady</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Łuskonośne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Żmijowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Grzechotnik</i></div>
+                </div>
+                <p class="naglowek"><b>Grzechotnik teksaski</b><br><i style="font-size: 1.8vw;">(Crotalus atrox)</i></p>
                 <p class="info"><b class="nz">Najmniej zagrożony</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: Nieznana</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
             <p class="akapit">Grzechotnik teksaski <i>(Crotalus atrox)</i> to gatunek jadowitego węża żyjący na pustyniach, stepach i krzewiastych terenach USA i Meksyku. Jego ciało pokryte jest łuskami, które na grzbiecie są szarobrązowe i układają się w kształty przypominające
@@ -42,9 +60,9 @@
                             <th>Biomy</th>
                         </tr>
                         <tr>
-                            <td style=" text-align: center;">Ameryka Północna i Środkowa</td>
-                            <td style=" text-align: center;">Stany Zjednoczone,<br> Meksyk</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Step.png" alt="step"><img id="biom" src="../Ikony/Klimat_umiarkowany.png" alt="klimat umiarkowany"><img id="biom" src="../Ikony/Pustynia.png" alt="pustynia"></td>
+                            <td style=" text-align: center;">Ameryka&nbsp;Północna<br>i Środkowa</td>
+                            <td style=" text-align: center;">Stany&nbsp;Zjednoczone,&nbsp;Meksyk</td>
+                            <td style=" text-align: center;"><span class="keeptogether"><img id="biom" style="width:2.6vw;" src="../Ikony/Step.png" alt="step"><img id="biom" style="width:2.6vw;" src="../Ikony/Klimat_umiarkowany.png" alt="klimat umiarkowany"><img id="biom" style="width:2.6vw;" src="../Ikony/Pustynia.png" alt="pustynia"></span></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Grzechotnik teksaski.jpg">
@@ -55,7 +73,7 @@
                     <table id="cechy">
                         <caption><b>Zachowania społeczne</b></caption>
                         <tr>
-                            <th>Wielkość grupy (bez młodych osobników)</th>
+                            <th>Wielkość grupy<br>(bez&nbsp;młodych&nbsp;osobników)</th>
                             <td>1-2</td>
                         </tr>
                         <tr>
@@ -73,19 +91,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 1,40 m długości &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 1,20 m długości &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;1,40 m długości</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;1,20 m długości</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 17 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 17 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;17 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;17 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp Nieznane &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp Nieznane &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;Nieznane &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;Nieznane</div>
                             </td>
                         </tr>
                     </table>
@@ -124,7 +143,7 @@
             <div class="info4">
                 <p style="text-align: center;"><b>Potrzeby społeczne</b></p>
                 <p class="akapit">Grzechotnik teksaski to gad prowadzący samotniczy tryb życia. Na wolności rzadko napotyka innych przedstawicieli swojego gatunku, za wyjątkiem okresów, w których samce wyruszają na poszukiwanie samic w celach rozrodczych. W innych sytuacjach
-                    w ogóle nie wchodzi w interakcje z&nbsppozostałymi grzechotnikami teksaskimi.</p>
+                    w ogóle nie wchodzi w interakcje z&nbsp;pozostałymi grzechotnikami teksaskimi.</p>
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
