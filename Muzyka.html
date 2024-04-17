@@ -1,406 +1,190 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en">
 
 <head>
     <link rel="stylesheet" type="text/css" href="Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muzyka</title>
     <link rel="shortcut icon" href="Ikony/Planet Zoo.png">
+    <link rel="stylesheet" href="Muzyka/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script>
-        function album1() {
-            document.getElementById("a23").classList.remove("visible");
-            document.getElementById("a23").classList.add("hidden");
-            document.getElementById("a2").classList.remove("visible");
-            document.getElementById("a2").classList.add("hidden");
-            document.getElementById("a1").classList.remove("hidden");
-            document.getElementById("a1").classList.toggle("visible");
-
-        }
-
-        function album2() {
-            document.getElementById("a1").classList.remove("visible");
-            document.getElementById("a1").classList.add("hidden");
-            document.getElementById("a3").classList.remove("visible");
-            document.getElementById("a3").classList.add("hidden");
-            document.getElementById("a2").classList.remove("hidden");
-            document.getElementById("a2").classList.toggle("visible");
-        }
-
-        function album3() {
-            document.getElementById("a2").classList.remove("visible");
-            document.getElementById("a2").classList.add("hidden");
-            document.getElementById("a4").classList.remove("visible");
-            document.getElementById("a4").classList.add("hidden");
-            document.getElementById("a3").classList.remove("hidden");
-            document.getElementById("a3").classList.toggle("visible");
-        }
-
-        function album4() {
-            document.getElementById("a3").classList.remove("visible");
-            document.getElementById("a3").classList.add("hidden");
-            document.getElementById("a5").classList.remove("visible");
-            document.getElementById("a5").classList.add("hidden");
-            document.getElementById("a4").classList.remove("hidden");
-            document.getElementById("a4").classList.toggle("visible");
-        }
-
-        function album5() {
-            document.getElementById("a4").classList.remove("visible");
-            document.getElementById("a4").classList.add("hidden");
-            document.getElementById("a6").classList.remove("visible");
-            document.getElementById("a6").classList.add("hidden");
-            document.getElementById("a5").classList.remove("hidden");
-            document.getElementById("a5").classList.toggle("visible");
-        }
-
-        function album6() {
-            document.getElementById("a5").classList.remove("visible");
-            document.getElementById("a5").classList.add("hidden");
-            document.getElementById("a7").classList.remove("visible");
-            document.getElementById("a7").classList.add("hidden");
-            document.getElementById("a6").classList.remove("hidden");
-            document.getElementById("a6").classList.toggle("visible");
-        }
-
-        function album7() {
-            document.getElementById("a6").classList.remove("visible");
-            document.getElementById("a6").classList.add("hidden");
-            document.getElementById("a8").classList.remove("visible");
-            document.getElementById("a8").classList.add("hidden");
-            document.getElementById("a7").classList.remove("hidden");
-            document.getElementById("a7").classList.toggle("visible");
-        }
-
-        function album8() {
-            document.getElementById("a7").classList.remove("visible");
-            document.getElementById("a7").classList.add("hidden");
-            document.getElementById("a9").classList.remove("visible");
-            document.getElementById("a9").classList.add("hidden");
-            document.getElementById("a8").classList.remove("hidden");
-            document.getElementById("a8").classList.toggle("visible");
-        }
-
-        function album9() {
-            document.getElementById("a8").classList.remove("visible");
-            document.getElementById("a8").classList.add("hidden");
-            document.getElementById("a10").classList.remove("visible");
-            document.getElementById("a10").classList.add("hidden");
-            document.getElementById("a9").classList.remove("hidden");
-            document.getElementById("a9").classList.toggle("visible");
-        }
-
-        function album10() {
-            document.getElementById("a9").classList.remove("visible");
-            document.getElementById("a9").classList.add("hidden");
-            document.getElementById("a11").classList.remove("visible");
-            document.getElementById("a11").classList.add("hidden");
-            document.getElementById("a10").classList.remove("hidden");
-            document.getElementById("a10").classList.toggle("visible");
-        }
-
-        function album11() {
-            document.getElementById("a10").classList.remove("visible");
-            document.getElementById("a10").classList.add("hidden");
-            document.getElementById("a12").classList.remove("visible");
-            document.getElementById("a12").classList.add("hidden");
-            document.getElementById("a11").classList.remove("hidden");
-            document.getElementById("a11").classList.toggle("visible");
-        }
-
-        function album12() {
-            document.getElementById("a11").classList.remove("visible");
-            document.getElementById("a11").classList.add("hidden");
-            document.getElementById("a13").classList.remove("visible");
-            document.getElementById("a13").classList.add("hidden");
-            document.getElementById("a12").classList.remove("hidden");
-            document.getElementById("a12").classList.toggle("visible");
-        }
-
-        function album13() {
-            document.getElementById("a12").classList.remove("visible");
-            document.getElementById("a12").classList.add("hidden");
-            document.getElementById("a14").classList.remove("visible");
-            document.getElementById("a14").classList.add("hidden");
-            document.getElementById("a13").classList.remove("hidden");
-            document.getElementById("a13").classList.toggle("visible");
-        }
-
-        function album14() {
-            document.getElementById("a13").classList.remove("visible");
-            document.getElementById("a13").classList.add("hidden");
-            document.getElementById("a15").classList.remove("visible");
-            document.getElementById("a15").classList.add("hidden");
-            document.getElementById("a14").classList.remove("hidden");
-            document.getElementById("a14").classList.toggle("visible");
-        }
-
-        function album15() {
-            document.getElementById("a14").classList.remove("visible");
-            document.getElementById("a14").classList.add("hidden");
-            document.getElementById("a16").classList.remove("visible");
-            document.getElementById("a16").classList.add("hidden");
-            document.getElementById("a15").classList.remove("hidden");
-            document.getElementById("a15").classList.toggle("visible");
-        }
-
-        function album16() {
-            document.getElementById("a15").classList.remove("visible");
-            document.getElementById("a15").classList.add("hidden");
-            document.getElementById("a17").classList.remove("visible");
-            document.getElementById("a17").classList.add("hidden");
-            document.getElementById("a16").classList.remove("hidden");
-            document.getElementById("a16").classList.toggle("visible");
-        }
-
-        function album17() {
-            document.getElementById("a16").classList.remove("visible");
-            document.getElementById("a16").classList.add("hidden");
-            document.getElementById("a18").classList.remove("visible");
-            document.getElementById("a18").classList.add("hidden");
-            document.getElementById("a17").classList.remove("hidden");
-            document.getElementById("a17").classList.toggle("visible");
-        }
-
-        function album18() {
-            document.getElementById("a17").classList.remove("visible");
-            document.getElementById("a17").classList.add("hidden");
-            document.getElementById("a19").classList.remove("visible");
-            document.getElementById("a19").classList.add("hidden");
-            document.getElementById("a18").classList.remove("hidden");
-            document.getElementById("a18").classList.toggle("visible");
-        }
-
-        function album19() {
-            document.getElementById("a18").classList.remove("visible");
-            document.getElementById("a18").classList.add("hidden");
-            document.getElementById("a20").classList.remove("visible");
-            document.getElementById("a20").classList.add("hidden");
-            document.getElementById("a19").classList.remove("hidden");
-            document.getElementById("a19").classList.toggle("visible");
-        }
-
-        function album20() {
-            document.getElementById("a19").classList.remove("visible");
-            document.getElementById("a19").classList.add("hidden");
-            document.getElementById("a21").classList.remove("visible");
-            document.getElementById("a21").classList.add("hidden");
-            document.getElementById("a20").classList.remove("hidden");
-            document.getElementById("a20").classList.toggle("visible");
-        }
-
-        function album21() {
-            document.getElementById("a20").classList.remove("visible");
-            document.getElementById("a20").classList.add("hidden");
-            document.getElementById("a22").classList.remove("visible");
-            document.getElementById("a22").classList.add("hidden");
-            document.getElementById("a21").classList.remove("hidden");
-            document.getElementById("a21").classList.toggle("visible");
-        }
-
-        function album22() {
-            document.getElementById("a21").classList.remove("visible");
-            document.getElementById("a21").classList.add("hidden");
-            document.getElementById("a23").classList.remove("visible");
-            document.getElementById("a23").classList.add("hidden");
-            document.getElementById("a22").classList.remove("hidden");
-            document.getElementById("a22").classList.toggle("visible");
-        }
-
-        function album23() {
-            document.getElementById("a22").classList.remove("visible");
-            document.getElementById("a22").classList.add("hidden");
-            document.getElementById("a1").classList.remove("visible");
-            document.getElementById("a1").classList.add("hidden");
-            document.getElementById("a23").classList.remove("hidden");
-            document.getElementById("a23").classList.toggle("visible");
-        }
-    </script>
     <style>
-        .next:hover {
-            opacity: 50%;
-            transition: all 0.5s ease-in-out;
+        body {
+            user-select: none;
+        }
+        
+        .material-icons:hover,
+        li span.album:hover,
+        ul li:hover {
+            opacity: 60%;
+            transition: .3s ease-out .1s;
             cursor: pointer;
         }
         
-        .visible {
-            visibility: visible;
-            opacity: 1;
-            transition: opacity .5s linear;
+        .no-hover {
+            pointer-events: none;
         }
         
-        .hidden {
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility .5s, opacity .5s linear;
+        .sidebar {
+            float: right;
+            text-align: left;
+            width: 30%;
+            padding-left: 3vw;
+            box-sizing: border-box;
+        }
+        
+        .selected {
+            color: rgb(211, 224, 92);
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .tytul_header {
+            text-align: center;
+            font-size: 3.3vw;
+            color: white;
+            border: solid black 0.2vw;
+            background: linear-gradient(#0a5c3f, #084630);
+        }
+        
+        .tytul_footer {
+            font-size: 1.1vw;
+            border: solid black 0.2vw;
+            background: linear-gradient(#07412d, #052b1e);
+            margin-top: auto;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .music-list {
+                height: 55%;
+            }
+        }
+        
+        @media screen and (max-width: 767px) {
+            .top-bar {
+                margin: -5%;
+                margin-top: -5%;
+            }
         }
     </style>
 </head>
 
 <body onselectstart="return false;">
-    <div class=" akapit cień">
+    <div class="akapit cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <header class="delux"><i>You, me & Other Animals: The music of Planet Zoo</i>
-            </header>
+            <div class="tytul_header"><i>You, me &amp; Other Animals: The music of Planet Zoo</i></div>
             <div style="clear: both;"></div>
-
             <center>
-                <img style="width: 80px; margin-top: 32px;" src="Ikony/nuty.png" alt="Nuty">
+                <img style="width: 5.5%; margin-top: 2%;" src="Ikony/nuty.png" alt="Nuty">
             </center>
-            <h1 class="tytul cień" style="margin-top: -6px;">Muzyka</h1>
-            <p class="cień opis" style="margin-top: -25px;"><i>Witaj w zbiorze Muzyki Planet Zoo!<br>Zebrano tutaj wszystkie przeboje, które występują w grze.<br>Utwory otworzyły się w nowej karcie, dlatego można zwiedzać inne strony słuchając muzyki w tle.<br>Zobacz jakie tytuły noszą oraz jak one brzmią.<br> Życzymy miłego słuchania!</i>
+            <h1 class="tytul cień" style="margin-top: -0.5%;">Muzyka</h1>
+            <p class="cień opis" style="margin-top: -0.5%;"><i>Witaj w zbiorze Muzyki Planet Zoo!<br>Zebrano tutaj wszystkie przeboje, które występują w grze.<br>Utwory otworzyły się w nowej karcie, dlatego można zwiedzać inne strony słuchając muzyki w tle.<br>Zobacz jakie tytuły noszą oraz jak one brzmią.<br> Życzymy miłego słuchania!</i>
             </p>
             <br>
-            <b style="font-size: 25px;">Wszystkie utwory Planet Zoo</b><br>Cały zbiór melodii liczy aż <b>122</b> wspaniałych utworów, których w większości twórcą jest <b>J.J. Ipsen</b>. Poniższa playlista pozwala słuchać ich wszystkich w jednym miejscu!
-            <br><br>
-            <center><iframe style="height: 818px; width: 850px; border: 0px; margin-bottom: -15px; user-select: none;" src="Muzyka/Planet Zoo/index.html"></iframe></center>
-            <b style="font-size: 25px;">Spis utworów podzielonych na kategorie</b><br>Poniżej znajdują się wszystkie niesamowite utwory, które podzielone są na albumy. Można wybrać odpowiedni utwór, albo słuchać całej playlisty albumu!
-            <br><br><br>
-            <div id="a1" class="visible">
-                <center style="margin-top: 15%;">
-                    <img class="next" style="position: relative;" onclick="album23() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album2() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Afryka/index.html "></iframe>
-                </center>
+            <div style="margin-left: 0.3%;">
+                <b style="font-size: 1.5vw;">Wszystkie utwory Planet Zoo</b><br>
+                <p style="font-size: 1.4vw;">Cały zbiór melodii liczy aż <b>122</b> wspaniałych utworów, których w większości twórcą jest <b>J.J. Ipsen</b>. Poniższy odtwarzacz pozwala słuchać ich wszystkich w jednym miejscu!</p>
+            </div><br>
+            <div style="margin-left: 0.3%;">
+                <b style="font-size: 1.5vw;">Spis utworów podzielonych na kategorie</b><br>
+                <p style="font-size: 1.4vw;">Poniżej znajdują się wszystkie niesamowite utwory, które podzielone są na albumy. Można wybrać odpowiedni album oraz utwór, aby słuchać całej playlisty albumu!</p>
             </div>
-            <div id="a2" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album1() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album3() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Indie/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a3" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album2() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album4() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Ameryka Północna/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a4" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album3() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album5() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Azja/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a5" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album4() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album6() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Klasyka/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a6" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album5() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album7() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Planet_Zoo/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a7" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album6() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album8() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Delux/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a8" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album7() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album9() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Arctic/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a9" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album8() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album10() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/South America/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a10" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album9() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album11() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Australia/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a11" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album10() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album12() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Aquatic/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a12" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album11() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album13() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Southeast Asia/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a13" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album12() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album14() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Africa/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a14" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album13() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album15() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/North America/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a15" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album14() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album16() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Europe/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a16" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album15() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album17() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Conservation/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a17" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album16() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album18() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Lo-fi/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a18" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album17() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album19() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Twilight/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a19" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album18() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album20() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Grasslands/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a20" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album19() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album21() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Tropical/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a21" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album20() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album22() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Arid/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a22" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album21() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album23() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Oceania/index.html "></iframe>
-                </center>
-            </div>
-            <div id="a23" class="hidden">
-                <center style="margin-top: -27.35%;">
-                    <img class="next" style="position: relative;" onclick="album22() " src="Ikony/left.png " alt="Lewo "><img class="next" onclick="album1() " style="margin-left: 380px;position: relative;" src="Ikony/right.png " alt="Prawo "></center>
-                <center style="margin-top: -340px; "><iframe style="height: 660px; width: 500px; border: 0px; " src="Muzyka/Zwiastuny/index.html "></iframe>
-                </center>
-            </div>
-            <footer>
-                <h2 style="color: white; text-align: center; " class="cień ">Sklep internetowy Steam!</h2>
-                <center>
-                    <a href="https://store.steampowered.com/app/703080/Planet_Zoo/ "><img class="stopka " src="Ikony/Steam_logo.png " alt="Logo Steam " style="margin: 30px; padding-right: 30px; "></a>
-                </center>
-            </footer>
         </div>
+    </div>
+    <div class="container" style="margin-top: 1vw;">
+        <div class="wrapper" style="animation: fadeIn ease-in .5s backwards; margin-left: 10%;">
+            <span style="color: var(--lightblack); font-size: 1.8vw; margin-bottom: -1vw; margin-top: -1vw; text-align: center;"><b>Lista odtwarzania:</b></span>
+            <div class="top-bar">
+                <span style="text-align: center;"> </span>
+            </div>
+            <div class="img-area">
+                <img src="" alt="">
+            </div>
+            <div class="song-details">
+                <p class="name"></p>
+                <p class="artist"></p>
+            </div>
+            <div class="progress-area">
+                <div class="progress-bar">
+                    <audio id="main-audio" src=""></audio>
+                </div>
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i id="prev-album" class="material-icons">keyboard_double_arrow_left</i>
+                <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                <i id="prev" class="material-icons">skip_previous</i>
+                <div class="play-pause">
+                    <i class="material-icons play">play_arrow</i>
+                </div>
+                <i id="next" class="material-icons">skip_next</i>
+                <i id="more-music" class="material-icons">queue_music</i>
+                <i id="next-album" class="material-icons">keyboard_double_arrow_right</i>
+            </div>
+            <div class="music-list">
+                <div class="header">
+                    <div class="row">
+                        <i class="list material-icons no-hover">queue_music</i>
+                        <span style="min-width: 20vw; text-align: left;">Lista muzyki</span>
+                    </div>
+                    <i id="close" class="material-icons">close</i>
+                </div>
+                <ul>
+                    <!-- here li list are coming from js -->
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar cień" style="margin-top: -4vw;">
+            <ol>
+                <p style="margin-top: 1vw; margin-bottom: 0.2vw; font-size: 1.4vw;"><b>Spis albumów:</b></p>
+                <li style="font-size: 1.2vw;" id="pz-all"><span class="album" onclick="playAlbum('Planet Zoo - Wszystkie utwory', this)"><b>Planet Zoo</b> - Wszystkie utwory</span></li>
+                <li style="font-size: 1.2vw;" id="pz-afryka"><span class="album" onclick="playAlbum('Planet Zoo - Afryka', this)">Planet Zoo - Afryka</span></li>
+                <li style="font-size: 1.2vw;" id="pz-indie"><span class="album" onclick="playAlbum('Planet Zoo - Indie', this)">Planet Zoo - Indie</span></li>
+                <li style="font-size: 1.2vw;" id="pz-amerykapolnocna"><span class="album" onclick="playAlbum('Planet Zoo - Ameryka Północna', this)">Planet Zoo - Ameryka Północna</span></li>
+                <li style="font-size: 1.2vw;" id="pz-azja"><span class="album" onclick="playAlbum('Planet Zoo - Azja', this)">Planet Zoo - Azja</span></li>
+                <li style="font-size: 1.2vw;" id="pz-klasyka"><span class="album" onclick="playAlbum('Planet Zoo - Klasyka', this)">Planet Zoo - Klasyka</li>
+                <li style="font-size: 1.2vw;" id="pz-planetzoo" ><span class="album"onclick="playAlbum('Planet Zoo - Planet Zoo', this)">Planet Zoo - Planet Zoo</span></li>
+                <li style="font-size: 1.2vw;" id="delux"><span class="album" onclick="playAlbum('Delux', this)">Delux Edition</span></li>
+                <li style="font-size: 1.2vw;" id="arctic"><span class="album" onclick="playAlbum('Pakiet Arktyczny', this)">Arctic Pack</span></li>
+                <li style="font-size: 1.2vw;" id="southamerica"><span class="album" onclick="playAlbum('Pakiet Ameryka Południowa', this)">South America Pack</span></li>
+                <li style="font-size: 1.2vw;" id="australia"><span class="album" onclick="playAlbum('Pakiet Australia', this)">Australia Pack</span></li>
+                <li style="font-size: 1.2vw;" id="aquatic"><span class="album" onclick="playAlbum('Pakiet Wodny', this)">Aquatic Pack</span></li>
+                <li style="font-size: 1.2vw;" id="southeastasia"><span class="album" onclick="playAlbum('Pakiet Azja Południowo-Wschodnia', this)">Southeast Asia Animal Pack</span></li>
+                <li style="font-size: 1.2vw;" id="africa"><span class="album" onclick="playAlbum('Pakiet Afryka', this)">Africa Pack</span></li>
+                <li style="font-size: 1.2vw;" id="northamerica"><span class="album" onclick="playAlbum('Pakiet Ameryki Północnej', this)">North America Animal Pack</span></li>
+                <li style="font-size: 1.2vw;" id="europe"><span class="album" onclick="playAlbum('Pakiet Europa', this)">Europe Pack</span></li>
+                <li style="font-size: 1.2vw;" id="conservation"><span class="album" onclick="playAlbum('Pakiet Ochrona przyrody', this)">Conservation Pack</span></li>
+                <li style="font-size: 1.2vw;" id="lofi"><span class="album" onclick="playAlbum('Lo-fi (Dźwięki lata)', this)">Lo-fi (Sounds of Summer)</span></li>
+                <li style="font-size: 1.2vw;" id="twilight"><span class="album" onclick="playAlbum('Pakiet Zmierzch', this)">Twilight Pack</span></li>
+                <li style="font-size: 1.2vw;" id="grasslands"><span class="album" onclick="playAlbum('Pakiet Stepy', this)">Grasslands Animal Pack</span></li>
+                <li style="font-size: 1.2vw;" id="tropical"><span class="album" onclick="playAlbum('Pakiet Tropiki', this)">Tropical Pack</span></li>
+                <li style="font-size: 1.2vw;" id="arid"><span class="album" onclick="playAlbum('Pakiet Klimatu suchego', this)">Arid Animal Pack</span></li>
+                <li style="font-size: 1.2vw;" id="oceania"><span class="album" onclick="playAlbum('Pakiet Oceania', this)">Oceania Pack</span></li>
+                <li style="font-size: 1.2vw;" id="eurasia"><span class="album" onclick="playAlbum(' ', this)">Eurasia Animal Pack</span></li>
+                <li style="font-size: 1.2vw;" id="zwiastun"><span class="album" onclick="playAlbum('Zwiastuny', this)">Zwiastuny</span></li>
+            </ol>
+        </div>
+
+    </div>
+    <div style="clear: both;"></div>
+    <br>
+    <div class="tytul_footer">
+        <h2 style="color: white; text-align: center;" class="cień">Sklep internetowy Steam!</h2>
+        <center>
+            <a href="https://store.steampowered.com/app/703080/Planet_Zoo/"><img class="stopka" src="Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 2%;"></a>
+        </center>
+        <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
+    </div>
+
+    <script src="Muzyka/music-list.js"></script>
+    <script src="Muzyka/script.js"></script>
 
 </body>
 
