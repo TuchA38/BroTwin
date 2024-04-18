@@ -511,7 +511,6 @@ document.addEventListener("DOMContentLoaded", function() {
     playingSong();
 });
 
-
 function loadMusicList(musicArray) {
     const ulTag = wrapper.querySelector("ul");
     ulTag.innerHTML = ""; // Wyczyść listę, aby dodać nowe utwory
@@ -551,24 +550,31 @@ function loadMusicList(musicArray) {
     playingSong();
 }
 
-
+let cachedAudio = {};
 
 function loadMusic(indexNumb, musicArray) {
     if (musicArray && indexNumb > 0 && indexNumb <= musicArray.length) {
         musicName.innerText = musicArray[indexNumb - 1].name;
         musicArtist.innerText = musicArray[indexNumb - 1].artist;
         musicImg.src = `Muzyka/obrazy/${musicArray[indexNumb - 1].img}.jpg`;
-        mainAudio.src = `Muzyka/utwory/${musicArray[indexNumb - 1].src}.mp3`;
 
-        musicIndex = indexNumb;
-
-        pauseMusic();
-        playMusic();
+        const musicSrc = musicArray[indexNumb - 1].src;
+        if (cachedAudio[musicSrc]) {
+            // Pobierz wcześniej załadowany element audio z pamięci podręcznej
+            mainAudio.src = cachedAudio[musicSrc];
+            musicIndex = indexNumb;
+            playMusic();
+        } else {
+            // Pobierz nowy plik audio
+            mainAudio.src = `Muzyka/utwory/${musicSrc}.mp3`;
+            musicIndex = indexNumb;
+            cachedAudio[musicSrc] = mainAudio.src; // Zachowaj plik audio w pamięci podręcznej
+            playMusic();
+        }
     } else {
         console.error("Invalid music index or music array.");
     }
 }
-
 
 //play music function
 function playMusic() {
