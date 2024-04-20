@@ -1805,15 +1805,19 @@
                 wrapper.classList.remove("oceania-style");
             }
         }
-
+        // JavaScript
         function playAlbum(albumName, element) {
+            console.log("Wybrany album:", albumName);
             const selectedAlbum = albums.find(album => album.name === albumName);
 
             if (selectedAlbum) {
-                currentAlbum = selectedAlbum;
+                currentAlbum = selectedAlbum; // Aktualizacja zmiennej currentAlbum
+
+                console.log("Lista utworów w wybranym albumie:", selectedAlbum.musicList);
+
                 loadMusicList(selectedAlbum.musicList); // Przed ustawieniem tytułu albumu, wczytaj listę utworów
                 applyStylesForAlbum(albumName);
-                loadMusic(1, selectedAlbum.musicList);
+                loadMusic(1, selectedAlbum.musicList); // Odtwarzaj pierwszy utwór po zmianie albumu
                 playMusic();
 
                 // Usuń klasę "selected" z innych elementów <li> w tej samej liście
@@ -1828,6 +1832,16 @@
                 // Aktualizacja tytułu aktualnego albumu
                 const topBar = document.querySelector('.top-bar span');
                 topBar.textContent = albumName;
+
+                // Aktualizacja pierwszego utworu na liście utworów
+                const firstMusicListItem = document.querySelector('.music-list ul li:first-child');
+                const allMusicListItems = document.querySelectorAll('.music-list ul li');
+                allMusicListItems.forEach(item => {
+                    item.classList.remove('playing');
+                });
+                if (firstMusicListItem) {
+                    firstMusicListItem.classList.add('playing');
+                }
 
                 // Przywrócenie animacji przejścia
                 const wrapper = document.querySelector('.wrapper');
@@ -1869,7 +1883,9 @@
 
                 loadMusicList(currentAlbum.musicList);
 
-                loadMusic(1, currentAlbum.musicList);
+                // Aktualizujemy musicIndex na 1, aby zawsze odtwarzać pierwszy utwór po zmianie albumu
+                let musicIndex = 1;
+                loadMusic(musicIndex, currentAlbum.musicList);
 
                 let ulTag = wrapper.querySelector("ul");
                 let allLiTags = ulTag.querySelectorAll("li");
@@ -1889,13 +1905,6 @@
                     selectedAlbumItem.classList.add('selected');
                 }
 
-                let firstLiTag = ulTag.querySelector("li:first-child");
-                if (firstLiTag) {
-                    firstLiTag.classList.add("playing");
-                    let audioDurationSpan = firstLiTag.querySelector(".audio-duration");
-                    audioDurationSpan.innerText = "Grane";
-                }
-
                 // Wywołaj funkcję playingSong() po zaktualizowaniu listy utworów
                 playingSong();
 
@@ -1909,8 +1918,16 @@
                 setTimeout(() => {
                     albumContent.style.animation = "none";
                 }, 600); // Czas trwania animacji w milisekundach
+
+                // Dodaj wywołanie funkcji playAlbum
+                playAlbum(currentAlbum.name, selectedAlbumItem);
             } else {
                 console.error("Nie ma dostępnych albumów.");
+            }
+            let firstLiTag = ulTag.querySelector("li:first-child");
+            if (firstLiTag) {
+                firstLiTag.classList.add("playing");
+                let audioDurationSpan = firstLiTag.querySelector(".audio-duration");
             }
         }
 
@@ -1975,17 +1992,9 @@
                     liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`); //adding t-duration attribute with total duration value
                 });
             });
-
-            // Dodaj słowo "Grane" do pierwszego elementu listy
-            const firstAudioDurationTag = ulTag.querySelector(".audio-duration");
-            if (firstAudioDurationTag) {
-                firstAudioDurationTag.innerText = "Grane";
-            }
-
             // Ponowne przypisanie zdarzenia onclick dla każdego elementu li po aktualizacji listy
             playingSong();
         }
-
 
         let cachedAudio = {};
 
@@ -2214,7 +2223,6 @@
                 //if the li tag index is equal to the musicIndex then add playing class in it
                 if (allLiTag[j].getAttribute("li-index") == musicIndex) {
                     allLiTag[j].classList.add("playing");
-                    audioTag.innerText = "Grane";
                 }
 
                 allLiTag[j].setAttribute("onclick", "clicked(this)");
