@@ -9,10 +9,14 @@
     <title>Muzyka</title>
     <link rel="shortcut icon" href="Ikony/Planet Zoo.png">
     <link rel="stylesheet" href="Muzyka/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         body {
             user-select: none;
+        }
+        
+        .material-icons {
+            width: 4vw;
+            max-height: 6vw;
         }
         
         .material-icons:hover,
@@ -21,6 +25,10 @@
             opacity: 60%;
             transition: .3s ease-out .1s;
             cursor: pointer;
+        }
+        
+        .material-icons.rotate-90:hover {
+            transition: .0s ease-out .0s;
         }
         
         .no-hover {
@@ -62,6 +70,9 @@
             .music-list {
                 height: 55%;
             }
+            .material-icons.play {
+                margin-top: 0.15vw;
+            }
         }
         
         @media screen and (max-width: 767px) {
@@ -69,9 +80,15 @@
                 margin: -5%;
                 margin-top: -5%;
             }
+            .material-icons.play {
+                margin-top: 0.5vw;
+            }
+        }
+        
+        .rotate-90 {
+            transform: rotate(270deg);
         }
     </style>
-    <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
     <link rel="preload" href="Muzyka/obrazy/Planet_Zoo_All.jpg" as="image">
     <link rel="preload" href="Muzyka/obrazy/Planet_Zoo.jpg" as="image">
     <link rel="preload" href="Muzyka/obrazy/Delux_Edition.jpg" as="image">
@@ -91,7 +108,8 @@
     <link rel="preload" href="Muzyka/obrazy/Arid_Pack.jpg" as="image">
     <link rel="preload" href="Muzyka/obrazy/Oceania_Pack.jpg" as="image">
     <link rel="preload" href="Muzyka/obrazy/Zwiastuny.jpg" as="image">
-
+    <link rel="preload" href="Ikony/nuty.png" as="image">
+    <link rel="preload" href="Ikony/Steam_logo.png" as="image">
 </head>
 
 <body onselectstart="return false;">
@@ -122,7 +140,7 @@
             <div class="top-bar">
                 <span style="text-align: center;"> </span>
             </div>
-            <div class="img-area">
+            <div class="img-area" style="margin-top: 1.8vw;">
                 <img src="" alt="">
             </div>
             <div class="song-details">
@@ -139,23 +157,23 @@
                 </div>
             </div>
             <div class="controls">
-                <i id="prev-album" class="material-icons">keyboard_double_arrow_left</i>
-                <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
-                <i id="prev" class="material-icons">skip_previous</i>
-                <div class="play-pause">
-                    <i class="material-icons play">play_arrow</i>
+                <i id="prev-album" class="material-icons" style="font-style: normal; font-size: 5vw; margin-top: -3vw;">«</i>
+                <i id="repeat-plist" class="material-icons" title="Playlist looped" style="font-style: normal; font-weight: bold; font-size: 3vw;">⇄</i>
+                <i id="prev" class="material-icons" style="font-style: normal; margin-top: -0.5vw;"><b style="font-size: 2vw;"><span style="margin-right: -0.4vw;">∣</span>◀</b></i>
+                <div class="play-pause rotate-90">
+                    <i class="material-icons play" style="font-style: normal; margin-top: 0.15vw;">=</i>
                 </div>
-                <i id="next" class="material-icons">skip_next</i>
-                <i id="more-music" class="material-icons">queue_music</i>
-                <i id="next-album" class="material-icons">keyboard_double_arrow_right</i>
+                <i id="next" class="material-icons" style="font-style: normal; margin-top: -0.5vw;"><b style="font-size: 2vw;">►<span style="margin-left: -0.5vw;">∣</span></b></i>
+                <i id="more-music" class="material-icons" style="font-style: normal;">&#8802;&#9834;</i>
+                <i id="next-album" class="material-icons" style="font-style: normal; font-size: 5vw; margin-top: -3vw;">»</i>
             </div>
             <div class="music-list">
                 <div class="header">
                     <div class="row">
-                        <i class="list material-icons no-hover">queue_music</i>
+                        <i class="list material-icons no-hover">&#8802;&#9834;</i>
                         <span style="min-width: 20vw; text-align: left;">Lista muzyki</span>
                     </div>
-                    <i id="close" class="material-icons">close</i>
+                    <i id="close" class="material-icons" style="margin-right: 1vw; font-style: normal;"><b>&#10005;</b></i>
                 </div>
                 <ul>
                     <!-- here li list are coming from js -->
@@ -195,11 +213,18 @@
 
     </div>
     <div style="clear: both;"></div>
+    <div style="margin-left: 0.3%; margin-top: 2vw;" class="akapit cień">
+        <i>
+            <b style="font-size: 1.5vw;">Uwaga:</b><br>
+            <p style="font-size: 1.4vw;">Jeżeli utwory z danej playlisty, albo zdjęcie albumu nie wgrały się prawidłowo, to proszę chwilę odczekać, ponieważ mogło wystąpić opóźnienie po stronie serwera, a&nbsp;w&nbsp;razie konieczności odświeżyć stronę. Dziękujemy za wyrozumiałość.</p>
+            <p style="font-size: 1.4vw;">Wszystkie utwory wykorzystane na tej stronie należą do Frontier Developments.</p>
+        </i>
+    </div>
     <br>
     <div class="tytul_footer">
         <h2 style="color: white; text-align: center;" class="cień">Sklep internetowy Steam!</h2>
         <center>
-            <a href="https://store.steampowered.com/app/703080/Planet_Zoo/"><img class="stopka" src="Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 2%;"></a>
+            <a href="https://store.steampowered.com/app/1383610/You_me__Other_Animals_The_music_of_Planet_Zoo/" target="_blank"><img class="stopka" src="Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 2%;"></a>
         </center>
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </div>
@@ -2022,19 +2047,22 @@
             }
         }
 
-        //play music function
+        // play music function
         function playMusic() {
             wrapper.classList.add("paused");
-            playPauseBtn.querySelector("i").innerText = "pause";
+            const playPauseIcon = playPauseBtn.querySelector("i");
+            playPauseIcon.innerText = "=";
             mainAudio.play();
         }
 
-        //pause music function
+        // pause music function
         function pauseMusic() {
             wrapper.classList.remove("paused");
-            playPauseBtn.querySelector("i").innerText = "play_arrow";
+            const playPauseIcon = playPauseBtn.querySelector("i");
+            playPauseIcon.innerText = "▼";
             mainAudio.pause();
         }
+
 
         //prev music function
         function prevMusic() {
@@ -2126,16 +2154,16 @@
         repeatBtn.addEventListener("click", () => {
             let getText = repeatBtn.innerText; //getting this tag innerText
             switch (getText) {
-                case "repeat":
-                    repeatBtn.innerText = "repeat_one";
+                case "⇄":
+                    repeatBtn.innerText = "⟲";
                     repeatBtn.setAttribute("title", "Song looped");
                     break;
-                case "repeat_one":
-                    repeatBtn.innerText = "shuffle";
+                case "⟲":
+                    repeatBtn.innerText = "⤮";
                     repeatBtn.setAttribute("title", "Playback shuffled");
                     break;
-                case "shuffle":
-                    repeatBtn.innerText = "repeat";
+                case "⤮":
+                    repeatBtn.innerText = "⇄";
                     repeatBtn.setAttribute("title", "Playlist looped");
                     break;
             }
@@ -2149,15 +2177,15 @@
 
             let getText = repeatBtn.innerText; //getting this tag innerText
             switch (getText) {
-                case "repeat":
+                case "⇄":
                     nextMusic(musicArray); //calling nextMusic function
                     break;
-                case "repeat_one":
+                case "⟲":
                     mainAudio.currentTime = 0; //setting audio current time to 0
                     loadMusic(musicIndex, musicArray); //calling loadMusic function with argument, in the argument there is a index of current song
                     playMusic(); //calling playMusic function
                     break;
-                case "shuffle":
+                case "⤮":
                     let randIndex = Math.floor((Math.random() * musicArray.length) + 1); //genereting random index/numb with max range of array length
                     do {
                         randIndex = Math.floor((Math.random() * musicArray.length) + 1);
