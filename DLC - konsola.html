@@ -1,0 +1,180 @@
+<html lang="pl" class="translated-ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="description" lang="en" content="Filter and refine content categories, and view them in a collapsed group, with this JavaScript and CSS3 filter.">
+    <title>DLC</title>
+    <!-- http://blog.fofwebdesign.co.uk/28-content-filter-refine-with-multi-category-select-show-selected-or-hide-selected -->
+    <link rel="stylesheet" type="text/css" href="Styl.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="shortcut icon" href="Ikony/Planet Zoo.png">
+    <style>
+        body,
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link rel="preload" href="Ikony/pc_konsola.png" as="image">
+    <link rel="preload" href="Ikony/Planet Zoo_konsola.png" as="image">
+    <link rel="preload" href="Ikony/Planet Zoo_pc.png" as="image">
+    <link rel="preload" href="Ikony/dlc.png" as="image">
+    <link rel="preload" href="Ikony/Steam_logo.png" as="image">
+    <link rel="preload" href="Ikony/Frontier_logo.png" as="image">
+    <link rel="preload" href="Ikony/logo twitter.png" as="image">
+    <link rel="preload" href="Ikony/logo youtube.png" as="image">
+    <link rel="preload" href="Ikony/scrollup.png" as="image">
+    <link rel="preload" href="DLC/Delux/Delux.png" as="image">
+    <link rel="preload" href="DLC/Arctic Pack/Arctic Pack.png" as="image">
+    <link rel="preload" href="DLC/South America Pack/South America Pack.png" as="image">
+    <link rel="preload" href="DLC/Australia Pack/Australia Pack.png" as="image">
+    <link rel="preload" href="DLC/Aquatic Pack/Aquatic Pack.png" as="image">
+    <link rel="preload" href="DLC/Southeast Asia Animal Pack/Southeast Asia Animal Pack.png" as="image">
+    <link rel="preload" href="DLC/Africa Pack/Africa Pack.png" as="image">
+    <link rel="preload" href="DLC/North America Animal Pack/North America Animal Pack.png" as="image">
+    <link rel="preload" href="DLC/Europe Pack/Europe Pack.png" as="image">
+    <link rel="preload" href="DLC/Wetlands Animal Pack/Wetlands Animal Pack.png" as="image">
+    <link rel="preload" href="DLC/Conservation Pack/Conservation Pack.png" as="image">
+    <link rel="preload" href="DLC/Twilight Pack/Twilight Pack.png" as="image">
+    <link rel="preload" href="DLC/Grasslands Animal Pack/Grasslands Animal Pack.png" as="image">
+    <link rel="preload" href="DLC/Tropical Pack/Tropical Pack.jpg" as="image">
+    <link rel="preload" href="DLC/Arid Animal Pack/Arid Animal Pack.jpg" as="image">
+    <link rel="preload" href="DLC/Oceania Pack/Oceania Pack.png" as="image">
+    <link rel="preload" href="DLC/Eurasia Animal Pack/Eurasia Animal Pack.jpg" as="image">
+    <link rel="preload" href="DLC/Barnyard Animal Pack/Barnyard Animal Pack.png" as="image">
+</head>
+
+<body onselectstart="return false;">
+    <div id="popup" class="cień">
+        <center>
+            <p style="margin-top: -3%;">Wybierz swoją wersję, aby dostosować swoje&nbsp;wrażenia:</p><br>
+            <button class="button cień opcja" onclick="wybierzWersje('pc')"><img class="wybor" style="width:90%; margin-top: -1%;" src="Ikony/Planet Zoo_pc.png" alt="PC"></button>
+            <button class="button cień opcja" onclick="wybierzWersje('console')"><img class="wybor" style="width:90%; margin-top: -1%;" src="Ikony/Planet Zoo_konsola.png" alt="PC"></button>
+        </center>
+    </div>
+    <div class="content">
+        <div id="demo1">
+            <header>
+                <center>
+                    <h1 class="cień tytul">Menu główne</h1>
+                    <ol class="menu">
+                        <li><a href="Strona główna - konsola.html">Strona główna</a>
+                        </li>
+
+                        <li><a href="#">Encyklopedia</a>
+                            <ul>
+                                <li><a href="Zoopedia.html">Zoopedia</a></li>
+                                <li><a href="Słowniczek.html">Słowniczek</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Nowości</a>
+                            <ul>
+                                <li><a href="Aktualizacje - konsola.html">Aktualizacje</a></li>
+                                <li><a href="DLC - konsola.html">DLC</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">O Nas</a>
+                            <ul>
+                                <li><a href="Historia.html">Historia</a></li>
+                                <li><a href="Skróty klawiszowe.html">Skróty klawiszowe</a></li>
+                                <li><a href="Muzyka.html" target="_blank">Muzyka</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Internetowe Zoo</a>
+                            <ul>
+                                <li><a href="Mapa Zoo.html">Mapa Zoo</a></li>
+                                <li><a href="Informacje dnia.html">Informacje dnia</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </center>
+            </header>
+            <div style="clear: both;"></div>
+            <div style="animation: fadeIn ease-in .5s backwards;">
+                <div id="sidebar">
+                    <center>
+                        <button class="button" onclick="otworzPopup()" style="padding: 10%;">
+                            <p style="margin-top: -2%; font-size: 1.2vw;" class="cień">Wersja:</p>
+                            <img style="width:72%; margin-top: -10%; transition: .5s ease-out .1s;" src="Ikony/pc_konsola.png" alt="PC/Konsola">
+                        </button>
+                    </center>
+                </div>
+                <center>
+                    <img style="width:5.5%; margin-top: -5%;" src="Ikony/dlc.png" alt="DLC">
+                </center>
+                <h1 class="tytul cień" style="margin-top: 0%;">DLC</h1>
+                <center>
+                    <img style="width:25%; margin-top: -2%;" src="Ikony/konsola_napis.png" alt="napis"><br><br>
+                </center>
+                <p class="cień opis" style="margin-top: -1.5%;"><i>Witaj na stronie DLC Planet Zoo!<br> Zebrano tutaj wszystkie dodatki do gry.<br> Dowiedz się więcej na temat każdego pakietu rozszerzeń.<br> Życzymy miłego czytania!</i>
+                </p>
+                <div class="cień">
+                    <div>
+                        <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Deluxe_Upgrade_Pack"></p>
+                            <a href="DLC/Konsola/Deluxe Upgrade Pack.html"><img class="galeria" src="DLC/Konsola/Wetlands and Southeast Asia.png" alt="Delux" width="90%"></a>
+                            <p class="podpis" style="margin-left: -3%;">Deluxe Upgrade Pack</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="North_America_and_Europe_Bundle"></p>
+                            <a href="DLC/Konsola/North America and Europe Bundle.html"><img class="galeria" src="DLC/Konsola/North America and Europe Bundle.png" alt="North America and Europe Bundle" width="90%"></a>
+                            <p class="podpis" style="margin-left: -3%;">North America and Europe Bundle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z Planet Zoo!</h2>
+        <center>
+            <a href="https://www.xbox.com/pl-PL/games/store/planet-zoo-edycja-konsolowa/9n14fmpvd7b5"><img class="stopka" src="Ikony/Xbox-logo.png" alt="Logo Xbox" style="margin: -1%; width: 12%; padding-right: 1%; margin-right: 3%;"></a>
+            <a href="https://store.playstation.com/pl-pl/product/EP2377-PPSA18026_00-PLANETZOOOOOOOOO"><img class="stopka" src="Ikony/Playstation.png" alt="Logo Playstation" style="margin: -1.5%; width: 11%; padding-right: 1%; margin-right: 0.5%;"></a>
+            <a href="https://forums.frontier.co.uk/categories/planet-zoo/"><img class="stopka" src="Ikony/Frontier_logo.png" alt="Logo Frontier" style="margin: 1.2%; padding-right: 1%;"></a>
+            <a href="https://twitter.com/planetzoogame"><img class="stopka_znaczki" src="Ikony/logo twitter.png" alt="Logo Twitter" style="margin: 1.7%; padding-right: 1%;"></a>
+            <a href="https://www.youtube.com/planetzoogame"><img class="stopka_znaczki" src="Ikony/logo youtube.png" alt="Logo Youtube" style="margin: 2%;"></a>
+        </center><br>
+        <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script>
+        $(function() {
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 1000) {
+                    $('.scrollTopButton').addClass('show');
+                } else {
+                    $('.scrollTopButton').removeClass('show');
+                }
+            });
+
+            $('.scrollTopButton').click(function() {
+                $('body').animate({
+                    scrollTop: 0
+                }, 500, 'linear');
+            });
+        });
+
+        function wybierzWersje(wersja) {
+            localStorage.setItem('wybor_wersji', wersja);
+            if (wersja === 'pc') {
+                window.location.href = 'DLC.html';
+            } else if (wersja === 'console') {
+                window.location.href = 'DLC - konsola.html';
+            }
+        }
+
+        function otworzPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+        if (localStorage.getItem('wybor_wersji') === null) {
+            otworzPopup();
+        }
+    </script>
+    <span class="scrollTopButton" onclick="scrollToTop()"></span>
+</body>
+
+</html>

@@ -15,11 +15,44 @@
             scroll-behavior: smooth;
         }
     </style>
+    <link rel="preload" href="Ikony/pc_konsola.png" as="image">
+    <link rel="preload" href="Ikony/Planet Zoo_konsola.png" as="image">
+    <link rel="preload" href="Ikony/Planet Zoo_pc.png" as="image">
+    <link rel="preload" href="Ikony/dlc.png" as="image">
+    <link rel="preload" href="Ikony/Steam_logo.png" as="image">
+    <link rel="preload" href="Ikony/Frontier_logo.png" as="image">
+    <link rel="preload" href="Ikony/logo twitter.png" as="image">
+    <link rel="preload" href="Ikony/logo youtube.png" as="image">
+    <link rel="preload" href="Ikony/scrollup.png" as="image">
+    <link rel="preload" href="DLC/Delux/Delux.png" as="image">
+    <link rel="preload" href="DLC/Arctic Pack/Arctic Pack.png" as="image">
+    <link rel="preload" href="DLC/South America Pack/South America Pack.png" as="image">
+    <link rel="preload" href="DLC/Australia Pack/Australia Pack.png" as="image">
+    <link rel="preload" href="DLC/Aquatic Pack/Aquatic Pack.png" as="image">
+    <link rel="preload" href="DLC/Southeast Asia Animal Pack/Southeast Asia Animal Pack.png" as="image">
+    <link rel="preload" href="DLC/Africa Pack/Africa Pack.png" as="image">
+    <link rel="preload" href="DLC/North America Animal Pack/North America Animal Pack.png" as="image">
+    <link rel="preload" href="DLC/Europe Pack/Europe Pack.png" as="image">
+    <link rel="preload" href="DLC/Wetlands Animal Pack/Wetlands Animal Pack.png" as="image">
+    <link rel="preload" href="DLC/Conservation Pack/Conservation Pack.png" as="image">
+    <link rel="preload" href="DLC/Twilight Pack/Twilight Pack.png" as="image">
+    <link rel="preload" href="DLC/Grasslands Animal Pack/Grasslands Animal Pack.png" as="image">
+    <link rel="preload" href="DLC/Tropical Pack/Tropical Pack.jpg" as="image">
+    <link rel="preload" href="DLC/Arid Animal Pack/Arid Animal Pack.jpg" as="image">
+    <link rel="preload" href="DLC/Oceania Pack/Oceania Pack.png" as="image">
+    <link rel="preload" href="DLC/Eurasia Animal Pack/Eurasia Animal Pack.jpg" as="image">
+    <link rel="preload" href="DLC/Barnyard Animal Pack/Barnyard Animal Pack.png" as="image">
 </head>
 
 <body onselectstart="return false;">
+    <div id="popup" class="cień">
+        <center>
+            <p style="margin-top: -3%;">Wybierz swoją wersję, aby dostosować swoje&nbsp;wrażenia:</p><br>
+            <button class="button cień opcja" onclick="wybierzWersje('pc')"><img class="wybor" style="width:90%; margin-top: -1%;" src="Ikony/Planet Zoo_pc.png" alt="PC"></button>
+            <button class="button cień opcja" onclick="wybierzWersje('console')"><img class="wybor" style="width:90%; margin-top: -1%;" src="Ikony/Planet Zoo_konsola.png" alt="PC"></button>
+        </center>
+    </div>
     <div class="content">
-
         <div id="demo1">
             <header>
                 <center>
@@ -60,8 +93,16 @@
             </header>
             <div style="clear: both;"></div>
             <div style="animation: fadeIn ease-in .5s backwards;">
+                <div id="sidebar">
+                    <center>
+                        <button class="button" onclick="otworzPopup()" style="padding: 10%;">
+                            <p style="margin-top: -2%; font-size: 1.2vw;" class="cień">Wersja:</p>
+                            <img style="width:72%; margin-top: -10%; transition: .5s ease-out .1s;" src="Ikony/pc_konsola.png" alt="PC/Konsola">
+                        </button>
+                    </center>
+                </div>
                 <center>
-                    <img style="width:5.5%; margin-top: 2%;" src="Ikony/dlc.png" alt="DLC">
+                    <img style="width:5.5%; margin-top: -5%;" src="Ikony/dlc.png" alt="DLC">
                 </center>
                 <h1 class="tytul cień" style="margin-top: 0%;">DLC</h1>
                 <p class="cień opis" style="margin-top: -1.5%;"><i>Witaj na stronie DLC Planet Zoo!<br> Zebrano tutaj wszystkie dodatki do gry.<br> Dowiedz się więcej na temat każdego pakietu rozszerzeń.<br> Życzymy miłego czytania!</i>
@@ -186,8 +227,14 @@
                             <p class="podpis" style="margin-left: -3%;">Eurasia Animal Pack</p>
                         </div>
                     </div>
+                    <div>
+                        <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Barnyard_Animal_Pack"></p>
+                            <a href="DLC/Barnyard Animal Pack/Barnyard Animal Pack.html"><img class="galeria" src="DLC/Barnyard Animal Pack/Barnyard Animal Pack.png" alt="Barnyard Animal Pack" width="90%"></a>
+                            <p class="podpis" style="margin-left: -3%;">Barnyard Animal Pack</p>
+                        </div>
+                    </div>
                 </div>
-                <span class="scrollTopButton"></span>
             </div>
         </div>
     </div>
@@ -218,8 +265,24 @@
                 }, 500, 'linear');
             });
         });
-    </script>
 
+        function wybierzWersje(wersja) {
+            localStorage.setItem('wybor_wersji', wersja);
+            if (wersja === 'pc') {
+                window.location.href = 'DLC.html';
+            } else if (wersja === 'console') {
+                window.location.href = 'DLC - konsola.html';
+            }
+        }
+
+        function otworzPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+        if (localStorage.getItem('wybor_wersji') === null) {
+            otworzPopup();
+        }
+    </script>
+    <span class="scrollTopButton" onclick="scrollToTop()"></span>
 </body>
 
 </html>

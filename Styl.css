@@ -51,15 +51,35 @@ body {
     #popup {
         text-align: center;
     }
-    .button {
+    #popup p {
+        font-size: 3.5vw;
+    }
+    #popup .button {
         display: block;
         margin-bottom: 2%;
     }
-    .button.opcja {
-        margin-left: -30%;
+    #popup .button.opcja {
+        margin-left: 0%;
+        width: 60%;
+        /* Dostosowanie marginesu przycisku */
     }
     .wybor {
+        /* Ustawienie szerokości obrazka */
         height: auto;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .wybor {
+        /* Ustawienie szerokości obrazka */
+        height: auto;
+        max-width: 90%;
+    }
+    #popup .button.opcja {
+        margin-left: 0%;
+        width: 40%;
+        /* Dostosowanie marginesu przycisku */
     }
 }
 
