@@ -7,23 +7,408 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deluxe Edition</title>
     <link rel="shortcut icon" href="../../Ikony/Planet Zoo.png">
+    <style>
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            margin-left: 1vw;
+        }
+        
+        .material-icons {
+            width: 4vw;
+            max-height: 6vw;
+        }
+        
+        .material-icons:hover,
+        li span.album:hover,
+        .music-list li:hover {
+            opacity: 60%;
+            transition: .3s ease-out .1s;
+            cursor: pointer;
+        }
+        
+        .material-icons.rotate-90:hover {
+            transition: .0s ease-out .0s;
+        }
+        
+        .no-hover {
+            pointer-events: none;
+        }
+        
+        .sidebar {
+            float: right;
+            text-align: left;
+            width: 30%;
+            padding-left: 3vw;
+            box-sizing: border-box;
+        }
+        
+        .selected {
+            color: rgb(211, 224, 92);
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        @media screen and (min-width: 768px) {
+            .music-list {
+                height: 70%;
+            }
+            .material-icons.play {
+                margin-top: 0.15vw;
+            }
+        }
+        
+        @media screen and (max-width: 767px) {
+            .top-bar {
+                margin: -5%;
+                margin-top: -5%;
+            }
+            .material-icons.play {
+                margin-top: 0.5vw;
+            }
+        }
+        
+        .rotate-90 {
+            transform: rotate(90deg);
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+        
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+        }
+        
+         :root {
+            --pink: #ff74a4;
+            --violet: #9f6ea3;
+            --lightblack: #515C6F;
+            --white: #ffffff;
+            --darkwhite: #cecaca;
+            --pinkshadow: #ffcbdd;
+            --lightbshadow: rgba(0, 0, 0, 0.15);
+        }
+        
+        .wrapper {
+            width: 40%;
+            min-width: 40%;
+            padding: 1vw 2vw;
+            overflow: hidden;
+            position: relative;
+            border-radius: 3vw;
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0vw 6px 15px var(--lightbshadow);
+            opacity: 90%;
+        }
+        
+        .wrapper i {
+            cursor: pointer;
+        }
+        
+        .progress-area .song-timer,
+        .controls,
+        .music-list .header,
+        .music-list ul li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .top-bar {
+            align-items: center;
+            justify-content: space-between;
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .top-bar i {
+            font-size: 1.2vw;
+            color: var(--lightblack);
+        }
+        
+        .top-bar i:first-child {
+            margin-left: -3vw;
+        }
+        
+        .top-bar span {
+            font-size: 1.6vw;
+            color: var(--lightblack);
+            margin: 0%;
+        }
+        
+        .img-area {
+            width: 100%;
+            min-height: 19vw;
+            max-height: 19vw;
+            overflow: hidden;
+            margin-top: 1vw;
+            border-radius: 6vw;
+            box-shadow: 0px 6px 12px var(--lightbshadow);
+        }
+        
+        .img-area img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .song-details {
+            text-align: center;
+            margin: 1vw 0;
+        }
+        
+        .song-details p {
+            color: var(--lightblack);
+        }
+        
+        .song-details .name {
+            font-size: 1.6vw;
+        }
+        
+        .song-details .artist {
+            font-size: 1.3vw;
+            opacity: 0.9;
+            line-height: 1vw;
+        }
+        
+        .progress-area {
+            height: 1vw;
+            width: 100%;
+            border-radius: 5%;
+            background: #8ff1d1;
+            cursor: pointer;
+        }
+        
+        .progress-area .progress-bar {
+            height: inherit;
+            width: 0%;
+            position: relative;
+            background: linear-gradient(#139469, #0d684a);
+        }
+        
+        .progress-bar::before {
+            content: "";
+            position: absolute;
+            height: 2vw;
+            width: 2vw;
+            border-radius: 50%;
+            top: 50%;
+            right: -5px;
+            z-index: 2;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-50%);
+            background: inherit;
+            transition: opacity 0.2s ease;
+        }
+        
+        .progress-area:hover .progress-bar::before {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .progress-area .song-timer {
+            margin-top: 1vw;
+        }
+        
+        .song-timer span {
+            font-size: 1vw;
+            color: var(--lightblack);
+        }
+        
+        .controls {
+            margin: 1% 0 1% 0;
+            margin-top: 3vw;
+            color: white;
+        }
+        
+        .controls i {
+            font-size: 3vw;
+            user-select: none;
+            background: linear-gradient(#139469, #0d684a);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .controls i:nth-child(2),
+        .controls i:nth-child(4) {
+            font-size: 2.5vw;
+        }
+        
+        .controls #prev {
+            margin-right: -1%;
+        }
+        
+        .controls #next {
+            margin-left: -1%;
+        }
+        
+        .controls .play-pause {
+            height: 3vw;
+            width: 3vw;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%);
+            box-shadow: 0vw 0vw 3vw #0d684a;
+        }
+        
+        .play-pause::before {
+            position: absolute;
+            content: "";
+            height: 4vw;
+            width: 4vw;
+            border-radius: inherit;
+            background: linear-gradient(#139469, #0d684a);
+        }
+        
+        .play-pause i {
+            height: 4vw;
+            width: 4vw;
+            line-height: 4vw;
+            text-align: center;
+            background: inherit;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+        }
+        
+        .music-list {
+            position: absolute;
+            background: var(--white);
+            width: 100%;
+            left: 0;
+            bottom: -55%;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 5;
+            padding: 1% 1%;
+            border-radius: 0.15vw;
+            box-shadow: 0% -5% 10% rgba(0, 0, 0, 0.1);
+            transition: all 0.15s ease-out;
+        }
+        
+        .music-list.show {
+            bottom: 0;
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        .header .row {
+            display: flex;
+            align-items: center;
+            font-size: 1.4vw;
+            color: var(--lightblack);
+            margin-left: 1vw;
+        }
+        
+        .header {
+            box-shadow: 0vw 0.5vw 0.5vw rgba(0, 0, 0, 0.1);
+            /* Cień pod sobą */
+        }
+        
+        .header .row i {
+            cursor: default;
+            font-size: 3.5vw;
+        }
+        
+        .header .row span {
+            margin-left: 1%;
+            margin-bottom: 0%;
+        }
+        
+        .header .row p {
+            margin-left: 1%;
+            margin-bottom: 0%;
+        }
+        
+        li .row {
+            text-align: left;
+        }
+        
+        .header #close {
+            font-size: 2vw;
+            color: var(--lightblack);
+        }
+        
+        .music-list ul {
+            /* Maksymalna wysokość - połowa wysokości ekranu */
+            max-height: 25vw;
+            overflow-y: auto;
+            /* Dodanie paska przewijania, gdy lista jest zbyt długa */
+            margin: 0.2%;
+            margin-left: 1vw;
+            margin-right: -1%;
+            /* Pasek przewijania dla music-list */
+            scrollbar-width: thin;
+            /* Szerokość paska przewijania */
+            scrollbar-color: #dfdfdf #555555;
+        }
+        
+        .music-list ul li {
+            list-style: none;
+            display: flex;
+            cursor: pointer;
+            padding-bottom: 0.5%;
+            margin-bottom: 0.5%;
+            color: var(--lightblack);
+            border-bottom: 0.15vw solid #E5E5E5;
+            font-size: 1.2vw;
+        }
+        
+        .music-list ul li:last-child {
+            border-bottom: 0%;
+        }
+        
+        .music-list ul li .row span {
+            font-size: 1.4vw;
+        }
+        
+        .music-list ul li .row p {
+            opacity: 0.9;
+            margin: 0%;
+        }
+        
+        ul li .audio-duration {
+            font-size: 1.3vw;
+            margin-right: 2vw;
+        }
+        
+        ul li.playing {
+            pointer-events: none;
+            font-weight: bold;
+            color: #128f65;
+        }
+    </style>
+    <link rel="preload" href="../../Muzyka/obrazy/Delux_Edition.jpg" as="image">
+    <link rel="preload" href="../../Ikony/Steam_logo.png" as="image">
+    <link rel="preload" href="1.jpg" as="image">
+    <link rel="preload" href="2.jpg" as="image">
+    <link rel="preload" href="3.jpg" as="image">
+    <link rel="preload" href="PZ_Deluxe_wallpapers1.jpg" as="image">
+    <link rel="preload" href="PZ_Deluxe_wallpapers2.jpg" as="image">
+    <link rel="preload" href="PZ_Deluxe_wallpapers3.jpg" as="image">
+    <link rel="preload" href="PZ_Deluxe_wallpapers4.jpg" as="image">
+    <link rel="preload" href="PZ_Deluxe_wallpapers5.jpg" as="image">
 </head>
-<style>
-    ul,
-    li {
-        margin: 0;
-        padding: 0;
-    }
-    
-    li {
-        margin-left: 1vw;
-    }
-</style>
 
 <body onselectstart="return false;">
     <div class="content">
-        <div class="cień">
-            <div style="animation: fadeIn ease-in .5s backwards;">
+        <div style="animation: fadeIn ease-in .5s backwards;">
+            <div class="cień">
                 <header class="tytul"><i>Planet Zoo: Deluxe Edition</i></header>
                 <div style="clear: both;"></div>
                 <p id="powrot" style="margin: 0%; margin-top: 1%;">
@@ -58,9 +443,55 @@
                             i&nbsp;poruszają się w&nbsp;bardzo charakterystyczny sposób, kołysząc ciałem na boki. Wymagają uważnej opieki, ponieważ są to zwierzęta wiodące samotniczy tryb życia, które mają bardzo szczególne potrzeby.</li>
                     </ul><br>
                     <b style="font-size: 1.4vw;">Oficjalna ścieżka dźwiękowa</b><br> Ty, ja i reszta zwierząt: Muzyka z gry Planet Zoo — oryginalna ścieżka dźwiękowa złożona z 18 wyjątkowych utworów. Możesz słuchać tej wspaniałej muzyki, gdy tylko zechcesz.
-                    <div style="margin-top: -1vw;">
-                        <center><iframe style="height: auto; width: 60%; min-width: 40vw; max-width: 40vw; min-height: 40vw; max-height: 40vw; border: 0px; margin: 0%; user-select: none;" src="index.html"></iframe></center>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 1vw;">
+                <div class="wrapper" style="animation: fadeIn ease-in .5s backwards; margin-left: 30%;">
+                    <span style="color: var(--lightblack); font-size: 1.8vw; margin-bottom: -1vw; margin-top: -1vw; text-align: center;"><b>Lista odtwarzania:</b></span>
+                    <div class="top-bar">
+                        <span style="text-align: center;">Delux</span>
                     </div>
+                    <div class="img-area" style="margin-top: 1.8vw;">
+                        <img src="" alt="">
+                    </div>
+                    <div class="song-details">
+                        <p class="name"></p>
+                        <p class="artist"></p>
+                    </div>
+                    <div class="progress-area">
+                        <div class="progress-bar">
+                            <audio id="main-audio" src=" " style="display: none;"></audio>
+                        </div>
+                        <div class="song-timer">
+                            <span class="current-time">0:00</span>
+                            <span class="max-duration">0:00</span>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <i id="repeat-plist" class="material-icons" title="Playlist looped" style="font-style: normal; font-weight: bold; font-size: 3vw;">⇄</i>
+                        <i id="prev" class="material-icons" style="font-style: normal; margin-top: -0.5vw;"><b style="font-size: 2vw;"><span style="margin-right: -0.4vw;">∣</span>◀</b></i>
+                        <div class="play-pause rotate-90">
+                            <i class="material-icons play" style="font-style: normal; margin-bottom: 0.5vw;">=</i>
+                        </div>
+                        <i id="next" class="material-icons" style="font-style: normal; margin-top: -0.5vw;"><b style="font-size: 2vw;">►<span style="margin-left: -0.5vw;">∣</span></b></i>
+                        <i id="more-music" class="material-icons" style="font-style: normal;">&#8802;&#9834;</i>
+                    </div>
+                    <div class="music-list">
+                        <div class="header">
+                            <div class="row">
+                                <i class="list material-icons no-hover">&#8802;&#9834;</i>
+                                <span style="min-width: 20vw; text-align: left;">Lista muzyki</span>
+                            </div>
+                            <i id="close" class="material-icons" style="margin-right: 1vw; font-style: normal;"><b>&#10005;</b></i>
+                        </div>
+                        <ul>
+                            <!-- here li list are coming from js -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cień">
+                <div class="akapit">
                     <b style="font-size: 1.4vw; margin-top: -1vw;">Zestaw tapet</b><br> Piękne grafiki z gry Planet Zoo, które idealnie sprawdzą się jako tło pulpitu.</div>
                 <div>
                     <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Tapety na pulpit od Planet Zoo</i></p>
@@ -74,12 +505,14 @@
                 </div>
             </div>
         </div>
-        <div style="clear: both;"></div>
+    </div>
+    </div>
+    <div style="clear: both;"></div>
     </div>
     <footer>
         <h2 style="color: white; text-align: center;" class="cień">Sklep internetowy Steam!</h2>
         <center>
-            <a href="https://store.steampowered.com/app/1098120/Planet_Zoo_Deluxe_Upgrade_Pack/?curator_clanid=34948692"><img class="stopka" src="../../Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 2%;"></a>
+            <a href="https://store.steampowered.com/app/1098120/Planet_Zoo_Deluxe_Upgrade_Pack/?curator_clanid=34948692" target="_blank"><img class="stopka" src="../../Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 0%;"></a>
         </center>
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </footer>
@@ -90,6 +523,419 @@
             $(".gallery").gallery();
         })(Comp);
     </script>
+    <script>
+        let allMusic6 = [{
+            name: "Ty, ja i reszta zwierząt",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-26"
+        }, {
+            name: "Kawałki Parkiego",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-27"
+        }, {
+            name: "Czteronożny ulubieniec",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-28"
+        }, {
+            name: "Jeux Doe",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-29"
+        }, {
+            name: "Bohaterska żyrafa",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-30"
+        }, {
+            name: "Karuzela zwierząt",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-31"
+        }, {
+            name: "Odyseja bawołów",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-32"
+        }, {
+            name: "Zwinięty pancernik",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-33"
+        }, {
+            name: "Dwa flamingi",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-34"
+        }, {
+            name: "Niedźwiedzia radość",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-35"
+        }, {
+            name: "Kampus hipopotama",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-36"
+        }, {
+            name: "Zwinięta kolczatka",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-37"
+        }, {
+            name: "Walc pangolina",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-38"
+        }, {
+            name: "Merdający ogon wielkiego psa",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-39"
+        }, {
+            name: "Bliźniacze dzioby",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-40"
+        }, {
+            name: "Słoniowe wspomnienia",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-41"
+        }, {
+            name: "Zielone pędy",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-42"
+        }, {
+            name: "Ty, ja i starsze zwierzęta",
+            artist: "Deluxe Edition",
+            img: "Delux_Edition",
+            src: "music-43"
+        }];
+    </script>
+    <script>
+        const wrapper = document.querySelector(".wrapper"),
+            musicImg = wrapper.querySelector(".img-area img"),
+            musicName = wrapper.querySelector(".song-details .name"),
+            musicArtist = wrapper.querySelector(".song-details .artist"),
+            playPauseBtn = wrapper.querySelector(".play-pause"),
+            prevBtn = wrapper.querySelector("#prev"),
+            nextBtn = wrapper.querySelector("#next"),
+            mainAudio = wrapper.querySelector("#main-audio"),
+            progressArea = wrapper.querySelector(".progress-area"),
+            progressBar = progressArea.querySelector(".progress-bar"),
+            musicList = wrapper.querySelector(".music-list"),
+            moreMusicBtn = wrapper.querySelector("#more-music"),
+            closemoreMusic = musicList.querySelector("#close");
+
+        let musicIndex = Math.floor((Math.random() * allMusic6.length) + 1);
+        isMusicPaused = true;
+
+        window.addEventListener("load", () => {
+            loadMusic(musicIndex);
+            playingSong();
+        });
+
+        let currentAlbum = {
+            name: "Delux",
+            musicList: allMusic6,
+            img: "../../Muzyka/obrazy/Delux_Edition.jpg"
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const defaultMusicIndex = 1; // Załóżmy, że chcemy odtwarzać pierwszy utwór
+
+            // Ustaw tytuł albumu
+            const topBar = document.querySelector('.top-bar span');
+            topBar.textContent = currentAlbum.name;
+
+            // Wczytaj listę utworów dla albumu
+            loadMusicList(currentAlbum.musicList);
+
+            // Odtwórz pierwszy utwór po załadowaniu strony
+            loadMusic(defaultMusicIndex, currentAlbum.musicList);
+            pauseMusic();
+        });
+
+        function loadMusicList(musicArray) {
+            const ulTag = wrapper.querySelector("ul");
+            ulTag.innerHTML = ""; // Wyczyść listę, aby dodać nowe utwory
+
+            musicArray.forEach((music, index) => {
+                let liTag = `<li li-index="${index + 1}">
+                <div class="row">
+                  <span>${music.name}</span>
+                  <p>${music.artist}</p>
+                </div>
+                <span id="${music.src}" class="audio-duration">${index === 0 ? '' : ''}</span>
+              </li>`;
+                ulTag.insertAdjacentHTML("beforeend", liTag);
+
+                const audioElement = document.createElement('audio');
+                audioElement.src = `../../Muzyka/utwory/${music.src}.mp3`;
+                audioElement.setAttribute('preload', 'auto');
+                audioElement.style.display = 'none'; // Ukrywamy element audio
+
+                ulTag.appendChild(audioElement);
+
+                const liAudioDuartionTag = ulTag.querySelector(`#${music.src}`);
+                audioElement.addEventListener("loadeddata", () => {
+                    let duration = audioElement.duration;
+                    let totalMin = Math.floor(duration / 60);
+                    let totalSec = Math.floor(duration % 60);
+                    if (totalSec < 10) { //if sec is less than 10 then add 0 before it
+                        totalSec = `0${totalSec}`;
+                    };
+                    liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`; //passing total duration of song
+                    liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`); //adding t-duration attribute with total duration value
+                });
+            });
+            // Ponowne przypisanie zdarzenia onclick dla każdego elementu li po aktualizacji listy
+            playingSong();
+        }
+
+        let cachedAudio = {};
+
+        function loadMusic(indexNumb, musicArray) {
+            if (musicArray && indexNumb > 0 && indexNumb <= musicArray.length) {
+                musicName.innerText = musicArray[indexNumb - 1].name;
+                musicArtist.innerText = musicArray[indexNumb - 1].artist;
+                musicImg.src = `${musicArray[indexNumb - 1].img}.jpg`;
+
+                const musicSrc = musicArray[indexNumb - 1].src;
+                if (cachedAudio[musicSrc]) {
+                    // Pobierz wcześniej załadowany element audio z pamięci podręcznej
+                    mainAudio.src = cachedAudio[musicSrc];
+                    musicIndex = indexNumb;
+                    playMusic();
+                } else {
+                    // Pobierz nowy plik audio
+                    mainAudio.src = `../../Muzyka/utwory/${musicSrc}.mp3`;
+                    musicIndex = indexNumb;
+                    cachedAudio[musicSrc] = mainAudio.src; // Zachowaj plik audio w pamięci podręcznej
+                    playMusic();
+                }
+            } else {
+                console.error("Invalid music index or music array.");
+            }
+        }
+
+        // play music function
+        function playMusic() {
+            wrapper.classList.add("paused");
+            const playPauseIcon = playPauseBtn.querySelector("i");
+            playPauseIcon.innerText = "=";
+            mainAudio.play();
+        }
+
+        // pause music function
+        function pauseMusic() {
+            wrapper.classList.remove("paused");
+            const playPauseIcon = playPauseBtn.querySelector("i");
+            playPauseIcon.innerText = "▲";
+            mainAudio.pause();
+        }
+
+
+        //prev music function
+        function prevMusic() {
+            musicIndex--; //decrement of musicIndex by 1
+            //if musicIndex is less than 1 then musicIndex will be the array length so the last music play
+            if (musicIndex < 1) {
+                musicIndex = currentAlbum.musicList.length;
+            }
+            loadMusic(musicIndex, currentAlbum.musicList);
+            playMusic();
+            playingSong();
+        }
+
+        //next music function
+        function nextMusic() {
+            musicIndex++; //increment of musicIndex by 1
+            //if musicIndex is greater than array length then musicIndex will be 1 so the first music play
+            if (musicIndex > currentAlbum.musicList.length) {
+                musicIndex = 1;
+            }
+            loadMusic(musicIndex, currentAlbum.musicList);
+            playMusic();
+            playingSong();
+        }
+
+
+        // play or pause button event
+        playPauseBtn.addEventListener("click", () => {
+            const isMusicPlay = wrapper.classList.contains("paused");
+            //if isPlayMusic is true then call pauseMusic else call playMusic
+            isMusicPlay ? pauseMusic() : playMusic();
+            playingSong();
+        });
+
+        //prev music button event
+        prevBtn.addEventListener("click", () => {
+            prevMusic();
+        });
+
+        //next music button event
+        nextBtn.addEventListener("click", () => {
+            nextMusic();
+        });
+
+        // update progress bar width according to music current time
+        mainAudio.addEventListener("timeupdate", (e) => {
+            const currentTime = e.target.currentTime; //getting playing song currentTime
+            const duration = e.target.duration; //getting playing song total duration
+            let progressWidth = (currentTime / duration) * 100;
+            progressBar.style.width = `${progressWidth}%`;
+
+            let musicCurrentTime = wrapper.querySelector(".current-time"),
+                musicDuartion = wrapper.querySelector(".max-duration");
+            mainAudio.addEventListener("loadeddata", () => {
+                // update song total duration
+                let mainAdDuration = mainAudio.duration;
+                let totalMin = Math.floor(mainAdDuration / 60);
+                let totalSec = Math.floor(mainAdDuration % 60);
+                if (totalSec < 10) { //if sec is less than 10 then add 0 before it
+                    totalSec = `0${totalSec}`;
+                }
+                musicDuartion.innerText = `${totalMin}:${totalSec}`;
+            });
+            // update playing song current time
+            let currentMin = Math.floor(currentTime / 60);
+            let currentSec = Math.floor(currentTime % 60);
+            if (currentSec < 10) { //if sec is less than 10 then add 0 before it
+                currentSec = `0${currentSec}`;
+            }
+            musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
+        });
+
+        // update playing song currentTime on according to the progress bar width
+        progressArea.addEventListener("click", (e) => {
+            let progressWidth = progressArea.clientWidth; //getting width of progress bar
+            let clickedOffsetX = e.offsetX; //getting offset x value
+            let songDuration = mainAudio.duration; //getting song total duration
+
+            mainAudio.currentTime = (clickedOffsetX / progressWidth) * songDuration;
+            playMusic(); //calling playMusic function
+            playingSong();
+        });
+
+        //change loop, shuffle, repeat icon onclick
+        const repeatBtn = wrapper.querySelector("#repeat-plist");
+        repeatBtn.addEventListener("click", () => {
+            let getText = repeatBtn.innerText; //getting this tag innerText
+            switch (getText) {
+                case "⇄":
+                    repeatBtn.innerText = "⟲";
+                    repeatBtn.setAttribute("title", "Song looped");
+                    break;
+                case "⟲":
+                    repeatBtn.innerText = "⤮";
+                    repeatBtn.setAttribute("title", "Playback shuffled");
+                    break;
+                case "⤮":
+                    repeatBtn.innerText = "⇄";
+                    repeatBtn.setAttribute("title", "Playlist looped");
+                    break;
+            }
+        });
+
+        //code for what to do after song ended
+        mainAudio.addEventListener("ended", () => {
+            let getText = repeatBtn.innerText; //getting this tag innerText
+            switch (getText) {
+                case "⇄":
+                    nextMusic(); //calling nextMusic function
+                    break;
+                case "⟲":
+                    mainAudio.currentTime = 0; //setting audio current time to 0
+                    loadMusic(musicIndex, currentAlbum.musicList); //calling loadMusic function with argument, in the argument there is a index of current song
+                    playMusic(); //calling playMusic function
+                    break;
+                case "⤮":
+                    let randIndex = Math.floor((Math.random() * currentAlbum.musicList.length) + 1); //genereting random index/numb with max range of array length
+                    do {
+                        randIndex = Math.floor((Math.random() * currentAlbum.musicList.length) + 1);
+                    } while (musicIndex == randIndex); //this loop run until the next random number won't be the same of current musicIndex
+                    musicIndex = randIndex; //passing randomIndex to musicIndex
+                    loadMusic(musicIndex, currentAlbum.musicList);
+                    playMusic();
+                    playingSong();
+                    break;
+            }
+        });
+
+
+        //show music list onclick of music icon
+        moreMusicBtn.addEventListener("click", () => {
+            musicList.classList.toggle("show");
+        });
+        closemoreMusic.addEventListener("click", () => {
+            moreMusicBtn.click();
+        });
+
+        const ulTag = wrapper.querySelector("ul");
+        // let create li tags according to array length for list
+        for (let i = 0; i < allMusic6.length; i++) {
+            //let's pass the song name, artist from the array
+            let liTag = `<li li-index="${i + 1}">
+                <div class="row">
+                  <span>${allMusic6[i].name}</span>
+                  <p>${allMusic6[i].artist}</p>
+                </div>
+                <span id="${allMusic6[i].src}" class="audio-duration">3:40</span>
+                <audio class="${allMusic6[i].src}" src="../../Muzyka/utwory/${allMusic6[i].src}.mp3"></audio>
+              </li>`;
+            ulTag.insertAdjacentHTML("beforeend", liTag); //inserting the li inside ul tag
+
+            let liAudioDuartionTag = ulTag.querySelector(`#${allMusic6[i].src}`);
+            let liAudioTag = ulTag.querySelector(`.${allMusic6[i].src}`);
+            liAudioTag.addEventListener("loadeddata", () => {
+                let duration = liAudioTag.duration;
+                let totalMin = Math.floor(duration / 60);
+                let totalSec = Math.floor(duration % 60);
+                if (totalSec < 10) { //if sec is less than 10 then add 0 before it
+                    totalSec = `0${totalSec}`;
+                };
+                liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`; //passing total duation of song
+                liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`); //adding t-duration attribute with total duration value
+            });
+        }
+
+        //play particular song from the list onclick of li tag
+        function playingSong() {
+            const allLiTag = ulTag.querySelectorAll("li");
+
+            for (let j = 0; j < allLiTag.length; j++) {
+                let audioTag = allLiTag[j].querySelector(".audio-duration");
+
+                if (allLiTag[j].classList.contains("playing")) {
+                    allLiTag[j].classList.remove("playing");
+                    let adDuration = audioTag.getAttribute("t-duration");
+                    audioTag.innerText = adDuration;
+                }
+
+                //if the li tag index is equal to the musicIndex then add playing class in it
+                if (allLiTag[j].getAttribute("li-index") == musicIndex) {
+                    allLiTag[j].classList.add("playing");
+                }
+
+                allLiTag[j].setAttribute("onclick", "clicked(this)");
+            }
+        }
+
+        //particular li clicked function
+        function clicked(element) {
+            let getLiIndex = element.getAttribute("li-index");
+            musicIndex = getLiIndex; //updating current song index with clicked li index
+            loadMusic(musicIndex, currentAlbum.musicList); // Przekazujemy tablicę utworów z aktualnego albumu
+            playMusic();
+            playingSong();
+        }
+    </script>
+
 </body>
 
 </html>
