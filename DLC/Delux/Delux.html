@@ -395,14 +395,6 @@
     </style>
     <link rel="preload" href="../../Muzyka/obrazy/Delux_Edition.jpg" as="image">
     <link rel="preload" href="../../Ikony/Steam_logo.png" as="image">
-    <link rel="preload" href="1.jpg" as="image">
-    <link rel="preload" href="2.jpg" as="image">
-    <link rel="preload" href="3.jpg" as="image">
-    <link rel="preload" href="PZ_Deluxe_wallpapers1.jpg" as="image">
-    <link rel="preload" href="PZ_Deluxe_wallpapers2.jpg" as="image">
-    <link rel="preload" href="PZ_Deluxe_wallpapers3.jpg" as="image">
-    <link rel="preload" href="PZ_Deluxe_wallpapers4.jpg" as="image">
-    <link rel="preload" href="PZ_Deluxe_wallpapers5.jpg" as="image">
 </head>
 
 <body onselectstart="return false;">
@@ -452,7 +444,7 @@
                         <span style="text-align: center;">Delux</span>
                     </div>
                     <div class="img-area" style="margin-top: 1.8vw;">
-                        <img src="" alt="">
+                        <img src="../../Muzyka/obrazy/Delux_Edition.jpg" alt="">
                     </div>
                     <div class="song-details">
                         <p class="name"></p>
@@ -703,7 +695,7 @@
             if (musicArray && indexNumb > 0 && indexNumb <= musicArray.length) {
                 musicName.innerText = musicArray[indexNumb - 1].name;
                 musicArtist.innerText = musicArray[indexNumb - 1].artist;
-                musicImg.src = `${musicArray[indexNumb - 1].img}.jpg`;
+                musicImg.src = `../../Muzyka/obrazy/${musicArray[indexNumb - 1].img}.jpg`;
 
                 const musicSrc = musicArray[indexNumb - 1].src;
                 if (cachedAudio[musicSrc]) {
