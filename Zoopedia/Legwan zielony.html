@@ -4,33 +4,51 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legwan zielony</title>
     <link rel="shortcut icon" href="Ikonki/Legwan zielony.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Legwan_zielony" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Legwan_zielony" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Legwan zielony.jpg" alt="Legwan zielony"><b>Legwan zielony</b><br><i style="font-size: 27px;">(Iguana iguana)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Legwan zielony.jpg" alt="Legwan zielony">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Gady</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Łuskonośne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Legwanowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Iguana</i></div>
+                </div>
+                <p class="naglowek"><b>Legwan zielony</b><br><i style="font-size: 1.8vw;">(Iguana iguana)</i></p>
                 <p class="info"><b class="nz">Najmniej zagrożony</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: Nieznana</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
-            <p class="akapit">Legwan zielony <i>(Iguana iguana)</i> to gatunek dużej jaszczurki żyjący w Ameryce Środkowej, w północnych częściach Ameryki Południowej i na Karaibach. Ma długi ogon z&nbspząbkowanym grzebieniem, biegnącym od głowy do podstawy kręgosłupa,
-                a także muskularne kończyny z długimi palcami u&nbspstóp i pazurami. Może mieć również prążki na ogonie i ciele.<br>
-                <br>Legwany te są nazywane „zielonymi”, ale występują w wielu kolorach - zwykle zielonym, niebieskim, brązowym i&nbsppomarańczowym. Barwy te często mieszają się ze sobą, w&nbspzależności od miejsca pochodzenia poszczególnych osobników.
-                Niezależnie od koloru, legwan zielony osiąga do 2&nbspm długości wraz z ogonem. Samce są większe - ważą średnio 4 kg, podczas gdy waga samic to 2 kg.
+            <p class="akapit">Legwan zielony <i>(Iguana iguana)</i> to gatunek dużej jaszczurki żyjący w Ameryce Środkowej, w północnych częściach Ameryki Południowej i na Karaibach. Ma długi ogon z&nbsp;ząbkowanym grzebieniem, biegnącym od głowy do podstawy kręgosłupa,
+                a&nbsp;także muskularne kończyny z&nbsp;długimi palcami u&nbsp;stóp i&nbsp;pazurami. Może mieć również prążki na ogonie i ciele.<br><br>Legwany te są nazywane „zielonymi”, ale występują w wielu kolorach - zwykle zielonym, niebieskim, brązowym
+                i&nbsp;pomarańczowym. Barwy te często mieszają się ze sobą, w&nbsp;zależności od miejsca pochodzenia poszczególnych osobników. Niezależnie od koloru, legwan zielony osiąga do 2&nbsp;m długości wraz z ogonem. Samce są większe - ważą średnio
+                4 kg, podczas gdy waga samic to 2&nbsp;kg.
             </p>
             <hr>
             <div style="clear: both;"></div>
@@ -44,9 +62,9 @@
                             <th>Biomy</th>
                         </tr>
                         <tr>
-                            <td style=" text-align: center;">Ameryka Południowa,<br> Ameryka Środkowa</td>
-                            <td style=" text-align: center;">Meksyk, Brazylia,<br> Ekwador, Karaiby,<br> południe Stanów Zjednoczonych</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Step.png" alt="step"><img id="biom" src="../Ikony/Tropiki.png" alt="tropiki"></td>
+                            <td style=" text-align: center;">Ameryka&nbsp;Południowa,<br> Ameryka Środkowa</td>
+                            <td style=" text-align: center;">Meksyk, Brazylia,<br>Ekwador, Karaiby,<br><span class="keeptogether">południe Stanów Zjednoczonych</span></td>
+                            <td style=" text-align: center;"><span class="keeptogether"><img id="biom" style="width:2.6vw;" src="../Ikony/Step.png" alt="step"><img id="biom" style="width:2.6vw;" src="../Ikony/Tropiki.png" alt="tropiki"></span></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Legwan zielony.jpg">
@@ -57,7 +75,7 @@
                     <table id="cechy">
                         <caption><b>Zachowania społeczne</b></caption>
                         <tr>
-                            <th>Wielkość grupy (bez młodych osobników)</th>
+                            <th>Wielkość grupy<br>(bez&nbsp;młodych&nbsp;osobników)</th>
                             <td>1-2</td>
                         </tr>
                         <tr>
@@ -75,19 +93,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 1,90 m długości &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 1,50 m długości &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;1,90 m długości</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;1,50 m długości</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 14 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 14 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;14 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;14 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 4 kg &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 2 kg &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;4 kg &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;2 kg</div>
                             </td>
                         </tr>
                     </table>
@@ -96,7 +115,7 @@
                         <caption><b>Cykl życiowy</b></caption>
                         <tr>
                             <th>Wiek dojrzałości płciowej</th>
-                            <td>Samce: 3-4 lata, samice: 3-5&nbsplat</td>
+                            <td>Samce: 3-4 lata,<br>samice: 3-5&nbsp;lat</td>
                         </tr>
                         <tr>
                             <th>Wiek zakończenia okresu reprodukcyjnego</th>
@@ -125,14 +144,14 @@
             <hr>
             <div class="info4">
                 <p style="text-align: center;"><b>Potrzeby społeczne</b></p>
-                <p class="akapit">Legwan zielony prowadzi samotniczy tryb życia i wchodzi w interakcje z innymi legwanami tylko w celach rozrodczych. Młode osobniki po opuszczeniu wspólnego gniazda często pozostają przez krótki czas w grupach.
+                <p class="akapit">Legwan zielony prowadzi samotniczy tryb życia i wchodzi w interakcje z&nbsp;innymi legwanami tylko w celach rozrodczych. Młode osobniki po opuszczeniu wspólnego gniazda często pozostają przez krótki czas w&nbsp;grupach.
                 </p>
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
-                <p class="akapit">W okresie godowym samiec wytycza swoje terytorium - jest to zwykle obszar z&nbspdostępem do gałęzi i wody. Broni go przed rywalami i stara się przyciągnąć przemieszczające się po tym terenie samice. Jeśli którąś zainteresuje, partnerka
-                    zbliża się do niego, a on wspina się na jej grzbiet, by rozpocząć kopulację. Samica zwykle składa jaja do wykopanego w ziemi gniazda około 65&nbspdni później. Po 90-120 dniach wykluwają się młode, które od tego momentu są w pełni niezależne.
-                    Osobniki tego gatunku osiągają dojrzałość płciową w&nbspwieku 3-5 lat.
+                <p class="akapit">W okresie godowym samiec wytycza swoje terytorium - jest to zwykle obszar z&nbsp;dostępem do gałęzi i wody. Broni go przed rywalami i stara się przyciągnąć przemieszczające się po tym terenie samice. Jeśli którąś zainteresuje, partnerka
+                    zbliża się do niego, a on wspina się na jej grzbiet, by rozpocząć kopulację. Samica zwykle składa jaja do wykopanego w ziemi gniazda około 65&nbsp;dni później. Po 90-120 dniach wykluwają się młode, które od tego momentu są w pełni
+                    niezależne. Osobniki tego gatunku osiągają dojrzałość płciową w&nbsp;wieku 3-5 lat.
                 </p>
             </div>
             <div style="clear: both;"></div>
@@ -144,7 +163,7 @@
                     <li>Legwan zielony świetnie pływa. Jego silny ogon zapewnia mu napęd w wodzie.</li>
                     <li>Legwan zielony ma fałd skórny na podgardlu. Poruszając nim, komunikuje się z innymi legwanami.</li>
                     <li>Każde młode legwana zielonego ma specjalny „ząb”, którego używa do przebicia skorupy jajka. Krótko po wykluciu nie jest on już potrzebny i odpada.</li>
-                    <li>Legwan zielony na szczycie głowy ma światłoczuły narząd nazywany „okiem ciemieniowym”. Odczuwa on zmiany oświetlenia i&nbspwyczuwa ruch.</li>
+                    <li>Legwan zielony na szczycie głowy ma światłoczuły narząd nazywany „okiem ciemieniowym”. Odczuwa on zmiany oświetlenia i&nbsp;wyczuwa ruch.</li>
                 </ul>
             </div>
             <div class="ciekawostkao">

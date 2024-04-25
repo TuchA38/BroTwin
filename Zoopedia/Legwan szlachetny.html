@@ -4,31 +4,49 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legwan szlachetny</title>
     <link rel="shortcut icon" href="Ikonki/Legwan szlachetny.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Legwan_szlachetny" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Legwan_szlachetny" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Legwan szlachetny.jpg" alt="Legwan szlachetny"><b>Legwan szlachetny</b><br><i style="font-size: 27px;">(Iguana delicatissima)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Legwan szlachetny.jpg" alt="Legwan szlachetny">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Gady</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Łuskonośne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Legwanowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Iguana</i></div>
+                </div>
+                <p class="naglowek"><b>Legwan szlachetny</b><br><i style="font-size: 1.8vw;">(Iguana delicatissima)</i></p>
                 <p class="info"><b class="kz">Krytycznie zagrożone</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: 15 000 (podzielona)</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: 15 000 (podzielona)</p>
             </div>
             <hr>
             <p class="akapit">Legwan szlachetny <i>(Iguana delicatissima)</i> to endemiczny gatunek dużej jaszczurki spotykany wyłącznie w archipelagu Małych Antyli na Morzu Karaibskim, a w szczególności na wyspach Anguilla, Gwadelupa, Martynika i Dominika. Jest to gatunek
-                krytycznie zagrożony w związku z utratą siedlisk, atakami zdziczałych zwierząt oraz hybrydyzacją z gatunkiem inwazyjnym - legwanem zielonym. Legwan szlachetny jest szary, ma zielony brzuch oraz krótki, tępo zakończony pysk z&nbspbiałymi
+                krytycznie zagrożony w związku z utratą siedlisk, atakami zdziczałych zwierząt oraz hybrydyzacją z gatunkiem inwazyjnym - legwanem zielonym. Legwan szlachetny jest szary, ma zielony brzuch oraz krótki, tępo zakończony pysk z&nbsp;białymi
                 łuskami wokół szczęki. Samce mają różowe podgardle i niebieskie łuski wokół oczu, natomiast samice nie mają takiego umaszczenia i osiągają około dwóch trzecich rozmiarów samca.
             </p>
             <hr>
@@ -43,9 +61,9 @@
                             <th>Biomy</th>
                         </tr>
                         <tr>
-                            <td style=" text-align: center;">Ameryka Południowa, Ameryka Środkowa</td>
+                            <td style=" text-align: center;">Ameryka Południowa,<br>Ameryka Środkowa</td>
                             <td style=" text-align: center;">Małe Antyle</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Tropiki.png" alt="tropiki"></td>
+                            <td style=" text-align: center;"><img id="biom" style="width:2.6vw;" src="../Ikony/Tropiki.png" alt="tropiki"></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Legwan szlachetny.jpg">
@@ -56,7 +74,7 @@
                     <table id="cechy">
                         <caption><b>Zachowania społeczne</b></caption>
                         <tr>
-                            <th>Wielkość grupy (bez młodych osobników)</th>
+                            <th>Wielkość grupy<br>(bez&nbsp;młodych&nbsp;osobników)</th>
                             <td>1-2</td>
                         </tr>
                         <tr>
@@ -74,19 +92,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 1,10 m długości &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 1,10 m długości &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;1,10 m długości</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;1,10 m długości</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 14 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 14 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;14 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;14 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp Nieznane &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp Nieznane &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;Nieznane &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;Nieznane</div>
                             </td>
                         </tr>
                     </table>
@@ -95,7 +114,7 @@
                         <caption><b>Cykl życiowy</b></caption>
                         <tr>
                             <th>Wiek dojrzałości płciowej</th>
-                            <td>Samce: 5 lat, samice: 3 lata</td>
+                            <td>Samce: 5 lat,<br>samice: 3 lata</td>
                         </tr>
                         <tr>
                             <th>Wiek zakończenia okresu reprodukcyjnego</th>
@@ -124,13 +143,13 @@
             <hr>
             <div class="info4">
                 <p style="text-align: center;"><b>Potrzeby społeczne</b></p>
-                <p class="akapit">Legwany szlachetne żyją samotnie i wchodzą w interakcje z innymi osobnikami swojego gatunku tylko w celach rozrodczych lub podczas rywalizacji o&nbsppartnerów.</p>
+                <p class="akapit">Legwany szlachetne żyją samotnie i wchodzą w interakcje z innymi osobnikami swojego gatunku tylko w celach rozrodczych lub podczas rywalizacji o&nbsp;partnerów.</p>
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
                 <p class="akapit">Samce legwana szlachetnego tworzą hierarchię, w której dominacja sygnalizowana jest przez ubarwienie. Im ciemniejsze łuski ma dany osobnik, tym wyższe miejsce zajmuje w hierarchii i tym większe ma szanse na zdobycie samicy. W okresie godowym
-                    samiec ustanawia terytorium i popisuje się przed samicami, krocząc dumnie i „siłując się” z rywalami na głowy. Zainteresowana samica zbliża się wówczas do samca, który może przystąpić do kopulacji. Samica szuka następnie piaszczystego
-                    terenu i wykopuje tam tunel, w którym składa jaja. Po 3 miesiącach z jaj wykluwają się młode, które od razu są niezależne. Młode osiągają dojrzałość płciową w wieku od 3 do 5 lat.</p>
+                    samiec ustanawia terytorium i&nbsp;popisuje się przed samicami, krocząc dumnie i „siłując się” z rywalami na głowy. Zainteresowana samica zbliża się wówczas do samca, który może przystąpić do kopulacji. Samica szuka następnie piaszczystego
+                    terenu i&nbsp;wykopuje tam tunel, w którym składa jaja. Po 3 miesiącach z jaj wykluwają się młode, które od razu są niezależne. Młode osiągają dojrzałość płciową w wieku od 3 do 5 lat.</p>
             </div>
             <div style="clear: both;"></div>
             <hr>
