@@ -219,7 +219,7 @@
                         <li><a href="#">Nowości</a>
                             <ul>
                                 <li style="margin-left: 0;"><a href="Aktualizacje - konsola.html">Aktualizacje</a></li>
-                                <li style="margin-left: 0;"><a href="DLC.html">DLC</a></li>
+                                <li style="margin-left: 0;"><a href="DLC - konsola.html">DLC</a></li>
                             </ul>
                         </li>
 
@@ -446,20 +446,22 @@
                 });
             });
 
+            function otworzPopup() {
+                document.getElementById('popup').style.display = 'block';
+            }
+
+            // Sprawdź, czy użytkownik już dokonał wyboru wersji
+            if (sessionStorage.getItem('wybor_wersji') !== 'selected') {
+                otworzPopup();
+            }
+
             function wybierzWersje(wersja) {
-                localStorage.setItem('wybor_wersji', wersja);
+                sessionStorage.setItem('wybor_wersji', 'selected'); // Ustaw wartość na "selected"
                 if (wersja === 'pc') {
                     window.location.href = 'Aktualizacje.html';
                 } else if (wersja === 'console') {
                     window.location.href = 'Aktualizacje - konsola.html';
                 }
-            }
-
-            function otworzPopup() {
-                document.getElementById('popup').style.display = 'block';
-            }
-            if (localStorage.getItem('wybor_wersji') === null) {
-                otworzPopup();
             }
         </script>
         <span class="scrollTopButton" onclick="scrollToTop()"></span>
