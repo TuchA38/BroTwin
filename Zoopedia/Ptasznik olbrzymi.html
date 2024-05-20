@@ -4,31 +4,49 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ptasznik olbrzymi</title>
     <link rel="shortcut icon" href="Ikonki/Ptasznik olbrzymi.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Ptasznik_olbrzymi" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Ptasznik_olbrzymi" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Ptasznik olbrzymi.jpg" alt="Ptasznik olbrzymi"><b>Ptasznik olbrzymi</b><br><i style="font-size: 27px;">(Lasiodora parahybana)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Ptasznik olbrzymi.jpg" alt="Ptasznik olbrzymi">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Stawonogi</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Pajęczaki</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Pająki</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Ptasznikowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Lasiodora</i></div>
+                </div>
+                <p class="naglowek"><b>Ptasznik olbrzymi</b><br><i style="font-size: 1.8vw;">(Lasiodora parahybana)</i></p>
                 <p class="info"><b class="nb">Zbyt mało danych</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: Nieznana</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
-            <p class="akapit">Ptasznik olbrzymi <i>(Lasiodora parahybana)</i> to endemiczny gatunek dużego pająka żyjący wyłącznie na terenie lasu atlantyckiego we wschodniej części Brazylii. Pająki te są czarne i mają różowe lub czerwone włosy na odnóżach oraz brzuchu.
-                W ujęciu ogólnym samce są nieco większe od samic, a rozpiętość ich odnóży może sięgać 28 cm, jednak samice są cięższe i mają większe korpusy. Samce mają często jaśniejsze ubarwienie niż samice.</p>
+            <p class="akapit">Ptasznik olbrzymi <i>(Lasiodora parahybana)</i> to endemiczny gatunek dużego pająka żyjący wyłącznie na terenie lasu atlantyckiego we wschodniej części Brazylii. Pająki te są czarne i&nbsp;mają różowe lub czerwone włosy na odnóżach oraz brzuchu.
+                W&nbsp;ujęciu ogólnym samce są nieco większe od samic, a&nbsp;rozpiętość ich odnóży może sięgać 28 cm, jednak samice są cięższe i mają większe korpusy. Samce mają często jaśniejsze ubarwienie niż samice.</p>
             <hr>
             <div style="clear: both;"></div>
             <div class="info2">
@@ -43,7 +61,7 @@
                         <tr>
                             <td style=" text-align: center;">Ameryka Południowa</td>
                             <td style=" text-align: center;">Brazylia</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Tropiki.png" alt="tropiki"></td>
+                            <td style=" text-align: center;"><img id="biom" style="width:2.6vw;" src="../Ikony/Tropiki.png" alt="tropiki"></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Ptasznik olbrzymi.jpg">
@@ -54,7 +72,7 @@
                     <table id="cechy">
                         <caption><b>Zachowania społeczne</b></caption>
                         <tr>
-                            <th>Wielkość grupy (bez młodych osobników)</th>
+                            <th>Wielkość grupy<br>(bez&nbsp;młodych&nbsp;osobników)</th>
                             <td>1-6</td>
                         </tr>
                         <tr>
@@ -72,19 +90,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 26 cm rozpiętość odnóży &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 25 cm rozpiętości odnóży &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;26 cm rozpiętości odnóży</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;25 cm rozpiętości odnóży</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 12 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 12 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;12 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;12 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp Nieznane &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp Nieznane &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;Nieznane &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;Nieznane</div>
                             </td>
                         </tr>
                     </table>
@@ -122,13 +141,13 @@
             <hr>
             <div class="info4">
                 <p style="text-align: center;"><b>Potrzeby społeczne</b></p>
-                <p class="akapit">Ptaszniki olbrzymie żyją samotnie i często zachowują się agresywnie w&nbspstosunku do innych przedstawicieli swojego gatunku, gdy są trzymane za blisko nich w terrariach. W ekspozycji zmieści się niewielka populacja tych zwierząt.</p>
+                <p class="akapit">Ptaszniki olbrzymie żyją samotnie i często zachowują się agresywnie w&nbsp;stosunku do innych przedstawicieli swojego gatunku, gdy są trzymane za blisko nich w terrariach. W ekspozycji zmieści się niewielka populacja tych zwierząt.</p>
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
                 <p class="akapit">Samiec buduje na ziemi sieć i umieszcza w niej nasienie, po czym wchłania je do bulbusów na nogogłaszczkach (odnóżach gębowych). Wyrusza następnie na poszukiwanie samic, wędrując wśród leśnego poszycia. Osobniki obu płci posługują się
-                    sygnałami chemicznymi, aby ustalić, czy napotkane pająki należą do tego samego gatunku, a także aby sprawdzić, czy samica jest gotowa do rozrodu.<br><br>Jeśli tak, samiec zbliża się do samicy, a ta podnosi przednie odnóża w postawie
-                    obronnej. Samiec używa przednich odnóży, by uniemożliwić samicy atak, i&nbspskłada nasienie z nogogłaszczek w bruździe na brzuchu samicy, gdzie ta może je przechowywać przez około 3 miesiące, aż będzie gotowa do złożenia od 500 do
+                    sygnałami chemicznymi, aby ustalić, czy napotkane pająki należą do tego samego gatunku, a także aby sprawdzić, czy samica jest gotowa do rozrodu.<br><br>Jeśli tak, samiec zbliża się do samicy, a ta podnosi przednie odnóża w&nbsp;postawie
+                    obronnej. Samiec używa przednich odnóży, by uniemożliwić samicy atak, i&nbsp;składa nasienie z nogogłaszczek w bruździe na brzuchu samicy, gdzie ta może je przechowywać przez około 3 miesiące, aż będzie gotowa do złożenia od 500 do
                     2000 jaj w kokonie. Samica pilnuje kokonu przez kilka tygodni aż do wylęgnięcia się młodych. Ptaszniki olbrzymie przechodzą około 10 wylinek, zanim w pełni dorosną w wieku 2-3 lat.</p>
             </div>
             <div style="clear: both;"></div>
@@ -136,11 +155,11 @@
             <div class="ciekawostka">
                 <p><b>Ciekawostki</b></p>
                 <ul class="akapit">
-                    <li>Nazwa ptasznik olbrzymi sugeruje, że pająki te żywią się ptakami, jednak istnieje niewiele dowodów na to, że mają to w stałym zwyczaju.</li>
+                    <li>Nazwa ptasznik olbrzymi sugeruje, że pająki te żywią się ptakami, jednak istnieje niewiele dowodów na to, że mają to w&nbsp;stałym zwyczaju.</li>
                     <li>Pazury jadowe ptasznika olbrzymiego mają 2,5 cm długości, a ugryzienia tych pająków mogą być bardzo bolesne.</li>
                     <li>Samce mają na przednich odnóżach "haki goleniowe", których używają do przytrzymywania samicy w sposób uniemożliwiający jej atakowanie podczas parzenia.</li>
                     <li>Jad tego ptasznika rozpuszcza ciało ofiary, ułatwiając jej zjedzenie.</li>
-                    <li>Ptaszniki olbrzymie kąsają w ostateczności, ale mogą używać mechanizmu obronnego, polegającego na wystrzeliwaniu z&nbspkorpusu włosków z haczykami. Włoski te mogą powodować poważne podrażnienia, a nawet wywoływać ślepotę.</li>
+                    <li>Ptaszniki olbrzymie kąsają w ostateczności, ale mogą używać mechanizmu obronnego, polegającego na wystrzeliwaniu z&nbsp;korpusu włosków z haczykami. Włoski te mogą powodować poważne podrażnienia, a nawet wywoływać ślepotę.</li>
                 </ul>
             </div>
             <div class="ciekawostkao">

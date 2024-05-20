@@ -4,30 +4,49 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poświętnik czczony</title>
     <link rel="shortcut icon" href="Ikonki/Poświętnik czczony.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Poświętnik_czczony" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Poświętnik_czczony" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../DLC/Africa Pack/Africa Pack.html" class="powrot"><img style="width:8%; margin-top: -0.5%; padding-right: 1%; vertical-align: top;" src="dlc_z.png" alt="dlc"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Poświętnik czczony.jpg" alt="Poświętnik czczony"><b>Poświętnik czczony</b><br><i style="font-size: 27px;">(Scarabeus sacer)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Poświętnik czczony.jpg" alt="Poświętnik czczony">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Stawonogi</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Owady</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Chrząszcze</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Poświętnikowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Poświętnik</i></div>
+                </div>
+                <p class="naglowek"><b>Poświętnik czczony</b><br><i style="font-size: 1.8vw;">(Scarabeus sacer)</i></p>
                 <p class="info"><b class="nb">Zbyt mało danych</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: Nieznana</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
-            <p class="akapit">Poświętnik czczony <i>(Scarabeus sacer)</i> to gatunek chrząszcza gnojowego występujący naturalnie wśród wydm nadmorskich i&nbspmoczar nad Morzem Śródziemnomorskim, czyli w regionie Afryki Północnej, Europy i Bliskiego Wschodu. 6 wyrostków
+            <p class="akapit">Poświętnik czczony <i>(Scarabeus sacer)</i> to gatunek chrząszcza gnojowego występujący naturalnie wśród wydm nadmorskich i&nbsp;moczar nad Morzem Śródziemnomorskim, czyli w regionie Afryki Północnej, Europy i Bliskiego Wschodu. 6 wyrostków
                 na głowie chrząszcza oraz po 4 wyrostki na każdej z jego przednich odnóży tworzą łuk promieni z przodu owada. Poświętnik czczony ma 10-25 mm długości i błyszczący, czarny pancerz.</p>
             <hr>
             <div style="clear: both;"></div>
@@ -43,7 +62,7 @@
                         <tr>
                             <td style=" text-align: center;">Afryka, Europa, Azja</td>
                             <td style=" text-align: center;">Maroko, Sahara Zachodnia, Algieria, Tunezja, Libia, Egipt, Arabia Saudyjska, Izrael, Liban, Syria, Włochy, Francja</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Pustynia.png" alt="pustynia"></td>
+                            <td style=" text-align: center;"><img id="biom" style="width:2.6vw;" src="../Ikony/Pustynia.png" alt="pustynia"></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Poświętnik czczony.jpg">
@@ -54,12 +73,12 @@
                     <table id="cechy">
                         <caption><b>Zachowania społeczne</b></caption>
                         <tr>
-                            <th>Wielkość grupy (bez młodych osobników)</th>
+                            <th>Wielkość grupy<br>(bez&nbsp;młodych&nbsp;osobników)</th>
                             <td>1-25</td>
                         </tr>
                         <tr>
                             <th>Hierarchia dominacji</th>
-                            <td>Brak, choć samce walczą czasami o samice i&nbspkulki odchodów</td>
+                            <td>Brak, choć samce walczą czasami o samice i&nbsp;kulki odchodów</td>
                         </tr>
                         <tr>
                             <th>Strategia rozrodcza</th>
@@ -72,19 +91,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 20 mm długości &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 20 mm długości &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;20 mm długości</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;20 mm długości</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 5 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 5 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;5 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;5 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp Nieznana &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp Nieznana &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;Nieznana &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;Nieznana</div>
                             </td>
                         </tr>
                     </table>
@@ -122,15 +142,16 @@
             <hr>
             <div class="info4">
                 <p style="text-align: center;"><b>Potrzeby społeczne</b></p>
-                <p class="akapit">W naturze poświętniki czczone żyją samotnie, ale samiec i samica łączą się, aby wspólnie toczyć kulkę odchodów. Kulki te służą do tworzenia gniazda, a&nbsptakże rywalizacji o samice.</p>
+                <p class="akapit">W naturze poświętniki czczone żyją samotnie, ale samiec i samica łączą się, aby wspólnie toczyć kulkę odchodów. Kulki te służą do tworzenia gniazda, a&nbsp;także rywalizacji o samice.</p>
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
                 <p class="akapit">Używając głowy i odnóży, samce i samice kopią komory, w których przechowują odchody i składają jaja. Gdy samica jest gotowa do rozmnażania, toczy do tego celu kulkę z odchodów o gładszej teksturze niż kulki toczone normalnie na potrzeby
-                    żywienia. Samce również toczą kulkę celem przyciągnięcia samic. Kulki odchodów często zmieniają właścicieli - samce walczą o nie i kradną je, a samica podąża za kulką. Samiec, który zdoła utrzymać kulkę i umieścić ją w bezpiecznej
-                    komorze, zyskuje prawo do kopulacji.<br><br>Gdy kulka znajdzie się w dziurze, samica nadaje jej kształt gruszki, dodając więcej odchodów na górze, kopie mały tunel biegnący od czubka kulki i składa jajo w środku, a następnie opuszcza
-                    komorę.<br><br>Po wielu dniach larwy wykluwają się z jaja i żywią się kulką odchodów, przepoczwarzając się w ciągu 1-4 tygodni. Jakiś czas po 4. tygodniu życia (zależnie od temperatury/wilgoci itp.) z gniazda wychodzi młody dorosły
-                    chrząszcz. Chrząszcze nie rozmnażają się od razu - początkowo żywią się tylko, aż urosną im gonady, co może potrwać wiele miesięcy, zależnie od warunków otoczenia i dostępności pożywienia.</p>
+                    żywienia. Samce również toczą kulkę celem przyciągnięcia samic. Kulki odchodów często zmieniają <span class="keeptogether">właścicieli - samce</span> walczą o nie i kradną je, a samica podąża za kulką. Samiec, który zdoła utrzymać
+                    kulkę i umieścić ją w bezpiecznej komorze, zyskuje prawo do kopulacji.<br><br>Gdy kulka znajdzie się w dziurze, samica nadaje jej kształt gruszki, dodając więcej odchodów na górze, kopie mały tunel biegnący od czubka kulki i&nbsp;składa
+                    jajo w środku, a następnie opuszcza komorę.
+                    <br><br>Po wielu dniach larwy wykluwają się z jaja i żywią się kulką odchodów, przepoczwarzając się w ciągu 1-4 tygodni. Jakiś czas po 4. tygodniu życia (zależnie od temperatury/wilgoci itp.) z gniazda wychodzi młody dorosły chrząszcz.
+                    Chrząszcze nie rozmnażają się od razu - początkowo żywią się tylko, aż urosną im gonady, co może potrwać wiele miesięcy, zależnie od warunków otoczenia i dostępności pożywienia.</p>
             </div>
             <div style="clear: both;"></div>
             <hr>
@@ -141,7 +162,7 @@
                     <li>Poświętniki czczone potrafią toczyć kulki odchodów o wadze 50-krotnie przewyższającej ich własną.</li>
                     <li>Poświętniki czczone toczą odchody, popychając je tylnymi odnóżami.</li>
                     <li>Starożytni Egipcjanie uważali poświętnika czczonego za objawienie boga słońca Ra z uwagi na analogię między zachowaniem polegającym na toczeniu kulek odchodów a toczeniem słońca po niebie.</li>
-                    <li>Larwy poświętników czczonych odgrywają ważną rolę w ekosystemie, wykorzystując składniki odżywcze detrytusu i odchodów.</li>
+                    <li>Larwy poświętników czczonych odgrywają ważną rolę w ekosystemie, wykorzystując składniki odżywcze detrytusu i&nbsp;odchodów.</li>
                 </ul>
             </div>
             <div class="ciekawostkao">

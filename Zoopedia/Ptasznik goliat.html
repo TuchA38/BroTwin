@@ -4,31 +4,49 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ptasznik goliat</title>
     <link rel="shortcut icon" href="Ikonki/Ptasznik goliat.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Ptasznik_goliat" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Ptasznik_goliat" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Ptasznik goliat.jpg" alt="Ptasznik goliat"><b>Ptasznik goliat</b><br><i style="font-size: 27px;">(Theraphosa blondi)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Ptasznik goliat.jpg" alt="Ptasznik goliat">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Stawonogi</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Pajęczaki</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Pająki</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Ptasznikowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Ptasznik</i></div>
+                </div>
+                <p class="naglowek"><b>Ptasznik goliat</b><br><i style="font-size: 1.8vw;">(Theraphosa blondi)</i></p>
                 <p class="info"><b class="nb">Zbyt mało danych</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: Nieznana</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
             <p class="akapit">Ptasznik goliat <i>(Theraphosa blondi)</i>, zwany też „ptasznikiem gigantem”, to osiągający niezwykle duże rozmiary gatunek tarantuli żyjący w tropikalnych lasach deszczowych oraz na bagnach i mokradłach Surinamu, Gujany, Gujany Francuskiej,
-                Brazylii i Wenezueli. Ma jasnobrązowy kolor, a jego ciało jest pokryte czerwonobrązowym włosiem, z wydatnym odwłokiem i&nbspdużym, okrągłym tułowiem, grubymi segmentowatymi odnóżami i wydłużonymi nogogłaszczkami (zwanymi też szczękonóżkami,
+                Brazylii i Wenezueli. Ma jasnobrązowy kolor, a jego ciało jest pokryte czerwonobrązowym włosiem, z wydatnym odwłokiem i&nbsp;dużym, okrągłym tułowiem, grubymi segmentowatymi odnóżami i wydłużonymi nogogłaszczkami (zwanymi też szczękonóżkami,
                 znajdującymi się za otworem gębowym). Samica jest większa od samca, a obie płcie mają wyraźne wypustki na końcu odwłoka, zwane gruczołami przędnymi, które wydzielają substancję służącą do przędzenia sieci. Sieć ptasznika goliata służy
                 do wytwarzania kokonów na jaja oraz do przekazywania nasienia, nie do polowania.</p>
             <hr>
@@ -44,8 +62,8 @@
                         </tr>
                         <tr>
                             <td style=" text-align: center;">Ameryka Południowa</td>
-                            <td style=" text-align: center;">Surinam, Gujana, Gujana Francuska, Brazylia, Wenezuela</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Tropiki.png" alt="tropiki"></td>
+                            <td style=" text-align: center;">Gujana, Gujana Francuska,<br>Surinam, Brazylia, Wenezuela</td>
+                            <td style=" text-align: center;"><img id="biom" style="width:2.6vw;" src="../Ikony/Tropiki.png" alt="tropiki"></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Ptasznik goliat.jpg">
@@ -56,7 +74,7 @@
                     <table id="cechy">
                         <caption><b>Zachowania społeczne</b></caption>
                         <tr>
-                            <th>Wielkość grupy (bez młodych osobników)</th>
+                            <th>Wielkość grupy<br>(bez&nbsp;młodych&nbsp;osobników)</th>
                             <td>1-5</td>
                         </tr>
                         <tr>
@@ -74,19 +92,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 24 cm rozpiętość odnóży &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 26 cm rozpiętości odnóży &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;24 cm rozpiętości odnóży</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;26 cm rozpiętości odnóży</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 15 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 15 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;15 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;15 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp Nieznane &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp Nieznane &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;Nieznane &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;Nieznane</div>
                             </td>
                         </tr>
                     </table>

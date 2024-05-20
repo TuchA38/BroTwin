@@ -4,32 +4,50 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ptasznik czerwonokolanowy</title>
     <link rel="shortcut icon" href="Ikonki/Ptasznik czerwonokolanowy.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Ptasznik_czerwonokolanowy" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Ptasznik_czerwonokolanowy" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Ptasznik czerwonokolanowy.jpg" alt="Ptasznik czerwonokolanowy"><b>Ptasznik czerwonokolanowy</b><br><i style="font-size: 27px;">(Brachypelma hamorii)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Ptasznik czerwonokolanowy.jpg" alt="Ptasznik czerwonokolanowy">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Stawonogi</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Pajęczaki</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Pająki</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Ptasznikowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Brachypelma</i></div>
+                </div>
+                <p class="naglowek"><b>Ptasznik czerwonokolanowy</b><br><i style="font-size: 1.8vw;">(Brachypelma hamorii)</i></p>
                 <p class="info"><b class="na">Narażone</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: Nieznana</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
             <p class="akapit">Ptasznik czerwonokolanowy <i>(Brachypelma hamorii)</i> to gatunek pająka żyjący w zaroślach, lasach i na pustyniach Meksyku. Ma czarne ciało i odnóża oraz pomarańczowo-czerwone zabarwienie stawów. Podobnie jak u wszystkich gatunków tarantuli,
-                całe jego ciało pokryte jest wrażliwym włosiem. Ma&nbspokoło 10 cm długości, a rozpiętość jego odnóży wynosi 15&nbspcm. Prowadzi nocny tryb życia: w ciągu dnia przebywa w&nbspnorze, a noce spędza na polowaniach na zdobycz. Żywi się owadami,
-                małymi płazami i niewielkimi ssakami.</p>
+                całe jego ciało pokryte jest wrażliwym włosiem. Ma około 10 cm długości, a rozpiętość jego odnóży wynosi 15&nbsp;cm. Prowadzi nocny tryb życia: w ciągu dnia przebywa w&nbsp;norze, a&nbsp;noce spędza na polowaniach na zdobycz. Żywi się
+                owadami, małymi płazami i&nbsp;niewielkimi ssakami.</p>
             <hr>
             <div style="clear: both;"></div>
             <div class="info2">
@@ -42,9 +60,9 @@
                             <th>Biomy</th>
                         </tr>
                         <tr>
-                            <td style=" text-align: center;">Ameryka Środkowa</td>
+                            <td style=" text-align: center;">Ameryka Północna,<br>Ameryka Południowa</td>
                             <td style=" text-align: center;">Meksyk</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Pustynia.png" alt="pustynia"></td>
+                            <td style=" text-align: center;"><img id="biom" style="width:2.6vw;" src="../Ikony/Pustynia.png" alt="pustynia"></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Ptasznik czerwonokolanowy.jpg">
@@ -55,7 +73,7 @@
                     <table id="cechy">
                         <caption><b>Zachowania społeczne</b></caption>
                         <tr>
-                            <th>Wielkość grupy (bez młodych osobników)</th>
+                            <th>Wielkość grupy<br>(bez&nbsp;młodych&nbsp;osobników)</th>
                             <td>1-5</td>
                         </tr>
                         <tr>
@@ -73,19 +91,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 14 cm rozpiętość odnóży &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 14 cm rozpiętości odnóży &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;14 cm rozpiętości odnóży</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;14 cm rozpiętości odnóży</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 20 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 20 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;20 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;20 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp Nieznane &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp Nieznane &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;Nieznane &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;Nieznane</div>
                             </td>
                         </tr>
                     </table>
@@ -123,12 +142,12 @@
             <hr>
             <div class="info4">
                 <p style="text-align: center;"><b>Potrzeby społeczne</b></p>
-                <p class="akapit">Ptaszniki czerwonokolanowe prowadzą samotniczy tryb życia. Jeśli znajdą się w&nbspterrarium z innym przedstawicielem gatunku, robią się agresywne.</p>
+                <p class="akapit">Ptaszniki czerwonokolanowe prowadzą samotniczy tryb życia. Jeśli znajdą się w&nbsp;terrarium z innym przedstawicielem gatunku, robią się agresywne.</p>
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
                 <p class="akapit">Samiec przędzie na podłożu sieć, do której wypuszcza nasienie. Następnie umieszcza je na nogogłaszczkach i udaje się w poszukiwaniu nory samicy, aby ją z niej wywabić. Zbliża się do niej, za pomocą przednich odnóży odgina jej pazury jadowe
-                    i umieszcza nasienie w szczelinie na jej odwłoku. Samica przechowuje je do momentu złożenia jaj. Składa zazwyczaj od 200 do 400 jaj w kokonie. Dobrze pilnuje kokonu, zabierając go ze sobą za każdym razem, gdy opuszcza schronienie,
+                    i umieszcza nasienie w szczelinie na jej odwłoku. Samica przechowuje je do momentu złożenia jaj. Składa zazwyczaj od 200 do 400&nbsp;jaj w kokonie. Dobrze pilnuje kokonu, zabierając go ze sobą za każdym razem, gdy opuszcza schronienie,
                     do momentu wyklucia się młodych pająków, co następuje po 1-3 miesiącach. Po wykluciu młode pająki pozostają w norze, strzeżone przez matkę, aż do pierwszej wylinki. Następnie potomstwo uniezależnia się i opuszcza norę.</p>
             </div>
             <div style="clear: both;"></div>
