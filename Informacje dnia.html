@@ -522,6 +522,7 @@
         }
 
         function pokazInformacje(dzien, miesiac, indeksDniaTygodnia, indeks) {
+            console.log(dzien, miesiac, indeksDniaTygodnia, indeks);
             var informacja = document.getElementById("informacja");
             var miesiaceOdmienione = ['Stycznia', 'Lutego', 'Marca', 'Kwietnia', 'Maja', 'Czerwca', 'Lipca', 'Sierpnia', 'Września', 'Października', 'Listopada', 'Grudnia'];
             var miesiacOdmieniony = miesiaceOdmienione[miesiac - 1];
@@ -952,15 +953,35 @@
             }
         }
 
+        // Funkcja obliczająca indeks danego dnia tygodnia w miesiącu
+        function obliczIndeks(dzien, dzienTygodnia, miesiac) {
+            var data = new Date(new Date().getFullYear(), miesiac - 1, 1); // Pierwszy dzień miesiąca
+            var licznik = 0;
+
+            for (var i = 1; i <= dzien; i++) {
+                if ((data.getDay() + 6) % 7 === dzienTygodnia) {
+                    licznik++;
+                }
+                data.setDate(data.getDate() + 1);
+            }
+
+            return licznik;
+        }
         window.onload = function() {
             dodajKlasyIDane();
+
             // Pobieramy dzisiejszą datę
             var dzis = new Date();
             var dzien = dzis.getDate();
             var miesiac = dzis.getMonth() + 1; // Pamiętaj, że miesiące są indeksowane od 0
+            var dzienTygodnia = (dzis.getDay() + 6) % 7; // Indeks dnia tygodnia (0 - poniedziałek, 1 - wtorek, ..., 6 - niedziela)
+
+            // Obliczamy indeks dnia w miesiącu
+            var indeks = obliczIndeks(dzien, dzienTygodnia, miesiac);
 
             // Wywołujemy funkcję pokazInformacje dla dzisiejszej daty
-            pokazInformacje(dzien, miesiac);
+            pokazInformacje(dzien, miesiac, dzienTygodnia, indeks);
+            console.log(dzien, miesiac, dzienTygodnia, indeks);
         };
 
         var dzisiaj = new Date();
