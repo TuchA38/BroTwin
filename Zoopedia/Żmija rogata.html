@@ -4,32 +4,51 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Żmija rogata</title>
     <link rel="shortcut icon" href="Ikonki/Żmija rogata.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Żmija_rogata" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Żmija_rogata" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../DLC/Arid Animal Pack/Arid Animal Pack.html" class="powrot"><img style="width:8%; margin-top: -0.5%; padding-right: 1%; vertical-align: top;" src="dlc_z.png" alt="dlc"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Żmija rogata.jpg" alt="Żmija rogata"><b>Żmija rogata</b><br><i style="font-size: 27px;">(Cerastes cerastes)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Żmija rogata.jpg" alt="Żmija rogata">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Gady</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Łuskonośne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Żmijowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Cerastes</i></div>
+                </div>
+                <p class="naglowek"><b>Żmija rogata</b><br><i style="font-size: 1.8vw;">(Cerastes cerastes)</i></p>
                 <p class="info"><b class="nz">Najmniej zagrożony</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: Nieznana</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
-            <p class="akapit">Żmija rogata <i>(Cerastes cerastes)</i> to jadowity wąż zamieszkujący pustynie i półpustynie Afryki Północnej i&nbspBliskiego Wschodu. Skóra żmii rogatej jest koloru piaskowego, często z jaśniejszym spodem. Może mieć nieco ciemniejsze cętkowanie
-                łusek, aby lepiej się kamuflować. Głowa żmii jest duża i trójkątna. Jej charakterystyczną cechą są szpiczaste rogi nad oczami, którym żmija rogata zawdzięcza nazwę. Samce i samice wyglądają podobnie, ale samice najczęściej są nieco większe.
-                Długość ciała tych żmij może wynosić od 30 do 60 cm.<br><br>Żmije rogate są gatunkiem najmniejszej troski i nie są zagrożone. Występują w wielu miejscach, a ich liczebność utrzymuje się na stabilnym poziomie.</p>
+            <p class="akapit">Żmija rogata <i>(Cerastes cerastes)</i> to jadowity wąż zamieszkujący pustynie i półpustynie Afryki Północnej i&nbsp;Bliskiego Wschodu. Skóra żmii rogatej jest koloru piaskowego, często z jaśniejszym spodem. Może mieć nieco ciemniejsze cętkowanie
+                łusek, aby lepiej się kamuflować. Głowa żmii jest duża i trójkątna. Jej charakterystyczną cechą są szpiczaste rogi nad oczami, którym żmija rogata zawdzięcza nazwę. Samce i&nbsp;samice wyglądają podobnie, ale samice najczęściej są nieco
+                większe. Długość ciała tych żmij może wynosić od 30 do 60 cm.<br><br>Żmije rogate są gatunkiem najmniejszej troski i nie są zagrożone. Występują w wielu miejscach, a ich liczebność utrzymuje się na stabilnym poziomie.</p>
             <hr>
             <div style="clear: both;"></div>
             <div class="info2">
@@ -43,8 +62,8 @@
                         </tr>
                         <tr>
                             <td style=" text-align: center;">Afryka, Azja</td>
-                            <td style=" text-align: center;">Maroko, Algieria, Tunezja, Libia, Egipt, Mauretania, Mali, Niger, Czad, Sudan, Erytrea, Izrael, Jemen, Syria</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Pustynia.png" alt="pustynia"></td>
+                            <td style=" text-align: center;">Maroko, Algieria, Tunezja, Libia,<br>Egipt, Mauretania, Mali, Niger,<br>Czad, Sudan, Erytrea, Izrael,<br>Jemen, Syria</td>
+                            <td style=" text-align: center;"><img id="biom" style="width:2.6vw;" src="../Ikony/Pustynia.png" alt="pustynia"></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Żmija rogata.jpg">
@@ -55,7 +74,7 @@
                     <table id="cechy">
                         <caption><b>Zachowania społeczne</b></caption>
                         <tr>
-                            <th>Wielkość grupy (bez młodych osobników)</th>
+                            <th>Wielkość grupy<br>(bez&nbsp;młodych&nbsp;osobników)</th>
                             <td>1-4</td>
                         </tr>
                         <tr>
@@ -73,19 +92,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 45 cm długości &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 45 cm długości &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;45 cm długości</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;45 cm długości</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 16 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 16 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;16 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;16 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp Nieznana &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp Nieznana &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;Nieznana &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;Nieznana</div>
                             </td>
                         </tr>
                     </table>
@@ -127,9 +147,9 @@
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
-                <p class="akapit">Żmije rogate rozmnażają się, gdy są zakopane w piasku, więc bardzo niewiele wiadomo o ich zwyczajach. Do spółkowania dochodzi prawdopodobnie w&nbspkwietniu, gdy samce i samice żmii się spotykają. Zakłada się, że osobniki lokalizują się
-                    dzięki feromonom. Kopulacja może trwać od 3 do 4 dni, po czym węże się rozstają.<br><br>Wkrótce po spółkowaniu samica żmii znosi od 8 do 23 jaj pod skałami lub w&nbspopuszczonej norze. Nie zostaje z jajami ani nie opiekuje się młodymi,
-                    które wykluwają się z jaj po okresie inkubacji trwającym od 50 do 80 dni.<br><br>Młode żmije są samodzielne od urodzenia i osiągają dojrzałość płciową w wieku około 2 lat.</p>
+                <p class="akapit">Żmije rogate rozmnażają się, gdy są zakopane w piasku, więc bardzo niewiele wiadomo o ich zwyczajach. Do spółkowania dochodzi prawdopodobnie w&nbsp;kwietniu, gdy samce i samice żmii się spotykają. Zakłada się, że osobniki lokalizują się
+                    dzięki feromonom. Kopulacja może trwać od 3 do 4 dni, po czym węże się rozstają.<br><br>Wkrótce po spółkowaniu samica żmii znosi od 8 do 23 jaj pod skałami lub w&nbsp;opuszczonej norze. Nie zostaje z jajami ani nie opiekuje się młodymi,
+                    które wykluwają się z jaj po okresie inkubacji trwającym od 50 do 80 dni.<br><br>Młode żmije są samodzielne od urodzenia i osiągają dojrzałość płciową w&nbsp;wieku około 2 lat.</p>
             </div>
             <div style="clear: both;"></div>
             <hr>
@@ -139,7 +159,7 @@
                     <li>Jad żmii rogatej powoduje u ludzi opuchliznę, krwawienie, martwicę, nudności i wymioty, ale śmierć tylko w rzadkich przypadkach.</li>
                     <li>Żmija rogata porusza się po piasku szybko i z łatwością dzięki ruchom bocznym.</li>
                     <li>Żmija rogata ma na brzuchu specjalnie przystosowane łuski o ostrych krawędziach, które zwiększają przyczepność na piasku.</li>
-                    <li>Żmija rogata to drapieżnik, który atakuje z zasadzki, co oznacza, że ukrywa się, a następnie szybko rzuca na przechodzącą w&nbsppobliżu jej kryjówki ofiarę.</li>
+                    <li>Żmija rogata to drapieżnik, który atakuje z zasadzki, co oznacza, że ukrywa się, a następnie szybko rzuca na przechodzącą w&nbsp;pobliżu jej kryjówki ofiarę.</li>
                     <li>Rogi żmii rogatej to specjalnie przystosowane łuski, które chronią oczy tego węża przed piaskiem. Niemniej jednak tylko 50% żmii rogatych faktycznie ma takie rogi.</li>
                 </ul>
             </div>
