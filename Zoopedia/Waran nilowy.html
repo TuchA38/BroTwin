@@ -4,34 +4,51 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waran nilowy</title>
     <link rel="shortcut icon" href="Ikonki/Waran nilowy.png">
 </head>
+<style>
+    ul,
+    li {
+        margin: 0;
+        margin-left: 1.6%;
+        padding: 0;
+    }
+    
+    ul {
+        margin-bottom: 1%;
+    }
+    
+    span.keeptogether {
+        white-space: nowrap;
+    }
+</style>
 
 <body onselectstart="return false;">
     <div class="cień">
         <div style="animation: fadeIn ease-in .5s backwards;">
-            <div id="powrot">
-                <p style="text-align: left;"><a href="../Zoopedia.html#Waran_nilowy" class="powrot"><b>◄ Wróć do Zoopedia</b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="*" class="powrot"><b></b></a></p>
-            </div>
-            <div id="powrot">
-                <p style="text-align: right;"><a href="../Mapa Zoo.html" class="powrot"><b>Przejdź do Mapa Zoo ►</b></a></p>
-            </div>
+            <div style="clear: both;"></div>
+            <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                <a href="../Zoopedia.html#Waran_nilowy" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+            </p>
+            <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
+            </p>
             <div style="clear: both;"></div>
             <div>
-                <p class="naglowek"><img class="gatunek1" src="Zdjęcia/Waran nilowy.jpg" alt="Waran nilowy"><b>Waran nilowy</b><br><i style="font-size: 27px;">(Varanus niloticus)</i></p>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Waran nilowy.jpg" alt="Waran nilowy">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Gady</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Łuskonośne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Waranowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Waran</i></div>
+                </div>
+                <p class="naglowek"><b>Waran nilowy</b><br><i style="font-size: 1.8vw;">(Varanus niloticus)</i></p>
                 <p class="info"><b class="nz">Najmniej zagrożony</b></p>
-                <p class="info" style="font-size: 19px;">Wielkość populacji na wolności: Nieznana</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
-            <p class="akapit">Waran nilowy <i>(Varanus niloticus)</i> to gatunek dużego gada zamieszkujący niepustynne obszary Afryki Subsaharyjskiej. Warany nilowe występują również w Stanach Zjednoczonych, a ściślej w stanach Kalifornia i Floryda, gdzie uznawane są za
-                gatunek inwazyjny.
-                <br><br>Gady te preferują siedliska w pobliżu wody i często żyją blisko rzek. Osobniki obu płci wyglądają tak samo i mają od 120 do 220 cm długości, a ponad połowę długości ich ciała stanowi ogon. Dorosłe warany mają kolor od brązowego
-                do zielonego i&nbsppasy na ciele oraz żółte plamy na nogach i głowie. Z kolei młode osobniki są czarne z jasnożółtymi plamami.<br><br>Gatunek ten nie jest zagrożony, ale w niektórych obszarach Afryki poluje się na warany nilowe w celu
-                pozyskania ich skóry i mięsa. Panuje przekonanie, że tłuszcz tych zwierząt ma właściwości lecznicze, dlatego jest wykorzystywany w medycynie tradycyjnej, chociaż nie ma dowodów naukowych, które by to potwierdzały.</p>
+            <p class="akapit">Waran nilowy <i>(Varanus niloticus)</i> to gatunek dużego gada zamieszkujący niepustynne obszary Afryki Subsaharyjskiej. Warany nilowe występują również w Stanach Zjednoczonych, a&nbsp;ściślej w stanach Kalifornia i Floryda, gdzie uznawane
+                są za gatunek inwazyjny.<br><br>Gady te preferują siedliska w pobliżu wody i często żyją blisko rzek. Osobniki obu płci wyglądają tak samo i mają od 120 do 220 cm długości, a ponad połowę długości ich ciała stanowi ogon. Dorosłe warany
+                mają kolor od brązowego do zielonego i&nbsp;pasy na ciele oraz żółte plamy na nogach i&nbsp;głowie. Z kolei młode osobniki są czarne z jasnożółtymi plamami.<br><br>Gatunek ten nie jest zagrożony, ale w niektórych obszarach Afryki poluje
+                się na warany nilowe w celu pozyskania ich skóry i mięsa. Panuje przekonanie, że tłuszcz tych zwierząt ma właściwości lecznicze, dlatego jest wykorzystywany w medycynie tradycyjnej, chociaż nie ma dowodów naukowych, które by to potwierdzały.</p>
             <hr>
             <div style="clear: both;"></div>
             <div class="info2">
@@ -46,7 +63,7 @@
                         <tr>
                             <td style=" text-align: center;">Afryka</td>
                             <td style=" text-align: center;">Afryka Subsaharyjska</td>
-                            <td style=" text-align: center;"><img id="biom" src="../Ikony/Tropiki.png" alt="tropiki"><img id="biom" src="../Ikony/Step.png" alt="step"></td>
+                            <td style=" text-align: center;"><img id="biom" style="width:2.6vw;" src="../Ikony/Tropiki.png" alt="tropiki"><img id="biom" style="width:2.6vw;" src="../Ikony/Step.png" alt="step"></td>
                         </tr>
                     </table>
                     <img id="mapa" src="Mapy/Waran nilowy.jpg">
@@ -61,7 +78,7 @@
                             <td>1-3<br>(maks. 1 samiec, samice do 2)</td>
                         </tr>
                         <tr>
-                            <th>Wielkość grupy kawalerskiej samców<br>(bez młodych osobników)</th>
+                            <th>Wielkość&nbsp;grupy&nbsp;kawalerskiej&nbsp;samców<br>(bez młodych osobników)</th>
                             <td>1-2</td>
                         </tr>
                         <tr>
@@ -91,19 +108,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 2,10 m długości &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 1,90 m długości &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;2,10 m długości</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;1,90 m długości</div>
                             </td>
                         </tr>
                         <tr>
-                            <th>Długość życia</th>
+                            <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 15 lat &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 15 lat &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;15 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;15 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp 8 kg &nbsp<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp 8 kg &nbsp</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;8 kg &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;8 kg</div>
                             </td>
                         </tr>
                     </table>
@@ -146,9 +164,9 @@
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
                 <p class="akapit">Po wytropieniu samicy po śladzie zapachowym samiec podąża za nią, co może zakończyć się przyzwoleniem samicy na kopulacje lub rezygnacją samca. Jeśli dwa samce spotkają się podczas śledzenia samic, staczają walkę i mniejszy waran ustępuje
-                    większemu. Po zapłodnieniu samica nosi jaja aż do pory deszczowej. Gdy spadnie deszcz, wykopuje gniazdo w miękkiej ziemi, a&nbspnastępnie przykrywa jaja, z których po upływie od 3 do 10 miesięcy, w&nbspzależności od warunków otoczenia,
-                    wylęgają się młode. Świeżo wyklute młode muszą odkopać się i wyjść z gniazda, a czasami muszą poczekać na deszcz, aby się wydostać. Niektóre matki powracają jednak do gniazd i&nbsppomagają swoim młodym. Po wyjściu z gniazda młode prowadzą
-                    niezależne życie i osiągają dojrzałość płciową w wieku 3-4 lat.</p>
+                    większemu. Po zapłodnieniu samica nosi jaja aż do pory deszczowej. Gdy spadnie deszcz, wykopuje gniazdo w&nbsp;miękkiej ziemi, a&nbsp;następnie przykrywa jaja, z których po upływie od 3 do 10 miesięcy, w&nbsp;zależności od warunków
+                    otoczenia, wylęgają się młode. Świeżo wyklute młode muszą odkopać się i wyjść z gniazda, a czasami muszą poczekać na deszcz, aby się wydostać. Niektóre matki powracają jednak do gniazd i&nbsp;pomagają swoim młodym. Po wyjściu z gniazda
+                    młode prowadzą niezależne życie i osiągają dojrzałość płciową w wieku 3-4 lat.</p>
             </div>
             <div style="clear: both;"></div>
             <hr>
@@ -157,7 +175,7 @@
                 <ul class="akapit">
                     <li>Wiele samic warana nilowego rozkopuje gniazda termitów i tam składa jaja, ponieważ termity naprawiają gniazdo, zapewniając jajom ochronę.</li>
                     <li>Zagrożony lub rozdrażniony waran nilowy potrafi zaatakować, używając swojego długiego ogona jak potężnego bicza.</li>
-                    <li>Na warany nilowe polują wojowniki zbrojne. Ptaki te są w stanie chwycić i unieść w powietrze jaszczurkę ważącą nawet 4 kg.</li>
+                    <li>Na warany nilowe polują wojowniki zbrojne. Ptaki te są w stanie chwycić i unieść w powietrze jaszczurkę ważącą nawet 4&nbsp;kg.</li>
                     <li>Warany nilowe powodują zmniejszenie populacji krokodyli i aligatorów na Florydzie, ponieważ skutecznie wykradają z ich gniazd jaja i młode.</li>
                     <li>Warany nilowe nie przestają rosnąć przez całe życie.</li>
                 </ul>
