@@ -309,13 +309,13 @@ input.all[type=checkbox]:checked+label {
 }
 
 input[type=checkbox]:checked+label {
-    color: white;
+    color: rgb(211, 224, 92);
     font-weight: bold;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 input[type=radio]:checked+label {
-    color: white;
+    color: rgb(211, 224, 92);
     font-weight: bold;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
