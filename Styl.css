@@ -827,6 +827,14 @@ td.zoopedia {
     margin-top: 1%
 }
 
+.ud {
+    background: linear-gradient(rgb(25, 109, 43), rgb(13, 58, 23));
+    border: white 0.15vw solid;
+    border-radius: 5%;
+    padding: 0.5vw;
+    margin-top: 1%
+}
+
 .nz {
     background: linear-gradient(rgb(78, 129, 36), rgb(23, 85, 23));
     border: white 0.15vw solid;
