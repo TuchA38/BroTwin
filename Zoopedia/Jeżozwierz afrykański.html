@@ -23,6 +23,15 @@
     span.keeptogether {
         white-space: nowrap;
     }
+    
+    .mapa,
+    #samce,
+    #samice,
+    #odnosnik,
+    #ikona_samiec,
+    #ikona_samica {
+        transition: opacity 0.3s ease-in-out;
+    }
 </style>
 
 <body onselectstart="return false;">
@@ -34,7 +43,6 @@
             </p>
             <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
                 <a href="../DLC/Arid Animal Pack/Arid Animal Pack.html" class="powrot"><img style="width:8%; margin-top: -0.5%; padding-right: 1%; vertical-align: top;" src="dlc_z.png" alt="dlc"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
-                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
             </p>
             <div style="clear: both;"></div>
             <div>
@@ -45,6 +53,27 @@
                 <p class="info"><b class="nz">Najmniej zagrożony</b></p>
                 <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
+            <hr>
+            <div class='akapit cień' style="margin-top: -1%;">
+                <center>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5%; margin-left: 10%;">
+                        <div style="position: relative; display: inline-block;">
+                            <a id="odnosnik" href="../Mapa/Rezerwat Afryka.html" class="powrot" style="display: flex; align-items: center; margin-left: 8%;">
+                                <img style="width: 4vw;" src="mapa_z.png" alt="mapa">
+                                <span style="padding-right: 5%; vertical-align: top; font-size: 1.3vw; margin-left: 0%;"><b>&nbsp;Rezerwat&nbsp;Afryka</b></span>
+                            </a>
+                            <div style="position: absolute; top: 85%; left: 85%; transform: translateX(-60%); display: flex; align-items: center;">
+                                <img id="ikona_samiec" style="width: 50%;" src="../Ikony/samiec.png" alt="samiec">&nbsp;<span id="samce">0</span>&nbsp;&nbsp;
+                                <img id="ikona_samica" style="width: 50%;" src="../Ikony/samica.png" alt="samica">&nbsp;<span id="samice">0</span>
+                            </div>
+                            <img id="wybieg" class='mapa' src='Wybiegi/Jeżozwierz afrykański.png' style='width: 33vw; margin-top: 0%; margin-left: 8%;' alt='wybieg'>
+                            <span class="powrot" style="position: absolute; top: 48%; left: 4%; font-size: 2em; cursor: pointer; margin-left: 8%;" onclick="zmienWybieg(-1)">&#9664;</span>
+                            <span class="powrot" style="position: absolute; top: 48%; right: 4%; font-size: 2em; cursor: pointer; margin-right: -8%;" onclick="zmienWybieg(1)">&#9654;</span>
+                        </div>
+                </center>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
             <hr>
             <p class="akapit">Jeżozwierz afrykański <i>(Hystrix cristata)</i> to gatunek dużego gryzonia spotykanego na półpustyniach, sawannach i&nbsp;obszarach górzystych Afryki Środkowej i Północnej, a także Włoch. Jego szorstkie, szczeciniaste futro ma kolor od ciemnobrązowego
                 do czarnego, a cechą charakterystyczną są czarno-białe kolce, które porastają środkową część szyi, grzbiet i boki ciała jeżozwierza, a także ogon. Kolce są bardzo ostre i&nbsp;unoszą się, gdy jeżozwierz wyczuje zagrożenie. Jeżozwierz afrykański
@@ -171,9 +200,8 @@
                     monogamiczne, które szukają partnera po osiągnięciu dojrzałości płciowej. Gdy samiec i samica się spotkają, spędzają ze sobą dużo czasu, budując silną więź. Wydaje się, że w niewoli jeżozwierze kopulują przez cały rok, ale najprawdopodobniej
                     szczyt ich sezonu rozrodczego przypada na okres od jesieni do wiosny. Gdy samica przychylnie reaguje na zaloty, spłaszcza kolce i unosi ogon, aby jej partner mógł ją pokryć. Samica zachowuje się agresywnie wobec wszelkich nieznanych
                     jej samców.<br><br>Samiec i samica budują razem skomplikowany system nor, obejmujący obszar trawiasty, który służy samicy podczas porodu i karmienia młodych. Po trwającym od 93 do 110 dni okresie ciąży samica wycofuje się do tej komory
-                    w&nbsp;norze i rodzi od 1 do 4 młodych (najczęściej 2). Młode opuszczają norę po raz pierwszy po upływie tygodnia i w ciągu pierwszego miesiąca życia zaczynają zjadać pokarmy stałe. Gdy mają 3-4 miesiące, są już w pełni odstawione
-                    od piersi. Opiekę nad miotem sprawuje zarówno samica, jak i&nbsp;samiec.<br><br>Potomstwo pozostaje z rodzicami do osiągnięcia dojrzałości płciowej, czyli do 18. miesiąca życia w przypadku samców i 12.-14. miesiąca życia u&nbsp;samic.
-                    Wówczas młode opuszczają grupę rodzinną, aby znaleźć partnera i&nbsp;zająć własne terytorium.</p>
+                    w&nbsp;norze i rodzi od 1 do 4 młodych (najczęściej 2). Młode opuszczają norę po raz pierwszy po upływie tygodnia i w ciągu pierwszego miesiąca życia zaczynają zjadać pokarmy stałe. Gdy mają <span class="keeptogether">3-4 miesiące</span>,
+                    są już w pełni odstawione od piersi. Opiekę nad miotem sprawuje zarówno samica, jak i&nbsp;samiec.<br><br>Potomstwo pozostaje z rodzicami do osiągnięcia dojrzałości płciowej, czyli do <span class="keeptogether">18. miesiąca</span>                    życia w przypadku samców<span class="keeptogether"> i 12.-14. miesiąca</span> życia u&nbsp;samic. Wówczas młode opuszczają grupę rodzinną, aby znaleźć partnera i&nbsp;zająć własne terytorium.</p>
             </div>
             <div style="clear: both;"></div>
             <hr>
@@ -194,6 +222,73 @@
             </div>
         </div>
     </div>
+    <script src="../spacje.js"></script>
+    <script src="_jednostki.js"></script>
+    <script>
+        // Dane dla różnych wybiegów
+        const wybiegi = [{
+            zdjecie: 'Wybiegi/Jeżozwierz afrykański.png',
+            samce: 0,
+            samice: 0,
+            link: '../Mapa/Rezerwat Afryka.html',
+            region: 'Afryka'
+        }, {
+            zdjecie: 'Wybiegi/Jeżozwierz afrykański.2.png',
+            samce: 1,
+            samice: 2,
+            link: '../Mapa/Rezerwat Europa.html',
+            region: 'Europa'
+        }];
+
+        let currentIndex = 0;
+
+        function zmienWybieg(kierunek) {
+            // Pobieranie elementów do animacji
+            const wybieg = document.getElementById('wybieg');
+            const samce = document.getElementById('samce');
+            const samice = document.getElementById('samice');
+            const ikonaSamiec = document.getElementById('ikona_samiec');
+            const ikonaSamica = document.getElementById('ikona_samica');
+            const odnosnik = document.getElementById('odnosnik');
+
+            // Zmniejszenie widoczności (fade-out) przed zmianą zawartości
+            wybieg.style.opacity = 0;
+            samce.style.opacity = 0;
+            samice.style.opacity = 0;
+            ikonaSamiec.style.opacity = 0;
+            ikonaSamica.style.opacity = 0;
+            odnosnik.style.opacity = 0;
+
+            setTimeout(() => {
+                // Zmieniamy indeks na podstawie kierunku (lewo/prawo)
+                currentIndex += kierunek;
+                if (currentIndex < 0) currentIndex = wybiegi.length - 1;
+                if (currentIndex >= wybiegi.length) currentIndex = 0;
+
+                // Aktualizacja zdjęcia wybiegu
+                wybieg.src = wybiegi[currentIndex].zdjecie;
+
+                // Aktualizacja liczby samców/samic
+                samce.textContent = wybiegi[currentIndex].samce;
+                samice.textContent = wybiegi[currentIndex].samice;
+
+                // Aktualizacja odnośnika i regionu
+                odnosnik.href = wybiegi[currentIndex].link;
+                odnosnik.innerHTML = `
+                <div class="powrot" style="display: flex; align-items: center;">
+                    <img style="width: 4vw; vertical-align: middle;" src="mapa_z.png" alt="mapa">&nbsp;<span style="padding-right: 5%; vertical-align: middle; font-size: 1.3vw; margin-left: -2%;"><b>&nbsp;Rezerwat&nbsp;${wybiegi[currentIndex].region}</b></span>
+                </div>`;
+
+                // Powrót widoczności (fade-in) po zmianie zawartości
+                wybieg.style.opacity = 1;
+                samce.style.opacity = 1;
+                samice.style.opacity = 1;
+                ikonaSamiec.style.opacity = 1;
+                ikonaSamica.style.opacity = 1;
+                odnosnik.style.opacity = 1;
+            }, 300); // Czas na fade-out
+        }
+    </script>
 </body>
 
 </html>

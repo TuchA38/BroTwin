@@ -23,6 +23,15 @@
     span.keeptogether {
         white-space: nowrap;
     }
+    
+    .mapa,
+    #samce,
+    #samice,
+    #odnosnik,
+    #ikona_samiec,
+    #ikona_samica {
+        transition: opacity 0.3s ease-in-out;
+    }
 </style>
 
 <body onselectstart="return false;">
@@ -33,7 +42,6 @@
                 <a href="../Zoopedia.html#Flaming_różowy" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
             </p>
             <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
-                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
             </p>
             <div style="clear: both;"></div>
             <div>
@@ -44,6 +52,27 @@
                 <p class="info"><b class="nz">Najmniej zagrożony</b></p>
                 <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: 790 000<br>(wartość&nbsp;szacowana)</p>
             </div>
+            <hr>
+            <div class='akapit cień' style="margin-top: -1%;">
+                <center>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5%; margin-left: 10%;">
+                        <div style="position: relative; display: inline-block;">
+                            <a id="odnosnik" href="../Mapa/Rezerwat Afryka.html" class="powrot" style="display: flex; align-items: center; margin-left: 8%;">
+                                <img style="width: 4vw;" src="mapa_z.png" alt="mapa">
+                                <span style="padding-right: 5%; vertical-align: top; font-size: 1.3vw; margin-left: 0%;"><b>&nbsp;Rezerwat&nbsp;Afryka</b></span>
+                            </a>
+                            <div style="position: absolute; top: 85%; left: 85%; transform: translateX(-60%); display: flex; align-items: center;">
+                                <img id="ikona_samiec" style="width: 50%;" src="../Ikony/samiec.png" alt="samiec">&nbsp;<span id="samce">0</span>&nbsp;&nbsp;
+                                <img id="ikona_samica" style="width: 50%;" src="../Ikony/samica.png" alt="samica">&nbsp;<span id="samice">0</span>
+                            </div>
+                            <img id="wybieg" class='mapa' src='Wybiegi/Flaming różowy.png' style='width: 33vw; margin-top: 0%; margin-left: 8%;' alt='wybieg'>
+                            <span class="powrot" style="position: absolute; top: 48%; left: 4%; font-size: 2em; cursor: pointer; margin-left: 8%;" onclick="zmienWybieg(-1)">&#9664;</span>
+                            <span class="powrot" style="position: absolute; top: 48%; right: 4%; font-size: 2em; cursor: pointer; margin-right: -8%;" onclick="zmienWybieg(1)">&#9654;</span>
+                        </div>
+                </center>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
             <hr>
             <p class="akapit">Flaming różowy <i>(Phoenicopterus roseus)</i> to gatunek dużych ptaków migrujących, występujący powszechnie w Europie, na Bliskim Wschodzie, w Azji oraz w Afryce. Ptaki te zamieszkuja błotniste równiny pływowe i wybrzeża lagunowe w klimacie
                 ciepłym i umiarkowanym. Zdobywają pożywienie, mieszając dziobem błotnistą wodę i odfiltrowując z niej glony, bezkręgowce i nasiona.<br><br> Samce i samice flamingów wyglądają tak samo. Ich upierzenie ma kolor od jasnoróżowego po pomarańczoworóżowy.
@@ -168,11 +197,10 @@
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
                 <p class="akapit">Aby zdobyć zainteresowanie partnera, flamingi obu płci wykonują zsynchronizowany „taniec”, obejmujący wyciąganie szyi, czyszczenie piór oraz ruchy skrzydeł, wykonywane równocześnie przez dużą grupę ptaków. Gdy samiec zdobędzie już swoim
-                    wyglądem i tańcem uznanie samicy, ta oddziela się od grupy, a samiec podąża za nią. Samica opuszcza wtedy głowę i&nbsp;rozpościera skrzydła, zapraszając samca do godów.<br><br>Flamingi są monogamiczne - niektóre dobierają partnera
-                    na jeden sezon, a&nbsp;niektóre na całe życie. Para zakłada wspólnie gniazdo, budując kopiec z&nbsp;błota z wgłębieniem na szczycie, w którym samica składa jedno jajo. Wysiadywanie trwa od 27 do 31 dni i zajmują się nim zarówno matka,
-                    jak i&nbsp;ojciec. W&nbsp;pierwszych 3-4 tygodniach życia pisklę karmione jest pokarmem częściowo przetrawionym przez rodzica. Po tym okresie młode zaczynają, same filtrować pokarm, a gdy mają 10 tygodni, wyrastają im pióra. Na kolejny
-                    miesiąc trafiają pod opiekę dorosłego osobnika, który nie ma własnego potomstwa.<br><br>Ptaki te osiągają dorosłość w wieku 2 lat, a dojrzałość płciową w wieku 3&nbsp;lat, jednak zaczynają się rozmnażać zwykle dopiero pomiędzy 5 a&nbsp;10&nbsp;rokiem
-                    życia.
+                    wyglądem i tańcem uznanie samicy, ta oddziela się od grupy, a samiec podąża za nią. Samica opuszcza wtedy głowę i&nbsp;rozpościera skrzydła, zapraszając samca do godów.<br><br>Flamingi są <span class="keeptogether">monogamiczne - niektóre</span>                    dobierają partnera na jeden sezon, a&nbsp;niektóre na całe życie. Para zakłada wspólnie gniazdo, budując kopiec z&nbsp;błota z wgłębieniem na szczycie, w którym samica składa jedno jajo. Wysiadywanie trwa od 27 do 31 dni i zajmują
+                    się nim zarówno matka, jak i&nbsp;ojciec. W&nbsp;pierwszych <span class="keeptogether">3-4 tygodniach</span> życia pisklę karmione jest pokarmem częściowo przetrawionym przez rodzica. Po tym okresie młode zaczynają, same filtrować
+                    pokarm, a gdy mają 10 tygodni, wyrastają im pióra. Na kolejny miesiąc trafiają pod opiekę dorosłego osobnika, który nie ma własnego potomstwa.<br><br>Ptaki te osiągają dorosłość w wieku 2 lat, a dojrzałość płciową w wieku 3&nbsp;lat,
+                    jednak zaczynają się rozmnażać zwykle dopiero pomiędzy 5 a&nbsp;10&nbsp;rokiem życia.
                 </p>
             </div>
             <div style="clear: both;"></div>
@@ -192,6 +220,73 @@
             </div>
         </div>
     </div>
+    <script src="../spacje.js"></script>
+    <script src="_jednostki.js"></script>
+    <script>
+        // Dane dla różnych wybiegów
+        const wybiegi = [{
+            zdjecie: 'Wybiegi/Flaming różowy.png',
+            samce: 0,
+            samice: 0,
+            link: '../Mapa/Rezerwat Afryka.html',
+            region: 'Afryka'
+        }, {
+            zdjecie: 'Wybiegi/Flaming różowy.2.png',
+            samce: 4,
+            samice: 4,
+            link: '../Mapa/Rezerwat Europa.html',
+            region: 'Europa'
+        }];
+
+        let currentIndex = 0;
+
+        function zmienWybieg(kierunek) {
+            // Pobieranie elementów do animacji
+            const wybieg = document.getElementById('wybieg');
+            const samce = document.getElementById('samce');
+            const samice = document.getElementById('samice');
+            const ikonaSamiec = document.getElementById('ikona_samiec');
+            const ikonaSamica = document.getElementById('ikona_samica');
+            const odnosnik = document.getElementById('odnosnik');
+
+            // Zmniejszenie widoczności (fade-out) przed zmianą zawartości
+            wybieg.style.opacity = 0;
+            samce.style.opacity = 0;
+            samice.style.opacity = 0;
+            ikonaSamiec.style.opacity = 0;
+            ikonaSamica.style.opacity = 0;
+            odnosnik.style.opacity = 0;
+
+            setTimeout(() => {
+                // Zmieniamy indeks na podstawie kierunku (lewo/prawo)
+                currentIndex += kierunek;
+                if (currentIndex < 0) currentIndex = wybiegi.length - 1;
+                if (currentIndex >= wybiegi.length) currentIndex = 0;
+
+                // Aktualizacja zdjęcia wybiegu
+                wybieg.src = wybiegi[currentIndex].zdjecie;
+
+                // Aktualizacja liczby samców/samic
+                samce.textContent = wybiegi[currentIndex].samce;
+                samice.textContent = wybiegi[currentIndex].samice;
+
+                // Aktualizacja odnośnika i regionu
+                odnosnik.href = wybiegi[currentIndex].link;
+                odnosnik.innerHTML = `
+                <div class="powrot" style="display: flex; align-items: center;">
+                    <img style="width: 4vw; vertical-align: middle;" src="mapa_z.png" alt="mapa">&nbsp;<span style="padding-right: 5%; vertical-align: middle; font-size: 1.3vw; margin-left: -2%;"><b>&nbsp;Rezerwat&nbsp;${wybiegi[currentIndex].region}</b></span>
+                </div>`;
+
+                // Powrót widoczności (fade-in) po zmianie zawartości
+                wybieg.style.opacity = 1;
+                samce.style.opacity = 1;
+                samice.style.opacity = 1;
+                ikonaSamiec.style.opacity = 1;
+                ikonaSamica.style.opacity = 1;
+                odnosnik.style.opacity = 1;
+            }, 300); // Czas na fade-out
+        }
+    </script>
 </body>
 
 </html>

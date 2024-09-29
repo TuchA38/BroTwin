@@ -23,6 +23,15 @@
     span.keeptogether {
         white-space: nowrap;
     }
+    
+    .mapa,
+    #samce,
+    #samice,
+    #odnosnik,
+    #ikona_samiec,
+    #ikona_samica {
+        transition: opacity 0.3s ease-in-out;
+    }
 </style>
 
 <body onselectstart="return false;">
@@ -34,7 +43,6 @@
             </p>
             <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
                 <a href="../DLC/Grasslands Animal Pack/Grasslands Animal Pack.html" class="powrot"><img style="width:8%; margin-top: -0.5%; padding-right: 1%; vertical-align: top;" src="dlc_z.png" alt="dlc"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
-                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
             </p>
             <div style="clear: both;"></div>
             <div>
@@ -46,9 +54,30 @@
                 <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
             <hr>
-            <p class="akapit">Phoebis sennae <i>(Phoebis sennae)</i> to motyl zamieszkujący otwarte przestrzenie w strefie umiarkowanej - tereny trawiaste, parki, ogrody, cieki wodne i wybrzeże - w Ameryce Północnej, Środkowej i Południowej. Ma żółte skrzydła z&nbsp;brązowymi
-                i/lub czarnymi plamkami oraz obrzeżami. Samice bywają zwykle mniej jaskrawo ubarwione od samców, a&nbsp;wzdłuż ciemnych obramowań skrzydeł widoczne są u nich żółte plamki. Rozstaw skrzydeł motyla z gatunku Phoebis sennae wynosi od 5,5
-                do 7,8&nbsp;cm. Gąsienice są jaskrawożółte lub zielone z żółtymi paskami i niebieskimi plamkami wzdłuż boków.<br><br>Gatunek ten jest powszechny na obszarze jego występowania i&nbsp;jest uznawany za gatunek najmniejszej troski.</p>
+            <div class='akapit cień' style="margin-top: -1%;">
+                <center>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5%; margin-left: 10%;">
+                        <div style="position: relative; display: inline-block;">
+                            <a id="odnosnik" href="../Mapa/Rezerwat Europa.html" class="powrot" style="display: flex; align-items: center; margin-left: 8%;">
+                                <img style="width: 4vw;" src="mapa_z.png" alt="mapa">
+                                <span style="padding-right: 5%; vertical-align: top; font-size: 1.3vw; margin-left: 0%;"><b>&nbsp;Rezerwat&nbsp;Europa</b></span>
+                            </a>
+                            <div style="position: absolute; top: 85%; left: 85%; transform: translateX(-60%); display: flex; align-items: center;">
+                                <img id="ikona_samiec" style="width: 50%;" src="../Ikony/samiec.png" alt="samiec">&nbsp;<span id="samce">3</span>&nbsp;&nbsp;
+                                <img id="ikona_samica" style="width: 50%;" src="../Ikony/samica.png" alt="samica">&nbsp;<span id="samice">7</span>
+                            </div>
+                            <img id="wybieg" class='mapa' src='Wybiegi/Motylarnia.png' style='width: 33vw; margin-top: 0%; margin-left: 8%;' alt='wybieg'>
+                            <span class="powrot" style="position: absolute; top: 48%; left: 4%; font-size: 2em; cursor: pointer; margin-left: 8%;" onclick="zmienWybieg(-1)">&#9664;</span>
+                            <span class="powrot" style="position: absolute; top: 48%; right: 4%; font-size: 2em; cursor: pointer; margin-right: -8%;" onclick="zmienWybieg(1)">&#9654;</span>
+                        </div>
+                </center>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+            <hr>
+            <p class="akapit">Phoebis sennae <i>(Phoebis sennae)</i> to motyl zamieszkujący otwarte przestrzenie w strefie <span class="keeptogether">umiarkowanej - tereny</span> trawiaste, parki, ogrody, cieki wodne i <span class="keeptogether">wybrzeże - w Ameryce</span>                Północnej, Środkowej i Południowej. Ma żółte skrzydła z&nbsp;brązowymi i/lub czarnymi plamkami oraz obrzeżami. Samice bywają zwykle mniej jaskrawo ubarwione od samców, a&nbsp;wzdłuż ciemnych obramowań skrzydeł widoczne są u nich żółte
+                plamki. Rozstaw skrzydeł motyla z gatunku Phoebis sennae wynosi od 5,5 do 7,8&nbsp;cm. Gąsienice są jaskrawożółte lub zielone z żółtymi paskami i niebieskimi plamkami wzdłuż boków.<br><br>Gatunek ten jest powszechny na obszarze jego występowania
+                i&nbsp;jest uznawany za gatunek najmniejszej troski.</p>
             <hr>
             <div style="clear: both;"></div>
             <div class="info2">
@@ -154,8 +183,8 @@
                     w poszukiwaniu gotowych do rozmnażania samic. W razie powodzenia samiec ląduje obok samicy i poszturchuje odnóżami i skrzydłami jej skrzydła. Jeśli samica przyjmie jego zaloty, przechodzą do kopulacji, odwracając się do siebie tyłem
                     i stykając się odwłokami.<br><br>Krótko po tym samica składa pojedynczo na liściach jaja. Po 6 dniach z jaj wylęgają się gąsienice i zaczynają żerować na roślinach z rodzaju senna przez okres od 14 do 30 dni, po czym zaczynają prząść
                     kokon.
-                    <br><br>Po trwającym 10-14 dni przepoczwarzaniu z kokonu wylęga się dorosły motyl. W zależności od pory roku może on przystąpić do szukania partnera lub poszukać sobie miejsca na hibernację. Motyle z gatunku Phoebis sennae giną po
-                    rozmnożeniu się, co oznacza, że osobniki, które zapadły w&nbsp;hibernację przed sezonem lęgowym mogą żyć nawet 9 miesięcy.</p>
+                    <br><br>Po trwającym <span class="keeptogether">10-14 dni</span> przepoczwarzaniu z kokonu wylęga się dorosły motyl. W zależności od pory roku może on przystąpić do szukania partnera lub poszukać sobie miejsca na hibernację. Motyle
+                    z gatunku Phoebis sennae giną po rozmnożeniu się, co oznacza, że osobniki, które zapadły w&nbsp;hibernację przed sezonem lęgowym mogą żyć nawet 9 miesięcy.</p>
             </div>
             <div style="clear: both;"></div>
             <hr>
@@ -174,6 +203,79 @@
             </div>
         </div>
     </div>
+    <script src="../spacje.js"></script>
+    <script src="_jednostki.js"></script>
+    <script>
+        // Dane dla różnych wybiegów
+        const wybiegi = [{
+            zdjecie: 'Wybiegi/Motylarnia.png',
+            samce: 3,
+            samice: 7,
+            link: '../Mapa/Rezerwat Europa.html',
+            region: 'Europa'
+        }, {
+            zdjecie: 'Wybiegi/Motylarnia.2.png',
+            samce: 0,
+            samice: 0,
+            link: '../Mapa/Rezerwat Ameryka Północna.html',
+            region: 'Ameryka&nbsp;Północna'
+        }, {
+            zdjecie: 'Wybiegi/Motylarnia.3.png',
+            samce: 0,
+            samice: 0,
+            link: '../Mapa/Rezerwat Ameryka Południowa.html',
+            region: 'Ameryka&nbsp;Południowa'
+        }];
+
+        let currentIndex = 0;
+
+        function zmienWybieg(kierunek) {
+            // Pobieranie elementów do animacji
+            const wybieg = document.getElementById('wybieg');
+            const samce = document.getElementById('samce');
+            const samice = document.getElementById('samice');
+            const ikonaSamiec = document.getElementById('ikona_samiec');
+            const ikonaSamica = document.getElementById('ikona_samica');
+            const odnosnik = document.getElementById('odnosnik');
+
+            // Zmniejszenie widoczności (fade-out) przed zmianą zawartości
+            wybieg.style.opacity = 0;
+            samce.style.opacity = 0;
+            samice.style.opacity = 0;
+            ikonaSamiec.style.opacity = 0;
+            ikonaSamica.style.opacity = 0;
+            odnosnik.style.opacity = 0;
+
+            setTimeout(() => {
+                // Zmieniamy indeks na podstawie kierunku (lewo/prawo)
+                currentIndex += kierunek;
+                if (currentIndex < 0) currentIndex = wybiegi.length - 1;
+                if (currentIndex >= wybiegi.length) currentIndex = 0;
+
+                // Aktualizacja zdjęcia wybiegu
+                wybieg.src = wybiegi[currentIndex].zdjecie;
+
+                // Aktualizacja liczby samców/samic
+                samce.textContent = wybiegi[currentIndex].samce;
+                samice.textContent = wybiegi[currentIndex].samice;
+
+                // Aktualizacja odnośnika i regionu
+                odnosnik.href = wybiegi[currentIndex].link;
+                odnosnik.innerHTML = `
+                <div class="powrot" style="display: flex; align-items: center;">
+                    <img style="width: 4vw; vertical-align: middle;" src="mapa_z.png" alt="mapa">&nbsp;<span style="padding-right: 5%; vertical-align: middle; font-size: 1.3vw; margin-left: -2%;"><b>&nbsp;Rezerwat&nbsp;${wybiegi[currentIndex].region}</b></span>
+                </div>`;
+
+                // Powrót widoczności (fade-in) po zmianie zawartości
+                wybieg.style.opacity = 1;
+                samce.style.opacity = 1;
+                samice.style.opacity = 1;
+                ikonaSamiec.style.opacity = 1;
+                ikonaSamica.style.opacity = 1;
+                odnosnik.style.opacity = 1;
+            }, 300); // Czas na fade-out
+        }
+    </script>
 </body>
 
 </html>

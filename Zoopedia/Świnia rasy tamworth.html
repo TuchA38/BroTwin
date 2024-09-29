@@ -5,8 +5,8 @@
     <link rel="stylesheet" type="text/css" href="../Styl.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Koza alpejska</title>
-    <link rel="shortcut icon" href="Ikonki/Koza alpejska.png">
+    <title>Świnia rasy tamworth</title>
+    <link rel="shortcut icon" href="Ikonki/Świnia rasy tamworth.png">
 </head>
 <style>
     ul,
@@ -23,6 +23,15 @@
     span.keeptogether {
         white-space: nowrap;
     }
+    
+    .mapa,
+    #samce,
+    #samice,
+    #odnosnik,
+    #ikona_samiec,
+    #ikona_samica {
+        transition: opacity 0.3s ease-in-out;
+    }
 </style>
 
 <body onselectstart="return false;">
@@ -30,19 +39,20 @@
         <div style="animation: fadeIn ease-in .5s backwards;">
             <div style="clear: both;"></div>
             <p id="powrot" style="margin: 0%; margin-top: 1%;">
-                <a href="../Zoopedia.html#Koza_alpejska" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
+                <a href="../Zoopedia.html#Świnia_rasy_tamworth" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
             </p>
             <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
                 <a href="../DLC/Barnyard Animal Pack/Barnyard Animal Pack.html" class="powrot"><img style="width:8%; margin-top: -0.5%; padding-right: 1%; vertical-align: top;" src="dlc_z.png" alt="dlc"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
             </p>
             <div style="clear: both;"></div>
             <div>
-                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Koza alpejska.jpg" alt="Koza alpejska">
-                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Ssaki</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Parzystokopytne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Wołowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Koza</i></div>
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;">
+                    <img class="gatunek1 zwierze" src="Zdjęcia/Świnia rasy tamworth.jpg" alt="Świnia rasy tamworth">
+                    <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Ssaki</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Parzystokopytne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Świniowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Świnia</i></div>
                 </div>
-                <p class="naglowek"><b>Koza alpejska</b><br><i style="font-size: 1.8vw;">(Capra hircus)</i></p>
+                <p class="naglowek"><b>Świnia rasy tamworth</b><br><i style="font-size: 1.8vw;">(Sus domesticus)</i></p>
                 <p class="info"><b class="ud">Udomowione</b></p>
-                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: 460 000</p>
+                <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: 4 000</p>
             </div>
             <hr>
             <div class='akapit cień' style="margin-top: -1%;">
@@ -55,9 +65,9 @@
                             </a>
                             <div style="position: absolute; top: 85%; left: 85%; transform: translateX(-60%); display: flex; align-items: center;">
                                 <img id="ikona_samiec" style="width: 50%;" src="../Ikony/samiec.png" alt="samiec">&nbsp;<span id="samce">1</span>&nbsp;&nbsp;
-                                <img id="ikona_samica" style="width: 50%;" src="../Ikony/samica.png" alt="samica">&nbsp;<span id="samice">6</span>
+                                <img id="ikona_samica" style="width: 50%;" src="../Ikony/samica.png" alt="samica">&nbsp;<span id="samice">2</span>
                             </div>
-                            <img id="wybieg" class='mapa' src='Wybiegi/Koza alpejska.png' style='width: 33vw; margin-top: 0%; margin-left: 8%;' alt='wybieg'>
+                            <img id="wybieg" class='mapa' src='Wybiegi/Świnia rasy tamworth.png' style='width: 33vw; margin-top: 0%; margin-left: 8%;' alt='wybieg'>
                             <!-- <span class="powrot" style="position: absolute; top: 48%; left: 4%; font-size: 2em; cursor: pointer; margin-left: 8%;" onclick="zmienWybieg(-1)">&#9664;</span> -->
                             <!-- <span class="powrot" style="position: absolute; top: 48%; right: 4%; font-size: 2em; cursor: pointer; margin-right: -8%;" onclick="zmienWybieg(1)">&#9654;</span> -->
                         </div>
@@ -66,12 +76,10 @@
             </div>
             <div style="clear: both;"></div>
             <hr>
-            <p class="akapit">Koza alpejska jest rasą kozy domowej <i>(Capra hircus)</i> pochodzącą z regionu francuskich Alp i występującą na terenie Francji, Włoch i Szwajcarii. Kozy alpejskie zostały wyhodowane jako rasa mleczna o wysokiej wydajności mlecznej na osobnika
-                i dobrze się przystosowują do warunków klimatycznych wysokogórskich pastwisk. Mają masywne ciało i długie szczupłe nogi oraz szyję. Krótka sierść może przybierać barwę jednolicie brązową, czarną, białą lub szarą. Możliwe są też czarne
-                lub białe plamy lub umaszczenie łaciate z kombinacją wszystkich podstawowych kolorów. Głowa jest mała, z długimi i prostymi uszami oraz lekko zakrzywionymi rogami. Zarówno samiec, jak i samica mogą mieć rogi i brodę, bywają one jednak
-                dłuższe u&nbsp;kozłów. Kozy alpejskie mają w kłębie od 0,76 do 0,95 metra. Samce są wyższe i cięższe od samic i osiągają wagę od 77 do 100 kg, samice natomiast ważą od 61 do 70 kg.<br><br>Kozy zostały udomowione przez człowieka około 10
-                000 lat temu i były jednymi z pierwszych zwierząt hodowanych w celu pozyskania mięsa, mleka oraz materiału na odzież i narzędzia. Uważa się, że najprawdopodobniej przodkiem kozy domowej była koza bezoarowa, podgatunek dzikiej kozy z regionu
-                Kaukazu w&nbsp;Azji. Kozy alpejskie są powszechnym udomowionym gatunkiem wykorzystywanym w produkcji mleka i do krzyżowania ras. Gatunek ten nie wymaga ochrony.</p>
+            <p class="akapit">Tamworth to angielska rasa świni domowej <i>(Sus domesticus)</i>. Dokładny czas i miejsce jej pochodzenia nie są znane, ale zakłada się początek XIX&nbsp;wieku w okolicach Tamworth, miasta w Anglii. Do wyhodowania tej rasy posłużył dzik euroazjatycki,
+                dzięki czemu świnie rasy tamworth są silne i wytrzymałe. Całe ich ciało pokrywa charakterystyczna rudawa sierść bez plam w innym kolorze. Wyróżniają się długim i silnym ciałem oraz stosunkowo długimi nogami. Rasa ta charakteryzuje się
+                dymorfizmem płciowym: samce osiągają do 65 cm wzrostu i <span class="keeptogether">250-370 kg</span> wagi, samice natomiast są drobniejsze i ważą od 200 do 300 kg.<br><br>Rasę tamworth uważa się za zagrożony gatunek udomowiony. Ta priorytetowa
+                rasa wymaga szczególnej uwagi, aby mogła przetrwać przy jednoczesnym zachowaniu jej standardów oraz różnorodności genetycznej.</p>
             <hr>
             <div style="clear: both;"></div>
             <div class="info2">
@@ -85,11 +93,11 @@
                         </tr>
                         <tr>
                             <td style=" text-align: center;">Europa, obecnie występuje<br>na całym świecie</td>
-                            <td style=" text-align: center;"><span class="keeptogether">Francja, Włochy,<br>Szwajcaria</span></td>
-                            <td style=" text-align: center;"><span class="keeptogether"><img id="biom" style="width:2.6vw;" src="../Ikony/Tajga.png" alt="tajga"><img id="biom" style="width:2.6vw;" src="../Ikony/Klimat_umiarkowany.png" alt="klimat umiarkowany"><br><img id="biom" style="width:2.6vw;" src="../Ikony/Step.png" alt="step"><img id="biom" style="width:2.6vw;" src="../Ikony/Pustynia.png" alt="pustynia"></span></td>
+                            <td style=" text-align: center;"><span class="keeptogether">Anglia</span></td>
+                            <td style=" text-align: center;"><span class="keeptogether"><img id="biom" style="width:2.6vw;" src="../Ikony/Klimat_umiarkowany.png" alt="klimat umiarkowany"><img id="biom" style="width:2.6vw;" src="../Ikony/Step.png" alt="step"><img id="biom" style="width:2.6vw;" src="../Ikony/Tajga.png" alt="tajga"></span></td>
                         </tr>
                     </table>
-                    <img id="mapa" src="Mapy/Koza alpejska.jpg">
+                    <img id="mapa" src="Mapy/Świnia rasy tamworth.jpg">
                 </center>
             </div>
             <div class="info3">
@@ -98,19 +106,19 @@
                         <caption><b>Zachowania społeczne</b></caption>
                         <tr>
                             <th>Wielkość grupy<br>(bez młodych osobników)</th>
-                            <td>2-30<br>(maks. 1 samiec, samice do 29)</td>
+                            <td>1-5<br>(maks. 1 samiec, samice do 4)</td>
                         </tr>
                         <tr>
                             <th>Wielkość&nbsp;grupy&nbsp;kawalerskiej&nbsp;samców<br>(bez młodych osobników)</th>
-                            <td>2-15</td>
+                            <td>1-3</td>
                         </tr>
                         <tr>
                             <th>Wielkość grupy kawalerskiej samic<br>(bez młodych osobników)</th>
-                            <td>2-30</td>
+                            <td>1-5</td>
                         </tr>
                         <tr>
                             <th>Hierarchia dominacji</th>
-                            <td>Samce walczą o prawo do rozrodu. Hierarchia samic zależy od wieku.</td>
+                            <td>Watahę samic prowadzi dominująca samica, dominacja u&nbsp;samców uzależniona od rozmiaru osobnika.</td>
                         </tr>
                         <tr>
                             <th>Strategia rozrodcza</th>
@@ -131,20 +139,20 @@
                         <tr>
                             <th>Wielkość</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;0,88 m wysokości w kłębie</div>
-                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;0,83 m wysokości w kłębie</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;60 cm wysokości w kłębie</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;55 cm wysokości w kłębie</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Długość&nbsp;życia</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;18 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;18 lat</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;17 lat &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;17 lat</div>
                             </td>
                         </tr>
                         <tr>
                             <th>Waga</th>
                             <td>
-                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;89 kg &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;66 kg</div>
+                                <div class="plec"><img id="plec" src="../Ikony/samiec.png" alt="samiec">&nbsp;310 kg &nbsp;<img id="plec" src="../Ikony/samica.png" alt="samica">&nbsp;250 kg</div>
                             </td>
                         </tr>
                     </table>
@@ -153,7 +161,7 @@
                         <caption><b>Cykl życiowy</b></caption>
                         <tr>
                             <th>Wiek dojrzałości płciowej</th>
-                            <td>1,5 roku</td>
+                            <td>1 rok</td>
                         </tr>
                         <tr>
                             <th>Wiek zakończenia okresu reprodukcyjnego</th>
@@ -161,15 +169,15 @@
                         </tr>
                         <tr>
                             <th>Liczba młodych przypadająca na okres godowy</th>
-                            <td>1-3</td>
+                            <td>2-5</td>
                         </tr>
                         <tr>
                             <th>Długość ciąży/inkubacji</th>
-                            <td>5 mies.</td>
+                            <td>3 mies.</td>
                         </tr>
                         <tr>
                             <th>Okres międzyurodzeniowy</th>
-                            <td>7 mies.</td>
+                            <td>8 mies.</td>
                         </tr>
                         <tr>
                             <th>Rozmnażanie w niewoli</th>
@@ -182,29 +190,28 @@
             <hr>
             <div class="info4">
                 <p style="text-align: center;"><b>Potrzeby społeczne</b></p>
-                <p class="akapit">Kozy alpejskie to ciekawskie i towarzyskie zwierzęta żyjące w stadach. Hierarchia w stadzie zależy od wieku i wielkości zwierząt. Samce mające dostęp do samic mogą staczać walki podczas okresu godowego, można je jednak trzymać w stadach
-                    kawalerskich. Kozy potrafią zawiązywać więzi z&nbsp;innymi osobnikami, a nawet z człowiekiem.</p>
+                <p class="akapit">Świnie domowe to zwierzęta społeczne. Żyją w niewielkich grupach składających się zazwyczaj z kilku macior i ich młodych. Młode knury można trzymać w grupach kawalerskich, dojrzałe knury natomiast można izolować lub dołączyć do grupy loch.
+                    Świnie komunikują się wzajemnie za pomocą chrząknięć, przekazując informacje o swoich emocjach podczas wygrzebywania pożywienia.</p>
             </div>
             <div class="info4">
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
-                <p class="akapit">Sezon rozrodczy w przypadku kóz alpejskich zazwyczaj trwa od jesieni do wczesnej wiosny. Rasy kóz z cieplejszych klimatów mogą jednak rozmnażać się o dowolnej porze roku. Podczas sezonu rozrodczego kozy co trzy tygodnie wchodzą w ruję,
-                    a kozły w okres godowy. Koza sygnalizuje swoją gotowość do rozrodu coraz głośniejszą wokalizacją i niespokojnym zachowaniem, a&nbsp;samiec w okresie godowym wytwarza silny zapach, za który odpowiada opryskiwanie własnym moczem grzbietu
-                    i przednich nóg oraz wydzielina z&nbsp;gruczołów znajdujących się przy podstawie rogów. Zapach ten przyciąga samicę. Podczas zalotów u samca pojawia się odruch flehmen. Oprócz tego samiec trąca samicę barkiem. Jeśli samica go zaakceptuje,
-                    kopulują.
-                    <br><br>Ciąża kóz alpejskich trwa 150 dni, po czym koza rodzi od jednego do trzech koźląt, zwykle dwa. Młode są w pełni odstawione od mleka matki w wieku od 3 miesięcy do 5,5 miesiąca. W przypadku hodowli komercyjnych odstawienie zazwyczaj
-                    następuje wcześniej.<br><br>Kozy osiągają dorosłość bardzo szybko, a ich dojrzałość płciowa przypada na wiek od 1 do 1,5 roku, mimo że rozwój fizyczny może jeszcze trwać. Wzrost rogów kończy się między 3 a 5 rokiem życia.</p>
+                <p class="akapit">Świnie rasy tamworth rozmnażają się przez cały rok. Cykl rujowy lochy trwa około 21 dni. W ciągu tego cyklu locha jest płodna przez 4 dni. Gdy knur znajdzie się w pobliżu lochy będącej w rui, używa wokalizacji oraz stara się wytropić jej
+                    zapach, wykazując odruch flehmen. Zanim przystąpi do kopulacji, trąca ryjkiem głowę lochy, jej boki oraz zad.<br><br>Ciąża świń rasy tamworth trwa około 115 dni, co łatwo zapamiętać jako „3 miesiące, 3 tygodnie i 3 dni”. Po upływie
+                    tego czasu locha rodzi duży miot liczący od 6 do 10 prosiąt. Młode pozostają przy matce i piją jej mleko, dopóki nie skończą 5 miesięcy.<br><br>Lochy rasy tamworth mogą osiągnąć dojrzałość płciową już w wieku 6 miesięcy, zwykle jednak
+                    następuje to po roku. Knury swoją dojrzałość osiągają później niż lochy. Świnie rasy tamworth rosną powoli i zarówno samice, jak i samce osiągają swoje największe rozmiary zazwyczaj między 2 a 3 rokiem życia.</p>
             </div>
             <div style="clear: both;"></div>
             <hr>
             <div class="ciekawostka">
                 <p><b>Ciekawostki</b></p>
                 <ul class="akapit">
-                    <li>Występują dwa rodzaje kóz alpejskich: koza francuska, czyli czysta rasa kóz alpejskich pochodzących z Alp francuskich, oraz amerykańska koza alpejska, która została wyhodowana w USA z osobników importowanych z Francji.</li>
-                    <li>Kozy alpejskie mogą mieć różnorodne umaszczenie, na które istnieje wiele francuskich terminów.</li>
-                    <li>Powszechnie uważa się, że kozy potrafią zjeść niemal wszystko. Takie przekonanie prawdopodobnie wzięło się z ich zachowania podczas wypasu. Próbują one każdej napotkanej rzeczy, by sprawdzić, czy nadaje się do zjedzenia, nie zawsze
-                        jednak ją zjadają.</li>
-                    <li>Kozy, które zostały porzucone lub uciekły, szybko przyjmują zachowania dzikich zwierząt i rozszerzają dziko żyjącą populację. W niektórych krajach występują populacje inwazyjne dzikich kóz.</li>
-                    <li>Koza alpejska stanowi większość kóz mlecznych we Francji.</li>
+                    <li>Rasa tamworth została oficjalnie uznana w 1865 roku w Anglii. Była eksportowana do Kanady, Australii i Stanów Zjednoczonych, gdzie stała się podstawą dla producentów mięsa, aż do powstania hodowli na skalę przemysłową.</li>
+                    <li>W 1998 roku para świń rasy tamworth uciekła z rzeźni podczas rozładunku „Dwójka z Tamworth” stała się medialną sensacją w całej Wielkiej Brytanii i udało się ją schwytać dopiero po kilku dniach. Świnie otrzymały imiona Butch i Sundance,
+                        a resztę swojego życia spędziły w centrum ratunkowym.</li>
+                    <li>Ponieważ dzik euroazjatycki uznawany jest za niebezpieczny gatunek dzikich zwierząt, zastępuje się go świniami rasy tamworth na niektórych obszarach w Wielkiej Brytanii, na których przywraca się naturalną dziką przyrodę, ze względu
+                        na podobieństwa fizyczne i behawioralne obu gatunków.</li>
+                    <li>Nie wiadomo, skąd pochodzi rudawe umaszczenie rasy tamworth. Może ono pochodzić od ras, z których oryginalnie ją wyhodowano, lub być rezultatem hodowli selektywnej.</li>
+                    <li>Świnie rasy tamworth są bardzo wytrzymałe, dlatego często były trzymane na zewnątrz. Są świetnymi zbieraczami i często żywią się żołędziami z lasów, w których są trzymane.</li>
                 </ul>
             </div>
             <div class="ciekawostkao">
