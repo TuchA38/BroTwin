@@ -300,8 +300,8 @@
                     innerHTML = innerHTML.replace(regex, '$1&nbsp;$2');
                 });
 
-                // Dodawanie &nbsp; przed i po słowie 'do'
-                innerHTML = innerHTML.replace(/\bdo\b/g, 'do&nbsp;');
+                // Dodawanie &nbsp; przed słowem 'do' (maksymalnie jedna)
+                innerHTML = innerHTML.replace(/\bdo\b\s+/g, 'do&nbsp;');
 
                 // Usuwanie podwójnych &nbsp; oraz nadmiarowych spacji wokół &nbsp;
                 innerHTML = innerHTML.replace(/(&nbsp;)+\s+/g, '&nbsp;');
@@ -322,6 +322,9 @@
 
                 // Usuwanie niechcianych &nbsp; przed <br>
                 finalText = finalText.replace(/(&nbsp;)+<br>/g, '<br>');
+
+                // Usuwanie podwójnych &nbsp; w całym tekście
+                finalText = finalText.replace(/(&nbsp;)+/g, '&nbsp;'); // Zostaw tylko jeden &nbsp; w przypadku powtórzeń
 
                 element.innerHTML = finalText;
             }

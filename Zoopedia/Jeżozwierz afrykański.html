@@ -77,8 +77,8 @@
             <hr>
             <p class="akapit">Jeżozwierz afrykański <i>(Hystrix cristata)</i> to gatunek dużego gryzonia spotykanego na półpustyniach, sawannach i&nbsp;obszarach górzystych Afryki Środkowej i Północnej, a także Włoch. Jego szorstkie, szczeciniaste futro ma kolor od ciemnobrązowego
                 do czarnego, a cechą charakterystyczną są czarno-białe kolce, które porastają środkową część szyi, grzbiet i boki ciała jeżozwierza, a także ogon. Kolce są bardzo ostre i&nbsp;unoszą się, gdy jeżozwierz wyczuje zagrożenie. Jeżozwierz afrykański
-                ma tępo zakończony, zaokrąglony pysk, małe oczy i&nbsp;okrągłe uszy. Jest krępej budowy i ma krótkie, masywne kończyny. U tego gatunku nie występuje dymorfizm płciowy, a&nbsp;samce i samice trudno rozróżnić. Osiągają od 60 do 83 cm długości
-                i ważą
+                ma tępo zakończony, zaokrąglony pysk, małe oczy i&nbsp;okrągłe uszy. Jest krępej budowy i ma krótkie, masywne kończyny. U tego gatunku nie występuje dymorfizm płciowy, a&nbsp;samce i samice trudno rozróżnić. Osiągają od 60 do&nbsp;83 cm
+                długości i ważą
                 <span class="keeptogether">13-27 kg</span>.<br><br>Jeżozwierze afrykańskie są uważane za gatunek najmniejszej troski, ponieważ występują powszechnie w swoich siedliskach. We Włoszech ich populacja i&nbsp;obszar występowania powiększają
                 się, natomiast w Afryce Północnej odnotowano spadek liczebności tych zwierząt. Mimo to jeżozwierze afrykańskie to często spotykany gatunek w tym regionie.</p>
             <hr>
@@ -288,6 +288,58 @@
                 odnosnik.style.opacity = 1;
             }, 300); // Czas na fade-out
         }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const units = ['cm', 'kg', 'm', 'km', 'g', 'mg', 'l', 'ml', 'mm', 's', 'min', 'h'];
+
+            // Funkcja dodająca niełamiące się spacje w odpowiednich miejscach
+            function addNonBreakingSpaces(element) {
+                let innerHTML = element.innerHTML;
+
+                // Zamiana spacji między liczbami i jednostkami na niełamiące się spacje
+                units.forEach(function(unit) {
+                    const regex = new RegExp('(\\d+)\\s+(' + unit + ')', 'g');
+                    innerHTML = innerHTML.replace(regex, '$1&nbsp;$2');
+                });
+
+                // Dodawanie &nbsp; przed słowem 'do' (maksymalnie jedna)
+                innerHTML = innerHTML.replace(/\bdo\b\s+/g, 'do&nbsp;');
+
+                // Usuwanie podwójnych &nbsp; oraz nadmiarowych spacji wokół &nbsp;
+                innerHTML = innerHTML.replace(/(&nbsp;)+\s+/g, '&nbsp;');
+                innerHTML = innerHTML.replace(/\s+(&nbsp;)+/g, '&nbsp;');
+
+                // Rozbicie tekstu na części oddzielone <br>
+                const parts = innerHTML.split('<br>');
+
+                // Przetwarzanie każdego fragmentu oddzielnie
+                const updatedParts = parts.map(function(part) {
+                    // Usuwanie niechcianych &nbsp; na końcu tekstu oraz przed <br>
+                    part = part.replace(/(&nbsp;)+$/, ''); // Usuwa &nbsp; na końcu tekstu
+                    return part.trim(); // Usuwamy zbędne spacje
+                });
+
+                // Połączone fragmenty z powrotem z <br>
+                let finalText = updatedParts.join('<br>');
+
+                // Usuwanie niechcianych &nbsp; przed <br>
+                finalText = finalText.replace(/(&nbsp;)+<br>/g, '<br>');
+
+                // Usuwanie podwójnych &nbsp; w całym tekście
+                finalText = finalText.replace(/(&nbsp;)+/g, '&nbsp;'); // Zostaw tylko jeden &nbsp; w przypadku powtórzeń
+
+                element.innerHTML = finalText;
+            }
+
+            // Znajdź wszystkie elementy z klasą "akapit"
+            const paragraphs = document.querySelectorAll('.akapit');
+
+            // Dla każdego paragrafu uruchom funkcję zamiany spacji
+            paragraphs.forEach(function(paragraph) {
+                addNonBreakingSpaces(paragraph);
+            });
+        });
     </script>
 </body>
 

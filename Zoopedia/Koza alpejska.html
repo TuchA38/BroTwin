@@ -110,7 +110,7 @@
                         </tr>
                         <tr>
                             <th>Hierarchia dominacji</th>
-                            <td>Samce walczą o prawo do rozrodu. Hierarchia samic zależy od wieku.</td>
+                            <td>Samce walczą o prawo do rozrodu, a hierarchia samic zależy od wieku</td>
                         </tr>
                         <tr>
                             <th>Strategia rozrodcza</th>
@@ -213,7 +213,58 @@
         </div>
     </div>
     <script src="../spacje.js"></script>
-    <script src="_jednostki.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const units = ['cm', 'kg', 'm', 'km', 'g', 'mg', 'l', 'ml', 'mm', 's', 'min', 'h'];
+
+            // Funkcja dodająca niełamiące się spacje w odpowiednich miejscach
+            function addNonBreakingSpaces(element) {
+                let innerHTML = element.innerHTML;
+
+                // Zamiana spacji między liczbami i jednostkami na niełamiące się spacje
+                units.forEach(function(unit) {
+                    const regex = new RegExp('(\\d+)\\s+(' + unit + ')', 'g');
+                    innerHTML = innerHTML.replace(regex, '$1&nbsp;$2');
+                });
+
+                // Dodawanie &nbsp; przed słowem 'do' (maksymalnie jedna)
+                innerHTML = innerHTML.replace(/\bdo\b\s+/g, 'do&nbsp;');
+
+                // Usuwanie podwójnych &nbsp; oraz nadmiarowych spacji wokół &nbsp;
+                innerHTML = innerHTML.replace(/(&nbsp;)+\s+/g, '&nbsp;');
+                innerHTML = innerHTML.replace(/\s+(&nbsp;)+/g, '&nbsp;');
+
+                // Rozbicie tekstu na części oddzielone <br>
+                const parts = innerHTML.split('<br>');
+
+                // Przetwarzanie każdego fragmentu oddzielnie
+                const updatedParts = parts.map(function(part) {
+                    // Usuwanie niechcianych &nbsp; na końcu tekstu oraz przed <br>
+                    part = part.replace(/(&nbsp;)+$/, ''); // Usuwa &nbsp; na końcu tekstu
+                    return part.trim(); // Usuwamy zbędne spacje
+                });
+
+                // Połączone fragmenty z powrotem z <br>
+                let finalText = updatedParts.join('<br>');
+
+                // Usuwanie niechcianych &nbsp; przed <br>
+                finalText = finalText.replace(/(&nbsp;)+<br>/g, '<br>');
+
+                // Usuwanie podwójnych &nbsp; w całym tekście
+                finalText = finalText.replace(/(&nbsp;)+/g, '&nbsp;'); // Zostaw tylko jeden &nbsp; w przypadku powtórzeń
+
+                element.innerHTML = finalText;
+            }
+
+            // Znajdź wszystkie elementy z klasą "akapit"
+            const paragraphs = document.querySelectorAll('.akapit');
+
+            // Dla każdego paragrafu uruchom funkcję zamiany spacji
+            paragraphs.forEach(function(paragraph) {
+                addNonBreakingSpaces(paragraph);
+            });
+        });
+    </script>
 </body>
 
 </html>
