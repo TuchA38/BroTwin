@@ -23,6 +23,15 @@
     span.keeptogether {
         white-space: nowrap;
     }
+    
+    .mapa,
+    #samce,
+    #samice,
+    #odnosnik,
+    #ikona_samiec,
+    #ikona_samica {
+        transition: opacity 0.3s ease-in-out;
+    }
 </style>
 
 <body onselectstart="return false;">
@@ -34,7 +43,6 @@
             </p>
             <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
                 <a href="../DLC/Grasslands Animal Pack/Grasslands Animal Pack.html" class="powrot"><img style="width:8%; margin-top: -0.5%; padding-right: 1%; vertical-align: top;" src="dlc_z.png" alt="dlc"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
-                <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
             </p>
             <div style="clear: both;"></div>
             <div>
@@ -45,6 +53,27 @@
                 <p class="info"><b class="nz">Najmniej zagrożony</b></p>
                 <p class="info" style="font-size: 1.3vw;">Wielkość populacji na wolności: Nieznana</p>
             </div>
+            <hr>
+            <div class='akapit cień' style="margin-top: -1%;">
+                <center>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.5%; margin-left: 10%;">
+                        <div style="position: relative; display: inline-block;">
+                            <a id="odnosnik" href="../Mapa/Rezerwat Europa.html" class="powrot" style="display: flex; align-items: center; margin-left: 8%;">
+                                <img style="width: 4vw;" src="mapa_z.png" alt="mapa">
+                                <span style="padding-right: 5%; vertical-align: top; font-size: 1.3vw; margin-left: 0%;"><b>&nbsp;Rezerwat&nbsp;Europa</b></span>
+                            </a>
+                            <div style="position: absolute; top: 85%; left: 85%; transform: translateX(-60%); display: flex; align-items: center;">
+                                <img id="ikona_samiec" style="width: 50%;" src="../Ikony/samiec.png" alt="samiec">&nbsp;<span id="samce">4</span>&nbsp;&nbsp;
+                                <img id="ikona_samica" style="width: 50%;" src="../Ikony/samica.png" alt="samica">&nbsp;<span id="samice">9</span>
+                            </div>
+                            <img id="wybieg" class='mapa' src='Wybiegi/Motylarnia.png' style='width: 33vw; margin-top: 0%; margin-left: 8%;' alt='wybieg'>
+                            <span class="powrot" style="position: absolute; top: 48%; left: 4%; font-size: 2em; cursor: pointer; margin-left: 8%;" onclick="zmienWybieg(-1)">&#9664;</span>
+                            <span class="powrot" style="position: absolute; top: 48%; right: 4%; font-size: 2em; cursor: pointer; margin-right: -8%;" onclick="zmienWybieg(1)">&#9654;</span>
+                        </div>
+                </center>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
             <hr>
             <p class="akapit">Paź królowej <i>(Papilio machaon)</i> to motyl zamieszkujący regiony stref umiarkowanych, obszary leśne, a nawet tundry w&nbsp;Europie, Azji i Ameryce Północnej. Ma jasnożółte skrzydła z&nbsp;szaroczarnymi wzorami na skrzydłach pierwszej pary
                 oraz niebieskoczarnymi akcentami i czerwonymi oczkami na skrzydłach drugiej pary. Skrzydła drugiej pary (tylne) mają także wydłużone „ogonki”. U pazia królowej nie występuje dymorfizm płciowy. Samce nie różnią się od samic wyglądem ani
@@ -151,10 +180,10 @@
                 <p style="text-align: center;"><b>Rozmnażanie</b></p>
                 <p class="akapit">Samce pazia królowej przejawiają zachowania godowe, gromadząc się na szczytach lub zboczach najwyższych wzniesień w okolicy. Próbują w ten sposób ustanowić terytorium w jak najwyższym punkcie. Samce, którym uda się utrzymać terytorium
                     na dużej wysokości, mają większe szanse na zdobycie partnerki, ponieważ gotowe do rozrodu samice również lecą w&nbsp;najwyżej położone miejsca. Gdy samica wybierze już partnera, razem z&nbsp;nim siada na łodydze rośliny. Motyle są
-                    do siebie zwrócone tyłem i stykają się końcami odwłoków.<br><br>Krótko po kopulacji samica składa pojedynczo jaja, po jednym na liść. Łącznie może złożyć od 200 do 430 jaj w ciągu 4 dni. Po około 4-10 dniach od złożenia z jaj wylęgają
-                    się gąsienice. Przez okres od 3 do 4 tygodni żywią się miękkimi, młodymi liśćmi roślin takich jak marchew i koper włoski, po czym przytwierdzają się cienką przędzą do roślin na czas przepoczwarzania.<br><br>Po 10-20 dniach z poczwarek
-                    wylęgają się dorosłe motyle. Jeśli jednak przemiana w poczwarkę następuje pod koniec lata, taki osobnik może pozostać w tym stadium do przyszłego roku, czekając na ponowny wzrost temperatur. W&nbsp;zależności od pory roku osobniki
-                    dorosłe hibernują lub od razu przystępują do poszukiwania partnera. Pazie królowej giną po tygodniu lub dwóch od kopulacji, więc osobniki zapadające w hibernację mogą żyć przez około 9&nbsp;miesięcy.</p>
+                    do siebie zwrócone tyłem i stykają się końcami odwłoków.<br><br>Krótko po kopulacji samica składa pojedynczo jaja, po jednym na liść. Łącznie może złożyć od 200 do 430 jaj w ciągu 4 dni. Po około <span class="keeptogether">4-10 dniach</span>                    od złożenia z jaj wylęgają się gąsienice. Przez okres od 3 do 4 tygodni żywią się miękkimi, młodymi liśćmi roślin takich jak marchew i koper włoski, po czym przytwierdzają się cienką przędzą do roślin na czas przepoczwarzania.<br><br>Po
+                    <span class="keeptogether">10-20 dniach</span> z poczwarek wylęgają się dorosłe motyle. Jeśli jednak przemiana w poczwarkę następuje pod koniec lata, taki osobnik może pozostać w tym stadium do przyszłego roku, czekając na ponowny
+                    wzrost temperatur. W&nbsp;zależności od pory roku osobniki dorosłe hibernują lub od razu przystępują do poszukiwania partnera. Pazie królowej giną po tygodniu lub dwóch od kopulacji, więc osobniki zapadające w hibernację mogą żyć przez
+                    około 9&nbsp;miesięcy.</p>
             </div>
             <div style="clear: both;"></div>
             <hr>
@@ -173,6 +202,130 @@
             </div>
         </div>
     </div>
+    <script src="../spacje.js"></script>
+    <script>
+        // Dane dla różnych wybiegów
+        const wybiegi = [{
+            zdjecie: 'Wybiegi/Motylarnia.png',
+            samce: 4,
+            samice: 9,
+            link: '../Mapa/Rezerwat Europa.html',
+            region: 'Europa'
+        }, {
+            zdjecie: 'Wybiegi/Motylarnia.2.png',
+            samce: 0,
+            samice: 0,
+            link: '../Mapa/Rezerwat Ameryka Północna.html',
+            region: 'Ameryka&nbsp;Północna'
+        }, {
+            zdjecie: 'Wybiegi/Motylarnia.3.png',
+            samce: 0,
+            samice: 0,
+            link: '../Mapa/Rezerwat Ameryka Południowa.html',
+            region: 'Ameryka&nbsp;Południowa'
+        }];
+
+        let currentIndex = 0;
+
+        function zmienWybieg(kierunek) {
+            // Pobieranie elementów do animacji
+            const wybieg = document.getElementById('wybieg');
+            const samce = document.getElementById('samce');
+            const samice = document.getElementById('samice');
+            const ikonaSamiec = document.getElementById('ikona_samiec');
+            const ikonaSamica = document.getElementById('ikona_samica');
+            const odnosnik = document.getElementById('odnosnik');
+
+            // Zmniejszenie widoczności (fade-out) przed zmianą zawartości
+            wybieg.style.opacity = 0;
+            samce.style.opacity = 0;
+            samice.style.opacity = 0;
+            ikonaSamiec.style.opacity = 0;
+            ikonaSamica.style.opacity = 0;
+            odnosnik.style.opacity = 0;
+
+            setTimeout(() => {
+                // Zmieniamy indeks na podstawie kierunku (lewo/prawo)
+                currentIndex += kierunek;
+                if (currentIndex < 0) currentIndex = wybiegi.length - 1;
+                if (currentIndex >= wybiegi.length) currentIndex = 0;
+
+                // Aktualizacja zdjęcia wybiegu
+                wybieg.src = wybiegi[currentIndex].zdjecie;
+
+                // Aktualizacja liczby samców/samic
+                samce.textContent = wybiegi[currentIndex].samce;
+                samice.textContent = wybiegi[currentIndex].samice;
+
+                // Aktualizacja odnośnika i regionu
+                odnosnik.href = wybiegi[currentIndex].link;
+                odnosnik.innerHTML = `
+                <div class="powrot" style="display: flex; align-items: center;">
+                    <img style="width: 4vw; vertical-align: middle;" src="mapa_z.png" alt="mapa">&nbsp;<span style="padding-right: 5%; vertical-align: middle; font-size: 1.3vw; margin-left: -2%;"><b>&nbsp;Rezerwat&nbsp;${wybiegi[currentIndex].region}</b></span>
+                </div>`;
+
+                // Powrót widoczności (fade-in) po zmianie zawartości
+                wybieg.style.opacity = 1;
+                samce.style.opacity = 1;
+                samice.style.opacity = 1;
+                ikonaSamiec.style.opacity = 1;
+                ikonaSamica.style.opacity = 1;
+                odnosnik.style.opacity = 1;
+            }, 300); // Czas na fade-out
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const units = ['cm', 'kg', 'm', 'km', 'g', 'mg', 'l', 'ml', 'mm', 's', 'min', 'h'];
+
+            // Funkcja dodająca niełamiące się spacje w odpowiednich miejscach
+            function addNonBreakingSpaces(element) {
+                let innerHTML = element.innerHTML;
+
+                // Zamiana spacji między liczbami i jednostkami na niełamiące się spacje
+                units.forEach(function(unit) {
+                    const regex = new RegExp('(\\d+)\\s+(' + unit + ')', 'g');
+                    innerHTML = innerHTML.replace(regex, '$1&nbsp;$2');
+                });
+
+                // Dodawanie &nbsp; przed słowem 'do' (maksymalnie jedna)
+                innerHTML = innerHTML.replace(/\bdo\b\s+/g, 'do&nbsp;');
+
+                // Usuwanie podwójnych &nbsp; oraz nadmiarowych spacji wokół &nbsp;
+                innerHTML = innerHTML.replace(/(&nbsp;)+\s+/g, '&nbsp;');
+                innerHTML = innerHTML.replace(/\s+(&nbsp;)+/g, '&nbsp;');
+
+                // Rozbicie tekstu na części oddzielone <br>
+                const parts = innerHTML.split('<br>');
+
+                // Przetwarzanie każdego fragmentu oddzielnie
+                const updatedParts = parts.map(function(part) {
+                    // Usuwanie niechcianych &nbsp; na końcu tekstu oraz przed <br>
+                    part = part.replace(/(&nbsp;)+$/, ''); // Usuwa &nbsp; na końcu tekstu
+                    return part.trim(); // Usuwamy zbędne spacje
+                });
+
+                // Połączone fragmenty z powrotem z <br>
+                let finalText = updatedParts.join('<br>');
+
+                // Usuwanie niechcianych &nbsp; przed <br>
+                finalText = finalText.replace(/(&nbsp;)+<br>/g, '<br>');
+
+                // Usuwanie podwójnych &nbsp; w całym tekście
+                finalText = finalText.replace(/(&nbsp;)+/g, '&nbsp;'); // Zostaw tylko jeden &nbsp; w przypadku powtórzeń
+
+                element.innerHTML = finalText;
+            }
+
+            // Znajdź wszystkie elementy z klasą "akapit"
+            const paragraphs = document.querySelectorAll('.akapit');
+
+            // Dla każdego paragrafu uruchom funkcję zamiany spacji
+            paragraphs.forEach(function(paragraph) {
+                addNonBreakingSpaces(paragraph);
+            });
+        });
+    </script>
 </body>
 
 </html>
