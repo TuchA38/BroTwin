@@ -23,6 +23,33 @@
     span.keeptogether {
         white-space: nowrap;
     }
+    
+    .gatunek1 {
+        position: absolute;
+        margin-left: 0.76vw;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .hidden {
+        opacity: 0;
+    }
+    
+    .change-button {
+        position: absolute;
+        top: 1vw;
+        right: 2vw;
+        cursor: pointer;
+        width: 3vw;
+        height: 3vw;
+    }
+    
+    .change-button:hover {
+        opacity: 70%;
+        transition: .3s ease-out .1s;
+    }
 </style>
 
 <body onselectstart="return false;">
@@ -33,11 +60,15 @@
                 <a href="../Zoopedia.html#Pantera_śnieżna" style="vertical-align: top;" class="powrot"><b>◄ Wróć do Zoopedia</b></a>
             </p>
             <p id="powrot" style="margin: 0%; margin-top: 1%; text-align: right;">
+                <a href="https://www.nexusmods.com/planetzoo/mods/642" target="_blank" class="powrot"><img style="width:9.5%; margin-top: -1%; padding-right: 0%; vertical-align: top;" src="mod.png" alt="mody"><span style="padding-right: 3%; vertical-align: top;"><b>►</b></span></a>
                 <a href="../Mapa Zoo.html" class="powrot"><img style="width:8%; margin-top: -1%; padding-right: 1%; vertical-align: top;" src="mapa_z.png" alt="mapa"><span style="padding-right: 5%; vertical-align: top;"><b>►</b></span></a>
             </p>
             <div style="clear: both;"></div>
             <div>
-                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;"><img class="gatunek1 zwierze" src="Zdjęcia/Pantera śnieżna.jpg" alt="Pantera śnieżna">
+                <div class="container" style="float: left; padding: 0%; margin: 0%; width: 59vw; min-height: 41vw; max-height: 41vw; padding-bottom: -2%;">
+                    <img id="photo1" class="gatunek1 zwierze hidden" src="Zdjęcia/Pantera śnieżna.jpg" alt="Pantera śnieżna">
+                    <img id="photo2" class="gatunek1 zwierze" src="Zdjęcia/Pantera śnieżna - Remaster.jpg" alt="Pantera śnieżna - Remaster">
+                    <img id="changeButton" class="change-button" src="change.png" alt="Change Image" onclick="changeImage()">
                     <div class="bottom-left"><b>Typ</b>&nbsp;<i>Strunowce</i>&nbsp;&nbsp;&nbsp;<b>Gromada</b>&nbsp;<i>Ssaki</i>&nbsp;&nbsp;&nbsp;<b>Rząd</b>&nbsp;<i>Drapieżne</i>&nbsp;&nbsp;&nbsp;<b>Rodzina</b>&nbsp;<i>Kotowate</i>&nbsp;&nbsp;&nbsp;<b>Rodzaj</b>&nbsp;<i>Lampart</i></div>
                 </div>
                 <p class="naglowek"><b>Pantera śnieżna</b><br><i style="font-size: 1.8vw;">(Panthera uncia)</i></p>
@@ -186,6 +217,21 @@
             </div>
         </div>
     </div>
+    <script>
+        // Funkcja zmieniająca zdjęcie
+        function changeImage() {
+            const photo1 = document.getElementById("photo1");
+            const photo2 = document.getElementById("photo2");
+
+            if (photo1.classList.contains("hidden")) {
+                photo1.classList.remove("hidden");
+                photo2.classList.add("hidden");
+            } else {
+                photo1.classList.add("hidden");
+                photo2.classList.remove("hidden");
+            }
+        }
+    </script>
 </body>
 
 </html>
