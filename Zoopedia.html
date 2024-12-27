@@ -236,6 +236,7 @@
                         <button class="zoopedia rodzaj"><input type="radio" id="ptaki" class="filter-input" name="filter-1"><label for="ptaki" class="filter-label info-ptaki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Ptaki</span></font></font></label></button>
                         <button class="zoopedia rodzaj"><input type="radio" id="gady" class="filter-input" name="filter-1"><label for="gady" class="filter-label info-gady"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Gady</span></font></font></label></button>
                         <button class="zoopedia rodzaj"><input type="radio" id="plazy" class="filter-input" name="filter-1"><label for="plazy" class="filter-label info-plazy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Płazy</span></font></font></label></button>
+                        <button class="zoopedia rodzaj"><input type="radio" id="ryby" class="filter-input" name="filter-1"><label for="ryby" class="filter-label info-ryby"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Ryby</span></font></font></label></button>
                         <button class="zoopedia rodzaj"><input type="radio" id="stawonogi" class="filter-input" name="filter-1"><label for="stawonogi" class="filter-label info-stawonogi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Stawonogi</span></font></font></label></button>
                         <button class="zoopedia rodzaj"><input type="radio" id="mieczaki" class="filter-input" name="filter-1"><label for="mieczaki" class="filter-label info-mieczaki"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Mięczaki</span></font></font></label></button><br>
                         <span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;" class="cień">Kontynent:</font></font></span><br>
@@ -260,9 +261,9 @@
                         <button class="zoopedia zachowanie"><input type="radio" id="i1" class="filter-input" name="filter-3"><label for="i1" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Goście mogą wchodzić na teren wybiegu</span></font></font></label></button>
                         <button class="zoopedia zachowanie"><input type="radio" id="i3" class="filter-input" name="filter-3"><label for="i3" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Goście uciekają przed zwierzęciem</span></font></font></label></button><br>
                         <span class="filter-text"><font style="vertical-align: inherit; color: white;"><font style="vertical-align: inherit;" class="cień">Zawartość do pobrania:</font></font></span><br>
-                        <button class="zoopedia zachowanie"><input type="radio" id="podstawa" class="filter-input" name="filter-4"><label for="podstawa" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Gra podstawowa</span></font></font></label></button>
-                        <button class="zoopedia kontynent"><input type="radio" id="dlc" class="filter-input" name="filter-4"><label for="dlc" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">DLC</span></font></font></label></button>
-                        <button class="zoopedia zachowanie"><input type="radio" id="mody" class="filter-input" name="filter-4"><label for="mody" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Zmodyfikowana zawartość</span></font></font></label></button>
+                        <button class="zoopedia zachowanie"><input type="checkbox" id="podstawa" class="filter-input" name="filter-4"><label for="podstawa" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Gra podstawowa</span></font></font></label></button>
+                        <button class="zoopedia kontynent"><input type="checkbox" id="dlc" class="filter-input" name="filter-4"><label for="dlc" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">DLC</span></font></font></label></button>
+                        <button class="zoopedia zachowanie"><input type="checkbox" id="mody" class="filter-input" name="filter-4"><label for="mody" class="filter-label "><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><span class="wybor_fil">Zmodyfikowana zawartość</span></font></font></label></button>
                     </th>
                 </tr>
                 </table>
@@ -286,13 +287,19 @@
                             <a href="Zoopedia/Achatina zwyczajna.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Achatina zwyczajna.jpg" alt="Achatina zwyczajna" width="90%"></a>
                             <p class="podpis">Achatina zwyczajna</p>
                         </div>
-
                     </div>
                     <div class="filter-item afryka ssaki status5 i3 dlc">
                         <div id="zdjecie" class="filter-item afryka ssaki status5 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Adaks"></p>
                             <a href="Zoopedia/Adaks.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Adaks.jpg" alt="Adaks" width="90%"></a>
                             <p class="podpis">Adaks</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Aguti_czarnozady"></p>
+                            <a href="Zoopedia/Aguti czarnozady.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Aguti czarnozady.jpg" alt="Aguti czarnozady" width="90%"></a>
+                            <p class="podpis">Aguti czarnozady</p>
                         </div>
                     </div>
                     <div class="filter-item amerykapolnocna plazy status5 dlc">
@@ -313,14 +320,21 @@
                         <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status i2 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Alpaka"></p>
                             <a href="Zoopedia/Alpaka.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Alpaka.jpg" alt="Alpaka" width="90%"></a>
-                            <p class="podpis">Apaka</p>
+                            <p class="podpis">Alpaka</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna ssaki status i2 i1 dlc">
-                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status i2 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item europa ssaki status i2 i1 dlc">
+                        <div id="zdjecie" class="filter-item europa ssaki status i2 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Amerykański_osioł_zwyczajny"></p>
                             <a href="Zoopedia/Amerykański osioł zwyczajny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Amerykański osioł zwyczajny.jpg" alt="Amerykański osioł zwyczajny" width="90%"></a>
                             <p class="podpis">Amerykański osioł zwyczajny</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status1 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Amfiprion"></p>
+                            <a href="Zoopedia/Amfiprion.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Amfiprion.jpg" alt="Amfiprion" width="90%"></a>
+                            <p class="podpis">Amfiprion</p>
                         </div>
                     </div>
                     <div class="filter-item amerykapoludniowa gady status1 podstawa">
@@ -330,11 +344,46 @@
                             <p class="podpis">Anakonda żółta</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapoludniowa ssaki status3 i3 dlc">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status3 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Andoniedźwiedź_okularowy"></p>
+                            <a href="Zoopedia/Andoniedźwiedź okularowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Andoniedźwiedź okularowy.jpg" alt="Andoniedźwiedź okularowy" width="90%"></a>
+                            <p class="podpis">Andoniedźwiedź okularowy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Antylopa_indyjska"></p>
+                            <a href="Zoopedia/Antylopa indyjska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Antylopa indyjska.jpg" alt="Antylopa indyjska" width="90%"></a>
+                            <p class="podpis">Antylopa indyjska</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ssaki status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Antylopowiec_szablorogi"></p>
-                            <a href="Zoopedia/Antylopowiec szablorogi.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Antylopowiec szablorogi.jpg" alt="Antylopowiec szablorogi" width="90%"></a>
+                            <a href="Zoopedia/Antylopowiec szablorogi.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Antylopowiec szablorogi - Remaster.jpg" alt="Antylopowiec szablorogi" width="90%"></a>
                             <p class="podpis">Antylopowiec szablorogi</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa ptaki status5 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ptaki status5 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Ara_szafirowa"></p>
+                            <a href="Zoopedia/Ara szafirowa.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Ara szafirowa.jpg" alt="Ara szafirowa" width="90%"></a>
+                            <p class="podpis">Ara szafirowa</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Ara_zielonoskrzydła"></p>
+                            <a href="Zoopedia/Ara zielonoskrzydła.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Ara zielonoskrzydła.jpg" alt="Ara zielonoskrzydła" width="90%"></a>
+                            <p class="podpis">Ara zielonoskrzydła</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status0 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status0 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Arapaima"></p>
+                            <a href="Zoopedia/Arapaima.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Arapaima.jpg" alt="Arapaima" width="90%"></a>
+                            <p class="podpis">Arapaima</p>
                         </div>
                     </div>
                     <div class="filter-item azja ssaki status3 i3 dlc">
@@ -344,10 +393,10 @@
                             <p class="podpis">Babirussa sulaweska</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status2 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status2 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status2 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status2 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Bawół_afrykański"></p>
-                            <a href="Zoopedia/Bawół afrykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bawół afrykański.jpg" alt="Bawół afrykański" width="90%"></a>
+                            <a href="Zoopedia/Bawół afrykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bawół afrykański - Remaster.jpg" alt="Bawół afrykański" width="90%"></a>
                             <p class="podpis">Bawół afrykański</p>
                         </div>
                     </div>
@@ -356,6 +405,20 @@
                             <p style="margin: 0%;" id="Bawół_indyjski"></p>
                             <a href="Zoopedia/Bawół indyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bawół indyjski.jpg" alt="Bawół indyjski" width="90%"></a>
                             <p class="podpis">Bawół indyjski</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna ptaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ptaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Bernikla_kanadyjska"></p>
+                            <a href="Zoopedia/Bernikla kanadyjska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bernikla kanadyjska.jpg" alt="Bernikla kanadyjska" width="90%"></a>
+                            <p class="podpis">Bernikla kanadyjska</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna ptaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ptaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Bielik_amerykański"></p>
+                            <a href="Zoopedia/Bielik amerykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bielik amerykański.jpg" alt="Bielik amerykański" width="90%"></a>
+                            <p class="podpis">Bielik amerykański</p>
                         </div>
                     </div>
                     <div class="filter-item azja ssaki status3 i1 dlc">
@@ -372,10 +435,10 @@
                             <p class="podpis">Biruang malajski</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna ssaki status2 i3 podstawa">
-                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status2 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna ssaki status2 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status2 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Bizon_amerykański"></p>
-                            <a href="Zoopedia/Bizon amerykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bizon amerykański.jpg" alt="Bizon amerykański" width="90%"></a>
+                            <a href="Zoopedia/Bizon amerykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bizon amerykański - Remaster.jpg" alt="Bizon amerykański" width="90%"></a>
                             <p class="podpis">Bizon amerykański</p>
                         </div>
                     </div>
@@ -386,10 +449,17 @@
                             <p class="podpis">Boa dusiciel</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status2 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status2 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item europa ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item europa ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Bocian_biały"></p>
+                            <a href="Zoopedia/Bocian biały.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bocian biały.jpg" alt="Bocian biały" width="90%"></a>
+                            <p class="podpis">Bocian biały</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ssaki status2 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status2 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Bongo"></p>
-                            <a href="Zoopedia/Bongo.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bongo.jpg" alt="Bongo" width="90%"></a>
+                            <a href="Zoopedia/Bongo.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Bongo - Remaster.jpg" alt="Bongo" width="90%"></a>
                             <p class="podpis">Bongo</p>
                         </div>
                     </div>
@@ -421,15 +491,15 @@
                             <p class="podpis">Chrząszcz tytan</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status4 i3 dlc">
-                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status4 i3 dlc mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Cyjon_rudy"></p>
-                            <a href="Zoopedia/Cyjon rudy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Cyjon rudy.jpg" alt="Cyjon rudy" width="90%"></a>
+                            <a href="Zoopedia/Cyjon rudy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Cyjon rudy - Remaster.jpg" alt="Cyjon rudy" width="90%"></a>
                             <p class="podpis">Cyjon rudy</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna amerykapoludniowa azja australia stawonogi status4 dlc">
-                        <div id="zdjecie" class="filter-item amerykapolnocna amerykapoludniowa azja australia stawonogi status4 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna amerykapoludniowa europa stawonogi status4 dlc">
+                        <div id="zdjecie" class="filter-item amerykapolnocna amerykapoludniowa europa stawonogi status4 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Danaid_wędrowny"></p>
                             <a href="Zoopedia/Danaid wędrowny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Danaid wędrowny.jpg" alt="Danaid wędrowny" width="90%"></a>
                             <p class="podpis">Danaid wędrowny</p>
@@ -449,6 +519,13 @@
                             <p class="podpis">Diabeł tasmański</p>
                         </div>
                     </div>
+                    <div class="filter-item afryka ssaki status1 i1 dlc">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Dikdik_sawannowy"></p>
+                            <a href="Zoopedia/Dikdik sawannowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Dikdik sawannowy.jpg" alt="Dikdik sawannowy" width="90%"></a>
+                            <p class="podpis">Dikdik sawannowy</p>
+                        </div>
+                    </div>
                     <div class="filter-item australia ssaki status3 i3 dlc">
                         <div id="zdjecie" class="filter-item australia ssaki status3 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Dingo"></p>
@@ -463,8 +540,8 @@
                             <p class="podpis">Dunajska traszka grzebieniasta</p>
                         </div>
                     </div>
-                    <div class="filter-item europa azja afryka ssaki status1 i3 dlc">
-                        <div id="zdjecie" class="filter-item europa azja afryka ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item europa azja ssaki status1 i3 dlc">
+                        <div id="zdjecie" class="filter-item europa azja ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Dzik_euroazjatycki"></p>
                             <a href="Zoopedia/Dzik euroazjatycki.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Dzik euroazjatycki.jpg" alt="Dzik euroazjatycki" width="90%"></a>
                             <p class="podpis">Dzik euroazjatycki</p>
@@ -482,6 +559,27 @@
                             <p style="margin: 0%;" id="Dziobak"></p>
                             <a href="Zoopedia/Dziobak.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Dziobak.jpg" alt="Dziobak" width="90%"></a>
                             <p class="podpis">Dziobak</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja ptaki status3 i1 mody">
+                        <div id="zdjecie" class="filter-item azja ptaki status3 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Dzioborożec_wielki"></p>
+                            <a href="Zoopedia/Dzioborożec wielki.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Dzioborożec wielki.jpg" alt="Dzioborożec wielki" width="90%"></a>
+                            <p class="podpis">Dzioborożec wielki</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja ptaki status3 i1 mody">
+                        <div id="zdjecie" class="filter-item azja ptaki status3 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Dzioborożec_żałobny"></p>
+                            <a href="Zoopedia/Dzioborożec żałobny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Dzioborożec żałobny.jpg" alt="Dzioborożec żałobny" width="90%"></a>
+                            <p class="podpis">Dzioborożec żałobny</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ptaki status3 i1 mody">
+                        <div id="zdjecie" class="filter-item afryka ptaki status3 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Dzioboróg_kafryjski"></p>
+                            <a href="Zoopedia/Dzioboróg kafryjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Dzioboróg kafryjski.jpg" alt="Dzioboróg kafryjski" width="90%"></a>
+                            <p class="podpis">Dzioboróg kafryjski</p>
                         </div>
                     </div>
                     <div class="filter-item australia ptaki status1 i3 dlc">
@@ -519,10 +617,10 @@
                             <p class="podpis">Fossa</p>
                         </div>
                     </div>
-                    <div class="filter-item azja gady status5 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja gady status5 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja gady status5 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja gady status5 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Gawial_gangesowy"></p>
-                            <a href="Zoopedia/Gawial gangesowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Gawial gangesowy.jpg" alt="Gawial gangesowy" width="90%"></a>
+                            <a href="Zoopedia/Gawial gangesowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Gawial gangesowy - Remaster.jpg" alt="Gawial gangesowy" width="90%"></a>
                             <p class="podpis">Gawial gangesowy</p>
                         </div>
                     </div>
@@ -540,11 +638,18 @@
                             <p class="podpis">Gazelopka sawannowa</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status3 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status3 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status3 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status3 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Gepard"></p>
-                            <a href="Zoopedia/Gepard.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Gepard.jpg" alt="Gepard" width="90%"></a>
+                            <a href="Zoopedia/Gepard.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Gepard - Remaster.jpg" alt="Gepard" width="90%"></a>
                             <p class="podpis">Gepard</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ssaki status2 i3 mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status2 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Gerenuk_długoszyi"></p>
+                            <a href="Zoopedia/Gerenuk długoszyi.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Gerenuk długoszyi.jpg" alt="Gerenuk długoszyi" width="90%"></a>
+                            <p class="podpis">Gerenuk długoszyi</p>
                         </div>
                     </div>
                     <div class="filter-item azja ssaki status4 i3 dlc">
@@ -554,10 +659,10 @@
                             <p class="podpis">Gibbon lar</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Gnu_brunatne"></p>
-                            <a href="Zoopedia/Gnu brunatne.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Gnu brunatne.jpg" alt="Gnu brunatne" width="90%"></a>
+                            <a href="Zoopedia/Gnu brunatne.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Gnu brunatne - Remaster.jpg" alt="Gnu brunatne" width="90%"></a>
                             <p class="podpis">Gnu brunatne</p>
                         </div>
                     </div>
@@ -582,10 +687,10 @@
                             <p class="podpis">Goliat płochliwy</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status5 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status5 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status5 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status5 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Goryl_nizinny"></p>
-                            <a href="Zoopedia/Goryl nizinny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Goryl nizinny.jpg" alt="Goryl nizinny" width="90%"></a>
+                            <a href="Zoopedia/Goryl nizinny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Goryl nizinny - Remaster.jpg" alt="Goryl nizinny" width="90%"></a>
                             <p class="podpis">Goryl nizinny</p>
                         </div>
                     </div>
@@ -596,11 +701,18 @@
                             <p class="podpis">Grzechotnik teksaski</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Guziec_zwyczajny"></p>
-                            <a href="Zoopedia/Guziec zwyczajny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Guziec zwyczajny.jpg" alt="Guziec zwyczajny" width="90%"></a>
+                            <a href="Zoopedia/Guziec zwyczajny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Guziec zwyczajny - Remaster.jpg" alt="Guziec zwyczajny" width="90%"></a>
                             <p class="podpis">Guziec zwyczajny</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa ptaki status2 i3 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ptaki status2 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Harpia_wielka"></p>
+                            <a href="Zoopedia/Harpia wielka.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Harpia wielka.jpg" alt="Harpia wielka" width="90%"></a>
+                            <p class="podpis">Harpia wielka</p>
                         </div>
                     </div>
                     <div class="filter-item amerykapolnocna gady status2 podstawa">
@@ -617,29 +729,57 @@
                             <p class="podpis">Hiena pręgowana</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status3 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status3 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status3 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status3 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Hipopotam"></p>
-                            <a href="Zoopedia/Hipopotam.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Hipopotam.jpg" alt="Hipopotam" width="90%"></a>
+                            <a href="Zoopedia/Hipopotam.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Hipopotam - Remaster.jpg" alt="Hipopotam" width="90%"></a>
                             <p class="podpis">Hipopotam</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status4 i3 dlc">
-                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status4 i3 dlc mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Hipopotamek_karłowaty"></p>
-                            <a href="Zoopedia/Hipopotamek karłowaty.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Hipopotamek karłowaty.jpg" alt="Hipopotamek karłowaty" width="90%"></a>
+                            <a href="Zoopedia/Hipopotamek karłowaty.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Hipopotamek karłowaty - Remaster.jpg" alt="Hipopotamek karłowaty" width="90%"></a>
                             <p class="podpis">Hipopotamek karłowaty</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapoludniowa amerykapolnocna ssaki status2 i3 dlc">
-                        <div id="zdjecie" class="filter-item amerykapoludniowa amerykapolnocna ssaki status2 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Hulman"></p>
+                            <a href="Zoopedia/Hulman.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Hulman.jpg" alt="Hulman" width="90%"></a>
+                            <p class="podpis">Hulman</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item afryka ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Ibis_czczony"></p>
+                            <a href="Zoopedia/Ibis czczony.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Ibis czczony.jpg" alt="Ibis czczony" width="90%"></a>
+                            <p class="podpis">Ibis czczony</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status1 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Idolek_mauretański"></p>
+                            <a href="Zoopedia/Idolek mauretański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Idolek mauretański.jpg" alt="Idolek mauretański" width="90%"></a>
+                            <p class="podpis">Idolek mauretański</p>
+                        </div>
+                    </div>
+                    <div class="filter-item europa ptaki status i1 mody">
+                        <div id="zdjecie" class="filter-item europa ptaki status i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Indyk_dziki"></p>
+                            <a href="Zoopedia/Indyk dziki.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Indyk dziki.jpg" alt="Indyk dziki" width="90%"></a>
+                            <p class="podpis">Indyk dziki</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa ssaki status2 i3 dlc mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status2 i3 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Jaguar"></p>
-                            <a href="Zoopedia/Jaguar.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Jaguar.jpg" alt="Jaguar" width="90%"></a>
+                            <a href="Zoopedia/Jaguar.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Jaguar - Remaster.jpg" alt="Jaguar" width="90%"></a>
                             <p class="podpis">Jaguar</p>
                         </div>
                     </div>
-                    <div class="filter-item europa azja afryka ssaki status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item europa azja afryka ssaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item europa azja ssaki status1 i3 podstawa">
+                        <div id="zdjecie" class="filter-item europa azja ssaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Jeleń_szlachetny"></p>
                             <a href="Zoopedia/Jeleń szlachetny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Jeleń szlachetny.jpg" alt="Jeleń szlachetny" width="90%"></a>
                             <p class="podpis">Jeleń szlachetny</p>
@@ -666,6 +806,13 @@
                             <p class="podpis">Kajman okularowy</p>
                         </div>
                     </div>
+                    <div class="filter-item australia ptaki status5 i1 mody">
+                        <div id="zdjecie" class="filter-item australia ptaki status5 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Kakapo"></p>
+                            <a href="Zoopedia/Kakapo.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kakapo.jpg" alt="Kakapo" width="90%"></a>
+                            <p class="podpis">Kakapo</p>
+                        </div>
+                    </div>
                     <div class="filter-item australia ssaki status1 i2 i1 dlc">
                         <div id="zdjecie" class="filter-item australia ssaki status1 i2 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Kangur_rdzawoszyi"></p>
@@ -673,10 +820,10 @@
                             <p class="podpis">Kangur rdzawoszyi</p>
                         </div>
                     </div>
-                    <div class="filter-item australia ssaki status1 i1 dlc">
-                        <div id="zdjecie" class="filter-item australia ssaki status1 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item australia ssaki status1 i1 dlc mody">
+                        <div id="zdjecie" class="filter-item australia ssaki status1 i1 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Kangur_rudy"></p>
-                            <a href="Zoopedia/Kangur rudy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kangur rudy.jpg" alt="Kangur rudy" width="90%"></a>
+                            <a href="Zoopedia/Kangur rudy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kangur rudy - Remaster.jpg" alt="Kangur rudy" width="90%"></a>
                             <p class="podpis">Kangur rudy</p>
                         </div>
                     </div>
@@ -694,6 +841,13 @@
                             <p class="podpis">Kapucynka czarno-biała</p>
                         </div>
                     </div>
+                    <div class="filter-item amerykapoludniowa ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Kapucynka_czubata"></p>
+                            <a href="Zoopedia/Kapucynka czubata.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kapucynka czubata.jpg" alt="Kapucynka czubata" width="90%"></a>
+                            <p class="podpis">Kapucynka czubata</p>
+                        </div>
+                    </div>
                     <div class="filter-item afryka azja ssaki status1 i3 dlc">
                         <div id="zdjecie" class="filter-item afryka azja ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Karakal_stepowy"></p>
@@ -701,11 +855,25 @@
                             <p class="podpis">Karakal stepowy</p>
                         </div>
                     </div>
+                    <div class="filter-item amerykapoludniowa ptaki status2 i3 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ptaki status2 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Karakara_falklandzka"></p>
+                            <a href="Zoopedia/Karakara falklandzka.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Karakara falklandzka.jpg" alt="Karakara falklandzka" width="90%"></a>
+                            <p class="podpis">Karakara falklandzka</p>
+                        </div>
+                    </div>
                     <div class="filter-item australia stawonogi status0 podstawa">
                         <div id="zdjecie" class="filter-item australia stawonogi status0 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Karaluch_nosorożec"></p>
                             <a href="Zoopedia/Karaluch nosorożec.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Karaluch nosorożec.jpg" alt="Karaluch nosorożec" width="90%"></a>
                             <p class="podpis">Karaluch nosorożec</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item australia ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Kazarka_obrożna"></p>
+                            <a href="Zoopedia/Kazarka obrożna.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kazarka obrożna.jpg" alt="Kazarka obrożna" width="90%"></a>
+                            <p class="podpis">Kazarka obrożna</p>
                         </div>
                     </div>
                     <div class="filter-item australia azja ptaki status1 i3 dlc">
@@ -722,10 +890,10 @@
                             <p class="podpis">Kiwi północny</p>
                         </div>
                     </div>
-                    <div class="filter-item australia ssaki status3 i1 dlc">
-                        <div id="zdjecie" class="filter-item australia ssaki status3 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item australia ssaki status3 i1 dlc mody">
+                        <div id="zdjecie" class="filter-item australia ssaki status3 i1 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Koala"></p>
-                            <a href="Zoopedia/Koala.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Koala.jpg" alt="Koala" width="90%"></a>
+                            <a href="Zoopedia/Koala.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Koala - Remaster.jpg" alt="Koala" width="90%"></a>
                             <p class="podpis">Koala</p>
                         </div>
                     </div>
@@ -736,6 +904,20 @@
                             <p class="podpis">Kob nilowy</p>
                         </div>
                     </div>
+                    <div class="filter-item australia ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item australia ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Kolczatka"></p>
+                            <a href="Zoopedia/Kolczatka.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kolczatka.jpg" alt="Kolczatka" width="90%"></a>
+                            <p class="podpis">Kolczatka</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna ptaki status5 i3 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ptaki status5 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Kondor_kalifornijski"></p>
+                            <a href="Zoopedia/Kondor kalifornijski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kondor kalifornijski.jpg" alt="Kondor kalifornijski" width="90%"></a>
+                            <p class="podpis">Kondor kalifornijski</p>
+                        </div>
+                    </div>
                     <div class="filter-item azja ssaki status4 i3 dlc">
                         <div id="zdjecie" class="filter-item azja ssaki status4 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Koń_Przewalskiego"></p>
@@ -743,10 +925,24 @@
                             <p class="podpis">Koń Przewalskiego</p>
                         </div>
                     </div>
-                    <div class="filter-item azja afryka ssaki status1 i3 dlc">
-                        <div id="zdjecie" class="filter-item azja afryka ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Kormoran_czarny"></p>
+                            <a href="Zoopedia/Kormoran czarny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kormoran czarny.jpg" alt="Kormoran czarny" width="90%"></a>
+                            <p class="podpis">Kormoran czarny</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia azja ptaki status2 i1 mody">
+                        <div id="zdjecie" class="filter-item australia azja ptaki status2 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Koroniec_plamoczuby"></p>
+                            <a href="Zoopedia/Koroniec plamoczuby.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Koroniec plamoczuby.jpg" alt="Koroniec plamoczuby" width="90%"></a>
+                            <p class="podpis">Koroniec plamoczuby</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja afryka ssaki status1 i3 dlc mody">
+                        <div id="zdjecie" class="filter-item azja afryka ssaki status1 i3 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Kot_pustynny"></p>
-                            <a href="Zoopedia/Kot pustynny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kot pustynny.jpg" alt="Kot pustynny" width="90%"></a>
+                            <a href="Zoopedia/Kot pustynny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kot pustynny - Remaster.jpg" alt="Kot pustynny" width="90%"></a>
                             <p class="podpis">Kot pustynny</p>
                         </div>
                     </div>
@@ -757,6 +953,13 @@
                             <p class="podpis">Koza alpejska</p>
                         </div>
                     </div>
+                    <div class="filter-item europa ssaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item europa ssaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Kozica_pirenejska"></p>
+                            <a href="Zoopedia/Kozica pirenejska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kozica pirenejska.jpg" alt="Kozica pirenejska" width="90%"></a>
+                            <p class="podpis">Kozica pirenejska</p>
+                        </div>
+                    </div>
                     <div class="filter-item europa ssaki status1 i3 dlc">
                         <div id="zdjecie" class="filter-item europa ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Koziorożec_alpejski"></p>
@@ -764,18 +967,32 @@
                             <p class="podpis">Koziorożec alpejski</p>
                         </div>
                     </div>
-                    <div class="filter-item azja australia gady status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja australia gady status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja australia gady status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja australia gady status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Krokodyl_różańcowy"></p>
-                            <a href="Zoopedia/Krokodyl różańcowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Krokodyl różańcowy.jpg" alt="Krokodyl różańcowy" width="90%"></a>
+                            <a href="Zoopedia/Krokodyl różańcowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Krokodyl różańcowy - Remaster.jpg" alt="Krokodyl różańcowy" width="90%"></a>
                             <p class="podpis">Krokodyl różańcowy</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Krokuta_cętkowana"></p>
-                            <a href="Zoopedia/Krokuta cętkowana.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Krokuta cętkowana.jpg" alt="Krokuta cętkowana" width="90%"></a>
+                            <a href="Zoopedia/Krokuta cętkowana.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Krokuta cętkowana - Remaster.jpg" alt="Krokuta cętkowana" width="90%"></a>
                             <p class="podpis">Krokuta cętkowana</p>
+                        </div>
+                    </div>
+                    <div class="filter-item europa azja amerykapolnocna ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item europa azja amerykapolnocna ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Krzyżówka_zwyczajna"></p>
+                            <a href="Zoopedia/Krzyżówka zwyczajna.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Krzyżówka zwyczajna.jpg" alt="Krzyżówka zwyczajna" width="90%"></a>
+                            <p class="podpis">Krzyżówka zwyczajna</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ssaki status1 i2 i1 mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i2 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Kudu_wielkie"></p>
+                            <a href="Zoopedia/Kudu wielkie.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kudu wielkie.jpg" alt="Kudu wielkie" width="90%"></a>
+                            <p class="podpis">Kudu wielkie</p>
                         </div>
                     </div>
                     <div class="filter-item australia ssaki status3 i2 i1 dlc">
@@ -783,6 +1000,13 @@
                             <p style="margin: 0%;" id="Kuoka"></p>
                             <a href="Zoopedia/Kuoka.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kuoka.jpg" alt="Kuoka" width="90%"></a>
                             <p class="podpis">Kuoka</p>
+                        </div>
+                    </div>
+                    <div class="filter-item europa ptaki status i2 i1 mody">
+                        <div id="zdjecie" class="filter-item europa ptaki status i2 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Kura_rasy_karmazyn"></p>
+                            <a href="Zoopedia/Kura rasy karmazyn.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Kura rasy karmazyn.jpg" alt="Kura rasy karmazyn" width="90%"></a>
+                            <p class="podpis">Kura rasy karmazyn</p>
                         </div>
                     </div>
                     <div class="filter-item europa ptaki status i2 i1 dlc">
@@ -799,10 +1023,17 @@
                             <p class="podpis">Lama</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status5 i3 dlc">
-                        <div id="zdjecie" class="filter-item azja ssaki status5 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status3 i3 podstawa">
+                        <div id="zdjecie" class="filter-item afryka ssaki status3 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Lampart_afrykański"></p>
+                            <a href="Zoopedia/Lampart afrykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Lampart afrykański.jpg" alt="Lampart afrykański" width="90%"></a>
+                            <p class="podpis">Lampart afrykański</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja ssaki status5 i3 dlc mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status5 i3 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Lampart_amurski"></p>
-                            <a href="Zoopedia/Lampart amurski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Lampart amurski.jpg" alt="Lampart amurski" width="90%"></a>
+                            <a href="Zoopedia/Lampart amurski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Lampart amurski - Remaster.jpg" alt="Lampart amurski" width="90%"></a>
                             <p class="podpis">Lampart amurski</p>
                         </div>
                     </div>
@@ -848,18 +1079,25 @@
                             <p class="podpis">Leniwiec pstry</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status5 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status5 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status5 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status5 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Lew_zachodnioafrykański"></p>
-                            <a href="Zoopedia/Lew zachodnioafrykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Lew zachodnioafrykański.jpg" alt="Lew zachodnioafrykański" width="90%"></a>
+                            <a href="Zoopedia/Lew zachodnioafrykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Lew zachodnioafrykański - Remaster.jpg" alt="Lew zachodnioafrykański" width="90%"></a>
                             <p class="podpis">Lew zachodnioafrykański</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status4 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status4 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Likaon_pstry"></p>
-                            <a href="Zoopedia/Likaon pstry.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Likaon pstry.jpg" alt="Likaon pstry" width="90%"></a>
+                            <a href="Zoopedia/Likaon pstry.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Likaon pstry - Remaster.jpg" alt="Likaon pstry" width="90%"></a>
                             <p class="podpis">Likaon pstry</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ptaki status1 i2 i1 mody">
+                        <div id="zdjecie" class="filter-item australia ptaki status1 i2 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Lirogon_wspaniały"></p>
+                            <a href="Zoopedia/Lirogon wspaniały.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Lirogon wspaniały.jpg" alt="Lirogon wspaniały" width="90%"></a>
+                            <p class="podpis">Lirogon wspaniały</p>
                         </div>
                     </div>
                     <div class="filter-item amerykapolnocna azja europa ssaki status1 i3 dlc">
@@ -869,11 +1107,18 @@
                             <p class="podpis">Lis polarny</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna azja europa afryka ssaki status1 i3 dlc">
-                        <div id="zdjecie" class="filter-item amerykapolnocna azja europa afryka ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna azja europa ssaki status1 i3 dlc">
+                        <div id="zdjecie" class="filter-item amerykapolnocna azja europa ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Lis_rudy"></p>
                             <a href="Zoopedia/Lis rudy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Lis rudy.jpg" alt="Lis rudy" width="90%"></a>
                             <p class="podpis">Lis rudy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status1 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Lisogłów"></p>
+                            <a href="Zoopedia/Lisogłów.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Lisogłów.jpg" alt="Lisogłów" width="90%"></a>
+                            <p class="podpis">Lisogłów</p>
                         </div>
                     </div>
                     <div class="filter-item azja stawonogi status0 dlc">
@@ -890,11 +1135,25 @@
                             <p class="podpis">Liściołaz żółty</p>
                         </div>
                     </div>
+                    <div class="filter-item australia ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item australia ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Łabędź_czarny"></p>
+                            <a href="Zoopedia/Łabędź czarny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Łabędź czarny.jpg" alt="Łabędź czarny" width="90%"></a>
+                            <p class="podpis">Łabędź czarny</p>
+                        </div>
+                    </div>
                     <div class="filter-item azja europa ptaki status1 i1 dlc">
                         <div id="zdjecie" class="filter-item azja europa ptaki status1 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Łabędź_niemy"></p>
                             <a href="Zoopedia/Łabędź niemy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Łabędź niemy.jpg" alt="Łabędź niemy" width="90%"></a>
                             <p class="podpis">Łabędź niemy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Łaszak_annamicki"></p>
+                            <a href="Zoopedia/Łaszak annamicki.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Łaszak annamicki.jpg" alt="Łaszak annamicki" width="90%"></a>
+                            <p class="podpis">Łaszak annamicki</p>
                         </div>
                     </div>
                     <div class="filter-item amerykapolnocna azja europa ssaki status1 i3 dlc">
@@ -911,6 +1170,13 @@
                             <p class="podpis">Łuskowiec chiński</p>
                         </div>
                     </div>
+                    <div class="filter-item afryka europa ssaki status4 i1 mody">
+                        <div id="zdjecie" class="filter-item afryka europa ssaki status4 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Makak_berberyjski"></p>
+                            <a href="Zoopedia/Makak berberyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Makak berberyjski.jpg" alt="Makak berberyjski" width="90%"></a>
+                            <p class="podpis">Makak berberyjski</p>
+                        </div>
+                    </div>
                     <div class="filter-item azja ssaki status1 i2 i1 podstawa">
                         <div id="zdjecie" class="filter-item azja ssaki status1 i2 i1 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Makak_japoński"></p>
@@ -918,15 +1184,57 @@
                             <p class="podpis">Makak japoński</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status3 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status3 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item azja ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Mandarynka"></p>
+                            <a href="Zoopedia/Mandarynka.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Mandarynka.jpg" alt="Mandarynka" width="90%"></a>
+                            <p class="podpis">Mandarynka</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ssaki status3 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status3 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Mandryl"></p>
-                            <a href="Zoopedia/Mandryl.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Mandryl.jpg" alt="Mandryl" width="90%"></a>
+                            <a href="Zoopedia/Mandryl.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Mandryl - Remaster.jpg" alt="Mandryl" width="90%"></a>
                             <p class="podpis">Mandryl</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapoludniowa stawonogi status0 dlc">
-                        <div id="zdjecie" class="filter-item amerykapoludniowa stawonogi status0 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status1 i3 dlc">
+                        <div id="zdjecie" class="filter-item azja ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Manul_stepowy"></p>
+                            <a href="Zoopedia/Manul stepowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Manul stepowy.jpg" alt="Manul stepowy" width="90%"></a>
+                            <p class="podpis">Manul stepowy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ptaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item afryka ptaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Marabut_afrykański"></p>
+                            <a href="Zoopedia/Marabut afrykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Marabut afrykański.jpg" alt="Marabut afrykański" width="90%"></a>
+                            <p class="podpis">Marabut afrykański</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja ssaki status2 i3 dlc">
+                        <div id="zdjecie" class="filter-item azja ssaki status2 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Markur"></p>
+                            <a href="Zoopedia/Markur.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Markur.jpg" alt="Markur" width="90%"></a>
+                            <p class="podpis">Markur</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja ssaki status6 i3 mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status6 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Milu_chiński"></p>
+                            <a href="Zoopedia/Milu chiński.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Milu chiński.jpg" alt="Milu chiński" width="90%"></a>
+                            <p class="podpis">Milu chiński</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa ptaki status3 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ptaki status3 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Modroara_hiacyntowa"></p>
+                            <a href="Zoopedia/Modroara hiacyntowa.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Modroara hiacyntowa.jpg" alt="Modroara hiacyntowa" width="90%"></a>
+                            <p class="podpis">Modroara hiacyntowa</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa amerykapolnocna europa stawonogi status0 dlc">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa amerykapolnocna europa stawonogi status0 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Morpho_menelaus"></p>
                             <a href="Zoopedia/Morpho menelaus.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Morpho menelaus.jpg" alt="Morpho menelaus" width="90%"></a>
                             <p class="podpis">Morpho menelaus</p>
@@ -939,11 +1247,25 @@
                             <p class="podpis">Mrówkojad wielki</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status1 i1 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status1 i1 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status1 i1 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i1 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Mrównik_afrykański"></p>
-                            <a href="Zoopedia/Mrównik afrykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Mrównik afrykański.jpg" alt="Mrównik afrykański" width="90%"></a>
+                            <a href="Zoopedia/Mrównik afrykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Mrównik afrykański - Remaster.jpg" alt="Mrównik afrykański" width="90%"></a>
                             <p class="podpis">Mrównik afrykański</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Mulak_białoogonowy"></p>
+                            <a href="Zoopedia/Mulak białoogonowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Mulak białoogonowy.jpg" alt="Mulak białoogonowy" width="90%"></a>
+                            <p class="podpis">Mulak białoogonowy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Mungo_pręgowany"></p>
+                            <a href="Zoopedia/Mungo pręgowany.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Mungo pręgowany.jpg" alt="Mungo pręgowany" width="90%"></a>
+                            <p class="podpis">Mungo pręgowany</p>
                         </div>
                     </div>
                     <div class="filter-item afryka ssaki status1 i3 podstawa">
@@ -960,6 +1282,13 @@
                             <p class="podpis">Nibykobra siatkowana</p>
                         </div>
                     </div>
+                    <div class="filter-item europa ssaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item europa ssaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Niedźwiedź_brunatny"></p>
+                            <a href="Zoopedia/Niedźwiedź brunatny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Niedźwiedź brunatny.jpg" alt="Niedźwiedź brunatny" width="90%"></a>
+                            <p class="podpis">Niedźwiedź brunatny</p>
+                        </div>
+                    </div>
                     <div class="filter-item azja ssaki status5 i3 podstawa">
                         <div id="zdjecie" class="filter-item azja ssaki status5 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Niedźwiedź_brunatny_himalajski"></p>
@@ -967,15 +1296,15 @@
                             <p class="podpis">Niedźwiedź brunatny himalajski</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna ssaki status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna ssaki status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Niedźwiedź_grizzly"></p>
-                            <a href="Zoopedia/Niedźwiedź grizzly.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Niedźwiedź grizzly.jpg" alt="Niedźwiedź grizzly" width="90%"></a>
+                            <a href="Zoopedia/Niedźwiedź grizzly.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Niedźwiedź grizzly - Remaster.jpg" alt="Niedźwiedź grizzly" width="90%"></a>
                             <p class="podpis">Niedźwiedź grizzly</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna europa ssaki status3 i3 dlc">
-                        <div id="zdjecie" class="filter-item amerykapolnocna europa ssaki status3 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna azja ssaki status3 i3 dlc">
+                        <div id="zdjecie" class="filter-item amerykapolnocna azja ssaki status3 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Niedźwiedź_polarny"></p>
                             <a href="Zoopedia/Niedźwiedź polarny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Niedźwiedź polarny.jpg" alt="Niedźwiedź polarny" width="90%"></a>
                             <p class="podpis">Niedźwiedź polarny</p>
@@ -1002,10 +1331,10 @@
                             <p class="podpis">Nosacz sundajski</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status2 i3 dlc">
-                        <div id="zdjecie" class="filter-item afryka ssaki status2 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status2 i3 dlc mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status2 i3 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Nosorożec_biały_południowy"></p>
-                            <a href="Zoopedia/Nosorożec biały południowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Nosorożec biały południowy.jpg" alt="Nosorożec biały południowy" width="90%"></a>
+                            <a href="Zoopedia/Nosorożec biały południowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Nosorożec biały południowy - Remaster.jpg" alt="Nosorożec biały południowy" width="90%"></a>
                             <p class="podpis">Nosorożec biały południowy</p>
                         </div>
                     </div>
@@ -1016,17 +1345,17 @@
                             <p class="podpis">Nosorożec czarny</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status3 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja ssaki status3 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status3 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status3 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Nosorożec_indyjski"></p>
-                            <a href="Zoopedia/Nosorożec indyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Nosorożec indyjski.jpg" alt="Nosorożec indyjski" width="90%"></a>
+                            <a href="Zoopedia/Nosorożec indyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Nosorożec indyjski - Remaster.jpg" alt="Nosorożec indyjski" width="90%"></a>
                             <p class="podpis">Nosorożec indyjski</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status4 i1 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status4 i1 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status4 i1 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status4 i1 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Okapi"></p>
-                            <a href="Zoopedia/Okapi.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Okapi.jpg" alt="Okapi" width="90%"></a>
+                            <a href="Zoopedia/Okapi.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Okapi - Remaster.jpg" alt="Okapi" width="90%"></a>
                             <p class="podpis">Okapi</p>
                         </div>
                     </div>
@@ -1037,17 +1366,17 @@
                             <p class="podpis">Oophaga lehmanni</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status5 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja ssaki status5 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status5 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status5 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Orangutan_borneański"></p>
-                            <a href="Zoopedia/Orangutan borneański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Orangutan borneański.jpg" alt="Orangutan borneański" width="90%"></a>
+                            <a href="Zoopedia/Orangutan borneański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Orangutan borneański - Remaster.jpg" alt="Orangutan borneański" width="90%"></a>
                             <p class="podpis">Orangutan borneański</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Oryks_południowy"></p>
-                            <a href="Zoopedia/Oryks południowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Oryks południowy.jpg" alt="Oryks południowy" width="90%"></a>
+                            <a href="Zoopedia/Oryks południowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Oryks południowy - Remaster.jpg" alt="Oryks południowy" width="90%"></a>
                             <p class="podpis">Oryks południowy</p>
                         </div>
                     </div>
@@ -1058,6 +1387,13 @@
                             <p class="podpis">Oryks szablorogi</p>
                         </div>
                     </div>
+                    <div class="filter-item australia ptaki status4 i3 mody">
+                        <div id="zdjecie" class="filter-item australia ptaki status4 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Orzeł_australijski"></p>
+                            <a href="Zoopedia/Orzeł australijski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Orzeł australijski.jpg" alt="Orzeł australijski" width="90%"></a>
+                            <p class="podpis">Orzeł australijski</p>
+                        </div>
+                    </div>
                     <div class="filter-item afryka ssaki status5 i3 dlc">
                         <div id="zdjecie" class="filter-item afryka ssaki status5 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Osioł_somalijski"></p>
@@ -1065,10 +1401,10 @@
                             <p class="podpis">Osioł somalijski</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna ssaki status1 i3 dlc">
-                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna ssaki status1 i3 dlc mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i3 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Owca_jukońska"></p>
-                            <a href="Zoopedia/Owca jukońska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Owca jukońska.jpg" alt="Owca jukońska" width="90%"></a>
+                            <a href="Zoopedia/Owca jukońska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Owca jukońska - Remaster.jpg" alt="Owca jukońska" width="90%"></a>
                             <p class="podpis">Owca jukońska</p>
                         </div>
                     </div>
@@ -1100,25 +1436,32 @@
                             <p class="podpis">Panda wielka</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status4 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status4 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Pandka_ruda"></p>
-                            <a href="Zoopedia/Pandka ruda.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pandka ruda.jpg" alt="Pandka ruda" width="90%"></a>
+                            <a href="Zoopedia/Pandka ruda.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pandka ruda - Remaster.jpg" alt="Pandka ruda" width="90%"></a>
                             <p class="podpis">Pandka ruda</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status3 i3 dlc">
-                        <div id="zdjecie" class="filter-item azja ssaki status3 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status3 i3 dlc mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status3 i3 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Pantera_mglista"></p>
-                            <a href="Zoopedia/Pantera mglista.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pantera mglista.jpg" alt="Pantera mglista" width="90%"></a>
+                            <a href="Zoopedia/Pantera mglista.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pantera mglista - Remaster.jpg" alt="Pantera mglista" width="90%"></a>
                             <p class="podpis">Pantera mglista</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status3 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja ssaki status3 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status3 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status3 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Pantera_śnieżna"></p>
-                            <a href="Zoopedia/Pantera śnieżna.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pantera śnieżna.jpg" alt="Pantera śnieżna" width="90%"></a>
+                            <a href="Zoopedia/Pantera śnieżna.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pantera śnieżna - Remaster.jpg" alt="Pantera śnieżna" width="90%"></a>
                             <p class="podpis">Pantera śnieżna</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja amerykapolnocna europa ptaki status3 i3 mody">
+                        <div id="zdjecie" class="filter-item azja amerykapolnocna europa ptaki status3 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Pardwa_górska"></p>
+                            <a href="Zoopedia/Pardwa górska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pardwa górska.jpg" alt="Pardwa górska" width="90%"></a>
+                            <p class="podpis">Pardwa górska</p>
                         </div>
                     </div>
                     <div class="filter-item azja ptaki status1 i2 i1 podstawa">
@@ -1128,8 +1471,15 @@
                             <p class="podpis">Paw indyjski</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna europa azja stawonogi status1 dlc">
-                        <div id="zdjecie" class="filter-item amerykapolnocna europa azja stawonogi status1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status1 i3 dlc">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Pawian_płaszczowy"></p>
+                            <a href="Zoopedia/Pawian płaszczowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pawian płaszczowy.jpg" alt="Pawian płaszczowy" width="90%"></a>
+                            <p class="podpis">Pawian płaszczowy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna amerykapoludniowa europa stawonogi status1 dlc">
+                        <div id="zdjecie" class="filter-item amerykapolnocna amerykapoludniowa europa stawonogi status1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Paź_królowej"></p>
                             <a href="Zoopedia/Paź królowej.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Paź królowej.jpg" alt="Paź królowej" width="90%"></a>
                             <p class="podpis">Paź królowej</p>
@@ -1142,15 +1492,36 @@
                             <p class="podpis">Pekariowiec obrożny</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna amerykapoludniowa stawonogi status1 dlc">
-                        <div id="zdjecie" class="filter-item amerykapolnocna amerykapoludniowa stawonogi status1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja afryka ptaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item azja afryka ptaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Pelikan_różowy"></p>
+                            <a href="Zoopedia/Pelikan różowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pelikan różowy.jpg" alt="Pelikan różowy" width="90%"></a>
+                            <p class="podpis">Pelikan różowy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna amerykapoludniowa europa stawonogi status1 dlc">
+                        <div id="zdjecie" class="filter-item amerykapolnocna amerykapoludniowa europa stawonogi status1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Phoebis_sennae"></p>
                             <a href="Zoopedia/Phoebis sennae.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Phoebis sennae.jpg" alt="Phoebis sennae" width="90%"></a>
                             <p class="podpis">Phoebis sennae</p>
                         </div>
                     </div>
-                    <div class="filter-item antarktyda amerykapoludniowa ptaki status1 i1 dlc">
-                        <div id="zdjecie" class="filter-item antarktyda amerykapoludniowa ptaki status1 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item australia ryby status0 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status0 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Pielęgnica_pawiooka"></p>
+                            <a href="Zoopedia/Pielęgnica pawiooka.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pielęgnica pawiooka.jpg" alt="Pielęgnica pawiooka" width="90%"></a>
+                            <p class="podpis">Pielęgnica pawiooka</p>
+                        </div>
+                    </div>
+                    <div class="filter-item antarktyda amerykapolnocna ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item antarktyda amerykapolnocna ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Pingwin_białobrewy"></p>
+                            <a href="Zoopedia/Pingwin białobrewy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pingwin białobrewy.jpg" alt="Pingwin białobrewy" width="90%"></a>
+                            <p class="podpis">Pingwin białobrewy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item antarktyda amerykapolnocna ptaki status1 i1 dlc">
+                        <div id="zdjecie" class="filter-item antarktyda amerykapolnocna ptaki status1 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Pingwin_królewski"></p>
                             <a href="Zoopedia/Pingwin królewski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pingwin królewski.jpg" alt="Pingwin królewski" width="90%"></a>
                             <p class="podpis">Pingwin królewski</p>
@@ -1168,6 +1539,41 @@
                             <p style="margin: 0%;" id="Pingwin_przylądkowy"></p>
                             <a href="Zoopedia/Pingwin przylądkowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pingwin przylądkowy.jpg" alt="Pingwin przylądkowy" width="90%"></a>
                             <p class="podpis">Pingwin przylądkowy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item antarktyda amerykapolnocna ptaki status3 i1 mody">
+                        <div id="zdjecie" class="filter-item antarktyda amerykapolnocna ptaki status3 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Pingwin_skalny"></p>
+                            <a href="Zoopedia/Pingwin skalny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pingwin skalny.jpg" alt="Pingwin skalny" width="90%"></a>
+                            <p class="podpis">Pingwin skalny</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status0 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status0 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Pirania"></p>
+                            <a href="Zoopedia/Pirania.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pirania.jpg" alt="Pirania" width="90%"></a>
+                            <p class="podpis">Pirania</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna ssaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Piżmowół"></p>
+                            <a href="Zoopedia/Piżmowół.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Piżmowół.jpg" alt="Piżmowół" width="90%"></a>
+                            <p class="podpis">Piżmowół</p>
+                        </div>
+                    </div>
+                    <div class="filter-item europa afryka ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item europa afryka ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Płomykówka"></p>
+                            <a href="Zoopedia/Płomykówka.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Płomykówka.jpg" alt="Płomykówka" width="90%"></a>
+                            <p class="podpis">Płomykówka</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status1 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Pokolec_królewski"></p>
+                            <a href="Zoopedia/Pokolec królewski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Pokolec królewski.jpg" alt="Pokolec królewski" width="90%"></a>
+                            <p class="podpis">Pokolec królewski</p>
                         </div>
                     </div>
                     <div class="filter-item afryka europa azja stawonogi status0 dlc">
@@ -1198,6 +1604,13 @@
                             <p class="podpis">Ptasznik olbrzymi</p>
                         </div>
                     </div>
+                    <div class="filter-item amerykapolnocna europa azja ptaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna europa azja ptaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Puchacz_śnieżny"></p>
+                            <a href="Zoopedia/Puchacz śnieżny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Puchacz śnieżny.jpg" alt="Puchacz śnieżny" width="90%"></a>
+                            <p class="podpis">Puchacz śnieżny</p>
+                        </div>
+                    </div>
                     <div class="filter-item amerykapoludniowa amerykapolnocna ssaki status1 i3 dlc">
                         <div id="zdjecie" class="filter-item amerykapoludniowa amerykapolnocna ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Puma"></p>
@@ -1205,11 +1618,25 @@
                             <p class="podpis">Puma</p>
                         </div>
                     </div>
-                    <div class="filter-item europa amerykapolnocna azja ssaki status3 i2 i1 dlc">
-                        <div id="zdjecie" class="filter-item europa amerykapolnocna azja ssaki status3 i2 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Puszczyk_kreskowany"></p>
+                            <a href="Zoopedia/Puszczyk kreskowany.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Puszczyk kreskowany.jpg" alt="Puszczyk kreskowany" width="90%"></a>
+                            <p class="podpis">Puszczyk kreskowany</p>
+                        </div>
+                    </div>
+                    <div class="filter-item europa amerykapolnocna azja ssaki status3 i2 i1 dlc mody">
+                        <div id="zdjecie" class="filter-item europa amerykapolnocna azja ssaki status3 i2 i1 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Renifer_tundrowy"></p>
-                            <a href="Zoopedia/Renifer tundrowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Renifer tundrowy.jpg" alt="Renifer tundrowy" width="90%"></a>
+                            <a href="Zoopedia/Renifer tundrowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Renifer tundrowy - Remaster.jpg" alt="Renifer tundrowy" width="90%"></a>
                             <p class="podpis">Renifer tundrowy</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja ssaki status4 i3 mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Rokselana_złocista"></p>
+                            <a href="Zoopedia/Rokselana złocista.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Rokselana złocista.jpg" alt="Rokselana złocista" width="90%"></a>
+                            <p class="podpis">Rokselana złocista</p>
                         </div>
                     </div>
                     <div class="filter-item europa amerykapolnocna azja ssaki status1 i3 dlc">
@@ -1219,8 +1646,8 @@
                             <p class="podpis">Rosomak tundrowy</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka azja ssaki status1 dlc">
-                        <div id="zdjecie" class="filter-item afryka azja ssaki status1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status1 dlc">
+                        <div id="zdjecie" class="filter-item afryka ssaki status1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Rudawiec_nilowy"></p>
                             <a href="Zoopedia/Rudawiec nilowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Rudawiec nilowy.jpg" alt="Rudawiec nilowy" width="90%"></a>
                             <p class="podpis">Rudawiec nilowy</p>
@@ -1233,8 +1660,8 @@
                             <p class="podpis">Rudawka okularowa</p>
                         </div>
                     </div>
-                    <div class="filter-item europa azja stawonogi status1 dlc">
-                        <div id="zdjecie" class="filter-item europa azja stawonogi status1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item europa amerykapolnocna amerykapoludniowa stawonogi status1 dlc">
+                        <div id="zdjecie" class="filter-item europa amerykapolnocna amerykapoludniowa stawonogi status1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Rusałka_pawik"></p>
                             <a href="Zoopedia/Rusałka pawik.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Rusałka pawik.jpg" alt="Rusałka pawik" width="90%"></a>
                             <p class="podpis">Rusałka pawik</p>
@@ -1254,6 +1681,13 @@
                             <p class="podpis">Rzekotka czerwonooka</p>
                         </div>
                     </div>
+                    <div class="filter-item amerykapoludniowa ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Sajmiri"></p>
+                            <a href="Zoopedia/Sajmiri.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Sajmiri.jpg" alt="Sajmiri" width="90%"></a>
+                            <p class="podpis">Sajmiri</p>
+                        </div>
+                    </div>
                     <div class="filter-item europa plazy status1 dlc">
                         <div id="zdjecie" class="filter-item europa plazy status1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Salamandra_plamista"></p>
@@ -1261,11 +1695,39 @@
                             <p class="podpis">Salamandra plamista</p>
                         </div>
                     </div>
+                    <div class="filter-item azja ssaki status5 mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status5 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Saola"></p>
+                            <a href="Zoopedia/Saola.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Saola.jpg" alt="Saola" width="90%"></a>
+                            <p class="podpis">Saola</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ptaki status4 i3 mody">
+                        <div id="zdjecie" class="filter-item afryka ptaki status4 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Sekretarz"></p>
+                            <a href="Zoopedia/Sekretarz.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Sekretarz.jpg" alt="Sekretarz" width="90%"></a>
+                            <p class="podpis">Sekretarz</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ptaki status3 i3 mody">
+                        <div id="zdjecie" class="filter-item afryka ptaki status3 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Sęp_przylądkowy"></p>
+                            <a href="Zoopedia/Sęp przylądkowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Sęp przylądkowy.jpg" alt="Sęp przylądkowy" width="90%"></a>
+                            <p class="podpis">Sęp przylądkowy</p>
+                        </div>
+                    </div>
                     <div class="filter-item azja ssaki status4 i3 dlc">
                         <div id="zdjecie" class="filter-item azja ssaki status4 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Siamang_wielki"></p>
                             <a href="Zoopedia/Siamang wielki.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Siamang wielki.jpg" alt="Siamang wielki" width="90%"></a>
                             <p class="podpis">Siamang wielki</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ssaki status5 i1 dlc">
+                        <div id="zdjecie" class="filter-item afryka ssaki status5 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Sifaka_biało-kasztanowa"></p>
+                            <a href="Zoopedia/Sifaka biało-kasztanowa.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Sifaka biało-kasztanowa.jpg" alt="Sifaka biało-kasztanowa" width="90%"></a>
+                            <p class="podpis">Sifaka biało-kasztanowa</p>
                         </div>
                     </div>
                     <div class="filter-item afryka ssaki status1 i1 podstawa">
@@ -1289,24 +1751,24 @@
                             <p class="podpis">Skunks zwyczajny</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status4 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status4 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Słoń_afrykański_sawannowy"></p>
-                            <a href="Zoopedia/Słoń afrykański sawannowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Słoń afrykański sawannowy.jpg" alt="Słoń afrykański sawannowy" width="90%"></a>
+                            <a href="Zoopedia/Słoń afrykański sawannowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Słoń afrykański sawannowy - Remaster.jpg" alt="Słoń afrykański sawannowy" width="90%"></a>
                             <p class="podpis">Słoń afrykański sawannowy</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status4 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status4 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Słoń_indyjski"></p>
-                            <a href="Zoopedia/Słoń indyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Słoń indyjski.jpg" alt="Słoń indyjski" width="90%"></a>
+                            <a href="Zoopedia/Słoń indyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Słoń indyjski - Remaster.jpg" alt="Słoń indyjski" width="90%"></a>
                             <p class="podpis">Słoń indyjski</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ptaki status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ptaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ptaki status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ptaki status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Struś_czerwonoskóry"></p>
-                            <a href="Zoopedia/Struś czerwonoskóry.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Struś czerwonoskóry.jpg" alt="Struś czerwonoskóry" width="90%"></a>
+                            <a href="Zoopedia/Struś czerwonoskóry.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Struś czerwonoskóry - Remaster.jpg" alt="Struś czerwonoskóry" width="90%"></a>
                             <p class="podpis">Struś czerwonoskóry</p>
                         </div>
                     </div>
@@ -1331,6 +1793,13 @@
                             <p class="podpis">Szop pracz</p>
                         </div>
                     </div>
+                    <div class="filter-item amerykapolnocna ssaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Szopik_pręgoogonowy"></p>
+                            <a href="Zoopedia/Szopik pręgoogonowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Szopik pręgoogonowy.jpg" alt="Szopik pręgoogonowy" width="90%"></a>
+                            <p class="podpis">Szopik pręgoogonowy</p>
+                        </div>
+                    </div>
                     <div class="filter-item afryka ssaki status4 i3 podstawa">
                         <div id="zdjecie" class="filter-item afryka ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Szympans_karłowaty"></p>
@@ -1338,10 +1807,10 @@
                             <p class="podpis">Szympans karłowaty</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status5 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status5 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status5 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status5 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Szympans_zachodni"></p>
-                            <a href="Zoopedia/Szympans zachodni.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Szympans zachodni.jpg" alt="Szympans zachodni" width="90%"></a>
+                            <a href="Zoopedia/Szympans zachodni.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Szympans zachodni - Remaster.jpg" alt="Szympans zachodni" width="90%"></a>
                             <p class="podpis">Szympans zachodni</p>
                         </div>
                     </div>
@@ -1352,11 +1821,25 @@
                             <p class="podpis">Świnia rasy tamworth</p>
                         </div>
                     </div>
+                    <div class="filter-item australia ptaki status4 i3 mody">
+                        <div id="zdjecie" class="filter-item australia ptaki status4 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Takahe"></p>
+                            <a href="Zoopedia/Takahe.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Takahe.jpg" alt="Takahe" width="90%"></a>
+                            <p class="podpis">Takahe</p>
+                        </div>
+                    </div>
                     <div class="filter-item azja ssaki status3 i3 dlc">
                         <div id="zdjecie" class="filter-item azja ssaki status3 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Takin_złoty"></p>
                             <a href="Zoopedia/Takin złoty.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Takin złoty.jpg" alt="Takin złoty" width="90%"></a>
                             <p class="podpis">Takin złoty</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Tamandua_południowa"></p>
+                            <a href="Zoopedia/Tamandua południowa.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Tamandua południowa.jpg" alt="Tamandua południowa" width="90%"></a>
+                            <p class="podpis">Tamandua południowa</p>
                         </div>
                     </div>
                     <div class="filter-item azja ssaki status4 i3 dlc">
@@ -1366,8 +1849,8 @@
                             <p class="podpis">Tapir malajski</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapoludniowa amerykapolnocna ssaki status4 i3 podstawa">
-                        <div id="zdjecie" class="filter-item amerykapoludniowa amerykapolnocna ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapoludniowa ssaki status4 i3 podstawa">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Tapir_panamski"></p>
                             <a href="Zoopedia/Tapir panamski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Tapir panamski.jpg" alt="Tapir panamski" width="90%"></a>
                             <p class="podpis">Tapir panamski</p>
@@ -1380,22 +1863,85 @@
                             <p class="podpis">Tilikwa scynkowa</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status4 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ptaki status1 mody">
+                        <div id="zdjecie" class="filter-item afryka ptaki status1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Toko_białogrzbiety"></p>
+                            <a href="Zoopedia/Toko białogrzbiety.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Toko białogrzbiety.jpg" alt="Toko białogrzbiety" width="90%"></a>
+                            <p class="podpis">Toko białogrzbiety</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ptaki status3 mody">
+                        <div id="zdjecie" class="filter-item afryka ptaki status3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Trzewikodziób"></p>
+                            <a href="Zoopedia/Trzewikodziób.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Trzewikodziób.jpg" alt="Trzewikodziób" width="90%"></a>
+                            <p class="podpis">Trzewikodziób</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa ptaki status1 mody i1">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ptaki status1 mody i1" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Tukan_czerwonodzioby"></p>
+                            <a href="Zoopedia/Tukan czerwonodzioby.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Tukan czerwonodzioby.jpg" alt="Tukan czerwonodzioby" width="90%"></a>
+                            <p class="podpis">Tukan czerwonodzioby</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa ptaki status2 mody i1">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ptaki status2 mody i1" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Tukan_tęczodzioby"></p>
+                            <a href="Zoopedia/Tukan tęczodzioby.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Tukan tęczodzioby.jpg" alt="Tukan tęczodzioby" width="90%"></a>
+                            <p class="podpis">Tukan tęczodzioby</p>
+                        </div>
+                    </div>
+                    <div class="filter-item azja ssaki status4 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Tygrys_bengalski"></p>
-                            <a href="Zoopedia/Tygrys bengalski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Tygrys bengalski.jpg" alt="Tygrys bengalski" width="90%"></a>
+                            <a href="Zoopedia/Tygrys bengalski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Tygrys bengalski - Remaster.jpg" alt="Tygrys bengalski" width="90%"></a>
                             <p class="podpis">Tygrys bengalski</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status4 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status4 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status4 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Tygrys_syberyjski"></p>
-                            <a href="Zoopedia/Tygrys syberyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Tygrys syberyjski.jpg" alt="Tygrys syberyjski" width="90%"></a>
+                            <a href="Zoopedia/Tygrys syberyjski.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Tygrys syberyjski - Remaster.jpg" alt="Tygrys syberyjski" width="90%"></a>
                             <p class="podpis">Tygrys syberyjski</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna amerykapoludniowa ssaki status1 i3 dlc">
-                        <div id="zdjecie" class="filter-item amerykapolnocna amerykapoludniowa ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapoludniowa ssaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Uistiti_białoucha"></p>
+                            <a href="Zoopedia/Uistiti białoucha.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Uistiti białoucha.jpg" alt="Uistiti białoucha" width="90%"></a>
+                            <p class="podpis">Uistiti białoucha</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status1 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Ustniczek_białopręgi"></p>
+                            <a href="Zoopedia/Ustniczek białopręgi.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Ustniczek białopręgi.jpg" alt="Ustniczek białopręgi" width="90%"></a>
+                            <p class="podpis">Ustniczek białopręgi</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status1 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Ustniczek_czarny"></p>
+                            <a href="Zoopedia/Ustniczek czarny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Ustniczek czarny.jpg" alt="Ustniczek czarny" width="90%"></a>
+                            <p class="podpis">Ustniczek czarny</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status1 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Ustnik_pawik"></p>
+                            <a href="Zoopedia/Ustnik pawik.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Ustnik pawik.jpg" alt="Ustnik pawik" width="90%"></a>
+                            <p class="podpis">Ustnik pawik</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status1 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Ustnik_słoneczny"></p>
+                            <a href="Zoopedia/Ustnik słoneczny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Ustnik słoneczny.jpg" alt="Ustnik słoneczny" width="90%"></a>
+                            <p class="podpis">Ustnik słoneczny</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna ssaki status1 i3 dlc">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Uszanka_kalifornijska"></p>
                             <a href="Zoopedia/Uszanka kalifornijska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Uszanka kalifornijska.jpg" alt="Uszanka kalifornijska" width="90%"></a>
                             <p class="podpis">Uszanka kalifornijska</p>
@@ -1408,10 +1954,10 @@
                             <p class="podpis">Wałęsak brazylijski</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka gady status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka gady status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka gady status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka gady status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Waran_nilowy"></p>
-                            <a href="Zoopedia/Waran nilowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Waran nilowy.jpg" alt="Waran nilowy" width="90%"></a>
+                            <a href="Zoopedia/Waran nilowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Waran nilowy - Remaster.jpg" alt="Waran nilowy" width="90%"></a>
                             <p class="podpis">Waran nilowy</p>
                         </div>
                     </div>
@@ -1436,22 +1982,29 @@
                             <p class="podpis">Wargacz leniwy</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna ssaki status1 i1 podstawa">
-                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i1 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna amerykapoludniowa ptaki status1 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna amerykapoludniowa ptaki status1 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Warzęcha_różowa"></p>
+                            <a href="Zoopedia/Warzęcha różowa.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Warzęcha różowa.jpg" alt="Warzęcha różowa" width="90%"></a>
+                            <p class="podpis">Warzęcha różowa</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna ssaki status1 i1 podstawa mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i1 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Widłoróg_amerykański"></p>
-                            <a href="Zoopedia/Widłoróg amerykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Widłoróg amerykański.jpg" alt="Widłoróg amerykański" width="90%"></a>
+                            <a href="Zoopedia/Widłoróg amerykański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Widłoróg amerykański - Remaster.jpg" alt="Widłoróg amerykański" width="90%"></a>
                             <p class="podpis">Widłoróg amerykański</p>
                         </div>
                     </div>
-                    <div class="filter-item azja ssaki status i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja ssaki status i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja ssaki status i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja ssaki status i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Wielbłąd_dwugarbny"></p>
-                            <a href="Zoopedia/Wielbłąd dwugarbny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wielbłąd dwugarbny.jpg" alt="Wielbłąd dwugarbny" width="90%"></a>
+                            <a href="Zoopedia/Wielbłąd dwugarbny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wielbłąd dwugarbny - Remaster.jpg" alt="Wielbłąd dwugarbny" width="90%"></a>
                             <p class="podpis">Wielbłąd dwugarbny</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka azja ssaki status i3 dlc">
-                        <div id="zdjecie" class="filter-item afryka azja ssaki status i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status i3 dlc">
+                        <div id="zdjecie" class="filter-item afryka ssaki status i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Wielbłąd_jednogarbny"></p>
                             <a href="Zoopedia/Wielbłąd jednogarbny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wielbłąd jednogarbny.jpg" alt="Wielbłąd jednogarbny" width="90%"></a>
                             <p class="podpis">Wielbłąd jednogarbny</p>
@@ -1471,17 +2024,17 @@
                             <p class="podpis">Wielki skorpion leśny</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapolnocna ssaki status1 i3 dlc">
-                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i3 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item amerykapolnocna ssaki status1 i3 dlc mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ssaki status1 i3 dlc mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Wilk_polarny"></p>
-                            <a href="Zoopedia/Wilk polarny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wilk polarny.jpg" alt="Wilk polarny" width="90%"></a>
+                            <a href="Zoopedia/Wilk polarny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wilk polarny - Remaster.jpg" alt="Wilk polarny" width="90%"></a>
                             <p class="podpis">Wilk polarny</p>
                         </div>
                     </div>
-                    <div class="filter-item azja europa amerykapolnocna ssaki status1 i3 podstawa">
-                        <div id="zdjecie" class="filter-item azja europa amerykapolnocna ssaki status1 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item azja europa amerykapolnocna ssaki status1 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item azja europa amerykapolnocna ssaki status1 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Wilk_szary"></p>
-                            <a href="Zoopedia/Wilk szary.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wilk szary.jpg" alt="Wilk szary" width="90%"></a>
+                            <a href="Zoopedia/Wilk szary.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wilk szary - Remaster.jpg" alt="Wilk szary" width="90%"></a>
                             <p class="podpis">Wilk szary</p>
                         </div>
                     </div>
@@ -1490,6 +2043,13 @@
                             <p style="margin: 0%;" id="Wombat_tasmański"></p>
                             <a href="Zoopedia/Wombat tasmański.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wombat tasmański.jpg" alt="Wombat tasmański" width="90%"></a>
                             <p class="podpis">Wombat tasmański</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapolnocna ptaki status1 i3 mody">
+                        <div id="zdjecie" class="filter-item amerykapolnocna ptaki status1 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Wrona_amerykańska"></p>
+                            <a href="Zoopedia/Wrona amerykańska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wrona amerykańska.jpg" alt="Wrona amerykańska" width="90%"></a>
+                            <p class="podpis">Wrona amerykańska</p>
                         </div>
                     </div>
                     <div class="filter-item azja ssaki status3 i1 dlc">
@@ -1506,6 +2066,13 @@
                             <p class="podpis">Wydra wielka</p>
                         </div>
                     </div>
+                    <div class="filter-item amerykapoludniowa ssaki status2 i1 mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa ssaki status2 i1 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Wyjec_czarny"></p>
+                            <a href="Zoopedia/Wyjec czarny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Wyjec czarny.jpg" alt="Wyjec czarny" width="90%"></a>
+                            <p class="podpis">Wyjec czarny</p>
+                        </div>
+                    </div>
                     <div class="filter-item australia gady status1 podstawa">
                         <div id="zdjecie" class="filter-item australia gady status1 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Zdradnica_śmiercionośna"></p>
@@ -1513,10 +2080,17 @@
                             <p class="podpis">Zdradnica śmiercionośna</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status2 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status2 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status4 i3 mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Zebra_pręgowana"></p>
+                            <a href="Zoopedia/Zebra pręgowana.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Zebra pręgowana.jpg" alt="Zebra pręgowana" width="90%"></a>
+                            <p class="podpis">Zebra pręgowana</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ssaki status2 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status2 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Zebra_stepowa"></p>
-                            <a href="Zoopedia/Zebra stepowa.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Zebra stepowa.jpg" alt="Zebra stepowa" width="90%"></a>
+                            <a href="Zoopedia/Zebra stepowa.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Zebra stepowa - Remaster.jpg" alt="Zebra stepowa" width="90%"></a>
                             <p class="podpis">Zebra stepowa</p>
                         </div>
                     </div>
@@ -1525,6 +2099,13 @@
                             <p style="margin: 0%;" id="Żaba_rycząca"></p>
                             <a href="Zoopedia/Żaba rycząca.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Żaba rycząca.jpg" alt="Żaba rycząca" width="90%"></a>
                             <p class="podpis">Żaba rycząca</p>
+                        </div>
+                    </div>
+                    <div class="filter-item australia ryby status3 mody">
+                        <div id="zdjecie" class="filter-item australia ryby status3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Żarłacz_rafowy_czarnopłetwy"></p>
+                            <a href="Zoopedia/Żarłacz rafowy czarnopłetwy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Żarłacz rafowy czarnopłetwy.jpg" alt="Żarłacz rafowy czarnopłetwy" width="90%"></a>
+                            <p class="podpis">Żarłacz rafowy czarnopłetwy</p>
                         </div>
                     </div>
                     <div class="filter-item azja afryka gady status3 dlc">
@@ -1562,10 +2143,17 @@
                             <p class="podpis">Żółw olbrzymi</p>
                         </div>
                     </div>
-                    <div class="filter-item amerykapoludniowa gady status3 i1 podstawa">
-                        <div id="zdjecie" class="filter-item amerykapoludniowa gady status3 i1 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka gady status4 i1 dlc">
+                        <div id="zdjecie" class="filter-item afryka gady status4 i1 dlc" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Żółw_pustynny"></p>
+                            <a href="Zoopedia/Żółw pustynny.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Żółw pustynny.jpg" alt="Żółw pustynny" width="90%"></a>
+                            <p class="podpis">Żółw pustynny</p>
+                        </div>
+                    </div>
+                    <div class="filter-item amerykapoludniowa gady status3 i1 podstawa mody">
+                        <div id="zdjecie" class="filter-item amerykapoludniowa gady status3 i1 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Żółw_słoniowy"></p>
-                            <a href="Zoopedia/Żółw słoniowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Żółw słoniowy.jpg" alt="Żółw słoniowy" width="90%"></a>
+                            <a href="Zoopedia/Żółw słoniowy.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Żółw słoniowy - Remaster.jpg" alt="Żółw słoniowy" width="90%"></a>
                             <p class="podpis">Żółw słoniowy</p>
                         </div>
                     </div>
@@ -1583,10 +2171,17 @@
                             <p class="podpis">Żuraw mandżurski</p>
                         </div>
                     </div>
-                    <div class="filter-item afryka ssaki status4 i3 podstawa">
-                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 podstawa" style="margin-left: 3.3%; margin-right: -3.3%;">
+                    <div class="filter-item afryka ssaki status4 i3 mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 mody" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Żyrafa_masajska"></p>
+                            <a href="Zoopedia/Żyrafa masajska.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Żyrafa masajska.jpg" alt="Żyrafa masajska" width="90%"></a>
+                            <p class="podpis">Żyrafa masajska</p>
+                        </div>
+                    </div>
+                    <div class="filter-item afryka ssaki status4 i3 podstawa mody">
+                        <div id="zdjecie" class="filter-item afryka ssaki status4 i3 podstawa mody" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Żyrafa_siatkowana"></p>
-                            <a href="Zoopedia/Żyrafa siatkowana.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Żyrafa siatkowana.jpg" alt="Żyrafa siatkowana" width="90%"></a>
+                            <a href="Zoopedia/Żyrafa siatkowana.html"><img class="gatunek" src="Zoopedia/Zdjęcia/Żyrafa siatkowana - Remaster.jpg" alt="Żyrafa siatkowana" width="90%"></a>
                             <p class="podpis">Żyrafa siatkowana</p>
                         </div>
                     </div>
@@ -1625,7 +2220,7 @@
         });
     </script>
     <script>
-        var razem = 187;
+        var razem = 272;
         document.getElementById("ilosc").innerHTML = razem;
 
         function addClassAll(el, cls) {
