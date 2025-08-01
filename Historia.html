@@ -239,6 +239,38 @@
             });
         </script>
         <span class="scrollTopButton" onclick="scrollToTop()"></span>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const wersja = localStorage.getItem("wybor_wersji");
+
+                // Mapa linków zależnych od wersji
+                const linkiWersje = {
+                    "Strona główna": {
+                        pc: "Strona główna.html",
+                        console: "Strona główna - konsola.html"
+                    },
+                    "Aktualizacje": {
+                        pc: "Aktualizacje.html",
+                        console: "Aktualizacje - konsola.html"
+                    },
+                    "DLC": {
+                        pc: "DLC.html",
+                        console: "DLC - konsola.html"
+                    }
+                    // dodaj inne zależne linki jeśli potrzeba
+                };
+
+                // Przejdź przez wszystkie <a> w menu
+                document.querySelectorAll("header a").forEach(link => {
+                    const tekst = link.textContent.trim();
+
+                    if (linkiWersje[tekst] && wersja) {
+                        // Podmień href tylko jeśli mamy dopasowanie i wersję
+                        link.href = linkiWersje[tekst][wersja];
+                    }
+                });
+            });
+        </script>
 </body>
 
 </html>

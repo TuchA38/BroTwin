@@ -2408,8 +2408,57 @@
                 }, 500, 'linear');
             });
         });
+
+        function wybierzWersje(wersja) {
+            // Zapisujemy wybór do localStorage
+            localStorage.setItem('wybor_wersji', wersja);
+            sessionStorage.setItem('session_active', '1'); // zaznaczamy, że sesja trwa
+
+            if (wersja === 'pc') {
+                window.location.href = 'Strona główna.html';
+            } else if (wersja === 'console') {
+                window.location.href = 'Strona główna - konsola.html';
+            }
+        }
+
+        // Sprawdzanie wersji
+        const wyborWersji = localStorage.getItem('wybor_wersji');
+        const sesjaAktywna = sessionStorage.getItem('session_active');
     </script>
     <span class="scrollTopButton" onclick="scrollToTop()"></span>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const wersja = localStorage.getItem("wybor_wersji");
+
+            // Mapa linków zależnych od wersji
+            const linkiWersje = {
+                "Strona główna": {
+                    pc: "Strona główna.html",
+                    console: "Strona główna - konsola.html"
+                },
+                "Aktualizacje": {
+                    pc: "Aktualizacje.html",
+                    console: "Aktualizacje - konsola.html"
+                },
+                "DLC": {
+                    pc: "DLC.html",
+                    console: "DLC - konsola.html"
+                }
+                // dodaj inne zależne linki jeśli potrzeba
+            };
+
+            // Przejdź przez wszystkie <a> w menu
+            document.querySelectorAll("header a").forEach(link => {
+                const tekst = link.textContent.trim();
+
+                if (linkiWersje[tekst] && wersja) {
+                    // Podmień href tylko jeśli mamy dopasowanie i wersję
+                    link.href = linkiWersje[tekst][wersja];
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

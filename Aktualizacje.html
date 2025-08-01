@@ -2533,19 +2533,35 @@
             document.getElementById('popup').style.display = 'block';
         }
 
-        // Sprawdź, czy użytkownik już dokonał wyboru wersji
-        if (sessionStorage.getItem('wybor_wersji') !== 'selected') {
-            otworzPopup();
-        }
-
         function wybierzWersje(wersja) {
-            sessionStorage.setItem('wybor_wersji', 'selected'); // Ustaw wartość na "selected"
+            // Zapisujemy wybór do localStorage
+            localStorage.setItem('wybor_wersji', wersja);
+            sessionStorage.setItem('session_active', '1'); // zaznaczamy, że sesja trwa
+
             if (wersja === 'pc') {
                 window.location.href = 'Aktualizacje.html';
             } else if (wersja === 'console') {
                 window.location.href = 'Aktualizacje - konsola.html';
             }
         }
+
+        // Sprawdzanie wersji
+        const wyborWersji = localStorage.getItem('wybor_wersji');
+        const sesjaAktywna = sessionStorage.getItem('session_active');
+
+        if (wyborWersji && !sesjaAktywna) {
+            // Nowa karta – odczytujemy wersję z localStorage i aktywujemy sesję
+            sessionStorage.setItem('session_active', '1');
+        }
+
+        if (!wyborWersji || !sessionStorage.getItem('session_active')) {
+            // Jeśli nadal nie ma wyboru lub sesja nieaktywna – pokaż popup
+            localStorage.removeItem('wybor_wersji'); // czyścimy, jeśli coś jest nie tak
+            otworzPopup();
+        }
+
+        // (opcjonalnie) możesz zostawić ten zapis aktywacji, ale już nie jest konieczny:
+        // sessionStorage.setItem('session_active', '1');
     </script>
     <span class="scrollTopButton" onclick="scrollToTop()"></span>
     <script src="spacje.js"></script>
