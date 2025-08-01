@@ -9,6 +9,186 @@
     <link rel="stylesheet" type="text/css" href="Styl.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="shortcut icon" href="Ikony/Planet Zoo.png">
+    <style>
+        .filter-panel {
+            padding: 1vw;
+            background: #f9f9f9;
+            border-radius: 1vw;
+            max-width: 70vw;
+        }
+        
+        .filter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1vw;
+        }
+        
+        .filter-header p {
+            font-size: 1.6vw;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5vw;
+        }
+        
+        .search-container input[type="text"] {
+            width: 22vw;
+            font-size: 1.3vw;
+            padding: 0.3vw 0.5vw;
+        }
+        
+        .search-container img {
+            width: 2.5vw;
+            height: auto;
+        }
+        
+        .alfabet {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* 5 liter w rzędzie */
+            gap: 0.5vw;
+            margin-right: 10vw;
+        }
+        
+        .alfabet a {
+            background: #08583e;
+            border: black solid 0.1vw;
+            color: white;
+            padding: 0.5vw 0.8vw;
+            border-radius: 0.5vw;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: background 0.5s;
+            font-size: 1vw;
+            margin: 0%;
+        }
+        
+        a.disabled-link {
+            color: #aaa !important;
+            pointer-events: none;
+            cursor: default;
+            text-decoration: none;
+            background-color: #053325;
+            /* jasnoszare tło */
+            border-color: #bbb;
+            /* jeśli masz border, to też go rozjaśnij */
+        }
+        
+        .alfabet a:hover {
+            background: #13c489;
+        }
+        
+        .litera-naglowek {
+            font-size: 2vw;
+            margin: 2vw 0 1vw;
+            color: #13c489;
+            border-bottom: 0.2vw solid #13c489;
+            padding-bottom: 0.3vw;
+            text-shadow: black 0.1em 0.1em 0.2em;
+        }
+        
+        .hasla {
+            display: grid;
+            gap: 0.1vw;
+            margin-bottom: 0.1vw;
+        }
+        
+        .haslo {
+            background: rgba(255, 255, 255, 0.2);
+            text-shadow: black 0.1em 0.1em 0.2em;
+            /* półprzezroczyste tło */
+            backdrop-filter: blur(2vw);
+            /* rozmycie tła */
+            -webkit-backdrop-filter: blur(2vw);
+            /* dla Safari */
+            padding: 0.5vw;
+            margin: 0vw;
+            margin-top: 0.5vw;
+            border-radius: 1vw;
+            box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.1);
+            font-size: 1.2vw;
+            color: #fff;
+            /* upewnij się, że tekst jest czytelny */
+        }
+        
+        .haslo b {
+            color: rgb(211, 224, 92);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .filter-panel {
+            position: fixed;
+            right: -95vw;
+            top: 5%;
+            width: 50vw;
+            height: 21vw;
+            transition: right 0.5s;
+            background: rgba(13, 104, 74, 0.9);
+            padding: 0.2vw;
+            box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+            border-radius: 0.2vw;
+            color: white;
+            z-index: 1000;
+            padding-top: 2vw;
+        }
+        
+        .filter-panel.show {
+            right: 0;
+        }
+        
+        .filter-button {
+            position: fixed;
+            right: 0;
+            top: 31%;
+            width: 10vw;
+            height: 3vw;
+            background-color: #063626;
+            border: 0.15vw solid black;
+            border-radius: 0.2vw 0 0 0.2vw;
+            cursor: pointer;
+            color: white;
+            z-index: 1100;
+            opacity: 90%;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .filter-button {
+                margin-top: -50%;
+            }
+        }
+        
+        .filter-button::after {
+            content: 'Alfabet ▶';
+            display: block;
+            text-align: center;
+            font-size: 1.4vw;
+        }
+        
+        .filter-button.open::after {
+            content: '◀ Alfabet';
+        }
+        
+        .filter-no-item {
+            text-align: center;
+            display: block;
+            background: linear-gradient(#0d684a, #063626);
+            color: rgb(228, 228, 228);
+            margin-left: auto;
+            margin-right: auto;
+            border: 0.15vw black solid;
+            padding: 1%;
+            width: 80%;
+        }
+    </style>
 </head>
 
 <body onselectstart="return false;">
@@ -59,6 +239,49 @@
                 <h1 class="tytul cień" style="margin-top: 0%;">Słowniczek</h1>
                 <p class="cień opis" style="margin-top: -1.5%;"><i>Witaj w Słowniczku pojęć!<br>Zebrano tutaj naukowe słowa oraz zwroty, które są wytłumaczone w zrozumiały sposób.<br>Poszerz swoją wiedzę o kilka pojęć.<br> Życzymy miłego czytania!</i></p>
                 <hr>
+                <button class="filter-button" onclick="toggleFilter()"></button>
+                <div class="filter-panel" id="filterPanel">
+                    <div class="filter-header">
+                        <p class="cień pojecia" style="margin-left: 10vw;"><b>Alfabet</b></p>
+                        <div class="search-container"><img src="Ikony/lupa.png" alt="lupa" style="margin-top: -4vw; margin-right: -13vw;">
+                            <input style="margin-top: 1vw; margin-right: 2vw;" type="text" autocomplete="off" name="szukaj" class="cień" placeholder="Wyszukaj pojęcie...">
+                        </div>
+                    </div>
+
+                    <div class="filter-content cień">
+                        <nav class="alfabet" style="margin-top: 1vw;">
+                            <a href="#literaA">A</a>
+                            <a href="#literaB">B</a>
+                            <a href="#literaC">C</a>
+                            <a href="#literaĆ" class="disabled-link">Ć</a>
+                            <a href="#literaD">D</a>
+                            <a href="#literaE">E</a>
+                            <a href="#literaF">F</a>
+                            <a href="#literaG">G</a>
+                            <a href="#literaH">H</a>
+                            <a href="#literaI">I</a>
+                            <a href="#literaJ" class="disabled-link">J</a>
+                            <a href="#literaK">K</a>
+                            <a href="#literaL">L</a>
+                            <a href="#literaŁ">Ł</a>
+                            <a href="#literaM">M</a>
+                            <a href="#literaN">N</a>
+                            <a href="#literaO">O</a>
+                            <a href="#literaP">P</a>
+                            <a href="#literaR">R</a>
+                            <a href="#literaS">S</a>
+                            <a href="#literaT">T</a>
+                            <a href="#literaU">U</a>
+                            <a href="#literaW">W</a>
+                            <a href="#literaY" class="disabled-link">Y</a>
+                            <a href="#literaZ">Z</a>
+                            <a href="#literaŹ" class="disabled-link">Ź</a>
+                            <a href="#literaŻ">Ż</a>
+                        </nav>
+                    </div>
+                </div>
+
+
                 <script class="szukaj" async src="https://cse.google.com/cse.js?cx=548744c9b3f17db30"></script>
                 <div class="gcse-search"></div>
                 <p class="cień pojecia" style="font-size: 1.6vw; text-align: center; margin: -0.5%;"><b>Oznaczenia płci</b></p>
@@ -72,13 +295,16 @@
                 </div>
                 <div style="clear: both;"></div>
                 <hr>
+
                 <p class="cień pojecia" style="font-size: 1.6vw; text-align: center; margin: -0.5%;"><b>Rodzaje strategii rozrodczych</b></p>
-                <p class="cień pojecia"><b>Monogamia</b> – związek osobnika płci męskiej z jednym osobnikiem płci żeńskiej.</p>
-                <p class="cień pojecia"><b>Poligamia</b> – związek osobnika dowolnej płci z więcej niż jednym osobnikiem płci przeciwnej. Dzieli się na:</p>
-                <p class="cień pojecia">&bull; <b>Poliandria</b> – związek osobnika płci żeńskiej z więcej niż jednym osobnikiem płci męskiej.</p>
-                <p class="cień pojecia">&bull; <b>Poligynia</b> – związek osobnika płci męskiej z więcej niż jednym osobnikiem płci żeńskiej.</p>
-                <p class="cień pojecia"><b>Promiskuityzm</b> – strategia rozrodcza polegająca na braku wybiórczości w kontaktach seksualnych, kopulacje odbywają się z wszystkimi (lub niemal wszystkimi) dostępnymi w populacji partnerami.</p>
-                <p class="cień pojecia"><b>Samozapłodnienie</b> – sposób rozrodu organizmów, w wyniku którego dochodzi do powstania zygoty z komórek rozrodczych wytwarzanych przez ten sam organizm.</p>
+                <div class="hasla">
+                    <p class="cień haslo"><b>Monogamia</b> – związek osobnika płci męskiej z jednym osobnikiem płci żeńskiej.</p>
+                    <p class="cień haslo"><b>Poligamia</b> – związek osobnika dowolnej płci z więcej niż jednym osobnikiem płci przeciwnej. Dzieli się na:</p>
+                    <p class="cień haslo"><b>&bull; Poliandria</b> – związek osobnika płci żeńskiej z więcej niż jednym osobnikiem płci męskiej.</p>
+                    <p class="cień haslo"><b>&bull; Poligynia</b> – związek osobnika płci męskiej z więcej niż jednym osobnikiem płci żeńskiej.</p>
+                    <p class="cień haslo"><b>Promiskuityzm</b> – strategia rozrodcza polegająca na braku wybiórczości w kontaktach seksualnych, kopulacje odbywają się z wszystkimi (lub niemal wszystkimi) dostępnymi w populacji partnerami.</p>
+                    <p class="cień haslo"><b>Samozapłodnienie</b> – sposób rozrodu organizmów, w wyniku którego dochodzi do powstania zygoty z komórek rozrodczych wytwarzanych przez ten sam organizm.</p>
+                </div>
                 <hr>
                 <p class="cień pojecia" style="font-size: 1.6vw; text-align: center; margin: -0.5%; margin-bottom: 1%;"><b>Oznaczenia biomów</b></p>
                 <div style="float: left; width: 14%;">
@@ -112,174 +338,302 @@
                 <div style="clear: both;"></div>
                 <hr>
                 <p class="cień pojecia" style="font-size: 1.6vw; text-align: center; margin: -0.5%;"><b>Używane strefy czasowe</b></p>
-                <p class="cień pojecia"><b>British Summer Time (BST)</b> – to jedna z dobrze znanych nazw stref czasowych (12:00 BST to 13:00 godzina naszego czasu).</p>
-                <p class="cień pojecia"><b>Greenwich Mean Time (GMT)</b> – to czas słoneczny średni na południku zerowym, za który przyjęto południk przechodzący przez obserwatorium astronomiczne w&nbsp;miejscowości Greenwich (12:00 GMT to 14:00 godzina naszego czasu).</p>
-                <p class="cień pojecia"><b>Universal Time Coordinated (UTC)</b> – to wzorcowy czas uwzględniający nieregularność ruchu obrotowego Ziemi i koordynowany względem czasu słonecznego (12:00&nbsp;UTC to 14:00 godzina naszego czasu).</p>
+                <div class="hasla">
+                    <p class="cień haslo"><b>British Summer Time (BST)</b> – to jedna z dobrze znanych nazw stref czasowych (12:00 BST to 13:00 godzina naszego czasu).</p>
+                    <p class="cień haslo"><b>Greenwich Mean Time (GMT)</b> – to czas słoneczny średni na południku zerowym, za który przyjęto południk przechodzący przez obserwatorium astronomiczne w&nbsp;miejscowości Greenwich (12:00 GMT to 14:00 godzina naszego czasu).</p>
+                    <p class="cień haslo"><b>Universal Time Coordinated (UTC)</b> – to wzorcowy czas uwzględniający nieregularność ruchu obrotowego Ziemi i koordynowany względem czasu słonecznego (12:00&nbsp;UTC to 14:00 godzina naszego czasu).</p>
+                </div>
                 <hr>
-                <p class="cień pojecia" style="font-size: 1.6vw; text-align: center; margin: 0.5%; margin-bottom: -3%;"><b>Inne pojęcia</b></p>
-                <img style="width: 5%; margin-top: 1%; margin-bottom: -2%; float: right; margin-right: 14%;" src="Ikony/lupa.png" alt="lupa"><input type="text" autocomplete="off" name="szukaj" class="cień" style="width:30%; float: right; margin-top: 6%; margin-right: -18%; font-size: 1.3vw;"
-                    placeholder="Wyszukaj pojęcie...">
-                <article style=" margin-top: 11%;">
-                    <p class="cień pojecia"><b>Aberracja</b> – odchylenie od normalnego stanu, nieprawidłowość.</p>
-                    <p class="cień pojecia"><b>Aborygeni</b> – rdzenni mieszkańcy Australii.</p>
-                    <p class="cień pojecia"><b>Addytywność</b> – dodawanie, gromadzenie czegoś, będącym wynikiem sumowania składników.</p>
-                    <p class="cień pojecia"><b>Albinizm</b> – brak pigmentu w skórze, tworach skórnych, włosach i tęczówce oka (czerwone oczy lub rzadziej niebieskawe) wynikające ze zmniejszonej zawartości melaniny. Osobnik posiadający tę cechę nosi miano albinosa.</p>
-                    <p class="cień pojecia"><b>Allorodzicielstwo</b> – zastępcza opieka rodzicielska nad młodymi osobnikami, niebędącymi bezpośrednim potomstwem opiekuna lub opiekunów (członków grup społecznych stada).</p>
-                    <p class="cień pojecia"><b>Areał osobniczy</b> – obszar patrolowany przez danego osobnika w związku z codziennym zdobywaniem pokarmu, kryjówką, czy też rozrodem.</p>
-                    <p class="cień pojecia"><b>AZA (Association of Zoos and Aquariums)</b> – stowarzyszenie, którego celem jest wspieranie ogrodów zoologicznych i akwariów w zakresie ochrony środowiska, edukacji, nauki i rekreacji.</p>
-                    <p class="cień pojecia"><b>Bezwiedny</b> – mimowolny, machinalny, nieświadomy, wykonany bez udziału świadomości.</p>
-                    <p class="cień pojecia"><b>Biofluorescencja</b> – zjawisko występujące, kiedy zwierzęta pochłaniają krótkie fale światła, a same emitują dłuższe, co powoduje zmianę koloru ich futer.</p>
-                    <p class="cień pojecia"><b>Brachiacja</b> – zwisowo-wahadłowy sposób poruszania się, polegający na rozhuśtywaniu ciała i wykonywaniu skoków lub przemieszczaniu się po gałęziach w&nbsp;pozycji zwisu (charakterystyczny dla gibbonów).</p>
-                    <p class="cień pojecia"><b>Brodzić</b> – chodzić po czymś grząskim lub sypkim.</p>
-                    <p class="cień pojecia"><b>Broszura</b> – cienka książka, nieoprawiona lub w miękkiej oprawie.</p>
-                    <p class="cień pojecia"><b>Buhaj</b> – przeznaczony do rozpłodu samiec bydła domowego oraz żubra, bawołów i innych gatunków z rodziny wołowatych.</p>
-                    <p class="cień pojecia"><b>Chmara</b> – wielka liczba czegoś (określenie na stado jeleni, łosi, żubrów lub danieli).</p>
-                    <p class="cień pojecia"><b>Ciąża przedłużona</b> – chwilowe zahamowanie rozwoju zarodków, spotykany u kręgowców, prawdopodobnie jako ochrona przed drapieżnikami lub niesprzyjającymi warunkami środowiska naturalnego.</p>
-                    <p class="cień pojecia"><b>Cria</b> – młoda lama lub alpaka.</p>
-                    <p class="cień pojecia"><b>Czop</b> – zatyczka spłaszczonego błota występująca w żółwich gniazdach.</p>
-                    <p class="cień pojecia"><b>Dane telemetryczne</b> – automatyczny proces zdalnego gromadzenia danych tworzonych przez systemy za pomocą agentów i protokołów, które obejmują wszystkie logi, metryki, zdarzenia i ślady tworzone przez aplikacje.</p>
-                    <p class="cień pojecia"><b>Degradacja</b> – proces niszczenia środowiska i jego zasobów.</p>
-                    <p class="cień pojecia"><b>Depresja wsobna</b> – zjawisko obserwowane często u potomstwa pochodzącego z kojarzeń osobników spokrewnionych i polegające na osłabieniu żywotności, odporności na choroby, częstszym występowaniu chorób genetycznych i wad rozwojowych.</p>
-                    <p class="cień pojecia"><b>Detrytus</b> – drobnoszczątkowa, martwa materia organiczna, martwe szczątki roślin, zwierząt oraz ich odchodów występujące na powierzchni gleby, na dnie zbiorników wodnych lub unoszące się w toni wodnej.</p>
-                    <p class="cień pojecia"><b>DNA (kwas deoksyrybonukleinowy)</b> – cząsteczka, zawierająca unikalną dla każdego gatunku, informację genetyczną, czyli przekazywaną dziedzicznie informację dotycząca struktury białek budujących organizm.</p>
-                    <p class="cień pojecia"><b>Drapieżnik generalistyczny</b> – posiada szerokie spektrum pokarmowe lub występuje w wielu różnych siedliskach.</p>
-                    <p class="cień pojecia"><b>Dymorfizm płciowy</b> – objawiający się różnicami w morfologii (wyglądzie) samicy i samca jednego gatunku.</p>
-                    <p class="cień pojecia"><b>Ekspansja</b> – proces polegający na zwiększaniu objętości układu (rozprzestrzenianie się czegoś na jakimś obszarze).</p>
-                    <p class="cień pojecia"><b>Ekstensywnie</b> – obszernie lub obficie ilościowo.</p>
-                    <p class="cień pojecia"><b>Elektrolokacja</b> – wykorzystywanie informacji zdobytej z pomocą detekcji bodźców elektrycznych do orientowania się w otoczeniu.</p>
-                    <p class="cień pojecia"><b>Emulować</b> – naśladować działanie podobnego systemu.</p>
-                    <p class="cień pojecia"><b>Endemiczny</b> – występujący tylko na określonym obszarze.</p>
-                    <p class="cień pojecia"><b>Eusocjalność</b> – najwyższa wśród zwierząt forma społeczności polegająca na tworzeniu trwałych, co najmniej dwupokoleniowych kolonii, w&nbsp;których rolę reproduktorek przejmuje tylko część samic, a pozostałe osobniki współdziałają
-                        w opiece nad ich potomstwem.</p>
-                    <p class="cień pojecia"><b>Exploit</b> – program mający na celu wykorzystanie istniejących błędów w oprogramowaniu.</p>
-                    <p class="cień pojecia"><b>Feromony (nazywane przekaźnikami podniecenia)</b> – to związki chemiczne i nie są świadomie postrzegane jako perfumy lub substancje zapachowe. Są wydzielane na zewnątrz ciała. Mogą być nieświadomie odebrane przez innego przedstawiciela
-                        tego samego gatunku, który zmieni swoje określone zachowanie.</p>
-                    <p class="cień pojecia"><b>Fluktuacja</b> – nieregularna zmienność nasilenia przebiegu procesu lub zjawiska (występujący w pogodzie).</p>
-                    <p class="cień pojecia"><b>Foley</b> – nagranie efektów dźwiękowych, które są tworzone, przechwytywane i dodawane do postprodukcji.</p>
-                    <p class="cień pojecia"><b>Fragmentacja populacji</b> – to termin używany, aby opisać sytuację, gdy grupa zwierząt lub roślin dziko żyjących jest odseparowana od innych podobnych grup tego samego gatunku.</p>
-                    <p class="cień pojecia"><b>Gawra</b> – zimowe legowisko niedźwiedzi, jaskinia w miejscu niedostępnym i ukrytym. Jest to też miejsce, w którym na świat przychodzą młode niedźwiedzie.</p>
-                    <p class="cień pojecia"><b>Glacjał</b> – okres zlodowacenia obejmujący powstawanie i powiększanie się zasięgu lodowców.</p>
-                    <p class="cień pojecia"><b>Gonady</b> – gruczoły płciowe, gruczoły rozrodcze zwierząt produkujące gamety.</p>
-                    <p class="cień pojecia"><b>Grzebień zębowy</b> – występujący u lemurowatych, obejmujący grupę przednich zębów (4 siekacze i 2 kły) rozmieszczonych w taki sposób, która ułatwia pielęgnację. Podobny do grzebienia do włosów.</p>
-                    <p class="cień pojecia"><b>Guano</b> – odchody ptaków morskich lub nietoperzy, eksploatowane są jako cenny nawóz naturalny.</p>
-                    <p class="cień pojecia"><b>Harem</b> – wiele samic będących kochankami jakiegoś samca.</p>
-                    <p class="cień pojecia"><b>Herbicydy</b> – środki ochrony roślin przeznaczone do zwalczania chwastów w roślinach uprawnych.</p>
-                    <p class="cień pojecia"><b>Hermafrodytyzm (obojnactwo)</b> – zjawisko występowania w ciele jednego osobnika jednocześnie męskich oraz żeńskich gruczołów rozrodczych albo występowanie w&nbsp;jego ciele gruczołu obojnaczego wytwarzającego jaja i plemniki.</p>
-                    <p class="cień pojecia"><b>Herpetologia</b> – dział zoologii badający płazy i gady.</p>
-                    <p class="cień pojecia"><b>Hibernacja</b> – fizjologiczny stan organizmu, o charakterze przystosowawczym, polegający na wyłączeniu termoregulacji, znacznym spowolnieniu procesów życiowych i&nbsp;obniżeniu temperatury ciała, zwiększający tolerancję organizmu
-                        wobec niesprzyjających warunków środowiskowych.</p>
-                    <p class="cień pojecia"><b>Hierarchia</b> – społeczna przewaga pojedynczych osobników nad innymi, oparta na dominacji.</p>
-                    <p class="cień pojecia"><b>Hipermaskulinizm</b> – występowanie u samic cech męskich, a także zmian zewnętrznych narządów płciowych w wyniku zaburzenia hormonalnego.</p>
-                    <p class="cień pojecia"><b>Hipis</b> – członek ugrupowania młodzieżowego, odznaczający się specyficznym wyglądem, aktywnego głównie w USA na przełomie lat 60. i 70., głoszącego potrzebę miłości i wszechświatowego pokoju, występującego przeciw społeczeństwu
-                        konsumpcyjnemu.
-                    </p>
-                    <p class="cień pojecia"><b>Horda</b> – duża grupa zwierząt posiadająca hierarchię koczująca na określonym terenie.</p>
-                    <p class="cień pojecia"><b>Hybrydyzacja</b> – proces, w wyniku którego z komórek (zwykle gamet) osobników o odmiennym genotypie, w istotny sposób różniących się pewnymi cechami genetycznymi, powstaje organizm potomny, zwany mieszańcem (też hybrydą lub krzyżówką).</p>
-                    <p class="cień pojecia"><b>Hypoderma (hipoderma)</b> – warstwy komórek znajdujące się bezpośrednio pod skórką w łodygach lub liściach, ochraniające wnętrze organu przed wpływami środowiska zewnętrznego rośliny.</p>
-                    <p class="cień pojecia"><b>Idylliczny</b> – inaczej beztroski, cichy, sielankowy itd.</p>
-                    <p class="cień pojecia"><b>Implantacja</b> – to moment, w którym zapłodniona komórka jajowa znajduje bezpieczne miejsce w błonie śluzowej macicy.</p>
-                    <p class="cień pojecia"><b>Inkubacja</b> – wylęganie się piskląt/młodych zwierząt z jaj.</p>
-                    <p class="cień pojecia"><b>IUCN (International Union for Conservation of Nature)</b> – organizacja międzynarodowa zajmująca się ochroną przyrody, publikująca międzynarodową Czerwoną Księgę zawierającą listę gatunków roślin i zwierząt zagrożonych wyginięciem.</p>
-                    <p class="cień pojecia"><b>Kalejdoskop</b> – urządzenie optyczne, w którym dzięki wielokrotnym odbiciom obrazów różnokolorowych szkiełek, w odpowiednio rozmieszczonych zwierciadłach, obserwuje się różnobarwne, symetryczne figury, zmieniające się przy obracaniu.</p>
-                    <p class="cień pojecia"><b>Kantyczka</b> – popularna pieśń religijna.</p>
-                    <p class="cień pojecia"><b>Kanwa</b> – tkanina lniana lub konopna, z grubych, usztywnianych nici o regularnym, rzadkim splocie.</p>
-                    <p class="cień pojecia"><b>Karapaks</b> – inaczej pancerz, który jest określeniem twardej powierzchni ciała (zwykle górnej części ciała) wykształcającej się u różnych grup zwierząt takich jak stawonogi (pajęczaki, skorupiaki) oraz niektóre kręgowce (żółwie).</p>
-                    <p class="cień pojecia"><b>Kloaka</b> – końcowa, rozszerzona część jelita występująca u prawie wszystkich kręgowców poza zrosłogłowymi i ssakami łożyskowymi oraz częścią ryb promieniopłetwych.</p>
-                    <p class="cień pojecia"><b>Koegzystencja</b> – jednoczesne, wzajemnie niewykluczające się istnienie, tolerowanie się.</p>
-                    <p class="cień pojecia"><b>Komponent</b> – składowa część pewnej całości.</p>
-                    <p class="cień pojecia"><b>Komuna</b> – świadoma wspólnota osobników żyjących razem, dzielących wspólne interesy, często posiadających wspólne wartości i&nbsp;przekonania.</p>
-                    <p class="cień pojecia"><b>Konwent</b> – zjazd fanów, społeczności w celach integracyjnych lub spotkania.</p>
-                    <p class="cień pojecia"><b>Kość gnykowa</b> – nieparzysta kość trzewioczaszki niemająca połączenia z innymi kośćmi w obrębie szyi.</p>
-                    <p class="cień pojecia"><b>Koteria</b> – grupa wzajemnie się popierających osobników, działających wspólnie w celu osiągnięcia własnych korzyści.</p>
-                    <p class="cień pojecia"><b>Kreatyna</b> – substancja naturalnie występująca w komórkach mięśniowych.</p>
-                    <p class="cień pojecia"><b>Latryna (wychodek)</b> – rodzaj toalety, w której odchody zbierają się w dole wykopanym w ziemi.</p>
-                    <p class="cień pojecia"><b>Letarg</b> – stan pozornej śmierci, polegający na głębokim śnie, w którym zanikają reakcje na bodźce.</p>
-                    <p class="cień pojecia"><b>Leucyzm</b> – choroba charakteryzująca się częściowym lub całkowitym brakiem obydwu rodzajów melaniny. U osobników leucystycznych niedobory barwnika są symetryczne (na całym ciele).</p>
-                    <p class="cień pojecia"><b>Linienie</b> – proces okresowego zrzucania zewnętrznych warstw ciała – naskórka, oskórka, pancerza, piór lub włosów – u niektórych zwierząt.</p>
-                    <p class="cień pojecia"><b>Łajno</b> – odchody zwierzęce.</p>
-                    <p class="cień pojecia"><b>Maksyma</b> – zwięźle sformułowana myśl filozoficzna lub etyczna zawierająca pewną zasadę postępowania.</p>
-                    <p class="cień pojecia"><b>Matriarchat</b> – hierarchiczny ustrój społeczny, w którym władzę sprawują samice.</p>
-                    <p class="cień pojecia"><b>Matrylinearność</b> – społeczna zasada pokrewieństwa, zgodnie z którą młode samice jest włączane do stada.</p>
-                    <p class="cień pojecia"><b>Melanizm</b> – brunatne lub czarne zabarwienie skóry lub jej wytworów wynikające ze zwiększonej zawartości melaniny.</p>
-                    <p class="cień pojecia"><b>Migracja</b> – sezonowe i regularne przemieszczanie się zwierząt na różne odległości.</p>
-                    <p class="cień pojecia"><b>Miot</b> – potomstwo ssaków pochodzące z jednej ciąży.</p>
-                    <p class="cień pojecia"><b>Monit</b> – urzędowe, pisemne przypomnienie o konieczności wywiązania się z zaległych zobowiązań.</p>
-                    <p class="cień pojecia"><b>Morillo</b> – specjalny gruczoł zapachowy pyska występujący u kapibar.</p>
-                    <p class="cień pojecia"><b>Nogogłaszczki (szczękonóżki)</b> – druga para przysadek głowotułowia, tj. odnóży pajęczaków, położona bezpośrednio za otworem gębowym.</p>
-                    <p class="cień pojecia"><b>Nomadowie</b> – członek pasterskiego lub łowieckiego ludu prowadzącego koczowniczy tryb życia, głównie w Azji, Afryce i Australii.</p>
-                    <p class="cień pojecia"><b>Odruch flehmen</b> – polega na podwijaniu górnej wargi i uniesieniu nozdrzy ku górze, poprzez silne wygięcie szyi.</p>
-                    <p class="cień pojecia"><b>Odsadzać</b> – przestawać karmić młode mlekiem.</p>
-                    <p class="cień pojecia"><b>Oko ciemieniowe</b> – trzecie oko, występujące u niektórych grup zwierząt, zwłaszcza prymitywnych gadów.</p>
-                    <p class="cień pojecia"><b>Orka (rolnictwo)</b> – uprawa odwracająca wykonywana pługami, mająca na celu odwrócenie i pokruszenie uprawianej warstwy ziemi.</p>
-                    <p class="cień pojecia"><b>Osmeterium</b> – narząd obronny występujący we wszystkich larwach pazi (motyli) we wszystkich stadiach, emitujący związki zapachowe uważane za feromony.</p>
-                    <p class="cień pojecia"><b>Otrząsać się</b> – pozbywać się nadmiaru wody z sierci.</p>
-                    <p class="cień pojecia"><b>Ostroga</b> – wyrostek kostny pokryty osłonką rogową, występujący w różnych miejscach anatomicznych u niektórych zwierząt, które tworzą się najczęściej najczęściej na tylnych łapach.</p>
-                    <p class="cień pojecia"><b>Outback</b> – określenie rozległych, słabo zaludnionych, w przeważającej części pustynnych i półpustynnych obszarów w środkowej Australii.</p>
-                    <p class="cień pojecia"><b>Outsider (wyrzutek)</b> – osobnik pozostający na uboczu społeczeństwa, nieangażujący się bezpośrednio w bieżące sprawy.</p>
-                    <p class="cień pojecia"><b>Owulacja</b> – to kluczowy etap cyklu miesiączkowania. Organizm samicy uwolnił nową komórkę jajową, gotową do zapłodnienia w jajowodzie.</p>
-                    <p class="cień pojecia"><b>Partenogenetycznie</b> – odmiana rozmnażania traktowana najczęściej jako płciowa (z powodu udziału gamety) pomimo braku zapłodnienia, polegająca na rozwoju osobników potomnych z komórki jajowej bez udziału plemnika.</p>
-                    <p class="cień pojecia"><b>Patrylinearność</b> – społeczna zasada pokrewieństwa, zgodnie z którą młode samce jest włączane do stada.</p>
-                    <p class="cień pojecia"><b>Pestycydy</b> – syntetyczne lub naturalne substancje używane do zwalczania organizmów szkodliwych, lub niepożądanych, stosowane głównie do ochrony roślin uprawnych.</p>
-                    <p class="cień pojecia"><b>Piebaldyzm</b> – częściowy albinizm, jest chorobą dziedziczoną autosomalnie dominująco. Charakteryzuje się występowaniem wrodzonych plam bielaczych bezbarwnikowych.</p>
-                    <p class="cień pojecia"><b>Pieczołowitość</b> – opiekować się starannie kimś, czymś.</p>
-                    <p class="cień pojecia"><b>Pławić</b> – kąpać się w rzece, jeziorze itp.</p>
-                    <p class="cień pojecia"><b>Popas</b> – pastwisko, pasienie się zwierząt.</p>
-                    <p class="cień pojecia"><b>Poszycie leśne (runo leśne)</b> – najniższa, przyziemna warstwa roślin i grzybów w lesie, przykrywająca jego dno.</p>
-                    <p class="cień pojecia"><b>Pronking (scotting)</b> – to zachowanie czworonogów, zwłaszcza gazeli, w którym wyskakują one w powietrze, podnosząc jednocześnie wszystkie cztery nogi z&nbsp;ziemi. Zazwyczaj nogi utrzymywane są w stosunkowo sztywnej pozycji.</p>
-                    <p class="cień pojecia"><b>Przysadzisty</b> – inaczej krępki, niskiego wzrostu i grubokościstej budowy.</p>
-                    <p class="cień pojecia"><b>Recesywność</b> – niemożliwość zaobserwowania u danego osobnika obecności jednego z pary genów (alleli) z powodu znacznego wpływu lub dominacji genu allelu dominującego.</p>
-                    <p class="cień pojecia"><b>Refugium</b> – ostoja, miejsce schronienia gatunków podczas niekorzystnych dla nich zmian warunków środowiska, szczególnie klimatycznych.</p>
-                    <p class="cień pojecia"><b>Regurgitacja</b> – bierne przesunięcie treści pokarmowej z żołądka do przełyku, bez odruchu wymiotnego.</p>
-                    <p class="cień pojecia"><b>Reintrodukcja</b> – to ponowne wprowadzenie na stare miejsca bytowania rodzimych gatunków zwierząt i roślin, kiedyś tam żyjących, lecz wcześniej wytępionych.</p>
-                    <p class="cień pojecia"><b>Renderowanie (rendering)</b> – graficzne przedstawienie treści zapisanej cyfrowo w formie właściwej dla danego środowiska komputerowego.</p>
-                    <p class="cień pojecia"><b>Rewir</b> – terytorium osobnicze. Powierzchnia zajmowana jest przez osobnika, którą stale broni.</p>
-                    <p class="cień pojecia"><b>Roszczenie</b> – uprawnienie do żądania od określonej osoby określonego świadczenia lub zaniechania działania.</p>
-                    <p class="cień pojecia"><b>Rozgrywka (gameplay)</b> – materiał wideo prezentujący grę komputerową ukazujący jakiś konkretny fragment rozgrywki.</p>
-                    <p class="cień pojecia"><b>Ruja (cieczka)</b> – faza płodności samic w cyklu rozrodczym większości ssaków łożyskowych.</p>
-                    <p class="cień pojecia"><b>Rumowisko skalne (rumosz skalny)</b> – w geologii nagromadzenie powstałych w wyniku wietrzenia fizycznego okruchów i bloków skalnych, przyjmujących zazwyczaj kanciaste kształty.</p>
-                    <p class="cień pojecia"><b>Rykowisko</b> – okres godowy jeleni lub miejsce, gdzie się zbierają jelenie podczas okresu godowego.</p>
-                    <p class="cień pojecia"><b>Scrub</b> – australijska odmiana buszu.</p>
-                    <p class="cień pojecia"><b>Scypuł</b> – obumierająca, delikatna, ochronna warstwa skórna, porośnięta drobną sierścią, pokrywająca poroże jeleniowatych w okresie ich corocznego odbudowywania się i odpadająca z nich po czasie wzrostu.</p>
-                    <p class="cień pojecia"><b>Segment</b> – jedna z wielu powtarzających się części składowych.</p>
-                    <p class="cień pojecia"><b>Sfinalizować</b> – doprowadzić coś do końca.</p>
-                    <p class="cień pojecia"><b>Sierpówki</b> – potoczne określenie na pióra ogonowe u kogutów.</p>
-                    <p class="cień pojecia"><b>Siła pociągowa</b> – siła wytwarzana przez pojazd ciągnący (np. lokomotywę, ciągnik) lub zwierzę pociągowe pokonująca opór stawiany przez pojazd ciągniony.</p>
-                    <p class="cień pojecia"><b>Skondensować</b> – spowodować zagęszczenie czegoś lub nadać czemuś zwartą formę.</p>
-                    <p class="cień pojecia"><b>Spermatofor (plemniomieszek)</b> – wytwarzany przez samca u niektórych gatunków zwierząt pakiet plemników otoczonych osłonką, który przekazywany jest samicy podczas godów.</p>
-                    <p class="cień pojecia"><b>Splendor</b> – zewnętrzne oznaki świetności lub bogactwa.</p>
-                    <p class="cień pojecia"><b>Spółkować</b> – inaczej mieć stosunek płciowy.</p>
-                    <p class="cień pojecia"><b>Stadium embrionalne</b> – cykl ciąży, gdzie organizm zwierzęcy jest we wczesnym etapie rozwoju zwanym okresem zarodkowym.</p>
-                    <p class="cień pojecia"><b>Stekowce</b> – rząd prymitywnych ssaków charakteryzujących się jajorodnością.</p>
-                    <p class="cień pojecia"><b>Submiks (submix)</b> – pozwala na spięcie ze sobą kanałów tworzących pewną całość (np. sekcja rytmiczna w jednej grupie i sekcja melodyczna w&nbsp;drugiej), co daje więcej swobody w procesie miksowania materiału.</p>
-                    <p class="cień pojecia"><b>Subpopulacja</b> – grupa osobników w obrębie populacji, w której występują dodatkowe cechy.</p>
-                    <p class="cień pojecia"><b>Symbioza</b> – zjawisko ścisłego współżycia przynajmniej dwóch gatunków organizmów, które przynosi korzyść każdej ze stron lub jednej, a&nbsp;drugiej nie szkodzi.</p>
-                    <p class="cień pojecia"><b>Terapeny</b> – rodzaj żółwi z rodziny żółwi błotnych.</p>
-                    <p class="cień pojecia"><b>Tokowisko</b> – teren tzw. toków, czyli godów wielu gatunków ptaków. Termin ten czasem stosuje się na określenie okresu godowego tych ptaków.</p>
-                    <p class="cień pojecia"><b>Tors</b> – rzeźba/model przedstawiający tułów człowieka bez rąk, nóg, a czasem również bez głowy.</p>
-                    <p class="cień pojecia"><b>Trykać</b> – o baranie lub koźle: uderzać głową, rogami.</p>
-                    <p class="cień pojecia"><b>Ultrafiolet</b> – jest promieniowaniem krótkofalowym, niewidzialnym dla oka. Naturalnymi źródłami promieniowania są ciała o dostatecznie wysokiej temperaturze (słońce i&nbsp;różne gwiazdy).</p>
-                    <p class="cień pojecia"><b>Urbanizacja</b> – proces społeczny i kulturowy polegający na intensywnym rozwoju miast, wzroście ich liczby oraz powiększaniu się ich obszarów.</p>
-                    <p class="cień pojecia"><b>Wataha</b> – stado wilków (ogólnie psowatych) lub dzików.</p>
-                    <p class="cień pojecia"><b>Wibrysy</b> – włosy czuciowe występujące u ssaków.</p>
-                    <p class="cień pojecia"><b>Wokalizacja</b> – dźwięki wydawane przez zwierzęta, będące w większości wytworem aparatu głosowego.</p>
-                    <p class="cień pojecia"><b>Woreczek krtaniowy</b> – uchyłek kieszonki krtaniowej występujący u większości ssaków łożyskowych, w tym u wszystkich naczelnych.</p>
-                    <p class="cień pojecia"><b>Współbratymiec</b> – osobnik pochodzący z tej samej grupy społecznej co ktoś inny, którego łączy z kimś związek przyjaźni.</p>
-                    <p class="cień pojecia"><b>WWF (World Wide Fund for Nature)</b> – organizacja pozarządowa i ekologiczna o charakterze międzynarodowym.</p>
-                    <p class="cień pojecia"><b>Wyeksploatować</b> – wydobyć całkowicie bogactwa naturalne, wykorzystać coś maksymalnie.</p>
-                    <p class="cień pojecia"><b>Wytrzebić</b> – wykarczować rośliny lub pozabijać wszystkie zwierzęta na jakimś terenie.</p>
-                    <p class="cień pojecia"><b>Znaturalizować</b> – przyswoić obce zwyczaje, w wyniku którego gatunek obcy rozprzestrzenia się w nowym środowisku naturalnym i staje się gatunkiem utrwalonym.</p>
-                    <p class="cień pojecia"><b>Zwierzęta juczne</b> – zwierzęta hodowane nie tylko do celów produkcyjnych, lecz ze względu na siłę roboczą, której dostarczają.</p>
-                    <p class="cień pojecia"><b>Zwierzęta krepuskularne</b> – zwierzęta aktywne w porze zmierzchowej (tj. podczas świtu i zmierzchu).</p>
-                    <p class="cień pojecia"><b>Zwierzęta pedomorficzne</b> – dojrzałe zwierzęta, które zachowują wygląd osobników larwalnych.</p>
-                    <p class="cień pojecia"><b>Zygota</b> – komórka powstała w wyniku zapłodnienia, czyli połączenia gamety męskiej z gametą żeńską.</p>
-                    <p class="cień pojecia"><b>Żeremie</b> – konstrukcja ochronno-lęgowa budowana przez bobry.</p>
-                    <p class="cień pojecia"><b>Żerowisko</b> – określone miejsce w określonym czasie, w którym zwierzęta zdobywają składniki pokarmowe niezbędne do życia, do ich prawidłowego rozwoju czy rozmnażania.</p>
-                    <p class="cień pojecia"><b>Żyworodność</b> – rodzaj reprodukcji polegający na tym, że komórki jajowe zapładniane są w obrębie dróg rodnych samicy i przechowywane w&nbsp;obrębie jej układu rozrodczego, rozwój zarodkowy przebiega w organizmie matki, zarodek
-                        jest odżywiany za pośrednictwem łożyska lub funkcjonalnie podobnych struktur, zarodki wylęgają się przed opuszczeniem organizmu matki i przychodzą na świat zwykle w pełni ukształtowane.</p>
+                <article style=" margin-top: 1%;">
+                    <p class="cień pojecia" style="font-size: 1.6vw; text-align: center; margin: -0.5%;"><b>Inne pojęcia</b></p>
+                    <section id="literaA">
+                        <h2 class="litera-naglowek" style=" margin-top: -1.5%;">A</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Aberracja</b> – odchylenie od normalnego stanu, nieprawidłowość.</p>
+                            <p class="cień haslo"><b>Aborygeni</b> – rdzenni mieszkańcy Australii.</p>
+                            <p class="cień haslo"><b>Addytywność</b> – dodawanie, gromadzenie czegoś, będącym wynikiem sumowania składników.</p>
+                            <p class="cień haslo"><b>Albinizm</b> – brak pigmentu w skórze, tworach skórnych, włosach i tęczówce oka (czerwone oczy lub rzadziej niebieskawe) wynikające ze zmniejszonej zawartości melaniny. Osobnik posiadający tę cechę nosi miano albinosa.</p>
+                            <p class="cień haslo"><b>Allorodzicielstwo</b> – zastępcza opieka rodzicielska nad młodymi osobnikami, niebędącymi bezpośrednim potomstwem opiekuna lub opiekunów (członków grup społecznych stada).</p>
+                            <p class="cień haslo"><b>Areał osobniczy</b> – obszar patrolowany przez danego osobnika w związku z codziennym zdobywaniem pokarmu, kryjówką, czy też rozrodem.</p>
+                            <p class="cień haslo"><b>AZA (Association of Zoos and Aquariums)</b> – stowarzyszenie, którego celem jest wspieranie ogrodów zoologicznych i akwariów w zakresie ochrony środowiska, edukacji, nauki i rekreacji.</p>
+                        </div>
+                    </section>
+                    <section id="literaB">
+                        <h2 class="litera-naglowek">B</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Bezwiedny</b> – mimowolny, machinalny, nieświadomy, wykonany bez udziału świadomości.</p>
+                            <p class="cień haslo"><b>Biofluorescencja</b> – zjawisko występujące, kiedy zwierzęta pochłaniają krótkie fale światła, a same emitują dłuższe, co powoduje zmianę koloru ich futer.</p>
+                            <p class="cień haslo"><b>Brachiacja</b> – zwisowo-wahadłowy sposób poruszania się, polegający na rozhuśtywaniu ciała i wykonywaniu skoków lub przemieszczaniu się po gałęziach w&nbsp;pozycji zwisu (charakterystyczny dla gibbonów).</p>
+                            <p class="cień haslo"><b>Brodzić</b> – chodzić po czymś grząskim lub sypkim.</p>
+                            <p class="cień haslo"><b>Broszura</b> – cienka książka, nieoprawiona lub w miękkiej oprawie.</p>
+                            <p class="cień haslo"><b>Buhaj</b> – przeznaczony do rozpłodu samiec bydła domowego oraz żubra, bawołów i innych gatunków z rodziny wołowatych.</p>
+                        </div>
+                    </section>
+                    <section id="literaC">
+                        <h2 class="litera-naglowek">C</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Chmara</b> – wielka liczba czegoś (określenie na stado jeleni, łosi, żubrów lub danieli).</p>
+                            <p class="cień haslo"><b>Ciąża przedłużona</b> – chwilowe zahamowanie rozwoju zarodków, spotykany u kręgowców, prawdopodobnie jako ochrona przed drapieżnikami lub niesprzyjającymi warunkami środowiska naturalnego.</p>
+                            <p class="cień haslo"><b>Cria</b> – młoda lama lub alpaka.</p>
+                            <p class="cień haslo"><b>Czop</b> – zatyczka spłaszczonego błota występująca w żółwich gniazdach.</p>
+                        </div>
+                    </section>
+                    <section id="literaD">
+                        <h2 class="litera-naglowek">D</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Dane telemetryczne</b> – automatyczny proces zdalnego gromadzenia danych tworzonych przez systemy za pomocą agentów i protokołów, które obejmują wszystkie logi, metryki, zdarzenia i ślady tworzone przez aplikacje.</p>
+                            <p class="cień haslo"><b>Degradacja</b> – proces niszczenia środowiska i jego zasobów.</p>
+                            <p class="cień haslo"><b>Depresja wsobna</b> – zjawisko obserwowane często u potomstwa pochodzącego z kojarzeń osobników spokrewnionych i polegające na osłabieniu żywotności, odporności na choroby, częstszym występowaniu chorób genetycznych i wad
+                                rozwojowych.
+                            </p>
+                            <p class="cień haslo"><b>Detrytus</b> – drobnoszczątkowa, martwa materia organiczna, martwe szczątki roślin, zwierząt oraz ich odchodów występujące na powierzchni gleby, na dnie zbiorników wodnych lub unoszące się w toni wodnej.</p>
+                            <p class="cień haslo"><b>DNA (kwas deoksyrybonukleinowy)</b> – cząsteczka, zawierająca unikalną dla każdego gatunku, informację genetyczną, czyli przekazywaną dziedzicznie informację dotycząca struktury białek budujących organizm.</p>
+                            <p class="cień haslo"><b>Drapieżnik generalistyczny</b> – posiada szerokie spektrum pokarmowe lub występuje w wielu różnych siedliskach.</p>
+                            <p class="cień haslo"><b>Dymorfizm płciowy</b> – objawiający się różnicami w morfologii (wyglądzie) samicy i samca jednego gatunku.</p>
+                        </div>
+                    </section>
+                    <section id="literaE">
+                        <h2 class="litera-naglowek">E</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Ekspansja</b> – proces polegający na zwiększaniu objętości układu (rozprzestrzenianie się czegoś na jakimś obszarze).</p>
+                            <p class="cień haslo"><b>Ekstensywnie</b> – obszernie lub obficie ilościowo.</p>
+                            <p class="cień haslo"><b>Elektrolokacja</b> – wykorzystywanie informacji zdobytej z pomocą detekcji bodźców elektrycznych do orientowania się w otoczeniu.</p>
+                            <p class="cień haslo"><b>Emulować</b> – naśladować działanie podobnego systemu.</p>
+                            <p class="cień haslo"><b>Endemiczny</b> – występujący tylko na określonym obszarze.</p>
+                            <p class="cień haslo"><b>Eusocjalność</b> – najwyższa wśród zwierząt forma społeczności polegająca na tworzeniu trwałych, co najmniej dwupokoleniowych kolonii, w&nbsp;których rolę reproduktorek przejmuje tylko część samic, a pozostałe osobniki współdziałają
+                                w opiece nad ich potomstwem.</p>
+                            <p class="cień haslo"><b>Exploit</b> – program mający na celu wykorzystanie istniejących błędów w oprogramowaniu.</p>
+                        </div>
+                    </section>
+                    <section id="literaF">
+                        <h2 class="litera-naglowek">F</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Feromony (nazywane przekaźnikami podniecenia)</b> – to związki chemiczne i nie są świadomie postrzegane jako perfumy lub substancje zapachowe. Są wydzielane na zewnątrz ciała. Mogą być nieświadomie odebrane przez innego
+                                przedstawiciela tego samego gatunku, który zmieni swoje określone zachowanie.</p>
+                            <p class="cień haslo"><b>Fluktuacja</b> – nieregularna zmienność nasilenia przebiegu procesu lub zjawiska (występujący w pogodzie).</p>
+                            <p class="cień haslo"><b>Foley</b> – nagranie efektów dźwiękowych, które są tworzone, przechwytywane i dodawane do postprodukcji.</p>
+                            <p class="cień haslo"><b>Fragmentacja populacji</b> – to termin używany, aby opisać sytuację, gdy grupa zwierząt lub roślin dziko żyjących jest odseparowana od innych podobnych grup tego samego gatunku.</p>
+                        </div>
+                    </section>
+                    <section id="literaG">
+                        <h2 class="litera-naglowek">G</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Gawra</b> – zimowe legowisko niedźwiedzi, jaskinia w miejscu niedostępnym i ukrytym. Jest to też miejsce, w którym na świat przychodzą młode niedźwiedzie.</p>
+                            <p class="cień haslo"><b>Glacjał</b> – okres zlodowacenia obejmujący powstawanie i powiększanie się zasięgu lodowców.</p>
+                            <p class="cień haslo"><b>Gonady</b> – gruczoły płciowe, gruczoły rozrodcze zwierząt produkujące gamety.</p>
+                            <p class="cień haslo"><b>Grzebień zębowy</b> – występujący u lemurowatych, obejmujący grupę przednich zębów (4 siekacze i 2 kły) rozmieszczonych w taki sposób, która ułatwia pielęgnację. Podobny do grzebienia do włosów.</p>
+                            <p class="cień haslo"><b>Guano</b> – odchody ptaków morskich lub nietoperzy, eksploatowane są jako cenny nawóz naturalny.</p>
+                        </div>
+                    </section>
+                    <section id="literaH">
+                        <h2 class="litera-naglowek">H</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Harem</b> – wiele samic będących kochankami jakiegoś samca.</p>
+                            <p class="cień haslo"><b>Herbicydy</b> – środki ochrony roślin przeznaczone do zwalczania chwastów w roślinach uprawnych.</p>
+                            <p class="cień haslo"><b>Hermafrodytyzm (obojnactwo)</b> – zjawisko występowania w ciele jednego osobnika jednocześnie męskich oraz żeńskich gruczołów rozrodczych albo występowanie w&nbsp;jego ciele gruczołu obojnaczego wytwarzającego jaja i plemniki.</p>
+                            <p class="cień haslo"><b>Herpetologia</b> – dział zoologii badający płazy i gady.</p>
+                            <p class="cień haslo"><b>Hibernacja</b> – fizjologiczny stan organizmu, o charakterze przystosowawczym, polegający na wyłączeniu termoregulacji, znacznym spowolnieniu procesów życiowych i&nbsp;obniżeniu temperatury ciała, zwiększający tolerancję
+                                organizmu wobec niesprzyjających warunków środowiskowych.</p>
+                            <p class="cień haslo"><b>Hierarchia</b> – społeczna przewaga pojedynczych osobników nad innymi, oparta na dominacji.</p>
+                            <p class="cień haslo"><b>Hipermaskulinizm</b> – występowanie u samic cech męskich, a także zmian zewnętrznych narządów płciowych w wyniku zaburzenia hormonalnego.</p>
+                            <p class="cień haslo"><b>Hipis</b> – członek ugrupowania młodzieżowego, odznaczający się specyficznym wyglądem, aktywnego głównie w USA na przełomie lat 60. i 70., głoszącego potrzebę miłości i wszechświatowego pokoju, występującego przeciw społeczeństwu
+                                konsumpcyjnemu.
+                            </p>
+                            <p class="cień haslo"><b>Horda</b> – duża grupa zwierząt posiadająca hierarchię koczująca na określonym terenie.</p>
+                            <p class="cień haslo"><b>Hybrydyzacja</b> – proces, w wyniku którego z komórek (zwykle gamet) osobników o odmiennym genotypie, w istotny sposób różniących się pewnymi cechami genetycznymi, powstaje organizm potomny, zwany mieszańcem (też hybrydą
+                                lub krzyżówką).</p>
+                            <p class="cień haslo"><b>Hypoderma (hipoderma)</b> – warstwy komórek znajdujące się bezpośrednio pod skórką w łodygach lub liściach, ochraniające wnętrze organu przed wpływami środowiska zewnętrznego rośliny.</p>
+                        </div>
+                    </section>
+                    <section id="literaI">
+                        <h2 class="litera-naglowek">I</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Idylliczny</b> – inaczej beztroski, cichy, sielankowy itd.</p>
+                            <p class="cień haslo"><b>Implantacja</b> – to moment, w którym zapłodniona komórka jajowa znajduje bezpieczne miejsce w błonie śluzowej macicy.</p>
+                            <p class="cień haslo"><b>Inkubacja</b> – wylęganie się piskląt/młodych zwierząt z jaj.</p>
+                            <p class="cień haslo"><b>IUCN (International Union for Conservation of Nature)</b> – organizacja międzynarodowa zajmująca się ochroną przyrody, publikująca międzynarodową Czerwoną Księgę zawierającą listę gatunków roślin i zwierząt zagrożonych wyginięciem.</p>
+                        </div>
+                    </section>
+                    <section id="literaK">
+                        <h2 class="litera-naglowek">K</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Kalejdoskop</b> – urządzenie optyczne, w którym dzięki wielokrotnym odbiciom obrazów różnokolorowych szkiełek, w odpowiednio rozmieszczonych zwierciadłach, obserwuje się różnobarwne, symetryczne figury, zmieniające się przy
+                                obracaniu.
+                            </p>
+                            <p class="cień haslo"><b>Kantyczka</b> – popularna pieśń religijna.</p>
+                            <p class="cień haslo"><b>Kanwa</b> – tkanina lniana lub konopna, z grubych, usztywnianych nici o regularnym, rzadkim splocie.</p>
+                            <p class="cień haslo"><b>Karapaks</b> – inaczej pancerz, który jest określeniem twardej powierzchni ciała (zwykle górnej części ciała) wykształcającej się u różnych grup zwierząt takich jak stawonogi (pajęczaki, skorupiaki) oraz niektóre kręgowce
+                                (żółwie).
+                            </p>
+                            <p class="cień haslo"><b>Kloaka</b> – końcowa, rozszerzona część jelita występująca u prawie wszystkich kręgowców poza zrosłogłowymi i ssakami łożyskowymi oraz częścią ryb promieniopłetwych.</p>
+                            <p class="cień haslo"><b>Koegzystencja</b> – jednoczesne, wzajemnie niewykluczające się istnienie, tolerowanie się.</p>
+                            <p class="cień haslo"><b>Komponent</b> – składowa część pewnej całości.</p>
+                            <p class="cień haslo"><b>Komuna</b> – świadoma wspólnota osobników żyjących razem, dzielących wspólne interesy, często posiadających wspólne wartości i&nbsp;przekonania.</p>
+                            <p class="cień haslo"><b>Konwent</b> – zjazd fanów, społeczności w celach integracyjnych lub spotkania.</p>
+                            <p class="cień haslo"><b>Kość gnykowa</b> – nieparzysta kość trzewioczaszki niemająca połączenia z innymi kośćmi w obrębie szyi.</p>
+                            <p class="cień haslo"><b>Koteria</b> – grupa wzajemnie się popierających osobników, działających wspólnie w celu osiągnięcia własnych korzyści.</p>
+                            <p class="cień haslo"><b>Kreatyna</b> – substancja naturalnie występująca w komórkach mięśniowych.</p>
+                        </div>
+                    </section>
+                    <section id="literaL">
+                        <h2 class="litera-naglowek">L</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Latryna (wychodek)</b> – rodzaj toalety, w której odchody zbierają się w dole wykopanym w ziemi.</p>
+                            <p class="cień haslo"><b>Letarg</b> – stan pozornej śmierci, polegający na głębokim śnie, w którym zanikają reakcje na bodźce.</p>
+                            <p class="cień haslo"><b>Leucyzm</b> – choroba charakteryzująca się częściowym lub całkowitym brakiem obydwu rodzajów melaniny. U osobników leucystycznych niedobory barwnika są symetryczne (na całym ciele).</p>
+                            <p class="cień haslo"><b>Linienie</b> – proces okresowego zrzucania zewnętrznych warstw ciała – naskórka, oskórka, pancerza, piór lub włosów – u niektórych zwierząt.</p>
+                        </div>
+                    </section>
+                    <section id="literaŁ">
+                        <h2 class="litera-naglowek">Ł</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Łajno</b> – odchody zwierzęce.</p>
+                        </div>
+                    </section>
+                    <section id="literaM">
+                        <h2 class="litera-naglowek">M</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Maksyma</b> – zwięźle sformułowana myśl filozoficzna lub etyczna zawierająca pewną zasadę postępowania.</p>
+                            <p class="cień haslo"><b>Matriarchat</b> – hierarchiczny ustrój społeczny, w którym władzę sprawują samice.</p>
+                            <p class="cień haslo"><b>Matrylinearność</b> – społeczna zasada pokrewieństwa, zgodnie z którą młode samice jest włączane do stada.</p>
+                            <p class="cień haslo"><b>Melanizm</b> – brunatne lub czarne zabarwienie skóry lub jej wytworów wynikające ze zwiększonej zawartości melaniny.</p>
+                            <p class="cień haslo"><b>Migracja</b> – sezonowe i regularne przemieszczanie się zwierząt na różne odległości.</p>
+                            <p class="cień haslo"><b>Miot</b> – potomstwo ssaków pochodzące z jednej ciąży.</p>
+                            <p class="cień haslo"><b>Monit</b> – urzędowe, pisemne przypomnienie o konieczności wywiązania się z zaległych zobowiązań.</p>
+                            <p class="cień haslo"><b>Morillo</b> – specjalny gruczoł zapachowy pyska występujący u kapibar.</p>
+                        </div>
+                    </section>
+                    <section id="literaN">
+                        <h2 class="litera-naglowek">N</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Nogogłaszczki (szczękonóżki)</b> – druga para przysadek głowotułowia, tj. odnóży pajęczaków, położona bezpośrednio za otworem gębowym.</p>
+                            <p class="cień haslo"><b>Nomadowie</b> – członek pasterskiego lub łowieckiego ludu prowadzącego koczowniczy tryb życia, głównie w Azji, Afryce i Australii.</p>
+                        </div>
+                    </section>
+                    <section id="literaO">
+                        <h2 class="litera-naglowek">O</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Odruch flehmen</b> – polega na podwijaniu górnej wargi i uniesieniu nozdrzy ku górze, poprzez silne wygięcie szyi.</p>
+                            <p class="cień haslo"><b>Odsadzać</b> – przestawać karmić młode mlekiem.</p>
+                            <p class="cień haslo"><b>Oko ciemieniowe</b> – trzecie oko, występujące u niektórych grup zwierząt, zwłaszcza prymitywnych gadów.</p>
+                            <p class="cień haslo"><b>Orka (rolnictwo)</b> – uprawa odwracająca wykonywana pługami, mająca na celu odwrócenie i pokruszenie uprawianej warstwy ziemi.</p>
+                            <p class="cień haslo"><b>Osmeterium</b> – narząd obronny występujący we wszystkich larwach pazi (motyli) we wszystkich stadiach, emitujący związki zapachowe uważane za feromony.</p>
+                            <p class="cień haslo"><b>Otrząsać się</b> – pozbywać się nadmiaru wody z sierci.</p>
+                            <p class="cień haslo"><b>Ostroga</b> – wyrostek kostny pokryty osłonką rogową, występujący w różnych miejscach anatomicznych u niektórych zwierząt, które tworzą się najczęściej najczęściej na tylnych łapach.</p>
+                            <p class="cień haslo"><b>Outback</b> – określenie rozległych, słabo zaludnionych, w przeważającej części pustynnych i półpustynnych obszarów w środkowej Australii.</p>
+                            <p class="cień haslo"><b>Outsider (wyrzutek)</b> – osobnik pozostający na uboczu społeczeństwa, nieangażujący się bezpośrednio w bieżące sprawy.</p>
+                            <p class="cień haslo"><b>Owulacja</b> – to kluczowy etap cyklu miesiączkowania. Organizm samicy uwolnił nową komórkę jajową, gotową do zapłodnienia w jajowodzie.</p>
+                        </div>
+                    </section>
+                    <section id="literaP">
+                        <h2 class="litera-naglowek">P</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Partenogenetycznie</b> – odmiana rozmnażania traktowana najczęściej jako płciowa (z powodu udziału gamety) pomimo braku zapłodnienia, polegająca na rozwoju osobników potomnych z komórki jajowej bez udziału plemnika.</p>
+                            <p class="cień haslo"><b>Patrylinearność</b> – społeczna zasada pokrewieństwa, zgodnie z którą młode samce jest włączane do stada.</p>
+                            <p class="cień haslo"><b>Pestycydy</b> – syntetyczne lub naturalne substancje używane do zwalczania organizmów szkodliwych, lub niepożądanych, stosowane głównie do ochrony roślin uprawnych.</p>
+                            <p class="cień haslo"><b>Piebaldyzm</b> – częściowy albinizm, jest chorobą dziedziczoną autosomalnie dominująco. Charakteryzuje się występowaniem wrodzonych plam bielaczych bezbarwnikowych.</p>
+                            <p class="cień haslo"><b>Pieczołowitość</b> – opiekować się starannie kimś, czymś.</p>
+                            <p class="cień haslo"><b>Pławić</b> – kąpać się w rzece, jeziorze itp.</p>
+                            <p class="cień haslo"><b>Popas</b> – pastwisko, pasienie się zwierząt.</p>
+                            <p class="cień haslo"><b>Poszycie leśne (runo leśne)</b> – najniższa, przyziemna warstwa roślin i grzybów w lesie, przykrywająca jego dno.</p>
+                            <p class="cień haslo"><b>Pronking (scotting)</b> – to zachowanie czworonogów, zwłaszcza gazeli, w którym wyskakują one w powietrze, podnosząc jednocześnie wszystkie cztery nogi z&nbsp;ziemi. Zazwyczaj nogi utrzymywane są w stosunkowo sztywnej pozycji.</p>
+                            <p class="cień haslo"><b>Przysadzisty</b> – inaczej krępki, niskiego wzrostu i grubokościstej budowy.</p>
+                        </div>
+                    </section>
+                    <section id="literaR">
+                        <h2 class="litera-naglowek">R</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Recesywność</b> – niemożliwość zaobserwowania u danego osobnika obecności jednego z pary genów (alleli) z powodu znacznego wpływu lub dominacji genu allelu dominującego.</p>
+                            <p class="cień haslo"><b>Refugium</b> – ostoja, miejsce schronienia gatunków podczas niekorzystnych dla nich zmian warunków środowiska, szczególnie klimatycznych.</p>
+                            <p class="cień haslo"><b>Regurgitacja</b> – bierne przesunięcie treści pokarmowej z żołądka do przełyku, bez odruchu wymiotnego.</p>
+                            <p class="cień haslo"><b>Reintrodukcja</b> – to ponowne wprowadzenie na stare miejsca bytowania rodzimych gatunków zwierząt i roślin, kiedyś tam żyjących, lecz wcześniej wytępionych.</p>
+                            <p class="cień haslo"><b>Renderowanie (rendering)</b> – graficzne przedstawienie treści zapisanej cyfrowo w formie właściwej dla danego środowiska komputerowego.</p>
+                            <p class="cień haslo"><b>Rewir</b> – terytorium osobnicze. Powierzchnia zajmowana jest przez osobnika, którą stale broni.</p>
+                            <p class="cień haslo"><b>Roszczenie</b> – uprawnienie do żądania od określonej osoby określonego świadczenia lub zaniechania działania.</p>
+                            <p class="cień haslo"><b>Rozgrywka (gameplay)</b> – materiał wideo prezentujący grę komputerową ukazujący jakiś konkretny fragment rozgrywki.</p>
+                            <p class="cień haslo"><b>Ruja (cieczka)</b> – faza płodności samic w cyklu rozrodczym większości ssaków łożyskowych.</p>
+                            <p class="cień haslo"><b>Rumowisko skalne (rumosz skalny)</b> – w geologii nagromadzenie powstałych w wyniku wietrzenia fizycznego okruchów i bloków skalnych, przyjmujących zazwyczaj kanciaste kształty.</p>
+                            <p class="cień haslo"><b>Rykowisko</b> – okres godowy jeleni lub miejsce, gdzie się zbierają jelenie podczas okresu godowego.</p>
+                        </div>
+                    </section>
+                    <section id="literaS">
+                        <h2 class="litera-naglowek">S</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Scrub</b> – australijska odmiana buszu.</p>
+                            <p class="cień haslo"><b>Scypuł</b> – obumierająca, delikatna, ochronna warstwa skórna, porośnięta drobną sierścią, pokrywająca poroże jeleniowatych w okresie ich corocznego odbudowywania się i odpadająca z nich po czasie wzrostu.</p>
+                            <p class="cień haslo"><b>Segment</b> – jedna z wielu powtarzających się części składowych.</p>
+                            <p class="cień haslo"><b>Sfinalizować</b> – doprowadzić coś do końca.</p>
+                            <p class="cień haslo"><b>Sierpówki</b> – potoczne określenie na pióra ogonowe u kogutów.</p>
+                            <p class="cień haslo"><b>Siła pociągowa</b> – siła wytwarzana przez pojazd ciągnący (np. lokomotywę, ciągnik) lub zwierzę pociągowe pokonująca opór stawiany przez pojazd ciągniony.</p>
+                            <p class="cień haslo"><b>Skondensować</b> – spowodować zagęszczenie czegoś lub nadać czemuś zwartą formę.</p>
+                            <p class="cień haslo"><b>Spermatofor (plemniomieszek)</b> – wytwarzany przez samca u niektórych gatunków zwierząt pakiet plemników otoczonych osłonką, który przekazywany jest samicy podczas godów.</p>
+                            <p class="cień haslo"><b>Splendor</b> – zewnętrzne oznaki świetności lub bogactwa.</p>
+                            <p class="cień haslo"><b>Spółkować</b> – inaczej mieć stosunek płciowy.</p>
+                            <p class="cień haslo"><b>Stadium embrionalne</b> – cykl ciąży, gdzie organizm zwierzęcy jest we wczesnym etapie rozwoju zwanym okresem zarodkowym.</p>
+                            <p class="cień haslo"><b>Stekowce</b> – rząd prymitywnych ssaków charakteryzujących się jajorodnością.</p>
+                            <p class="cień haslo"><b>Submiks (submix)</b> – pozwala na spięcie ze sobą kanałów tworzących pewną całość (np. sekcja rytmiczna w jednej grupie i sekcja melodyczna w&nbsp;drugiej), co daje więcej swobody w procesie miksowania materiału.</p>
+                            <p class="cień haslo"><b>Subpopulacja</b> – grupa osobników w obrębie populacji, w której występują dodatkowe cechy.</p>
+                            <p class="cień haslo"><b>Symbioza</b> – zjawisko ścisłego współżycia przynajmniej dwóch gatunków organizmów, które przynosi korzyść każdej ze stron lub jednej, a&nbsp;drugiej nie szkodzi.</p>
+                        </div>
+                    </section>
+                    <section id="literaT">
+                        <h2 class="litera-naglowek">T</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Terapeny</b> – rodzaj żółwi z rodziny żółwi błotnych.</p>
+                            <p class="cień haslo"><b>Tokowisko</b> – teren tzw. toków, czyli godów wielu gatunków ptaków. Termin ten czasem stosuje się na określenie okresu godowego tych ptaków.</p>
+                            <p class="cień haslo"><b>Tors</b> – rzeźba/model przedstawiający tułów człowieka bez rąk, nóg, a czasem również bez głowy.</p>
+                            <p class="cień haslo"><b>Trykać</b> – o baranie lub koźle: uderzać głową, rogami.</p>
+                        </div>
+                    </section>
+                    <section id="literaU">
+                        <h2 class="litera-naglowek">U</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Ultrafiolet</b> – jest promieniowaniem krótkofalowym, niewidzialnym dla oka. Naturalnymi źródłami promieniowania są ciała o dostatecznie wysokiej temperaturze (słońce i&nbsp;różne gwiazdy).</p>
+                            <p class="cień haslo"><b>Urbanizacja</b> – proces społeczny i kulturowy polegający na intensywnym rozwoju miast, wzroście ich liczby oraz powiększaniu się ich obszarów.</p>
+                        </div>
+                    </section>
+                    <section id="literaW">
+                        <h2 class="litera-naglowek">W</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Wataha</b> – stado wilków (ogólnie psowatych) lub dzików.</p>
+                            <p class="cień haslo"><b>Wibrysy</b> – włosy czuciowe występujące u ssaków.</p>
+                            <p class="cień haslo"><b>Wokalizacja</b> – dźwięki wydawane przez zwierzęta, będące w większości wytworem aparatu głosowego.</p>
+                            <p class="cień haslo"><b>Woreczek krtaniowy</b> – uchyłek kieszonki krtaniowej występujący u większości ssaków łożyskowych, w tym u wszystkich naczelnych.</p>
+                            <p class="cień haslo"><b>Współbratymiec</b> – osobnik pochodzący z tej samej grupy społecznej co ktoś inny, którego łączy z kimś związek przyjaźni.</p>
+                            <p class="cień haslo"><b>WWF (World Wide Fund for Nature)</b> – organizacja pozarządowa i ekologiczna o charakterze międzynarodowym.</p>
+                            <p class="cień haslo"><b>Wyeksploatować</b> – wydobyć całkowicie bogactwa naturalne, wykorzystać coś maksymalnie.</p>
+                            <p class="cień haslo"><b>Wytrzebić</b> – wykarczować rośliny lub pozabijać wszystkie zwierzęta na jakimś terenie.</p>
+                        </div>
+                    </section>
+                    <section id="literaZ">
+                        <h2 class="litera-naglowek">Z</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Znaturalizować</b> – przyswoić obce zwyczaje, w wyniku którego gatunek obcy rozprzestrzenia się w nowym środowisku naturalnym i staje się gatunkiem utrwalonym.</p>
+                            <p class="cień haslo"><b>Zwierzęta juczne</b> – zwierzęta hodowane nie tylko do celów produkcyjnych, lecz ze względu na siłę roboczą, której dostarczają.</p>
+                            <p class="cień haslo"><b>Zwierzęta krepuskularne</b> – zwierzęta aktywne w porze zmierzchowej (tj. podczas świtu i zmierzchu).</p>
+                            <p class="cień haslo"><b>Zwierzęta pedomorficzne</b> – dojrzałe zwierzęta, które zachowują wygląd osobników larwalnych.</p>
+                            <p class="cień haslo"><b>Zygota</b> – komórka powstała w wyniku zapłodnienia, czyli połączenia gamety męskiej z gametą żeńską.</p>
+                        </div>
+                    </section>
+                    <section id="literaŻ">
+                        <h2 class="litera-naglowek">Ż</h2>
+                        <div class="hasla">
+                            <p class="cień haslo"><b>Żeremie</b> – konstrukcja ochronno-lęgowa budowana przez bobry.</p>
+                            <p class="cień haslo"><b>Żerowisko</b> – określone miejsce w określonym czasie, w którym zwierzęta zdobywają składniki pokarmowe niezbędne do życia, do ich prawidłowego rozwoju czy rozmnażania.</p>
+                            <p class="cień haslo"><b>Żyworodność</b> – rodzaj reprodukcji polegający na tym, że komórki jajowe zapładniane są w obrębie dróg rodnych samicy i przechowywane w&nbsp;obrębie jej układu rozrodczego, rozwój zarodkowy przebiega w organizmie matki,
+                                zarodek jest odżywiany za pośrednictwem łożyska lub funkcjonalnie podobnych struktur, zarodki wylęgają się przed opuszczeniem organizmu matki i przychodzą na świat zwykle w pełni ukształtowane.</p>
+                        </div>
+                    </section><br>
+                    <div class="filter-no-item" style="display: none;">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit; font-size: 1.2vw;"><i>Przepraszamy, ale nie wyszukano żadnego słowa...</i></font>
+                        </font>
+                    </div><br>
                 </article>
             </div>
         </div>
     </div>
+
     <footer>
         <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z Planet Zoo!</h2>
         <center>
@@ -292,20 +646,50 @@
     </footer>
     <script>
         const searchInput = document.querySelector("input[name='szukaj']");
-        const searchP = document.querySelector("p");
-        const p = [...document.querySelectorAll("article p")];
-        const article = document.querySelector("article");
-        const searchWord = e => {
-            const currentWord = e.target.value.toUpperCase();
-            let result = p;
-            result = result.filter(p => p.textContent.toUpperCase().includes(currentWord));
-            article.textContent = '';
-            result.forEach(name => article.appendChild(name));
-        }
-        searchInput.addEventListener('input', searchWord);
+        const sections = document.querySelectorAll("section");
+        const filterNoItem = document.querySelector('.filter-no-item');
+
+        searchInput.addEventListener("input", () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            let anyVisibleOverall = false;
+
+            sections.forEach(section => {
+                const hasla = section.querySelectorAll(".haslo");
+                let anyVisible = false;
+
+                hasla.forEach(haslo => {
+                    const bElem = haslo.querySelector("b");
+                    const word = bElem ? bElem.textContent.toLowerCase() : "";
+
+                    if (word.includes(searchTerm)) {
+                        haslo.style.display = "block";
+                        anyVisible = true;
+                        anyVisibleOverall = true;
+                    } else {
+                        haslo.style.display = "none";
+                    }
+                });
+
+                // Pokaż sekcję tylko jeśli ma widoczne hasła
+                section.style.display = anyVisible ? "block" : "none";
+            });
+
+            if (searchTerm === "") {
+                // Jeśli pusty input, pokaż wszystko
+                sections.forEach(section => {
+                    section.style.display = "block";
+                    section.querySelectorAll(".haslo").forEach(haslo => {
+                        haslo.style.display = "block";
+                    });
+                });
+                filterNoItem.style.display = "none";
+            } else {
+                // Jeśli nic nie znaleziono, pokaż komunikat
+                filterNoItem.style.display = anyVisibleOverall ? "none" : "block";
+            }
+        });
 
         $(function() {
-
             $(window).scroll(function() {
                 if ($(window).scrollTop() > 1000) {
                     $('.scrollTopButton').addClass('show');
@@ -321,8 +705,18 @@
             });
         });
     </script>
+
     <span class="scrollTopButton" onclick="scrollToTop()"></span>
     <script src="spacje.js"></script>
+    <script>
+        function toggleFilter() {
+            const filterPanel = document.getElementById('filterPanel');
+            const filterButton = document.querySelector('.filter-button');
+            filterPanel.classList.toggle('show');
+            filterButton.classList.toggle('open');
+        }
+    </script>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const wersja = localStorage.getItem("wybor_wersji");
