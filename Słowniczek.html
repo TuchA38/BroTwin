@@ -662,7 +662,7 @@
                     const bElem = haslo.querySelector("b");
                     const word = bElem ? bElem.textContent.toLowerCase() : "";
 
-                    if (word.includes(searchTerm)) {
+                    if (word.startsWith(searchTerm)) {
                         haslo.style.display = "block";
                         anyVisible = true;
                         anyVisibleOverall = true;
