@@ -690,25 +690,39 @@
                 filterNoItem.style.display = anyVisibleOverall ? "none" : "block";
             }
         });
+    </script>
+
+    <div class="scrollDoubleArrow">
+        <div class="arrow up" onclick="scrollToTop()"></div>
+        <div class="arrow down" onclick="scrollToBottom()"></div>
+    </div>
+    <script>
+        function scrollToTop() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+        }
+
+        function scrollToBottom() {
+            $('html, body').animate({
+                scrollTop: $(document).height()
+            }, 500);
+        }
 
         $(function() {
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 1000) {
-                    $('.scrollTopButton').addClass('show');
-                } else {
-                    $('.scrollTopButton').removeClass('show');
-                }
-            });
+            $(window).on('scroll', function() {
+                const scrollTop = $(window).scrollTop();
+                const windowHeight = $(window).height();
+                const docHeight = $(document).height();
 
-            $('.scrollTopButton').click(function() {
-                $('body').animate({
-                    scrollTop: 0
-                }, 500, 'linear');
+                if (scrollTop > 600 || scrollTop + windowHeight < docHeight - 300) {
+                    $('.scrollDoubleArrow').addClass('show');
+                } else {
+                    $('.scrollDoubleArrow').removeClass('show');
+                }
             });
         });
     </script>
-
-    <span class="scrollTopButton" onclick="scrollToTop()"></span>
     <script src="spacje.js"></script>
     <script>
         function toggleFilter() {

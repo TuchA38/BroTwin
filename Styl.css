@@ -393,6 +393,50 @@ input[type=radio]:checked+label {
     opacity: 50%;
 }
 
+.scrollDoubleArrow {
+    position: fixed;
+    right: 1.5vw;
+    bottom: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.scrollDoubleArrow.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.arrow {
+    width: 1.3vw;
+    height: 1.3vw;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.arrow::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 1.2vw solid transparent;
+    border-right: 1.2vw solid transparent;
+    border-bottom: 1.2vw solid white;
+}
+
+.arrow.down::before {
+    transform: rotate(180deg);
+    border-bottom-color: white;
+}
+
+.arrow:hover {
+    opacity: 0.6;
+}
+
 body {
     background: linear-gradient(#118d64, #0b6144);
 }
@@ -469,7 +513,7 @@ td.muzyka {
 }
 
 #zdjecie {
-    width: 32%;
+    width: 24%;
     float: left;
     margin: 0.5%;
 }
@@ -735,7 +779,7 @@ iframe {
 .podpis {
     width: 98%;
     text-align: center;
-    font-size: 1.6vw;
+    font-size: 1.2vw;
     color: white;
 }
 
