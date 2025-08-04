@@ -126,26 +126,21 @@
                 </div>
                 <div style="clear: both;"></div>
                 <hr>
-                <div style="margin-left: 1vw;">
+                <div style="margin-left: 1vw;" class="gallery" data-gallery-id="1">
                     <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Galeria zdjęć</i></p>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/1.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/1.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 1"></a>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/2.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/2.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 2"></a>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/3.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/3.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 3"></a>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/4.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/4.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 4"></a>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/5.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/5.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 5"></a>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/6.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/6.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 6"></a>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/7.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/7.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 7"></a>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/8.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/8.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 8"></a>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/9.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/9.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 9"></a>
-                    <a class="gallery" href="Galeria zdjęć z aktualizacji/Konsola/10.jpg"><img class="galeria" src="Galeria zdjęć z aktualizacji/Konsola/10.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 10"></a>
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/1.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 1">
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/2.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 2">
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/3.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 3">
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/4.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 4">
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/5.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 5">
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/6.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 6">
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/7.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 7">
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/8.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 8">
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/9.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 9">
+                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Konsola/10.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 10">
                 </div>
                 <script src="comp.js"></script>
-                <script src="gallery.js"></script>
-                <script>
-                    (function($) {
-                        $(".gallery").gallery();
-                    })(Comp);
-                </script>
+                <script src="galeria.js"></script>
                 <div style="clear: both;"></div>
                 <hr>
                 <center>
@@ -167,23 +162,6 @@
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </footer>
     <script>
-        $(function() {
-
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 1000) {
-                    $('.scrollTopButton').addClass('show');
-                } else {
-                    $('.scrollTopButton').removeClass('show');
-                }
-            });
-
-            $('.scrollTopButton').click(function() {
-                $('body').animate({
-                    scrollTop: 0
-                }, 500, 'linear');
-            });
-        });
-
         function otworzPopup() {
             document.getElementById('popup').style.display = 'block';
         }
@@ -218,7 +196,35 @@
         // (opcjonalnie) możesz zostawić ten zapis aktywacji, ale już nie jest konieczny:
         // sessionStorage.setItem('session_active', '1');
     </script>
-    <span class="scrollTopButton" onclick="scrollToTop()"></span>
+    <div class="scrollDoubleArrow">
+        <div class="arrow up" onclick="scrollToTop()"></div>
+        <div class="arrow down" onclick="scrollToBottom()"></div>
+    </div>
+    <script>
+        function scrollToTop() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+        }
+
+        function scrollToBottom() {
+            $('html, body').animate({
+                scrollTop: $(document).height()
+            }, 1000);
+        }
+
+        $(function() {
+            $(window).on('scroll', function() {
+                const scrollTop = $(window).scrollTop();
+
+                if (scrollTop > 600) {
+                    $('.scrollDoubleArrow').addClass('show');
+                } else {
+                    $('.scrollDoubleArrow').removeClass('show');
+                }
+            });
+        });
+    </script>
     <script src="spacje.js"></script>
 </body>
 

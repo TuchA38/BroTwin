@@ -2512,23 +2512,6 @@
         }
     </script>
     <script>
-        $(function() {
-
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 1000) {
-                    $('.scrollTopButton').addClass('show');
-                } else {
-                    $('.scrollTopButton').removeClass('show');
-                }
-            });
-
-            $('.scrollTopButton').click(function() {
-                $('body').animate({
-                    scrollTop: 0
-                }, 500, 'linear');
-            });
-        });
-
         function otworzPopup() {
             document.getElementById('popup').style.display = 'block';
         }
@@ -2563,7 +2546,35 @@
         // (opcjonalnie) możesz zostawić ten zapis aktywacji, ale już nie jest konieczny:
         // sessionStorage.setItem('session_active', '1');
     </script>
-    <span class="scrollTopButton" onclick="scrollToTop()"></span>
+    <div class="scrollDoubleArrow">
+        <div class="arrow up" onclick="scrollToTop()"></div>
+        <div class="arrow down" onclick="scrollToBottom()"></div>
+    </div>
+    <script>
+        function scrollToTop() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000);
+        }
+
+        function scrollToBottom() {
+            $('html, body').animate({
+                scrollTop: $(document).height()
+            }, 1000);
+        }
+
+        $(function() {
+            $(window).on('scroll', function() {
+                const scrollTop = $(window).scrollTop();
+
+                if (scrollTop > 600) {
+                    $('.scrollDoubleArrow').addClass('show');
+                } else {
+                    $('.scrollDoubleArrow').removeClass('show');
+                }
+            });
+        });
+    </script>
     <script src="spacje.js"></script>
 </body>
 

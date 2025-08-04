@@ -146,6 +146,148 @@ body {
     /* To rozciąga zawartość, aby wypełnić dostępną przestrzeń */
 }
 
+
+/* Lightbox tło z fade + scale */
+
+#lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: none;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+
+/* Aktywna klasa do animacji otwarcia */
+
+#lightbox-overlay.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#lightbox-overlay.hiding {
+    opacity: 0;
+    transform: scale(0.95);
+}
+
+
+/* Zdjęcie z efektem przesunięcia */
+
+#lightbox-image {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    position: relative;
+}
+
+#lightbox-image.enter-left {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+#lightbox-image.enter-right {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+
+/* Klasa aktywna dla zdjęcia */
+
+#lightbox-image.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* Opis */
+
+#lightbox-caption {
+    color: #eee;
+    margin-top: 1vw;
+    font-size: 1.1vw;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+
+/* Strzałki + przycisk zamykania */
+
+.lightbox-nav,
+.lightbox-close {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5vw;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10000;
+    user-select: none;
+    opacity: 0.7;
+    transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.lightbox-close {
+    padding: 0.5vw 1.8vw;
+}
+
+.lightbox-nav {
+    padding: 0.5vw 2vw;
+}
+
+.lightbox-nav:hover,
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+}
+
+#lightbox-image {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.5);
+    border-radius: 1vw;
+}
+
+#lightbox-prev {
+    left: 2vw;
+}
+
+#lightbox-next {
+    right: 2vw;
+}
+
+#lightbox-close {
+    top: 2vw;
+    right: 2.5vw;
+    transform: none;
+}
+
+
+/* Mobile optymalizacja */
+
+@media (max-width: 600px) {
+    #lightbox-caption {
+        font-size: 1.2vw;
+        padding: 0 1vw;
+    }
+    .lightbox-nav,
+    .lightbox-close {
+        font-size: 1.5vw;
+    }
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -400,7 +542,7 @@ input[type=radio]:checked+label {
     display: flex;
     flex-direction: column;
     gap: 1.8vw;
-    z-index: 9999;
+    z-index: 9998;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s ease, visibility 0.4s ease;
@@ -949,6 +1091,7 @@ td.zoopedia {
     background-color: white;
     transition: all 0.3s ease-in-out;
     transition: .5s ease-out .1s;
+    cursor: pointer;
 }
 
 .compsoul-gallery-mask {
