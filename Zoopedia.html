@@ -2606,23 +2606,6 @@
         }
 
         contentFilter('#demo1', 'inclusive'); // Inicjalizacja funkcji filtrowania z parametrami: unikalny id wrappera, typ filtra (inclusive/exclusive)
-
-
-        function wybierzWersje(wersja) {
-            // Zapisujemy wybór do localStorage
-            localStorage.setItem('wybor_wersji', wersja);
-            sessionStorage.setItem('session_active', '1'); // zaznaczamy, że sesja trwa
-
-            if (wersja === 'pc') {
-                window.location.href = 'Strona główna.html';
-            } else if (wersja === 'console') {
-                window.location.href = 'Strona główna - konsola.html';
-            }
-        }
-
-        // Sprawdzanie wersji
-        const wyborWersji = localStorage.getItem('wybor_wersji');
-        const sesjaAktywna = sessionStorage.getItem('session_active');
     </script>
     <div class="scrollDoubleArrow">
         <div class="arrow up" onclick="scrollToTop()"></div>
@@ -2644,10 +2627,8 @@
         $(function() {
             $(window).on('scroll', function() {
                 const scrollTop = $(window).scrollTop();
-                const windowHeight = $(window).height();
-                const docHeight = $(document).height();
 
-                if (scrollTop > 600 || scrollTop + windowHeight < docHeight - 300) {
+                if (scrollTop > 600) {
                     $('.scrollDoubleArrow').addClass('show');
                 } else {
                     $('.scrollDoubleArrow').removeClass('show');

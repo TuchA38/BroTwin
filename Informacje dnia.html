@@ -15,7 +15,6 @@
     <link rel="preload" href="Ikony/Frontier_logo.png" as="image">
     <link rel="preload" href="Ikony/logo twitter.png" as="image">
     <link rel="preload" href="Ikony/logo youtube.png" as="image">
-    <link rel="preload" href="Ikony/scrollup.png" as="image">
     <style>
         @media only screen and (max-width: 600px) {
             #informacja {
@@ -417,30 +416,6 @@
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </footer>
     <script>
-        $(function() {
-
-            $(window).scroll(function() {
-                if ($(window).scrollTop() > 1000) {
-                    $('.scrollTopButton').addClass('show');
-                } else {
-                    $('.scrollTopButton').removeClass('show');
-                }
-            });
-
-            $('.scrollTopButton').click(function() {
-                $('body').animate({
-                    scrollTop: 0
-                }, 500, 'linear');
-            });
-        });
-
-        function scrollToTop() {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 800);
-            return false;
-        }
-
         function zegar() {
             var data = new Date();
             var godzina = data.getHours();
@@ -1175,7 +1150,36 @@
             return poniedzialekWielkanocny;
         }
     </script>
-    <span class="scrollTopButton" onclick="scrollToTop()"></span>
+    <div class="scrollDoubleArrow">
+        <div class="arrow up" onclick="scrollToTop()"></div>
+        <div class="arrow down" onclick="scrollToBottom()"></div>
+    </div>
+    <script>
+        function scrollToTop() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+        }
+
+        function scrollToBottom() {
+            $('html, body').animate({
+                scrollTop: $(document).height()
+            }, 500);
+        }
+
+        $(function() {
+            $(window).on('scroll', function() {
+                const scrollTop = $(window).scrollTop();
+
+                if (scrollTop > 600) {
+                    $('.scrollDoubleArrow').addClass('show');
+                } else {
+                    $('.scrollDoubleArrow').removeClass('show');
+                }
+            });
+        });
+    </script>
+
     <script src="spacje.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {

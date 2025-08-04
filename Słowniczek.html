@@ -712,10 +712,8 @@
         $(function() {
             $(window).on('scroll', function() {
                 const scrollTop = $(window).scrollTop();
-                const windowHeight = $(window).height();
-                const docHeight = $(document).height();
 
-                if (scrollTop > 600 || scrollTop + windowHeight < docHeight - 300) {
+                if (scrollTop > 600) {
                     $('.scrollDoubleArrow').addClass('show');
                 } else {
                     $('.scrollDoubleArrow').removeClass('show');
@@ -723,7 +721,6 @@
             });
         });
     </script>
-    <script src="spacje.js"></script>
     <script>
         function toggleFilter() {
             const filterPanel = document.getElementById('filterPanel');
@@ -735,6 +732,38 @@
 
     <script src="spacje.js"></script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const wersja = localStorage.getItem("wybor_wersji");
+
+            // Mapa linków zależnych od wersji
+            const linkiWersje = {
+                "Strona główna": {
+                    pc: "Strona główna.html",
+                    console: "Strona główna - konsola.html"
+                },
+                "Aktualizacje": {
+                    pc: "Aktualizacje.html",
+                    console: "Aktualizacje - konsola.html"
+                },
+                "DLC": {
+                    pc: "DLC.html",
+                    console: "DLC - konsola.html"
+                }
+                // dodaj inne zależne linki jeśli potrzeba
+            };
+
+            // Przejdź przez wszystkie <a> w menu
+            document.querySelectorAll("header a").forEach(link => {
+                const tekst = link.textContent.trim();
+
+                if (linkiWersje[tekst] && wersja) {
+                    // Podmień href tylko jeśli mamy dopasowanie i wersję
+                    link.href = linkiWersje[tekst][wersja];
+                }
+            });
+        });
+    </script>
 
 </body>
 

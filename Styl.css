@@ -395,11 +395,11 @@ input[type=radio]:checked+label {
 
 .scrollDoubleArrow {
     position: fixed;
-    right: 1.5vw;
+    right: 2.4vw;
     bottom: 2vw;
     display: flex;
     flex-direction: column;
-    gap: 1.5vw;
+    gap: 1.8vw;
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
@@ -423,9 +423,9 @@ input[type=radio]:checked+label {
     display: inline-block;
     width: 0;
     height: 0;
-    border-left: 1.2vw solid transparent;
-    border-right: 1.2vw solid transparent;
-    border-bottom: 1.2vw solid white;
+    border-left: 1.6vw solid transparent;
+    border-right: 1.6vw solid transparent;
+    border-bottom: 1.8vw solid white;
 }
 
 .arrow.down::before {
