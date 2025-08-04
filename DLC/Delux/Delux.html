@@ -414,10 +414,10 @@
                 <hr>
                 <div>
                     <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Galeria zdjęć</i></p>
-                    <div style="margin-left: 1vw;">
-                        <a class="gallery" href="1.jpg"><img class="galeria" src="1.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 1"></a>
-                        <a class="gallery" href="2.jpg"><img class="galeria" src="2.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 1"></a>
-                        <a class="gallery" href="3.jpg"><img class="galeria" src="3.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 1"></a>
+                    <div style="margin-left: 1vw;" class="gallery" data-gallery-id="1">
+                        <img class="gallery-image galeria" src="1.jpg" data-caption="Waran z Komodo" style="width: 32%; text-align: center;" alt="zdjęcie 1"></a>
+                        <img class="gallery-image galeria" src="2.jpg" data-caption="Hipopotamek karłowaty" style="width: 32%; text-align: center;" alt="zdjęcie 1"></a>
+                        <img class="gallery-image galeria" src="3.jpg" data-caption="Gazelopka sawannowa" style="width: 32%; text-align: center;" alt="zdjęcie 1"></a>
                     </div>
                 </div>
                 <div style="clear: both;"></div>
@@ -487,12 +487,12 @@
                     <b style="font-size: 1.4vw; margin-top: -1vw;">Zestaw tapet</b><br> Piękne grafiki z gry Planet Zoo, które idealnie sprawdzą się jako tło pulpitu.</div>
                 <div>
                     <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Tapety na pulpit od Planet Zoo</i></p>
-                    <div style="margin-left: 1vw;">
-                        <a class="gallery" href="PZ_Deluxe_wallpapers1.jpg"><img class="galeria" src="PZ_Deluxe_wallpapers1.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 1"></a>
-                        <a class="gallery" href="PZ_Deluxe_wallpapers2.jpg"><img class="galeria" src="PZ_Deluxe_wallpapers2.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 2"></a>
-                        <a class="gallery" href="PZ_Deluxe_wallpapers3.jpg"><img class="galeria" src="PZ_Deluxe_wallpapers3.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 3"></a>
-                        <a class="gallery" href="PZ_Deluxe_wallpapers4.jpg"><img class="galeria" src="PZ_Deluxe_wallpapers4.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 4"></a>
-                        <a class="gallery" href="PZ_Deluxe_wallpapers5.jpg"><img class="galeria" src="PZ_Deluxe_wallpapers5.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 5"></a>
+                    <div style="margin-left: 1vw;" class="gallery" data-gallery-id="2">
+                        <img class="gallery-image galeria" src="PZ_Deluxe_wallpapers1.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 1">
+                        <img class="gallery-image galeria" src="PZ_Deluxe_wallpapers2.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 2">
+                        <img class="gallery-image galeria" src="PZ_Deluxe_wallpapers3.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 3">
+                        <img class="gallery-image galeria" src="PZ_Deluxe_wallpapers4.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 4">
+                        <img class="gallery-image galeria" src="PZ_Deluxe_wallpapers5.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 5">
                     </div>
                 </div>
             </div>
@@ -509,12 +509,7 @@
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </footer>
     <script src="../../comp.js"></script>
-    <script src="../../gallery.js"></script>
-    <script>
-        (function($) {
-            $(".gallery").gallery();
-        })(Comp);
-    </script>
+    <script src="../../galeria.js"></script>
     <script>
         let allMusic6 = [{
             name: "Ty, ja i reszta zwierząt",
