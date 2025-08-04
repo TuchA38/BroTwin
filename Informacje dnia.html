@@ -1158,20 +1158,20 @@
         function scrollToTop() {
             $('html, body').animate({
                 scrollTop: 0
-            }, 500);
+            }, 1000);
         }
 
         function scrollToBottom() {
             $('html, body').animate({
                 scrollTop: $(document).height()
-            }, 500);
+            }, 1000);
         }
 
         $(function() {
             $(window).on('scroll', function() {
                 const scrollTop = $(window).scrollTop();
 
-                if (scrollTop > 600) {
+                if (scrollTop > 300) {
                     $('.scrollDoubleArrow').addClass('show');
                 } else {
                     $('.scrollDoubleArrow').removeClass('show');
