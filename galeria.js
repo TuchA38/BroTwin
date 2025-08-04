@@ -12,8 +12,8 @@ document.body.appendChild(overlay);
 const lightboxImage = document.getElementById('lightbox-image');
 const lightboxCaption = document.getElementById('lightbox-caption');
 const closeBtn = document.getElementById('lightbox-close');
-const prevBtn = document.getElementById('lightbox-prev');
-const nextBtn = document.getElementById('lightbox-next');
+const preveBtn = document.getElementById('lightbox-prev');
+const nexteBtn = document.getElementById('lightbox-next');
 
 let currentIndex = 0;
 let currentGalleryImages = [];
@@ -67,11 +67,11 @@ document.querySelectorAll('.gallery-image').forEach(img => {
 });
 
 // Nawigacja
-prevBtn.addEventListener('click', () => {
+preveBtn.addEventListener('click', () => {
     const newIndex = (currentIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
     showImage(newIndex, 'left');
 });
-nextBtn.addEventListener('click', () => {
+nexteBtn.addEventListener('click', () => {
     const newIndex = (currentIndex + 1) % currentGalleryImages.length;
     showImage(newIndex, 'right');
 });
@@ -84,6 +84,6 @@ overlay.addEventListener('click', e => {
 document.addEventListener('keydown', e => {
     if (!overlay.classList.contains('show')) return;
     if (e.key === 'Escape') hideOverlay();
-    if (e.key === 'ArrowRight') nextBtn.click();
-    if (e.key === 'ArrowLeft') prevBtn.click();
+    if (e.key === 'ArrowRight') nexteBtn.click();
+    if (e.key === 'ArrowLeft') preveBtn.click();
 });
