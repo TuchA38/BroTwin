@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // 3) Pojedyncze litery (spójnikowe) oraz cyfry — nie mogą zostać na końcu wiersza:
             //    przykłady: "a kot" -> "a&nbsp;kot", "5 psów" -> "5&nbsp;psów"
             //    uwaga: regex dopasowuje literę/liczbę + zwykła spacja (nie dopasuje już nbsp)
-            text = text.replace(/(\b[awziouAWZIOU]|[0-9])\s/g, '$1\u00A0');
-
+            text = text.replace(/(?<=\s)([awziouAWZIOU])\s/g, '$1\u00A0');
+            text = text.replace(/([0-9])\s/g, '$1\u00A0');
             // Zapisz zmieniony tekst
             node.nodeValue = text;
 
