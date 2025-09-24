@@ -60,6 +60,157 @@
         span.keeptogether {
             white-space: nowrap;
         }
+        
+        .zalacznik {
+            background: linear-gradient(90deg, #3bedbd, #3bedbd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        #powrot a {
+            background: linear-gradient(90deg, #4cffcf, #4cffcf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        .tytul br {
+            display: none;
+            /* na desktopie ukryty */
+        }
+    </style>
+    <style>
+        /* --- Twoje obecne style zostają --- */
+        /* ✅ Ulepszenia dla telefonów */
+        
+        @media (max-width: 400px) {
+            body {
+                /* czytelniejsze podstawowe fonty */
+                line-height: 1.5;
+            }
+            header.tytul {
+                font-size: 6vw;
+                /* większy i wyraźniejszy nagłówek */
+                padding: 10px;
+                text-align: center;
+            }
+            .tytul br {
+                display: inline;
+                /* na telefonie działa enter */
+            }
+            #powrot {
+                display: block !important;
+                width: 100% !important;
+                margin: 3% 0 !important;
+                padding: 0 !important;
+                float: none !important;
+            }
+            #powrot>a,
+            #powrot>i {
+                display: block !important;
+                width: 100% !important;
+                margin: 0.4rem 0 !important;
+                text-decoration: none !important;
+                line-height: 1.2 !important;
+            }
+            /* ✅ pierwszy powrot – link do DLC */
+            p#powrot:nth-of-type(1) {
+                text-align: left !important;
+            }
+            p#powrot:nth-of-type(1)>a {
+                font-size: 4vw !important;
+                font-weight: 600 !important;
+                text-align: left !important;
+            }
+            /* ✅ drugi powrot – data i cena */
+            p#powrot:nth-of-type(2) {
+                text-align: center !important;
+            }
+            p#powrot:nth-of-type(2)>i {
+                font-size: 3.2vw !important;
+                text-align: center !important;
+            }
+            iframe {
+                width: 100% !important;
+                min-width: unset !important;
+                height: 53.5vw !important;
+                /* proporcja 16:9 */
+            }
+            .akapit {
+                font-size: 4vw !important;
+                padding: 0 4%;
+            }
+            .akapit span {
+                font-size: 3.5vw !important;
+            }
+            .akapit p,
+            div p {
+                font-size: 4vw !important;
+            }
+            .akapit b {
+                font-size: 3.7vw !important;
+            }
+            .podpis_filmu {
+                font-size: 2.5vw !important;
+            }
+            /* ✅ Galeria — zdjęcia w 2 kolumnach zamiast 3 */
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery img {
+                width: 100% !important;
+                border-radius: 8px;
+            }
+            /* ✅ Opisy zdjęć w galerii */
+            #lightbox-caption {
+                font-size: 3vw !important;
+                /* powiększony tekst */
+                line-height: 1.4 !important;
+                /* luźniejszy odstęp między liniami */
+                padding: 6px 10px !important;
+                /* więcej przestrzeni */
+                text-align: center !important;
+                color: #fff !important;
+                background: rgba(0, 0, 0, 0.6);
+                /* półprzezroczyste tło dla czytelności */
+                border-radius: 6px;
+                max-width: 90%;
+                margin: 5px auto;
+                display: block;
+            }
+            footer h2 {
+                font-size: 4vw;
+            }
+            img.stopka {
+                width: 30% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer p {
+                font-size: 2.2vw;
+            }
+        }
     </style>
     <link rel="preload" href="../../Ikony/Steam_logo.png" as="image">
 </head>
@@ -68,7 +219,7 @@
     <div class="content">
         <div class="cień">
             <div style="animation: fadeIn ease-in .5s backwards;">
-                <header class="tytul"><i>Planet Zoo: Wetlands Animal Pack</i></header>
+                <header class="tytul"><i>Planet Zoo:<br>Wetlands Animal Pack</i></header>
                 <div style="clear: both;"></div>
                 <p id="powrot" style="margin: 0%; margin-top: 1%;">
                     <a href="../../DLC.html#Wetlands_Animal_Pack" class="powrot"><b>◄ Wróć do DLC</b></a>
@@ -77,7 +228,8 @@
                     <i><b>Data wydania</b>: 12 kwietnia 2022<br><b>Cena pakietu</b>: 35.99 zł</i>
                 </p>
                 <div style="clear: both;"></div>
-                <center><iframe style="width: 80%; min-width: 78vw; height: auto; min-height: 44vw; margin-top: 1%;" src='https://www.youtube.com/embed/J_dBUxA2NBk?rel=0&loop=1&playlist=J_dBUxA2NBk;rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0' frameborder='0'></iframe>
+                <center><iframe style="width: 80%; min-width: 78vw; height: auto; min-height: 44vw; margin-top: 1%;" src='https://www.youtube.com/embed/J_dBUxA2NBk?rel=0&loop=1&playlist=J_dBUxA2NBk;rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0' frameborder='0'
+                        allowfullscreen></iframe>
                     <h4 class="podpis_filmu cień" style="margin-top: -0.6vw;"><i>Oficjalny zwiastun DLC Wetlands Animal Pack</i></h4>
                 </center>
 
@@ -134,6 +286,7 @@
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </footer>
     <script src="../../comp.js"></script>
+    <script src="../../spacje.js"></script>
     <script src="../../galeria.js"></script>
 </body>
 
