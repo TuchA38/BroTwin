@@ -116,3 +116,21 @@ overlay.addEventListener('touchend', e => {
     touchEndX = e.changedTouches[0].screenX;
     handleGesture();
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const caption = document.getElementById("lightbox-caption");
+
+    if (caption) {
+        const observer = new MutationObserver(() => {
+            if (caption.textContent.trim() === "") {
+                caption.style.background = "none";
+                caption.style.padding = "0";
+            } else {
+                caption.style.background = "rgba(0,0,0,0.6)";
+                caption.style.padding = "6px 10px";
+            }
+        });
+
+        observer.observe(caption, { childList: true, subtree: true, characterData: true });
+    }
+});
