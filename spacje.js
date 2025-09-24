@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             //    zmieni " wyraz - wyraz "  lub " wyraz – wyraz " lub " wyraz — wyraz "
             //    na " wyraz&nbsp;-&nbsp;wyraz " (zachowuje oryginalny znak myślnika)
             text = text.replace(/(\s)([-\u2013\u2014])(\s)/g, '\u00A0$2\u00A0');
+            text = text.replace(/(\w)-(\w)/g, '$1\u2011$2');
 
             // 3) Pojedyncze litery (spójnikowe) oraz cyfry — nie mogą zostać na końcu wiersza:
             //    przykłady: "a kot" -> "a&nbsp;kot", "5 psów" -> "5&nbsp;psów"
