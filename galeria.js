@@ -87,3 +87,32 @@ document.addEventListener('keydown', e => {
     if (e.key === 'ArrowRight') nexteBtn.click();
     if (e.key === 'ArrowLeft') preveBtn.click();
 });
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleGesture() {
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (Math.abs(swipeDistance) > 50) { // minimalna długość "swipe"
+        if (swipeDistance < 0) {
+            // przesunięcie w lewo -> następne zdjęcie
+            const newIndex = (currentIndex + 1) % currentGalleryImages.length;
+            showImage(newIndex, 'right');
+        } else {
+            // przesunięcie w prawo -> poprzednie zdjęcie
+            const newIndex = (currentIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+            showImage(newIndex, 'left');
+        }
+    }
+}
+
+// Nasłuch gestów dotyku
+overlay.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+overlay.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleGesture();
+});

@@ -579,6 +579,13 @@ input[type=radio]:checked+label {
     opacity: 0.6;
 }
 
+@media (max-width: 768px) {
+    .lightbox-nav,
+    .lightbox-close {
+        display: none !important;
+    }
+}
+
 body {
     background: linear-gradient(#118d64, #0b6144);
 }
