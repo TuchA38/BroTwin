@@ -667,6 +667,30 @@
                 font-size: 3.2vw !important;
             }
         }
+        
+        .close-icon {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            color: #fff;
+            /* biały */
+            cursor: pointer;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+        
+        .close-icon:hover {
+            transform: scale(1.2);
+            /* powiększenie przy hoverze */
+            color: #fff;
+            /* zostaje biały, ale możesz dodać np. lekki cień */
+            text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+        }
+        
+        .akapit {
+            position: relative;
+            /* żeby ikonka była względem kontenera */
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -674,6 +698,8 @@
 <body onselectstart="return false;">
     <div style="animation: fadeIn ease-in .3s backwards;">
         <div class="akapit cień">
+            <!-- Ikona zamykania -->
+            <i class="fa-solid fa-xmark close-icon" onclick="parent.togglePlayer()"></i>
 
             <center>
                 <img style="width: 5.5%; margin-top: 2%;" class="ikona_loga" src="Ikony/nuty.png" alt="Nuty">
@@ -681,7 +707,6 @@
             <h1 class="tytul cień" style="margin-top: -0.5%;">Muzyka</h1>
             <p class="cień opis" style="margin-top: -0.5%;"><i>Witaj w zbiorze Muzyki Planet Zoo!<br> Życzymy miłego słuchania!</i>
             </p>
-
         </div>
         <div class="container" style="margin-top: 1vw;">
             <div class="wrapper" style="animation: fadeIn ease-in .5s backwards; margin-left: 30%;">
@@ -2731,6 +2756,15 @@
             }
         }
 
+        function updateParent(title, isPlaying) {
+            window.parent.postMessage({
+                type: "songUpdate",
+                title: title,
+                isPlaying: isPlaying
+            }, "*");
+        }
+
+
         // play music function
         function playMusic() {
             wrapper.classList.add("paused");
@@ -2738,6 +2772,8 @@
             playPauseIcon.classList.remove("fa-play");
             playPauseIcon.classList.add("fa-pause");
             mainAudio.play();
+            updateParent(musicName.innerText, !mainAudio.paused);
+
         }
 
         function pauseMusic() {
@@ -2746,8 +2782,18 @@
             playPauseIcon.classList.remove("fa-pause");
             playPauseIcon.classList.add("fa-play");
             mainAudio.pause();
+            updateParent(musicName.innerText, !mainAudio.paused);
+
         }
 
+        function playPauseMusic() {
+            const isMusicPaused = wrapper.classList.contains("paused");
+            if (isMusicPaused) {
+                pauseMusic();
+            } else {
+                playMusic();
+            }
+        }
 
         //prev music function
         function prevMusic() {
@@ -2759,6 +2805,8 @@
             loadMusic(musicIndex, currentAlbum.musicList);
             playMusic();
             playingSong();
+            updateParent(musicName.innerText, !mainAudio.paused);
+
         }
 
         //next music function
@@ -2771,6 +2819,8 @@
             loadMusic(musicIndex, currentAlbum.musicList);
             playMusic();
             playingSong();
+            updateParent(musicName.innerText, !mainAudio.paused);
+
         }
 
         // play or pause button event
@@ -2779,16 +2829,22 @@
             //if isPlayMusic is true then call pauseMusic else call playMusic
             isMusicPlay ? pauseMusic() : playMusic();
             playingSong();
+            updateParent(musicName.innerText, !mainAudio.paused);
+
         });
 
         //prev music button event
         prevBtn.addEventListener("click", () => {
             prevMusic();
+            updateParent(musicName.innerText, !mainAudio.paused);
+
         });
 
         //next music button event
         nextBtn.addEventListener("click", () => {
             nextMusic();
+            updateParent(musicName.innerText, !mainAudio.paused);
+
         });
 
         // update progress bar width according to music current time
@@ -2948,6 +3004,7 @@
                 }
 
                 allLiTag[j].setAttribute("onclick", "clicked(this)");
+                updateParent(musicName.innerText, !mainAudio.paused);
             }
         }
 
@@ -2958,6 +3015,7 @@
             loadMusic(musicIndex, currentAlbum.musicList); // Przekazujemy tablicę utworów z aktualnego albumu
             playMusic();
             playingSong();
+            updateParent(musicName.innerText, !mainAudio.paused);
         }
 
         // zamykanie listy po kliknięciu gdziekolwiek poza nią

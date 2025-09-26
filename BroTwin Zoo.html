@@ -69,6 +69,7 @@
             color: white;
             border: none;
             border-radius: 50%;
+            opacity: 90%;
             /* okrągły kształt */
             width: 60px;
             height: 60px;
@@ -84,6 +85,7 @@
         
         #player-toggle button:hover {
             transform: scale(1.1);
+            opacity: 100%;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
         }
         
@@ -129,6 +131,99 @@
                 width: 280px;
                 height: 70px;
             }
+            #mini-player {
+                bottom: 27px !important;
+                left: 64px !important;
+            }
+        }
+        
+        #mini-player {
+            background: #0a5c3f;
+            position: fixed;
+            opacity: 90%;
+            bottom: 32px;
+            left: 75px;
+            color: white;
+            font-size: 14px;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            max-width: 240px;
+            padding: 6px 10px;
+            border-radius: 10px;
+            backdrop-filter: blur(6px);
+            overflow: hidden;
+            white-space: nowrap;
+            transition: max-width 0.3s ease, padding 0.3s ease;
+            z-index: 9997;
+        }
+        
+        #mini-track {
+            overflow: hidden;
+            flex: 1;
+            min-width: 130px;
+            opacity: 80%;
+            text-shadow: black 0.1em 0.1em 0.2em;
+        }
+        
+        #mini-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scrollText 12s linear infinite;
+        }
+        
+        @keyframes scrollText {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        
+        #mini-controls button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        
+        #mini-controls button:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            /* delikatne powiększenie */
+        }
+        /* gdy zwinięte → tylko strzałka */
+        
+        #mini-player.collapsed {
+            max-width: 45px;
+            padding: 6px;
+            gap: 0;
+        }
+        
+        #mini-track,
+        #mini-controls {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+        
+        #mini-player.collapsed #mini-track,
+        #mini-player.collapsed #mini-controls {
+            display: none;
+            /* chowamy tekst i kontrolki */
+        }
+        
+        #mini-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
         }
     </style>
     <script>
@@ -177,6 +272,20 @@
             <i class="fas fa-music"></i>
         </button>
     </div>
+    <div id="mini-player" class="collapsed">
+        <div id="mini-track">
+            <span id="mini-text">Brak utworu</span>
+        </div>
+        <div id="mini-controls">
+            <button onclick="parentPrevTrack()"><i class="fas fa-backward-step"></i></button>
+            <button onclick="parentTogglePlayPause()"><i class="fas fa-play"></i></button>
+            <button onclick="parentNextTrack()"><i class="fas fa-forward-step"></i></button>
+        </div>
+        <button id="mini-toggle" onclick="toggleMiniPlayer()">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
 
 
     <iframe src="Strona główna.html" id="content-frame"></iframe>
@@ -201,6 +310,21 @@
         function togglePlayer() {
             if (player.classList.contains('open')) closePlayer();
             else openPlayer();
+        }
+
+        function toggleMiniPlayer() {
+            const mini = document.getElementById("mini-player");
+            const toggleBtn = document.getElementById("mini-toggle").querySelector("i");
+
+            mini.classList.toggle("collapsed");
+
+            if (mini.classList.contains("collapsed")) {
+                toggleBtn.classList.remove("fa-chevron-left");
+                toggleBtn.classList.add("fa-chevron-right");
+            } else {
+                toggleBtn.classList.remove("fa-chevron-right");
+                toggleBtn.classList.add("fa-chevron-left");
+            }
         }
 
         // Zapobiegaj propagacji kliknięć wewnątrz modala — dzięki temu kliknięcia w player nie zamkną go
@@ -513,7 +637,79 @@
                 }
             }
         }
+
+        window.addEventListener("message", (ev) => {
+            if (ev.data.type === "songUpdate") {
+                document.getElementById("mini-text").textContent =
+                    ev.data.title;
+
+                const btnIcon = document.querySelector("#mini-controls button:nth-child(2) i");
+                if (ev.data.isPlaying) {
+                    btnIcon.classList.remove("fa-play");
+                    btnIcon.classList.add("fa-pause");
+                } else {
+                    btnIcon.classList.remove("fa-pause");
+                    btnIcon.classList.add("fa-play");
+                }
+            }
+        });
+
+        function parentTogglePlayPause() {
+            document.getElementById("player-frame").contentWindow
+                .postMessage({
+                    type: "togglePlayPause"
+                }, "*");
+        }
+
+        function parentNextTrack() {
+            document.getElementById("player-frame").contentWindow
+                .postMessage({
+                    type: "nextTrack"
+                }, "*");
+        }
+
+        function parentPrevTrack() {
+            document.getElementById("player-frame").contentWindow
+                .postMessage({
+                    type: "prevTrack"
+                }, "*");
+        }
     </script>
+    <script>
+        function parentPrevTrack() {
+            try {
+                const musicFrame = document.getElementById("player-frame").contentWindow;
+                if (musicFrame && typeof musicFrame.prevMusic === "function") {
+                    musicFrame.prevMusic(); // tak jak przycisk #prev w Muzyka.html
+                }
+            } catch (err) {
+                console.warn("Prev track error:", err);
+            }
+        }
+
+        function parentNextTrack() {
+            try {
+                const musicFrame = document.getElementById("player-frame").contentWindow;
+                if (musicFrame && typeof musicFrame.nextMusic === "function") {
+                    musicFrame.nextMusic(); // tak jak przycisk #next w Muzyka.html
+                }
+            } catch (err) {
+                console.warn("Next track error:", err);
+            }
+        }
+
+        function parentTogglePlayPause() {
+            try {
+                const musicFrame = document.getElementById("player-frame").contentWindow;
+                if (musicFrame && typeof musicFrame.playPauseMusic === "function") {
+                    musicFrame.playPauseMusic();
+                }
+            } catch (err) {
+                console.warn("Play/pause error:", err);
+            }
+        }
+    </script>
+
 
 </body>
 
