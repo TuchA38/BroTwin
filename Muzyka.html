@@ -2494,65 +2494,48 @@
             }
         }
         // JavaScript
-        // cache na albumy
-        let loadedAlbums = {};
+        const audioCache = {};
 
         function playAlbum(albumName, element) {
             console.log("Wybrany album:", albumName);
             const selectedAlbum = albums.find(album => album.name === albumName);
 
             if (selectedAlbum) {
-                // jeśli ten album był już załadowany i jest obecny w currentAlbum → nic nie rób
-                if (currentAlbum && currentAlbum.name === albumName && loadedAlbums[albumName]) {
-                    console.log(`Album "${albumName}" już załadowany – pomijam ponowne wczytywanie.`);
-                    return;
-                }
-
-                currentAlbum = selectedAlbum; // Aktualizacja zmiennej currentAlbum
-                loadedAlbums[albumName] = selectedAlbum.musicList; // zapisanie do cache
+                currentAlbum = selectedAlbum;
 
                 console.log("Lista utworów w wybranym albumie:", selectedAlbum.musicList);
 
-                loadMusicList(selectedAlbum.musicList); // Przed ustawieniem tytułu albumu, wczytaj listę utworów
+                loadMusicList(selectedAlbum.musicList);
                 applyStylesForAlbum(albumName);
-                loadMusic(1, selectedAlbum.musicList); // Odtwarzaj pierwszy utwór po zmianie albumu
+                loadMusic(1, selectedAlbum.musicList);
                 playMusic();
 
-                // Usuń klasę "selected" z innych elementów <li> w tej samej liście
+                // zaznaczenie w sidebarze
                 const sidebarItems = document.querySelectorAll('.sidebar li span');
-                sidebarItems.forEach(item => {
-                    item.classList.remove('selected');
-                });
-
-                // Dodaj klasę "selected" do klikniętego elementu <li>
+                sidebarItems.forEach(item => item.classList.remove('selected'));
                 element.classList.add('selected');
 
-                // Aktualizacja tytułu aktualnego albumu
-                const topBar = document.querySelector('.top-bar span');
-                topBar.textContent = albumName;
+                // tytuł w topbar
+                document.querySelector('.top-bar span').textContent = albumName;
 
-                // Aktualizacja pierwszego utworu na liście utworów
+                // podświetlenie pierwszego utworu
                 const firstMusicListItem = document.querySelector('.music-list ul li:first-child');
                 const allMusicListItems = document.querySelectorAll('.music-list ul li');
-                allMusicListItems.forEach(item => {
-                    item.classList.remove('playing');
-                });
+                allMusicListItems.forEach(item => item.classList.remove('playing'));
                 if (firstMusicListItem) {
                     firstMusicListItem.classList.add('playing');
                 }
 
-                // Przywrócenie animacji przejścia
+                // animacja
                 const wrapper = document.querySelector('.wrapper');
                 wrapper.style.animation = "fadeIn ease-in 0.6s backwards";
-
-                // Usunięcie animacji po zakończeniu
-                setTimeout(() => {
-                    wrapper.style.animation = "none";
-                }, 600);
+                setTimeout(() => wrapper.style.animation = "none", 600);
             } else {
                 console.error(`Album "${albumName}" nie został znaleziony.`);
             }
         }
+
+
         // Zmienna przechowująca aktualnie wybrany album
         let currentAlbum = null;
 
@@ -2658,38 +2641,67 @@
 
         function loadMusicList(musicArray) {
             const ulTag = wrapper.querySelector("ul");
-            ulTag.innerHTML = ""; // Wyczyść listę, aby dodać nowe utwory
+            ulTag.innerHTML = "";
 
             musicArray.forEach((music, index) => {
                 let liTag = `<li li-index="${index + 1}">
-                    <div class="row">
-                      <span>${music.name}</span>
-                      <p>${music.artist}</p>
-                    </div>
-                    <span id="${music.src}" class="audio-duration">${index === 0 ? '' : ''}</span>
-                  </li>`;
+            <div class="row">
+              <span>${music.name}</span>
+              <p>${music.artist}</p>
+            </div>
+            <span id="${music.src}" class="audio-duration"></span>
+          </li>`;
                 ulTag.insertAdjacentHTML("beforeend", liTag);
 
-                const audioElement = document.createElement('audio');
-                audioElement.src = `Muzyka/utwory/${music.src}.mp3`;
-                audioElement.setAttribute('preload', 'auto');
-                audioElement.style.display = 'none'; // Ukrywamy element audio
+                const liAudioDurationTag = ulTag.querySelector(`#${music.src}`);
 
-                ulTag.appendChild(audioElement);
+                // jeśli nie ma w cache → twórz audio
+                if (!audioCache[music.src]) {
+                    const audioElement = document.createElement('audio');
+                    audioElement.src = `Muzyka/utwory/${music.src}.mp3`;
+                    audioElement.setAttribute('preload', 'auto');
+                    audioElement.style.display = 'none';
+                    audioCache[music.src] = audioElement;
 
-                const liAudioDuartionTag = ulTag.querySelector(`#${music.src}`);
-                audioElement.addEventListener("loadeddata", () => {
-                    let duration = audioElement.duration;
-                    let totalMin = Math.floor(duration / 60);
-                    let totalSec = Math.floor(duration % 60);
-                    if (totalSec < 10) { //if sec is less than 10 then add 0 before it
-                        totalSec = `0${totalSec}`;
-                    };
-                    liAudioDuartionTag.innerText = `${totalMin}:${totalSec}`; //passing total duration of song
-                    liAudioDuartionTag.setAttribute("t-duration", `${totalMin}:${totalSec}`); //adding t-duration attribute with total duration value
-                });
+                    audioElement.addEventListener("loadeddata", () => {
+                        let duration = audioElement.duration;
+                        let totalMin = Math.floor(duration / 60);
+                        let totalSec = Math.floor(duration % 60);
+                        if (totalSec < 10) totalSec = `0${totalSec}`;
+                        if (liAudioDurationTag) {
+                            liAudioDurationTag.innerText = `${totalMin}:${totalSec}`;
+                            liAudioDurationTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
+                        }
+                    });
+                } else {
+                    // audio już istnieje → jeśli znamy długość, wpisz ją od razu
+                    const audioElement = audioCache[music.src];
+                    if (audioElement.readyState >= 1) {
+                        let duration = audioElement.duration;
+                        let totalMin = Math.floor(duration / 60);
+                        let totalSec = Math.floor(duration % 60);
+                        if (totalSec < 10) totalSec = `0${totalSec}`;
+                        liAudioDurationTag.innerText = `${totalMin}:${totalSec}`;
+                        liAudioDurationTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
+                    } else {
+                        // jeśli jeszcze się ładuje, podpinamy listener
+                        audioElement.addEventListener("loadeddata", () => {
+                            let duration = audioElement.duration;
+                            let totalMin = Math.floor(duration / 60);
+                            let totalSec = Math.floor(duration % 60);
+                            if (totalSec < 10) totalSec = `0${totalSec}`;
+                            liAudioDurationTag.innerText = `${totalMin}:${totalSec}`;
+                            liAudioDurationTag.setAttribute("t-duration", `${totalMin}:${totalSec}`);
+                        });
+                    }
+                }
+
+                // wstaw audio tylko jeśli jeszcze nie ma go w DOM
+                if (!ulTag.contains(audioCache[music.src])) {
+                    ulTag.appendChild(audioCache[music.src]);
+                }
             });
-            // Ponowne przypisanie zdarzenia onclick dla każdego elementu li po aktualizacji listy
+
             playingSong();
         }
 
