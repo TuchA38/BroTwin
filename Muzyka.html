@@ -433,6 +433,59 @@
             background: linear-gradient(#07412d, #052b1e);
             margin-top: auto;
         }
+        
+        .album-list {
+            max-width: 700px;
+            margin: 2vw auto;
+            padding: 2vw;
+            background: linear-gradient(135deg, #fefefe, #f4f4f4);
+            border-radius: 1rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            font-family: "Segoe UI", sans-serif;
+        }
+        
+        .album-title {
+            font-size: 1.6vw;
+            margin-bottom: 1vw;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .album-list ol {
+            list-style: none;
+            /* usuwa numerki */
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        
+        .album-list li {
+            background: #fff;
+            border-radius: 0.8rem;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .album-list li:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+        
+        .album-list .album {
+            font-size: 1.1rem;
+            color: #333;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .album-list .album:hover {
+            color: #0077cc;
+        }
     </style>
     <style>
         /* --- Twoje obecne style zostają --- */
@@ -691,6 +744,41 @@
             position: relative;
             /* żeby ikonka była względem kontenera */
         }
+        
+        .album-header {
+            font-size: 1.5vw;
+            margin: 1vw 0 0.2vw 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .album-header i {
+            transition: transform 0.3s ease;
+        }
+        
+        #album-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+        
+        #album-list.collapsed {
+            max-height: 0;
+        }
+        
+        #album-list.expanded {
+            max-height: 1000px;
+            /* wystarczająco duże na całą listę */
+        }
+        
+        #album-list li {
+            margin: 0.4vw 0;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -780,37 +868,42 @@
             </div>
         </div>
 
-
+        <br>
         <div class="sidebar cień akapit" style="margin-top: -4vw;">
-            <ol>
-                <p style="margin-top: 1vw; margin-bottom: 0.2vw; font-size: 1.4vw;"><b>Spis albumów:</b></p>
-                <li id="pz-all"><span class="album" onclick="playAlbum('Planet Zoo - Wszystkie utwory', this)"><b>Planet Zoo</b> - Wszystkie utwory</span></li>
-                <li id="pz-afryka"><span class="album" onclick="playAlbum('Planet Zoo - Afryka', this)">Planet Zoo - Afryka</span></li>
-                <li id="pz-indie"><span class="album" onclick="playAlbum('Planet Zoo - Indie', this)">Planet Zoo - Indie</span></li>
-                <li style="font-size: 1.2vw;" id="pz-amerykapolnocna"><span class="album" onclick="playAlbum('Planet Zoo - Ameryka Północna', this)">Planet Zoo - Ameryka Północna</span></li>
-                <li style="font-size: 1.2vw;" id="pz-azja"><span class="album" onclick="playAlbum('Planet Zoo - Azja', this)">Planet Zoo - Azja</span></li>
-                <li style="font-size: 1.2vw;" id="pz-klasyka"><span class="album" onclick="playAlbum('Planet Zoo - Klasyka', this)">Planet Zoo - Klasyka</li>
-                <li style="font-size: 1.2vw;" id="pz-planetzoo" ><span class="album"onclick="playAlbum('Planet Zoo - Planet Zoo', this)">Planet Zoo - Planet Zoo</span></li>
-                <li style="font-size: 1.2vw;" id="delux"><span class="album" onclick="playAlbum('Delux', this)">Deluxe Edition</span></li>
-                <li style="font-size: 1.2vw;" id="arctic"><span class="album" onclick="playAlbum('Pakiet Arktyczny', this)">Arctic Pack</span></li>
-                <li style="font-size: 1.2vw;" id="southamerica"><span class="album" onclick="playAlbum('Pakiet Ameryka Południowa', this)">South America Pack</span></li>
-                <li style="font-size: 1.2vw;" id="australia"><span class="album" onclick="playAlbum('Pakiet Australia', this)">Australia Pack</span></li>
-                <li style="font-size: 1.2vw;" id="aquatic"><span class="album" onclick="playAlbum('Pakiet Wodny', this)">Aquatic Pack</span></li>
-                <li style="font-size: 1.2vw;" id="southeastasia"><span class="album" onclick="playAlbum('Pakiet Azja Południowo-Wschodnia', this)">Southeast Asia Animal Pack</span></li>
-                <li style="font-size: 1.2vw;" id="africa"><span class="album" onclick="playAlbum('Pakiet Afryka', this)">Africa Pack</span></li>
-                <li style="font-size: 1.2vw;" id="northamerica"><span class="album" onclick="playAlbum('Pakiet Ameryki Północnej', this)">North America Animal Pack</span></li>
-                <li style="font-size: 1.2vw;" id="europe"><span class="album" onclick="playAlbum('Pakiet Europa', this)">Europe Pack</span></li>
-                <li style="font-size: 1.2vw;" id="conservation"><span class="album" onclick="playAlbum('Pakiet Ochrona przyrody', this)">Conservation Pack</span></li>
-                <li style="font-size: 1.2vw;" id="lofi"><span class="album" onclick="playAlbum('Lo-fi (Dźwięki lata)', this)">Lo-fi (Sounds of Summer)</span></li>
-                <li style="font-size: 1.2vw;" id="twilight"><span class="album" onclick="playAlbum('Pakiet Zmierzch', this)">Twilight Pack</span></li>
-                <li style="font-size: 1.2vw;" id="grasslands"><span class="album" onclick="playAlbum('Pakiet Stepy', this)">Grasslands Animal Pack</span></li>
-                <li style="font-size: 1.2vw;" id="tropical"><span class="album" onclick="playAlbum('Pakiet Tropiki', this)">Tropical Pack</span></li>
-                <li style="font-size: 1.2vw;" id="arid"><span class="album" onclick="playAlbum('Pakiet Klimatu suchego', this)">Arid Animal Pack</span></li>
-                <li style="font-size: 1.2vw;" id="oceania"><span class="album" onclick="playAlbum('Pakiet Oceania', this)">Oceania Pack</span></li>
-                <li style="font-size: 1.2vw;" id="eurasia"><span class="album" onclick="playAlbum('Pakiet Eurazja', this)">Eurasia Animal Pack</span></li>
-                <li style="font-size: 1.2vw;" id="zwiastun"><span class="album" onclick="playAlbum('Zwiastuny', this)">Zwiastuny</span></li>
-            </ol>
-
+            <div class="album-toggle">
+                <p class="album-header">
+                    <b>Spis albumów</b>
+                    <i id="album-arrow" class="fas fa-chevron-down"></i>
+                </p>
+                <ul id="album-list" class="collapsed">
+                    <li style="font-size: 3.5vw;" id="pz-all"><span class="album" onclick="playAlbum('Planet Zoo - Wszystkie utwory', this)"><b>Planet Zoo</b> - Wszystkie utwory</span></li>
+                    <li style="font-size: 3.5vw;" id="pz-afryka"><span class="album" onclick="playAlbum('Planet Zoo - Afryka', this)">Planet Zoo - Afryka</span></li>
+                    <li style="font-size: 3.5vw;" id="pz-indie"><span class="album" onclick="playAlbum('Planet Zoo - Indie', this)">Planet Zoo - Indie</span></li>
+                    <li style="font-size: 3.5vw;" id="pz-amerykapolnocna"><span class="album" onclick="playAlbum('Planet Zoo - Ameryka Północna', this)">Planet Zoo - Ameryka Północna</span></li>
+                    <li style="font-size: 3.5vw;" id="pz-azja"><span class="album" onclick="playAlbum('Planet Zoo - Azja', this)">Planet Zoo - Azja</span></li>
+                    <li style="font-size: 3.5vw;" id="pz-klasyka"><span class="album" onclick="playAlbum('Planet Zoo - Klasyka', this)">Planet Zoo - Klasyka</li>
+                <li style="font-size: 3.5vw;" id="pz-planetzoo" ><span class="album"onclick="playAlbum('Planet Zoo - Planet Zoo', this)">Planet Zoo - Planet Zoo</span></li>
+                    <li style="font-size: 3.5vw;" id="delux"><span class="album" onclick="playAlbum('Delux', this)">Deluxe Edition</span></li>
+                    <li style="font-size: 3.5vw;" id="arctic"><span class="album" onclick="playAlbum('Pakiet Arktyczny', this)">Arctic Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="southamerica"><span class="album" onclick="playAlbum('Pakiet Ameryka Południowa', this)">South America Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="australia"><span class="album" onclick="playAlbum('Pakiet Australia', this)">Australia Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="aquatic"><span class="album" onclick="playAlbum('Pakiet Wodny', this)">Aquatic Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="southeastasia"><span class="album" onclick="playAlbum('Pakiet Azja Południowo-Wschodnia', this)">Southeast Asia Animal Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="africa"><span class="album" onclick="playAlbum('Pakiet Afryka', this)">Africa Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="northamerica"><span class="album" onclick="playAlbum('Pakiet Ameryki Północnej', this)">North America Animal Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="europe"><span class="album" onclick="playAlbum('Pakiet Europa', this)">Europe Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="conservation"><span class="album" onclick="playAlbum('Pakiet Ochrona przyrody', this)">Conservation Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="lofi"><span class="album" onclick="playAlbum('Lo-fi (Dźwięki lata)', this)">Lo-fi (Sounds of Summer)</span></li>
+                    <li style="font-size: 3.5vw;" id="twilight"><span class="album" onclick="playAlbum('Pakiet Zmierzch', this)">Twilight Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="grasslands"><span class="album" onclick="playAlbum('Pakiet Stepy', this)">Grasslands Animal Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="tropical"><span class="album" onclick="playAlbum('Pakiet Tropiki', this)">Tropical Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="arid"><span class="album" onclick="playAlbum('Pakiet Klimatu suchego', this)">Arid Animal Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="oceania"><span class="album" onclick="playAlbum('Pakiet Oceania', this)">Oceania Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="eurasia"><span class="album" onclick="playAlbum('Pakiet Eurazja', this)">Eurasia Animal Pack</span></li>
+                    <li style="font-size: 3.5vw;" id="zwiastun"><span class="album" onclick="playAlbum('Zwiastuny', this)">Zwiastuny</span></li>
+                </ul>
+            </div>
+            <br>
             <div style="margin-left: 0.3%;">
                 <b style="font-size: 1.5vw;">Wszystkie utwory Planet Zoo</b><br>
                 <p style="font-size: 1.4vw;" class="tekst">Cały zbiór melodii liczy aż <b>122</b> wspaniałych utworów, których w większości twórcą jest <b>J.J. Ipsen</b>. Powyższy odtwarzacz pozwala słuchać ich wszystkich w jednym miejscu!</p>
@@ -840,6 +933,21 @@
         });
     </script>
 
+    <script>
+        const header = document.querySelector('.album-header');
+        const list = document.getElementById('album-list');
+        const arrow = document.getElementById('album-arrow');
+
+        header.addEventListener('click', () => {
+            const isCollapsed = list.classList.contains('collapsed');
+
+            list.classList.toggle('collapsed', !isCollapsed);
+            list.classList.toggle('expanded', isCollapsed);
+
+            arrow.classList.toggle('fa-chevron-down', !isCollapsed);
+            arrow.classList.toggle('fa-chevron-up', isCollapsed);
+        });
+    </script>
 
     <script>
         let allMusic12 = [{

@@ -220,10 +220,18 @@
         
         #mini-toggle {
             background: none;
+            opacity: 90%;
             border: none;
             color: white;
             font-size: 18px;
             cursor: pointer;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        
+        #mini-toggle:hover {
+            opacity: 1;
+            transform: scale(1.1);
+            /* delikatne powiększenie */
         }
     </style>
     <script>
