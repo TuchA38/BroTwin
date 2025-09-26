@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Ikony/Planet Zoo.png">
+    <title>BroTwin Zoo</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: transparent;
+        }
+        
+        #content-frame {
+            position: relative;
+            width: 100%;
+            height: 101vh;
+            border: none;
+            opacity: 1;
+            /* widoczny na start */
+            transition: opacity 0.2s ease-in-out;
+            /* płynna zmiana widoczności */
+            background-color: transparent;
+            /* np. ten sam kolor co body lub kontener */
+        }
+        
+        #player-frame {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 400px;
+            height: 600px;
+            border: none;
+            z-index: 9999;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            border-radius: 12px;
+            opacity: 0;
+            /* początkowo niewidoczny */
+            transform: scale(0.8);
+            /* lekko zmniejszony */
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            /* animacja */
+            pointer-events: none;
+            /* nie reaguje gdy jest "zamknięty" */
+        }
+        /* Kiedy modal jest otwarty */
+        
+        #player-frame.open {
+            opacity: 1;
+            transform: scale(1);
+            pointer-events: auto;
+            /* przyjmuje kliknięcia */
+        }
+        
+        #player-toggle {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            /* obok modala */
+            z-index: 9998;
+            /* przycisk pod modalem */
+        }
+        
+        #player-toggle button {
+            background-color: #0a5c3f;
+            /* zielone tło */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            /* okrągły kształt */
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            /* rozmiar ikony */
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        #player-toggle button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        }
+        
+        #player-frame.minimized {
+            height: 80px;
+            width: 350px;
+        }
+        
+        #player-controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 10000;
+        }
+        
+        #player-controls button {
+            background: #0a5c3f;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    <style>
+        /* Responsywny modal i przycisk dla telefonów */
+        
+        @media (max-width: 400px) {
+            #player-frame {
+                width: 300px;
+                /* węższy modal */
+                height: 500px;
+                /* możesz też zmniejszyć wysokość, jeśli chcesz */
+            }
+            #player-toggle button {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+            /* Jeśli chcesz też minimalizowany widok modala dla telefonu */
+            #player-frame.minimized {
+                width: 280px;
+                height: 70px;
+            }
+        }
+    </style>
+    <script>
+        dragElement(document.getElementById("player-frame"));
+
+        function dragElement(elmnt) {
+            let pos1 = 0,
+                pos2 = 0,
+                pos3 = 0,
+                pos4 = 0;
+            elmnt.onmousedown = dragMouseDown;
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="player-toggle">
+        <button onclick="togglePlayer()">
+            <i class="fas fa-music"></i>
+        </button>
+    </div>
+
+
+    <iframe src="Strona główna.html" id="content-frame"></iframe>
+    <iframe src="Muzyka.html" id="player-frame"></iframe>
+
+    <!-- ... pozostała część HEAD/HTML bez zmian ... -->
+
+    <script>
+        const player = document.getElementById("player-frame");
+        const toggleButton = document.querySelector("#player-toggle button");
+        const contentFrame = document.getElementById("content-frame");
+
+        // Nowe, klarowne API do sterowania modalem (używamy klasy .open)
+        function openPlayer() {
+            player.classList.add('open');
+        }
+
+        function closePlayer() {
+            player.classList.remove('open');
+        }
+
+        function togglePlayer() {
+            if (player.classList.contains('open')) closePlayer();
+            else openPlayer();
+        }
+
+        // Zapobiegaj propagacji kliknięć wewnątrz modala — dzięki temu kliknięcia w player nie zamkną go
+        player.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Kliknięcia w całym dokumencie rodzica - zamyka modal gdy klik poza przyciskiem i poza samym playerem
+        document.addEventListener('click', function(event) {
+            if (player.classList.contains('open') &&
+                event.target !== toggleButton &&
+                !toggleButton.contains(event.target) &&
+                event.target !== player &&
+                !player.contains(event.target)
+            ) {
+                closePlayer();
+            }
+        });
+
+        // Obsługa kliknięć w iframe contentFrame:
+        // - jeśli kliknięto element oznaczony data-parent-opener -> NIE ZAMYKAJ modala
+        // - w przeciwnym razie, jeśli modal jest otwarty -> zamknij
+        function attachIframeClickHandler() {
+            try {
+                const doc = contentFrame.contentDocument || contentFrame.contentWindow.document;
+                if (!doc) return;
+
+                // Dodajemy listener, który odróżnia "otwieracze" po atrybucie data-parent-opener lub inline onclick
+                doc.addEventListener('click', function(e) {
+                    // jeśli kliknięty element lub jego rodzic ma atrybut data-parent-opener -> wyjątek
+                    if (e.target && e.target.closest && e.target.closest('[data-parent-opener]')) {
+                        return; // wyjątek — nie zamykamy
+                    }
+
+                    // sprawdź inline onclick (np. onclick="parent.openPlayer()")
+                    let el = e.target;
+                    while (el && el !== doc) {
+                        const onclick = el.getAttribute && el.getAttribute('onclick');
+                        if (onclick && (/parent\.openPlayer|parent\.togglePlayer|parent\.playDeluxAlbum/).test(onclick)) {
+                            return; // też wyjątek
+                        }
+                        el = el.parentNode;
+                    }
+
+                    // jeśli tutaj — klik poza elementem-otwieraczem -> zamknij modal (jeśli otwarty)
+                    if (player.classList.contains('open')) {
+                        closePlayer();
+                    }
+                }, {
+                    capture: false
+                });
+
+            } catch (err) {
+                // cross-origin — nie możemy podpiąć listenera
+                console.warn("Nie można podłączyć listenera do iframe (prawdopodobnie CORS):", err);
+            }
+        }
+
+        // Podpinamy handler po każdym załadowaniu iframe
+        contentFrame.addEventListener('load', () => {
+            // przywróć opacity jeśli używasz changePage + dołącz handler
+            contentFrame.style.opacity = 1;
+            attachIframeClickHandler();
+        });
+
+        // Funkcja do zmiany strony w iframe z animacją opacity (jeśli używasz changePage)
+        function changePage(url) {
+            contentFrame.style.opacity = 0;
+            contentFrame.src = url;
+        }
+
+        // Zaktualizowane playDeluxAlbum: otwiera modal przez openPlayer(), a nie przez style.display
+        function playDeluxAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("delux");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Delux', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Delux w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+    </script>
+
+
+    <!-- Funkcja do zmiany favicon (usuwa stare linki i dodaje nowe) -->
+    <script>
+        function setFavicon(href) {
+            if (!href) return;
+            // usuń stare
+            const oldIcons = document.querySelectorAll('link[rel~="icon"], link[rel="shortcut icon"], link[rel="apple-touch-icon"]');
+            oldIcons.forEach(i => i.parentNode && i.parentNode.removeChild(i));
+            // dodaj standardową ikonę i shortcut (kompatybilność)
+            const link = document.createElement('link');
+            link.rel = 'icon';
+            link.href = href + (href.indexOf('?') === -1 ? '?v=' + Date.now() : '&v=' + Date.now()); // wymusza przeładowanie cache
+            document.head.appendChild(link);
+
+            const shortcut = document.createElement('link');
+            shortcut.rel = 'shortcut icon';
+            shortcut.href = link.href;
+            document.head.appendChild(shortcut);
+        }
+
+        /* --- Obsługa 1: jeśli iframe jest same-origin -> spróbuj odczytać jego link[rel*="icon"] lub mapowanie na podstawie URL --- */
+
+        function applyFaviconFromIframe() {
+            try {
+                const cw = contentFrame.contentWindow;
+                const doc = cw.document;
+                // najpierw spróbuj pobrać favicon z dokumentu iframe (jeśli tam jest ustawione)
+                const iconEl = doc.querySelector('link[rel*="icon"]');
+                if (iconEl && iconEl.href) {
+                    setFavicon(iconEl.href);
+                    return;
+                }
+                // jeśli nie ma, możemy mapować po URL (przykład)
+                const url = cw.location.href || contentFrame.src;
+                mapUrlToFavicon(url);
+            } catch (err) {
+                // cross-origin lub inny błąd
+                console.warn("Nie udało się odczytać iframe (prawdopodobnie CORS).", err);
+                // fallback: użyj src a jeśli to cross-origin, poproś o postMessage (zobacz niżej)
+                mapUrlToFavicon(contentFrame.src);
+            }
+        }
+
+        /* --- Obsługa 2: mapowanie URL -> favicon (dostosuj mapę do swoich plików) --- */
+        function mapUrlToFavicon(url) {
+            if (!url) return;
+            // proste dopasowania na podstawie nazwy pliku w URL
+            if (url.includes('Arctic Pack') || url.includes('Arctic%20Pack')) {
+                setFavicon('Ikony/ArcticPack.png');
+            } else if (url.includes('Strona%20g%C5%82%C3%B3wna') || url.includes('Strona główna') || url.includes('Strona%20glowna')) {
+                setFavicon('Ikony/Planet Zoo.png'); // domyślny
+            } else if (url.includes('InnaStrona.html')) {
+                setFavicon('Ikony/InnaIkona.png');
+            } else {
+                // fallback — domyślny
+                setFavicon('Ikony/Planet Zoo.png');
+            }
+        }
+
+        /* --- Obsługa 3: postMessage - gdy iframe jest cross-origin lub chcesz jawnie sterować --- */
+        window.addEventListener('message', (ev) => {
+            // dla bezpieczeństwa możesz sprawdzić ev.origin
+            try {
+                const data = typeof ev.data === 'string' ? JSON.parse(ev.data) : ev.data;
+                if (data && data.type === 'setFavicon' && data.href) {
+                    setFavicon(data.href);
+                }
+                if (data && data.type === 'setTitle' && data.title) {
+                    document.title = data.title;
+                }
+            } catch (err) {
+                // jeżeli ev.data nie jest JSON — spróbuj użyć jako obiekt bez parsowania
+                const data = ev.data;
+                if (data && data.type === 'setFavicon' && data.href) setFavicon(data.href);
+            }
+        }, false);
+
+        /* --- Podpinamy load handler iframe --- */
+        contentFrame.addEventListener('load', () => {
+            // odpal logikę próbującą pobrać favicon / mapować url
+            applyFaviconFromIframe();
+
+            // dodatkowo: spróbuj pobrać tytuł iframe (jeśli same-origin)
+            try {
+                const title = contentFrame.contentDocument && contentFrame.contentDocument.title;
+                if (title) document.title = title + ' ';
+            } catch (err) {
+                // cross-origin: nic nie rób
+            }
+        });
+
+        /* --- Jeżeli używasz changePage(url) możesz też wywołać mapUrlToFavicon(url) bez czekania na load: */
+        function changePage(url) {
+            contentFrame.style.opacity = 0;
+            contentFrame.src = url;
+            mapUrlToFavicon(url);
+        }
+
+        /* --- Opcjonalnie: ustaw favicon początkowo --- */
+        document.addEventListener('DOMContentLoaded', () => {
+            // favicon domyślny
+            setFavicon('Ikony/Planet Zoo.png');
+        });
+    </script>
+
+</body>
+
+</html>
