@@ -398,6 +398,121 @@
             // favicon domyślny
             setFavicon('Ikony/Planet Zoo.png');
         });
+
+        // które strony cachujemy (podaj dokładne nazwy plików — tak, z odstępami i myślnikiem)
+        const cachePages = [
+            'Zoopedia.html',
+            'Aktualizacje.html',
+            'Aktualizacje - konsola.html', // <-- tutaj wpisz swoją nazwę
+            'DLC.html',
+            'DLC - konsola.html',
+            'Informacje dnia.html',
+            'Muzyka.html'
+        ];
+
+        const iframeCache = new Map(); // mapa: klucz = canonicalBasename, wartość = iframe element
+
+        function normalizeName(name) {
+            if (!name) return '';
+            // zdekoduj (zmienia %20 itp.), usuń białe znaki na końcach, zmniejsz litery
+            try {
+                name = decodeURIComponent(name);
+            } catch (e) {}
+            return name.trim().toLowerCase();
+        }
+
+        function getBasenameFromUrl(url) {
+            // obsłuży relative URL-y poprawnie
+            try {
+                const full = new URL(url, location.href);
+                const pathname = full.pathname; // np. /DLC/Aktualizacja%20-%20konsola.html
+                const rawBasename = pathname.split('/').pop(); // "Aktualizacja%20-%20konsola.html"
+                try {
+                    return decodeURIComponent(rawBasename);
+                } catch (e) {
+                    return rawBasename;
+                }
+            } catch (err) {
+                // fallback — proste rozbicie stringa
+                const parts = url.split('/');
+                const raw = parts[parts.length - 1].split('?')[0].split('#')[0];
+                try {
+                    return decodeURIComponent(raw);
+                } catch (e) {
+                    return raw;
+                }
+            }
+        }
+
+        function isCachePage(url) {
+            const basename = getBasenameFromUrl(url);
+            const norm = normalizeName(basename);
+            return cachePages.some(p => normalizeName(p) === norm);
+        }
+
+        function changePage(url) {
+            // animacja fade-out
+            contentFrame.style.opacity = 0;
+
+            const basename = getBasenameFromUrl(url);
+            const key = normalizeName(basename);
+
+            if (isCachePage(url)) {
+                if (iframeCache.has(key)) {
+                    // już mamy iframe w cache — zamieniamy referencję i pokazujemy
+                    const cached = iframeCache.get(key);
+
+                    // jeśli contentFrame jest stary element w DOM -> zamień go
+                    if (contentFrame !== cached) {
+                        contentFrame.replaceWith(cached);
+                        // zaktualizuj globalną referencję
+                        window.contentFrame = cached; // jeśli używasz contentFrame jako let/const w innym scope -> zaktualizuj tam
+                    }
+                    // fade-in
+                    requestAnimationFrame(() => {
+                        cached.style.opacity = 1;
+                    });
+                } else {
+                    // pierwszy raz — stwórz iframe i zapisz w cache
+                    const newIframe = document.createElement('iframe');
+                    newIframe.src = url;
+                    newIframe.width = '100%';
+                    newIframe.height = '101vh';
+                    newIframe.style.border = 'none';
+                    newIframe.style.opacity = 0;
+                    newIframe.id = 'content-frame'; // opcjonalnie
+
+                    // dodaj do DOM (możesz zamiast append użyć replaceWith jeśli chcesz podmienić current)
+                    contentFrame.replaceWith(newIframe);
+                    iframeCache.set(key, newIframe);
+                    window.contentFrame = newIframe;
+
+                    newIframe.addEventListener('load', () => {
+                        // fade-in po załadowaniu
+                        newIframe.style.transition = 'opacity 0.2s ease-in-out';
+                        newIframe.style.opacity = 1;
+                    });
+                }
+            } else {
+                // nie cache'ujemy: po prostu zmieniamy src obecnego iframe
+                if (contentFrame.tagName && contentFrame.tagName.toLowerCase() === 'iframe') {
+                    contentFrame.src = url;
+                    // fade-in przy load (możesz zachować istniejący handler load)
+                } else {
+                    // jeśli contentFrame został zastąpiony (np. przez cached iframe wcześniej),
+                    // stwórz nowy iframe "tymczasowy"
+                    const newIframe = document.createElement('iframe');
+                    newIframe.src = url;
+                    newIframe.style.width = '100%';
+                    newIframe.style.height = '101vh';
+                    newIframe.style.border = 'none';
+                    newIframe.style.opacity = 0;
+                    newIframe.addEventListener('load', () => newIframe.style.opacity = 1);
+                    contentFrame.replaceWith(newIframe);
+                    window.contentFrame = newIframe;
+                }
+            }
+        }
     </script>
 
 </body>

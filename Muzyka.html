@@ -2494,12 +2494,22 @@
             }
         }
         // JavaScript
+        // cache na albumy
+        let loadedAlbums = {};
+
         function playAlbum(albumName, element) {
             console.log("Wybrany album:", albumName);
             const selectedAlbum = albums.find(album => album.name === albumName);
 
             if (selectedAlbum) {
+                // jeśli ten album był już załadowany i jest obecny w currentAlbum → nic nie rób
+                if (currentAlbum && currentAlbum.name === albumName && loadedAlbums[albumName]) {
+                    console.log(`Album "${albumName}" już załadowany – pomijam ponowne wczytywanie.`);
+                    return;
+                }
+
                 currentAlbum = selectedAlbum; // Aktualizacja zmiennej currentAlbum
+                loadedAlbums[albumName] = selectedAlbum.musicList; // zapisanie do cache
 
                 console.log("Lista utworów w wybranym albumie:", selectedAlbum.musicList);
 
@@ -2543,7 +2553,6 @@
                 console.error(`Album "${albumName}" nie został znaleziony.`);
             }
         }
-
         // Zmienna przechowująca aktualnie wybrany album
         let currentAlbum = null;
 
