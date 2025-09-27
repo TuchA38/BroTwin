@@ -371,7 +371,7 @@
                     let el = e.target;
                     while (el && el !== doc) {
                         const onclick = el.getAttribute && el.getAttribute('onclick');
-                        if (onclick && (/parent\.openPlayer|parent\.togglePlayer|parent\.playDeluxAlbum/).test(onclick)) {
+                        if (onclick && (/parent\.openPlayer|parent\.togglePlayer|parent\.playDeluxAlbum|parent\.playArcticAlbum|parent\.playSouthAmericaAlbum|parent\.playAustraliaAlbum|parent\.playAquaticAlbum|parent\.playSoutheastAsiaAlbum|parent\.playAfricaAlbum|parent\.playNorthAmericaAlbum|parent\.playEuropeAlbum|parent\.playConservationAlbum|parent\.playTwilightAlbum|parent\.playGrasslandsAlbum|parent\.playTropicalAlbum|parent\.playAridAlbum|parent\.playOceaniaAlbum|parent\.playEurasiaAlbum/).test(onclick)) {
                             return; // też wyjątek
                         }
                         el = el.parentNode;
@@ -419,6 +419,321 @@
                         musicFrame.playAlbum('Delux', deluxElement);
                     } else {
                         console.warn("Nie znaleziono funkcji playAlbum lub elementu Delux w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playArcticAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("arctic");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Arktyczny', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Arktyczny w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playSouthAmericaAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("southamerica");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Ameryka Południowa', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Ameryka Południowa w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playAustraliaAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("australia");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Australia', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Australia w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playAquaticAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("aquatic");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Wodny', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Wodny w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playSoutheastAsiaAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("southeastasia");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Azja Południowo-Wschodnia', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Azja Południowo-Wschodnia w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playAfricaAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("africa");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Afryka', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Afryka w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playNorthAmericaAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("northamerica");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Ameryki Północnej', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Ameryki Północnej w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playEuropeAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("europe");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Europa', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Europa w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playConservationAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("conservation");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Ochrona przyrody', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Ochrona przyrody w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playTwilightAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("twilight");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Zmierzch', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Zmierzch w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playGrasslandsAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("grasslands");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Stepy', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Stepy w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playTropicalAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("tropical");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Tropiki', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Tropiki w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playAridAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("arid");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Klimatu suchego', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Klimatu suchego w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playOceaniaAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("oceania");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Oceania', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Oceania w iframe muzyki.");
+                    }
+                } catch (err) {
+                    console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
+                }
+            }
+        }
+
+        function playEurasiaAlbum() {
+            openPlayer(); // zawsze otwórz modal
+
+            const musicFrame = player.contentWindow;
+            if (musicFrame) {
+                try {
+                    // znajdź element albumu Delux w iframe muzyki
+                    const deluxParent = musicFrame.document.getElementById("eurasia");
+                    const deluxElement = deluxParent ? deluxParent.querySelector(".album") : null;
+
+                    if (deluxElement && typeof musicFrame.playAlbum === "function") {
+                        musicFrame.playAlbum('Pakiet Eurazja', deluxElement);
+                    } else {
+                        console.warn("Nie znaleziono funkcji playAlbum lub elementu Pakiet Eurazja w iframe muzyki.");
                     }
                 } catch (err) {
                     console.warn("Nie można uzyskać dostępu do zawartości playera (CORS?).", err);
