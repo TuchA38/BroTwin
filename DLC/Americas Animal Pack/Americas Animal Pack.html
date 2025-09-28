@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../../Styl.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Americas Animal Pack</title>
+    <link rel="shortcut icon" href="../../Ikony/Planet Zoo-Ameryki.png">
+    <style>
+        footer,
+        .compsoul-gallery-mask-before-button,
+        .compsoul-gallery-prev,
+        .compsoul-gallery-next {
+            background: linear-gradient(#782d14, #4b1c0d);
+        }
+        
+        header {
+            background: linear-gradient(#903518, #602311);
+        }
+        
+        body {
+            background: linear-gradient(#f07544, #b1401d);
+        }
+        /* WebKit (Chrome, Safari, Opera) */
+        
+         ::-webkit-scrollbar {
+            width: 1vw;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #953819;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #ff8758;
+            border-radius: 0.15vw #8f361b;
+        }
+        /* Firefox */
+        
+        * {
+            scrollbar-width: 1vw;
+            scrollbar-color: #ff8758 #953819;
+        }
+        /* Edge i Internet Explorer */
+        
+        *::-webkit-scrollbar {
+            width: 1vw;
+        }
+        
+        *::-webkit-scrollbar-track {
+            background: #953819;
+        }
+        
+        *::-webkit-scrollbar-thumb {
+            background: #ff8758;
+            border-radius: 0.15vw #8f361b;
+        }
+        
+        span.keeptogether {
+            white-space: nowrap;
+        }
+        
+        .zalacznik {
+            background: linear-gradient(90deg, #ffa784, #ffa784);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        #powrot a {
+            background: linear-gradient(90deg, #ffc1a8, #ffc1a8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        .tytul br {
+            display: none;
+            /* na desktopie ukryty */
+        }
+    </style>
+    <style>
+        /* --- Twoje obecne style zostają --- */
+        /* ✅ Ulepszenia dla telefonów */
+        
+        @media (max-width: 400px) {
+            body {
+                /* czytelniejsze podstawowe fonty */
+                line-height: 1.5;
+            }
+            header.tytul {
+                font-size: 6vw;
+                /* większy i wyraźniejszy nagłówek */
+                padding: 10px;
+                text-align: center;
+            }
+            .tytul br {
+                display: inline;
+                /* na telefonie działa enter */
+            }
+            #powrot {
+                display: block !important;
+                width: 100% !important;
+                margin: 3% 0 !important;
+                padding: 0 !important;
+                float: none !important;
+            }
+            #powrot>a,
+            #powrot>i {
+                display: block !important;
+                width: 100% !important;
+                margin: 0.4rem 0 !important;
+                text-decoration: none !important;
+                line-height: 1.2 !important;
+            }
+            /* ✅ pierwszy powrot – link do DLC */
+            p#powrot:nth-of-type(1) {
+                text-align: left !important;
+            }
+            p#powrot:nth-of-type(1)>a {
+                font-size: 4vw !important;
+                font-weight: 600 !important;
+                text-align: left !important;
+            }
+            /* ✅ drugi powrot – data i cena */
+            p#powrot:nth-of-type(2) {
+                text-align: center !important;
+            }
+            p#powrot:nth-of-type(2)>i {
+                font-size: 3.2vw !important;
+                text-align: center !important;
+            }
+            iframe {
+                width: 100% !important;
+                min-width: unset !important;
+                height: 53.5vw !important;
+                /* proporcja 16:9 */
+            }
+            .akapit {
+                font-size: 4vw !important;
+                padding: 0 4%;
+            }
+            .akapit span {
+                font-size: 3.5vw !important;
+            }
+            .akapit p,
+            div p {
+                font-size: 4vw !important;
+            }
+            .akapit b {
+                font-size: 3.7vw !important;
+            }
+            .podpis_filmu {
+                font-size: 2.5vw !important;
+            }
+            /* ✅ Galeria — zdjęcia w 2 kolumnach zamiast 3 */
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery img {
+                width: 100% !important;
+                border-radius: 8px;
+            }
+            /* ✅ Opisy zdjęć w galerii */
+            #lightbox-caption {
+                font-size: 3vw !important;
+                /* powiększony tekst */
+                line-height: 1.4 !important;
+                /* luźniejszy odstęp między liniami */
+                padding: 6px 10px !important;
+                /* więcej przestrzeni */
+                text-align: center !important;
+                color: #fff !important;
+                background: rgba(0, 0, 0, 0.6);
+                /* półprzezroczyste tło dla czytelności */
+                border-radius: 6px;
+                max-width: 90%;
+                margin: 5px auto;
+                display: block;
+            }
+            footer h2 {
+                font-size: 4vw;
+            }
+            img.stopka {
+                width: 30% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer p {
+                font-size: 2.2vw;
+            }
+        }
+    </style>
+    <link rel="preload" href="../../Ikony/Steam_logo.png" as="image">
+</head>
+
+<body onselectstart="return false;">
+    <div class="content">
+        <div class="cień">
+            <div style="animation: fadeIn ease-in .5s backwards;">
+                <header class="tytul"><i>Planet Zoo: Americas Animal Pack</i></header>
+                <div style="clear: both;"></div>
+                <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                    <a href="../../DLC.html#Americas_Animal_Pack" class="powrot"><b>◄ Wróć do DLC</b></a>
+                </p>
+                <p id="powrot" style="margin: 0%; margin-top: 1%; padding-top: 10px; text-align: right; font-size:1.3vw; color:white; cursor: default; opacity: 100%;">
+                    <i><b>Data wydania</b>: 15 kwietnia 2025<br><b>Cena pakietu</b>: 35.99 zł</i>
+                </p>
+                <div style="clear: both;"></div>
+                <center><iframe style="width: 80%; min-width: 78vw; height: auto; min-height: 44vw; margin-top: 1%;" src='https://www.youtube.com/embed/a-OpYoSKlPc?rel=0&loop=1&playlist=a-OpYoSKlPc;rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0' frameborder='0'
+                        allowfullscreen></iframe>
+                    <h4 class="podpis_filmu cień" style="margin-top: -0.6vw;"><i>Oficjalny zwiastun DLC Americas Animal Pack</i></h4>
+                </center>
+                <hr>
+                <div class="akapit" style="font-size: 1.7vw;">Poznaj dziką przyrodę obu Ameryk dzięki rozszerzeniu Planet Zoo: Pakiet zwierząt Ameryk! Wyrusz na przygodę po różnorodnych ekosystemach Ameryki Północnej, Południowej i Środkowej, poznając przy tym 7 zadziwiających gatunków zwierząt,
+                    które wzbudzą prawdziwy zachwyt w twoich zoo.<br><br>Dzięki tej wyjątkowej kolekcji poznasz obszary rozciągające się od mroźnych pustkowi na północy, po tętniące życiem lasy tropikalne na południu i staniesz oko w oko z mnóstwem nowych
+                    zwierząt, w tym smukłym i nieuchwytnym ocelotem, wyjątkowo inteligentnym kojotem preriowym i niewielkim, ale bardzo towarzyskim pakożerem leśnym.<br><br>Oprócz tych niesamowitych gatunków Pakiet zwierząt Ameryk obejmuje również 80
+                    przepięknych elementów scenerii wraz z całkowicie nowym scenariuszem kampanii, w ramach którego pomożesz Dominicowi Myersowi zrealizować plan stworzenia prężnie działającego zoo w Meksyku.</div>
+                <hr>
+                <div style="clear: both;"></div>
+                <div>
+                    <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Galeria zdjęć</i></p>
+                    <div style="margin-left: 1vw;" class="gallery" data-gallery-id="1">
+                        <img class="gallery-image galeria" src="1.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 1">
+                        <img class="gallery-image galeria" src="2.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 2">
+                        <img class="gallery-image galeria" src="3.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 3">
+                        <img class="gallery-image galeria" src="4.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 4">
+                        <img class="gallery-image galeria" src="5.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 5">
+                        <img class="gallery-image galeria" src="6.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 6">
+                        <img class="gallery-image galeria" src="7.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 7">
+                        <img class="gallery-image galeria" src="8.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 8">
+                        <img class="gallery-image galeria" src="9.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 9">
+                        <img class="gallery-image galeria" src="10.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 10">
+                        <img class="gallery-image galeria" src="11.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 11">
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <hr>
+                <div class="akapit">
+                    <center>
+                        <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>O tym DLC</i></p>
+                    </center><b style="font-size: 1.4vw;">Siedem nowych, zachwycających zwierząt</b><br>Powitaj w swoim zoo następujące gatunki: eleganckiego <a href="../../Zoopedia/Ocelot.html" class="zalacznik"><b>ocelota</b></a> o cętkowanym futrze, <a href="../../Zoopedia/Nandu szare.html"
+                        class="zalacznik"><b>nandu szare</b></a> — największego ptaka obu Ameryk o charakterystycznej budowie ciała, <a href="../../Zoopedia/Flaming karmazynowy.html" class="zalacznik"><b>flaminga karmazynowego</b></a>, który z pewnością nada
+                    koloru każdemu wybiegowi, a także psotną <a href="../../Zoopedia/Saki białolica.html" class="zalacznik"><b>saki białolicą</b></a>. W pakiecie znajdziesz również bystrego i dostosowującego się do różnych warunków <a href="../../Zoopedia/Kojot.html"
+                        class="zalacznik"><b>kojota</b></a>, przebiegłego <a href="../../Zoopedia/Pakożer leśny.html" class="zalacznik"><b>pakożera leśnego</b></a>, który uwielbia spędzać czas zarówno w wodzie, jak i na lądzie, a także <a href="../../Zoopedia/Muflon kanadyjski.html"
+                        class="zalacznik"><b>muflona kanadyjskiego</b></a> o surowym uroku. Wszystkie te zwierzęta są wspaniałymi przykładami różnorodności, bogactwa i wyjątkowości dzikiej przyrody tej części świata. Stwórz niesamowite wybiegi, które zachwycą
+                    zarówno zwierzęta, jak i gości, sprawiając, że o twoim zoo zrobi się naprawdę głośno!
+                    <br><br>
+                    <b style="font-size: 1.4vw;">Ponad 80 nowych niesamowitych elementów scenerii</b><br>Pakiet zawiera także mnóstwo nowych elementów scenerii inspirowanych Amerykami. Stwórz swojski klimat południowego zachodu dzięki bramom rancza czy
+                    żelaznym kratom okiennym. Nadaj otoczeniu ciepła, rozmieszczając urocze lampy ścienne i uliczne. Wśród elementów scenerii znajdziesz również barwne tkaniny, takie jak flagi czy zestawy zadaszeń, jak również papierowe kwiaty i flagi,
+                    dzięki którym nadasz swoim zoo uroczysty charakter pełen kolorów. Mając do dyspozycji nowe i różnorodne elementy scenerii, stworzysz radosną i żywiołową atmosferę, która zachwyci wszystkich odwiedzających.<br><br>
+                    <b style="font-size: 1.4vw;">Nowy pasjonujący scenariusz Kampanii</b><br>Nie każdy jest bohaterem, ale każdy zasługuje na szansę! Twoim zadaniem jest pomóc cieszącemu się złą sławą, nieokrzesanemu biznesmenowi Dominicowi Myersowi w
+                    jego rozpaczliwej próbie stworzenia zoo w Meksyku. Dominic znany jest z tego, że w życiu najbardziej motywują go pieniądze, ale nareszcie zaczyna rozumieć, jak ważny wpływ na dochodowość zoo ma zadowolenie zwierząt i odwiedzających.
+                    Zamierza zrobić wszystko, aby się zmienić i zbudować coś wyjątkowego dla swojej gepardzicy Smugi. Biorąc pod uwagę, że prasa bardzo uważnie obserwuje każdy jego ruch, Dominic będzie potrzebował twojej pomocy w zapanowaniu nad chaosem.
+                    Pomożesz mu przezwyciężyć trudności czy ugniesz się pod presją?
+                </div>
+                <br></div>
+        </div>
+    </div>
+    <footer>
+        <h2 style="color: white; text-align: center;" class="cień">Sklep internetowy Steam!</h2>
+        <center>
+            <a href="https://store.steampowered.com/app/3473820/Planet_Zoo_Americas_Animal_Pack/" target="_blank"><img class="stopka" src="../../Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 0%;"></a>
+        </center>
+        <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="../../comp.js"></script>
+    <script src="../../spacje.js"></script>
+    <script src="../../galeria.js"></script>
+</body>
+
+</html>
