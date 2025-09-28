@@ -296,7 +296,7 @@
 
 
 
-    <iframe src="Strona główna.html" id="content-frame"></iframe>
+    <iframe id="content-frame"></iframe>
     <iframe src="Muzyka.html" id="player-frame"></iframe>
 
     <!-- ... pozostała część HEAD/HTML bez zmian ... -->
@@ -352,57 +352,6 @@
             }
         });
 
-        // Obsługa kliknięć w iframe contentFrame:
-        // - jeśli kliknięto element oznaczony data-parent-opener -> NIE ZAMYKAJ modala
-        // - w przeciwnym razie, jeśli modal jest otwarty -> zamknij
-        function attachIframeClickHandler() {
-            try {
-                const doc = contentFrame.contentDocument || contentFrame.contentWindow.document;
-                if (!doc) return;
-
-                // Dodajemy listener, który odróżnia "otwieracze" po atrybucie data-parent-opener lub inline onclick
-                doc.addEventListener('click', function(e) {
-                    // jeśli kliknięty element lub jego rodzic ma atrybut data-parent-opener -> wyjątek
-                    if (e.target && e.target.closest && e.target.closest('[data-parent-opener]')) {
-                        return; // wyjątek — nie zamykamy
-                    }
-
-                    // sprawdź inline onclick (np. onclick="parent.openPlayer()")
-                    let el = e.target;
-                    while (el && el !== doc) {
-                        const onclick = el.getAttribute && el.getAttribute('onclick');
-                        if (onclick && (/parent\.openPlayer|parent\.togglePlayer|parent\.playDeluxAlbum|parent\.playArcticAlbum|parent\.playSouthAmericaAlbum|parent\.playAustraliaAlbum|parent\.playAquaticAlbum|parent\.playSoutheastAsiaAlbum|parent\.playAfricaAlbum|parent\.playNorthAmericaAlbum|parent\.playEuropeAlbum|parent\.playConservationAlbum|parent\.playTwilightAlbum|parent\.playGrasslandsAlbum|parent\.playTropicalAlbum|parent\.playAridAlbum|parent\.playOceaniaAlbum|parent\.playEurasiaAlbum/).test(onclick)) {
-                            return; // też wyjątek
-                        }
-                        el = el.parentNode;
-                    }
-
-                    // jeśli tutaj — klik poza elementem-otwieraczem -> zamknij modal (jeśli otwarty)
-                    if (player.classList.contains('open')) {
-                        closePlayer();
-                    }
-                }, {
-                    capture: false
-                });
-
-            } catch (err) {
-                // cross-origin — nie możemy podpiąć listenera
-                console.warn("Nie można podłączyć listenera do iframe (prawdopodobnie CORS):", err);
-            }
-        }
-
-        // Podpinamy handler po każdym załadowaniu iframe
-        contentFrame.addEventListener('load', () => {
-            // przywróć opacity jeśli używasz changePage + dołącz handler
-            contentFrame.style.opacity = 1;
-            attachIframeClickHandler();
-        });
-
-        // Funkcja do zmiany strony w iframe z animacją opacity (jeśli używasz changePage)
-        function changePage(url) {
-            contentFrame.style.opacity = 0;
-            contentFrame.src = url;
-        }
 
         // Zaktualizowane playDeluxAlbum: otwiera modal przez openPlayer(), a nie przez style.display
         function playDeluxAlbum() {
@@ -833,12 +782,6 @@
             }
         });
 
-        /* --- Jeżeli używasz changePage(url) możesz też wywołać mapUrlToFavicon(url) bez czekania na load: */
-        function changePage(url) {
-            contentFrame.style.opacity = 0;
-            contentFrame.src = url;
-            mapUrlToFavicon(url);
-        }
 
         /* --- Opcjonalnie: ustaw favicon początkowo --- */
         document.addEventListener('DOMContentLoaded', () => {
@@ -866,99 +809,6 @@
                 name = decodeURIComponent(name);
             } catch (e) {}
             return name.trim().toLowerCase();
-        }
-
-        function getBasenameFromUrl(url) {
-            // obsłuży relative URL-y poprawnie
-            try {
-                const full = new URL(url, location.href);
-                const pathname = full.pathname; // np. /DLC/Aktualizacja%20-%20konsola.html
-                const rawBasename = pathname.split('/').pop(); // "Aktualizacja%20-%20konsola.html"
-                try {
-                    return decodeURIComponent(rawBasename);
-                } catch (e) {
-                    return rawBasename;
-                }
-            } catch (err) {
-                // fallback — proste rozbicie stringa
-                const parts = url.split('/');
-                const raw = parts[parts.length - 1].split('?')[0].split('#')[0];
-                try {
-                    return decodeURIComponent(raw);
-                } catch (e) {
-                    return raw;
-                }
-            }
-        }
-
-        function isCachePage(url) {
-            const basename = getBasenameFromUrl(url);
-            const norm = normalizeName(basename);
-            return cachePages.some(p => normalizeName(p) === norm);
-        }
-
-        function changePage(url) {
-            // animacja fade-out
-            contentFrame.style.opacity = 0;
-
-            const basename = getBasenameFromUrl(url);
-            const key = normalizeName(basename);
-
-            if (isCachePage(url)) {
-                if (iframeCache.has(key)) {
-                    // już mamy iframe w cache — zamieniamy referencję i pokazujemy
-                    const cached = iframeCache.get(key);
-
-                    // jeśli contentFrame jest stary element w DOM -> zamień go
-                    if (contentFrame !== cached) {
-                        contentFrame.replaceWith(cached);
-                        // zaktualizuj globalną referencję
-                        window.contentFrame = cached; // jeśli używasz contentFrame jako let/const w innym scope -> zaktualizuj tam
-                    }
-                    // fade-in
-                    requestAnimationFrame(() => {
-                        cached.style.opacity = 1;
-                    });
-                } else {
-                    // pierwszy raz — stwórz iframe i zapisz w cache
-                    const newIframe = document.createElement('iframe');
-                    newIframe.src = url;
-                    newIframe.width = '100%';
-                    newIframe.height = '101vh';
-                    newIframe.style.border = 'none';
-                    newIframe.style.opacity = 0;
-                    newIframe.id = 'content-frame'; // opcjonalnie
-
-                    // dodaj do DOM (możesz zamiast append użyć replaceWith jeśli chcesz podmienić current)
-                    contentFrame.replaceWith(newIframe);
-                    iframeCache.set(key, newIframe);
-                    window.contentFrame = newIframe;
-
-                    newIframe.addEventListener('load', () => {
-                        // fade-in po załadowaniu
-                        newIframe.style.transition = 'opacity 0.2s ease-in-out';
-                        newIframe.style.opacity = 1;
-                    });
-                }
-            } else {
-                // nie cache'ujemy: po prostu zmieniamy src obecnego iframe
-                if (contentFrame.tagName && contentFrame.tagName.toLowerCase() === 'iframe') {
-                    contentFrame.src = url;
-                    // fade-in przy load (możesz zachować istniejący handler load)
-                } else {
-                    // jeśli contentFrame został zastąpiony (np. przez cached iframe wcześniej),
-                    // stwórz nowy iframe "tymczasowy"
-                    const newIframe = document.createElement('iframe');
-                    newIframe.src = url;
-                    newIframe.style.width = '100%';
-                    newIframe.style.height = '101vh';
-                    newIframe.style.border = 'none';
-                    newIframe.style.opacity = 0;
-                    newIframe.addEventListener('load', () => newIframe.style.opacity = 1);
-                    contentFrame.replaceWith(newIframe);
-                    window.contentFrame = newIframe;
-                }
-            }
         }
 
         window.addEventListener("message", (ev) => {
@@ -1032,6 +882,261 @@
             }
         }
     </script>
+
+    <script>
+        (function() {
+            // helpery
+            function getFrame() {
+                return document.getElementById('content-frame');
+            }
+
+            function basenameFromUrl(url) {
+                try {
+                    const u = new URL(url, location.href);
+                    return decodeURIComponent(u.pathname.split('/').pop());
+                } catch (e) {
+                    const parts = url.split('/');
+                    const raw = parts[parts.length - 1].split('?')[0].split('#')[0];
+                    try {
+                        return decodeURIComponent(raw);
+                    } catch (e2) {
+                        return raw;
+                    }
+                }
+            }
+
+            function attachCommonHandlers(iframe) {
+                if (!iframe) return;
+
+                iframe.addEventListener('load', () => {
+                    const doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+                    if (!doc) return;
+
+                    // zawsze dodawaj nowy handler do nowo załadowanego dokumentu
+                    doc.addEventListener('click', function(e) {
+                        if (e.target && e.target.closest && e.target.closest('[data-parent-opener]')) return;
+
+                        let el = e.target;
+                        while (el && el !== doc) {
+                            const onclick = el.getAttribute && el.getAttribute('onclick');
+                            if (onclick && (/parent\.openPlayer|parent\.togglePlayer|parent\.playDeluxAlbum|parent\.playArcticAlbum|parent\.playSouthAmericaAlbum|parent\.playAustraliaAlbum|parent\.playAquaticAlbum|parent\.playSoutheastAsiaAlbum|parent\.playAfricaAlbum|parent\.playNorthAmericaAlbum|parent\.playEuropeAlbum|parent\.playConservationAlbum|parent\.playTwilightAlbum|parent\.playGrasslandsAlbum|parent\.playTropicalAlbum|parent\.playAridAlbum|parent\.playOceaniaAlbum|parent\.playEurasiaAlbum/).test(onclick)) {
+                                return;
+                            }
+                            el = el.parentNode;
+                        }
+
+                        try {
+                            const player = document.getElementById("player-frame");
+                            if (player.classList.contains('open')) {
+                                player.classList.remove('open');
+                            }
+                        } catch (ignore) {}
+                    }, {
+                        capture: true
+                    });
+                });
+
+
+                iframe.addEventListener('load', () => {
+                    // próbujemy ustawić favicon (bez wyrzucania błędów przy CORS)
+                    try {
+                        const cw = iframe.contentWindow;
+                        const doc = cw && cw.document;
+                        if (doc) {
+                            const iconEl = doc.querySelector && doc.querySelector('link[rel*="icon"]');
+                            if (iconEl && iconEl.href) {
+                                setFavicon(iconEl.href);
+                            } else {
+                                mapUrlToFavicon(cw.location && cw.location.href ? cw.location.href : iframe.src);
+                            }
+                        } else {
+                            mapUrlToFavicon(iframe.src);
+                        }
+                    } catch (err) {
+                        console.warn("applyFaviconFromIframe (safe) błąd:", err);
+                        mapUrlToFavicon(iframe.src);
+                    }
+
+                    // --- Zapisujemy resolved URL (preferuj full href) ---
+                    let resolvedUrl;
+                    try {
+                        // jeśli same-origin, weź rzeczywisty location.href wewnątrz iframe
+                        const cw = iframe.contentWindow;
+                        if (cw && cw.location && cw.location.href) {
+                            resolvedUrl = cw.location.href;
+                        } else {
+                            resolvedUrl = new URL(iframe.src, location.href).href;
+                        }
+                    } catch (e) {
+                        try {
+                            resolvedUrl = new URL(iframe.src, location.href).href;
+                        } catch (e2) {
+                            resolvedUrl = iframe.src;
+                        }
+                    }
+
+                    try {
+                        const prev = sessionStorage.getItem('lastPageUrl') || sessionStorage.getItem('lastPage') || '';
+                        if (prev !== resolvedUrl) {
+                            sessionStorage.setItem('lastPageUrl', resolvedUrl);
+                            sessionStorage.setItem('lastPageBasename', basenameFromUrl(resolvedUrl));
+                            console.log("💾 Zapisano lastPageUrl:", resolvedUrl);
+                        } else {
+                            console.log("⏩ lastPageUrl nie zmienione:", resolvedUrl);
+                        }
+                    } catch (err) {
+                        console.warn("Błąd przy zapisie lastPageUrl:", err);
+                    }
+
+                    // attach click handler *inside* iframe (bez throw gdy cross-origin)
+                    try {
+                        const doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+                        if (doc && !iframe.__clickHandlerAttached) {
+                            doc.addEventListener('click', function(e) {
+                                // wyjątek: element z data-parent-opener
+                                if (e.target && e.target.closest && e.target.closest('[data-parent-opener]')) return;
+
+                                // wyjątek: kliknięcie w element z onclick otwierającym playera
+                                let el = e.target;
+                                while (el && el !== doc) {
+                                    const onclick = el.getAttribute && el.getAttribute('onclick');
+                                    if (onclick && (/parent\.openPlayer|parent\.togglePlayer|parent\.playDeluxAlbum|parent\.playArcticAlbum|parent\.playSouthAmericaAlbum|parent\.playAustraliaAlbum|parent\.playAquaticAlbum|parent\.playSoutheastAsiaAlbum|parent\.playAfricaAlbum|parent\.playNorthAmericaAlbum|parent\.playEuropeAlbum|parent\.playConservationAlbum|parent\.playTwilightAlbum|parent\.playGrasslandsAlbum|parent\.playTropicalAlbum|parent\.playAridAlbum|parent\.playOceaniaAlbum|parent\.playEurasiaAlbum/).test(onclick)) {
+                                        return;
+                                    }
+                                    el = el.parentNode;
+                                }
+
+                                // domyślnie: zamknij playera
+                                try {
+                                    const player = document.getElementById("player-frame");
+                                    if (player.classList.contains('open')) {
+                                        player.classList.remove('open');
+                                    }
+                                } catch (ignore) {}
+                            }, {
+                                capture: true
+                            });
+                            iframe.__clickHandlerAttached = true;
+                        }
+
+                    } catch (err) {
+                        // cross-origin albo brak dostępu do dokumentu — nic nie robimy
+                    }
+                });
+            }
+
+            function replaceWithIframe(newIframe) {
+                newIframe.id = 'content-frame';
+                const old = getFrame();
+                if (old && old.parentNode) {
+                    old.parentNode.replaceChild(newIframe, old);
+                } else {
+                    const player = document.getElementById('player-frame');
+                    if (player && player.parentNode) player.parentNode.insertBefore(newIframe, player);
+                    else document.body.appendChild(newIframe);
+                }
+                attachCommonHandlers(newIframe);
+            }
+
+            // Nadpisujemy changePage, żeby zawsze aktualizować sessionStorage i reattachować handlery
+            window.changePage = function(url) {
+                const frame = getFrame();
+                if (!frame) return console.warn("Brak elementu #content-frame");
+
+                try {
+                    frame.style.opacity = 0;
+                } catch (e) {}
+
+                // zapisujemy resolved absolute URL (fallback do zapisu 'lastPage' jeśli coś pójdzie nie tak)
+                try {
+                    const abs = new URL(url, location.href).href;
+                    sessionStorage.setItem('lastPageUrl', abs);
+                    sessionStorage.setItem('lastPageBasename', basenameFromUrl(abs));
+                    console.log("🔀 changePage - zapisano lastPageUrl:", abs);
+                } catch (err) {
+                    try {
+                        sessionStorage.setItem('lastPage', url);
+                    } catch (e2) {}
+                    console.warn("changePage - nie udało się zapisać lastPageUrl, zapisano fallback 'lastPage':", err);
+                }
+
+                const basename = basenameFromUrl(url);
+                const key = normalizeName(basename);
+
+                if (typeof isCachePage === 'function' && isCachePage(url)) {
+                    if (iframeCache.has(key)) {
+                        const cached = iframeCache.get(key);
+                        replaceWithIframe(cached);
+                        requestAnimationFrame(() => cached.style.opacity = 1);
+                    } else {
+                        const newIframe = document.createElement('iframe');
+                        newIframe.src = url;
+                        newIframe.style.width = '100%';
+                        newIframe.style.height = '101vh';
+                        newIframe.style.border = 'none';
+                        newIframe.style.opacity = 0;
+                        iframeCache.set(key, newIframe);
+                        replaceWithIframe(newIframe);
+                        newIframe.addEventListener('load', () => {
+                            newIframe.style.transition = 'opacity 0.2s ease-in-out';
+                            newIframe.style.opacity = 1;
+                        });
+                    }
+                } else {
+                    const current = getFrame();
+                    if (current && current.tagName && current.tagName.toLowerCase() === 'iframe') {
+                        current.src = url;
+                    } else {
+                        const newIframe = document.createElement('iframe');
+                        newIframe.src = url;
+                        newIframe.style.width = '100%';
+                        newIframe.style.height = '101vh';
+                        newIframe.style.border = 'none';
+                        newIframe.style.opacity = 0;
+                        replaceWithIframe(newIframe);
+                        newIframe.addEventListener('load', () => newIframe.style.opacity = 1);
+                    }
+                }
+            };
+
+            // Inicjalizacja przy starcie
+            document.addEventListener('DOMContentLoaded', () => {
+                let iframe = getFrame();
+                if (!iframe) {
+                    iframe = document.createElement('iframe');
+                    iframe.id = 'content-frame';
+                    const player = document.getElementById('player-frame');
+                    if (player && player.parentNode) player.parentNode.insertBefore(iframe, player);
+                    else document.body.appendChild(iframe);
+                }
+                attachCommonHandlers(iframe);
+
+                // najpierw sprawdzamy nowy klucz, potem kompatybilnie stare
+                const fromUrl = sessionStorage.getItem('lastPageUrl') || sessionStorage.getItem('lastPage') || sessionStorage.getItem('lastPageBasename');
+                console.log("📂 (init) lastPage z sessionStorage:", fromUrl);
+
+                if (fromUrl && fromUrl.trim() !== '') {
+                    try {
+                        // ustawiamy bezpośrednio (jeśli basename, browser rozwiąże jako relative URL)
+                        iframe.src = fromUrl;
+                        console.log("🔄 Przywracam ostatnią stronę:", fromUrl);
+                    } catch (e) {
+                        try {
+                            iframe.src = new URL(fromUrl, location.href).href;
+                            console.log("🔄 Przywracam (resolved) ostatnią stronę:", fromUrl);
+                        } catch (e2) {
+                            console.warn("Nie udało się ustawić lastPage — ładuję domyślną stronę", e2);
+                            iframe.src = "Strona główna.html";
+                        }
+                    }
+                } else {
+                    console.log("📄 Brak zapisanej strony — ustawiam domyślną");
+                    iframe.src = "Strona główna.html";
+                }
+            });
+        })();
+    </script>
+
 
 
 </body>

@@ -15,6 +15,315 @@
             scroll-behavior: smooth;
         }
     </style>
+    <style>
+        /* --- Twoje obecne style zostają --- */
+        /* ✅ Ulepszenia dla telefonów */
+        
+        @media (max-width: 400px) {
+            body {
+                /* czytelniejsze podstawowe fonty */
+                line-height: 1.5;
+            }
+            .ikona_loga {
+                width: 12% !important;
+                margin-top: -10% !important;
+            }
+            .tytul {
+                font-size: 6vw !important;
+            }
+            header.tytul {
+                font-size: 6vw;
+                /* większy i wyraźniejszy nagłówek */
+                padding: 10px;
+                text-align: center;
+            }
+            .tytul br {
+                display: inline;
+                /* na telefonie działa enter */
+            }
+            #powrot {
+                display: block !important;
+                width: 100% !important;
+                margin: 3% 0 !important;
+                padding: 0 !important;
+                float: none !important;
+            }
+            #powrot>a,
+            #powrot>i {
+                display: block !important;
+                width: 100% !important;
+                margin: 0.4rem 0 !important;
+                text-decoration: none !important;
+                line-height: 1.2 !important;
+            }
+            /* ✅ pierwszy powrot – link do DLC */
+            p#powrot:nth-of-type(1) {
+                text-align: left !important;
+            }
+            p#powrot:nth-of-type(1)>a {
+                font-size: 4vw !important;
+                font-weight: 600 !important;
+                text-align: left !important;
+            }
+            /* ✅ drugi powrot – data i cena */
+            p#powrot:nth-of-type(2) {
+                text-align: center !important;
+            }
+            p#powrot:nth-of-type(2)>i {
+                font-size: 3.2vw !important;
+                text-align: center !important;
+            }
+            iframe {
+                width: 100% !important;
+                min-width: unset !important;
+                height: 53.5vw !important;
+                /* proporcja 16:9 */
+            }
+            .akapit {
+                font-size: 4vw !important;
+                padding: 0 4%;
+            }
+            .akapit span {
+                font-size: 3.5vw !important;
+            }
+            .akapit p,
+            div p {
+                font-size: 4vw !important;
+            }
+            .akapit b {
+                font-size: 3.7vw !important;
+            }
+            .podpis_filmu {
+                font-size: 2.5vw !important;
+            }
+            /* ✅ Galeria — zdjęcia w 2 kolumnach zamiast 3 */
+            .zbior {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .podpis {
+                width: 400% !important;
+            }
+            .zbior div img {
+                width: 400% !important;
+                border-radius: 8px;
+            }
+            /* ✅ Opisy zdjęć w galerii */
+            #lightbox-caption {
+                font-size: 3vw !important;
+                /* powiększony tekst */
+                line-height: 1.4 !important;
+                /* luźniejszy odstęp między liniami */
+                padding: 6px 10px !important;
+                /* więcej przestrzeni */
+                text-align: center !important;
+                color: #fff !important;
+                background: rgba(0, 0, 0, 0.6);
+                /* półprzezroczyste tło dla czytelności */
+                border-radius: 6px;
+                max-width: 90%;
+                margin: 5px auto;
+                display: block;
+            }
+            footer h2 {
+                font-size: 4vw;
+            }
+            footer center {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* 2 kolumny */
+                gap: 1px;
+                /* odstęp między ikonami */
+                justify-items: center;
+                align-items: center;
+            }
+            footer a:nth-of-type(1),
+            footer a:nth-of-type(2) {
+                width: 100%;
+                height: auto;
+            }
+            footer a:nth-of-type(3),
+            footer a:nth-of-type(4) {
+                width: 50%;
+                /* możesz zmienić np. 50% lub 70% */
+                justify-self: center;
+            }
+            footer img.stopka {
+                width: 70% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer img.stopka_znaczki {
+                width: 62% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer a:nth-of-type(3) {
+                margin-left: 85% !important;
+                /* dostosuj wartość */
+            }
+            footer p {
+                font-size: 2.2vw !important;
+            }
+            .arrow {
+                width: 9.3vw !important;
+                height: 9.3vw !important;
+            }
+            .arrow::before {
+                border-left: 4.6vw solid transparent;
+                border-right: 4.6vw solid transparent;
+                border-bottom: 5.8vw solid white;
+            }
+            #sidebar {
+                width: 20%;
+                margin-top: 2%;
+            }
+        }
+        /* Hamburger domyślnie ukryty */
+        
+        .hamburger {
+            display: none;
+            font-size: 8vw;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            z-index: 9998;
+            color: white;
+        }
+        /* Panel mobilnego menu */
+        
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100%;
+            background: linear-gradient(#107e59, #0b6144);
+            color: white;
+            overflow-y: auto;
+            transition: right 0.4s ease;
+            z-index: 10000;
+            padding: 20px;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-menu #closeMenu {
+            font-size: 8vw;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+        /* Menu w panelu */
+        
+        .mobile-menu ol {
+            list-style: none;
+            padding: 0;
+            margin: 50px 0 0 0;
+        }
+        
+        .mobile-menu ol li {
+            margin: 15px 0;
+        }
+        
+        .mobile-menu ul li {
+            font-style: italic;
+        }
+        
+        .mobile-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 5vw;
+        }
+        /* Pokaż hamburgera tylko na telefonie */
+        
+        @media (max-width: 400px) {
+            header .menu {
+                display: none !important;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+        
+        .wybrane {
+            color: #21d096 !important;
+            font-weight: bold !important;
+        }
+        
+        .wybrano {
+            color: rgb(211, 224, 92) !important;
+            font-style: italic;
+        }
+        
+        header .menu li ul {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+        
+        header .menu li:hover ul {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 3999;
+            /* mniej niż mobileMenu, ale więcej niż reszta */
+            display: none;
+            /* domyślnie ukryte */
+        }
+        
+        .menu-overlay.active {
+            display: block;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeMenu = document.getElementById("closeMenu");
+            const overlay = document.getElementById("menuOverlay");
+
+            function openMenu() {
+                mobileMenu.classList.add("active");
+                overlay.classList.add("active");
+            }
+
+            function closeMenuFn() {
+                mobileMenu.classList.remove("active");
+                overlay.classList.remove("active");
+            }
+
+            if (hamburger) hamburger.addEventListener("click", openMenu);
+            if (closeMenu) closeMenu.addEventListener("click", closeMenuFn);
+            if (overlay) overlay.addEventListener("click", closeMenuFn);
+        });
+    </script>
+
+
     <link rel="preload" href="Ikony/pc_konsola.png" as="image">
     <link rel="preload" href="Ikony/Planet Zoo_konsola.png" as="image">
     <link rel="preload" href="Ikony/Planet Zoo_pc.png" as="image">
@@ -49,14 +358,13 @@
                                 <li><a href="Słowniczek.html">Słowniczek</a></li>
                             </ul>
                         </li>
-
-                        <li><a href="#">Nowości</a>
+                        <li>
+                            <a href="#" class="wybrane">Nowości</a>
                             <ul>
                                 <li><a href="Aktualizacje.html">Aktualizacje</a></li>
-                                <li><a href="DLC.html">DLC</a></li>
+                                <li><a href="DLC.html" class="wybrano">DLC</a></li>
                             </ul>
                         </li>
-
                         <li><a href="#">O Nas</a>
                             <ul>
                                 <li><a href="Historia.html">Historia</a></li>
@@ -72,6 +380,48 @@
                         </li>
                     </ol>
                 </center>
+                <!-- przycisk hamburgera widoczny tylko na telefonie -->
+                <div id="hamburger" class="hamburger cień">&#9776;</div>
+
+                <!-- panel boczny -->
+                <nav id="mobileMenu" class="mobile-menu cień">
+                    <span id="closeMenu">&times;</span>
+                    <ol>
+                        <li><a href="Strona główna.html">Strona główna</a></li>
+                        <li>
+                            <a href="#">Encyklopedia</a>
+                            <ul>
+                                <li><a href="Zoopedia.html">Zoopedia</a></li>
+                                <li><a href="Słowniczek.html">Słowniczek</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="wybrane">Nowości</a>
+                            <ul>
+                                <li><a href="Aktualizacje.html">Aktualizacje</a></li>
+                                <li><a href="DLC.html" class="wybrano">DLC</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">O Nas</a>
+                            <ul>
+                                <li><a href="Historia.html">Historia</a></li>
+                                <li><a href="Skróty klawiszowe.html">Skróty klawiszowe</a></li>
+                                <li><a href="#" onclick="parent.togglePlayer()">Muzyka</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Internetowe Zoo</a>
+                            <ul>
+                                <li><a href="Mapa Zoo.html">Mapa Zoo</a></li>
+                                <li><a href="Informacje dnia.html">Informacje dnia</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </nav>
+                <div id="menuOverlay" class="menu-overlay"></div>
+
+
             </header>
             <div style="clear: both;"></div>
             <div style="animation: fadeIn ease-in .5s backwards;">
@@ -84,12 +434,12 @@
                     </center>
                 </div>
                 <center>
-                    <img style="width:5.5%; margin-top: -5%;" src="Ikony/dlc.png" alt="DLC">
+                    <img style="width:5.5%; margin-top: -5%;" class="ikona_loga" src="Ikony/dlc.png" alt="DLC">
                 </center>
                 <h1 class="tytul cień" style="margin-top: 0%;">DLC</h1>
                 <p class="cień opis" style="margin-top: -1.5%;"><i>Witaj na stronie DLC Planet Zoo!<br> Zebrano tutaj wszystkie dodatki do gry.<br> Dowiedz się więcej na temat każdego pakietu rozszerzeń.<br> Życzymy miłego czytania!</i>
                 </p>
-                <div class="cień">
+                <div class="cień zbior">
                     <div>
                         <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Deluxe_Edition"></p>
@@ -223,12 +573,26 @@
                             <p class="podpis" style="margin-left: -3%;">Zookeepers Animal Pack</p>
                         </div>
                     </div>
+                    <div>
+                        <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Americas_Animal_Pack"></p>
+                            <a href="DLC/Americas Animal Pack/Americas Animal Pack.html"><img class="galeria" src="DLC/Americas Animal Pack/Americas Animal Pack.png" alt="Americas Animal Pack" width="90%"></a>
+                            <p class="podpis" style="margin-left: -3%;">Americas Animal Pack</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Asia_Animal_Pack"></p>
+                            <a href="DLC/Asia Animal Pack/Asia Animal Pack.html"><img class="galeria" src="DLC/Asia Animal Pack/Asia Animal Pack.png" alt="Asia Animal Pack" width="90%"></a>
+                            <p class="podpis" style="margin-left: -3%;">Asia Animal Pack</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z Planet Zoo!</h2>
+        <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z&nbsp;Planet Zoo!</h2>
         <center>
             <a href="https://store.steampowered.com/app/703080/Planet_Zoo/?l=polish" target="_blank"><img class="stopka" src="Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 2%; padding-right: 1%;"></a>
             <a href="https://forums.frontier.co.uk/categories/planet-zoo/" target="_blank"><img class="stopka" src="Ikony/Frontier_logo.png" alt="Logo Frontier" style="margin: 1.2%; padding-right: 1%;"></a>

@@ -93,7 +93,7 @@ body {
     padding: 5%;
     border-radius: 5%;
     color: white;
-    z-index: 2000;
+    z-index: 10005;
     font-size: 2vw;
     animation: fadeIn ease-in .3s backwards;
     border: white 0.2vw solid;
