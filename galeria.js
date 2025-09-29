@@ -61,10 +61,25 @@ document.querySelectorAll('.gallery-image').forEach(img => {
         currentGalleryImages = Array.from(gallery.querySelectorAll('.gallery-image'));
         currentIndex = currentGalleryImages.indexOf(clickedImg);
 
+        // ukryj strzałki, jeśli tylko jedno zdjęcie
+        if (currentGalleryImages.length <= 1) {
+            preveBtn.style.display = "none";
+            nexteBtn.style.display = "none";
+        } else {
+            preveBtn.style.display = "block";
+            nexteBtn.style.display = "block";
+        }
+
         showOverlay();
         showImage(currentIndex);
     });
 });
+
+let scale = 1;
+let lastTouchX = 0;
+let lastTouchY = 0;
+let translateX = 0;
+let translateY = 0;
 
 // Nawigacja
 preveBtn.addEventListener('click', () => {
@@ -94,27 +109,60 @@ let touchEndX = 0;
 function handleGesture() {
     const swipeDistance = touchEndX - touchStartX;
 
-    if (Math.abs(swipeDistance) > 50) { // minimalna długość "swipe"
+    // jeśli obrazek jest powiększony, nie zmieniaj
+    if (lightboxImage.naturalWidth > lightboxImage.clientWidth * 1.2) {
+        return;
+    }
+
+    if (Math.abs(swipeDistance) > 50) {
         if (swipeDistance < 0) {
-            // przesunięcie w lewo -> następne zdjęcie
             const newIndex = (currentIndex + 1) % currentGalleryImages.length;
             showImage(newIndex, 'right');
         } else {
-            // przesunięcie w prawo -> poprzednie zdjęcie
             const newIndex = (currentIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
             showImage(newIndex, 'left');
         }
     }
 }
 
-// Nasłuch gestów dotyku
-overlay.addEventListener('touchstart', e => {
-    touchStartX = e.changedTouches[0].screenX;
+let initialDistance = 0;
+
+overlay.addEventListener("touchstart", e => {
+    if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        initialDistance = Math.sqrt(dx * dx + dy * dy);
+    } else if (e.touches.length === 1) {
+        lastTouchX = e.touches[0].clientX;
+        lastTouchY = e.touches[0].clientY;
+        touchStartX = e.touches[0].screenX;
+    }
 });
 
-overlay.addEventListener('touchend', e => {
+overlay.addEventListener("touchmove", e => {
+    if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const newDistance = Math.sqrt(dx * dx + dy * dy);
+        scale = Math.min(Math.max(1, newDistance / initialDistance), 4); // 1x–4x
+        lightboxImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    } else if (e.touches.length === 1 && scale > 1) {
+        const dx = e.touches[0].clientX - lastTouchX;
+        const dy = e.touches[0].clientY - lastTouchY;
+        translateX += dx;
+        translateY += dy;
+        lastTouchX = e.touches[0].clientX;
+        lastTouchY = e.touches[0].clientY;
+        lightboxImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    }
+});
+
+overlay.addEventListener("touchend", e => {
     touchEndX = e.changedTouches[0].screenX;
-    handleGesture();
+
+    if (scale === 1) {
+        handleGesture(); // normalne przełączanie zdjęć
+    }
 });
 
 document.addEventListener("DOMContentLoaded", function() {
