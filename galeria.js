@@ -1,3 +1,5 @@
+// ---- galeria.js (poprawiona wersja) ----
+
 const overlay = document.createElement('div');
 overlay.id = 'lightbox-overlay';
 overlay.innerHTML = `
@@ -32,6 +34,39 @@ function hideOverlay() {
     }, 300);
 }
 
+let scale = 1;
+let translateX = 0;
+let translateY = 0;
+
+function applyTransform() {
+    lightboxImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+}
+
+function resetTransform() {
+    scale = 1;
+    translateX = 0;
+    translateY = 0;
+    lightboxImage.style.transform = '';
+}
+
+/* clamp translate so image doesn't drift too far */
+function clampTranslate() {
+    if (!lightboxImage.complete) return;
+    const containerW = overlay.clientWidth;
+    const containerH = overlay.clientHeight;
+    const imgW = lightboxImage.clientWidth;
+    const imgH = lightboxImage.clientHeight;
+    const scaledW = imgW * scale;
+    const scaledH = imgH * scale;
+
+    const maxX = Math.max(0, (scaledW - containerW) / 2);
+    const maxY = Math.max(0, (scaledH - containerH) / 2);
+
+    translateX = Math.max(-maxX, Math.min(maxX, translateX));
+    translateY = Math.max(-maxY, Math.min(maxY, translateY));
+}
+
+/* show image and reset transforms */
 function showImage(index, direction = 'right') {
     const item = currentGalleryImages[index];
     if (!item) return;
@@ -42,11 +77,16 @@ function showImage(index, direction = 'right') {
     lightboxImage.classList.add(enterClass);
 
     setTimeout(() => {
+        // reset transforms before loading new src
+        resetTransform();
+
         lightboxImage.src = item.src;
         lightboxCaption.textContent = item.dataset.caption || item.alt || '';
         currentIndex = index;
 
         lightboxImage.onload = () => {
+            // make sure transforms are reset visually after load
+            resetTransform();
             lightboxImage.classList.remove('enter-left', 'enter-right');
             lightboxImage.classList.add('show');
         };
@@ -75,12 +115,6 @@ document.querySelectorAll('.gallery-image').forEach(img => {
     });
 });
 
-let scale = 1;
-let lastTouchX = 0;
-let lastTouchY = 0;
-let translateX = 0;
-let translateY = 0;
-
 // Nawigacja
 preveBtn.addEventListener('click', () => {
     const newIndex = (currentIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
@@ -103,68 +137,213 @@ document.addEventListener('keydown', e => {
     if (e.key === 'ArrowLeft') preveBtn.click();
 });
 
+// --- DOTYK / MYSZ: pinch, pan, swipe ---
+
 let touchStartX = 0;
-let touchEndX = 0;
+let touchStartY = 0;
+let lastTouchX = 0;
+let lastTouchY = 0;
+let initialDistance = 0;
+let isPinching = false;
+let isMouseDown = false;
+let mouseStartX = 0;
+let mouseStartY = 0;
 
-function handleGesture() {
-    const swipeDistance = touchEndX - touchStartX;
-
-    // jeśli obrazek jest powiększony, nie zmieniaj
-    if (lightboxImage.naturalWidth > lightboxImage.clientWidth * 1.2) {
-        return;
-    }
-
-    if (Math.abs(swipeDistance) > 50) {
-        if (swipeDistance < 0) {
-            const newIndex = (currentIndex + 1) % currentGalleryImages.length;
-            showImage(newIndex, 'right');
-        } else {
-            const newIndex = (currentIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
-            showImage(newIndex, 'left');
-        }
-    }
+/* Utility: distance between two touches */
+function getDistance(t0, t1) {
+    const dx = t0.clientX - t1.clientX;
+    const dy = t0.clientY - t1.clientY;
+    return Math.sqrt(dx * dx + dy * dy);
 }
 
-let initialDistance = 0;
+/* TOUCH handlers (passive: false so we can preventDefault) */
+overlay.addEventListener('touchstart', function(e) {
+    if (!overlay.classList.contains('show')) return;
 
-overlay.addEventListener("touchstart", e => {
     if (e.touches.length === 2) {
-        const dx = e.touches[0].clientX - e.touches[1].clientX;
-        const dy = e.touches[0].clientY - e.touches[1].clientY;
-        initialDistance = Math.sqrt(dx * dx + dy * dy);
+        isPinching = true;
+        initialDistance = getDistance(e.touches[0], e.touches[1]);
+
+        // set last center point for panning reference
+        lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
     } else if (e.touches.length === 1) {
-        lastTouchX = e.touches[0].clientX;
-        lastTouchY = e.touches[0].clientY;
-        touchStartX = e.touches[0].screenX;
+        isPinching = false;
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        lastTouchX = touchStartX;
+        lastTouchY = touchStartY;
     }
+}, { passive: false });
+
+overlay.addEventListener('touchmove', function(e) {
+    if (!overlay.classList.contains('show')) return;
+    if (e.touches.length === 2) {
+        // PINCH -> zoom
+        e.preventDefault();
+        const newDist = getDistance(e.touches[0], e.touches[1]);
+        const newScale = Math.min(Math.max(1, (newDist / initialDistance) * scale), 4); // relative zoom
+        // We compute scale relative to initial pinch — to be simpler, combine current scale and ratio
+        // Better approach: compute ratio = newDist / initialDistance and set scale = clamp(ratio * startScale)
+        // For simplicity we use immediate ratio-based update:
+        const ratio = newDist / initialDistance;
+        scale = Math.min(Math.max(1, ratio * (scale || 1)), 4);
+        // update last center for possible panning
+        lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+        clampTranslate();
+        applyTransform();
+    } else if (e.touches.length === 1) {
+        const x = e.touches[0].clientX;
+        const y = e.touches[0].clientY;
+        const dx = x - lastTouchX;
+        const dy = y - lastTouchY;
+
+        // if zoomed -> pan the image
+        if (scale > 1) {
+            e.preventDefault();
+            translateX += dx;
+            translateY += dy;
+            clampTranslate();
+            applyTransform();
+            lastTouchX = x;
+            lastTouchY = y;
+        } else {
+            // not zoomed -> horizontal swipes should be captured to prevent page scroll
+            if (Math.abs(dx) > Math.abs(dy)) {
+                e.preventDefault(); // prevent page horizontal/vertical scrolling
+            }
+            lastTouchX = x;
+            lastTouchY = y;
+        }
+    }
+}, { passive: false });
+
+overlay.addEventListener('touchend', function(e) {
+    if (!overlay.classList.contains('show')) return;
+
+    // if it was a pinch and now less than 2 touches, stop pinching
+    if (e.touches && e.touches.length < 2) {
+        isPinching = false;
+    }
+
+    // if scale === 1 -> interpret as swipe (change image)
+    if (scale === 1) {
+        // changedTouches may contain the last touch point
+        const ct = e.changedTouches && e.changedTouches[0];
+        if (!ct) return;
+        const dx = ct.clientX - touchStartX;
+        const dy = ct.clientY - touchStartY;
+
+        // threshold and horizontal-dominant gesture
+        if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+            if (dx < 0) {
+                // left swipe -> next
+                if (currentGalleryImages.length > 1) {
+                    const newIndex = (currentIndex + 1) % currentGalleryImages.length;
+                    showImage(newIndex, 'right');
+                }
+            } else {
+                // right swipe -> prev
+                if (currentGalleryImages.length > 1) {
+                    const newIndex = (currentIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+                    showImage(newIndex, 'left');
+                }
+            }
+        }
+    } else {
+        // when finishing a pan/zoom, clamp to valid bounds
+        clampTranslate();
+        applyTransform();
+    }
+}, { passive: false });
+
+overlay.addEventListener('touchcancel', function() {
+    isPinching = false;
+}, { passive: false });
+
+/* MOUSE fallback for desktop testing (simulate touch behaviors) */
+overlay.addEventListener('mousedown', function(e) {
+    if (!overlay.classList.contains('show')) return;
+    isMouseDown = true;
+    mouseStartX = e.clientX;
+    mouseStartY = e.clientY;
+    lastTouchX = e.clientX;
+    lastTouchY = e.clientY;
+    e.preventDefault();
 });
 
-overlay.addEventListener("touchmove", e => {
-    if (e.touches.length === 2) {
-        const dx = e.touches[0].clientX - e.touches[1].clientX;
-        const dy = e.touches[0].clientY - e.touches[1].clientY;
-        const newDistance = Math.sqrt(dx * dx + dy * dy);
-        scale = Math.min(Math.max(1, newDistance / initialDistance), 4); // 1x–4x
-        lightboxImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-    } else if (e.touches.length === 1 && scale > 1) {
-        const dx = e.touches[0].clientX - lastTouchX;
-        const dy = e.touches[0].clientY - lastTouchY;
+window.addEventListener('mousemove', function(e) {
+    if (!isMouseDown) return;
+    if (!overlay.classList.contains('show')) return;
+    const x = e.clientX;
+    const y = e.clientY;
+    const dx = x - lastTouchX;
+    const dy = y - lastTouchY;
+
+    if (scale > 1) {
         translateX += dx;
         translateY += dy;
-        lastTouchX = e.touches[0].clientX;
-        lastTouchY = e.touches[0].clientY;
-        lightboxImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+        clampTranslate();
+        applyTransform();
+    } else {
+        // not zoomed: do nothing on mousemove (we'll detect swipe on mouseup)
+        // but prevent selection/scrolling
     }
+
+    lastTouchX = x;
+    lastTouchY = y;
+    e.preventDefault();
 });
 
-overlay.addEventListener("touchend", e => {
-    touchEndX = e.changedTouches[0].screenX;
+window.addEventListener('mouseup', function(e) {
+    if (!overlay.classList.contains('show')) return;
+
+    if (!isMouseDown) return;
+    isMouseDown = false;
 
     if (scale === 1) {
-        handleGesture(); // normalne przełączanie zdjęć
+        const dx = e.clientX - mouseStartX;
+        const dy = e.clientY - mouseStartY;
+        if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+            if (dx < 0) {
+                if (currentGalleryImages.length > 1) {
+                    const newIndex = (currentIndex + 1) % currentGalleryImages.length;
+                    showImage(newIndex, 'right');
+                }
+            } else {
+                if (currentGalleryImages.length > 1) {
+                    const newIndex = (currentIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+                    showImage(newIndex, 'left');
+                }
+            }
+        }
+    } else {
+        clampTranslate();
+        applyTransform();
+    }
+    e.preventDefault();
+});
+
+// Ensure transforms reset whenever new image is shown (also if user clicks prev/next)
+lightboxImage.addEventListener('load', () => {
+    resetTransform();
+});
+
+// Adjust arrows visibility when overlay opens (in case of dynamic galleries)
+overlay.addEventListener('transitionend', () => {
+    if (overlay.classList.contains('show')) {
+        if (!currentGalleryImages || currentGalleryImages.length <= 1) {
+            preveBtn.style.display = 'none';
+            nexteBtn.style.display = 'none';
+        } else {
+            preveBtn.style.display = 'block';
+            nexteBtn.style.display = 'block';
+        }
     }
 });
 
+// Caption observer (preserved)
 document.addEventListener("DOMContentLoaded", function() {
     const caption = document.getElementById("lightbox-caption");
 
