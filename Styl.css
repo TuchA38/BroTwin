@@ -167,6 +167,13 @@ body {
     flex-direction: column;
 }
 
+@media (max-width: 400px) {
+    #lightbox-overlay {
+        height: 100vh;
+        height: 100dvh;
+    }
+}
+
 
 /* Aktywna klasa do animacji otwarcia */
 
