@@ -15,6 +15,333 @@
             scroll-behavior: smooth;
         }
     </style>
+    <style>
+        /* --- Twoje obecne style zostają --- */
+        /* ✅ Ulepszenia dla telefonów */
+        
+        @media (max-width: 400px) {
+            body {
+                /* czytelniejsze podstawowe fonty */
+                line-height: 1.5;
+            }
+            .ikona_loga {
+                width: 12% !important;
+                margin-top: -10% !important;
+            }
+            .ikona_konsoli {
+                width: 42% !important;
+            }
+            .tytul {
+                font-size: 6vw !important;
+            }
+            header.tytul {
+                font-size: 6vw;
+                /* większy i wyraźniejszy nagłówek */
+                padding: 10px;
+                text-align: center;
+            }
+            .tytul br {
+                display: inline;
+                /* na telefonie działa enter */
+            }
+            #powrot {
+                display: block !important;
+                width: 100% !important;
+                margin: 3% 0 !important;
+                padding: 0 !important;
+                float: none !important;
+            }
+            #powrot>a,
+            #powrot>i {
+                display: block !important;
+                width: 100% !important;
+                margin: 0.4rem 0 !important;
+                text-decoration: none !important;
+                line-height: 1.2 !important;
+            }
+            /* ✅ pierwszy powrot – link do DLC */
+            p#powrot:nth-of-type(1) {
+                text-align: left !important;
+            }
+            p#powrot:nth-of-type(1)>a {
+                font-size: 4vw !important;
+                font-weight: 600 !important;
+                text-align: left !important;
+            }
+            /* ✅ drugi powrot – data i cena */
+            p#powrot:nth-of-type(2) {
+                text-align: center !important;
+            }
+            p#powrot:nth-of-type(2)>i {
+                font-size: 3.2vw !important;
+                text-align: center !important;
+            }
+            iframe {
+                width: 100% !important;
+                min-width: unset !important;
+                height: 53.5vw !important;
+                /* proporcja 16:9 */
+            }
+            .akapit {
+                font-size: 4vw !important;
+                padding: 0 4%;
+            }
+            .akapit span {
+                font-size: 3.5vw !important;
+            }
+            .akapit p,
+            div p {
+                font-size: 4vw !important;
+            }
+            .akapit b {
+                font-size: 3.7vw !important;
+            }
+            .podpis_filmu {
+                font-size: 2.5vw !important;
+            }
+            /* ✅ Galeria — zdjęcia w 2 kolumnach zamiast 3 */
+            .zbior {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .podpis {
+                width: 400% !important;
+            }
+            .zbior div img {
+                width: 400% !important;
+                border-radius: 8px;
+            }
+            /* ✅ Opisy zdjęć w galerii */
+            #lightbox-caption {
+                font-size: 3vw !important;
+                /* powiększony tekst */
+                line-height: 1.4 !important;
+                /* luźniejszy odstęp między liniami */
+                padding: 6px 10px !important;
+                /* więcej przestrzeni */
+                text-align: center !important;
+                color: #fff !important;
+                background: rgba(0, 0, 0, 0.6);
+                /* półprzezroczyste tło dla czytelności */
+                border-radius: 6px;
+                max-width: 90%;
+                margin: 5px auto;
+                display: block;
+            }
+            footer h2 {
+                font-size: 4vw;
+            }
+            footer center {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                /* pierwszy rząd 3 kolumny */
+                grid-auto-rows: auto;
+                gap: 1px;
+                justify-items: center;
+                align-items: center;
+            }
+            /* elementy 1–3 w pierwszym rzędzie */
+            footer a:nth-of-type(1),
+            footer a:nth-of-type(2),
+            footer a:nth-of-type(3) {
+                grid-column: auto;
+                /* układają się normalnie w 3 kolumnach */
+            }
+            /* elementy 4–5 w drugim rzędzie → rozkładamy je na 2 kolumny */
+            footer a:nth-of-type(4),
+            footer a:nth-of-type(5) {
+                grid-column: span 1;
+                margin-top: 10%;
+                /* każdy zajmuje jedną kolumnę */
+            }
+            /* Jeśli chcesz wyśrodkować rząd z 2 elementami (Twitter + YouTube) */
+            footer a:nth-of-type(4) {
+                grid-column: 2;
+                /* zaczyna od drugiej kolumny */
+            }
+            footer img.stopka {
+                width: 65% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                display: block;
+            }
+            footer img.frontier {
+                width: 90% !important;
+                /* zwiększone tylko dla Frontier */
+                /* bezpieczny limit */
+                height: auto !important;
+                display: block;
+            }
+            footer a:nth-of-type(5) {
+                margin-right: 30% !important;
+            }
+            footer img.stopka_znaczki.yt {
+                width: 62% !important;
+                height: auto !important;
+                display: block;
+            }
+            footer img.stopka_znaczki {
+                width: 42% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer p {
+                font-size: 2.2vw !important;
+            }
+            .arrow {
+                width: 9.3vw !important;
+                height: 9.3vw !important;
+            }
+            .arrow::before {
+                border-left: 4.6vw solid transparent;
+                border-right: 4.6vw solid transparent;
+                border-bottom: 5.8vw solid white;
+            }
+            #sidebar {
+                width: 20%;
+                margin-top: 2%;
+            }
+        }
+        /* Hamburger domyślnie ukryty */
+        
+        .hamburger {
+            display: none;
+            font-size: 8vw;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            z-index: 9998;
+            color: white;
+        }
+        /* Panel mobilnego menu */
+        
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100%;
+            background: linear-gradient(#107e59, #0b6144);
+            color: white;
+            overflow-y: auto;
+            transition: right 0.4s ease;
+            z-index: 10000;
+            padding: 20px;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-menu #closeMenu {
+            font-size: 8vw;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+        /* Menu w panelu */
+        
+        .mobile-menu ol {
+            list-style: none;
+            padding: 0;
+            margin: 50px 0 0 0;
+        }
+        
+        .mobile-menu ol li {
+            margin: 15px 0;
+        }
+        
+        .mobile-menu ul li {
+            font-style: italic;
+        }
+        
+        .mobile-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 5vw;
+        }
+        /* Pokaż hamburgera tylko na telefonie */
+        
+        @media (max-width: 400px) {
+            header .menu {
+                display: none !important;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+        
+        .wybrane {
+            color: #21d096 !important;
+            font-weight: bold !important;
+        }
+        
+        .wybrano {
+            color: rgb(211, 224, 92) !important;
+            font-style: italic;
+        }
+        
+        header .menu li ul {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+        
+        header .menu li:hover ul {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 3999;
+            /* mniej niż mobileMenu, ale więcej niż reszta */
+            display: none;
+            /* domyślnie ukryte */
+        }
+        
+        .menu-overlay.active {
+            display: block;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeMenu = document.getElementById("closeMenu");
+            const overlay = document.getElementById("menuOverlay");
+
+            function openMenu() {
+                mobileMenu.classList.add("active");
+                overlay.classList.add("active");
+            }
+
+            function closeMenuFn() {
+                mobileMenu.classList.remove("active");
+                overlay.classList.remove("active");
+            }
+
+            if (hamburger) hamburger.addEventListener("click", openMenu);
+            if (closeMenu) closeMenu.addEventListener("click", closeMenuFn);
+            if (overlay) overlay.addEventListener("click", closeMenuFn);
+        });
+    </script>
     <link rel="preload" href="Ikony/pc_konsola.png" as="image">
     <link rel="preload" href="Ikony/Planet Zoo_konsola.png" as="image">
     <link rel="preload" href="Ikony/Planet Zoo_pc.png" as="image">
@@ -52,10 +379,10 @@
                             </ul>
                         </li>
 
-                        <li><a href="#">Nowości</a>
+                        <li><a href="#" class="wybrane">Nowości</a>
                             <ul>
                                 <li><a href="Aktualizacje - konsola.html">Aktualizacje</a></li>
-                                <li><a href="DLC - konsola.html">DLC</a></li>
+                                <li><a href="DLC - konsola.html" class="wybrano">DLC</a></li>
                             </ul>
                         </li>
 
@@ -74,6 +401,47 @@
                         </li>
                     </ol>
                 </center>
+                <!-- przycisk hamburgera widoczny tylko na telefonie -->
+                <div id="hamburger" class="hamburger cień">&#9776;</div>
+
+                <!-- panel boczny -->
+                <nav id="mobileMenu" class="mobile-menu cień">
+                    <span id="closeMenu">&times;</span>
+                    <ol>
+                        <li><a href="Strona główna - konsola.html">Strona główna</a></li>
+                        <li>
+                            <a href="#">Encyklopedia</a>
+                            <ul>
+                                <li><a href="Zoopedia.html">Zoopedia</a></li>
+                                <li><a href="Słowniczek.html">Słowniczek</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="wybrane">Nowości</a>
+                            <ul>
+                                <li><a href="Aktualizacje - konsola.html">Aktualizacje</a></li>
+                                <li><a href="DLC - konsola.html" class="wybrano">DLC</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">O Nas</a>
+                            <ul>
+                                <li><a href="Historia.html">Historia</a></li>
+                                <li><a href="Skróty klawiszowe.html">Skróty klawiszowe</a></li>
+                                <li><a href="#" onclick="parent.togglePlayer()">Muzyka</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Internetowe Zoo</a>
+                            <ul>
+                                <li><a href="Mapa Zoo.html">Mapa Zoo</a></li>
+                                <li><a href="Informacje dnia.html">Informacje dnia</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </nav>
+                <div id="menuOverlay" class="menu-overlay"></div>
+
             </header>
             <div style="clear: both;"></div>
             <div style="animation: fadeIn ease-in .5s backwards;">
@@ -86,15 +454,15 @@
                     </center>
                 </div>
                 <center>
-                    <img style="width:5.5%; margin-top: -5%;" src="Ikony/dlc.png" alt="DLC">
+                    <img style="width:5.5%; margin-top: -5%;" class="ikona_loga" src="Ikony/dlc.png" alt="DLC">
                 </center>
                 <h1 class="tytul cień" style="margin-top: 0%;">DLC</h1>
                 <center>
-                    <img style="width:25%; margin-top: -2%;" src="Ikony/konsola_napis.png" alt="napis"><br><br>
+                    <img style="width:25%; margin-top: -2%;" src="Ikony/konsola_napis.png" class="ikona_konsoli" alt="napis"><br><br>
                 </center>
                 <p class="cień opis" style="margin-top: -1.5%;"><i>Witaj na stronie DLC Planet Zoo!<br> Zebrano tutaj wszystkie dodatki do gry.<br> Dowiedz się więcej na temat każdego pakietu rozszerzeń.<br> Życzymy miłego czytania!</i>
                 </p>
-                <div class="cień">
+                <div class="cień zbior">
                     <div>
                         <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
                             <p style="margin: 0%;" id="Ultimate_Edition"></p>
@@ -152,18 +520,46 @@
                             <p class="podpis" style="margin-left: -3%;">Arctic & Conservation Bundle</p>
                         </div>
                     </div>
+                    <div>
+                        <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Australia_&_South_America_Bundle"></p>
+                            <a href="DLC/Konsola/Australia & South America Bundle/Australia & South America Bundle.html"><img class="galeria" src="DLC/Konsola/Australia & South America Bundle/Australia & South America Bundle.png" alt="Australia & South America Bundle" width="90%"></a>
+                            <p class="podpis" style="margin-left: -3%;">Australia & South America Bundle</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Oceania_&_Eurasia_Bundle"></p>
+                            <a href="DLC/Konsola/Oceania & Eurasia Bundle/Oceania & Eurasia Bundle.html"><img class="galeria" src="DLC/Konsola/Oceania & Eurasia Bundle/Oceania & Eurasia Bundle.png" alt="Oceania & Eurasia Bundle" width="90%"></a>
+                            <p class="podpis" style="margin-left: -3%;">Oceania & Eurasia Bundle</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Barnyard_&_Zookeepers_Bundle"></p>
+                            <a href="DLC/Konsola/Barnyard & Zookeepers Bundle/Barnyard & Zookeepers Bundle.html"><img class="galeria" src="DLC/Konsola/Barnyard & Zookeepers Bundle/Barnyard & Zookeepers Bundle.png" alt="Barnyard & Zookeepers Bundle" width="90%"></a>
+                            <p class="podpis" style="margin-left: -3%;">Barnyard & Zookeepers Bundle</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="zdjecie" style="margin-left: 3.3%; margin-right: -3.3%;">
+                            <p style="margin: 0%;" id="Americas_&_Asia_Bundle"></p>
+                            <a href="DLC/Konsola/Americas & Asia Bundle/Americas & Asia Bundle.html"><img class="galeria" src="DLC/Konsola/Americas & Asia Bundle/Americas & Asia Bundle.png" alt="Americas & Asia Bundle" width="90%"></a>
+                            <p class="podpis" style="margin-left: -3%;">Americas & Asia Bundle</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z Planet Zoo!</h2>
+        <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z&nbsp;Planet Zoo!</h2>
         <center>
             <a href="https://www.xbox.com/pl-PL/games/store/planet-zoo-edycja-konsolowa/9NZ038KZ68B7/0010" target="_blank"><img class="stopka" src="Ikony/Xbox-logo.png" alt="Logo Xbox" style="margin: -1%; width: 12%; padding-right: 1%; margin-right: 3%;"></a>
             <a href="https://store.playstation.com/pl-pl/product/EP2377-PPSA18026_00-PLANETZOOOOOOOOO" target="_blank"><img class="stopka" src="Ikony/Playstation.png" alt="Logo Playstation" style="margin: -1.5%; width: 11%; padding-right: 1%; margin-right: 0.5%;"></a>
-            <a href="https://forums.frontier.co.uk/categories/planet-zoo/" target="_blank"><img class="stopka" src="Ikony/Frontier_logo.png" alt="Logo Frontier" style="margin: 1.2%; padding-right: 1%;"></a>
+            <a href="https://forums.frontier.co.uk/categories/planet-zoo/" target="_blank"><img class="stopka frontier" src="Ikony/Frontier_logo.png" alt="Logo Frontier" style="margin: 1.2%; padding-right: 1%;"></a>
             <a href="https://twitter.com/planetzoogame" target="_blank"><img class="stopka_znaczki" src="Ikony/logo twitter.png" alt="Logo Twitter" style="margin: 1.7%; padding-right: 1%;"></a>
-            <a href="https://www.youtube.com/planetzoogame" target="_blank"><img class="stopka_znaczki" src="Ikony/logo youtube.png" alt="Logo Youtube" style="margin: 2%;"></a>
+            <a href="https://www.youtube.com/planetzoogame" target="_blank"><img class="stopka_znaczki yt" src="Ikony/logo youtube.png" alt="Logo Youtube" style="margin: 2%;"></a>
         </center><br>
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </footer>
