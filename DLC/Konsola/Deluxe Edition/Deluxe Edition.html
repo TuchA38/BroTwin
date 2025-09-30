@@ -117,6 +117,18 @@
                 filter: drop-shadow(0.1em 0.1em 0.2em black);
                 text-shadow: none !important;
             }
+            .zalacznik.muzyka {
+                background: linear-gradient(90deg, #de90d6, #de90d6);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* konieczne dla Chrome / Safari */
+                background-clip: text;
+                /* dla Firefoksa */
+                color: transparent;
+                /* wyłącza „poświatę” */
+                filter: drop-shadow(0.1em 0.1em 0.2em black);
+                text-shadow: none !important;
+            }
             header.tytul {
                 font-size: 6vw;
                 /* większy i wyraźniejszy nagłówek */
@@ -276,7 +288,7 @@
                 <div style="clear: both;"></div>
                 <div>
                     <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Galeria zdjęć</i></p>
-                    <div style="margin-left: 1vw;" class="gallery" data-gallery-id="1">
+                    <div style="margin-left: 1vw;" class="gallery" data-gallery-id="2">
                         <img class="gallery-image galeria" src="2.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 2">
                         <img class="gallery-image galeria" src="3.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 3">
                         <img class="gallery-image galeria" src="4.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 4">
@@ -315,6 +327,14 @@
                     <b style="font-size: 1.4vw;">Nowe animacje</b><br>Możesz obserwować, jak nowe zwierzęta zaczynają się czuć jak w domu. Zrelaksuj się u boku kapibary, patrząc, jak korzysta z nowego urozmaicenia – kranu z&nbsp;gorącą wodą; przyłap dziobaka
                     na nurkowaniu; podziwiaj pełne gracji piruety w wodzie wyderki orientalnej i obserwuj taniec godowy żurawia mandżurskiego. Od dużych wołowatych, takich jak bawół indyjski, po charakterystyczne płazy, takie jak dunajska traszka grzebieniasta
                     – każdy z tych gatunków na swój niepowtarzalny sposób jest związany z mokradłami na swoich ojczystych terenach i każdy z nich stanowi ważną część lokalnego ekosystemu.<br><br>
+                    <b style="font-size: 1.4vw;">Dwie ścieżki dźwiękowe</b><br>Ty, ja i reszta zwierząt: Muzyka z gry Planet Zoo — oryginalna ścieżka dźwiękowa złożona z 18 wyjątkowych utworów. Drugi album składa się z 4 wyjątkowych utworów Azji Południowo-Wschodniej.
+                    Możesz słuchać tej wspaniałej muzyki, kiedy tylko zechcesz.
+                    <br><span class="zalacznik muzyka" data-parent-opener onclick="parent.playDeluxAlbum(); parent.openPlayer(); return false;">
+                        <b>Posłuchaj Deluxe Edition</b>
+                      </span><br>
+                    <span class="zalacznik muzyka" data-parent-opener onclick="parent.playSoutheastAsiaAlbum(); parent.openPlayer(); return false;">
+                        <b>Posłuchaj Southeast Asia Animal Pack</b>
+                      </span><br><br>
                     <b style="font-size: 1.4vw;">Dwa nowe ekscytujące scenariusze</b><br>Park Haiwan-Hebat potrzebuje Twojej pomocy! Placówka, której malajska nazwa oznacza mniej więcej „wielki park zwierząt”, właśnie się rozbudowywała, gdy utraciła finansowanie.
                     Masz więc szansę, aby zrealizować to odważne przedsięwzięcie. Twoim zadaniem w tym położonym w centrum malezyjskiego stanu Perak i&nbsp;otoczonym przepięknym lasem tropikalnym miejscu jest dokończenie na wpół gotowych wybiegów, adoptowanie
                     wspaniałych nowych zwierząt, zatrudnienie odpowiedniego personelu i&nbsp;otwarcie parku dla zwiedzających z całego świata.<br>Powodzenie całego przedsięwzięcia zależy od tego, czy uda Ci się zbudować przynoszący zyski park, w którym

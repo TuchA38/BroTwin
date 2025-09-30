@@ -63,6 +63,203 @@
         span.keeptogether {
             white-space: nowrap;
         }
+        
+        .zalacznik {
+            background: linear-gradient(90deg, #39efff, #39efff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        #powrot a {
+            background: linear-gradient(90deg, #e6749e, #e6749e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        .tytul br {
+            display: none;
+            /* na desktopie ukryty */
+        }
+    </style>
+    <style>
+        /* --- Twoje obecne style zostają --- */
+        /* ✅ Ulepszenia dla telefonów */
+        
+        @media (max-width: 400px) {
+            body {
+                /* czytelniejsze podstawowe fonty */
+                line-height: 1.5;
+            }
+            .zalacznik {
+                background: linear-gradient(90deg, #39efff, #39efff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* konieczne dla Chrome / Safari */
+                background-clip: text;
+                /* dla Firefoksa */
+                color: transparent;
+                /* wyłącza „poświatę” */
+                filter: drop-shadow(0.1em 0.1em 0.2em black);
+                text-shadow: none !important;
+            }
+            .zalacznik.muzyka {
+                background: linear-gradient(90deg, #39efff, #39efff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* konieczne dla Chrome / Safari */
+                background-clip: text;
+                /* dla Firefoksa */
+                color: transparent;
+                /* wyłącza „poświatę” */
+                filter: drop-shadow(0.1em 0.1em 0.2em black);
+                text-shadow: none !important;
+            }
+            header.tytul {
+                font-size: 6vw;
+                /* większy i wyraźniejszy nagłówek */
+                padding: 10px;
+                text-align: center;
+            }
+            .tytul br {
+                display: inline;
+                /* na telefonie działa enter */
+            }
+            #powrot {
+                display: block !important;
+                width: 100% !important;
+                margin: 3% 0 !important;
+                padding: 0 !important;
+                float: none !important;
+            }
+            #powrot>a,
+            #powrot>i {
+                display: block !important;
+                width: 100% !important;
+                margin: 0.4rem 0 !important;
+                text-decoration: none !important;
+                line-height: 1.2 !important;
+            }
+            /* ✅ pierwszy powrot – link do DLC */
+            p#powrot:nth-of-type(1) {
+                text-align: left !important;
+            }
+            p#powrot:nth-of-type(1)>a {
+                font-size: 4vw !important;
+                font-weight: 600 !important;
+                text-align: left !important;
+            }
+            /* ✅ drugi powrot – data i cena */
+            p#powrot:nth-of-type(2) {
+                text-align: center !important;
+            }
+            p#powrot:nth-of-type(2)>i {
+                font-size: 3.2vw !important;
+                text-align: center !important;
+            }
+            iframe {
+                width: 100% !important;
+                min-width: unset !important;
+                height: 53.5vw !important;
+                /* proporcja 16:9 */
+            }
+            .akapit {
+                font-size: 4vw !important;
+                padding: 0 4%;
+            }
+            .akapit span {
+                font-size: 3.5vw !important;
+            }
+            .akapit p,
+            div p {
+                font-size: 4vw !important;
+            }
+            .akapit b {
+                font-size: 3.7vw !important;
+            }
+            .podpis_filmu {
+                font-size: 2.5vw !important;
+            }
+            /* ✅ Galeria — zdjęcia w 2 kolumnach zamiast 3 */
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery.gallery-large {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery img {
+                width: 100% !important;
+                border-radius: 8px;
+            }
+            /* ✅ Opisy zdjęć w galerii */
+            #lightbox-caption {
+                font-size: 3vw !important;
+                /* powiększony tekst */
+                line-height: 1.4 !important;
+                /* luźniejszy odstęp między liniami */
+                padding: 6px 10px !important;
+                /* więcej przestrzeni */
+                text-align: center !important;
+                color: #fff !important;
+                background: rgba(0, 0, 0, 0.6);
+                /* półprzezroczyste tło dla czytelności */
+                border-radius: 6px;
+                max-width: 90%;
+                margin: 5px auto;
+                display: block;
+            }
+            footer h2 {
+                font-size: 4vw;
+            }
+            footer center {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* 2 kolumny */
+                gap: 1px;
+                /* odstęp między ikonami */
+                justify-items: center;
+                align-items: center;
+            }
+            footer a {
+                width: 50%;
+                height: auto;
+            }
+            img.stopka {
+                width: 80% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer a:nth-of-type(1) {
+                margin-left: 85% !important;
+                /* dostosuj wartość */
+            }
+            footer p {
+                font-size: 2.2vw;
+            }
+        }
     </style>
     <link rel="preload" href="../../../Ikony/Xbox-logo.png" as="image">
     <link rel="preload" href="../../../Ikony/Playstation.png" as="image">
@@ -72,7 +269,7 @@
     <div class="content">
         <div class="cień">
             <div style="animation: fadeIn ease-in .5s backwards;">
-                <header class="tytul"><i>Planet Zoo: Aquatic & Twilight Bundle</i></header>
+                <header class="tytul"><i>Planet Zoo:<br> Aquatic & Twilight Bundle</i></header>
                 <div style="clear: both;"></div>
                 <p id="powrot" style="margin: 0%; margin-top: 1%;">
                     <a href="../../../DLC - konsola.html#Aquatic_&_Twilight_Bundle" class="powrot"><b>◄ Wróć do DLC</b></a>
@@ -81,7 +278,8 @@
                     <i><b>Data wydania</b>: 28 maja 2024<br><b>Cena pakietu</b>: 69.99 zł</i>
                 </p>
                 <div style="clear: both;"></div>
-                <center><iframe style="width: 80%; min-width: 78vw; height: auto; min-height: 44vw; margin-top: 1%;" src='https://www.youtube.com/embed/2TG5dYfFC2s?rel=0&loop=1&playlist=2TG5dYfFC2s;rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0' frameborder='0'></iframe>
+                <center><iframe style="width: 80%; min-width: 78vw; height: auto; min-height: 44vw; margin-top: 1%;" src='https://www.youtube.com/embed/2TG5dYfFC2s?rel=0&loop=1&playlist=2TG5dYfFC2s;rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0' frameborder='0'
+                        allowfullscreen></iframe>
                     <h4 class="podpis_filmu cień" style="margin-top: -0.6vw;"><i>Oficjalny zwiastun Aquatic & Twilight Bundle</i></h4>
                 </center>
                 <hr>
@@ -91,33 +289,33 @@
                 <div style="clear: both;"></div>
                 <div>
                     <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Galeria zdjęć</i></p>
-                    <div style="margin-left: 1vw;">
-                        <a class="gallery" href="1.jpg"><img class="galeria" src="1.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 1"></a>
-                        <a class="gallery" href="2.jpg"><img class="galeria" src="2.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 2"></a>
-                        <a class="gallery" href="3.jpg"><img class="galeria" src="3.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 3"></a>
-                        <a class="gallery" href="4.jpg"><img class="galeria" src="4.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 4"></a>
-                        <a class="gallery" href="5.jpg"><img class="galeria" src="5.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 5"></a>
-                        <a class="gallery" href="6.jpg"><img class="galeria" src="6.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 6"></a>
-                        <a class="gallery" href="7.jpg"><img class="galeria" src="7.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 7"></a>
-                        <a class="gallery" href="8.jpg"><img class="galeria" src="8.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 8"></a>
-                        <a class="gallery" href="9.jpg"><img class="galeria" src="9.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 9"></a>
-                        <a class="gallery" href="10.jpg"><img class="galeria" src="10.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 10"></a>
-                        <a class="gallery" href="11.jpg"><img class="galeria" src="11.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 11"></a>
-                        <a class="gallery" href="12.jpg"><img class="galeria" src="12.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 12"></a>
-                        <a class="gallery" href="13.jpg"><img class="galeria" src="13.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 13"></a>
-                        <a class="gallery" href="14.jpg"><img class="galeria" src="14.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 14"></a>
-                        <a class="gallery" href="15.jpg"><img class="galeria" src="15.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 15"></a>
-                        <a class="gallery" href="16.jpg"><img class="galeria" src="16.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 16"></a>
-                        <a class="gallery" href="17.jpg"><img class="galeria" src="17.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 17"></a>
-                        <a class="gallery" href="18.jpg"><img class="galeria" src="18.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 18"></a>
-                        <a class="gallery" href="19.jpg"><img class="galeria" src="19.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 19"></a>
-                        <a class="gallery" href="20.jpg"><img class="galeria" src="20.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 20"></a>
-                        <a class="gallery" href="21.jpg"><img class="galeria" src="21.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 21"></a>
-                        <a class="gallery" href="22.jpg"><img class="galeria" src="22.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 22"></a>
-                        <a class="gallery" href="23.jpg"><img class="galeria" src="23.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 23"></a>
-                        <a class="gallery" href="24.jpg"><img class="galeria" src="24.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 24"></a>
-                        <a class="gallery" href="25.jpg"><img class="galeria" src="25.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 25"></a>
-                        <a class="gallery" href="26.jpg"><img class="galeria" src="26.jpg" style="width: 32%; text-align: center;" alt="zdjęcie 26"></a>
+                    <div style="margin-left: 1vw;" class="gallery" data-gallery-id="1">
+                        <img class="gallery-image galeria" src="1.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 1">
+                        <img class="gallery-image galeria" src="2.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 2">
+                        <img class="gallery-image galeria" src="3.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 3">
+                        <img class="gallery-image galeria" src="4.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 4">
+                        <img class="gallery-image galeria" src="5.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 5">
+                        <img class="gallery-image galeria" src="6.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 6">
+                        <img class="gallery-image galeria" src="7.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 7">
+                        <img class="gallery-image galeria" src="8.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 8">
+                        <img class="gallery-image galeria" src="9.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 9">
+                        <img class="gallery-image galeria" src="10.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 10">
+                        <img class="gallery-image galeria" src="11.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 11">
+                        <img class="gallery-image galeria" src="12.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 12">
+                        <img class="gallery-image galeria" src="13.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 13">
+                        <img class="gallery-image galeria" src="14.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 14">
+                        <img class="gallery-image galeria" src="15.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 15">
+                        <img class="gallery-image galeria" src="16.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 16">
+                        <img class="gallery-image galeria" src="17.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 17">
+                        <img class="gallery-image galeria" src="18.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 18">
+                        <img class="gallery-image galeria" src="19.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 19">
+                        <img class="gallery-image galeria" src="20.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 20">
+                        <img class="gallery-image galeria" src="21.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 21">
+                        <img class="gallery-image galeria" src="22.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 22">
+                        <img class="gallery-image galeria" src="23.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 23">
+                        <img class="gallery-image galeria" src="24.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 24">
+                        <img class="gallery-image galeria" src="25.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 25">
+                        <img class="gallery-image galeria" src="26.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 26">
                     </div>
                     <div style="clear: both;"></div>
                     <hr>
@@ -134,6 +332,14 @@
                         pajęczym sieciom i naklejkom z oczami lub zbuduj wymarzone zoo z wodospadami i malowidłami ściennymi przedstawiającymi dziką dżunglę i&nbsp;lodowatą tundrę. Prezentuj nowe, pełne wdzięku rzeźby zwierząt i upiorną roślinność, w
                         tym naturalnie powykręcane sosny długowieczne, rosnący w cieniu bluszcz, grzyby duchy i naparstnicę.
                         <br><br>
+                        <b style="font-size: 1.4vw;">Dwie ścieżki dźwiękowe</b><br>Pierwsza ścieżka dźwiękowa złożona jest z 4 niesamowitych utworów Zmierzchu. Drugi album składa się z 4 wyjątkowych utworów Wodnych. Możesz słuchać tej wspaniałej muzyki,
+                        kiedy tylko zechcesz.
+                        <br><span class="zalacznik muzyka" data-parent-opener onclick="parent.playTwilightAlbum(); parent.openPlayer(); return false;">
+                            <b>Posłuchaj Twilight Pack</b>
+                          </span><br>
+                        <span class="zalacznik muzyka" data-parent-opener onclick="parent.playAquaticAlbum(); parent.openPlayer(); return false;">
+                            <b>Posłuchaj Aquatic Pack</b>
+                          </span><br><br>
                         <b style="font-size: 1.4vw;">2 nowe scenariusze do rozegrania</b><br>Udaj się do Stanów Zjednoczonych i spróbuj swych sił przy rewitalizacji wodnego ogrodu zoologicznego usytuowanego w wyschniętym łożysku rzeki w stanie Oregon.
                         Zadbaj o&nbsp;wybiegi, sprowadź nowe gatunki i zatroszcz się o to miejsce, aby przywrócić je do dawnej świetności. Jeśli chcesz sprawdzić swoje umiejętności, poznając wszystkie elementy Pakietu Woda, ten scenariusz z limitem czasu
                         będzie doskonałym wyborem.
@@ -154,12 +360,8 @@
         <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
     </footer>
     <script src="../../../comp.js"></script>
-    <script src="../../../gallery.js"></script>
-    <script>
-        (function($) {
-            $(".gallery").gallery();
-        })(Comp);
-    </script>
+    <script src="../../../spacje.js"></script>
+    <script src="../../../galeria.js"></script>
 </body>
 
 </html>
