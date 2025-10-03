@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../../../Styl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia & South America Bundle</title>
+    <link rel="shortcut icon" href="../../../Ikony/Planet Zoo-Australia i Ameryka Południowa Bundle.png">
+    <style>
+        footer,
+        .compsoul-gallery-mask-before-button,
+        .compsoul-gallery-prev,
+        .compsoul-gallery-next {
+            background: linear-gradient(#29730b, #0c2e04);
+        }
+        
+        header {
+            background: linear-gradient(#e9690e, #91400a);
+        }
+        
+        body {
+            background: linear-gradient(150deg, #f9b500 48%, #0e7b0f 55%);
+        }
+        /* WebKit (Chrome, Safari, Opera) */
+        
+         ::-webkit-scrollbar {
+            width: 1vw;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #9d4608;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #45c712;
+            border-radius: 0.15vw #b3500a;
+        }
+        /* Firefox */
+        
+        * {
+            scrollbar-width: 1vw;
+            scrollbar-color: #45c712 #9d4608;
+        }
+        /* Edge i Internet Explorer */
+        
+        *::-webkit-scrollbar {
+            width: 1vw;
+        }
+        
+        *::-webkit-scrollbar-track {
+            background: #9d4608;
+        }
+        
+        *::-webkit-scrollbar-thumb {
+            background: #45c712;
+            border-radius: 0.15vw #b3500a;
+        }
+        
+        span.keeptogether {
+            white-space: nowrap;
+        }
+        
+        .zalacznik {
+            background: linear-gradient(90deg, #55f217, #55f217);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        #powrot a {
+            background: linear-gradient(90deg, #ffd8a1, #ffd8a1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        .tytul br {
+            display: none;
+            /* na desktopie ukryty */
+        }
+    </style>
+    <style>
+        /* --- Twoje obecne style zostają --- */
+        /* ✅ Ulepszenia dla telefonów */
+        
+        @media (max-width: 400px) {
+            body {
+                /* czytelniejsze podstawowe fonty */
+                line-height: 1.5;
+            }
+            .zalacznik {
+                background: linear-gradient(90deg, #55f217, #55f217);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* konieczne dla Chrome / Safari */
+                background-clip: text;
+                /* dla Firefoksa */
+                color: transparent;
+                /* wyłącza „poświatę” */
+                filter: drop-shadow(0.1em 0.1em 0.2em black);
+                text-shadow: none !important;
+            }
+            .zalacznik.muzyka {
+                background: linear-gradient(90deg, #55f217, #55f217);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* konieczne dla Chrome / Safari */
+                background-clip: text;
+                /* dla Firefoksa */
+                color: transparent;
+                /* wyłącza „poświatę” */
+                filter: drop-shadow(0.1em 0.1em 0.2em black);
+                text-shadow: none !important;
+            }
+            header.tytul {
+                font-size: 6vw;
+                /* większy i wyraźniejszy nagłówek */
+                padding: 10px;
+                text-align: center;
+            }
+            .tytul br {
+                display: inline;
+                /* na telefonie działa enter */
+            }
+            #powrot {
+                display: block !important;
+                width: 100% !important;
+                margin: 3% 0 !important;
+                padding: 0 !important;
+                float: none !important;
+            }
+            #powrot>a,
+            #powrot>i {
+                display: block !important;
+                width: 100% !important;
+                margin: 0.4rem 0 !important;
+                text-decoration: none !important;
+                line-height: 1.2 !important;
+            }
+            /* ✅ pierwszy powrot – link do DLC */
+            p#powrot:nth-of-type(1) {
+                text-align: left !important;
+            }
+            p#powrot:nth-of-type(1)>a {
+                font-size: 4vw !important;
+                font-weight: 600 !important;
+                text-align: left !important;
+            }
+            /* ✅ drugi powrot – data i cena */
+            p#powrot:nth-of-type(2) {
+                text-align: center !important;
+            }
+            p#powrot:nth-of-type(2)>i {
+                font-size: 3.2vw !important;
+                text-align: center !important;
+            }
+            iframe {
+                width: 100% !important;
+                min-width: unset !important;
+                height: 53.5vw !important;
+                /* proporcja 16:9 */
+            }
+            .akapit {
+                font-size: 4vw !important;
+                padding: 0 4%;
+            }
+            .akapit span {
+                font-size: 3.5vw !important;
+            }
+            .akapit p,
+            div p {
+                font-size: 4vw !important;
+            }
+            .akapit b {
+                font-size: 3.7vw !important;
+            }
+            .podpis_filmu {
+                font-size: 2.5vw !important;
+            }
+            /* ✅ Galeria — zdjęcia w 2 kolumnach zamiast 3 */
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery.gallery-large {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery img {
+                width: 100% !important;
+                border-radius: 8px;
+            }
+            /* ✅ Opisy zdjęć w galerii */
+            #lightbox-caption {
+                font-size: 3vw !important;
+                /* powiększony tekst */
+                line-height: 1.4 !important;
+                /* luźniejszy odstęp między liniami */
+                padding: 6px 10px !important;
+                /* więcej przestrzeni */
+                text-align: center !important;
+                color: #fff !important;
+                background: rgba(0, 0, 0, 0.6);
+                /* półprzezroczyste tło dla czytelności */
+                border-radius: 6px;
+                max-width: 90%;
+                margin: 5px auto;
+                display: block;
+            }
+            footer h2 {
+                font-size: 4vw;
+            }
+            footer center {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* 2 kolumny */
+                gap: 1px;
+                /* odstęp między ikonami */
+                justify-items: center;
+                align-items: center;
+            }
+            footer a {
+                width: 50%;
+                height: auto;
+            }
+            img.stopka {
+                width: 80% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer a:nth-of-type(1) {
+                margin-left: 85% !important;
+                /* dostosuj wartość */
+            }
+            footer p {
+                font-size: 2.2vw;
+            }
+        }
+    </style>
+    <link rel="preload" href="../../../Ikony/Xbox-logo.png" as="image">
+    <link rel="preload" href="../../../Ikony/Playstation.png" as="image">
+</head>
+
+<body onselectstart="return false;">
+    <div class="content">
+        <div class="cień">
+            <div style="animation: fadeIn ease-in .5s backwards;">
+                <header class="tytul"><i>Planet Zoo:<br> Australia & South America Bundle</i></header>
+                <div style="clear: both;"></div>
+                <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                    <a href="../../../DLC - konsola.html#Australia_&_South_America_Bundle" class="powrot"><b>◄ Wróć do DLC</b></a>
+                </p>
+                <p id="powrot" style="margin: 0%; margin-top: 1%; padding-top: 10px; text-align: right; font-size:1.3vw; color:white; cursor: default; opacity: 100%;">
+                    <i><b>Data wydania</b>: 29 stycznia 2025<br><b>Cena pakietu</b>: 69.99 zł</i>
+                </p>
+                <div style="clear: both;"></div>
+                <center><iframe style="width: 80%; min-width: 78vw; height: auto; min-height: 44vw; margin-top: 1%;" src='https://www.youtube.com/embed/AMRqrBdmsLo?rel=0&loop=1&playlist=AMRqrBdmsLo;rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0' frameborder='0'
+                        allowfullscreen></iframe>
+                    <h4 class="podpis_filmu cień" style="margin-top: -0.6vw;"><i>Oficjalny zwiastun Australia & South America Bundle</i></h4>
+                </center>
+                <hr>
+                <div class="akapit" style="font-size: 1.7vw;">Przedstawiamy pakiet Planet Zoo: Australia i Ameryka Południowa Przetransportuj gości do kraju po drugiej stronie globu lub rozbuduj swoje zoo, dodając w nich nowe elementy scenerii inspirowane wspaniale zróżnicowanym kontynentem, jakim
+                    jest Ameryka Południowa.
+                </div>
+                <hr>
+                <div style="clear: both;"></div>
+                <div>
+                    <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Galeria zdjęć</i></p>
+                    <div style="margin-left: 1vw;" class="gallery" data-gallery-id="1">
+                        <img class="gallery-image galeria" src="1.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 1">
+                        <img class="gallery-image galeria" src="2.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 2">
+                        <img class="gallery-image galeria" src="3.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 3">
+                        <img class="gallery-image galeria" src="4.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 4">
+                        <img class="gallery-image galeria" src="5.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 5">
+                        <img class="gallery-image galeria" src="6.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 6">
+                        <img class="gallery-image galeria" src="7.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 7">
+                        <img class="gallery-image galeria" src="8.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 8">
+                        <img class="gallery-image galeria" src="9.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 9">
+                        <img class="gallery-image galeria" src="10.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 10">
+                        <img class="gallery-image galeria" src="11.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 11">
+                        <img class="gallery-image galeria" src="12.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 12">
+                        <img class="gallery-image galeria" src="13.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 13">
+                        <img class="gallery-image galeria" src="14.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 14">
+                        <img class="gallery-image galeria" src="15.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 15">
+                        <img class="gallery-image galeria" src="16.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 16">
+                        <img class="gallery-image galeria" src="17.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 17">
+                        <img class="gallery-image galeria" src="18.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 18">
+                        <img class="gallery-image galeria" src="19.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 19">
+                        <img class="gallery-image galeria" src="20.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 20">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <hr>
+                    <div class="akapit">
+                        <center>
+                            <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>O tym DLC</i></p>
+                        </center><b style="font-size: 1.4vw;">10 nowych zwierząt z australii i z ameryki południowej</b><br>Pełna lista obejmuje następujące zwierzęta: <a href="../../../Zoopedia/Koala.html" class="zalacznik"><b>koala</b></a>, <a href="../../../Zoopedia/Dingo.html"
+                            class="zalacznik"><b>dingo</b></a>,
+                        <a href="../../../Zoopedia/Kangur rudy.html" class="zalacznik"><b>kangur rudy</b></a>, <a href="../../../Zoopedia/Kazuar hełmiasty.html" class="zalacznik"><b>kazuar hełmiasty</b></a>, <a href="../../../Zoopedia/Tilikwa scynkowa.html"
+                            class="zalacznik"><b>tilikwa scynkowa</b></a>, <a href="../../../Zoopedia/Jaguar.html" class="zalacznik"><b>jaguar</b></a>, <a href="../../../Zoopedia/Lama.html" class="zalacznik"><b>lama</b></a>, <a href="../../../Zoopedia/Kapucynka czarno-biała.html"
+                            class="zalacznik"><b>kapucynka czarno-biała</b></a> i&nbsp;<a href="../../../Zoopedia/Mrówkojad wielki.html" class="zalacznik"><b>mrówkojad wielki</b></a>.
+                        <br><br>
+                        <b style="font-size: 1.4vw;">Ponad 480 nowych elementów scenerii</b><br>Zaprojektuj nową wspaniałą scenerię poprzez połączenie nowoczesnej architektury z materiałami z odzysku. W nowym dodatku znajdziesz rodzime gatunki flory i&nbsp;fauny,
+                        a także zabawne i wyraziste elementy scenerii oraz atrakcyjne nowe zabawki dla zwierząt, dzięki którym zadbasz o urozmaicenie. Wykorzystaj brudnozłoty krajobraz pustynnej Oceanii jako płótno, na którym stworzysz własne, gęsto porośnięte
+                        obiekty na słabo zaludnionych terenach Australii. Stwórz własną przygodę w dżungli! Zbuduj wejście do parku w stylu azteckiej świątyni, przystrój wybiegi skarbami zapożyczonymi od dawnych cywilizacji lub przygotuj własny las deszczowy
+                        — masz do dyspozycji ponad 480 nowych elementów budynków, scenerii i roślinności, więc możesz wykazać się kreatywnością!
+                        <br><br>
+                        <b style="font-size: 1.4vw;">Dwie ścieżki dźwiękowe</b><br>Pierwsza ścieżka dźwiękowa złożona jest z 4 niesamowitych utworów Australii. Drugi album składa się z 4 wyjątkowych utworów Ameryki Południowej. Możesz słuchać tej wspaniałej
+                        muzyki, kiedy tylko zechcesz.
+                        <br><span class="zalacznik muzyka" data-parent-opener onclick="parent.playAustraliaAlbum(); parent.openPlayer(); return false;">
+                            <b>Posłuchaj Australia Pack</b>
+                          </span><br>
+                        <span class="zalacznik muzyka" data-parent-opener onclick="parent.playSouthAmericaAlbum(); parent.openPlayer(); return false;">
+                            <b>Posłuchaj South America Pack</b>
+                          </span><br><br>
+                        <b style="font-size: 1.4vw;">1 zupełnie nowy scenariusz</b><br>Odkryj zupełnie nowe wyzwanie, które czeka na Ciebie w Przydrożnym Zoo Tanami. W tym ogrodzie zoologicznym masz do zrealizowania zestaw atrakcyjnych celów, takich jak
+                        zwiększenie zadowolenia gości, adopcja określonych zwierząt oraz zwiększenie zysków sklepów, a wszystko po to, aby zdobyć wyższą pozycję w&nbsp;rankingu. Im szybciej zrealizujesz cele, tym wyższą pozycję zdobędziesz.
+                    </div>
+                    <br></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2 style="color: white; text-align: center;" class="cień">Sklep internetowy Xbox oraz Playstation!</h2>
+        <center>
+            <a href="https://www.xbox.com/pl-PL/games/store/planet-zoo-pakiet-australia-i-ameryka-poludniowa/9NJH0914365L" target="_blank"><img class="stopka" src="../../../Ikony/Xbox-logo.png" alt="Logo Xbox" style="margin: -0%; width: 12%; padding-right: 1%; margin-right: 3%;"></a>
+            <a href="https://store.playstation.com/pl-pl/product/EP2377-PPSA18026_00-PLANTZOOAASABUND" target="_blank"><img class="stopka" src="../../../Ikony/Playstation.png" alt="Logo Playstation" style="margin: -0.5%; width: 11%; padding-right: 1%; margin-right: 0.5%;"></a>
+        </center>
+        <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="../../../comp.js"></script>
+    <script src="../../../spacje.js"></script>
+    <script src="../../../galeria.js"></script>
+</body>
+
+</html>
