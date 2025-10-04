@@ -154,7 +154,6 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
     height: 100dvh;
     background: rgba(0, 0, 0, 0.85);
     display: none;
@@ -169,10 +168,6 @@ body {
 
 @media (max-width: 400px) {
     #lightbox-overlay {
-        height: 100vh;
-        height: 100dvh;
-    }
-    #lightbox-caption {
         height: 100dvh;
     }
 }
