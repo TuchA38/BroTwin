@@ -1146,6 +1146,58 @@
             });
         })();
     </script>
+    <script>
+        // 🔹 Funkcja, która podświetla zakładkę "Muzyka" w menu wewnątrz iframe
+        function highlightMusicInMenu(show) {
+            try {
+                const iframe = document.getElementById('content-frame');
+                const doc = iframe.contentDocument || iframe.contentWindow.document;
+                if (!doc) return;
+
+                // Szukamy linku "Muzyka" (który ma onclick="parent.togglePlayer()")
+                const musicLinks = doc.querySelectorAll('a[onclick*="togglePlayer"]');
+
+                musicLinks.forEach(link => {
+                    if (show) {
+                        link.classList.add('wybrano');
+                        // także podświetlamy kategorię nadrzędną "O Nas"
+                        const parentLi = link.closest('li');
+                        const parentSection = parentLi && parentLi.closest('ul') && parentLi.closest('ul').previousElementSibling;
+                        if (parentSection && parentSection.tagName === 'A') {
+                            parentSection.classList.add('wybrane');
+                        }
+                    } else {
+                        link.classList.remove('wybrano');
+                        const parentLi = link.closest('li');
+                        const parentSection = parentLi && parentLi.closest('ul') && parentLi.closest('ul').previousElementSibling;
+                        if (parentSection && parentSection.tagName === 'A') {
+                            parentSection.classList.remove('wybrane');
+                        }
+                    }
+                });
+            } catch (err) {
+                console.warn("Błąd przy podświetleniu Muzyka:", err);
+            }
+        }
+
+        // 🔹 Nasłuch na otwieranie / zamykanie playera
+        const playerFrame = document.getElementById('player-frame');
+        const observer = new MutationObserver(() => {
+            const isOpen = playerFrame.classList.contains('open');
+            highlightMusicInMenu(isOpen);
+        });
+
+        observer.observe(playerFrame, {
+            attributes: true,
+            attributeFilter: ['class']
+        });
+
+        // 🔹 Gdy iframe z treścią się zmieni, ponownie przypinamy podświetlenie (dla nowego dokumentu)
+        contentFrame.addEventListener('load', () => {
+            const isOpen = playerFrame.classList.contains('open');
+            if (isOpen) highlightMusicInMenu(true);
+        });
+    </script>
 
 
 
