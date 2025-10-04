@@ -361,3 +361,13 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(caption, { childList: true, subtree: true, characterData: true });
     }
 });
+
+// 🔧 Fix na mobilne 100vh (pasek URL)
+function updateVH() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+
+window.addEventListener('resize', updateVH);
+window.addEventListener('orientationchange', updateVH);
+document.addEventListener('DOMContentLoaded', updateVH);
+updateVH();
