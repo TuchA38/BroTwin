@@ -155,6 +155,7 @@ body {
     left: 0;
     width: 100vw;
     height: calc(var(--vh, 1vh) * 100);
+    /* fallback when overlay closed */
     background: rgba(0, 0, 0, 0.85);
     display: none;
     opacity: 0;

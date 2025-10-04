@@ -363,11 +363,103 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // 🔧 Fix na mobilne 100vh (pasek URL)
-function updateVH() {
-    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+// --- Robust mobile viewport height sync for the lightbox overlay ---
+// add at the end of galeria.js (after overlay is defined)
+
+let __autoVHInterval = null;
+
+function getVisibleHeight() {
+    // prefer visualViewport if available (gives visual viewport height)
+    if (window.visualViewport && typeof window.visualViewport.height === 'number') {
+        return window.visualViewport.height;
+    }
+    // fallback
+    return window.innerHeight || document.documentElement.clientHeight;
 }
 
-window.addEventListener('resize', updateVH);
-window.addEventListener('orientationchange', updateVH);
-document.addEventListener('DOMContentLoaded', updateVH);
+function updateVH() {
+    const vhPx = getVisibleHeight();
+    // set CSS var for general use
+    document.documentElement.style.setProperty('--vh', `${vhPx * 0.01}px`);
+    // also set overlay height immediately in pixels to avoid timing glitches
+    if (overlay) {
+        overlay.style.height = `${vhPx}px`;
+        // force reflow in case browser delays repaint
+        overlay.getBoundingClientRect();
+    }
+}
+
+// start listening / syncing while overlay is shown
+function startOverlayVHSync() {
+    updateVH();
+
+    // attach visualViewport events if available
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', updateVH);
+        window.visualViewport.addEventListener('scroll', updateVH);
+    }
+
+    // generic fallbacks
+    window.addEventListener('resize', updateVH);
+    window.addEventListener('orientationchange', updateVH);
+    // page scroll can change visual viewport on some browsers
+    window.addEventListener('scroll', updateVH, { passive: true });
+
+    // short interval to catch the address-bar hide/show animation (stops when overlay closed)
+    if (!__autoVHInterval) {
+        __autoVHInterval = setInterval(updateVH, 180); // tune: 100-250ms
+    }
+}
+
+function stopOverlayVHSync() {
+    if (window.visualViewport) {
+        try {
+            window.visualViewport.removeEventListener('resize', updateVH);
+            window.visualViewport.removeEventListener('scroll', updateVH);
+        } catch (e) {}
+    }
+    window.removeEventListener('resize', updateVH);
+    window.removeEventListener('orientationchange', updateVH);
+    window.removeEventListener('scroll', updateVH, { passive: true });
+
+    if (__autoVHInterval) {
+        clearInterval(__autoVHInterval);
+        __autoVHInterval = null;
+    }
+
+    // remove inline overlay height so CSS fallback (calc(var(--vh) * 100)) can work again
+    if (overlay) {
+        overlay.style.height = '';
+    }
+}
+
+// integrate with existing show/hide
+const _oldShowOverlay = showOverlay;
+const _oldHideOverlay = hideOverlay;
+
+// override showOverlay to start sync immediately
+showOverlay = function() {
+    // call original behaviours (set display + animation)
+    overlay.style.display = 'flex';
+    // immediate sync then start continuous sync
+    updateVH();
+    startOverlayVHSync();
+    requestAnimationFrame(() => overlay.classList.add('show'));
+};
+
+// override hideOverlay to stop sync and cleanup
+hideOverlay = function() {
+    overlay.classList.add('hiding');
+    overlay.classList.remove('show');
+    // stop syncing first
+    stopOverlayVHSync();
+    setTimeout(() => {
+        overlay.classList.remove('hiding');
+        overlay.style.display = 'none';
+        // ensure transform/height reset (safety)
+        overlay.style.height = '';
+    }, 300);
+};
+
+// also update on load just in case overlay is shown by other logic
 updateVH();
