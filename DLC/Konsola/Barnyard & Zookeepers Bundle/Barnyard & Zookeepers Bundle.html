@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../../../Styl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barnyard & Zookeepers Bundle</title>
+    <link rel="shortcut icon" href="../../../Ikony/Planet Zoo-Gospodarstwo i Właściciele Zoo Bundle.png">
+    <style>
+        footer,
+        .compsoul-gallery-mask-before-button,
+        .compsoul-gallery-prev,
+        .compsoul-gallery-next {
+            background: linear-gradient(#07545b, #03292d);
+        }
+        
+        header {
+            background: linear-gradient(#415526, #2b3918);
+        }
+        
+        body {
+            background: linear-gradient(150deg, #90a744 48%, #028d98 55%);
+        }
+        /* WebKit (Chrome, Safari, Opera) */
+        
+         ::-webkit-scrollbar {
+            width: 1vw;
+        }
+        
+         ::-webkit-scrollbar-track {
+            background: #2a3618;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: #5ce7ff;
+            border-radius: 0.15vw #546e31;
+        }
+        /* Firefox */
+        
+        * {
+            scrollbar-width: 1vw;
+            scrollbar-color: #5ce7ff #2a3618;
+        }
+        /* Edge i Internet Explorer */
+        
+        *::-webkit-scrollbar {
+            width: 1vw;
+        }
+        
+        *::-webkit-scrollbar-track {
+            background: #2a3618;
+        }
+        
+        *::-webkit-scrollbar-thumb {
+            background: #5ce7ff;
+            border-radius: 0.15vw #546e31;
+        }
+        
+        span.keeptogether {
+            white-space: nowrap;
+        }
+        
+        .zalacznik {
+            background: linear-gradient(90deg, #8beeff, #8beeff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        #powrot a {
+            background: linear-gradient(90deg, #bef576, #bef576);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* konieczne dla Chrome / Safari */
+            background-clip: text;
+            /* dla Firefoksa */
+            color: transparent;
+            /* wyłącza „poświatę” */
+            filter: drop-shadow(0.1em 0.1em 0.2em black);
+            text-shadow: none !important;
+        }
+        
+        .tytul br {
+            display: none;
+            /* na desktopie ukryty */
+        }
+    </style>
+    <style>
+        /* --- Twoje obecne style zostają --- */
+        /* ✅ Ulepszenia dla telefonów */
+        
+        @media (max-width: 400px) {
+            body {
+                /* czytelniejsze podstawowe fonty */
+                line-height: 1.5;
+            }
+            .zalacznik {
+                background: linear-gradient(90deg, #8beeff, #8beeff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* konieczne dla Chrome / Safari */
+                background-clip: text;
+                /* dla Firefoksa */
+                color: transparent;
+                /* wyłącza „poświatę” */
+                filter: drop-shadow(0.1em 0.1em 0.2em black);
+                text-shadow: none !important;
+            }
+            .zalacznik.muzyka {
+                background: linear-gradient(90deg, #8beeff, #8beeff);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* konieczne dla Chrome / Safari */
+                background-clip: text;
+                /* dla Firefoksa */
+                color: transparent;
+                /* wyłącza „poświatę” */
+                filter: drop-shadow(0.1em 0.1em 0.2em black);
+                text-shadow: none !important;
+            }
+            header.tytul {
+                font-size: 6vw;
+                /* większy i wyraźniejszy nagłówek */
+                padding: 10px;
+                text-align: center;
+            }
+            .tytul br {
+                display: inline;
+                /* na telefonie działa enter */
+            }
+            #powrot {
+                display: block !important;
+                width: 100% !important;
+                margin: 3% 0 !important;
+                padding: 0 !important;
+                float: none !important;
+            }
+            #powrot>a,
+            #powrot>i {
+                display: block !important;
+                width: 100% !important;
+                margin: 0.4rem 0 !important;
+                text-decoration: none !important;
+                line-height: 1.2 !important;
+            }
+            /* ✅ pierwszy powrot – link do DLC */
+            p#powrot:nth-of-type(1) {
+                text-align: left !important;
+            }
+            p#powrot:nth-of-type(1)>a {
+                font-size: 4vw !important;
+                font-weight: 600 !important;
+                text-align: left !important;
+            }
+            /* ✅ drugi powrot – data i cena */
+            p#powrot:nth-of-type(2) {
+                text-align: center !important;
+            }
+            p#powrot:nth-of-type(2)>i {
+                font-size: 3.2vw !important;
+                text-align: center !important;
+            }
+            iframe {
+                width: 100% !important;
+                min-width: unset !important;
+                height: 53.5vw !important;
+                /* proporcja 16:9 */
+            }
+            .akapit {
+                font-size: 4vw !important;
+                padding: 0 4%;
+            }
+            .akapit span {
+                font-size: 3.5vw !important;
+            }
+            .akapit p,
+            div p {
+                font-size: 4vw !important;
+            }
+            .akapit b {
+                font-size: 3.7vw !important;
+            }
+            .podpis_filmu {
+                font-size: 2.5vw !important;
+            }
+            /* ✅ Galeria — zdjęcia w 2 kolumnach zamiast 3 */
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery.gallery-large {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery img {
+                width: 100% !important;
+                border-radius: 8px;
+            }
+            /* ✅ Opisy zdjęć w galerii */
+            #lightbox-caption {
+                font-size: 3vw !important;
+                /* powiększony tekst */
+                line-height: 1.4 !important;
+                /* luźniejszy odstęp między liniami */
+                padding: 6px 10px !important;
+                /* więcej przestrzeni */
+                text-align: center !important;
+                color: #fff !important;
+                background: rgba(0, 0, 0, 0.6);
+                /* półprzezroczyste tło dla czytelności */
+                border-radius: 6px;
+                max-width: 90%;
+                margin: 5px auto;
+                display: block;
+            }
+            footer h2 {
+                font-size: 4vw;
+            }
+            footer center {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* 2 kolumny */
+                gap: 1px;
+                /* odstęp między ikonami */
+                justify-items: center;
+                align-items: center;
+            }
+            footer a {
+                width: 50%;
+                height: auto;
+            }
+            img.stopka {
+                width: 80% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer a:nth-of-type(1) {
+                margin-left: 85% !important;
+                /* dostosuj wartość */
+            }
+            footer p {
+                font-size: 2.2vw;
+            }
+        }
+    </style>
+    <link rel="preload" href="../../../Ikony/Xbox-logo.png" as="image">
+    <link rel="preload" href="../../../Ikony/Playstation.png" as="image">
+</head>
+
+<body onselectstart="return false;">
+    <div class="content">
+        <div class="cień">
+            <div style="animation: fadeIn ease-in .5s backwards;">
+                <header class="tytul"><i>Planet Zoo:<br> Barnyard & Zookeepers Bundle</i></header>
+                <div style="clear: both;"></div>
+                <p id="powrot" style="margin: 0%; margin-top: 1%;">
+                    <a href="../../../DLC - konsola.html#Barnyard_&_Zookeepers_Bundle" class="powrot"><b>◄ Wróć do DLC</b></a>
+                </p>
+                <p id="powrot" style="margin: 0%; margin-top: 1%; padding-top: 10px; text-align: right; font-size:1.3vw; color:white; cursor: default; opacity: 100%;">
+                    <i><b>Data wydania</b>: 14 maja 2025<br><b>Cena pakietu</b>: 69.99 zł</i>
+                </p>
+                <div style="clear: both;"></div>
+                <center><iframe style="width: 80%; min-width: 78vw; height: auto; min-height: 44vw; margin-top: 1%;" src='https://www.youtube.com/embed/HGgabqbk1X8?rel=0&loop=1&playlist=HGgabqbk1X8;rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0' frameborder='0'
+                        allowfullscreen></iframe>
+                    <h4 class="podpis_filmu cień" style="margin-top: -0.6vw;"><i>Oficjalny zwiastun Barnyard & Zookeepers Bundle</i></h4>
+                </center>
+                <hr>
+                <div class="akapit" style="font-size: 1.7vw;">Przedstawiamy pakiety Planet Zoo: Pakiet Gospodarstwo i Właściciele zoo! Przekonaj się, ile uroku ma w sobie wieś, i obdaruj nim swoje zoo, albo zasznuruj robocze buty, aby odpowiednio się przygotować do stworzenia doskonałego zoo pełnego
+                    niepowtarzalnych zwierząt.
+                </div>
+                <hr>
+                <div style="clear: both;"></div>
+                <div>
+                    <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Galeria zdjęć</i></p>
+                    <div style="margin-left: 1vw;" class="gallery" data-gallery-id="1">
+                        <img class="gallery-image galeria" src="1.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 1">
+                        <img class="gallery-image galeria" src="2.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 2">
+                        <img class="gallery-image galeria" src="3.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 3">
+                        <img class="gallery-image galeria" src="4.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 4">
+                        <img class="gallery-image galeria" src="5.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 5">
+                        <img class="gallery-image galeria" src="6.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 6">
+                        <img class="gallery-image galeria" src="7.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 7">
+                        <img class="gallery-image galeria" src="8.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 8">
+                        <img class="gallery-image galeria" src="9.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 9">
+                        <img class="gallery-image galeria" src="10.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 10">
+                        <img class="gallery-image galeria" src="11.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 11">
+                        <img class="gallery-image galeria" src="12.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 12">
+                        <img class="gallery-image galeria" src="13.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 13">
+                        <img class="gallery-image galeria" src="14.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 14">
+                        <img class="gallery-image galeria" src="15.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 15">
+                        <img class="gallery-image galeria" src="16.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 16">
+                        <img class="gallery-image galeria" src="17.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 17">
+                        <img class="gallery-image galeria" src="18.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 18">
+                        <img class="gallery-image galeria" src="19.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 19">
+                        <img class="gallery-image galeria" src="20.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 20">
+                        <img class="gallery-image galeria" src="21.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 21">
+                        <img class="gallery-image galeria" src="22.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 22">
+                        <img class="gallery-image galeria" src="23.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 23">
+                        <img class="gallery-image galeria" src="24.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 24">
+                    </div>
+                    <div style="clear: both;"></div>
+                    <hr>
+                    <div class="akapit">
+                        <center>
+                            <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>O tym DLC</i></p>
+                        </center><b style="font-size: 1.4vw;">14 nowych niesamowitych zwierząt</b><br>Pełna lista obejmuje następujące zwierzęta: <a href="../../../Zoopedia/Bydło rasy highland.html" class="zalacznik"><b>bydło rasy highland</b></a>, <a href="../../../Zoopedia/Kura rasy sussex.html"
+                            class="zalacznik"><b>kura rasy sussex</b></a>, <a href="../../../Zoopedia/Koza alpejska.html" class="zalacznik"><b>koza alpejska</b></a>, <a href="../../../Zoopedia/Alpaka.html" class="zalacznik"><b>alpaka</b></a>, <a href="../../../Zoopedia/Amerykański osioł zwyczajny.html"
+                            class="zalacznik"><b>amerykański osioł zwyczajny</b></a>, <a href="../../../Zoopedia/Owca rasy hill radnor.html" class="zalacznik"><b>owca rasy hill radnor</b></a>, <a href="../../../Zoopedia/Świnia rasy tamworth.html" class="zalacznik"><b>świnia rasy tamworth</b></a>,
+                        <a href="../../../Zoopedia/Manul stepowy.html" class="zalacznik"><b>manul stepowy</b></a>, <a href="../../../Zoopedia/Pawian płaszczowy.html" class="zalacznik"><b>pawian płaszczowy</b></a>, <a href="../../../Zoopedia/Markur.html"
+                            class="zalacznik"><b>markur</b></a>, <a href="../../../Zoopedia/Andoniedźwiedź okularowy.html" class="zalacznik"><b>andoniedźwiedź okularowy</b></a>, <a href="../../../Zoopedia/Żółw pustynny.html" class="zalacznik"><b>żółw pustynny</b></a>,
+                        <a href="../../../Zoopedia/Dikdik sawannowy.html" class="zalacznik"><b>dikdik sawannowy</b></a> i&nbsp;<a href="../../../Zoopedia/Sifaka biało-kasztanowa.html" class="zalacznik"><b>sifaka biało-kasztanowa</b></a>.
+                        <br><br>
+                        <b style="font-size: 1.4vw;">Ponad 155 nowych, fantastycznych elementów scenerii</b><br>Wprowadź czarujący, wiejski klimat do swojego zoo – zrób ławki ze snopków siana, na których goście będą mogli usiąść i nacieszyć się widokami,
+                        lub postaw stoły z&nbsp;odzyskanych bębnów kablowych, przy których usiądą i coś przekąszą. W tym pakiecie znajdziesz również kilka uroczych ogrodzeń i bram, a także klasyczne żeliwne pompy do wody, studnie, wiatraki, wiatrowskazy
+                        i roślinność, która wspaniale urozmaici wybieg. Ta i wiele innych scenerii z pewnością sprawią, że goście poczują zew natury, gdy zachęcisz ich do odkrywania ponadczasowego uroku wiejskich krajobrazów. Udoskonal swoje zoo dzięki
+                        nowym elementom scenerii i zbuduj zapierające dech w piersiach przystanie dla gości i zwierząt. Ciesz się wspólnie ze swoimi gośćmi, gdy będą wpatrywać się w pionowe ozdobne struktury kwiatowe, przyciągające wzrok chorągiewki i
+                        cudowne markizy, które z pewnością zrobią na nich ogromne wrażenie. Dodaj uroku i funkcjonalności dzięki różnym latarniom, które oświetlą parki, idealnie rozmieszczonym ławkom piknikowym dla gości, aby umożliwić im zjedzenie przekąsek,
+                        oraz dodatkowym miejscom siedzącym na odpoczynek między wybiegami zwierząt. Ta sceneria i inne elementy z pewnością stworzą żywą i&nbsp;przyjazną atmosferę, która wszystkich zachwyci i zainspiruje.
+                        <br><br>
+                        <b style="font-size: 1.4vw;">2 nowe, pasjonujące scenariusze</b><br>Wybierz się w podróż, podczas której tchniesz nowe życie w zaniedbane gospodarstwo. Połącz siły z powracającą Tiffany Summers, aby stworzyć wspaniały azyl dla
+                        zwierząt. Zmień zniszczone stodoły i zapomniane pastwiska w bezpieczne i przyjazne miejsce dla zwierząt – w prawdziwy dom! Zobacz, ile radości możesz czerpać z odbudowywania i&nbsp;odnawiania gospodarstwa pośród rozległych pól
+                        smaganych delikatnym wiatrem na nowozelandzkiej wsi.<br><br>Witamy na imprezie! Wciel się w rolę życia i pomóż zespołowi Planet Zoo w przygotowaniach do świętowania 5. rocznicy premiery w znanym na całym świecie Zoo Frontier! Jako
+                        ważny członek komitetu organizującego imprezę pomożesz powracającej do serii postaci, Emmie Goodwin, w przygotowaniach do niezapomnianej imprezy, która zapisze się na kartach historii Planet Zoo. Twoim zadaniem jest przygotowanie,
+                        zarządzanie i zadbanie o idealną imprezę w Zoo Frontier, aby wszyscy goście i zwierzęta miło spędzili czas. Obserwuj, jak radość niesie się wśród malowniczych wiejskich pól.
+                    </div>
+                    <br></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2 style="color: white; text-align: center;" class="cień">Sklep internetowy Xbox oraz Playstation!</h2>
+        <center>
+            <a href="https://www.xbox.com/pl-PL/games/store/planet-zoo-pakiet-gospodarstwo-i-wlasciciele-zoo/9NV4WXQRRGFW/" target="_blank"><img class="stopka" src="../../../Ikony/Xbox-logo.png" alt="Logo Xbox" style="margin: -0%; width: 12%; padding-right: 1%; margin-right: 3%;"></a>
+            <a href="https://store.playstation.com/pl-pl/product/EP2377-PPSA18026_00-BARNYRDZOOKEEPER" target="_blank"><img class="stopka" src="../../../Ikony/Playstation.png" alt="Logo Playstation" style="margin: -0.5%; width: 11%; padding-right: 1%; margin-right: 0.5%;"></a>
+        </center>
+        <p style="color: white; text-align: center;" class="cień">Planet Zoo © 2021 Frontier Developments plc. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="../../../comp.js"></script>
+    <script src="../../../spacje.js"></script>
+    <script src="../../../galeria.js"></script>
+</body>
+
+</html>
