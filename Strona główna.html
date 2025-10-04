@@ -23,6 +23,396 @@
             white-space: nowrap;
         }
     </style>
+    <style>
+        /* --- Twoje obecne style zostają --- */
+        /* ✅ Ulepszenia dla telefonów */
+        
+        @media (max-width: 400px) {
+            body {
+                /* czytelniejsze podstawowe fonty */
+                line-height: 1.5;
+            }
+            .ikona_loga {
+                width: 12% !important;
+                margin-top: -10% !important;
+            }
+            .ikona {
+                width: 18% !important;
+            }
+            .tekst {
+                margin-top: -15% !important;
+            }
+            .tytul {
+                font-size: 6vw !important;
+            }
+            header.tytul {
+                font-size: 6vw;
+                /* większy i wyraźniejszy nagłówek */
+                padding: 10px;
+                text-align: center;
+            }
+            .tytul br {
+                display: inline;
+                /* na telefonie działa enter */
+            }
+            #powrot {
+                display: block !important;
+                width: 100% !important;
+                margin: 3% 0 !important;
+                padding: 0 !important;
+                float: none !important;
+            }
+            #powrot>a,
+            #powrot>i {
+                display: block !important;
+                width: 100% !important;
+                margin: 0.4rem 0 !important;
+                text-decoration: none !important;
+                line-height: 1.2 !important;
+            }
+            /* ✅ pierwszy powrot – link do DLC */
+            p#powrot:nth-of-type(1) {
+                text-align: left !important;
+            }
+            p#powrot:nth-of-type(1)>a {
+                font-size: 4vw !important;
+                font-weight: 600 !important;
+                text-align: left !important;
+            }
+            /* ✅ drugi powrot – data i cena */
+            p#powrot:nth-of-type(2) {
+                text-align: center !important;
+            }
+            p#powrot:nth-of-type(2)>i {
+                font-size: 3.2vw !important;
+                text-align: center !important;
+            }
+            iframe {
+                width: 100% !important;
+                min-width: unset !important;
+                height: 53.5vw !important;
+                /* proporcja 16:9 */
+            }
+            /* Kolumny pod sobą */
+            #kolumna {
+                width: 95% !important;
+                float: none !important;
+                display: block !important;
+                margin: 10px 0 !important;
+                text-shadow: black 0.1em 0.1em 0.2em;
+                /* odstępy między nimi */
+            }
+            #kolumna p {
+                font-size: 3.7vw !important;
+                /* większy tekst na telefonie */
+                /* czytelniej na małym ekranie */
+                line-height: 1.5;
+                text-shadow: black 0.1em 0.1em 0.2em;
+            }
+            #kolumna p i {
+                font-size: 4vw !important;
+                /* większy tekst na telefonie */
+                /* czytelniej na małym ekranie */
+                line-height: 1.5;
+                text-shadow: black 0.1em 0.1em 0.2em;
+            }
+            /* Styl responsywny tabeli */
+            table.cień {
+                width: 98% !important;
+                border-collapse: collapse;
+                font-size: 3.5vw !important;
+                margin: 10px auto !important;
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            table.cień caption {
+                font-size: 4.2vw !important;
+                margin-bottom: 3vw;
+            }
+            table.cień th,
+            table.cień td {
+                padding: 6px 8px !important;
+                text-align: center !important;
+                white-space: normal;
+                vertical-align: middle;
+            }
+            table.cień th {
+                font-size: 3.5vw !important;
+            }
+            table.cień td.filtr {
+                font-size: 3.5vw !important;
+            }
+            table.cień td {
+                font-size: 3vw !important;
+            }
+            table.cień th:nth-child(2),
+            table.cień td:nth-child(2) {
+                width: 30% !important;
+            }
+            table.cień th:nth-child(3),
+            table.cień td:nth-child(3) {
+                width: 40% !important;
+            }
+            .kolumna {
+                font-size: 3.5vw !important;
+                padding: 5 4%;
+            }
+            .kolumna span {
+                font-size: 3.5vw !important;
+            }
+            .kolumna p,
+            div p {
+                font-size: 4vw !important;
+            }
+            .kolumna b {
+                font-size: 3.7vw !important;
+            }
+            .podpis_filmu {
+                font-size: 2.5vw !important;
+            }
+            /* ✅ Galeria — zdjęcia w 2 kolumnach zamiast 3 */
+            .zbior {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .podpis {
+                width: 400% !important;
+            }
+            .zbior div img {
+                width: 400% !important;
+                border-radius: 8px;
+            }
+            /* ✅ Galeria — zdjęcia w 2 kolumnach zamiast 3 */
+            .gallery {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery.gallery-large {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2vw;
+                margin: 0 3%;
+            }
+            .gallery img {
+                width: 100% !important;
+                border-radius: 8px;
+            }
+            /* ✅ Opisy zdjęć w galerii */
+            #lightbox-caption {
+                font-size: 3vw !important;
+                /* powiększony tekst */
+                line-height: 1.4 !important;
+                /* luźniejszy odstęp między liniami */
+                padding: 6px 10px !important;
+                /* więcej przestrzeni */
+                text-align: center !important;
+                color: #fff !important;
+                background: rgba(0, 0, 0, 0.6);
+                /* półprzezroczyste tło dla czytelności */
+                border-radius: 6px;
+                max-width: 90%;
+                margin: 5px auto;
+                display: block;
+            }
+            footer h2 {
+                font-size: 4vw;
+            }
+            footer center {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                /* 2 kolumny */
+                gap: 1px;
+                /* odstęp między ikonami */
+                justify-items: center;
+                align-items: center;
+            }
+            footer a:nth-of-type(1),
+            footer a:nth-of-type(2) {
+                width: 100%;
+                height: auto;
+            }
+            footer a:nth-of-type(3),
+            footer a:nth-of-type(4) {
+                width: 50%;
+                /* możesz zmienić np. 50% lub 70% */
+                justify-self: center;
+            }
+            footer img.stopka {
+                width: 70% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer img.stopka_znaczki {
+                width: 62% !important;
+                /* logo zajmuje 60% szerokości ekranu */
+                max-width: 300px;
+                /* żeby nie urosło za bardzo na tabletach */
+                height: auto !important;
+                /* proporcje zachowane */
+                margin: 10px auto !important;
+                display: block;
+            }
+            footer a:nth-of-type(3) {
+                margin-left: 85% !important;
+                /* dostosuj wartość */
+            }
+            footer p {
+                font-size: 2.2vw !important;
+            }
+            .arrow {
+                width: 9.3vw !important;
+                height: 9.3vw !important;
+            }
+            .arrow::before {
+                border-left: 4.6vw solid transparent;
+                border-right: 4.6vw solid transparent;
+                border-bottom: 5.8vw solid white;
+            }
+            #sidebar {
+                width: 20%;
+                margin-top: 2%;
+            }
+        }
+        /* Hamburger domyślnie ukryty */
+        
+        .hamburger {
+            display: none;
+            font-size: 8vw;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            z-index: 9998;
+            color: white;
+        }
+        /* Panel mobilnego menu */
+        
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 70%;
+            height: 100%;
+            background: linear-gradient(#107e59, #0b6144);
+            color: white;
+            overflow-y: auto;
+            transition: right 0.4s ease;
+            z-index: 10000;
+            padding: 20px;
+        }
+        
+        .mobile-menu.active {
+            right: 0;
+        }
+        
+        .mobile-menu #closeMenu {
+            font-size: 8vw;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+        /* Menu w panelu */
+        
+        .mobile-menu ol {
+            list-style: none;
+            padding: 0;
+            margin: 50px 0 0 0;
+        }
+        
+        .mobile-menu ol li {
+            margin: 15px 0;
+        }
+        
+        .mobile-menu ul li {
+            font-style: italic;
+        }
+        
+        .mobile-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 5vw;
+        }
+        /* Pokaż hamburgera tylko na telefonie */
+        
+        @media (max-width: 400px) {
+            header .menu {
+                display: none !important;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+        
+        .wybrane {
+            color: #21d096 !important;
+            font-weight: bold !important;
+        }
+        
+        .wybrano {
+            color: rgb(211, 224, 92) !important;
+            font-style: italic;
+        }
+        
+        header .menu li ul {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+        }
+        
+        header .menu li:hover ul {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 3999;
+            /* mniej niż mobileMenu, ale więcej niż reszta */
+            display: none;
+            /* domyślnie ukryte */
+        }
+        
+        .menu-overlay.active {
+            display: block;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            const closeMenu = document.getElementById("closeMenu");
+            const overlay = document.getElementById("menuOverlay");
+
+            function openMenu() {
+                mobileMenu.classList.add("active");
+                overlay.classList.add("active");
+            }
+
+            function closeMenuFn() {
+                mobileMenu.classList.remove("active");
+                overlay.classList.remove("active");
+            }
+
+            if (hamburger) hamburger.addEventListener("click", openMenu);
+            if (closeMenu) closeMenu.addEventListener("click", closeMenuFn);
+            if (overlay) overlay.addEventListener("click", closeMenuFn);
+        });
+    </script>
 </head>
 
 <body onselectstart="return false;">
@@ -39,7 +429,7 @@
                 <center>
                     <h1 class="cień tytul">Menu główne</h1>
                     <ol class="menu cień">
-                        <li><a href="Strona główna.html">Strona główna</a>
+                        <li><a href="Strona główna.html" class="wybrane">Strona główna</a>
                         </li>
 
                         <li><a href="#">Encyklopedia</a>
@@ -71,6 +461,46 @@
                         </li>
                     </ol>
                 </center>
+                <!-- przycisk hamburgera widoczny tylko na telefonie -->
+                <div id="hamburger" class="hamburger cień">&#9776;</div>
+
+                <!-- panel boczny -->
+                <nav id="mobileMenu" class="mobile-menu cień">
+                    <span id="closeMenu">&times;</span>
+                    <ol>
+                        <li><a href="Strona główna.html" class="wybrane">Strona główna</a></li>
+                        <li>
+                            <a href="#">Encyklopedia</a>
+                            <ul>
+                                <li><a href="Zoopedia.html">Zoopedia</a></li>
+                                <li><a href="Słowniczek.html">Słowniczek</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Nowości</a>
+                            <ul>
+                                <li><a href="Aktualizacje.html">Aktualizacje</a></li>
+                                <li><a href="DLC.html">DLC</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">O Nas</a>
+                            <ul>
+                                <li><a href="Historia.html">Historia</a></li>
+                                <li><a href="Skróty klawiszowe.html">Skróty klawiszowe</a></li>
+                                <li><a href="#" onclick="parent.togglePlayer()">Muzyka</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Internetowe Zoo</a>
+                            <ul>
+                                <li><a href="Mapa Zoo.html">Mapa Zoo</a></li>
+                                <li><a href="Informacje dnia.html">Informacje dnia</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </nav>
+                <div id="menuOverlay" class="menu-overlay"></div>
             </header>
             <div style="clear: both;"></div>
             <div style="animation: fadeIn ease-in .5s backwards; ">
@@ -82,7 +512,7 @@
                         </button>
                     </center>
                 </div>
-                <h1 class="tytul cień" style="margin-top: -6%;">Strona główna</h1>
+                <h1 class="tytul cień tekst" style="margin-top: -6%;">Strona główna</h1>
                 <center>
                     <img style="width:32%; margin-top: -1%;" src="Ikony/Planet Zoo_logo.png" alt="Zoopedia">
                 </center>
@@ -90,7 +520,7 @@
             <br>Przeżyj kampanie podróżując po całym świecie lub puść wodze fantazji w Trybie Piaskownicy. Twórz unikalne siedliska i rozległe krajobrazy, podejmuj ważne decyzje i&nbsp;dokonuj znaczących wyborów, a także opiekuj się swoimi zwierzętami, budując i&nbsp;zarządzając najdzikszymi ogrodami zoologicznymi na świecie.</i>
                 </p>
                 <center>
-                    <iframe style="width: 80%; min-width: 78vw; height: auto; min-height: 44vw;" src='https://www.youtube.com/embed/nCq4eLtc0hg?rel=0&loop=1&playlist=nCq4eLtc0hg;rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0' frameborder='0'></iframe>
+                    <iframe style="width: 80%; min-width: 78vw; height: auto; min-height: 44vw;" src='https://www.youtube.com/embed/nCq4eLtc0hg?rel=0&loop=1&playlist=nCq4eLtc0hg;rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0' frameborder='0' allowfullscreen></iframe>
                     <h4 class="podpis_filmu cień"><i>Oficjalny zwiastun Planet Zoo</i></h4>
                 </center>
                 <hr>
@@ -121,34 +551,36 @@
                 </div>
                 <div style="clear: both;"></div>
                 <hr>
-                <div style="margin-left: 1vw;" class="gallery" data-gallery-id="1">
+                <div>
                     <p style="color: white; margin: 1%; font-size: 1.6vw; text-align: center;" class="cień"><i>Galeria zdjęć</i></p>
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/1.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 1">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/2.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 2">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/3.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 3">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/4.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 4">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/5.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 5">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/6.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 6">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/7.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 7">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/8.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 8">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/9.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 9">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/10.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 10">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/11.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 11">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/12.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 12">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/13.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 13">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/14.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 14">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/15.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 15">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/16.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 16">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/17.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 17">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/18.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 18">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/19.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 19">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/20.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 20">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/21.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 21">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/22.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 22">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/23.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 23">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/24.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 24">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/25.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 25">
-                    <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/26.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 26">
+                    <div style="margin-left: 1vw;" class="gallery" data-gallery-id="1">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/1.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 1">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/2.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 2">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/3.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 3">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/4.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 4">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/5.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 5">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/6.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 6">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/7.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 7">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/8.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 8">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/9.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 9">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/10.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 10">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/11.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 11">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/12.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 12">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/13.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 13">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/14.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 14">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/15.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 15">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/16.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 16">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/17.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 17">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/18.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 18">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/19.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 19">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/20.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 20">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/21.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 21">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/22.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 22">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/23.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 23">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/24.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 24">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/25.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 25">
+                        <img class="gallery-image galeria" src="Galeria zdjęć z aktualizacji/Strona główna/26.jpg" data-caption=" " style="width: 32%; text-align: center;" alt="zdjęcie 26">
+                    </div>
                 </div>
                 <script src="comp.js"></script>
                 <script src="galeria.js"></script>
@@ -196,14 +628,14 @@
                             <td style="text-align: center;">Brak</td>
                         </tr>
                     </table>
-                    <div><img src="Ikony/Pegi3.png" width="10%" style="margin: 1.4%"><img src="Ikony/Cobra_logo.png" width="10%" style="margin: 1.4%"></div>
+                    <div><img src="Ikony/Pegi3.png" class="ikona" width="10%" style="margin: 1.4%"><img src="Ikony/Cobra_logo.png" class="ikona" width="10%" style="margin: 1.4%"></div>
                 </center>
                 <div style="clear: both;"></div>
             </div>
         </div>
     </div>
     <footer>
-        <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z Planet Zoo!</h2>
+        <h2 style="color: white; text-align: center;" class="cień">Przejdź szybko na inne strony związane z&nbsp;Planet Zoo!</h2>
         <center>
             <a href="https://store.steampowered.com/app/703080/Planet_Zoo/?l=polish" target="_blank"><img class="stopka" src="Ikony/Steam_logo.png" alt="Logo Steam" style="margin: 2%; padding-right: 1%;"></a>
             <a href="https://forums.frontier.co.uk/categories/planet-zoo/" target="_blank"><img class="stopka" src="Ikony/Frontier_logo.png" alt="Logo Frontier" style="margin: 1.2%; padding-right: 1%;"></a>
