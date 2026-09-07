@@ -1347,6 +1347,11 @@ svg path.dim {
     .filtr-rodzaj2 {
         width: 20px;
     }
+    .ikona-zdjecie {
+        height: 40% !important;
+        width: 60% !important;
+        border-radius: 0px !important;
+    }
     /* Zmniejszenie fontu i paddingu przycisków filtrów */
     .filter-buttons button {
         font-size: 11px;
