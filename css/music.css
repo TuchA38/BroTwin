@@ -62,6 +62,41 @@
 }
 
 
+/* Dedykowane zmniejszenie na małych ekranach telefonów */
+
+
+/* Dedykowane zmniejszenie na małych ekranach telefonów */
+
+@media (max-width: 480px) {
+    .controls {
+        gap: 2px;
+    }
+    .controls .library-group {
+        gap: 2px;
+    }
+    .controls button {
+        padding: 6px 2px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Wyśrodkowanie kontenera okładki i samego zdjęcia */
+    .album-cover-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .album-cover {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 /* Kiedy aktywne jest pz-deluxe, zmień kolor tytułu albumu na błękitny */
 
 [data-game-version="pz2"] .music-box.pz-deluxe .album-title,

@@ -1304,3 +1304,76 @@ svg path.dim {
         transform: translateY(0) scale(1);
     }
 }
+
+
+/* Domyślny limit szerokości dla panelu filtrów */
+
+#filter-panel {
+    max-width: calc(100vw - 20px);
+    box-sizing: border-box;
+}
+
+
+/* Reguły dla ekranów mobilnych (telefony i małe tablety) */
+
+@media (max-width: 768px) {
+    /* Wymuszenie idealnego dopasowania panelu do szerokości i wysokości ekranu */
+    #filter-panel {
+        width: calc(100vw - 20px);
+        right: 10px;
+        left: 10px;
+        bottom: 10px;
+        max-height: 85dvh;
+        /* dvh uwzględnia chowanie paska przeglądarki mobilnej */
+        padding: 12px;
+    }
+    /* Zmniejszenie liczby kolumn w siatkach filtrów, by przyciski nie wychodziły poza obrys */
+    .grid-2x3,
+    .grid-4x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-3x1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .filtr-zdj,
+    .filtr-zawartosc {
+        width: 30px;
+    }
+    .filtr-status,
+    [data-game-version="pz2"] .filtr-status {
+        width: 25px !important;
+    }
+    .filtr-rodzaj,
+    .filtr-rodzaj2 {
+        width: 20px;
+    }
+    /* Zmniejszenie fontu i paddingu przycisków filtrów */
+    .filter-buttons button {
+        font-size: 11px;
+        padding: 6px 4px;
+        word-break: break-word;
+    }
+    /* Układ wyszukiwarki i przycisku resetu na telefonie w jednym pionowym ciągu */
+    .reset-search-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #reset-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+    /* Dopasowanie okien modalnych zwierząt */
+    .modal {
+        padding: 6px;
+    }
+    .modal-content {
+        padding: 12px;
+        max-height: 92dvh;
+        box-sizing: border-box;
+    }
+    /* Dopasowanie nagłówka modala */
+    .modal-header img {
+        max-height: 220px;
+        object-fit: cover;
+    }
+}
