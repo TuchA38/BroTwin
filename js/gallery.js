@@ -220,20 +220,20 @@ initGalleryKeyboard();
 // 7️⃣ SWIPE / TOUCH (Mobile)
 // -------------------------------------
 function initGallerySwipe() {
-    const lightboxImg = document.getElementById("gallery-lightbox-img");
-    if (!lightboxImg) return;
+    const lightbox = document.getElementById("gallery-lightbox");
+    if (!lightbox) return;
 
-    lightboxImg.addEventListener("touchstart", e => {
+    lightbox.addEventListener("touchstart", e => {
         window.startX = e.touches[0].clientX;
-    });
+    }, { passive: true });
 
-    lightboxImg.addEventListener("touchend", e => {
+    lightbox.addEventListener("touchend", e => {
         if (window.currentGallery.length <= 1) return;
 
         const diff = e.changedTouches[0].clientX - window.startX;
         if (diff > 50) window.prevImage();
         if (diff < -50) window.nextImage();
-    });
+    }, { passive: true });
 }
 
 initGallerySwipe();
