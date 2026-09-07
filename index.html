@@ -8,8 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/music.css">
     <link rel="stylesheet" href="css/calendar.css">
-    <!-- <link rel="shortcut icon" href="https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769861247/Planet_Zoo_ad8hxg.webp"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-xh6w4Z8u4+sBz+… (skrót)" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        (function() {
+            function updateFavicon(version) {
+                const pz1Icon = "https://raw.githubusercontent.com/TuchA38/BroTwin/main/Planet_Zoo.webp";
+                const pz2Icon = "https://raw.githubusercontent.com/TuchA38/BroTwin/main/Planet_Zoo_2.webp";
+
+                const selectedIcon = (version === "pz2") ? pz2Icon : pz1Icon;
+
+                let favicon = document.getElementById("favicon");
+                if (!favicon) {
+                    favicon = document.createElement("link");
+                    favicon.id = "favicon";
+                    favicon.rel = "icon";
+                    favicon.type = "image/webp";
+                    document.head.appendChild(favicon);
+                }
+
+                favicon.href = selectedIcon + "?v=" + Date.now();
+            }
+
+            // 1. Ustaw ikonę od razu przy ładowaniu strony (z localStorage)
+            const savedVersion = localStorage.getItem("zoopedia-version") || "pz1pc";
+            updateFavicon(savedVersion);
+
+            // 2. Aktualizuj ikonę na żywo, gdy AppState.set() wyemituje zmiane
+            document.addEventListener("versionChanged", (e) => {
+                updateFavicon(e.detail);
+            });
+        })();
+    </script>
 </head>
 
 <body>
