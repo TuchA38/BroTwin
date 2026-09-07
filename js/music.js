@@ -564,7 +564,10 @@ if (miniToggle && musicWidget) {
     miniToggle.addEventListener("click", () => {
         musicWidget.classList.toggle("open");
         if (miniPlayer) miniPlayer.classList.toggle("open");
-        miniToggle.textContent = musicWidget.classList.contains("open") ? "⮜" : "⮞";
+        const isOpen = musicWidget.classList.contains("open");
+        miniToggle.innerHTML = isOpen ?
+            '<i class="fas fa-caret-left"></i>' :
+            '<i class="fas fa-caret-right"></i>';
     });
 }
 
