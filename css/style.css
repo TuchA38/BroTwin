@@ -2632,7 +2632,8 @@ html[data-game-version="pz2"] *::-webkit-scrollbar-thumb:active {
 [data-game-version="pz2"] .change-game-version,
 [data-game-version="pz2"] .character-link,
 [data-game-version="pz2"] .place-link,
-[data-game-version="pz2"] .scenario-link {
+[data-game-version="pz2"] .scenario-link,
+[data-game-version="pz2"] .historia-link {
     color: #7b8940;
 }
 
@@ -2649,7 +2650,8 @@ html[data-game-version="pz2"] *::-webkit-scrollbar-thumb:active {
 [data-game-version="pz2"] .change-game-version:hover,
 [data-game-version="pz2"] .character-link:hover,
 [data-game-version="pz2"] .place-link:hover,
-[data-game-version="pz2"] .scenario-link:hover {
+[data-game-version="pz2"] .scenario-link:hover,
+[data-game-version="pz2"] .historia-link:hover {
     color: #647033;
     /* delikatna zmiana koloru na hover */
 }
@@ -3474,7 +3476,8 @@ table td {
 .change-game-version,
 .character-link,
 .place-link,
-.scenario-link {
+.scenario-link,
+.historia-link {
     color: #15d696;
     /* niebieski */
     font-weight: bold;
@@ -3500,7 +3503,8 @@ table td {
 .change-game-version:hover,
 .character-link:hover,
 .place-link:hover,
-.scenario-link:hover {
+.scenario-link:hover,
+.historia-link:hover {
     color: #1affb3;
     /* delikatna zmiana koloru na hover */
 }
