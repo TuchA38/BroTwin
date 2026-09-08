@@ -54,6 +54,21 @@
         ]
     },
     {
+        "id": "deianira-upjersliwa",
+        "name": "Deianira Upjersliwa",
+        "version": ["pz1pc", "pz1console", "pz2"],
+        "role": "Właściciel Fundacji",
+        "affiliation": "Myers Corp / Independent",
+        "status": "Aktywna",
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788896369/Deianira_Upjersliwa_1_d80nbe.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788896369/Deianira_Upjersliwa_1_d80nbe.webp",
+        "description": "Córka [[dominic-myers|Dominica Myersa]], która dąży do zmiany filozofii firmy swojego ojca. Zależy jej na nowoczesnym podejściu do ochrony gatunków i zbalansowaniu celów finansowych z ideami [[bernie-goodwin|Berniego Goodwina]].",
+        "fullBio": "<b>O postaci</b><br>Emma wychowała się w świecie korporacyjnym, jednak jej pasją stała się ekologia i edukacja odwiedzających.<br><br><b>Rola w kampanii</b><br>Współpracuje z graczem w celu naprawy błędów popełnionych przez jej ojca w zarządzanych przez niego parkach.<br><br><b>Relacje</b><br>Córka [[dominic-myers|Dominica Myersa]], wzoruje się na etycznej pracy [[bernie-goodwin|Berniego Goodwina]] i [[nancy-jones|Nancy Jones]].",
+        "gallery": [
+            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783615845/emma_1.webp"
+        ]
+    },
+    {
         "id": "dominic-myers",
         "name": "Dominic Myers",
         "version": ["pz1pc", "pz1console", "pz2"],
@@ -114,6 +129,22 @@
         ]
     },
     {
+        "id": "mondo-zeller",
+        "name": "Mondo Zeller",
+        "version": ["pz1pc", "pz1console", "pz2"],
+        "role": "Główny Technik Zoo",
+        "affiliation": "Goodwin House",
+        "status": "Aktywny / Mentor",
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788869549/Mondo_Zeller_1_fvnhng.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788869549/Mondo_Zeller_1_fvnhng.webp",
+        "description": "Charyzmatyczny miłośnik zwierząt i założyciel sieci ogrodów zoologicznych Goodwin Trust z siedzibą w [[miejsca:rezydencja-goodwinow|Goodwin House]]. Bernie kieruje się sercem i troską o dobrostan zwierząt, wprowadzając gracza w świat odpowiedzialnego zarządzania zoo. Główny mentor w trybie kariery, współpracujący z [[nancy-jones|Nancy Jones]].",
+        "fullBio": "<b>O postaci</b><br>Bernie Goodwin to pasjonat przyrody, którego życiową misją jest ochrona zagrożonych gatunków oraz edukacja społeczna. Przez lata zbudował od zera wiele prestiżowych parków na całym świecie, zarządzając nimi z poziomu [[miejsca:goodwin-house|Goodwin House]].<br><br><b>Rola w kampanii</b><br>W trybie kariery Bernie pełni rolę przewodnika. Pomaga zrozumieć fundamentalne potrzeby zwierząt — od odpowiednio dobranego wybiegu po wzbogacenia środowiskowe i programy reintrodukcji.<br><br><b>Relacje</b><br>Jest bliskim przyjacielem [[nancy-jones|Nancy Jones]], która wspiera go od strony medycznej i operacyjnej. Często wchodzi w spory ideologiczne z chciwym przedsiębiorcą [[dominic-myers|Dominikiem Myersem]].",
+        "gallery": [
+            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801433/bernie_1.webp",
+            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801438/bernie_2.webp"
+        ]
+    },
+    {
         "id": "nancy-jones",
         "name": "Nancy Jones",
         "version": ["pz1pc", "pz1console", "pz2"],
@@ -127,6 +158,22 @@
         "gallery": [
             "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801429/nancy_1.webp",
             "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801431/nancy_2.webp"
+        ]
+    },
+    {
+        "id": "orion-discord",
+        "name": "Orion Discord",
+        "version": ["pz1pc", "pz1console", "pz2"],
+        "role": "Ochroniarz Muzeum",
+        "affiliation": "Goodwin House",
+        "status": "Aktywny / Mentor",
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788866735/Orion_Discord_1_olcfme.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788866735/Orion_Discord_1_olcfme.webp",
+        "description": "Charyzmatyczny miłośnik zwierząt i założyciel sieci ogrodów zoologicznych Goodwin Trust z siedzibą w [[miejsca:rezydencja-goodwinow|Goodwin House]]. Bernie kieruje się sercem i troską o dobrostan zwierząt, wprowadzając gracza w świat odpowiedzialnego zarządzania zoo. Główny mentor w trybie kariery, współpracujący z [[nancy-jones|Nancy Jones]].",
+        "fullBio": "<b>O postaci</b><br>Bernie Goodwin to pasjonat przyrody, którego życiową misją jest ochrona zagrożonych gatunków oraz edukacja społeczna. Przez lata zbudował od zera wiele prestiżowych parków na całym świecie, zarządzając nimi z poziomu [[miejsca:goodwin-house|Goodwin House]].<br><br><b>Rola w kampanii</b><br>W trybie kariery Bernie pełni rolę przewodnika. Pomaga zrozumieć fundamentalne potrzeby zwierząt — od odpowiednio dobranego wybiegu po wzbogacenia środowiskowe i programy reintrodukcji.<br><br><b>Relacje</b><br>Jest bliskim przyjacielem [[nancy-jones|Nancy Jones]], która wspiera go od strony medycznej i operacyjnej. Często wchodzi w spory ideologiczne z chciwym przedsiębiorcą [[dominic-myers|Dominikiem Myersem]].",
+        "gallery": [
+            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801433/bernie_1.webp",
+            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801438/bernie_2.webp"
         ]
     },
     {
