@@ -30,7 +30,7 @@ window.CHARACTERS = window.CHARACTERS || {};
 
     // ---------------------------------
     // SMART WIKI LINK PARSER
-    // Działa z: [[id|label]], [[postacie:id|label]], [[miejsca:id|label]]
+    // Działa z: [[id|label]], [[postacie:id|label]], [[miejsca:id|label]], [[historia:id|label]]
     // ---------------------------------
     function parseCharacterLinks(text) {
         if (!text) return "";
@@ -44,6 +44,9 @@ window.CHARACTERS = window.CHARACTERS || {};
             } else if (targetId.startsWith("postacie:") || targetId.startsWith("char:")) {
                 type = "character";
                 targetId = targetId.replace(/^(postacie:|char:)/, "");
+            } else if (targetId.startsWith("historia:") || targetId.startsWith("history:")) {
+                type = "historia";
+                targetId = targetId.replace(/^(historia:|history:)/, "");
             } else {
                 if (window.PLACES && window.PLACES.data && window.PLACES.data.some(p => p.id === targetId || p.name === targetId)) {
                     type = "place";
@@ -53,16 +56,15 @@ window.CHARACTERS = window.CHARACTERS || {};
             }
 
             if (type === "place") {
-                return `<a href="#${targetId}" class="place-link" data-place-id="${targetId}">${label}</a>`;
+                return `<a href="#${targetId}" class="place-link" data-place-id="${targetId}" data-page="miejsca" data-id="${targetId}">${label}</a>`;
+            } else if (type === "historia") {
+                return `<a href="#${targetId}" class="historia-link" data-historia-id="${targetId}" data-page="historia" data-id="${targetId}">${label}</a>`;
             } else {
-                return `<a href="#${targetId}" class="character-link" data-character-id="${targetId}">${label}</a>`;
+                return `<a href="#${targetId}" class="character-link" data-character-id="${targetId}" data-page="postacie" data-id="${targetId}">${label}</a>`;
             }
         });
     }
 
-    // ---------------------------------
-    // DYNAMICZNE GENEROWANIE SEKCJI "O POSTACI" ORAZ "RELACJE"
-    // ---------------------------------
     function buildDescriptionHTML(char) {
         if (char.about || char.relations) {
             let html = "";
@@ -85,9 +87,6 @@ window.CHARACTERS = window.CHARACTERS || {};
         return parseCharacterLinks(char.description || "");
     }
 
-    // ---------------------------------
-    // DYNAMICZNE GENEROWANIE WSPOMNIEŃ I CYTATÓW
-    // ---------------------------------
     function buildFullBioHTML(char) {
         if (char.memories && Array.isArray(char.memories)) {
             let html = `<h3 class='section-title'><i class='fas fa-comments'></i> Wspomnienia i wypowiedzi</h3>`;
@@ -101,7 +100,6 @@ window.CHARACTERS = window.CHARACTERS || {};
                 contentList.forEach(text => {
                     if (!text) return;
                     const trimmed = text.trim();
-                    // Wykrywanie cytatów po symbolach " lub „
                     if (trimmed.startsWith("„") || trimmed.startsWith('"')) {
                         html += `<blockquote class='character-quote'><i class='fas fa-quote-left quote-icon'></i><p>${parseCharacterLinks(trimmed)}</p></blockquote>`;
                     } else {
@@ -113,7 +111,6 @@ window.CHARACTERS = window.CHARACTERS || {};
             return html;
         }
 
-        // Kompatybilność ze starym polem fullBio
         const rawBio = char.fullBio || char.fullDescription || char.bio || "";
         if (Array.isArray(rawBio)) {
             return rawBio.map(paragraph => parseCharacterLinks(paragraph)).join('<br><br>');
@@ -121,9 +118,6 @@ window.CHARACTERS = window.CHARACTERS || {};
         return parseCharacterLinks(rawBio);
     }
 
-    // ---------------------------------
-    // BINDOWANIE LINKÓW (W POSTACIACH I DO MIEJSC)
-    // ---------------------------------
     function bindCharacterLinks(container) {
         if (!container) return;
 
@@ -141,6 +135,43 @@ window.CHARACTERS = window.CHARACTERS || {};
             };
         });
 
+        container.querySelectorAll(".historia-link").forEach(link => {
+            link.onclick = e => {
+                e.preventDefault();
+                const historiaId = link.dataset.historiaId || link.dataset.id;
+
+                CHARACTERS.closeModal();
+
+                const triggerOpenHistoria = () => {
+                    if (window.HISTORIA && typeof window.HISTORIA.scrollToZoo === "function") {
+                        window.HISTORIA.scrollToZoo(historiaId);
+                    }
+                };
+
+                if (window.HISTORIA) {
+                    window.HISTORIA.pendingZooId = historiaId;
+                }
+
+                const pageLoader = window.loadPage ? window.loadPage("historia") : Promise.resolve();
+
+                pageLoader.then(() => {
+                    // Jeśli historia jest już w pełni załadowana i karty istnieją w DOM
+                    if (window.HISTORIA && window.HISTORIA.loaded && document.querySelector(`.historia-zoo-card[data-zoo-id="${historiaId}"]`)) {
+                        triggerOpenHistoria();
+                    } else {
+                        // Czekaj na zakończenie renderowania danych historii
+                        const onHistoriaReady = () => {
+                            document.removeEventListener("historiaReady", onHistoriaReady);
+                            triggerOpenHistoria();
+                        };
+                        document.addEventListener("historiaReady", onHistoriaReady);
+                    }
+                }).catch(err => {
+                    console.error("Błąd podczas ładowania modułu historii:", err);
+                });
+            };
+        });
+
         container.querySelectorAll(".place-link").forEach(link => {
             link.onclick = e => {
                 e.preventDefault();
@@ -154,7 +185,6 @@ window.CHARACTERS = window.CHARACTERS || {};
                     const placeObj = (window.PLACES.data || []).find(p => p.id === placeId || p.name === placeId);
                     const currentVersion = typeof AppState !== "undefined" && AppState.get ? AppState.get() : null;
 
-                    // Weryfikacja i zmiana wersji jeśli miejsce nie występuje w obecnej
                     if (placeObj && currentVersion) {
                         const isAvailableInVersion = (item, ver) => {
                             if (!ver || !item || !item.version) return true;
@@ -162,11 +192,9 @@ window.CHARACTERS = window.CHARACTERS || {};
                             return item.version === ver;
                         };
 
-                        // Jeśli miejsce NIE występuje w aktualnie wybranej wersji
                         if (!isAvailableInVersion(placeObj, currentVersion)) {
                             let targetVersion = null;
 
-                            // Preferujemy przełączenie do pz1, jeśli miejsce w niej występuje
                             if (isAvailableInVersion(placeObj, "pz1")) {
                                 targetVersion = "pz1";
                             } else if (Array.isArray(placeObj.version) && placeObj.version.length > 0) {
@@ -410,14 +438,13 @@ window.CHARACTERS = window.CHARACTERS || {};
             metaEl.innerHTML = metaContent.join("");
         }
 
-        // GENEROWANIE O POSTACI I RELACJI
         if (descEl) {
             descEl.innerHTML = buildDescriptionHTML(char);
             bindCharacterLinks(descEl);
 
             if (typeof enrichTextWithGlossary === "function") {
                 enrichTextWithGlossary(descEl);
-                descEl.querySelectorAll("a.place-link, a.character-link").forEach(link => {
+                descEl.querySelectorAll("a.place-link, a.character-link, a.historia-link").forEach(link => {
                     link.querySelectorAll(".glossary-link").forEach(g => g.replaceWith(document.createTextNode(g.textContent)));
                     link.normalize();
                 });
@@ -461,14 +488,13 @@ window.CHARACTERS = window.CHARACTERS || {};
             }
         }
 
-        // GENEROWANIE WSPOMNIEŃ I CYTATÓW
         if (fullBioDiv) {
             fullBioDiv.innerHTML = buildFullBioHTML(char);
             bindCharacterLinks(fullBioDiv);
 
             if (typeof enrichTextWithGlossary === "function") {
                 enrichTextWithGlossary(fullBioDiv);
-                fullBioDiv.querySelectorAll("a.place-link, a.character-link").forEach(link => {
+                fullBioDiv.querySelectorAll("a.place-link, a.character-link, a.historia-link").forEach(link => {
                     link.querySelectorAll(".glossary-link").forEach(g => g.replaceWith(document.createTextNode(g.textContent)));
                     link.normalize();
                 });

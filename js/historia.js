@@ -7,7 +7,8 @@ window.HISTORIA = window.HISTORIA || {
     loading: false,
     loaded: false,
     activeLightBoxIndex: 0,
-    activeGalleryImages: []
+    activeGalleryImages: [],
+    pendingZooId: null
 };
 
 (function() {
@@ -158,19 +159,10 @@ window.HISTORIA = window.HISTORIA || {
                                     if (tabsContainer) {
                                         const tabBtn = document.createElement("button");
                                         tabBtn.className = "historia-tab-btn";
+                                        tabBtn.dataset.zooTabId = zoo.id;
                                         tabBtn.textContent = zoo.name;
                                         tabBtn.onclick = () => {
-                                            document.querySelectorAll(".historia-tab-btn").forEach(b => b.classList.remove("active"));
-                                            tabBtn.classList.add("active");
-
-                                            document.querySelectorAll(".historia-zoo-card").forEach(card => {
-                                                if (card.dataset.zooId === zoo.id) {
-                                                    card.style.display = "block";
-                                                    card.scrollIntoView({ behavior: "smooth", block: "start" });
-                                                } else {
-                                                    card.style.display = "none";
-                                                }
-                                            });
+                                            window.HISTORIA.scrollToZoo(zoo.id);
                                         };
                                         tabsContainer.appendChild(tabBtn);
                                     }
@@ -225,7 +217,7 @@ window.HISTORIA = window.HISTORIA || {
 
                 let galleriesHtml = (Array.isArray(zoo.galleries) && zoo.galleries.length > 0) ? `
                     <div class="historia-galleries-section">
-                        <h4 class="historia-section-title"><i class="fas fa-images"></i> Galerie Zdjęć (${zoo.galleries.length})</h4>
+                        <h4 class="historia-section-title"><i class="fas fa-images"></i> Galerie Zdjęcia (${zoo.galleries.length})</h4>
                         <div class="historia-galleries-wrapper">
                             ${zoo.galleries.map((gal, galIdx) => `
                                 <div class="historia-gallery-block">
@@ -247,9 +239,12 @@ window.HISTORIA = window.HISTORIA || {
                     </div>
                 ` : "";
 
-                // Wstrzykiwanie naprzemiennych zdjęć do akapitów
                 const tempDiv = document.createElement("div");
-                tempDiv.innerHTML = zoo.historyText || "";
+                const rawHistory = typeof zoo.historyText === "object" && zoo.historyText !== null
+                    ? Object.values(zoo.historyText).join("")
+                    : (zoo.historyText || "");
+
+                tempDiv.innerHTML = rawHistory;
                 const paragraphs = Array.from(tempDiv.querySelectorAll("p"));
 
                 const inlineImages = zoo.inlineImages || [];
@@ -286,7 +281,6 @@ window.HISTORIA = window.HISTORIA || {
 
                 zoosContainer.appendChild(zooCard);
 
-                // 📸 1. Kliknięcia dla zdjęć W TEKŚCIE
                 const textContentEl = zooCard.querySelector(".historia-text-content");
                 if (textContentEl) {
                     const injectedImgs = Array.from(textContentEl.querySelectorAll("img"));
@@ -305,7 +299,6 @@ window.HISTORIA = window.HISTORIA || {
                     }
                 }
 
-                // 📸 2. Kliknięcia dla DOLNYCH GALERII
                 if (Array.isArray(zoo.galleries)) {
                     zoo.galleries.forEach((gal, galIdx) => {
                         const gridEl = zooCard.querySelector(`.historia-gallery-grid[data-gal-idx="${galIdx}"]`);
@@ -326,23 +319,80 @@ window.HISTORIA = window.HISTORIA || {
             });
 
             if (typeof window.addNonBreakingSpaces === "function") {
-                window.addNonBreakingSpaces(root);
-            }
+    window.addNonBreakingSpaces(root);
+}
 
-            const observer = new IntersectionObserver((entries, obs) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("historia-visible");
-                        obs.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.05 });
+const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("historia-visible");
+            obs.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.05 });
 
-            document.querySelectorAll(".historia-zoo-card, .historia-timeline-item").forEach(el => {
-                observer.observe(el);
-            });
+document.querySelectorAll(".historia-zoo-card, .historia-timeline-item").forEach(el => {
+    observer.observe(el);
+});
+
+// Sprawdzenie oczekującego ID (z kliknięcia w odnośnik, URL lub kotwicy)
+const hashId = window.location.hash.replace("#", "");
+const urlParams = new URLSearchParams(window.location.search);
+const zooParam = urlParams.get("zoo");
+const targetZooId = window.HISTORIA.pendingZooId || hashId || zooParam;
+
+if (targetZooId) {
+    window.HISTORIA.scrollToZoo(targetZooId);
+}
+
+// Emisja zdarzenia po zakończeniu pełnego renderowania DOM
+document.dispatchEvent(new CustomEvent("historiaReady"));
         });
     }
+
+    // Funkcja do aktywowania i przewijania konkretnego zoo po ID
+window.HISTORIA.scrollToZoo = function(zooId) {
+    if (!zooId) return;
+
+    window.HISTORIA.pendingZooId = zooId;
+
+    let attempts = 0;
+    const interval = setInterval(() => {
+        attempts++;
+
+        const tabBtns = document.querySelectorAll(
+            `.historia-tab-btn[data-zoo-tab-id="${zooId}"], .historia-tab-btn[data-id="${zooId}"]`
+        );
+        const targetCard = document.querySelector(`.historia-zoo-card[data-zoo-id="${zooId}"]`);
+
+        if (tabBtns.length > 0 || targetCard) {
+            clearInterval(interval);
+
+            // 1. Zdejmij 'active' ze wszystkich przycisków w tym z "Wszystkie ogrody"
+            document.querySelectorAll(".historia-tab-btn").forEach(btn => btn.classList.remove("active"));
+
+            // 2. Aktywuj przycisk docelowy
+            tabBtns.forEach(btn => btn.classList.add("active"));
+
+            // 3. Pokaż właściwą kartę zoo i ukryj pozostałe
+            if (targetCard) {
+                document.querySelectorAll(".historia-zoo-card").forEach(card => {
+                    const isActive = (card.dataset.zooId === zooId);
+                    card.style.display = isActive ? "block" : "none";
+                    card.classList.toggle("active", isActive);
+                });
+
+                targetCard.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+
+            window.HISTORIA.pendingZooId = null;
+        }
+
+        if (attempts >= 25) {
+            clearInterval(interval);
+        }
+    }, 100);
+};
 
     // ---------------------------------
     // 4️⃣ INIT ON SPA READY
@@ -370,4 +420,89 @@ window.HISTORIA = window.HISTORIA || {
 
     initHistoriaWhenReady();
 
+    // Reagowanie na zmiany w adresie URL (#hash)
+    window.addEventListener("hashchange", () => {
+        const hashId = window.location.hash.replace("#", "");
+        if (hashId && typeof window.HISTORIA.scrollToZoo === "function") {
+            window.HISTORIA.scrollToZoo(hashId);
+        }
+    });
+
+    // Globalna obsługa kliknięć w odnośniki do Postaci, Miejsc oraz Historii
+    document.addEventListener("click", async function(e) {
+        const link = e.target.closest("a[data-page]");
+        if (!link) return;
+
+        const targetPage = link.dataset.page;
+        const itemId = link.dataset.id;
+
+        if (!targetPage) return;
+
+        e.preventDefault();
+
+        if (targetPage === "historia") {
+            if (window.CHARACTERS && typeof window.CHARACTERS.closeModal === "function") window.CHARACTERS.closeModal();
+            if (window.PLACES && typeof window.PLACES.closeModal === "function") window.PLACES.closeModal();
+
+            if (itemId) {
+                window.HISTORIA.pendingZooId = itemId;
+            }
+
+            if (typeof window.loadPage === "function") {
+                await window.loadPage("historia");
+            }
+
+            if (itemId && typeof window.HISTORIA.scrollToZoo === "function") {
+                window.HISTORIA.scrollToZoo(itemId);
+            }
+            return;
+        }
+
+        if (typeof window.loadPage === "function") {
+            await window.loadPage(targetPage);
+        }
+
+        if (itemId) {
+            let attempts = 0;
+            const interval = setInterval(() => {
+                attempts++;
+                let opened = false;
+
+                if (targetPage === "postacie") {
+                    if (window.CHARACTERS && typeof window.CHARACTERS.openById === "function") {
+                        window.CHARACTERS.openById(itemId);
+                        opened = true;
+                    } else if (typeof window.openCharacterModal === "function") {
+                        window.openCharacterModal(itemId);
+                        opened = true;
+                    }
+                } else if (targetPage === "miejsca") {
+                    if (window.PLACES && typeof window.PLACES.openById === "function") {
+                        window.PLACES.openById(itemId);
+                        opened = true;
+                    } else if (typeof window.openPlaceModal === "function") {
+                        window.openPlaceModal(itemId);
+                        opened = true;
+                    }
+                }
+
+                if (!opened && typeof window.openModal === "function") {
+                    window.openModal(targetPage, itemId);
+                    opened = true;
+                }
+
+                if (!opened) {
+                    const card = document.querySelector(`[data-id="${itemId}"]`);
+                    if (card) {
+                        card.click();
+                        opened = true;
+                    }
+                }
+
+                if (opened || attempts > 20) {
+                    clearInterval(interval);
+                }
+            }, 100);
+        }
+    });
 })();

@@ -40,6 +40,9 @@ window.PLACES = window.PLACES || {};
                 } else if (targetId.startsWith("miejsca:") || targetId.startsWith("place:")) {
                     type = "place";
                     targetId = targetId.replace(/^(miejsca:|place:)/, "");
+                } else if (targetId.startsWith("historia:") || targetId.startsWith("history:")) {
+                    type = "historia";
+                    targetId = targetId.replace(/^(historia:|history:)/, "");
                 } else {
                     if (window.CHARACTERS && window.CHARACTERS.data && window.CHARACTERS.data.some(c => c.id === targetId || c.name === targetId)) {
                         type = "character";
@@ -49,9 +52,11 @@ window.PLACES = window.PLACES || {};
                 }
 
                 if (type === "character") {
-                    return `<a href="#${targetId}" class="character-link" data-character-id="${targetId}">${label}</a>`;
+                    return `<a href="#${targetId}" class="character-link" data-character-id="${targetId}" data-page="postacie" data-id="${targetId}">${label}</a>`;
+                } else if (type === "historia") {
+                    return `<a href="#${targetId}" class="historia-link" data-historia-id="${targetId}" data-page="historia" data-id="${targetId}">${label}</a>`;
                 } else {
-                    return `<a href="#${targetId}" class="place-link" data-place-id="${targetId}">${label}</a>`;
+                    return `<a href="#${targetId}" class="place-link" data-place-id="${targetId}" data-page="miejsca" data-id="${targetId}">${label}</a>`;
                 }
             });
         }
@@ -203,6 +208,22 @@ window.PLACES = window.PLACES || {};
                         switchToPlaceModal(targetPlace);
                     } else {
                         console.warn("Nie znaleziono miejsca o ID:", targetId);
+                    }
+                };
+            });
+
+            container.querySelectorAll(".historia-link").forEach(link => {
+                link.onclick = e => {
+                    e.preventDefault();
+                    const historiaId = link.dataset.historiaId || link.dataset.id;
+                    PLACES.closeModal();
+
+                    if (typeof window.loadPage === "function") {
+                        window.loadPage("historia").then(() => {
+                            if (window.HISTORIA && typeof window.HISTORIA.scrollToZoo === "function") {
+                                window.HISTORIA.scrollToZoo(historiaId);
+                            }
+                        });
                     }
                 };
             });
@@ -379,17 +400,16 @@ window.PLACES = window.PLACES || {};
                 </a>
             `;
 
-                // Aplikowanie twardych spacji w podpisie na siatce
-    const podpisEl = item.querySelector(".podpis");
-    if (podpisEl && typeof addNonBreakingSpaces === "function") {
-        addNonBreakingSpaces(podpisEl);
-    }
+                const podpisEl = item.querySelector(".podpis");
+                if (podpisEl && typeof addNonBreakingSpaces === "function") {
+                    addNonBreakingSpaces(podpisEl);
+                }
 
-    item.onclick = e => {
-        e.preventDefault();
-        openModal(place);
-    };
-    grid.appendChild(item);
+                item.onclick = e => {
+                    e.preventDefault();
+                    openModal(place);
+                };
+                grid.appendChild(item);
             });
 
             requestAnimationFrame(() => {
@@ -431,136 +451,132 @@ window.PLACES = window.PLACES || {};
             if (place.id) modal.classList.add(`place-theme-${place.id}`);
 
             if (avatarDiv) {
-    const imgSrc = place.headerImage || place.image || place.avatar;
-    if (imgSrc) {
-        // Pobieranie ID DLC z uwzględnieniem obiektów i wersji
-        let dlcTarget = null;
-        const currentVersion = typeof AppState !== "undefined" && AppState.get ? AppState.get() : null;
+                const imgSrc = place.headerImage || place.image || place.avatar;
+                if (imgSrc) {
+                    let dlcTarget = null;
+                    const currentVersion = typeof AppState !== "undefined" && AppState.get ? AppState.get() : null;
 
-        if (typeof place.dlcId === "object" && place.dlcId !== null) {
-            dlcTarget = (currentVersion && place.dlcId[currentVersion]) 
-                ? place.dlcId[currentVersion] 
-                : Object.values(place.dlcId)[0];
-        } else if (typeof place.dlcId === "string") {
-            dlcTarget = place.dlcId;
-        } else if (Array.isArray(place.version)) {
-            dlcTarget = place.version.find(v => v !== "base");
-        } else if (place.version && place.version !== "base") {
-            dlcTarget = place.version;
-        }
+                    if (typeof place.dlcId === "object" && place.dlcId !== null) {
+                        dlcTarget = (currentVersion && place.dlcId[currentVersion]) 
+                            ? place.dlcId[currentVersion] 
+                            : Object.values(place.dlcId)[0];
+                    } else if (typeof place.dlcId === "string") {
+                        dlcTarget = place.dlcId;
+                    } else if (Array.isArray(place.version)) {
+                        dlcTarget = place.version.find(v => v !== "base");
+                    } else if (place.version && place.version !== "base") {
+                        dlcTarget = place.version;
+                    }
 
-        // 1. Sprawdzenie, czy obiekt jest scenariuszem
-        const isScenario = Boolean(place.scenario || place.type === "scenario");
+                    const isScenario = Boolean(place.scenario || place.type === "scenario");
 
-        // 2. Generowanie przycisku TYLKO wtedy, gdy to scenariusz ORAZ istnieje odpowiednie dlcTarget
-        const dlcBtn = (isScenario && dlcTarget && dlcTarget !== "base") ? `
-            <button class="species-icon-btn dlc-link-btn" title="Przejdź do DLC" data-dlc-id="${dlcTarget}" style="position: absolute; top: 8px; right: 8px; overflow: visible;">
-                <img class="ikona-zdjecie-duza" src="https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770829340/dlc_zbn7i2.webp" alt="DLC">
-            </button>
-        ` : "";
+                    const dlcBtn = (isScenario && dlcTarget && dlcTarget !== "base") ? `
+                        <button class="species-icon-btn dlc-link-btn" title="Przejdź do DLC" data-dlc-id="${dlcTarget}" style="position: absolute; top: 8px; right: 8px; overflow: visible;">
+                            <img class="ikona-zdjecie-duza" src="https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770829340/dlc_zbn7i2.webp" alt="DLC">
+                        </button>
+                    ` : "";
 
-        avatarDiv.innerHTML = `
-            <figure style="width:90%; position:relative;" class="place-avatar-container">
-                ${dlcBtn}
-                <img src="${imgSrc}" alt="${place.name}" style="cursor:pointer;">
-            </figure>
-        `;
+                    avatarDiv.innerHTML = `
+                        <figure style="width:90%; position:relative;" class="place-avatar-container">
+                            ${dlcBtn}
+                            <img src="${imgSrc}" alt="${place.name}" style="cursor:pointer;">
+                        </figure>
+                    `;
 
-        const mainImg = avatarDiv.querySelector("img:not(.ikona-zdjecie-duza)");
-        if (mainImg) {
-            mainImg.onclick = () => {
-                if (typeof window.openGallery === "function") {
-                    window.currentGallery = [imgSrc];
-                    window.openGallery(0, window.currentGallery);
-                }
-            };
-        }
-
-        // Obsługa kliknięcia przycisku DLC (wykona się tylko, gdy dlcBtn został wyrenderowany)
-        const dlcBtnEl = avatarDiv.querySelector(".dlc-link-btn");
-        if (dlcBtnEl) {
-            dlcBtnEl.onclick = (e) => {
-                e.stopPropagation();
-                const dlcId = dlcBtnEl.dataset.dlcId;
-                closeModal();
-
-                const triggerOpen = () => {
-                    if (!window.DLC) return false;
-
-                    if (typeof window.DLC.loadData === "function") {
-                        window.DLC.loadData().then(() => {
-                            if (typeof window.DLC.openById === "function") window.DLC.openById(dlcId);
-                            else if (typeof window.DLC.openModal === "function") {
-                                const dlcObj = (window.DLC.data || []).find(d => d.id === dlcId);
-                                window.DLC.openModal(dlcObj || dlcId);
+                    const mainImg = avatarDiv.querySelector("img:not(.ikona-zdjecie-duza)");
+                    if (mainImg) {
+                        mainImg.onclick = () => {
+                            if (typeof window.openGallery === "function") {
+                                window.currentGallery = [imgSrc];
+                                window.openGallery(0, window.currentGallery);
                             }
-                        });
-                        return true;
+                        };
                     }
 
-                    if (Array.isArray(window.DLC.data) && window.DLC.data.length > 0) {
-                        if (typeof window.DLC.openById === "function") {
-                            window.DLC.openById(dlcId);
-                        } else if (typeof window.DLC.openModal === "function") {
-                            const dlcObj = window.DLC.data.find(d => d.id === dlcId);
-                            window.DLC.openModal(dlcObj || dlcId);
-                        } else if (typeof window.openDlcModal === "function") {
-                            window.openDlcModal(dlcId);
-                        }
-                        return true;
-                    }
+                    const dlcBtnEl = avatarDiv.querySelector(".dlc-link-btn");
+                    if (dlcBtnEl) {
+                        dlcBtnEl.onclick = (e) => {
+                            e.stopPropagation();
+                            const dlcId = dlcBtnEl.dataset.dlcId;
+                            closeModal();
 
-                    return false;
-                };
+                            const triggerOpen = () => {
+                                if (!window.DLC) return false;
 
-                const switchAndOpen = () => {
-                    if (triggerOpen()) return;
+                                if (typeof window.DLC.loadData === "function") {
+                                    window.DLC.loadData().then(() => {
+                                        if (typeof window.DLC.openById === "function") window.DLC.openById(dlcId);
+                                        else if (typeof window.DLC.openModal === "function") {
+                                            const dlcObj = (window.DLC.data || []).find(d => d.id === dlcId);
+                                            window.DLC.openModal(dlcObj || dlcId);
+                                        }
+                                    });
+                                    return true;
+                                }
 
-                    const onReady = () => {
-                        document.removeEventListener("dlcReady", onReady);
-                        document.removeEventListener("dlcsReady", onReady);
-                        triggerOpen();
-                    };
-                    document.addEventListener("dlcReady", onReady);
-                    document.addEventListener("dlcsReady", onReady);
+                                if (Array.isArray(window.DLC.data) && window.DLC.data.length > 0) {
+                                    if (typeof window.DLC.openById === "function") {
+                                        window.DLC.openById(dlcId);
+                                    } else if (typeof window.DLC.openModal === "function") {
+                                        const dlcObj = window.DLC.data.find(d => d.id === dlcId);
+                                        window.DLC.openModal(dlcObj || dlcId);
+                                    } else if (typeof window.openDlcModal === "function") {
+                                        window.openDlcModal(dlcId);
+                                    }
+                                    return true;
+                                }
 
-                    let attempts = 0;
-                    const checkInterval = setInterval(() => {
-                        attempts++;
-                        if (triggerOpen() || attempts > 50) {
-                            clearInterval(checkInterval);
-                            document.removeEventListener("dlcReady", onReady);
-                            document.removeEventListener("dlcsReady", onReady);
-                        }
-                    }, 50);
-                };
+                                return false;
+                            };
 
-                if (typeof window.loadPage === "function") {
-                    const loader = window.loadPage("dlc");
-                    if (loader && typeof loader.then === "function") {
-                        loader.then(switchAndOpen).catch(err => {
-                            console.error("Błąd ładowania strony DLC:", err);
-                            switchAndOpen();
-                        });
-                    } else {
-                        switchAndOpen();
+                            const switchAndOpen = () => {
+                                if (triggerOpen()) return;
+
+                                const onReady = () => {
+                                    document.removeEventListener("dlcReady", onReady);
+                                    document.removeEventListener("dlcsReady", onReady);
+                                    triggerOpen();
+                                };
+                                document.addEventListener("dlcReady", onReady);
+                                document.addEventListener("dlcsReady", onReady);
+
+                                let attempts = 0;
+                                const checkInterval = setInterval(() => {
+                                    attempts++;
+                                    if (triggerOpen() || attempts > 50) {
+                                        clearInterval(checkInterval);
+                                        document.removeEventListener("dlcReady", onReady);
+                                        document.removeEventListener("dlcsReady", onReady);
+                                    }
+                                }, 50);
+                            };
+
+                            if (typeof window.loadPage === "function") {
+                                const loader = window.loadPage("dlc");
+                                if (loader && typeof loader.then === "function") {
+                                    loader.then(switchAndOpen).catch(err => {
+                                        console.error("Błąd ładowania strony DLC:", err);
+                                        switchAndOpen();
+                                    });
+                                } else {
+                                    switchAndOpen();
+                                }
+                            } else {
+                                switchAndOpen();
+                            }
+                        };
                     }
                 } else {
-                    switchAndOpen();
+                    avatarDiv.innerHTML = "";
                 }
-            };
-        }
-    } else {
-        avatarDiv.innerHTML = "";
-    }
-}
+            }
 
-if (nameEl) {
-    nameEl.textContent = place.name || "";
-    if (typeof addNonBreakingSpaces === "function") {
-        addNonBreakingSpaces(nameEl);
-    }
-}
+            if (nameEl) {
+                nameEl.textContent = place.name || "";
+                if (typeof addNonBreakingSpaces === "function") {
+                    addNonBreakingSpaces(nameEl);
+                }
+            }
             if (metaEl) {
                 const metaContent = [];
 
