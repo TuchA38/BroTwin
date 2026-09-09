@@ -1108,7 +1108,7 @@
                 ]
             },
             {
-                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na ekspozycjach w zoo: 4"
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków w ekspozycjach w zoo: 4"
             },
             {
                 "title": "Uzyskaj ogólną ocenę zoo: 3,0/5,0"
@@ -1304,7 +1304,7 @@
                 "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 8"
             },
             {
-                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na ekspozycjach w zoo: 3"
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków w ekspozycjach w zoo: 3"
             },
             {
                 "title": "Zwiększ średni dobrostan gatunków z wybiegów (Ogólny) do 85%"
@@ -1427,6 +1427,261 @@
             },
             {
                 "title": "Zbuduj atrakcję transportową Gondola podwieszana"
+            }
+        ]
+    },
+    {
+        "id": "bazar-el-darar",
+        "name": "Bazar El Darar",
+        "type": "timed",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Wydmowe wyzwanie",
+        "dlcId": {
+            "pz1pc": "africa-pack",
+            "pz1console": "grasslands&africa-bundle"
+        },
+        "targetTimes": {
+            "gold": "1:10:00",
+            "silver": "1:20:00",
+            "bronze": "-:-"
+        },
+        "reward": "Posąg fenka",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508010/fenek_ulbvul.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508010/fenek_ulbvul.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508011/fenek_1_uyfqrf.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508011/fenek_2_xg2yws.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508010/fenek_3_lskfph.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788986350/Once_in_a_Blue_Dune_upscayl_3x_upscayl-standard-4x_yw7wmm.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788986350/Once_in_a_Blue_Dune_upscayl_3x_upscayl-standard-4x_yw7wmm.webp",
+        "fullBio": "Cóż za piękny widok! Ta niesamowita oaza przerodziła się w tętniący życiem rynek. Mieszkańcy otworzyli nawet własne zoo, aby przyciągnąć więcej odwiedzających. Szkopuł w tym, że instalacja elektryczna oazy jest niestabilna, przez co często dochodzi do awarii zasilania. Twoim zadaniem jest zamienić zoo w prawdziwą pułapkę na turystów, zwiększając zyski sklepów i straganów oraz dbając o nieprzerwaną dostawę prądu!",
+        "objectives": [{
+                "title": "Wypracuj roczny zysk w stoiskach z pamiątkami: $2 000,00"
+            },
+            {
+                "title": "Wypracuj roczny zysk w stoiskach z napojami: $5 000,00"
+            },
+            {
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 9",
+                "tasks": [
+                    "Zwiększ dobrostan (Ogólny) do 85%"
+                ]
+            },
+            {
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków w ekspozycjach w zoo: 4"
+            },
+            {
+                "title": "Zbierz w zoo co najmniej 1 200 gości",
+                "tasks": [
+                    "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo",
+                    "Uzyskaj średni poziom zadowolenia gości: 70%"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "rezerwat-przyrody-jameson",
+        "name": "Rezerwat przyrody Jameson",
+        "type": "timed",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "A niech mnie",
+        "dlcId": {
+            "pz1pc": "north-america-animal-pack",
+            "pz1console": "north-america&europe-bundle"
+        },
+        "targetTimes": {
+            "gold": "1:00:00",
+            "silver": "1:10:00",
+            "bronze": "-:-"
+        },
+        "reward": "Posąg uszanki",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508027/uszanka_ibcfdf.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508027/uszanka_ibcfdf.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508026/uszanka_1_haxnbz.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508026/uszanka_2_orfgmu.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788508025/uszanka_3_q4kr37.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788987028/Well27ll_Be_Dammed.PNG_upscayl_3x_upscayl-standard-4x_iwkyxl.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788987028/Well27ll_Be_Dammed.PNG_upscayl_3x_upscayl-standard-4x_iwkyxl.webp",
+        "fullBio": "Nowa, położona u podnóża Pasma Błękitnego atrakcja ma na celu edukować odwiedzających, jednocześnie zapewniając zwierzętom duże, zbliżone do warunków naturalnych wybiegi. Przynajmniej takie informacje znajdowały się na ulotkach wydrukowanych, zanim właściciele zbankrutowali. Wznów ich pracę i dokończ ten wodny raj przed zakończeniem sezonu.",
+        "objectives": [{
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 12",
+                "tasks": [
+                    "Zwiększ dobrostan (Ogólny) do 70%"
+                ]
+            },
+            {
+                "title": "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Lis polarny: 2"
+            },
+            {
+                "title": "Wyhoduj: Puma (1)"
+            },
+            {
+                "title": "Wypracuj roczny zysk: $15 000,00"
+            },
+            {
+                "title": "Zwiększ ocenę edukacji do 3,0 gwiazdek"
+            }
+        ]
+    },
+    {
+        "id": "sosnowe-zoo-ala",
+        "name": "Sosnowe zoo Ala",
+        "type": "timed",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Kwestia czasu",
+        "dlcId": {
+            "pz1pc": "europe-pack",
+            "pz1console": "north-america&europe-bundle"
+        },
+        "targetTimes": {
+            "gold": "1:10:00",
+            "silver": "1:20:00",
+            "bronze": "-:-"
+        },
+        "reward": "Posąg koziorożca",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513433/kozioro%C5%BCec_s3euej.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513433/kozioro%C5%BCec_s3euej.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513433/kozioro%C5%BCec_1_frwoew.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513432/kozioro%C5%BCec_2_aptslw.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513431/kozioro%C5%BCec_3_od9nyk.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788988807/It27s_Just_A_Matter_of_Time.PNG_upscayl_3x_upscayl-standard-4x_ragutn.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788988807/It27s_Just_A_Matter_of_Time.PNG_upscayl_3x_upscayl-standard-4x_ragutn.webp",
+        "fullBio": "Gdy ten mały górski kurort został zakupiony z przeznaczeniem na zoo, był często porównywany do okolic słynnego szczytu Matterhorn. Te porównania sprawiły, że w całym parku widać wiele motywów inspirowanych wpływami europejskimi. Właściciele chcą, żeby w ich zoo znalazło się jak najwięcej gatunków zwierząt przed sezonem świątecznym. Czy podejmiesz się tego wyzwania?",
+        "objectives": [{
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 20",
+                "tasks": [
+                    "Zwiększ dobrostan (Ogólny) do 75%"
+                ]
+            },
+            {
+                "title": "Zbuduj atrakcję transportową Mały pociąg parowy"
+            },
+            {
+                "title": "Zbierz w zoo co najmniej 3 000 gości",
+                "tasks": [
+                    "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                ]
+            },
+            {
+                "title": "Wypracuj roczny zysk: $18 000,00"
+            },
+            {
+                "title": "Zorganizuj co najmniej następującą liczbę wykładów o zwierzętach w roku: 4"
+            }
+        ]
+    },
+    {
+        "id": "ogród-zoologiczny-zielony-liść",
+        "name": "Ogród zoologiczny „Zielony liść”",
+        "type": "timed",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Kałuże Pantanalu",
+        "dlcId": {
+            "pz1pc": "wetlands-animal-pack",
+            "pz1console": "deluxe-edition-console"
+        },
+        "targetTimes": {
+            "gold": "1:10:00",
+            "silver": "1:20:00",
+            "bronze": "-:-"
+        },
+        "reward": "Posąg kapibary",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513451/kapibara_jukikg.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513451/kapibara_jukikg.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513448/kapibara_1_e6cmxr.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513450/kapibara_2_fwhhpl.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788513449/kapibara_3_xgbhjp.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788989800/Puddles_in_the_Pantanal.PNG_upscayl_3x_upscayl-standard-4x_tdoeeb.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788989800/Puddles_in_the_Pantanal.PNG_upscayl_3x_upscayl-standard-4x_tdoeeb.webp",
+        "fullBio": "Pantanal, położony w sercu Ameryki Południowej, w Brazylii, jest największym na świecie tropikalnym mokradłem i obejmuje największy obszar podmokłych łąk. Rozciąga się na prawie 210 000 km kwadratowych i jest domem dla ogromnej liczby najróżniejszych stworzeń. To idealne miejsce na Twój nowy projekt ratowania zwierząt! Budowanie przy takiej ilości wody może jednak być nieco trudne...",
+        "objectives": [{
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków w ekspozycjach w zoo: 4"
+            },
+            {
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 9",
+                "tasks": [
+                    "Zwiększ dobrostan (Ogólny) do 85%"
+                ]
+            },
+            {
+                "title": "Zbierz w zoo co najmniej 1 200 gości",
+                "tasks": [
+                    "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                ]
+            },
+            {
+                "title": "Zwiększ ocenę edukacji do 2,5 gwiazdek"
+            },
+            {
+                "title": "Uzyskaj ogólną ocenę zoo: 3,0/5,0"
+            },
+            {
+                "title": "Wypracuj roczny zysk: $15 000,00",
+                "tasks": [
+                    "Nie miej żadnych niespłaconych pożyczek"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "schronisko-dla-osieroconych-zwierząt-w-turtle-rock",
+        "name": "Schronisko dla osieroconych zwierząt w Turtle Rock",
+        "type": "timed",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Tak szybko rosną!",
+        "dlcId": {
+            "pz1pc": "conservation-pack",
+            "pz1console": "arctic&conservation-bundle"
+        },
+        "targetTimes": {
+            "gold": "1:00:00",
+            "silver": "1:30:00",
+            "bronze": "-:-"
+        },
+        "reward": "Posąg konia",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515153/ko%C5%84_ive6xa.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515153/ko%C5%84_ive6xa.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515154/ko%C5%84_1_c3nbo0.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515152/ko%C5%84_2_utvygc.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515155/ko%C5%84_3_zmjvsn.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788990129/They_Grow_so_Fast21.PNG_upscayl_3x_upscayl-standard-4x_uei9d0.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788990129/They_Grow_so_Fast21.PNG_upscayl_3x_upscayl-standard-4x_uei9d0.webp",
+        "fullBio": "Przepiękny mongolski park, który utworzono, aby wesprzeć działania na rzecz ochrony przyrody i zachować w stanie nietkniętym siedlisko okolicznej dzikiej przyrody. Jest także miejscem wypoczynkowym i edukacyjnym dla turystów. To idealne miejsce na nasze nowe schronisko dla osieroconych zwierząt!",
+        "objectives": [{
+                "title": "Doprowadź badania dotyczące gatunków (3) z wybiegów do poziomu 2"
+            },
+            {
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 8",
+                "tasks": [
+                    "Zwiększ dobrostan (Ogólny) do 80%"
+                ]
+            },
+            {
+                "title": "Wypuść na wolność osobniki 3 różnych gatunków z wybiegów"
+            },
+            {
+                "title": "Zorganizuj co najmniej następującą liczbę wykładów o zwierzętach w roku: 2"
+            },
+            {
+                "title": "Uzyskaj w zoo co najmniej następującą liczbę punktów widokowych: 4"
+            },
+            {
+                "title": "Uzyskaj ocenę ochrony: 2,0/5,0"
+            },
+            {
+                "title": "Uzyskaj różnorodność roślinności 20% na następującej liczbie wybiegów: 4"
+            },
+            {
+                "title": "Zapewnij zasilanie wszystkich obiektów w zoo energią odnawialną"
             }
         ]
     },
