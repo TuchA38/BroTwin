@@ -2278,9 +2278,9 @@ html[data-game-version="pz2"] *::-webkit-scrollbar-thumb:active {
 [data-game-version="pz2"] .update-short-video:hover,
 [data-game-version="pz2"] .mini-short-video-frame:hover,
 [data-game-version="pz2"] .mini-video-frame:hover,
-[data-game-version="pz2"] #postacie-avatar .character-avatar-container img:hover {
+[data-game-version="pz2"] #postacie-avatar .character-avatar-container img:hover,
+[data-game-version="pz2"] #miejsca-avatar .place-avatar-container:hover>img {
     box-shadow: 0 20px 40px #51413540, 0 15px 35px rgba(0, 0, 0, 0.7);
-    /* Zmiana koloru ramki na Twój zielony akcent (lub czystą biel, jeśli wolisz #fff) */
     border-color: #514135;
 }
 
@@ -2367,7 +2367,8 @@ html[data-game-version="pz2"] *::-webkit-scrollbar-thumb:active {
 
 #species-modal[data-game-era="pz2"] .modal-content,
 [data-game-version="pz2"] #dlc-modal .modal-content,
-[data-game-version="pz2"] #postacie-modal .modal-content {
+[data-game-version="pz2"] #postacie-modal .modal-content,
+[data-game-version="pz2"] #miejsca-modal .modal-content {
     background: linear-gradient(#fff2dd, #cbbba1) !important;
     color: #725b4b !important;
     text-shadow: none !important;
@@ -2614,7 +2615,8 @@ html[data-game-version="pz2"] *::-webkit-scrollbar-thumb:active {
 }
 
 [data-game-version="pz2"] .filter-item .podpis,
-[data-game-version="pz2"] #postacie-grid .character-card .podpis {
+[data-game-version="pz2"] #postacie-grid .character-card .podpis,
+[data-game-version="pz2"] #miejsca-grid .place-card .podpis {
     background: linear-gradient( to bottom, rgba(17, 141, 100, 0) 0%, #a6856d 35%, #725b4b 100%), repeating-linear-gradient( -25deg, #b69378 0px, #725b4b 14px, #4b3c31 14px, #937661 28px);
     color: #fff2dd;
 }
@@ -2664,7 +2666,8 @@ html[data-game-version="pz2"] *::-webkit-scrollbar-thumb:active {
 }
 
 [data-game-version="pz2"] #dlc-modal hr,
-[data-game-version="pz2"] #postacie-modal hr {
+[data-game-version="pz2"] #postacie-modal hr,
+[data-game-version="pz2"] #miejsca-modal hr {
     height: 12px;
     background: #8a9751;
     border: 6px #8a9751 solid;

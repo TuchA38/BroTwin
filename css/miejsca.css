@@ -237,13 +237,11 @@
     #miejsca-name {
         margin: 0;
         font-size: 1.8rem;
-        color: #fff;
         line-height: 1.2;
     }
     /* Meta */
     
     #miejsca-meta {
-        color: #ddd;
         font-size: 0.95rem;
         line-height: 1.5;
         margin-top: 10px;
@@ -252,8 +250,13 @@
     
     #miejsca-link {
         display: inline-block;
-        color: #fff;
         text-decoration: none;
+    }
+    
+    [data-game-version="pz2"] .modal-content .species-icon-btn {
+        background: rgba(81, 65, 53, 0.8);
+        color: #fff;
+        border-radius: 50%;
     }
     /* =========================================================
    GALERIA MIEJSC
@@ -553,7 +556,6 @@
         padding: 8px 12px;
         font-weight: 600;
         font-size: 0.95rem;
-        color: #e5e7eb;
         list-style: none;
         /* Ukrywa domyślną strzałkę */
         display: flex;
@@ -602,7 +604,6 @@
         padding-left: 14px;
         margin-top: 6px;
         font-size: 0.88rem;
-        color: rgba(255, 255, 255, 0.85);
         line-height: 1.4;
     }
     /* Pozioma gałązka od linii do tekstu */
@@ -622,7 +623,6 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        color: white;
         font-size: 1.25rem;
         padding-bottom: 4px;
         margin-top: 2px;
@@ -637,7 +637,7 @@
     .obj-group {
         margin-bottom: 8px;
         border-radius: 6px;
-        background: rgba(255, 255, 255, 0.04);
+        background: rgba(255, 255, 255, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.08);
         overflow: hidden;
     }
@@ -839,34 +839,93 @@
         filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
     }
     
-    .species-icon-btn {
+    .modal-content .species-icon-btn {
         position: absolute;
         top: 12px;
-        width: 44px !important;
-        height: 44px !important;
+        width: 44px;
+        height: 44px;
         margin-right: 10px;
-        color: rgb(255, 255, 255);
+        border: none;
+        background: rgba(11, 97, 68, 0.8);
+        border-radius: 50%;
         cursor: pointer;
         font-size: 16px;
+        padding: 0;
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-width: medium;
-        border-style: none;
-        border-color: currentcolor;
-        border-image: none;
-        background: rgba(11, 97, 68, 0.8);
-        border-radius: 50%;
-        padding: 0px;
-        overflow: hidden;
-        transition: transform 0.25s, filter 0.25s;
+        transition: transform .25s ease, filter .25s ease;
+    }
+    
+    .modal-content .species-icon-btn:hover {
+        transform: scale(1.08);
+        filter: drop-shadow(0 0 12px rgba(255, 255, 255, .6));
+    }
+    
+    .species-icon-btn img:hover {
+        transform: none;
+        filter: none;
     }
     
     .species-icon-btn img {
         width: 100%;
     }
     
-    .species-icon-btn:hover {
-        transform: scale(1.08);
-        filter: drop-shadow(rgba(255, 255, 255, 0.6) 0px 0px 12px);
+    [data-game-version="pz2"] #miejsca-gallery .place-gallery-img:hover {
+        box-shadow: 0 20px 40px #51413540, 0 15px 35px rgba(0, 0, 0, 0.7);
+        border-color: #514135;
+    }
+    
+    [data-game-version="pz2"] .place-banner-img:hover,
+    [data-game-version="pz2"] .place-reward-img:hover {
+        transform: scale(1.04);
+        filter: drop-shadow(0px 8px 18px rgba(0, 0, 0, 0.6)) drop-shadow(0px 0px 8px #51413540);
+    }
+    
+    [data-game-version="pz2"] .obj-group {
+        background: rgba(0, 0, 0, 0.05);
+    }
+    
+    [data-game-version="pz2"] .obj-silver .obj-level-header {
+        color: #8a8a8a;
+    }
+    /* Srebro */
+    
+    [data-game-version="pz2"] .obj-gold .obj-level-header {
+        color: #af9500;
+    }
+    /* =========================================================
+   STYLIZACJA BANERU / LOGO (ZAMIAST STATUETKI)
+   ========================================================= */
+    /* Dedykowany kontener na baner */
+    
+    .place-banner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    /* Stylizacja samego obrazka baneru */
+    
+    .place-banner-img {
+        max-width: 180px;
+        /* Ograniczenie szerokości, żeby nie był za duży */
+        max-height: 320px;
+        /* Ograniczenie wysokości */
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        /* Zachowuje proporcje grafiki */
+        display: block;
+        margin: 0 auto;
+        /* Płynny efekt poświaty i cienia */
+        filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.4));
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    /* Efekt najechania myszką (hover) */
+    
+    .place-banner-img:hover {
+        transform: scale(1.04);
+        filter: drop-shadow(0px 8px 18px rgba(0, 0, 0, 0.6)) drop-shadow(0px 0px 8px rgba(19, 196, 137, 0.5));
     }
