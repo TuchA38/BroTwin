@@ -1366,14 +1366,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-australia-pack .music-link,
 #dlc-modal.dlc-theme-australia-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-australia-pack .species-link,
-#dlc-modal.dlc-theme-australia-pack .glossary-link {
+#dlc-modal.dlc-theme-australia-pack .glossary-link,
+#dlc-modal.dlc-theme-australia-pack .scenario-link {
     color: #ffbe0c;
 }
 
 #dlc-modal.dlc-theme-australia-pack .music-link:hover,
 #dlc-modal.dlc-theme-australia-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-australia-pack .species-link:hover,
-#dlc-modal.dlc-theme-australia-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-australia-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-australia-pack .scenario-link:hover {
     color: #ffcb3d;
 }
 
@@ -2682,12 +2684,14 @@ svg path.dim {
 }
 
 #dlc-modal[class*="dlc-theme-australia&south-america-bundle"] #dlc-release-date-btn,
-#dlc-modal[class*="dlc-theme-australia&south-america-bundle"] .glossary-link {
+#dlc-modal[class*="dlc-theme-australia&south-america-bundle"] .glossary-link,
+#dlc-modal[class*="dlc-theme-australia&south-america-bundle"] .scenario-link {
     color: #ffbe0c;
 }
 
 #dlc-modal[class*="dlc-theme-australia&south-america-bundle"] #dlc-release-date-btn:hover,
-#dlc-modal[class*="dlc-theme-australia&south-america-bundle"] .glossary-link:hover {
+#dlc-modal[class*="dlc-theme-australia&south-america-bundle"] .glossary-link:hover,
+#dlc-modal[class*="dlc-theme-australia&south-america-bundle"] .scenario-link:hover {
     color: #ffcb3d;
 }
 
