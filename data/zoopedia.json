@@ -8132,8 +8132,13 @@
         "latin": "Equus ferus przewalskii",
         "aliases": ["takhi", "dziki koń mongolski", "koń dżungarski"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1780250533/Ko%C5%84_Przewalskiego_v3d0xh.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788977513/Ko%C5%84_Przewalskiego_r8yqob.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788978266/Horse_Przewalskis_illustration_a19df6.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["azja", "ssaki", "EN", "i3", "siedlisko"],
-        "info": "Koń Przewalskiego <i>(Equus ferus przewalskii)</i> to gatunek dzikiego konia żyjący na stepach Mongolii, znany również jako takhi, dziki koń mongolski i koń dżungarski. Koń Przewalskiego jest mniejszy i ma bardziej krępą budowę niż większość koniowatych. Długość jego ciała wynosi 2,1-2,6 m, a wysokość w kłębie 1,2-1,5 m. Dorosłe osobniki ważą 250-360 kg. Samce mogą być nieco większe od samic, jednak u tego gatunku nie obserwuje się wyraźnego dymorfizmu płciowego. Umaszczenie jest pomarańczowobrązowe z jaśniejszym spodem, podkreślone przez gęstą czarną grzywę, gruby czarny ogon i czarne nogi.<br><br>Koń Przewalskiego wyginął około lat 60. ubiegłego wieku z powodu utraty siedlisk oraz nadmiernych polowań i występuje obecnie jedynie w niewoli. Gatunek ten można uznać za wymarły w środowisku naturalnym, ponieważ wszystkie istniejące w parkach narodowych i rezerwatach przyrody populacje są starannie monitorowane oraz są rezultatem programów hodowlanych i ponownego wprowadzenia do środowiska naturalnego. Jednak dzięki tym wysiłkom reintrodukcyjnym koń Przewalskiego został w 2011 roku skategoryzowany na nowo jako gatunek zagrożony wyginięciem, a jego populacja jest nadal ściśle obserwowana w celu maksymalizacji reprodukcji i minimalizacji chowu wsobnego.",
+        "info": "Koń Przewalskiego <i>(Equus ferus przewalskii)</i> to gatunek dzikiego konia żyjący na stepach Mongolii, znany również jako takhi, dziki koń mongolski i koń dżungarski. Koń Przewalskiego jest mniejszy i ma bardziej krępą budowę niż większość koniowatych. Długość jego ciała wynosi 2,1-2,6 m, a wysokość w kłębie 1,2-1,5 m. Dorosłe osobniki ważą 250-360 kg. Samce mogą być nieco większe od samic, jednak u tego gatunku nie obserwuje się wyraźnego dymorfizmu płciowego. Umaszczenie jest pomarańczowobrązowe z jaśniejszym spodem, podkreślone przez gęstą czarną grzywę, gruby czarny ogon i czarne nogi.",
+        "conservation": "Koń Przewalskiego wyginął około lat 60. ubiegłego wieku z powodu utraty siedlisk oraz nadmiernych polowań i występuje obecnie jedynie w niewoli. Gatunek ten można uznać za wymarły w środowisku naturalnym, ponieważ wszystkie istniejące w parkach narodowych i rezerwatach przyrody populacje są starannie monitorowane oraz są rezultatem programów hodowlanych i ponownego wprowadzenia do środowiska naturalnego. Jednak dzięki tym wysiłkom reintrodukcyjnym koń Przewalskiego został w 2011 roku skategoryzowany na nowo jako gatunek zagrożony wyginięciem, a jego populacja jest nadal ściśle obserwowana w celu maksymalizacji reprodukcji i minimalizacji chowu wsobnego.",
         "population": "1 900 reintrodukowanych osobników żyjących półdziko w parkach narodowych i rezerwatach przyrody",
         "status": "Zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776782/EN_ihqn2p.webp",
@@ -8209,10 +8214,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "dlc",
-            "pz1console": "dlc"
+            "pz1console": "dlc",
+            "pz2": "podstawa"
         },
         "dlc": {
             "pz1pc": {
@@ -11172,8 +11178,10 @@
         "name": "Morpho menelaus",
         "latin": "Morpho menelaus",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1780989139/Morpho_menelaus_wryyph.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788977514/Morpho_menelaus_orcime.webp",
         "classes": ["europa", "amerykapolnocna", "amerykapoludniowa", "stawonogi", "DD", "ekspozycja"],
-        "info": "Morpho menelaus <i>(Morpho menelaus)</i> to gatunek motyla występujący na terenach trawiastych i leśnych strefy tropikalnej w Ameryce Środkowej i Ameryce Południowej. Ma charakterystyczne, jaskrawoniebieskie i turkusowe skrzydła z czarnym obramowaniem w białe plamki. Łuski na skrzydłach tych motyli mają strukturę, która nadaje im charakterystyczny, opalizujący wygląd. Spodnia strona skrzydeł jest brązowa i upstrzona oczkami. Samce gatunku Morpho menelaus są mniejsze od samic, a ich skrzydła mają dużo jaskrawszy odcień niebieskiego i cieńsze obramowanie. Średnia rozpiętość skrzydeł u tego gatunku wynosi 12 cm. Gąsienice tych motyli są czerwonobrązowe z zielonymi plamkami i mogą one odstraszać drapieżniki za pomocą drażniących szpikulców.<br><br>Zagrożeniem dla motyli z rodzaju Morpho, w tym również dla gatunku Morpho menelaus, jest niszczenie siedlisk oraz ich niezrównoważone wyłapywanie. Wiele spośród gatunków tych motyli potrzebuje do życia starych, niskopiennych lasów, z których większość została usunięta w ramach wylesiania. Ponadto duże rozmiary, jaskrawe ubarwienie i niespieszne ruchy tych motyli sprawiają, że są poszukiwane przez kolekcjonerów i łatwe do schwytania. Działacze na rzecz ochrony przyrody oraz miejscowe społeczności promują ekoturystykę związaną z motylami z rodzaju Morpho, aby zwiększyć poziom edukacji na temat tych gatunków.",
+        "info": "Morpho menelaus <i>(Morpho menelaus)</i> to gatunek motyla występujący na terenach trawiastych i leśnych strefy tropikalnej w Ameryce Środkowej i Ameryce Południowej. Ma charakterystyczne, jaskrawoniebieskie i turkusowe skrzydła z czarnym obramowaniem w białe plamki. Łuski na skrzydłach tych motyli mają strukturę, która nadaje im charakterystyczny, opalizujący wygląd. Spodnia strona skrzydeł jest brązowa i upstrzona oczkami. Samce gatunku Morpho menelaus są mniejsze od samic, a ich skrzydła mają dużo jaskrawszy odcień niebieskiego i cieńsze obramowanie. Średnia rozpiętość skrzydeł u tego gatunku wynosi 12 cm. Gąsienice tych motyli są czerwonobrązowe z zielonymi plamkami i mogą one odstraszać drapieżniki za pomocą drażniących szpikulców.",
+        "conservation": "Zagrożeniem dla motyli z rodzaju Morpho, w tym również dla gatunku Morpho menelaus, jest niszczenie siedlisk oraz ich niezrównoważone wyłapywanie. Wiele spośród gatunków tych motyli potrzebuje do życia starych, niskopiennych lasów, z których większość została usunięta w ramach wylesiania. Ponadto duże rozmiary, jaskrawe ubarwienie i niespieszne ruchy tych motyli sprawiają, że są poszukiwane przez kolekcjonerów i łatwe do schwytania. Działacze na rzecz ochrony przyrody oraz miejscowe społeczności promują ekoturystykę związaną z motylami z rodzaju Morpho, aby zwiększyć poziom edukacji na temat tych gatunków.",
         "population": "Nieznana",
         "status": "Zbyt mało danych",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776792/DD_upjfda.webp",
@@ -11260,10 +11268,11 @@
                 "female": 0
             }
         ],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "dlc",
-            "pz1console": "dlc"
+            "pz1console": "dlc",
+            "pz2": "podstawa"
         },
         "dlc": {
             "pz1pc": {
@@ -11736,8 +11745,13 @@
         "latin": "Tragelaphus angasil",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774208000/Niala_grzywiasta_alsuep.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774208530/Niala_grzywiasta_-_Remaster_z8knrh.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788977514/Niala_grzywiasta_x52whr.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788978265/Antelope_Nyala_illustration_actoz5.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["afryka", "ssaki", "LC", "i3", "remaster", "siedlisko"],
-        "info": "Niala grzywiasta <i>(Tragelaphus angasil)</i> to płochliwa antylopa żyjąca w gęstych zaroślach sawanny w południowo-wschodniej Afryce. Gatunek ten charakteryzuje się dymorfizmem płciowym - samce są znacznie większe od samic, mają ciemnoszarą, grzywiastą sierść, żółte nogi i kręcone rogi z żółtymi końcówkami, podczas gdy samice są jasnobrązowe. U obu płci na grzbiecie widoczne są białe pionowe pręgi.<br><br>Samce mają od 0,9 do 1,1 m wysokości, od 1,35 do 1,95 m długości i ważą od 98 do 125 kg. Samice mają od 0,75 do 0,9 m wysokości, od 1,35 do 1,95 m długości i ważą od 50 do 68 kg.<br><br>Gatunek nie jest zagrożony, ale jego liczebność spada. Zagrożeniem dla populacji jest zajmowanie terenów przez ludzi. Powoduje to zmniejszanie siedlisk w wyniku przekształcania ich w tereny rolne i zurbanizowane. Niale grzywiaste są również podatne na choroby rozprzestrzeniane przez zwierzęta hodowlane. Wiele nial żyje na obszarach chronionych oraz w rezerwatach przyrody, co zapewnia im w pewnym stopniu bezpieczeństwo i ochronę siedlisk, mimo przypadków kłusownictwa.",
+        "info": "Niala grzywiasta <i>(Tragelaphus angasil)</i> to płochliwa antylopa żyjąca w gęstych zaroślach sawanny w południowo-wschodniej Afryce. Gatunek ten charakteryzuje się dymorfizmem płciowym - samce są znacznie większe od samic, mają ciemnoszarą, grzywiastą sierść, żółte nogi i kręcone rogi z żółtymi końcówkami, podczas gdy samice są jasnobrązowe. U obu płci na grzbiecie widoczne są białe pionowe pręgi.<br><br>Samce mają od 0,9 do 1,1 m wysokości, od 1,35 do 1,95 m długości i ważą od 98 do 125 kg. Samice mają od 0,75 do 0,9 m wysokości, od 1,35 do 1,95 m długości i ważą od 50 do 68 kg.",
+        "conservation": "Gatunek nie jest zagrożony, ale jego liczebność spada. Zagrożeniem dla populacji jest zajmowanie terenów przez ludzi. Powoduje to zmniejszanie siedlisk w wyniku przekształcania ich w tereny rolne i zurbanizowane. Niale grzywiaste są również podatne na choroby rozprzestrzeniane przez zwierzęta hodowlane. Wiele nial żyje na obszarach chronionych oraz w rezerwatach przyrody, co zapewnia im w pewnym stopniu bezpieczeństwo i ochronę siedlisk, mimo przypadków kłusownictwa.",
         "population": "32 000",
         "status": "Najmniej zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
@@ -11813,10 +11827,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/2452"
     },
@@ -13208,8 +13223,10 @@
         "name": "Oophaga lehmanni",
         "latin": "Oophaga lehmanni",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774271939/Oophaga_lehmanni_mgzhrt.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788977515/Oophaga_lehmanni_yvfikb.webp",
         "classes": ["amerykapoludniowa", "plazy", "CR", "ekspozycja"],
         "info": "Oophaga lehmanni <i>(Oophaga lehmanni)</i> jest endemicznym gatunkiem płazów występującym w kolumbijskich lasach deszczowych w dolinie rzeki Anchicaya. Jest to jedyne miejsce na świecie, w którym można je znaleźć. Żaba ta zwykle żyje w ściółce leśnej, ale można ja czasem spotkać na niskich gałęziach i krzewach. Odznacza się szerokimi ciemnobrązowymi lub czarnymi pasami na grzbiecie, głowie i odnóżach. Pomiędzy nimi występują jasno zabarwione linie, występujące w kolorach czerwonym, żółtym i pomarańczowym. Dorosłe okazy tego gatunku mają średnio 31-36 mm długości.",
+        "conservation": " ",
         "population": "Nieznana",
         "status": "Krytycznie zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776791/CR_x0nblf.webp",
@@ -13276,10 +13293,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         }
     },
     {
@@ -18056,6 +18074,88 @@
         }
     },
     {
+        "name": "Sęp afrykański",
+        "latin": "Gyps africanus",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788977531/S%C4%99p_afryka%C5%84ski_xzsa1o.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788978293/Vulture_WhiteBacked_illustration_uxvhkz.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["afryka", "ptaki", "CR", "i3", "siedlisko"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Od 27 000<br>do 51 000<br>(wartość szacunkowa)",
+        "status": "Krytycznie zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776791/CR_x0nblf.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ptaki",
+            "Rząd": "Szponiaste",
+            "Rodzina": "Jastrzębiowate",
+            "Rodzaj": "Gyps"
+        },
+        "habitat": {
+            "Kontynenty": ["Afryka"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Afryka",
+            "link": "../Mapa/Rezerwat Afryka.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
+    },
+    {
         "name": "Siamang wielki",
         "latin": "Symphalangus syndactylus",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1780250525/Siamang_wielki_ulgblr.webp",
@@ -22009,6 +22109,96 @@
                 "id": "aquatic&twilight-bundle",
                 "name": "Aquatic & Twilight Bundle"
             }
+        }
+    },
+    {
+        "name": "Wzdręga",
+        "latin": "Chromobotia macracanthus",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788977514/Wzdr%C4%99ga_v5e7ch.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788978312/Rudd_Common_illustration_tw50yb.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["europa", "azja", "ryby", "LC", "i3", "akwarium"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Nieznana",
+        "status": "Najmniej zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ryby",
+            "Rząd": "Karpiokształtne",
+            "Rodzina": "Karpiowate",
+            "Rodzaj": "Scardinius"
+        },
+        "habitat": {
+            "Kontynenty": ["Europa", "Azja"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+                "name": "Rezerwat Europa",
+                "link": "../Mapa/Rezerwat Europa.html",
+                "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+                "male": 0,
+                "female": 0
+            },
+            {
+                "name": "Rezerwat Azja",
+                "link": "../Mapa/Rezerwat Azja.html",
+                "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+                "male": 0,
+                "female": 0
+            }
+        ],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
         }
     },
     {
