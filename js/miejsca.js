@@ -28,6 +28,31 @@ window.PLACES = window.PLACES || {};
             });
         }
 
+        function enrichWithGlossarySafely(container) {
+            if (typeof enrichTextWithGlossary !== "function" || !container) return;
+
+            enrichTextWithGlossary(container);
+            container.querySelectorAll("p, th, td, span, div").forEach(el => enrichTextWithGlossary(el));
+
+            // Odznaczenie słowa "azyl", jeśli przed nim występuje "Dziki" lub "Fundacja Dziki"
+            container.querySelectorAll(".glossary-link").forEach(el => {
+                if (el.textContent.trim().toLowerCase() === "azyl") {
+                    const prev = el.previousSibling;
+                    const prevText = prev ? (prev.nodeValue || prev.textContent || "") : "";
+                    if (/(?:Fundacja\s+Dziki|Dziki)\s*$/i.test(prevText)) {
+                        el.replaceWith(document.createTextNode(el.textContent));
+                    }
+                }
+                if (el.textContent.trim().toLowerCase() === "azylu") {
+                    const prev = el.previousSibling;
+                    const prevText = prev ? (prev.nodeValue || prev.textContent || "") : "";
+                    if (/(?:Dzikim)\s*$/i.test(prevText)) {
+                        el.replaceWith(document.createTextNode(el.textContent));
+                    }
+                }
+            });
+        }
+
         function parsePlaceLinks(text) {
             if (!text) return "";
             return text.replace(/\[\[(.*?)\|(.*?)\]\]/g, (match, rawId, label) => {
@@ -218,12 +243,47 @@ window.PLACES = window.PLACES || {};
                     const historiaId = link.dataset.historiaId || link.dataset.id;
                     PLACES.closeModal();
 
-                    if (typeof window.loadPage === "function") {
-                        window.loadPage("historia").then(() => {
-                            if (window.HISTORIA && typeof window.HISTORIA.scrollToZoo === "function") {
-                                window.HISTORIA.scrollToZoo(historiaId);
+                    window.HISTORIA = window.HISTORIA || {};
+                    window.HISTORIA.pendingZooId = historiaId;
+
+                    const triggerScroll = () => {
+                        if (window.HISTORIA && typeof window.HISTORIA.scrollToZoo === "function") {
+                            window.HISTORIA.scrollToZoo(historiaId);
+                        }
+                    };
+
+                    const onReady = () => {
+                        document.removeEventListener("historiaReady", onReady);
+                        triggerScroll();
+                    };
+                    document.addEventListener("historiaReady", onReady);
+
+                    const switchAndOpen = () => {
+                        triggerScroll();
+                        let attempts = 0;
+                        const checkInterval = setInterval(() => {
+                            attempts++;
+                            const activeBtn = document.querySelector(`.historia-tab-btn[data-zoo-tab-id="${historiaId}"].active, .historia-tab-btn[data-id="${historiaId}"].active`);
+                            if (activeBtn || attempts > 50) {
+                                clearInterval(checkInterval);
+                            } else {
+                                triggerScroll();
                             }
-                        });
+                        }, 100);
+                    };
+
+                    if (typeof window.loadPage === "function") {
+                        const loader = window.loadPage("historia");
+                        if (loader && typeof loader.then === "function") {
+                            loader.then(switchAndOpen).catch(err => {
+                                console.error("Błąd ładowania strony historii:", err);
+                                switchAndOpen();
+                            });
+                        } else {
+                            switchAndOpen();
+                        }
+                    } else {
+                        switchAndOpen();
                     }
                 };
             });
@@ -577,11 +637,20 @@ window.PLACES = window.PLACES || {};
                     addNonBreakingSpaces(nameEl);
                 }
             }
+
             if (metaEl) {
                 const metaContent = [];
 
                 if (place.role) {
                     metaContent.push(`<b>Rola:</b> ${place.role}`);
+                }
+
+                if (place.affiliation) {
+                    metaContent.push(`<b>Właściciel:</b> ${place.affiliation}`);
+                }
+
+                if (place.baner) {
+                    metaContent.push(`<b>Baner:</b> ${place.baner}`);
                 }
 
                 if (place.scenario) {
@@ -624,11 +693,32 @@ window.PLACES = window.PLACES || {};
                         </div>
                     `);
                 }
+                else if (place.bannerImage) {
+                    metaContent.push(`
+                        <div class="place-reward-container place-banner-container">
+                            <div class="reward-img-wrapper">
+                                <img src="${place.bannerImage}" alt="${place.name}" class="place-banner-img" style="cursor: pointer;">
+                            </div>
+                        </div>
+                    `);
+                }
 
+                // Wstawienie HTML TYLKO RAZ
                 metaEl.innerHTML = metaContent.join("<br>");
 
+                // Obsługa kliknięcia dla baneru
+                const bannerImg = metaEl.querySelector(".place-banner-img");
+                if (bannerImg) {
+                    bannerImg.onclick = () => {
+                        if (typeof window.openGallery === "function") {
+                            window.openGallery(0, [place.bannerImage]);
+                        }
+                    };
+                }
+
+                // Obsługa kliknięcia dla nagród (wykonuje się tylko gdy nie ma baneru)
                 const rewardWrapper = metaEl.querySelector(".reward-img-wrapper");
-                if (rewardWrapper) {
+                if (rewardWrapper && !bannerImg) {
                     const rewardImg = rewardWrapper.querySelector(".place-reward-img");
                     const dots = rewardWrapper.querySelectorAll(".reward-dot");
 
@@ -668,21 +758,32 @@ window.PLACES = window.PLACES || {};
             }
 
             if (fullBioDiv) {
-                const bioText = (place.fullBio || place.fullDescription || place.bio || "").trim();
+                const bioData = place.fullBio || place.fullDescription || place.bio || "";
+                let parsedBioHtml = "";
 
-                if (bioText) {
+                if (typeof bioData === "object" && bioData !== null) {
+                    parsedBioHtml = Object.values(bioData).map(text => parsePlaceLinks(text)).join("");
+                } else if (typeof bioData === "string" && bioData.trim()) {
+                    parsedBioHtml = parsePlaceLinks(bioData);
+                }
+
+                if (parsedBioHtml.trim()) {
                     fullBioDiv.style.display = "";
                     fullBioDiv.innerHTML = `
                         <h3 class="section-title"><i class="fas fa-map-marker-alt"></i> O&nbsp;miejscu</h3>
-                        ${parsePlaceLinks(bioText)}
+                        ${parsedBioHtml}
                         <hr class="modal-separator">
                     `;
+
+                    enrichWithGlossarySafely(fullBioDiv);
+
+                    fullBioDiv.querySelectorAll("a.place-link, a.character-link, a.historia-link").forEach(link => {
+                        link.querySelectorAll(".glossary-link").forEach(g => g.replaceWith(document.createTextNode(g.textContent)));
+                        link.normalize();
+                    });
+
                     bindPlaceLinks(fullBioDiv);
 
-                    if (typeof enrichTextWithGlossary === "function") {
-                        enrichTextWithGlossary(fullBioDiv);
-                        fullBioDiv.querySelectorAll("p, th, td, span, div").forEach(el => enrichTextWithGlossary(el));
-                    }
                     if (typeof addNonBreakingSpaces === "function") {
                         addNonBreakingSpaces(fullBioDiv);
                     }
@@ -706,15 +807,19 @@ window.PLACES = window.PLACES || {};
                     descHtml += renderObjectives(place);
                 }
 
-                descEl.innerHTML = descHtml;
-                bindPlaceLinks(descEl);
+                if (descHtml.trim()) {
+                    descEl.style.display = "";
+                    descEl.innerHTML = descHtml;
 
-                if (typeof enrichTextWithGlossary === "function") {
-                    enrichTextWithGlossary(descEl);
-                    descEl.querySelectorAll("p, th, td, span, div").forEach(el => enrichTextWithGlossary(el));
-                }
-                if (typeof addNonBreakingSpaces === "function") {
-                    addNonBreakingSpaces(descEl);
+                    enrichWithGlossarySafely(descEl);
+                    bindPlaceLinks(descEl);
+
+                    if (typeof addNonBreakingSpaces === "function") {
+                        addNonBreakingSpaces(descEl);
+                    }
+                } else {
+                    descEl.style.display = "none";
+                    descEl.innerHTML = "";
                 }
             }
 
