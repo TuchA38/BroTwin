@@ -56,16 +56,37 @@
     {
         "id": "deianira-upjersliwa",
         "name": "Deianira Upjersliwa",
-        "version": ["pz1pc", "pz1console", "pz2"],
-        "role": "Właściciel Fundacji",
-        "affiliation": "Myers Corp / Independent",
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
+        "role": "Zarządca Fundacji / Bizneswoman",
+        "affiliation": "Fundacja Dziki Azyl",
         "status": "Aktywna",
+        "motto": "Nie obchodzi mnie, co mówią o mnie za plecami, dopóki stać mnie na kupienie ich milczenia. Pieniądz to jedyna prawdziwa władza na tej ziemi.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788896369/Deianira_Upjersliwa_1_d80nbe.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788896369/Deianira_Upjersliwa_1_d80nbe.webp",
-        "description": "Córka [[dominic-myers|Dominica Myersa]], która dąży do zmiany filozofii firmy swojego ojca. Zależy jej na nowoczesnym podejściu do ochrony gatunków i zbalansowaniu celów finansowych z ideami [[bernie-goodwin|Berniego Goodwina]].",
-        "fullBio": "<b>O postaci</b><br>Emma wychowała się w świecie korporacyjnym, jednak jej pasją stała się ekologia i edukacja odwiedzających.<br><br><b>Rola w kampanii</b><br>Współpracuje z graczem w celu naprawy błędów popełnionych przez jej ojca w zarządzanych przez niego parkach.<br><br><b>Relacje</b><br>Córka [[dominic-myers|Dominica Myersa]], wzoruje się na etycznej pracy [[bernie-goodwin|Berniego Goodwina]] i [[nancy-jones|Nancy Jones]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783615845/emma_1.webp"
+        "about": "Deianira Upjersliwa to chłodna, bezwzględna bizneswoman i potężna zarządczyni [[miejsca:dziki-azyl|Fundacji Dziki Azyl]], dla której świat zoologiczny jest przede wszystkim skomplikowaną grą rynkową, cynicznym polem walki o wpływy oraz źródłem ogromnych zysków. Podczas gdy inni kierują się empatią i idealizmem, Deianira operuje na suchych liczbach, bezdusznej biurokracji oraz agresywnych audytach. Po tragicznych wydarzeniach w [[historia:zoo-w-andigawen|Zoo w Andigawen]] błyskawicznie wykorzystała kryzys wizjonerek, przejmując ocalałe zwierzęta pod skrzydła swojej fundacji i czyniąc z nich niezwykle cenny kapitał przetargowy. Edukowana przez najbardziej cynicznych graczy w branży, w tym bezwzględnego magnata [[postacie:dominic-myers|Dominica Myersa]], zbudowała monopolistyczną pozycję jedynego stabilnego azylu w regionie, stając się główną antagonistką dla [[amiliana-empirejska|Amiliany Empirejskiej]] oraz [[postacie:ethelien-mumba|Ethelien Mumba]].",
+        "relations": "Główną rywalką Deianiry pozostaje [[amiliana-empirejska|Amiliana Empirejska]], którą bezwzględnie uważa za naiwną marzycielkę niezdolną do twardego zarządzania ryzykiem. Bliskie relacje biznesowe łączą ją z kontrowersyjnym biznesmenem [[postacie:dominic-myers|Dominiciem Myersem]], z którym dzieli podejście do komercjalizacji sektora zoologicznego i traktowania zwierząt jako aktywów finansowych. Mimo jawnej niechęci do idealizmu sióstr, Deianira bez zawahania zatrudniła w swojej fundacji [[postacie:ethelien-mumba|Ethelien Mumba]]. Był to czysto pragmatyczny krok mający na celu utrzymanie żywego majątku w doskonałej kondycji medycznej. Jej relacje z [[postacie:mondo-zeller|Mondo Zellerem]] opierały się na nieustannych starciach proceduralnych. Deianira przez lata używała przepisów, unijnych norm i wyciągów technicznych, by paraliżować jego plan wywiezienia zwierząt do [[miejsca:magiotopia|Magiotopii]]. Jest ceniona w kręgach korporacyjnych jako cyniczny, lecz niezwykle skuteczny wzór twardej ręki w biznesie.",
+        "memories": [{
+                "question": "Jak Deianira postrzegała katastrofę w Andigawen?",
+                "content": [
+                    "Deianira od początku uważała katastrofę ogrodu za naturalną konsekwencję amatorskiego zarządzania i braku twardych procedur korporacyjnych. Zapytana o tamten okres, przejęcie stada oraz swoje biznesowe relacje, odpowiada z bezgranicznym cynizmem:",
+                    "„Andigawen od początku było zamkiem na piasku, wybudowanym na dziecięcych marzeniach Amiliany. Pożar był straszny, owszem, ale w prawdziwym biznesie nie ma miejsca na łzy, gdy na stole leży niezagospodarowany majątek i bezpańskie zasoby. Kiedy świat płakał nad zgliszczami, ja i Dominic Myers skanowaliśmy rynek. Dominic od dawna powtarzał mi jedną zasadę: 'gdzie inni widzą tragedię i chaos, ty masz widzieć okazję rynkową'. To dzięki jego wsparciu i sprytnym sztuczkom prawnym Fundacja Dziki Azyl przejęła prawa do ocalałych gatunków. Ta fundacja nie powstała z litości... Powstała, by stworzyć żelazny porządek tam, gdzie romantyczne idealistki poniosły sromotną porażkę. Przyjęcie tych zwierząt było operacją logistyczną na wielką skalę, a one same stały się naszym najważniejszym zasobem i żywą kartą przetargową. Gdyby nie moje twarde decyzje i moje pieniądze, te stworzenia trafiłyby na nielegalne licytacje u handlarzy. Amiliana powinna mi dziękować na kolanach, a nie robić ze mnie jakiś czarny charakter...”",
+                    "Przejęcie zwierząt i poparcie ze strony [[postacie:dominic-myers|Dominica Myersa]] ugruntowało pozycję Deianiry w środowisku, dając jej ogromną przewagę polityczną oraz finansową nad wygnaną konkurencją."
+                ]
+            },
+            {
+                "question": "Jak wyglądały starcia o budżet i trudna współpraca?",
+                "content": [
+                    "Ironicznym zrządzeniem losu, to właśnie w sztabie Deianiry pracę podjęła [[postacie:ethelien-mumba|Ethelien Mumba]], walcząc o dobrostan ocalałych gatunków. Zarządczyni wspomina te relacje jako ciągły powód do irytacji i walkę o każdą złotówkę:",
+                    "„Ethelien to wybitny lekarz, ale fatalna księgowa bez grosza wyobraźni finansowej. Dla niej każde zwierzę wymagało sprowadzania najdroższych leków, przebudowy klatek i wybiegów z klimatyzacją, jakbyśmy prowadzili pięciogwiazdkowy hotel na koszt podatnika. Trzymałam ją u siebie tylko z jednego powodu... Była medycznie nie do zastąpienia, a martwe lub chore zwierzę gwałtownie traci na wartości rynkowej i wizerunkowej. Nasze codzienne spotkania w biurze były wieczną wojną. Ona rzucała na biurko wykresy tętna, diagnozy traumy i emocjonalne apela, a ja z zimną krwią rzucałam przed nią arkusze kosztów i bilanse kwartalne. Robiła wszystko, by utrzymać te stworzenia w gotowości do powrotu do siostry, a ja robiłam wszystko, by wycisnąć z ich obecności w Dzikim Azylu maksymalny zysk, dotacje rządowe i rozgłos medialny.”",
+                    "Mimo prób złamania morale [[postacie:ethelien-mumba|Ethelien]], Deianira musiał ulec jej medycznej nieustępliwości, co tylko potęgowało jej osobistą niechęć do obu sióstr.",
+                    "Gdy [[amiliana-empirejska|Amiliana]] wybudowała [[miejsca:magiotopia|Magiotopię]] i zażądała zwrotu zwierząt, Deianira wspólnie z prawnikami wytoczyła najcięższe działa biurokratyczne, paraliżując proces wywozu na długie miesiące:",
+                    "„Oddanie tych zwierząt bez walki byłoby biznesowym samobójstwem i osłabieniem mojej pozycji. Zasłaniałam się absolutnie wszystkim: od braku odpowiednich unijnych licencji transportowych, przez wymogi sanitarne, aż po absurdalne, wymyślane na poczekaniu ekspertyzy techniczne. Kiedy ten ich technik, Mondo, przyniósł mi projekty pancerne kontenerów, kazałam mojemu sztabowi szukać każdej przecinki i błędu formalnego, żeby je odrzucić. Niestety, byli zbyt zdeterminiowani i zwerbowali wsparcie prawne, którego nie mogłam już dłużej ignorować. Przegrałam tamtą batalię logistyczną i zwierzęta odjechały do tej ich mroźnej krainy, ale nie żałuję ani jednego wygenerowanego opóźnienia. Pokazałam im, że w tym świecie nic nie przychodzi za darmo. Dziś patrzą na mnie jak na potwora, ale prawda jest taka, że bez moich surowych zasad i bezwzględnego zabezpieczenia majątku w Azylu, nie mieliby dzisiaj czego wywozić do swojego wielkiego BroTwin Zoo.”"
+                ]
+            }
         ]
     },
     {
@@ -101,16 +122,43 @@
     {
         "id": "ethelien-mumba",
         "name": "Ethelien Mumba",
-        "version": ["pz1pc", "pz1console", "pz2"],
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
         "role": "Weterynarz",
-        "affiliation": "Myers Corp / Independent",
+        "affiliation": "BroTwin Zoo",
         "status": "Aktywna",
+        "motto": "W wielu momentach jedyne, czego pragniemy, to odpuścić... A przecież prawdziwy sens tkwi w tym, by odnaleźć coś, co nie pozwoli nam się poddać. Czasami musimy upaść po to, żeby nauczyć się podnosić.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787687428/Ethelien_Mumba_1_wkcqje.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787687428/Ethelien_Mumba_1_wkcqje.webp",
-        "description": "Córka [[dominic-myers|Dominica Myersa]], która dąży do zmiany filozofii firmy swojego ojca. Zależy jej na nowoczesnym podejściu do ochrony gatunków i zbalansowaniu celów finansowych z ideami [[bernie-goodwin|Berniego Goodwina]].",
-        "fullBio": "<b>O postaci</b><br>Emma wychowała się w świecie korporacyjnym, jednak jej pasją stała się ekologia i edukacja odwiedzających.<br><br><b>Rola w kampanii</b><br>Współpracuje z graczem w celu naprawy błędów popełnionych przez jej ojca w zarządzanych przez niego parkach.<br><br><b>Relacje</b><br>Córka [[dominic-myers|Dominica Myersa]], wzoruje się na etycznej pracy [[bernie-goodwin|Berniego Goodwina]] i [[nancy-jones|Nancy Jones]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783615845/emma_1.webp"
+        "about": "Ethelien Mumba to światowej klasy lekarka weterynarii, słynąca z niezwykłej empatii, opanowania oraz głębokiej wiedzy medycznej. Swoją zawodową drogę rozpoczęła u boku starszej siostry, odpowiadając za opiekę zdrowotną i dobrostan podopiecznych w [[historia:zoo-w-andigawen|Zoo w Andigawen]]. Po tragicznym pożarze podjęła trudną decyzję o zatrudnieniu w [[miejsca:dziki-azyl|Fundacji Dziki Azyl]], by osobiście czuwać nad ewakuowanymi zwierzętami ze starego ogrodu i chronić je przed złą wolą zarządu. Dzięki niezwykłej determinacji i bezbłędnemu instynktowi stała się główną koordynatorką kluczowych projektów hodowlanych oraz skomplikowanych transportów medycznych, stając się filarem opieki weterynaryjnej w [[miejsca:brotwin-zoo|BroTwin Zoo]] oraz zdobywając międzynarodowe uznanie w świecie nauk przyrodniczych.",
+        "relations": "Prywatnie Ethelien jest młodszą siostrą [[amiliana-empirejska|Amiliany Empirejskiej]], z którą łączy ją wyjątkowo silna, siostrzana więź oraz wspólna życiowa misja. W działalności zawodowej jej kluczowym sprzymierzeńcem był niezłomny [[mondo-zeller|Mondo Zeller]], na którego wsparcie mogła zawsze liczyć podczas niebezpiecznych i trudnych logistycznie transportów medycznych. Z kolei jej relacje z [[postacie:deianira-upjersliwa|Deianirą Upjersliwą]], chłodną i bezwzględnie nastawioną na zysk zarządcą [[miejsca:dziki-azyl|Fundacji Dziki Azyl]], były wyjątkowo szorstkie i pełne napięć. Ethelien musiała toczyć z nią ciężkie batalie o warunki bytowe i możliwość bezpiecznego powrotu zwierząt pod opiekę [[amiliana-empirejska|Amiliany]].",
+        "memories": [{
+                "question": "Jak wyglądały początki weterynaryjnej pasji i praca w Andigawen?",
+                "content": [
+                    "Skąd wzięła się u niej tak głęboka potrzeba niesienia pomocy? Ethelien tak wspomina swoje początki:",
+                    "„Wszystko zaczęło się od fascynacji mieszkańcami naszego pierwszego ogrodu. Zachowaniem, spojrzeniem czy drobnymi gestami opowiadały nam swoje własne historie. Nie potrafiłam przejść obok nich obojętnie... Każde zwierzę zasługiwało na szacunek i poświęcony czas. W Andigawen kolekcja nie była jeszcze duża, więc skupiałam się na gatunkach najbardziej zagrożonych. Choć wyhodowaliśmy wspaniałe stado bizonów, prawdziwym przełomem w mojej karierze okazały się narodziny małego łuskowca chińskiego jeszcze na terenie starych wybiegów. Była to pierwsza udana ciąża i poród tego krytycznie zagrożonego gatunku w warunkach hodowlanych. Tego momentu i łez wzruszenia nie zapomnę do końca życia.”",
+                    "Przez długi czas, pozostając nieco w cieniu swojej znanej siostry [[amiliana-empirejska|Amiliany]], Ethelien konsekwentnie szlifowała swoje umiejętności weterynaryjne w [[historia:zoo-w-andigawen|Zoo w Andigawen]]. Sukces z łuskowcami odbił się szerokim echem w środowisku, przynosząc młodej weterynarz zasłużony szacunek wśród światowych ekspertów."
+                ]
+            },
+            {
+                "question": "Jak wyglądał trudny okres w Dzikim Azylu i relacja z Deianirą?",
+                "content": [
+                    "Okres pracy w [[miejsca:dziki-azyl|Fundacji Dziki Azyl]] po katastrofie w [[historia:zoo-w-andigawen|Andigawen]] był dla Ethelien ogromną próbą charakteru. Trafiła tam pod skrzydła [[postacie:deianira-upjersliwa|Deianiry Upjersliwej]], z którą od samego początku nie potrafiła odnaleźć wspólnego języka. Weterynarz tak wspomina tamten czas:",
+                    "„To był niezwykle trudny i wycieńczający okres. Z Deianirą miałyśmy zupełnie inne priorytety... Dla niej liczyły się wyłącznie cyfry, biurokracja i zysk, podczas gdy dla mnie priorytetem było zdrowie cierpiących zwierząt. To kobieta chłodna i trudna we współpracy, która na każdym kroku stawiała opór. Mimo to ani przez moment nie żałowałam decyzji o przejściu do fundacji. Wiedziałam, że moi podopieczni potrzebują mnie tam bardziej niż kiedykolwiek. Byłam przy nich każdego dnia, leczyłam ich rany po pożarze, dbałam o ich psychikę i pilnowałam, by nie stała im się krzywda.”",
+                    "To właśnie dzięki nieugiętej postawie Ethelien udało się ostatecznie odzyskać zwierzęta z rąk [[postacie:deianira-upjersliwa|Deianiry]]. Zorganizowanie i zabezpieczenie medyczne transportu osłabionych podopiecznych prosto do nowo powstającej [[miejsca:magiotopia|Magiotopii]] stało się kamieniem milowym w jej zawodowej karierze."
+                ]
+            },
+            {
+                "question": "Jakie były największe wyzwania weterynaryjne w pracy ze zwierzętami z interwencji?",
+                "content": [
+                    "Z czasem zakres obowiązków Ethelien znacznie się rozrósł. Jako główna koordynatorka projektów hodowlanych i transportowych czuwała nad sprowadzaniem oraz skomplikowanym leczeniem ssaków z całego świata. Szczególnym sprawdzianem okazały się osobniki trafiające z trudnych interwencji medycznych i sądowych:",
+                    "„Łuskowce, choć wymagające, utorowały mi drogę. Prawdziwym wyzwaniem okazały się jednak okapi. Oba osobniki trafiły do nas z dramatycznej interwencji... Były skrajnie osłabione, schorowane i przerażone ludzkim dotykiem. Zbudowanie zaufania u tak płochliwych zwierząt wymagało miesięcy cierpliwości i całkowitego poświęcenia. Nigdy nie zapomnę emocji z nocy, w której wykonałam badanie USG i potwierdziłam ciążę samicy okapi. Czułam wtedy, że nasza ciężka praca ma głęboki sens. Późniejsze sukcesy z rozrodem orangutanów czy goryli były równie poruszające... Te naczelne niezwykle rzadko rozmnażają się w niewoli, a odchowanie młodego wymaga ogromnej wiedzy i wyczucia.”",
+                    "Gdy [[amiliana-empirejska|Amiliana]] zajmowała się kwestiami formalnymi, budżetem i rozbudową wybiegów, Ethelien czuwała nad medyczną stroną ratowania niedźwiedzi, słoni, lwów, tygrysów czy pand. Możliwość podarowania im drugiego, bezpiecznego życia w [[miejsca:brotwin-zoo|BroTwin Zoo]] stała się dla niej czymś więcej niż pracą. Była prawdziwym powołaniem."
+                ]
+            }
         ]
     },
     {
@@ -131,17 +179,45 @@
     {
         "id": "mondo-zeller",
         "name": "Mondo Zeller",
-        "version": ["pz1pc", "pz1console", "pz2"],
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
         "role": "Główny Technik Zoo",
-        "affiliation": "Goodwin House",
-        "status": "Aktywny / Mentor",
+        "affiliation": "BroTwin Zoo",
+        "status": "Aktywny Mentor",
+        "motto": "Zawsze jestem przygotowany na najgorsze, żeby nie czuć zaskoczenia, kiedy to nadejdzie.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788869549/Mondo_Zeller_1_fvnhng.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788869549/Mondo_Zeller_1_fvnhng.webp",
-        "description": "Charyzmatyczny miłośnik zwierząt i założyciel sieci ogrodów zoologicznych Goodwin Trust z siedzibą w [[miejsca:rezydencja-goodwinow|Goodwin House]]. Bernie kieruje się sercem i troską o dobrostan zwierząt, wprowadzając gracza w świat odpowiedzialnego zarządzania zoo. Główny mentor w trybie kariery, współpracujący z [[nancy-jones|Nancy Jones]].",
-        "fullBio": "<b>O postaci</b><br>Bernie Goodwin to pasjonat przyrody, którego życiową misją jest ochrona zagrożonych gatunków oraz edukacja społeczna. Przez lata zbudował od zera wiele prestiżowych parków na całym świecie, zarządzając nimi z poziomu [[miejsca:goodwin-house|Goodwin House]].<br><br><b>Rola w kampanii</b><br>W trybie kariery Bernie pełni rolę przewodnika. Pomaga zrozumieć fundamentalne potrzeby zwierząt — od odpowiednio dobranego wybiegu po wzbogacenia środowiskowe i programy reintrodukcji.<br><br><b>Relacje</b><br>Jest bliskim przyjacielem [[nancy-jones|Nancy Jones]], która wspiera go od strony medycznej i operacyjnej. Często wchodzi w spory ideologiczne z chciwym przedsiębiorcą [[dominic-myers|Dominikiem Myersem]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801433/bernie_1.webp",
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801438/bernie_2.webp"
+        "about": "Mondo Zeller to wybitny inżynier, genialny konstruktor oraz niezłomny główny technik, bez którego nowoczesne parki zoologiczne nie mogłyby funkcjonować. Jego zawodowe życie naznaczone było ogromną tragedią. To on wzniósł pierwszą Morską Krainę w [[historia:zoo-w-andigawen|Zoo w Andigawen]], której wybuch i pożar niemal zrujnowały jego karierę oraz zdrowie psychiczne. Po latach ostracyzmu i upadku otrzymał drugą szansę od [[amiliana-empirejska|Amiliany Empirejskiej]], która nie zwątpiła w jego niewinność oraz talent. Mondo stanął na wysokości zadania, projektując od zera pancerny, naszpikowany technologią system zabezpieczeń w [[miejsca:magiotopia|Magiotopii]]. Dziś pełni rolę głównego mentora technicznego, czuwając nad bezpieczeństwem oraz infrastrukturą w [[miejsca:brotwin-zoo|BroTwin Zoo]].",
+        "relations": "Prywatnie Mondo jest absolutnie oddanym przyjacielem [[amiliana-empirejska|Amiliany Empirejskiej]], której zawdzięcza wyciągnięcie z zawodowego i życiowego dołka po katastrofie w [[historia:zoo-w-andigawen|Andigawen]]. Blisko współpracuje również z jej siostrą [[ethelien-mumba|Ethelien Mumba]]. To właśnie Mondo osobiście koordynował logistyczną i techniczną stronę ryzykownych transportów zwierząt, chroniąc je przed zakusami [[postacie:deianira-upjersliwa|Deianiry Upjersliwej]]. Dla młodszego pokolenia w [[miejsca:brotwin-zoo|BroTwin Zoo]] jest niezwykle cenionym, choć wymagającym mentorem, który o technologii wybiegów zna odpowiedź na każde, nawet najtrudniejsze pytanie.",
+        "memories": [{
+                "question": "Jak wyglądała tragedia w Andigawen?",
+                "content": [
+                    "Mondo Zeller przez lata unikał rozmawiania o wydarzeniach, które zniszczyły pierwsze zoo. Zapytany o Morską Krainę w Andigawen, wspomina ten okres z głębokim poruszeniem:",
+                    "„To miała być korona mojej inżynieryjnej kariery... Pierwsza Morska Kraina była wyprzedzającym swoje czasy cudem techniki. Kiedy doszło do pożaru i eksplozji, cały mój świat rozpadł się w pył. Choć ekspertyzy nie wykazały moich błędów, branża wydała wyrok natychmiast. Przypięto mi łatkę nieudacznika i sabotażysty. Nikt nie chciał ze mną rozmawiać, nikt nie chciał mnie zatrudnić... Z dnia na dzień zostałem sam. Zepchnięty na margines, bez środków do życia, powoli staczałem się w całkowity mrok. Straciłem wiarę w swoje umiejętności i w ludzi. Przez długie lata żyłem w przekonaniu, że już nigdy niczego nie zbuduję.”",
+                    "Mimo całkowitej izolacji środowiska i biedy, Mondo cierpliwie czekał na sprawiedliwość, choć z każdym rokiem tracił nadzieję, że kiedykolwiek zmyje z siebie piętno winy za tragedię w [[historia:zoo-w-andigawen|Zoo w Andigawen]]."
+                ]
+            },
+            {
+                "question": "Jak wyglądał powrót i wyzwanie budowy nowej Morskiej Krainy?",
+                "content": [
+                    "W momencie, gdy Mondo dotknął dna, pomoc nadeszła z najmniej oczekiwanej strony. [[amiliana-empirejska|Amiliana Empirejska]] po latach odnalazła dawnego technika i wyciągnęła do niego pomocną dłoń. Mondo tak opowiada o tym przełomowym momencie:",
+                    "„Kiedy Amiliana stanęła w moich drzwiach i powiedziała, że potrzebuje mnie do budowy Magiotopii, myślałem, że to żart. Wszyscy od niej odradzali kontakt ze mną... A ona po prostu spojrzała mi w oczy i powiedziała, że wie, iż to nie była moja wina. Zaoferowała mi nie tylko pracę, ale odbudowanie mojego honoru. Zadanie w Magiotopii było tytaniczne... Wznieść nową Morską Krainę na wiecznej zmarzlinie. Projektowałem ją ze łzami w oczach i z ogromnym lękiem, ale Amiliana dała mi pełną swobodę. Zastosowałem tam najbardziej zaawansowane, pancerne systemy bezpieczeństwa, setki kamer i wzmocnione szyby. Gdy wreszcie nastąpiło ponowne otwarcie sektorów wodnych i nic nie wybuchło... po raz pierwszy od lat rozpłakałem się ze szczęścia.”",
+                    "Dzięki zaufaniu Amiliany, nowa Morska Kraina w [[miejsca:magiotopia|Magiotopii]] stała się technologicznym arcydziełem, stanowiącym wzór bezpiecznej architektury dla ogrodów zoologicznych na całym świecie.",
+                    "Niezłomność Mondo przydała się nie tylko na placu budowy, ale również podczas misji ratowania dawnych podopiecznych, przejętych przez [[miejsca:dziki-azyl|Fundację Dziki Azyl]]. Główny technik brał osobisty udział w logistycznej batalii z [[postacie:deianira-upjersliwa|Deianirą Upjersliwą]]:",
+                    "„Odzyskanie naszych zwierząt od Deianiry wymagało nie tylko determinacji Amiliany i medycznej wiedzy Ethelien, ale też twardej, inżynieryjnej ręki. Deianira stawiała opór na każdym kroku, udając, że transport jest niemożliwy ze względów technicznych. Musiałem osobiście zaprojektować i przygotować specjalistyczne, klimatyzowane kontenery i pojazdy transportowe zdolne do pokonania tysięcy kilometrów w trudnych warunkach. Pamiętam te nocne przejazdy z Ethelien... Ja prowadziłem i pilnowałem aparatury podtrzymującej odpowiednie warunki, ona czuwała nad życiem zwierząt. Kiedy pierwsze kontenery bezpiecznie dotarły do Magiotopii, wiedziałem, że domknęliśmy nasz najważniejszy rozdział.”"
+                ]
+            },
+            {
+                "question": "Jaką rolę Mondo Zeller pełni obecnie w BroTwin Zoo?",
+                "content": [
+                    "Dziś Mondo Zeller pełni kluczową funkcję Głównego Inżyniera w [[miejsca:brotwin-zoo|BroTwin Zoo]], będąc absolutnym filarem technicznej infrastruktury całego kompleksu. Niezwykle ważnym etapem w jego karierze była ścisła współpraca z [[postacie:kendran-tycoon|Kendranem Tycoonem]], który podjął się ambitnego zadania wielkiej przebudowy dawnej [[miejsca:magiotopia|Magiotopii]] i przekształcenia jej w nowoczesny obiekt. Mondo stał się wtedy prawą ręką [[postacie:kendran-tycoon|Kendrana]], odpowiadając za inżynieryjną stronę projektowania specjalistycznych wybiegów oraz bezpiecznych domów dla najrozmaitszych gatunków zwierząt. Zapytany o ten przełomowy okres oraz swoją obecną pracę, odpowiada z właściwym sobie spokojem i dumą:",
+                    "„Kiedy Kendran przyszedł do mnie z wizją przebudowy Magiotopii w BroTwin Zoo, wiedziałem, że czeka nas sporo pracy. Spędziliśmy razem setki godzin nad planami, projektując spersonalizowane, dostosowane do trudnych warunków klimatycznych domy dla kolejnych gatunków zwierząt. Wielu młodych ludzi myśli, że nowoczesne zoo to wyłącznie estetyczne wybiegi... Ale prawdziwe serce tego miejsca bije w podziemiach... W zaawansowanych systemach filtracji wody, pancernej infrastrukturze, automatycznych śluzach bezpieczeństwa i czujnikach mikroklimatu. Po tym wszystkim, co przeszedłem w Andigawen, moją misją stało się czuwanie nad tym, by młodzi technicy nigdy nie musieli popełniać moich dawnych błędów. Chcę przekazać im nie tylko praktyczną wiedzę, ale przede wszystkim pokorę i szacunek do technologii w służbie żywym istotom.”",
+                    "Jako doświadczony i ceniony mentor, Mondo nie tylko czuwa nad bezawaryjnym funkcjonowaniem infrastruktury wzniesionej wspólnie z [[postacie:kendran-tycoon|Kendranem]], ale także osobiście szkoli kolejne pokolenie konstruktorów, przypominając na każdym kroku, że nowoczesne zoo to przede wszystkim przemyślana i bezpieczna technologia."
+                ]
+            }
         ]
     },
     {
