@@ -1,4 +1,81 @@
 [{
+        "id": "update2-beta-18",
+        "title": "Szczyt zoologiczny Planet Zoo 2, czyli wszystko, co musicie wiedzieć!",
+        "versionTag": "BETA",
+        "date": "10 września 2026",
+        "gameVersion": ["pz2"],
+        "intro": [
+            "Witajcie Zookeeperzy!",
+            "<b>12 września 2026 roku</b> będziemy w zoo w {{link:ChesterZoo}}, gdzie spędzimy dzień pełen rozgrywki, odkryć i działań na rzecz ochrony przyrody – właśnie wtedy odbędzie się jednodniowy szczyt zoologiczny Planet Zoo 2!",
+            "Nie możecie przyjechać do Chester? Nie martwcie się – przygotowaliśmy wszystko, czego potrzebujecie, aby cieszyć się tym wydarzeniem na odległość, w tym transmisję na żywo z najciekawszymi momentami dnia oraz mnóstwo innych atrakcji w mediach społecznościowych.",
+            "<hr>",
+            "<h3>Oglądajcie na żywo Zoological Summit</h3>",
+            "Dołączcie do nas 12 września 2026 r. o godz. <b>12:00</b> czasu brytyjskiego (BST), aby obejrzeć transmisję na żywo z tego wydarzenia na {{link:youtube)).",
+            "[[IMAGE:1]]",
+            "Czy jest jakaś atrakcja, której nie chcecie przegapić? Przygotowaliśmy dla Was przydatny przegląd najważniejszych momentów transmisji:<ul><li><b>12:00 BST</b> – Witamy! Dołączcie do zespołu Zoological Summit, który zaprezentuje samouczek do Planet Zoo 2, a następnie poprowadzi panel poświęcony ptakom.</li><li><b>13:00 BST</b> – Dyskusje panelowe będą kontynuowane na temat akwariów i opieki nad zwierzętami, a ponadto będziecie mogli obejrzeć więcej fragmentów rozgrywki na żywo poświęconych budowie siedlisk.</li><li><b>14:00 BST</b> – Wkroczcie do rezerwatu przyrody Wielkich Rowów Afrykańskich, gdzie porozmawiamy o wszystkich aspektach ochrony przyrody i zwiedzimy niesamowite obiekty w Chester Zoo!</li><li><b>15:00 BST</b> – Czy ktoś wspomniał o Ekspozycjach? Oprócz rozgrywki na żywo będziecie mogli również poznać cenne wskazówki od niektórych ze swoich ulubionych twórców treści.</li><li><b>16:00 BST</b> – Kończymy transmisję!</li></ul>",
+            "Poza tym oglądajcie nas, żeby dowiedzieć się, jak możecie wygrać ekskluzywne gadżety, w tym produkty z serii „Planet Zoo 2”!",
+            "Udało Wam się zdobyć bilet na to wydarzenie? Zapoznajcie się z często {{update:update2-beta-16}} i najważniejszymi informacjami – do zobaczenia w sobotę!",
+            "<hr>",
+            "<h3>Dołączcie do zabawy w mediach społecznościowych</h3>",
+            "Przez cały czas trwania wydarzenia będziemy aktywni na wszystkich naszych kanałach społecznościowych, więc koniecznie śledźcie nas i dołączcie do dyskusji:<ul><li>{{link:facebook}}</li><li>{{link:instagram}}</li><li>{{link:tiktok}}</li><li>{{link:discord}}</li><li>{{link:x}}</li><li>{{link:youtube}}</li></ul>",
+            "Zwróćcie szczególną uwagę na nasze rolki na Instagramie, gdzie będziemy przeprowadzać ankiety, organizować sesje pytań i odpowiedzi oraz udostępniać ekskluzywne materiały!",
+            "Spodziewamy się również, że na wydarzeniu pojawią się znane twarze, więc w weekend zaglądajcie do swoich ulubionych twórców Planet Zoo, aby zobaczyć pierwsze wrażenia, reakcje, konkursy z nagrodami i nie tylko.",
+            "<hr>",
+            "<h3>Zajrzyjcie tu później!</h3>",
+            "Zabawa nie kończy się wraz z zamknięciem drzwi Zoological Summit w sobotę po południu.",
+            "Wrócimy później, aby zaktualizować tę {{link:strona}} o najważniejsze wydarzenia z weekendu, w tym fragmenty rozgrywki, reakcje i nie tylko!",
+            "<hr>",
+            "Planet Zoo 2 można już zamawiać w przedsprzedaży na PC, PS5 i Xbox Series X|S. Dołączcie do dyskusji i bądźcie z nami w kontakcie na naszych mediach społecznościowych na {{link:facebook}}, {{link:x}}, {{link:instagram}}, {{link:tiktok}} oraz na serwerze {{link:discord}} „Frontier Unlocked”, zapiszcie się do naszego {{link:newsletter}} (aby otrzymać ekskluzywną nagrodę w grze w dniu premiery!) i zaglądajcie na naszą {{link:strona}}, by być na bieżąco z najświeższymi wiadomościami!"
+        ],
+        "images": {
+            "1": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789069522/PZ2_Beta_88_qylysi.webp"
+        },
+        "related": {
+            "updates": [{
+                "id": "update2-beta-16",
+                "label": "zadawanymi pytaniami"
+            }]
+        },
+        "links": {
+            "ChesterZoo": {
+                "url": "https://www.chesterzoo.org/",
+                "label": "Chester Zoo"
+            },
+            "youtube": {
+                "url": "https://www.youtube.com/planetzoogame",
+                "label": "YouTube"
+            },
+            "facebook": {
+                "url": "https://www.facebook.com/planetzoogame",
+                "label": "Facebooku"
+            },
+            "x": {
+                "url": "https://twitter.com/planetzoogame",
+                "label": "X"
+            },
+            "instagram": {
+                "url": "https://www.instagram.com/planetzoogame/",
+                "label": "Instagramie"
+            },
+            "tiktok": {
+                "url": "https://www.tiktok.com/@planetzoogame",
+                "label": "TikToku"
+            },
+            "discord": {
+                "url": "https://discord.com/invite/frontierunlocked",
+                "label": "Discord"
+            },
+            "strona": {
+                "url": "https://www.planetzoogame.com/",
+                "label": "stronę internetową"
+            },
+            "newsletter": {
+                "url": "https://www.planetzoogame.com/2/subscribe",
+                "label": "newslettera"
+            }
+        }
+    },
+    {
         "id": "update2-beta-17",
         "title": "Creature Feature: Rezerwaty Przyrody!",
         "versionTag": "BETA",
