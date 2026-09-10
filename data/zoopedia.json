@@ -13385,6 +13385,88 @@
         "mod": "https://www.nexusmods.com/planetzoo/mods/2039"
     },
     {
+        "name": "Orangutan sumatrzański",
+        "latin": "Pongo abelii",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789065952/Orangutan_sumatrza%C5%84ski_mdhflx.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789066207/Orangutan_Sumatran_illustration_uiiafp.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["azja", "ssaki", "CR", "i3", "siedlisko"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Od 14 000<br>do 15 000<br>(wartość szacunkowa)",
+        "status": "Krytycznie zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776791/CR_x0nblf.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ssaki",
+            "Rząd": "Naczelne",
+            "Rodzina": "Człowiekowate",
+            "Rodzaj": "Orangutan"
+        },
+        "habitat": {
+            "Kontynenty": ["Azja"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Azja",
+            "link": "../Mapa/Rezerwat Azja.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
+    },
+    {
         "name": "Orleń plamisty",
         "latin": "Aetobatus ocellatus",
         "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785857950/Orle%C5%84_plamisty_qllqf3.webp",
