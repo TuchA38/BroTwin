@@ -494,6 +494,15 @@ window.CHARACTERS = window.CHARACTERS || {};
 
             if (typeof enrichTextWithGlossary === "function") {
                 enrichTextWithGlossary(fullBioDiv);
+
+                // Usuwanie słowniczka z pytań (.sub-title) oraz cytatów (.character-quote)
+                fullBioDiv.querySelectorAll(".sub-title, .character-quote").forEach(el => {
+                    el.querySelectorAll(".glossary-link").forEach(g => {
+                        g.replaceWith(document.createTextNode(g.textContent));
+                    });
+                    el.normalize();
+                });
+
                 fullBioDiv.querySelectorAll("a.place-link, a.character-link, a.historia-link").forEach(link => {
                     link.querySelectorAll(".glossary-link").forEach(g => g.replaceWith(document.createTextNode(g.textContent)));
                     link.normalize();
