@@ -114,6 +114,7 @@ function syncGalleryWithDOM() {
                     // ✅ PO ZMIANIE:
                     updates.forEach((update, i) => {
                         const li = document.createElement("li");
+                        li.dataset.updateId = update.id; // <-- Dodano przypisanie ID aktualizacji
                         li.innerHTML = update.title; // 1. Używamy innerHTML, aby interpretować entje &nbsp;
                         addNonBreakingSpaces(li); // 2. Wstawiamy twarde spacje przed spójnikami (i/w/a itp.)
 
@@ -726,38 +727,34 @@ html = html.replace(/\[\[TABLE:([^\]]+)\]\]/g, function(_, id) {
         }
 
         const updateLink = e.target.closest(".intro-related-update");
-        if (updateLink) {
-            e.preventDefault();
-            const target = UPDATES.data.find(u => u.id === updateLink.dataset.update);
-            if (target) {
-                // ustaw wersję jeśli nie pasuje
-                if (target.gameVersion) {
-                    const currentVersion = AppState.get();
-                    const matchesCurrent = Array.isArray(target.gameVersion) ?
-                        target.gameVersion.includes(currentVersion) :
-                        target.gameVersion === currentVersion;
+if (updateLink) {
+    e.preventDefault();
+    const target = UPDATES.data.find(u => u.id === updateLink.dataset.update);
+    if (target) {
+        // ustaw wersję jeśli nie pasuje
+        if (target.gameVersion) {
+            const currentVersion = AppState.get();
+            const matchesCurrent = Array.isArray(target.gameVersion) ?
+                target.gameVersion.includes(currentVersion) :
+                target.gameVersion === currentVersion;
 
-                    if (!matchesCurrent) {
-                        const newVersion = Array.isArray(target.gameVersion) ? target.gameVersion[0] : target.gameVersion;
-                        AppState.set(newVersion);
-                        document.dispatchEvent(new CustomEvent("versionChanged"));
-                        if (window.syncIconWithState) window.syncIconWithState();
-                        if (window.renderFooter) window.renderFooter();
-
-                    }
-                }
-
-                // znajdź li odpowiadające tej aktualizacji
-                const listEl = document.getElementById("update-items");
-                let li = null;
-                listEl.querySelectorAll("li").forEach(item => {
-                    if (item.textContent.trim() === target.title) li = item;
-                });
-
-                // wyświetl wpis
-                displayUpdate(target, li || null);
+            if (!matchesCurrent) {
+                const newVersion = Array.isArray(target.gameVersion) ? target.gameVersion[0] : target.gameVersion;
+                AppState.set(newVersion);
+                document.dispatchEvent(new CustomEvent("versionChanged"));
+                if (window.syncIconWithState) window.syncIconWithState();
+                if (window.renderFooter) window.renderFooter();
             }
         }
+
+        // znajdź li odpowiadające tej aktualizacji po dataset-id
+        const listEl = document.getElementById("update-items");
+        const li = listEl ? listEl.querySelector(`li[data-update-id="${target.id}"]`) : null;
+
+        // wyświetl wpis i podświetl element na liście
+        displayUpdate(target, li);
+    }
+}
 
         const versionLink = e.target.closest(".change-game-version");
         if (versionLink) {
