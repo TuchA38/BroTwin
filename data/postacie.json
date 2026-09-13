@@ -40,17 +40,37 @@
     {
         "id": "bernard-goodwin",
         "name": "Bernard Goodwin",
-        "version": ["pz1pc", "pz1console", "pz2"],
-        "role": "Założyciel Goodwin Trust / Mentor",
-        "affiliation": "Goodwin House",
-        "status": "Aktywny / Mentor",
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
+        "role": "Właściciel Zoo",
+        "affiliation": "Rezydencja Goodwinów",
+        "status": "Aktywny Mentor",
+        "motto": "Najlepsze, co możemy po sobie zostawić, to nie własne pomniki, ale uratowane gatunki, wypuszczone na wolność zwierzęta oraz ludzi, których nauczyliśmy miłości do przyrody.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787658370/Bernie_Goodwin_1_cjmihx.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787658370/Bernie_Goodwin_1_cjmihx.webp",
-        "description": "Charyzmatyczny miłośnik zwierząt i założyciel sieci ogrodów zoologicznych Goodwin Trust z siedzibą w [[miejsca:rezydencja-goodwinow|Goodwin House]]. Bernie kieruje się sercem i troską o dobrostan zwierząt, wprowadzając gracza w świat odpowiedzialnego zarządzania zoo. Główny mentor w trybie kariery, współpracujący z [[nancy-jones|Nancy Jones]].",
-        "fullBio": "<b>O postaci</b><br>Bernie Goodwin to pasjonat przyrody, którego życiową misją jest ochrona zagrożonych gatunków oraz edukacja społeczna. Przez lata zbudował od zera wiele prestiżowych parków na całym świecie, zarządzając nimi z poziomu [[miejsca:goodwin-house|Goodwin House]].<br><br><b>Rola w kampanii</b><br>W trybie kariery Bernie pełni rolę przewodnika. Pomaga zrozumieć fundamentalne potrzeby zwierząt — od odpowiednio dobranego wybiegu po wzbogacenia środowiskowe i programy reintrodukcji.<br><br><b>Relacje</b><br>Jest bliskim przyjacielem [[nancy-jones|Nancy Jones]], która wspiera go od strony medycznej i operacyjnej. Często wchodzi w spory ideologiczne z chciwym przedsiębiorcą [[dominic-myers|Dominikiem Myersem]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801433/bernie_1.webp",
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801438/bernie_2.webp"
+        "about": "Bernard „Bernie” Goodwin to niezwykle charyzmatyczny pasjonat przyrody, wizjoner oraz założyciel sieci ogrodów zoologicznych. Swoją całożyciową misję opiera na głębokim szacunku do zwierząt, ochronie zagrożonych gatunków oraz edukowaniu społeczeństwa. Choć zarządza międzynarodowym imperium z poziomu [[miejsca:rezydencja-goodwinow|Rezydencji Goodwinów]], w sercu pozostaje bezpośrednim, ciepłym i pełnym humoru opiekunem, dla którego najważniejszy jest dobrostan podopiecznych. W trybie Kariery pełni rolę głównego przewodnika i mentora, wprowadzając nowych pracowników w tajniki odpowiedzialnego i etycznego prowadzenia nowoczesnych parków zoologicznych.",
+        "relations": "Prywatnie Bernie jest ojcem [[emma-goodwin|Emmy]], która choć dzieli z nim miłość do przyrody, obrała własną drogę ratowania planety. Jego najbliższą i najbardziej zaufaną współpracowniczką jest szefowa opiekunów, [[postacie:nancy-jones|Nancy Jones]], z którą łączy go wieloletnia przyjaźń, wzajemna opiekuńczość oraz zabawne, codzienne zakłady. Na gruncie zawodowym i ideologicznym regularnie ściera się z bezwzględnym i nastawionym wyłącznie na zysk przedsiębiorcą [[postacie:dominic-myers|Dominiciem Myersem]].",
+        "memories": [{
+                "question": "Jaki był przebieg całej trasy szkoleniowej oraz rozwój kolejnych parków?",
+                "content": [
+                    "Podróż menedżerska rozpoczęła się w [[miejsca:rezydencja-goodwinow|Rezydencji Goodwinów]] pod czujnym okiem [[postacie:nancy-jones|Nancy Jones]], po czym przeniosła się do tropików w ramach [[miejsca:projekt-ochrony-malp-na-madagaskarze|Projektu ochrony małp na Madagaskarze]]. Kolejne sukcesy w dalekowschodnim [[miejsca:park-z-pandami|Parku z Pandami]], ulubieńcami jego córki [[postacie:emma-goodwin|Emmy]], doprowadziły do awansu na młodszego menedżera i samodzielnej budowy obiektu od zera – [[miejsca:rezerwat-przyrody-lisc-klonowy|Rezerwatu przyrody Liść Klonowy]] w Kanadzie. Bernie tak podsumowuje te początkowe etapy oraz rozwój swojego podopiecznego:",
+                    "„Założenie było proste: zacząć od praktyki w mojej dawnej posiadłości, opanować niesforne szympansy w tropikach i poradzić sobie z pandami w Chinach, nie dając się zwariować przy epidemii grypy żołądkowej! Praca szła tak genialnie, że w Kanadzie rzuciłem mojego nowego menedżera na głęboką wodę. Musiał wybudować park całkowicie bez wsparcia Nancy. I poradził sobie z tym śpiewająco! Wyniki dobrostanu były niesamowite, personel wolał jego niż mnie, a na dodatek uratowaliśmy tę drogocenną ziemię przed chciwymi hienami z funduszu hedgingowego. Wykreślenie przedrostka 'młodszy' z jego stanowiska było dla mnie czystą przyjemnością.”",
+                    "Zwieńczeniem tej drogi przed planowaną wyprawą Berniego na daleką Północ był afrykański [[miejsca:park-safari-przy-wielkiej-kalderze|Park safari przy wielkiej kalderze]], gdzie kluczową rolę odgrywała edukacja oraz przywracanie zwierząt naturze:",
+                    "„W Afryce rozbudowaliśmy park wokół kaldery, wybudowaliśmy wspaniałą trasę wycieczkową i skupiliśmy się na tym, co najważniejsze – rozmnażaniu i wypuszczaniu zwierząt na wolność. Łzy same cisnęły się do oczu przy pożegnaniach, ale świadomość, że realnie ratujemy dziką populację gepardów czy innych gatunków, to najlepsza spuścizna, jaką mogliśmy po sobie zostawić. Zanim spakowałem rakiety śnieżne i ruszyłem do mroźnej Arktyki, dałem menedżerowi jeszcze jedną radę: prawdziwa ochrona przyrody zaczyna się od codziennej opieki nad całą naszą planetą!”"
+                ]
+            },
+            {
+                "question": "Jakie wspomnienia wywołał powrót z Arktyki?",
+                "content": [
+                    "Po przetrwaniu trzymiesięcznej przygody w igloo za kołem podbiegunowym Bernie Goodwin powrócił nieoczekiwanie do świata żywych, zastając swoją córkę [[postacie:emma-goodwin|Emmę]] oraz menedżera na finiszu walki z nieetycznym [[postacie:dominic-myers|Dominikiem Myersem]] pod Nowym Jorkiem. Nowo powstały park na wyspie został nazwany na jego cześć – [[miejsca:zoo-imienia-berniego-goodwina|Zoo imienia Berniego Goodwina]]. Bernie tak podsumowuje swój powrót i ten niezwykły projekt:",
+                    "„Przepraszam, że moim zjawieniem się wywołałem taki szok – pewnie wyglądałem jak duch, ale pogłoski o mojej śmierci były mocno przesadzone! Przetrwałem trzy miesiące w igloo po niemiłej przygodzie za kołem podbiegunowym. Gdy zobaczyłem, jak Emma zorganizowała akcję wygryzienia tego okropnego Myersa z branży i stworzyła cudowny park mojego imienia, po prostu zaniemówiłem z wrażenia!”",
+                    "Widząc profesjonalizm zespołu i ostateczny upadek [[postacie:dominic-myers|Myersa]], Bernie był ogromnie dumny z osiągnięć [[postacie:emma-goodwin|Emmy]] oraz menedżera i zaczął rozważać przejście na zasłużoną emeryturę:",
+                    "„Zbudowali wspaniały park, przetrwali ataki wandalów i doprowadzili do tego, że władze zamknęły zniszczone zoo Dominica raz na zawsze. Widząc, jak doskonale radzili sobie z ochroną zwierząt, sam zacząłem mocno myśleć o emeryturze... Choć znając mnie, pewnie jeszcze nie teraz! Byłem z nich obojga ogromnie dumny!”"
+                ]
+            }
         ]
     },
     {
@@ -61,7 +81,7 @@
             "pz1console",
             "pz2"
         ],
-        "role": "Właściciel Fundacji",
+        "role": "Zarządca Fundacji / Bizneswoman",
         "affiliation": "Fundacja Dziki Azyl",
         "status": "Aktywna",
         "motto": "Nie obchodzi mnie, co mówią o mnie za plecami, dopóki stać mnie na kupienie ich milczenia. Pieniądz to jedyna prawdziwa władza na tej ziemi.",
@@ -70,7 +90,7 @@
         "about": "Deianira Upjersliwa to chłodna, bezwzględna bizneswoman i potężna zarządczyni [[miejsca:dziki-azyl|Fundacji Dziki Azyl]], dla której świat zoologiczny jest przede wszystkim skomplikowaną grą rynkową, cynicznym polem walki o wpływy oraz źródłem ogromnych zysków. Podczas gdy inni kierują się empatią i idealizmem, Deianira operuje na suchych liczbach, bezdusznej biurokracji oraz agresywnych audytach. Po tragicznych wydarzeniach w [[historia:zoo-w-andigawen|Zoo w Andigawen]] błyskawicznie wykorzystała kryzys wizjonerek, przejmując ocalałe zwierzęta pod skrzydła swojej fundacji i czyniąc z nich niezwykle cenny kapitał przetargowy. Edukowana przez najbardziej cynicznych graczy w branży, w tym bezwzględnego magnata [[postacie:dominic-myers|Dominica Myersa]], zbudowała monopolistyczną pozycję jedynego stabilnego azylu w regionie, stając się główną antagonistką dla [[amiliana-empirejska|Amiliany Empirejskiej]] oraz [[postacie:ethelien-mumba|Ethelien Mumba]].",
         "relations": "Główną rywalką Deianiry pozostaje [[amiliana-empirejska|Amiliana Empirejska]], którą bezwzględnie uważa za naiwną marzycielkę niezdolną do twardego zarządzania ryzykiem. Bliskie relacje biznesowe łączą ją z kontrowersyjnym biznesmenem [[postacie:dominic-myers|Dominiciem Myersem]], z którym dzieli podejście do komercjalizacji sektora zoologicznego i traktowania zwierząt jako aktywów finansowych. Mimo jawnej niechęci do idealizmu sióstr, Deianira bez zawahania zatrudniła w swojej fundacji [[postacie:ethelien-mumba|Ethelien Mumba]]. Był to czysto pragmatyczny krok mający na celu utrzymanie żywego majątku w doskonałej kondycji medycznej. Jej relacje z [[postacie:mondo-zeller|Mondo Zellerem]] opierały się na nieustannych starciach proceduralnych. Deianira przez lata używała przepisów, unijnych norm i wyciągów technicznych, by paraliżować jego plan wywiezienia zwierząt do [[miejsca:magiotopia|Magiotopii]]. Jest ceniona w kręgach korporacyjnych jako cyniczny, lecz niezwykle skuteczny wzór twardej ręki w biznesie.",
         "memories": [{
-                "question": "Jak Deianira postrzegała katastrofę w Andigawen?",
+                "question": "Jakie wrażenie pozostawiła katastrofa w Andigawen?",
                 "content": [
                     "Deianira od początku uważała katastrofę ogrodu za naturalną konsekwencję amatorskiego zarządzania i braku twardych procedur korporacyjnych. Zapytana o tamten okres, przejęcie stada oraz swoje biznesowe relacje, odpowiada z bezgranicznym cynizmem:",
                     "„Andigawen od początku było zamkiem na piasku, wybudowanym na dziecięcych marzeniach Amiliany. Pożar był straszny, owszem, ale w prawdziwym biznesie nie ma miejsca na łzy, gdy na stole leży niezagospodarowany majątek i bezpańskie zasoby. Kiedy świat płakał nad zgliszczami, ja i Dominic Myers skanowaliśmy rynek. Dominic od dawna powtarzał mi jedną zasadę: 'gdzie inni widzą tragedię i chaos, ty masz widzieć okazję rynkową'. To dzięki jego wsparciu i sprytnym sztuczkom prawnym Fundacja Dziki Azyl przejęła prawa do ocalałych gatunków. Ta fundacja nie powstała z litości... Powstała, by stworzyć żelazny porządek tam, gdzie romantyczne idealistki poniosły sromotną porażkę. Przyjęcie tych zwierząt było operacją logistyczną na wielką skalę, a one same stały się naszym najważniejszym zasobem i żywą kartą przetargową. Gdyby nie moje twarde decyzje i moje pieniądze, te stworzenia trafiłyby na nielegalne licytacje u handlarzy. Amiliana powinna mi dziękować na kolanach, a nie robić ze mnie jakiś czarny charakter...”",
@@ -92,31 +112,86 @@
     {
         "id": "dominic-myers",
         "name": "Dominic Myers",
-        "version": ["pz1pc", "pz1console", "pz2"],
-        "role": "Dyrektor Myers Entertainment / Inwestor",
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
+        "role": "Właściciel Zoo",
         "affiliation": "Myers Corp",
-        "status": "Aktywny (Antagonista)",
+        "status": "Aktywny",
+        "motto": "Minimalizacja kosztów, maksymalizacja zysków — etyka i sentymenty to luksus, na który żaden szanujący się inwestor nie może sobie pozwolić.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787666369/Dominic_Mayers_1_agwvz3.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787666369/Dominic_Mayers_1_agwvz3.webp",
-        "description": "Bezkompromisowy biznesmen traktujący ogrody zoologiczne wyłącznie jako maszynkę do zarabiania pieniędzy. Jego cele komercyjne często stoją w sprzeczności z etycznym podejściem [[bernie-goodwin|Berniego Goodwina]]. Ojciec [[emma-myers|Emmy Myers]].",
-        "fullBio": "<b>O postaci</b><br>Dominic Myers to pragmatyczny przedsiębiorca budujący parki nastawione na maksymalizację zysków, nierzadko kosztem dobrostanu zwierząt i wygody pracowników.<br><br><b>Rola w kampanii</b><br>Wycenia sukces zoo miarą przychodów ze sprzedaży biletów oraz sklepów z pamiątkami. Zmusza gracza do podejścia stricte budżetowego i redukcji kosztów.<br><br><b>Relacje</b><br>Główny rywal biznesowy [[bernie-goodwin|Berniego Goodwina]]. Ojciec [[emma-myers|Emmy Myers]], która próbuje skłonić go do bardziej ekologicznego myślenia.",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783615796/dominic_1.webp"
+        "about": "Dominic Myers to bezwzględny, nastawiony wyłącznie na zysk przedsiębiorca, zarządca funduszu hedgingowego oraz założyciel Myers Corp. Swoją strategię opiera na drastycznym cięciu kosztów, bezdusznej komercjalizacji oraz szukaniu oszczędności za wszelką cenę, bezapelacyjnie przedkładając bilans finansowy nad dobrostan zwierząt i etykę. Choć zarządza swoimi parkami z pozycji chłodnego kalkulatora, nieustannie zabiega o poklask i próbuje kreować w mediach wizerunek wielkiego wizjonera. W trybie Kariery pełni rolę głównego antagonisty oraz bezkompromisowego pracodawcy, który po przejęciu imperium Goodwina wymusza na graczu realizację absurdalnych planów finansowych.",
+        "relations": "Dominic jest głównym rywalem biznesowym i światopoglądowym [[postacie:bernard-goodwin|Bernarda Goodwina]], choć publicznie obłudnie nazywa go swoim „bliskim przyjacielem”, bez skrupułów wykorzystuje jego zaginięcie do przejęcia całego życiowego dorobku. Bez zawahania pozbywa się dotychczasowej szefowej opiekunów, [[postacie:nancy-jones|Nancy Jones]], uznając jej bezkompromisową troskę o zwierzęta za zbędny wydatek. Z cynizmem odnosi się również do córki Berniego, [[postacie:emma-goodwin|Emmy Goodwin]], wykorzystując rzekomą troskę o pamięć jej ojca wyłącznie do budowania własnego PR-u w mediach.",
+        "memories": [{
+                "question": "Jakie wspomnienia budziło przejęcie imperium Goodwina?",
+                "content": [
+                    "Po zaginięciu [[postacie:bernard-goodwin|Bernarda Goodwina]] fundusz hedgingowy Dominica przejął jego imperium. Myers natychmiast zwolnił [[postacie:nancy-jones|Nancy Jones]], a menedżera rzucił do zaniedbanego [[miejsca:zoo-myersa-na-jeziornej-wyspie|Zoo Myersa na Jeziornej Wyspie]]. Sukces na wyspie sprawił, że wysłał go do przekształcenia dawnego kasyna w [[miejsca:zoologiczny-park-rozrywki-myersa|Zoologiczny Park Rozrywki Myersa]] w Indiach, a potem do budowy rezerwatu na taniej, skażonej ziemi w ramach [[miejsca:projekt-ochrony-lasów-deszczowych-myersa|Projektu ochrony lasów deszczowych Myersa]] w Brazylii. Dominic tak podsumowuje ten okres:",
+                    "„Przejęcie tego biznesu to był ogromny zaszczyt! Wysłałem menedżera do zaniedbanego zoo na wyspie, żeby uciszyć demonstrantów, sprowadzić drapieżniki i uszczęśliwić księgowych. Potem w Indiach przerobiliśmy moje stare kasyno na zoo... Mimo ciągłych awarii prądu i ucieczek zwierząt sprowadziliśmy słonie, tygrysy i całe mnóstwo gadów, z którymi czuję wyjątkową więź. Nawet Emma Goodwin była pod wrażeniem moich osiągnięć!”",
+                    "W Brazylii Myers posunął się do usunięcia toksycznych odpadów i potajemnego sprowadzenia słynnej pandy Lin-Lin pod zmyślonym imieniem, by zachwycić inspekcję:",
+                    "„Teren w Brazylii był tani jak barszcz! Usunięcie odpadów zleciliśmy komuś innemu, a wałęsające się pantery śnieżne po prostu wyleczyliśmy, zamiast za nie płacić! Sprowadziłem też Lin-Lin na utajniony urlop. Gdy pani inspektor zobaczyła naszą pandę, aż zaniemówiła z wrażenia. Pandy otwierają mnóstwo drzwi w biznesie, a moi księgowi znowu mieli powody do radości.”"
+                ]
+            },
+            {
+                "question": "Jak z perspektywy czasu wyglądały tamte kontrowersyjne działania?",
+                "content": [
+                    "W projekcie [[miejsca:zoo-słonecznej-radości-myersa|Zoo Słonecznej Radości Myersa]] Dominic obarczył menedżera prawnymi ograniczeniami, zakazem rekrutacji i wypłatami na tajemnicze podatki, jednocześnie dążąc do jak najszerszej promocji własnego wizerunku w mediach:",
+                    "„Nawiązałem świetną współpracę ze składem budowlanym, więc pustaków mieliśmy pod dostatkiem! Gorzej z prawnymi absurdami... Zabroniono mi zatrudniać i zwalniać ludzi, więc trzeba było chuchać na personel. Do tego dochodziły coroczne 'specjalne podatki', które musiałem regulować z rachunku zoo, żeby urząd skarbowy nie wtykał nosa w moje księgi.”",
+                    "Mimo drastycznych oszczędności i przekształcenia działu BHP na dział „B lub HP”, sprowadzenie zróżnicowanych gatunków przyniosło Myersowi upragniony rozgłos:",
+                    "„Sprowadziliśmy całą masę gatunków – żyrafy, gepardy i inteligentne orangutany. Zanim wszedłem w biznes zoologiczny, spaliłem za sobą wiele mostów i miałem okropną reputację, a dzięki temu zoo ludzie wprost zabijali się o współpracę ze mną. Mój menedżer po raz kolejny wykazał się genialnymi umiejętnościami!”"
+                ]
+            },
+            {
+                "question": "Jak wyglądało zwolnienie menedżera oraz walka z konkurencją?",
+                "content": [
+                    "Po osiągnięciu sukcesów biznesowych Dominic bezceremonialnie zwolnił swojego menedżera i próbował drastycznie ciąć koszty we wszystkich placówkach. Gdy jego były pracownik przeszedł do konkurencji, Myers popadł w wściekłość i próbował go zniszczyć podczas rywalizacji o klientów w [[miejsca:ekozoo-w-stanie-nevada|Ekozoo w stanie Nevada]]:",
+                    "„Obiecałem temu menedżerowi, że w mojej firmie zawsze znajdzie się dla niego miejsce... Szkoda tylko, że po drugiej stronie ogrodzenia! W ramach odprawy pozwoliłem mu nawet zatrzymać uniform, chociaż koszt oczywiście odliczyłem od jego ostatniej wypłaty. A kiedy odszedł, zacząłem ciąć koszty do samej ziemi, na przykład sprzedając zwykłe koty domowe jako lwy pigmejskie. Gdy dowiedziałem się, że przeszedł do konkurencji, poczułem się potwornie zdradzony i nasłałem na ich nowe zoo całą masę opłaconych łobuzów!”", "Ostatecznie prymitywne oszczędności, tanie płoty i naruszenia przepisów doprowadziły do masowych ucieczek drapieżników i interwencji służb państwowych:",
+                    "„Nie mam pojęcia, dlaczego te ogrodzenia zaczęły się nagle rozpadać... Wydałem przecież na nie całe grosze! Lokalne władze bezczelnie zamknęły moje ostatnie zoo i skonfiskowały zwierzęta przez drobne naruszenia przepisów. Moja reputacja została zrujnowana i zabroniono mi otwierania ogrodów zoologicznych na całym świecie. Ale to jeszcze nie koniec... Jeszcze o mnie usłyszycie!”"
+                ]
+            }
         ]
     },
     {
         "id": "emma-goodwin",
         "name": "Emma Goodwin",
-        "version": ["pz1pc", "pz1console", "pz2"],
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
         "role": "Ekolog",
-        "affiliation": "Myers Corp / Independent",
+        "affiliation": "Fundacja Goodwin",
         "status": "Aktywna",
+        "motto": "Można przejąć firmę i zagłuszyć sumienie cyframi, ale prawdziwego dziedzictwa i pasji do ochrony przyrody nie da się kupić za żadne pieniądze.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787656767/Emma_Goodwin_1_mwtkpl.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787656767/Emma_Goodwin_1_mwtkpl.webp",
-        "description": "Córka [[dominic-myers|Dominica Myersa]], która dąży do zmiany filozofii firmy swojego ojca. Zależy jej na nowoczesnym podejściu do ochrony gatunków i zbalansowaniu celów finansowych z ideami [[bernie-goodwin|Berniego Goodwina]].",
-        "fullBio": "<b>O postaci</b><br>Emma wychowała się w świecie korporacyjnym, jednak jej pasją stała się ekologia i edukacja odwiedzających.<br><br><b>Rola w kampanii</b><br>Współpracuje z graczem w celu naprawy błędów popełnionych przez jej ojca w zarządzanych przez niego parkach.<br><br><b>Relacje</b><br>Córka [[dominic-myers|Dominica Myersa]], wzoruje się na etycznej pracy [[bernie-goodwin|Berniego Goodwina]] i [[nancy-jones|Nancy Jones]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783615845/emma_1.webp"
+        "about": "Emma Goodwin to idealistyczna ekolożka, dla której etyczna ochrona przyrody i zrównoważony rozwój stanowią absolutny priorytet. Po rzekomej śmierci ojca i podstępnym przejęciu jego firmy przez bezwzględny fundusz hedgingowy [[postacie:dominic-myers|Dominica Myersa]], Emma nie poddaje się i postanawia ratować rodzinne dziedzictwo. Widząc, że nowy właściciel traktuje zwierzęta wyłącznie jak maszynkę do zarabiania pieniędzy, nawiązuje tajną współpracę z menedżerem parku. W trakcie trybu Kariery wyrasta na dojrzałą liderkę. Tworzy sieć nowoczesnych, ekologicznych zoo opartych na odnawialnych źródłach energii (OZE) i programach reintrodukcji gatunków.",
+        "relations": "Córka [[postacie:bernard-goodwin|Bernarda Goodwina]], która po jego tajemniczym zaginięciu staje na czele walki o kontynuowanie jego proekologicznej misji. Bliska przyjaciółka i sojuszniczka [[postacie:nancy-jones|Nancy Jones]], z której pomocą nawiązuje tajny kontakt z menedżerem parku. Główna przeciwniczka chciwego inwestora [[postacie:dominic-myers|Dominica Myersa]], którego bezwzględne metody i chciwość konsekwencjonalnie zwalcza, tworząc konkurencyjną, w pełni etyczną sieć ogrodów zoologicznych.",
+        "memories": [{
+                "question": "Jak wyglądały kulisy wizyty w Indiach i nawiązanie tajnej współpracy?",
+                "content": [
+                    "Po przejęciu firmy przez fundusz hedgingowy [[postacie:dominic-myers|Dominica Myersa]], Emma postanowiła sprawdzić stan obiektów i udała się do [[miejsca:zoologiczny-park-rozrywki-myersa|Zoologicznego Parku Rozrywki Myersa]] w Indiach, by uczcić pamięć swojego ojca, [[postacie:bernard-goodwin|Bernarda Goodwina]]. Zachwycona postawą pracującego tam menedżera, zdobyła jego namiary dzięki [[postacie:nancy-jones|Nancy Jones]] podczas jego dalszej pracy w [[miejsca:zoo-słonecznej-radości-myersa|Zoo Słonecznej Radości Myersa]]. Emma tak podsumowuje ten powolny proces budowania zaufania:",
+                    "„Gdy dowiedziałam się, co Myers wyrabia z firmą mojego ojca, musiałam zobaczyć to na własne oczy i pojawiłam się w jego nowym parku w Indiach. Dominic od razu próbował rozdmuchać moją wizytę w mediach i wmawiał wszystkim wokół, że zachwycałam się jego geniuszem, choć w rzeczywistości prosiłam tylko, by nikt nie dzwonił do mnie w sprawie tych kłamstw! Zobaczyłam jednak, jak ciężko nasz menedżer pracował, by uratować ten park, opanować awarie prądu i zadbać o tygrysy czy słonie. Kiedy później Nancy przekazała mi jego dane kontaktowe podczas prac w Zoo Słonecznej Radości, wiedziałam, że muszę się odezwać. Patrzenie, jak Dominic niszczy rodzinny biznes i traktuje zwierzęta wyłącznie jako maszynkę do robienia pieniędzy, było bezduszne. Poprosiłam więc menedżera, aby na razie nie rezygnował i trzymał głowę do góry, gdy ja w ukryciu przygotowywałam plan odebrania Myersowi kontroli i stworzenia miejsca, w którym znowu najważniejszy będzie dobrostan zwierząt.”"
+                ]
+            },
+            {
+                "question": "Jak przebiegały kulisy prac w Nevadzie i odbudowy parku w Japonii?",
+                "content": [
+                    "Gdy [[postacie:dominic-myers|Dominic Myers]] bezczelnie zwolnił menedżera, Emma wcieliła w życie plan stworzenia w pełni ekologicznego [[miejsca:ekozoo-w-stanie-nevada|Ekozoo w stanie Nevada]], konsultując działania z [[postacie:nancy-jones|Nancy Jones]]. Udany debiut nowej placówki tak utkwił jej w pamięci:",
+                    "„Bezmyślne pozbycie się naszego menedżera przez Dominica było najlepszym, co mogło się wydarzyć! Natychmiast powierzyłam mu kierowanie naszym pierwszym, w pełni ekologicznym zoo w Nevadzie, gdzie postawiliśmy na OZE i zrównoważony rozwój. Nasz program reintrodukcji wilków szarych okazał się wielkim sukcesem, zwłaszcza że wcześniej Myers próbował oszukać organizatorów, oferując dwadzieścia wilków, z których dziewiętnaście było po prostu odbiciami w lustrach!”",
+                    "Niedługo potem musieli stawić czoła wyzwaniu w zrujnowanym [[miejsca:ogród-harmonii-w-prefekturze-yamaguchi|Ogrodzie Harmonii w Prefekturze Yamaguchi]] w Japonii, porzuconym przez [[postacie:dominic-myers|Myersa]] po niszczycielskim tajfunie. Emma tak zapamiętała kulisy tej misji ratunkowej:",
+                    "„Gdy Stowarzyszenie powiadomiło mnie o porzuconym obiekcie w Japonii, od razu wiedziałam, że to sprawka Dominica. Uciekł zaraz po przejściu żywiołu, zostawiając zniszczone wybiegi, ogromne długi i tekturowe atrapy zwierząt! Mimo konieczności wzięcia kredytów, nasz menedżer wzorowo odbudował całą infrastrukturę, a śledczy całkowicie oczyszczyli go z jakichkolwiek zarzutów. Otrzymanie pod opiekę słynnej pandy Lin-Lin było dla nas wspaniałym wyróżnieniem!”"
+                ]
+            },
+            {
+                "question": "Jak wyglądał finał starcia z Myersem?",
+                "content": [
+                    "Aby zadać ostateczny cios [[postacie:dominic-myers|Dominicowi Myersowi]], Emma kupiła wyspę pod Nowym Jorkiem i stworzyła tam flagowe [[miejsca:zoo-imienia-berniego-goodwina|Zoo imienia Berniego Goodwina]]. Sukces nowej placówki odciągnął klientów od konkurencji, a w trakcie prac doszło do niespodziewanego odnalezienia zaginionego [[postacie:bernard-goodwin|Bernarda Goodwina]]. Emma tak podsumowuje ten finałowy krok:",
+                    "„Kupiłam wyspę w sąsiedztwie placówki Myersa, żeby odciągnąć od niego wszystkich odwiedzających. Choć nasyłał na nas opłaconych chuliganów, nasz menedżer stworzył tam absolutnie wzorcowe zoo, z którego wszyscy mogliśmy być dumni. Całkowitym zaskoczeniem był powrót mojego ojca! Pogłoski o jego śmierci okazały się mocno przesadzone, bo przetrwał trzy miesiące w igloo! Ostatecznie władze zamknęły park Dominica za liczne naruszenia przepisów, odebrały mu zwierzęta i wykluczyły go z branży raz na zawsze. To był dla nas ogromny triumf i lekcja, jak połączyć globalną ochronę przyrody z troską o każde poszczególne stworzenie.”"
+                ]
+            }
         ]
     },
     {
@@ -211,7 +286,7 @@
                 ]
             },
             {
-                "question": "Jaką rolę Mondo Zeller pełni obecnie w BroTwin Zoo?",
+                "question": "Jak wygląda obecny zakres obowiązków w BroTwin Zoo?",
                 "content": [
                     "Dziś Mondo Zeller pełni kluczową funkcję Głównego Inżyniera w [[miejsca:brotwin-zoo|BroTwin Zoo]], będąc absolutnym filarem technicznej infrastruktury całego kompleksu. Niezwykle ważnym etapem w jego karierze była ścisła współpraca z [[postacie:kendran-tycoon|Kendranem Tycoonem]], który podjął się ambitnego zadania wielkiej przebudowy dawnej [[miejsca:magiotopia|Magiotopii]] i przekształcenia jej w nowoczesny obiekt. Mondo stał się wtedy prawą ręką [[postacie:kendran-tycoon|Kendrana]], odpowiadając za inżynieryjną stronę projektowania specjalistycznych wybiegów oraz bezpiecznych domów dla najrozmaitszych gatunków zwierząt. Zapytany o ten przełomowy okres oraz swoją obecną pracę, odpowiada z właściwym sobie spokojem i dumą:",
                     "„Kiedy Kendran przyszedł do mnie z wizją przebudowy Magiotopii w BroTwin Zoo, wiedziałem, że czeka nas sporo pracy. Spędziliśmy razem setki godzin nad planami, projektując spersonalizowane, dostosowane do trudnych warunków klimatycznych domy dla kolejnych gatunków zwierząt. Wielu młodych ludzi myśli, że nowoczesne zoo to wyłącznie estetyczne wybiegi... Ale prawdziwe serce tego miejsca bije w podziemiach... W zaawansowanych systemach filtracji wody, pancernej infrastrukturze, automatycznych śluzach bezpieczeństwa i czujnikach mikroklimatu. Po tym wszystkim, co przeszedłem w Andigawen, moją misją stało się czuwanie nad tym, by młodzi technicy nigdy nie musieli popełniać moich dawnych błędów. Chcę przekazać im nie tylko praktyczną wiedzę, ale przede wszystkim pokorę i szacunek do technologii w służbie żywym istotom.”",
@@ -223,17 +298,37 @@
     {
         "id": "nancy-jones",
         "name": "Nancy Jones",
-        "version": ["pz1pc", "pz1console", "pz2"],
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
         "role": "Główny Opiekun Zoo",
-        "affiliation": "Goodwin House",
+        "affiliation": "Rezydencja Goodwinów",
         "status": "Aktywna",
+        "motto": "Dobry opiekun nie boi się pobrudzić rąk – ważne jest to, by zawsze kierować się rozsądkiem, empatią i bezkompromisową troską o podopiecznych.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787657857/Nancy_Jones_1_czp1xy.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787657857/Nancy_Jones_1_czp1xy.webp",
-        "description": "Ekspertka ds. dobrostanu zwierząt oraz zaufana współpracownica [[bernie-goodwin|Berniego Goodwina]]. Nancy koncentruje się na praktycznych aspektach weterynarii, żywienia i codziennej opieki nad podopiecznymi w parkach.",
-        "fullBio": "<b>O postaci</b><br>Nancy Jones posiada wieloletnie doświadczenie w pracy z dzikimi zwierzętami na wszystkich kontynentach. Jej podejście jest niezwykle rzeczowe i pragmatyczne.<br><br><b>Rola w kampanii</b><br>Podczas scenariuszy szkoleniowych Nancy objaśnia mechaniki badań naukowych, zwalczania chorób oraz prawidłowej diety. Zawsze stawia zdrowie zwierząt na pierwszym miejscu.<br><br><b>Relacje</b><br>Prawa ręka [[bernie-goodwin|Berniego Goodwina]]. Zachowuje dużą rezerwę wobec komercyjnych działań prowadzonych przez [[dominic-myers|Dominica Myersa]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801429/nancy_1.webp",
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801431/nancy_2.webp"
+        "about": "Nancy Jones to twardo stąpająca po ziemi, niezwykle doświadczona szefowa opiekunów oraz prawa ręka [[postacie:bernard-goodwin|Bernarda Goodwina]]. Posiada wieloletnią praktykę w bezpośredniej opiece nad dzikimi zwierzętami na wszystkich kontynentach. Cechuje ją bezkompromisowe, pragmatyczne podejście do pracy. Przekłada praktyczną wiedzę, higienę i realny dobrostan podopiecznych nad teorię czy akademickie dyplomy. W trybie Kariery pełni rolę wymagającej, ale sprawiedliwej instruktorki, która nadzoruje techniczne i weterynaryjne aspekty prowadzenia parków oraz uczy nowych pracowników ciężkiej, codziennej pracy w zoo.",
+        "relations": "Nancy jest wieloletnią przyjaciółką i najbardziej zaufaną współpracowniczką [[postacie:bernard-goodwin|Bernarda Goodwina]], z którym tworzy zgrany, choć pełen kontrastów duet. Jej surowy pragmatyzm idealnie równoważy marzycielską naturę [[postacie:bernard-goodwin|Berniego]]. Choć z początku odnosi się ze sceptycyzmem do nowych adeptów, potrafi szybko docenić zaangażowanie i ciężką pracę. Z głęboką rezerwą i niechęcią traktuje cyniczne, komercyjne podejście [[postacie:dominic-myers|Dominica Myersa]], dla którego zwierzęta są jedynie tabelkami w arkuszu kalkulacyjnym.",
+        "memories": [{
+                "question": "Jakie były początki nowego opiekuna i wspólne wyzwania w kolejnych parkach?",
+                "content": [
+                    "Początki w [[miejsca:rezydencja-goodwinow|Rezydencji Goodwinów]] stały pod znakiem rezerwy do braku doświadczenia nowego pracownika, jednak sprawna renowacja wybiegów szybko zmieniła nastawienie Nancy. Wkrótce potem wyruszyli do tropikalnego [[miejsca:projekt-ochrony-malp-na-madagaskarze|Projektu ochrony małp na Madagaskarze]], gdzie głównym sprawdzianem stała się dbałość o dobrostan zwierząt i opanowanie kryzysu ze zbiegłym szympansem. Nancy tak wspomina te pierwsze etapy:",
+                    "„Gdy zobaczyłam tę gładką cerę bez odcisków, pomyślałam: kolejny teoretyk po uczelni, który nie wytrzyma u nas ani dnia! Przegrałam przez to zakład z Berniem i byłam mu winna Foxy Coffee, ale z wielką radością stawiałam tę kawę. Praca szła rewelacyjnie, więc spakowaliśmy paszporty i ruszyliśmy na Madagaskar. Tam mimo duchoty i ucieczki szympansa karłowatego, który na szczęście nie zdążył zwędzić niczyich ubrań, przeobrażenie rezerwatu było zdumiewające. Zbudowaliśmy nowe wybiegi, spięliśmy budżet, a ja wiedziałam już, że mam do czynienia z kimś wyjątkowym.”",
+                    "Kolejnym przystankiem ich bezpośredniej współpracy był dalekowschodni [[miejsca:park-z-pandami|Park z Pandami]], w którym wyzwaniem okazały się procedury weterynaryjne oraz opieka nad wymagającymi gatunkami:",
+                    "„W Chinach musieliśmy opanować kwarantannę u antylop i wykończyć wybiegi dla pand... Uroczych, ale wciąż dzikich niedźwiedzi! Błyskawiczna diagnoza zapobiegła chorobie, a rozwój całego parku przeszedł moje najśmielsze oczekiwania. Bernie ma genialny nos do ludzi. Widząc, jak niesamowicie dojrzał nasz opiekun, z dumą wypuściłam go na samodzielną misję do mroźnej Kanady, radząc jedynie, by spakował wyjątkowo grubą kurtkę.”"
+                ]
+            },
+            {
+                "question": "Jak wyglądało przejęcie firmy przez Myersa?",
+                "content": [
+                    "Po zaginięciu [[postacie:bernard-goodwin|Berniego Goodwina]] sieć przejął [[postacie:dominic-myers|Dominic Myers]], co doprowadziło do natychmiastowego zwolnienia Nancy. Mimo to szefowa opiekunów z daleka i z niepokojem śledziła działania menedżera, który musiał stawić czoła trudnym warunkom w [[miejsca:zoo-myersa-na-jeziornej-wyspie|Zoo Myersa na Jeziornej Wyspie]] oraz w skażonym kamieniołomie w ramach [[miejsca:projekt-ochrony-lasów-deszczowych-myersa|Projektu ochrony lasów deszczowych Myersa]]. Nancy tak podsumowuje te wydarzenia ze swojej perspektywy oraz relacji z córką Berniego, [[postacie:emma-goodwin|Emmą Goodwin]]:",
+                    "„Musiałam przekazać najgorszą wiadomość o zaginięciu Berniego. Zanim Emma zdołała wrócić, zarząd sprzedał całe jego życiowe dzieło Dominicowi Myersowi. Mnie zwolnił od razu, ale wiedziałam, że nasz menedżer da z siebie wszystko. Myers dał mu awans bez podwyżki i rzucił go do zaniedbanego obiektu z demonstrantami pod bramą, a potem do opuszczonego kamieniołomu w Brazylii na terenie skażonym odpadami. Z deszczowej Walii czytałam w gazetach o jego poczynaniach i aż mną trzęsło z oburzenia!”",
+                    "Pomimo manipulacji [[postacie:dominic-myers|Myersa]], takich jak potajemne sprowadzenie pandy Lin-Lin czy wymuszanie oszczędności, Nancy podziwiała profesjonalizm swojego podopiecznego i wierzyła w rychły upadek chciwego przedsiębiorcy:",
+                    "„Mój chłopak pokazał absolutną klasę... Czyścił tereny ze skażenia, sprowadzał niedźwiedzie, ratował porzucone pantery śnieżne i budował kolejkę gondolową na stromych zboczach. Choć Dominic kombinował na boku, potajemnie ściągał Lin-Lin pod zmyślonym imieniem i gadał głupoty o księgowych, to zwierzęta były tam wreszcie bezpieczne. Szepnęłam już słówko komu trzeba i dałam namiarki Emmie. Czułam, że ta farsa pod wodzą Myersa nie potrwa wiecznie, a mój menedżer zasługuje na o wiele więcej!”"
+                ]
+            }
         ]
     },
     {
