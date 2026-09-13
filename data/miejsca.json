@@ -1093,6 +1093,111 @@
         }
     },
     {
+        "id": "arktyczny-park-badawczy-goodwina",
+        "name": "Arktyczny park badawczy Goodwina",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Arktyczna przygoda",
+        "dlcId": {
+            "pz1pc": "arctic-pack",
+            "pz1console": "arctic&conservation-bundle"
+        },
+        "reward": "Posąg renifera",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788377919/renifer_a30oy0.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788377919/renifer_a30oy0.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788377919/renifer_1_yqemhc.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788377920/renifer_2_we6ezu.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788377919/renifer_3_tkvlpm.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789326540/Definite_Arctic-Cool_upscayl_3x_upscayl-standard-4x_yx6he3.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789326540/Definite_Arctic-Cool_upscayl_3x_upscayl-standard-4x_yx6he3.webp",
+        "fullBio": "Ten teren znajdujący się w pobliżu niewielkiej rybackiej wioski w Norwegii został wybrany przez [[postacie:bernard-goodwin|Berniego Goodwina]] z myślą o budowie arktycznego ogrodu zoologicznego, w którym można byłoby prowadzić badania nad dzikimi zwierzętami. Czegoś takiego świat jeszcze nie widział. Podczas swojej ostatniej wizyty [[postacie:bernard-goodwin|Bernie]] się tu zgubił i został uznany za zmarłego, więc trzymamy kciuki (oczywiście w rękawiczkach), aby Tobie poszło lepiej. Uważaj na odmrożenia!",
+        "description": "Po swoim powrocie z Arktyki [[postacie:bernard-goodwin|Bernie]] zatrudnia Cię w nowym, arktycznym zoo w Norwegii, które skupia się na ochronie zwierząt i badaniach naukowych w obliczu globalnego ocieplenia. Mimo trudnych warunków klimatycznych, wspólnie z zespołem radzisz sobie znakomicie – sprowadzasz i rozmnażasz renifery, wilki polarne oraz ogromne niedźwiedzie polarne, prowadzisz intensywne badania weterynaryjne, edukujesz gości i wyprowadzasz zwierzęta na wolność. Dzięki Twojemu zaangażowaniu placówka rozrasta się w gigantyczny i nowoczesny rezerwat polarny, a [[postacie:bernard-goodwin|Bernie]] nie ukrywa podziwu dla Twoich menedżerskich umiejętności.",
+        "objectives": {
+            "bronze": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu: Renifer tundrowy (10)",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Zwiększ dobrostan gatunku Renifer tundrowy (Ogólny) do 80%",
+                    "tasks": [
+                        "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Renifer tundrowy: 10"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj następującą liczbę gatunków na wybiegach w zoo: 3"
+                },
+                {
+                    "title": "Doprowadź badania w dziedzinie Renifer tundrowy do poziomu 2"
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji do 1,5 gwiazdek"
+                }
+            ],
+            "silver": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu: Wilk polarny (2)",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Zwiększ dobrostan gatunku Wilk polarny (Ogólny) do 80%",
+                    "tasks": [
+                        "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Wilk polarny: 2"
+                    ]
+                },
+                {
+                    "title": "Doprowadź badania w dziedzinie Wilk polarny do poziomu 3"
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji do 2,5 gwiazdek"
+                },
+                {
+                    "title": "Uzyskaj następującą liczbę gatunków na wybiegach w zoo: 6"
+                },
+                {
+                    "title": "Wyhoduj nowe zwierzęta do wybiegów różnych gatunków: 3"
+                }
+            ],
+            "gold": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu: Niedźwiedź polarny (2)",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Zwiększ dobrostan gatunku Niedźwiedź polarny (Ogólny) do 90%",
+                    "tasks": [
+                        "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Niedźwiedź polarny: 2"
+                    ]
+                },
+                {
+                    "title": "Doprowadź badania w dziedzinie Niedźwiedź polarny do poziomu 5"
+                },
+                {
+                    "title": "Doprowadź badania dotyczące gatunków (5) z wybiegów do poziomu 3"
+                },
+                {
+                    "title": "Wypuść na wolność osobniki dowolnych gatunków z wybiegów (6)"
+                },
+                {
+                    "title": "Wyhoduj nowe zwierzęta do wybiegów różnych gatunków: 6"
+                },
+                {
+                    "title": "Uzyskaj następującą liczbę gatunków na wybiegach w zoo: 8"
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 1 300 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                    ]
+                }
+            ]
+        }
+    },    
+    {
         "id": "krasowe-uroczysko",
         "name": "Krasowe Uroczysko",
         "type": "timed",
