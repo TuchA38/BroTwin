@@ -21,41 +21,15 @@
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2.5rem;
-    background: rgba(18, 26, 36, 0.7);
+    background: rgba(10, 58, 41, 0.7);
     padding: 1.25rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
 }
 
-.historia-search-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.historia-search-icon {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #00d2ff;
-}
-
-.historia-search-input {
-    width: 100%;
-    padding: 0.75rem 1rem 0.75rem 2.75rem;
-    background: rgba(10, 15, 22, 0.8);
-    border: 1px solid rgba(0, 210, 255, 0.3);
-    border-radius: 8px;
-    color: #fff;
-    font-size: 0.95rem;
-    outline: none;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.historia-search-input:focus {
-    border-color: #00d2ff;
-    box-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+[data-game-version="pz2"] .historia-nav-bar {
+    background: rgba(39, 30, 24, 0.702);
 }
 
 .historia-tabs-container {
@@ -67,28 +41,43 @@
 .historia-tab-btn {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    color: #c0c8d4;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     cursor: pointer;
     font-size: 0.88rem;
     transition: all 0.2s ease;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    color: white;
+}
+
+[data-game-version="pz2"] .historia-tab-btn {
+    background: #fff2dd33;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-shadow: none;
+    color: #4d3d32;
 }
 
 .historia-tab-btn:hover,
 .historia-tab-btn.active {
-    background: #00d2ff;
-    color: #0a0f16;
+    background: #17bc85;
     font-weight: bold;
-    border-color: #00d2ff;
-    box-shadow: 0 0 12px rgba(0, 210, 255, 0.4);
+    border-color: #17bc85;
+    box-shadow: 0 0 12px rgba(10, 58, 41, 0.4);
+}
+
+[data-game-version="pz2"] .historia-tab-btn:hover,
+[data-game-version="pz2"] .historia-tab-btn.active {
+    background: #8a9751;
+    font-weight: bold;
+    border-color: rgb(138, 151, 81);
+    box-shadow: 0 0 12px rgba(138, 151, 81, 0.4);
 }
 
 
 /* Karta Ogrodu */
 
 .historia-zoo-card {
-    background: rgba(15, 23, 34, 0.85);
+    background: rgba(10, 58, 41, 0.85);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     overflow: hidden;
@@ -97,6 +86,11 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+[data-game-version="pz2"] .historia-zoo-card {
+    background: rgba(39, 30, 24, 0.85);
+    text-shadow: none;
 }
 
 .historia-zoo-card.historia-visible {
@@ -119,12 +113,16 @@
 .historia-hero-overlay {
     width: 100%;
     padding: 2rem 1.5rem 1.25rem 1.5rem;
-    background: linear-gradient(to top, rgba(15, 23, 34, 1) 0%, rgba(15, 23, 34, 0.6) 60%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to top, rgba(5, 38, 27, 1) 0%, rgba(5, 38, 27, 0.6) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+[data-game-version="pz2"] .historia-hero-overlay {
+    background: linear-gradient(to top, rgba(43, 34, 27, 1) 0%, rgba(43, 34, 27, 0.6) 60%, rgba(0, 0, 0, 0) 100%);
 }
 
 .historia-badge {
     display: inline-block;
-    background: linear-gradient(135deg, #00d2ff, #0072ff);
+    background: rgb(13, 103, 73);
     color: #fff;
     font-size: 0.75rem;
     font-weight: uppercase;
@@ -134,17 +132,31 @@
     margin-bottom: 0.5rem;
 }
 
+[data-game-version="pz2"] .historia-badge {
+    background: #8a9751;
+    color: #362b23;
+}
+
 .historia-zoo-title {
     font-size: 1.8rem;
-    color: #fff;
     margin: 0.25rem 0;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+[data-game-version="pz2"] .historia-zoo-title {
+    text-shadow: none;
+    color: #fff2dd;
+}
+
 .historia-zoo-subtitle {
     font-size: 0.95rem;
-    color: #00d2ff;
+    color: #17bc85;
     font-weight: 500;
+}
+
+[data-game-version="pz2"] .historia-zoo-subtitle {
+    color: #8a9751;
+    text-shadow: none;
 }
 
 .historia-zoo-body {
@@ -152,13 +164,19 @@
 }
 
 .historia-summary-box {
-    background: rgba(0, 210, 255, 0.06);
-    border-left: 4px solid #00d2ff;
+    background: rgba(32, 255, 181, 0.06);
+    border-left: 4px solid #17bc85;
     padding: 1rem 1.25rem;
     border-radius: 0 8px 8px 0;
     font-style: italic;
     margin-bottom: 1.5rem;
-    color: #d0e4f7;
+    color: #d6d6d6;
+}
+
+[data-game-version="pz2"] .historia-summary-box {
+    background: #ba947a33;
+    border-left: 4px solid #8a9751;
+    color: #fff2dd;
 }
 
 
@@ -182,7 +200,7 @@
 .historia-stat-label {
     display: block;
     font-size: 0.78rem;
-    color: #8a99ad;
+    color: rgb(214, 214, 214);
     text-transform: uppercase;
 }
 
@@ -190,8 +208,12 @@
     display: block;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #00d2ff;
+    color: #17bc85;
     margin-top: 0.2rem;
+}
+
+[data-game-version="pz2"] .historia-stat-value {
+    color: #8a9751;
 }
 
 .historia-text-content {
@@ -200,12 +222,17 @@
     color: #d1d9e6;
 }
 
+[data-game-version="pz2"] .historia-text-content,
+[data-game-version="pz2"] .historia-timeline-section,
+[data-game-version="pz2"] .historia-galleries-section {
+    color: #fff2dd;
+}
+
 
 /* Oś czasu */
 
 .historia-section-title {
     font-size: 1.25rem;
-    color: #fff;
     margin-bottom: 1.25rem;
     display: flex;
     align-items: center;
@@ -215,14 +242,22 @@
 }
 
 .historia-section-title i {
-    color: #00d2ff;
+    color: #17bc85;
+}
+
+[data-game-version="pz2"] .historia-section-title i {
+    color: #8a9751;
 }
 
 .historia-timeline {
     position: relative;
     padding-left: 1.5rem;
-    border-left: 2px solid rgba(0, 210, 255, 0.3);
+    border-left: 2px solid rgba(23, 188, 133, 0.3);
     margin-bottom: 2.5rem;
+}
+
+[data-game-version="pz2"] .historia-timeline {
+    border-left: 2px solid rgba(138, 151, 81, 0.3);
 }
 
 .historia-timeline-item {
@@ -238,14 +273,19 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #00d2ff;
-    box-shadow: 0 0 8px #00d2ff;
+    background: #17bc85;
+    box-shadow: 0 0 8px #17bc85;
+}
+
+[data-game-version="pz2"] .historia-timeline-item::before {
+    background: #8a9751;
+    box-shadow: 0 0 8px #8a9751;
 }
 
 .historia-timeline-year {
     display: inline-block;
-    background: rgba(0, 210, 255, 0.15);
-    color: #00d2ff;
+    background: rgba(23, 188, 133, 0.15);
+    color: #17bc85;
     font-weight: bold;
     font-size: 0.82rem;
     padding: 0.15rem 0.5rem;
@@ -253,16 +293,19 @@
     margin-bottom: 0.3rem;
 }
 
+[data-game-version="pz2"] .historia-timeline-year {
+    background: rgba(138, 151, 81, 0.15);
+    color: #8a9751;
+}
+
 .historia-timeline-content h5 {
     margin: 0.2rem 0;
     font-size: 1rem;
-    color: #fff;
 }
 
 .historia-timeline-content p {
     margin: 0;
     font-size: 0.9rem;
-    color: #a0aec0;
 }
 
 
@@ -275,22 +318,35 @@
 }
 
 .historia-gallery-block {
-    background: rgba(10, 15, 22, 0.5);
+    background: rgba(23, 188, 133, 0.2);
     padding: 1.25rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+[data-game-version="pz2"] .historia-gallery-block {
+    background: rgba(186, 148, 122, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .historia-gallery-title {
     font-size: 1.05rem;
-    color: #00d2ff;
+    color: #17bc85;
     margin: 0 0 0.25rem 0;
+}
+
+[data-game-version="pz2"] .historia-gallery-title {
+    color: #8a9751;
 }
 
 .historia-gallery-desc {
     font-size: 0.85rem;
-    color: #8a99ad;
+    color: #d1d9e6;
     margin: 0 0 1rem 0;
+}
+
+[data-game-version="pz2"] .historia-gallery-desc {
+    color: #fff2dd;
 }
 
 .historia-gallery-grid {
@@ -318,8 +374,14 @@
 
 .historia-gallery-item:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 20px rgba(0, 210, 255, 0.3);
-    border-color: #00d2ff;
+    box-shadow: 0 6px 20px rgba(23, 188, 133, 0.3);
+    border-color: #17bc85;
+}
+
+[data-game-version="pz2"] .historia-gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(186, 148, 122, 0.3);
+    border-color: rgb(39, 30, 24);
 }
 
 .historia-gallery-item:hover img {

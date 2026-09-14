@@ -31,7 +31,6 @@
     gap: 4px;
     overflow: hidden;
     transition: width 0.35s ease, border-radius 0.35s ease, transform .25s ease, filter .25s ease;
-    box-shadow: 0 0 15px rgba(9, 55, 33, 0.5);
 }
 
 
