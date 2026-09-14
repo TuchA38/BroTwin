@@ -1147,6 +1147,11 @@
     .filter-buttons.grid-pz2-wybieg {
         grid-template-columns: repeat(2, 1fr);
     }
+    [data-game-version="pz2"] .filter-buttons.grid-pz2-wybieg button img.filtr-rodzaj2 {
+        width: 20px;
+        /* możesz zmienić tę wartość, np. na 36px lub więcej */
+        height: auto;
+    }
 }
 
 
