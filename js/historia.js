@@ -217,7 +217,7 @@ window.HISTORIA = window.HISTORIA || {
 
                 let galleriesHtml = (Array.isArray(zoo.galleries) && zoo.galleries.length > 0) ? `
                     <div class="historia-galleries-section">
-                        <h4 class="historia-section-title"><i class="fas fa-images"></i> Galerie Zdjęcia (${zoo.galleries.length})</h4>
+                        <h4 class="historia-section-title"><i class="fas fa-images"></i> Galeria</h4>
                         <div class="historia-galleries-wrapper">
                             ${zoo.galleries.map((gal, galIdx) => `
                                 <div class="historia-gallery-block">
