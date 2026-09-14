@@ -146,6 +146,37 @@
 }
 
 
+/* Domyślnie dla PZ1: wszystkie 4 przyciski w jednym rzędzie lub według standardu */
+
+.filter-buttons.grid-pz2-wybieg {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6px;
+}
+
+
+/* Gdy aktywna jest wersja PZ2, zmieniamy układ na siatkę 2x2 */
+
+[data-game-version="pz2"] .filter-buttons.grid-pz2-wybieg {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+[data-game-version="pz2"] .filter-row2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+
+/* Powiększenie ikony w przyciskach wybiegów tylko dla wersji PZ2 */
+
+[data-game-version="pz2"] .filter-buttons.grid-pz2-wybieg button img.filtr-rodzaj2 {
+    width: 40px;
+    /* możesz zmienić tę wartość, np. na 36px lub więcej */
+    height: auto;
+}
+
+
 /* =========================
    SEARCH – STYL
 ========================= */
