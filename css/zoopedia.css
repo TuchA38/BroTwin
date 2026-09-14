@@ -161,10 +161,13 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-[data-game-version="pz2"] .filter-row2 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+
+/* Zmiana układu .filter-row2 tylko na komputerach i tylko dla wersji PZ2 */
+
+@media screen and (min-width: 769px) {
+    [data-game-version="pz2"] .filter-row2 {
+        grid-template-columns: 2fr 1fr;
+    }
 }
 
 
