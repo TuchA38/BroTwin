@@ -3,10 +3,10 @@
         "zoos": [{
                 "id": "zoo-w-andigawen",
                 "name": "Zoo w Andigawen",
-                "subtitle": "Kraina Andigawen • Rezerwat i Zabytkowy Ogród",
+                "subtitle": "Kraina Andigawen • Zabytkowy Ogród Zoologiczny",
                 "founded": "Ponad 50 lat temu",
                 "founder": "Amiliana Empirejska",
-                "badge": "Zabytkowy Ogród",
+                "badge": "Pierwsze kroki",
                 "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783197002/Kariera_vlu7uq.webp",
                 "summary": "Legendarne zoo założone przez Amilianę Empirejską we współpracy z jej siostrą Ethelien Mumba oraz architektem Mondo Zeller. Słynące z innowacyjnej 'Morskiej Krainy' oraz trudnej historii zwieńczonej tragicznym pożarem.",
                 "historyText": {
@@ -19,14 +19,16 @@
                     "p7": "<p>Przez długi czas opuszczony teren dawnego Zoo w Andigawen pozostawał jedynie cichym świadkiem dawnej chwały i ludzkiej tragedii, podczas gdy Amiliana wraz z zespołem skupiła swoje siły na założeniu całkowicie nowego ogrodu zoologicznego. Ruiny nie zostały jednak zapomniane. Nowe życie w ten teren postanowił tchnąć <a href='#postacie' data-page='postacie' data-id='orion-discord' class='zalacznik'><b>Orion Discord</b></a> – zakochany w tym miejscu od najmłodszych lat, gdy jako małe dziecko godzinami spacerował alejkami parku i podziwiał jego mieszkańców. Po latach, napędzany dziecięcymi wspomnieniami i pasją, Orion podjął się ambitnego zadania odbudowy i zabezpieczenia pozostałości dawnej infrastruktury. To właśnie z jego inicjatywy powstaje tam obecnie <a href='#miejsca' data-page='miejsca' data-id='muzeum-ogrodu-zoologicznego-w-andigawen' class='zalacznik'><b>Muzeum Ogrodu Zoologicznego w Andigawen</b></a>. Ośrodek ten ma nie tylko przywrócić blask zabytkowej przestrzeni i upamiętniać pionierskie osiągnięcia dawnego zespołu, ale także edukować przyszłe pokolenia na temat ochrony przyrody.</p>"
                 },
                 "inlineImages": [{
-                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783177745/Symulacja_dzia%C5%82ania_czm4o4.webp",
-                        "caption": "Rehabilitacyjny wybieg niedźwiedzia Derwarda",
+                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/3_mlpq4l.webp",
                         "paragraphIndex": 1
                     },
                     {
-                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783179343/Sensowne_zarz%C4%85dzanie_ayponx.webp",
-                        "caption": "Podwodny tunel w Morskiej Krainie zaprojektowany przez Mondo Zeller",
+                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/5_qaxc86.webp",
                         "paragraphIndex": 3
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412981/12_bdwhy5.webp",
+                        "paragraphIndex": 5
                     }
                 ],
                 "stats": [{
@@ -65,29 +67,64 @@
                 ],
                 "galleries": [{
                         "id": "siedliska",
-                        "title": "Kultowe Strefy i Kompleksy",
-                        "description": "Archiwalne zdjęcia przedstawiające Morską Krainę oraz strefę Safari przed tragicznym pożarem.",
+                        "title": "Zachowane Pamiątki",
+                        "description": "Archiwalne zdjęcia przedstawiające Zoo w Andigawen przed tragicznym pożarem.",
                         "images": [{
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783177745/Symulacja_dzia%C5%82ania_czm4o4.webp",
-                                "caption": "Nowoczesny wybieg rehabilitacyjny stworzony dla Derwarda przez Mondo Zeller"
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/1_bannjz.webp"
                             },
                             {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783179343/Sensowne_zarz%C4%85dzanie_ayponx.webp",
-                                "caption": "Strefa obserwacyjna w Morskiej Krainie przed zamachem"
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413018/2_gk8nw9.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/4_llghjx.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/6_zbkorl.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412971/7_ffbxiw.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/8_fsgxtu.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412982/9_eb0l90.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412969/10_vatafb.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412969/11_xe6y0i.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413018/13_qvppr7.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412982/14_stxqji.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412981/15_corbyb.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413008/16_an6qxi.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/17_echjcc.webp"
+                            },
+                            {
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413016/18_l5shia.webp"
                             }
                         ]
                     },
                     {
                         "id": "architektura",
-                        "title": "Projekt Mondo Zeller i Prace Muzealne",
+                        "title": "Projekt Upamiętnienia Parku",
                         "description": "Inżynieria oraz obecne prace konserwatorskie na terenie dawnego ogrodu.",
                         "images": [{
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783192747/Nieograniczona_kreatywno%C5%9B%C4%87_tdsi9n.webp",
-                                "caption": "Zabytkowa bramka wjazdowa i budynki dyrekcji Amiliany Empirejskiej"
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783192747/Nieograniczona_kreatywno%C5%9B%C4%87_tdsi9n.webp"
                             },
                             {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783178561/Dziel_si%C4%99_i_inspiruj_iwxk81.webp",
-                                "caption": "Aleja główna prowadząca do nowo powstającego Muzeum Ogrodu Zoologicznego"
+                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783178561/Dziel_si%C4%99_i_inspiruj_iwxk81.webp"
                             }
                         ]
                     }
