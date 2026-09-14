@@ -1233,16 +1233,16 @@ function updateFilter(items, parent) {
 function updateContentButtons() {
     const version = AppState.get();
 
-    // Pokazywanie / ukrywanie filtra "Akwarium" tylko dla pz2
-    const akwariumBtn = document.querySelector(".pz2-only");
-    if (akwariumBtn) {
+    // Pokazywanie / ukrywanie wszystkich elementów przeznaczonych tylko dla pz2
+    const pz2OnlyElements = document.querySelectorAll(".pz2-only");
+    pz2OnlyElements.forEach(element => {
         if (version === "pz2") {
-            akwariumBtn.style.display = ""; // przywraca domyślny widok (blokowy/flex)
+            element.style.display = ""; // przywraca domyślny widok
         } else {
-            akwariumBtn.style.display = "none"; // ukrywa całkowicie dla pz1
-            akwariumBtn.classList.remove("active"); // czyści filtr, jeśli był aktywny
+            element.style.display = "none"; // ukrywa całkowicie dla pz1
+            element.classList.remove("active"); // czyści filtr, jeśli był aktywny
         }
-    }
+    });
     
     // 1️⃣ Łapiemy przyciski bez względu na ich aktualny stan data-filter
     const modBtn = document.querySelector("#filter-panel button[data-filter='mody'], #filter-panel button[data-filter='pz2mod']");
