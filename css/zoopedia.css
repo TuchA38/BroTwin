@@ -1144,6 +1144,9 @@
     .map-full svg {
         max-height: 200px !important;
     }
+    .filter-buttons.grid-pz2-wybieg {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
