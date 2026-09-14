@@ -2263,7 +2263,7 @@ html[data-game-version="pz2"] *::-webkit-scrollbar-thumb:active {
 }
 
 [data-game-version="pz2"] .filtr-status {
-    width: 30%;
+    width: 25%;
 }
 
 [data-game-version="pz2"] .home-video:hover iframe,
