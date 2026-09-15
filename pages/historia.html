@@ -51,6 +51,18 @@
         <video id="gallery-lightbox-video" style="transition:opacity 0.3s ease; display:none; max-width:90vw; max-height:85vh;" autoplay loop muted playsinline></video>
     </div>
 
+    <div id="glossary-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="version-modal-close" id="close-glossary">✖</button>
+            <h3 id="glossary-title"></h3>
+            <p id="glossary-definition"></p>
+            <div id="glossary-more"></div>
+            <!-- tutaj JS doda link "Więcej..." -->
+        </div>
+    </div>
+
+    <script src="js/glossary-modal.js"></script>
+    <script src="js/glossary-detect.js"></script>
     <!-- Dynamic Script Load -->
     <script src="js/historia.js"></script>
 
