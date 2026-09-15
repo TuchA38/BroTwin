@@ -294,6 +294,18 @@ function syncGalleryWithDOM() {
                     enrichTextWithGlossary(el);
                 });
 
+                // 🌟 Czyszczenie: usuwanie słowniczka z nagłówków (h3, h4), żeby tytuły pozostały czyste
+                introEl.querySelectorAll("h3, h4").forEach(h => {
+                    h.querySelectorAll('.glossary-link').forEach(gLink => {
+                        gLink.replaceWith(document.createTextNode(gLink.textContent));
+                    });
+                });
+                sectionsEl.querySelectorAll("h3, h4").forEach(h => {
+                    h.querySelectorAll('.glossary-link').forEach(gLink => {
+                        gLink.replaceWith(document.createTextNode(gLink.textContent));
+                    });
+                });
+
                 addNonBreakingSpaces(introEl);
                 addNonBreakingSpaces(sectionsEl);
 

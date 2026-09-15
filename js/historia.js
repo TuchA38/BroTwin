@@ -105,6 +105,34 @@ window.HISTORIA = window.HISTORIA || {
             }
         }
 
+        // 🌟 Pomocnicza funkcja do natychmiastowego resetu i odtworzenia animacji (używana przy wyborze konkretnego zoo)
+        function triggerAnimation(elements) {
+            if (!elements) return;
+            elements.forEach(el => {
+                el.classList.remove("historia-visible");
+                void el.offsetWidth; // wymuszenie reflow w CSS
+                el.classList.add("historia-visible");
+            });
+        }
+
+        // 🌟 Obserwator scrolla: elementy pojawiają się płynnie w miarę przewijania i zostają na stałe
+        function initScrollObserver() {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("historia-visible");
+                        obs.unobserve(entry.target); // raz pokazany element zostaje widoczny
+                    }
+                });
+            }, { threshold: 0.05 });
+
+            document.querySelectorAll(".historia-zoo-card, .historia-timeline-item").forEach(el => {
+                if (!el.classList.contains("historia-visible")) {
+                    observer.observe(el);
+                }
+            });
+        }
+
         // ---------------------------------
         // 3️⃣ RENDER LOGIC
         // ---------------------------------
@@ -150,7 +178,19 @@ window.HISTORIA = window.HISTORIA || {
                             allTab.onclick = () => {
                                 document.querySelectorAll(".historia-tab-btn").forEach(b => b.classList.remove("active"));
                                 allTab.classList.add("active");
-                                document.querySelectorAll(".historia-zoo-card").forEach(c => c.style.display = "block");
+
+                                const cards = document.querySelectorAll(".historia-zoo-card");
+                                cards.forEach(c => {
+                                    c.style.display = "block";
+                                    c.classList.remove("historia-visible"); // reset klasy, aby móc je na nowo obserwować przy scrollu
+                                });
+
+                                document.querySelectorAll(".historia-timeline-item").forEach(item => {
+                                    item.classList.remove("historia-visible");
+                                });
+
+                                // Po kliknięciu "Wszystkie ogrody" włączamy z powrotem scroll-obserwator
+                                initScrollObserver();
                             };
                             tabsContainer.appendChild(allTab);
                         }
@@ -200,7 +240,7 @@ window.HISTORIA = window.HISTORIA || {
 
                 let timelineHtml = (Array.isArray(zoo.timeline) && zoo.timeline.length > 0) ? `
                     <div class="historia-timeline-section">
-                        <h4 class="historia-section-title"><i class="fas fa-hourglass-half"></i> Os Czasu i Kamienie Milowe</h4>
+                        <h4 class="historia-section-title"><i class="fas fa-hourglass-half"></i> Oś Czasu i Kamienie Milowe</h4>
                         <div class="historia-timeline">
                             ${zoo.timeline.map(t => `
                                 <div class="historia-timeline-item">
@@ -245,14 +285,29 @@ window.HISTORIA = window.HISTORIA || {
                     : (zoo.historyText || "");
 
                 tempDiv.innerHTML = rawHistory;
-                const paragraphs = Array.from(tempDiv.querySelectorAll("p"));
 
+                tempDiv.querySelectorAll('p, th, td, span, div').forEach(el => {
+                    if (typeof enrichTextWithGlossary === "function") {
+                        enrichTextWithGlossary(el);
+                    }
+                });
+                
+                if (typeof enrichTextWithGlossary === "function") {
+                    enrichTextWithGlossary(tempDiv);
+                }
+                // 🌟 Czyszczenie: usuwanie słowniczka z wnętrza linków <a>, żeby linki pozostały czyste
+                tempDiv.querySelectorAll('a').forEach(aTag => {
+                    aTag.querySelectorAll('.glossary-link').forEach(gLink => {
+                        gLink.replaceWith(document.createTextNode(gLink.textContent));
+                    });
+                });
+
+                const paragraphs = Array.from(tempDiv.querySelectorAll("p"));
                 const inlineImages = zoo.inlineImages || [];
                 let imageCounter = 0;
 
                 paragraphs.forEach((p, pIndex) => {
                     const matchingImages = inlineImages.filter(img => img.paragraphIndex === pIndex);
-
                     matchingImages.forEach(imgObj => {
                         const sideClass = (imageCounter % 2 === 0) ? "img-left" : "img-right";
                         imageCounter++;
@@ -281,6 +336,7 @@ window.HISTORIA = window.HISTORIA || {
 
                 zoosContainer.appendChild(zooCard);
 
+                // Obsługa lightboxa wewnątrz karty
                 const textContentEl = zooCard.querySelector(".historia-text-content");
                 if (textContentEl) {
                     const injectedImgs = Array.from(textContentEl.querySelectorAll("img"));
@@ -319,80 +375,71 @@ window.HISTORIA = window.HISTORIA || {
             });
 
             if (typeof window.addNonBreakingSpaces === "function") {
-    window.addNonBreakingSpaces(root);
-}
+                window.addNonBreakingSpaces(root);
+            }
 
-const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("historia-visible");
-            obs.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.05 });
+            // Uruchomienie obserwatora scrolla po wyrenderowaniu strony
+            initScrollObserver();
 
-document.querySelectorAll(".historia-zoo-card, .historia-timeline-item").forEach(el => {
-    observer.observe(el);
-});
+            // Sprawdzenie oczekującego ID (z kliknięcia w odnośnik, URL lub kotwicy)
+            const hashId = window.location.hash.replace("#", "");
+            const urlParams = new URLSearchParams(window.location.search);
+            const zooParam = urlParams.get("zoo");
+            const targetZooId = window.HISTORIA.pendingZooId || hashId || zooParam;
 
-// Sprawdzenie oczekującego ID (z kliknięcia w odnośnik, URL lub kotwicy)
-const hashId = window.location.hash.replace("#", "");
-const urlParams = new URLSearchParams(window.location.search);
-const zooParam = urlParams.get("zoo");
-const targetZooId = window.HISTORIA.pendingZooId || hashId || zooParam;
+            if (targetZooId) {
+                window.HISTORIA.scrollToZoo(targetZooId);
+            }
 
-if (targetZooId) {
-    window.HISTORIA.scrollToZoo(targetZooId);
-}
-
-// Emisja zdarzenia po zakończeniu pełnego renderowania DOM
-document.dispatchEvent(new CustomEvent("historiaReady"));
+            document.dispatchEvent(new CustomEvent("historiaReady"));
         });
     }
 
-    // Funkcja do aktywowania i przewijania konkretnego zoo po ID
-window.HISTORIA.scrollToZoo = function(zooId) {
-    if (!zooId) return;
+    // Funkcja do aktywowania i przewijania konkretnego zoo po ID (oraz wywołania animacji)
+    window.HISTORIA.scrollToZoo = function(zooId) {
+        if (!zooId) return;
 
-    window.HISTORIA.pendingZooId = zooId;
+        window.HISTORIA.pendingZooId = zooId;
 
-    let attempts = 0;
-    const interval = setInterval(() => {
-        attempts++;
+        let attempts = 0;
+        const interval = setInterval(() => {
+            attempts++;
 
-        const tabBtns = document.querySelectorAll(
-            `.historia-tab-btn[data-zoo-tab-id="${zooId}"], .historia-tab-btn[data-id="${zooId}"]`
-        );
-        const targetCard = document.querySelector(`.historia-zoo-card[data-zoo-id="${zooId}"]`);
+            const tabBtns = document.querySelectorAll(
+                `.historia-tab-btn[data-zoo-tab-id="${zooId}"], .historia-tab-btn[data-id="${zooId}"]`
+            );
+            const targetCard = document.querySelector(`.historia-zoo-card[data-zoo-id="${zooId}"]`);
 
-        if (tabBtns.length > 0 || targetCard) {
-            clearInterval(interval);
+            if (tabBtns.length > 0 || targetCard) {
+                clearInterval(interval);
 
-            // 1. Zdejmij 'active' ze wszystkich przycisków w tym z "Wszystkie ogrody"
-            document.querySelectorAll(".historia-tab-btn").forEach(btn => btn.classList.remove("active"));
+                document.querySelectorAll(".historia-tab-btn").forEach(btn => btn.classList.remove("active"));
+                tabBtns.forEach(btn => btn.classList.add("active"));
 
-            // 2. Aktywuj przycisk docelowy
-            tabBtns.forEach(btn => btn.classList.add("active"));
+                if (targetCard) {
+                    document.querySelectorAll(".historia-zoo-card").forEach(card => {
+                        const isActive = (card.dataset.zooId === zooId);
+                        card.style.display = isActive ? "block" : "none";
+                        card.classList.toggle("active", isActive);
+                        
+                        if (isActive) {
+                            // Po kliknięciu konkretnej zakładki zoo ma się od razu animować
+                            triggerAnimation([card]);
+                            triggerAnimation(card.querySelectorAll(".historia-timeline-item"));
+                        }
+                    });
 
-            // 3. Pokaż właściwą kartę zoo i ukryj pozostałe
-            if (targetCard) {
-                document.querySelectorAll(".historia-zoo-card").forEach(card => {
-                    const isActive = (card.dataset.zooId === zooId);
-                    card.style.display = isActive ? "block" : "none";
-                    card.classList.toggle("active", isActive);
-                });
+                    targetCard.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
 
-                targetCard.scrollIntoView({ behavior: "smooth", block: "start" });
+                window.HISTORIA.pendingZooId = null;
             }
 
-            window.HISTORIA.pendingZooId = null;
-        }
-
-        if (attempts >= 25) {
-            clearInterval(interval);
-        }
-    }, 100);
-};
+            if (attempts >= 25) {
+                clearInterval(interval);
+            }
+        }, 100);
+    };
 
     // ---------------------------------
     // 4️⃣ INIT ON SPA READY
