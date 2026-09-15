@@ -150,7 +150,7 @@
         }
     },
     {
-        "id": "projekt-ochrony-małp-na-madagaskarze",
+        "id": "projekt-ochrony-malp-na-madagaskarze",
         "name": "Projekt ochrony małp na Madagaskarze",
         "version": ["pz1pc", "pz1console"],
         "scenario": "Małpi gaj",
@@ -275,7 +275,7 @@
             "pz1pc": "planet-zoo",
             "pz1console": "planet-zoo-console-edition"
         },
-        "reward": "Posąg pandy wielkiej",
+        "reward": "Posąg pandy",
         "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921744/panda_r98otu.webp",
         "rewardImages": {
             "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921744/panda_r98otu.webp",
@@ -690,7 +690,7 @@
         }
     },
     {
-        "id": "projekt-ochrony-lasów-deszczowych-myersa",
+        "id": "projekt-ochrony-lasow-deszczowych-myersa",
         "name": "Projekt ochrony lasów deszczowych Myersa",
         "version": ["pz1pc", "pz1console"],
         "scenario": "Po uszy w odpadach",
@@ -759,7 +759,7 @@
         }
     },
     {
-        "id": "zoo-słonecznej-radości-myersa",
+        "id": "zoo-slonecznej-radosci-myersa",
         "name": "Zoo słonecznej radości Myersa",
         "version": ["pz1pc", "pz1console"],
         "scenario": "Problemy z zatrudnieniem",
@@ -939,7 +939,7 @@
         }
     },
     {
-        "id": "ogród-harmonii-w-prefekturze-yamaguchi",
+        "id": "ogrod-harmonii-w-prefekturze-yamaguchi",
         "name": "Ogród harmonii w prefekturze Yamaguchi",
         "version": ["pz1pc", "pz1console"],
         "scenario": "Taktyczny odwrót",
@@ -1196,7 +1196,82 @@
                 }
             ]
         }
-    },    
+    },
+    {
+        "id": "park-ochrony-przyrody-w-meksyku",
+        "name": "Park ochrony przyrody w Meksyku",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Globalne ostrzeżenie",
+        "dlcId": {
+            "pz1pc": "arctic-pack",
+            "pz1console": "arctic&conservation-bundle"
+        },
+        "reward": "Posąg legwana",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788376801/legwan_lkutxp.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788376801/legwan_lkutxp.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788376801/legwan_1_myyoxk.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788376801/legwan_2_vtci0k.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788376801/legwan_3_pta8lq.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789472596/Global_Warning_upscayl_3x_upscayl-standard-4x_bxzxde.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789472596/Global_Warning_upscayl_3x_upscayl-standard-4x_bxzxde.webp",
+        "fullBio": "Jeżeli szukasz miejsca, w którym można byłoby zaprezentować zwierzęta ze skutych lodem regionów Arktyki, ostatnim krajem na Ziemi, na który mógłby paść Twój wybór... jest Meksyk. A właśnie tam [[postacie:bernard-goodwin|Bernie]] chce zlecić Ci budowę kolejnego zoo! Twoim celem jest uświadamianie ludzi, jaki los czeka zwierzęta, na które zmiana klimatu wywrze największy wpływ... Miejmy tylko nadzieję, że podkręcenie klimatyzacji na tyle, aby czuły się tu komfortowo, nie przyczyni się jeszcze bardziej do tego procesu...",
+        "description": "W kolejnym etapie [[postacie:bernard-goodwin|Bernie]] zaprasza Cię do słonecznego Meksyku, gdzie prowadzi niezwykły projekt – zoo łączące arktyczne gatunki z gorącym klimatem, w pełni zasilane odnawialnymi źródłami energii. Mimo nietypowych warunków, z Twoją pomocą placówka odnosi gigantyczny sukces: przyciąga tłumy gości, wzorowo dba o dobrostan i badania zwierząt, osiąga świetne zyski oraz skutecznie edukuje społeczeństwo na temat ochrony przyrody. Dzięki temu stworzony przez Ciebie arktyczny zakątek w środku Meksyku staje się potężnym ambasadorem spraw ekologicznych, a zachwycony [[postacie:bernard-goodwin|Bernie]] nie kryje podziwu dla Twoich menedżerskich talentów.",
+        "objectives": {
+            "bronze": [{
+                    "title": "Uzyskaj na wybiegach w zoo następującą liczbę gatunków z biomu Pustynia: 2"
+                },
+                {
+                    "title": "Uzyskaj na wybiegach w zoo następującą liczbę gatunków z biomu Tropiki: 5"
+                },
+                {
+                    "title": "Uzyskaj na wybiegach w zoo następującą liczbę gatunków z biomu Tundra: 1"
+                },
+                {
+                    "title": "Wypracuj roczny zysk: $7 000,00"
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 1 900 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                    ]
+                }
+            ],
+            "silver": [{
+                    "title": "Uzyskaj na wybiegach w zoo następującą liczbę gatunków z biomu Tundra: 4"
+                },
+                {
+                    "title": "Wydaj rocznie $3 000,00 na marketing"
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 2 200 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                    ]
+                }
+            ],
+            "gold": [{
+                    "title": "Zwiększ ocenę edukacji do 3,5 gwiazdek"
+                },
+                {
+                    "title": "Zapewnij zasilanie wszystkich obiektów w zoo energią odnawialną"
+                },
+                {
+                    "title": "Adoptuj i umieść w odpowiednim miejscu 2 nowe zwierzęta: Niedźwiedzie polarne",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 85%"
+                    ]
+                },
+                {
+                    "title": "Zwiększ ocenę ochrony do 4,0 gwiazdek"
+                },
+                {
+                    "title": "Wypracuj roczny zysk: $25 000,00"
+                }
+            ]
+        }
+    },
     {
         "id": "krasowe-uroczysko",
         "name": "Krasowe Uroczysko",
@@ -1249,153 +1324,6 @@
                 "tasks": [
                     "Nie miej żadnych niespłaconych pożyczek"
                 ]
-            }
-        ]
-    },
-    {
-        "id": "park-cophaga",
-        "name": "Park Cophaga",
-        "type": "timed",
-        "version": ["pz1pc", "pz1console"],
-        "scenario": "Tarasy",
-        "dlcId": {
-            "pz1pc": "planet-zoo",
-            "pz1console": "planet-zoo-console-edition"
-        },
-        "targetTimes": {
-            "gold": "1:20:00",
-            "silver": "1:30:00",
-            "bronze": "-:-"
-        },
-        "reward": "Posąg krokodyla",
-        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268094/krokodyl_ubjcjk.webp",
-        "rewardImages": {
-            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268094/krokodyl_ubjcjk.webp",
-            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268092/krokodyl_1_vfmpep.webp",
-            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268093/krokodyl_2_jffax3.webp",
-            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268093/krokodyl_3_kgn8df.webp"
-        },
-        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788528336/Terrace_Time.PNG_upscayl_3x_upscayl-standard-4x_puowrr.webp",
-        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788528336/Terrace_Time.PNG_upscayl_3x_upscayl-standard-4x_puowrr.webp",
-        "fullBio": "Ten scenariusz kładzie nacisk na budowanie świadomości społecznej dotyczącej konieczności ochrony przyrody w górach na wyspie Luzon. Przekształć ten niewielki skrawek nieużywanego tarasu ryżowego w przyczółek ochrony przyrody, zanim rozpocznie się uroczystość otwarcia!",
-        "objectives": [{
-                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 10",
-                "tasks": [
-                    "Zwiększ dobrostan (Ogólny) do 85%"
-                ]
-            },
-            {
-                "title": "Zorganizuj co najmniej następującą liczbę wykładów o zwierzętach w roku: 3"
-            },
-            {
-                "title": "Uzyskaj ogólną ocenę zoo: 4,0/5,0"
-            },
-            {
-                "title": "Zbierz w zoo co najmniej 2 000 gości",
-                "tasks": [
-                    "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
-                ]
-            },
-            {
-                "title": "Wypracuj roczny zysk: $30 000,00"
-            },
-            {
-                "title": "Wydaj rocznie $5 000,00 na marketing"
-            }
-        ]
-    },
-    {
-        "id": "posiadlosc-scholeya",
-        "name": "Posiadłość Scholeya",
-        "type": "timed",
-        "version": ["pz1pc", "pz1console"],
-        "scenario": "Przed Berniem",
-        "dlcId": {
-            "pz1pc": "planet-zoo",
-            "pz1console": "planet-zoo-console-edition"
-        },
-        "targetTimes": {
-            "gold": "1:00:00",
-            "silver": "1:15:00",
-            "bronze": "-:-"
-        },
-        "reward": "Posąg łuskowca",
-        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268116/%C5%82uskowiec_tpxqss.webp",
-        "rewardImages": {
-            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268116/%C5%82uskowiec_tpxqss.webp",
-            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268117/%C5%82uskowiec_1_qzsd7o.webp",
-            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268118/%C5%82uskowiec_2_vkr7m3.webp",
-            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268119/%C5%82uskowiec_3_yw9exh.webp"
-        },
-        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788533986/Before_the_Bern_upscayl_3x_upscayl-standard-4x_ji9emv.webp",
-        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788533986/Before_the_Bern_upscayl_3x_upscayl-standard-4x_ji9emv.webp",
-        "fullBio": "I oto znaleźliśmy się znów na początku, zanim jeszcze [[postacie:bernard-goodwin|Bernie]] stworzył swoje pierwsze zoo, Rezydencję Goodwinów. Czy zrobisz to lepiej? Przekształć ziemie Posiadłości Scholeya w tętniącą życiem atrakcję i spróbuj pobić rekord [[postacie:bernard-goodwin|Berniego]] w udanym programie karmienia lwów!",
-        "objectives": [{
-                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 11",
-                "tasks": [
-                    "Zwiększ dobrostan (Ogólny) do 85%"
-                ]
-            },
-            {
-                "title": "Wyhoduj: Lew zachodnioafrykański (1)"
-            },
-            {
-                "title": "Zbierz w zoo co najmniej 1 800 gości",
-                "tasks": [
-                    "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
-                ]
-            },
-            {
-                "title": "Zwiększ ocenę edukacji do 3,8 gwiazdek"
-            },
-            {
-                "title": "Zbuduj atrakcję transportową Mały pociąg parowy"
-            }
-        ]
-    },
-    {
-        "id": "rezerwat-nadzieja",
-        "name": "Rezerwat „Nadzieja”",
-        "type": "timed",
-        "version": ["pz1pc", "pz1console"],
-        "scenario": "Animalis Liberandum",
-        "dlcId": {
-            "pz1pc": "planet-zoo",
-            "pz1console": "planet-zoo-console-edition"
-        },
-        "targetTimes": {
-            "gold": "0:55:00",
-            "silver": "1:10:00",
-            "bronze": "-:-"
-        },
-        "reward": "Posąg szympansa",
-        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921728/szympans_om7d6a.webp",
-        "rewardImages": {
-            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921728/szympans_om7d6a.webp",
-            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921729/szympans_1_keiv8a.webp",
-            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921728/szympans_2_xdrmj1.webp",
-            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921727/szympans_3_txxnv8.webp"
-        },
-        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788541148/Animalis_Liberandum_upscayl_3x_upscayl-standard-4x_smumit.webp",
-        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788541148/Animalis_Liberandum_upscayl_3x_upscayl-standard-4x_smumit.webp",
-        "fullBio": "Esperanza Santuario de Animales to rezerwat, w którym uratowane zwierzęta mogą zaznać zasłużonego spokoju, a przynajmniej będzie nim, gdy go otworzysz! Przybywa do Ciebie coraz więcej uratowanych zwierząt z całego świata — musisz zapewnić im idealny dom. Nie zwlekaj, inaczej nie zapanujesz nad napływem nowych zwierzaków!",
-        "objectives": [{
-                "title": "Adoptuj i umieść w odpowiednim miejscu uratowane zwierzęta",
-                "tasks": [
-                    "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
-                ]
-            },
-            {
-                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 12"
-            },
-            {
-                "title": "Zwiększ średni dobrostan gatunków z wybiegów (Ogólny) do 90%"
-            },
-            {
-                "title": "Zwiększ ocenę edukacji do 3,0 gwiazdek"
-            },
-            {
-                "title": "Uzyskaj w raporcie z inspekcji zoo ocenę ogólną z liczbą gwiazdek 4,0"
             }
         ]
     },
@@ -1461,6 +1389,58 @@
         ]
     },
     {
+        "id": "park-cophaga",
+        "name": "Park Cophaga",
+        "type": "timed",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Tarasy",
+        "dlcId": {
+            "pz1pc": "planet-zoo",
+            "pz1console": "planet-zoo-console-edition"
+        },
+        "targetTimes": {
+            "gold": "1:20:00",
+            "silver": "1:30:00",
+            "bronze": "-:-"
+        },
+        "reward": "Posąg krokodyla",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268094/krokodyl_ubjcjk.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268094/krokodyl_ubjcjk.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268092/krokodyl_1_vfmpep.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268093/krokodyl_2_jffax3.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268093/krokodyl_3_kgn8df.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788528336/Terrace_Time.PNG_upscayl_3x_upscayl-standard-4x_puowrr.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788528336/Terrace_Time.PNG_upscayl_3x_upscayl-standard-4x_puowrr.webp",
+        "fullBio": "Ten scenariusz kładzie nacisk na budowanie świadomości społecznej dotyczącej konieczności ochrony przyrody w górach na wyspie Luzon. Przekształć ten niewielki skrawek nieużywanego tarasu ryżowego w przyczółek ochrony przyrody, zanim rozpocznie się uroczystość otwarcia!",
+        "objectives": [{
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 10",
+                "tasks": [
+                    "Zwiększ dobrostan (Ogólny) do 85%"
+                ]
+            },
+            {
+                "title": "Zorganizuj co najmniej następującą liczbę wykładów o zwierzętach w roku: 3"
+            },
+            {
+                "title": "Uzyskaj ogólną ocenę zoo: 4,0/5,0"
+            },
+            {
+                "title": "Zbierz w zoo co najmniej 2 000 gości",
+                "tasks": [
+                    "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                ]
+            },
+            {
+                "title": "Wypracuj roczny zysk: $30 000,00"
+            },
+            {
+                "title": "Wydaj rocznie $5 000,00 na marketing"
+            }
+        ]
+    },
+    {
         "id": "zoo-red-barn-river",
         "name": "Zoo Red Barn River",
         "type": "timed",
@@ -1510,6 +1490,55 @@
         ]
     },
     {
+        "id": "posiadlosc-scholeya",
+        "name": "Posiadłość Scholeya",
+        "type": "timed",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Przed Berniem",
+        "dlcId": {
+            "pz1pc": "planet-zoo",
+            "pz1console": "planet-zoo-console-edition"
+        },
+        "targetTimes": {
+            "gold": "1:00:00",
+            "silver": "1:15:00",
+            "bronze": "-:-"
+        },
+        "reward": "Posąg łuskowca",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268116/%C5%82uskowiec_tpxqss.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268116/%C5%82uskowiec_tpxqss.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268117/%C5%82uskowiec_1_qzsd7o.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268118/%C5%82uskowiec_2_vkr7m3.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788268119/%C5%82uskowiec_3_yw9exh.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788533986/Before_the_Bern_upscayl_3x_upscayl-standard-4x_ji9emv.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788533986/Before_the_Bern_upscayl_3x_upscayl-standard-4x_ji9emv.webp",
+        "fullBio": "I oto znaleźliśmy się znów na początku, zanim jeszcze [[postacie:bernard-goodwin|Bernie]] stworzył swoje pierwsze zoo, Rezydencję Goodwinów. Czy zrobisz to lepiej? Przekształć ziemie Posiadłości Scholeya w tętniącą życiem atrakcję i spróbuj pobić rekord [[postacie:bernard-goodwin|Berniego]] w udanym programie karmienia lwów!",
+        "objectives": [{
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 11",
+                "tasks": [
+                    "Zwiększ dobrostan (Ogólny) do 85%"
+                ]
+            },
+            {
+                "title": "Wyhoduj: Lew zachodnioafrykański (1)"
+            },
+            {
+                "title": "Zbierz w zoo co najmniej 1 800 gości",
+                "tasks": [
+                    "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                ]
+            },
+            {
+                "title": "Zwiększ ocenę edukacji do 3,8 gwiazdek"
+            },
+            {
+                "title": "Zbuduj atrakcję transportową Mały pociąg parowy"
+            }
+        ]
+    },
+    {
         "id": "kuala-bintu-taman",
         "name": "Kuala Bintu Taman",
         "type": "timed",
@@ -1552,6 +1581,52 @@
             },
             {
                 "title": "Zbuduj atrakcję transportową Gondola podwieszana"
+            }
+        ]
+    },
+    {
+        "id": "rezerwat-nadzieja",
+        "name": "Rezerwat „Nadzieja”",
+        "type": "timed",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Animalis Liberandum",
+        "dlcId": {
+            "pz1pc": "planet-zoo",
+            "pz1console": "planet-zoo-console-edition"
+        },
+        "targetTimes": {
+            "gold": "0:55:00",
+            "silver": "1:10:00",
+            "bronze": "-:-"
+        },
+        "reward": "Posąg szympansa",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921728/szympans_om7d6a.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921728/szympans_om7d6a.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921729/szympans_1_keiv8a.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921728/szympans_2_xdrmj1.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787921727/szympans_3_txxnv8.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788541148/Animalis_Liberandum_upscayl_3x_upscayl-standard-4x_smumit.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788541148/Animalis_Liberandum_upscayl_3x_upscayl-standard-4x_smumit.webp",
+        "fullBio": "Esperanza Santuario de Animales to rezerwat, w którym uratowane zwierzęta mogą zaznać zasłużonego spokoju, a przynajmniej będzie nim, gdy go otworzysz! Przybywa do Ciebie coraz więcej uratowanych zwierząt z całego świata — musisz zapewnić im idealny dom. Nie zwlekaj, inaczej nie zapanujesz nad napływem nowych zwierzaków!",
+        "objectives": [{
+                "title": "Adoptuj i umieść w odpowiednim miejscu uratowane zwierzęta",
+                "tasks": [
+                    "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                ]
+            },
+            {
+                "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 12"
+            },
+            {
+                "title": "Zwiększ średni dobrostan gatunków z wybiegów (Ogólny) do 90%"
+            },
+            {
+                "title": "Zwiększ ocenę edukacji do 3,0 gwiazdek"
+            },
+            {
+                "title": "Uzyskaj w raporcie z inspekcji zoo ocenę ogólną z liczbą gwiazdek 4,0"
             }
         ]
     },
@@ -1701,7 +1776,7 @@
         ]
     },
     {
-        "id": "ogród-zoologiczny-zielony-liść",
+        "id": "ogrod-zoologiczny-zielony-lisc",
         "name": "Ogród zoologiczny „Zielony liść”",
         "type": "timed",
         "version": ["pz1pc", "pz1console"],
@@ -1756,7 +1831,7 @@
         ]
     },
     {
-        "id": "schronisko-dla-osieroconych-zwierząt-w-turtle-rock",
+        "id": "schronisko-dla-osieroconych-zwierzat-w-turtle-rock",
         "name": "Schronisko dla osieroconych zwierząt w Turtle Rock",
         "type": "timed",
         "version": ["pz1pc", "pz1console"],
@@ -1811,18 +1886,30 @@
         ]
     },
     {
-        "id": "myers-lake-side",
-        "name": "Myers Rainforest Resort",
-        "version": ["pz1pc", "pz2"],
-        "role": "Komercyjny Park Rozrywki",
-        "affiliation": "Myers Corp",
-        "status": "Zaniedbane / Do przebudowy",
-        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786995390/myers_resort_avatar.webp",
-        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786732577/myers_resort_header.webp",
-        "description": "Park nastawiony na generowanie zysków, wybudowany przez [[dominic-myers|Dominica Myersa]]. Z powodu oszczędności finansowych cierpi na problemy z infrastrukturą i niezadowolenie zwierząt.",
-        "fullBio": "<b>O miejscu</b><br>Szybko wzniesiony obiekt nastawiony na maksymalne zagęszczenie sklepów i atrakcji dla gości. Wybiegi są ciasne, a personel niedopłacany.<br><br><b>Wydarzenia i Scenariusz</b><br>Gracz zostaje wysłany, aby naprawić błędy konstrukcyjne i podnieść standard życia zwierząt, często ścierając się z wizją oszczędnościową właściciela.<br><br><b>Powiązane postacie</b><br>Własność [[dominic-myers|Dominica Myersa]], w którym zmiany stara się wprowadzać jego córka [[emma-myers|Emma Myers]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783615796/myers_resort_1.webp"
-        ]
+        "id": "zamek-myers",
+        "name": "Zamek Myers",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Dynia, która wzbudzi sensację!",
+        "dlcId": {
+            "pz1pc": "twilight-pack",
+            "pz1console": "aquatic&twilight-bundle"
+        },
+        "reward": "Posąg szopa",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515171/szop_elqjcb.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515171/szop_elqjcb.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515174/szop_1_drnyyg.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515170/szop_2_ltvai3.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515172/szop_3_wz5oar.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789488362/Give_21.PNG_upscayl_3x_upscayl-standard-4x_rycmo4.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789488362/Give_21.PNG_upscayl_3x_upscayl-standard-4x_rycmo4.webp",
+        "fullBio": "Hej! Wracasz w samą porę, żeby zająć się nowym projektem w leśnych ostępach Transylwanii. Poprzedni właściciel tego zoo zostawił je w dość opłakanym stanie, ale na pewno bez trudu uda Ci się przywrócić je do dawnej świetności, prawda?",
+        "description": "[[postacie:nancy-jones|Nancy]] wita Cię ponownie i po uknutym z [[postacie:emma-goodwin|Emmą]] upadku [[postacie:dominic-myers|Dominika Myersa]] proponuje wspólne prowadzenie nowych azylów dla zwierząt, zaczynając od przejęcia i posprzątania dawnej, zaniedbanej placówki należącej wcześniej do [[postacie:dominic-myers|Myersa]]. Pod jej czujnym okiem radzisz sobie z wyzwaniami, przygotowujesz bezpieczny wybieg i dom dla uratowanego przed nieodpowiedzialną bogatą dziewczyną ([[postacie:tiffany-summers|Tiffany]]) zagrożonego niedźwiedzia brunatnego himalajskiego, a także radzisz sobie z oblężeniem reporterów. Mimo że zapowiadane na początku ciastko okazało się blefem, dzięki Twojej świetnej pracy azyl wspaniale prosperuje, a [[postacie:nancy-jones|Nancy]] doprowadza do tego, że [[postacie:tiffany-summers|Tiffany]] zgadza się odbyć wkrótce edukacyjny staż u Twojego boku.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
     }
 ]
