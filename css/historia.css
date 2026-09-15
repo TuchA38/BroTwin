@@ -544,3 +544,42 @@
     margin: 0;
     color: #ddd;
 }
+
+
+/* Widok mobilny - zdjęcie układa się na całą szerokość, galeria 2 obok siebie i szerszy modal */
+
+@media (max-width: 768px) {
+    .historia-text-content img.img-left,
+    .historia-text-content img.img-right,
+    .historia-text-content .img-left,
+    .historia-text-content .img-right {
+        float: none !important;
+        display: block;
+        max-width: 100%;
+        margin: 15px auto !important;
+    }
+    /* Galeria: 2 zdjęcia obok siebie */
+    .historia-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+    }
+    .historia-gallery-item {
+        height: 55px;
+    }
+    /* Dostosowanie modala na telefonie */
+    #glossary-modal .modal-content {
+        width: 90vw;
+        max-width: 90vw;
+        min-height: 160px;
+        max-height: 80vh;
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding: 1.25rem;
+    }
+    .historia-page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        color: #e0e6ed;
+    }
+}
