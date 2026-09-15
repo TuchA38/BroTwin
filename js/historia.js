@@ -389,6 +389,8 @@ window.HISTORIA = window.HISTORIA || {
 
             if (targetZooId) {
                 window.HISTORIA.scrollToZoo(targetZooId);
+            } else {
+                window.scrollTo(0, 0); // 🌟 Zawsze na górę, jeśli nie wybrano konkretnego zoo
             }
 
             document.dispatchEvent(new CustomEvent("historiaReady"));
