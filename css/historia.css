@@ -255,7 +255,7 @@
 }
 
 [data-game-version="pz2"] .historia-section-title i {
-    color: #6c763e;
+    color: #725b4b;
 }
 
 .historia-timeline {
@@ -470,4 +470,77 @@
         max-width: 100%;
         margin: 15px auto !important;
     }
+}
+
+
+/* Kontener modala – zawsze na środku, z płynnym przenikaniem (fade) */
+
+#glossary-modal.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.15s ease;
+}
+
+
+/* Gdy modal jest aktywny (pokazuje się) */
+
+#glossary-modal.modal:not(.hidden) {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* Fallback gdy klasa .hidden jest narzucona bezpośrednio */
+
+#glossary-modal.hidden {
+    display: flex !important;
+    /* Nadpisujemy display, żeby trzymać strukturę pod animację opacity */
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none;
+}
+
+
+/* Twoje oryginalne style dla zawartości modala (bez żadnego przesuwania) */
+
+#glossary-modal .modal-content {
+    width: auto;
+    max-width: 400px;
+    padding: 16px;
+    background: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+
+/* Tytuł */
+
+#glossary-modal h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.2rem;
+    color: #ffd86b;
+}
+
+
+/* Definicja */
+
+#glossary-modal p {
+    margin: 0;
+    color: #ddd;
 }
