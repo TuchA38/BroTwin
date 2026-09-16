@@ -190,7 +190,12 @@
     "azyl": {
         "title": "Azyl",
         "definition": "Bezpieczne miejsce zapewniające schronienie i ochronę. W kontekście zwierząt jest to obszar, w którym mogą żyć w spokojnych warunkach, z dala od zagrożeń i działalności człowieka.",
-        "aliases": ["azylu"]
+        "aliases": ["azylu", "azylem", "azylów"]
+    },
+    "bankructwo": {
+        "title": "Bankructwo",
+        "definition": "Sytuacja, w której osoba, przedsiębiorstwo lub inna organizacja traci zdolność do regulowania swoich zobowiązań finansowych. W przypadku przedsiębiorstwa może prowadzić do zakończenia działalności, postępowania upadłościowego lub likwidacji majątku.",
+        "aliases": ["zbankrutowali", "bankructwa"]
     },
     "bazar": {
         "title": "Bazar",
@@ -314,6 +319,16 @@
         "title": "Detrytus",
         "definition": "Martwa materia organiczna (szczątki roślin, zwierząt, odchody), która uległa rozdrobnieniu i rozkładowi na powierzchni gleby lub w zbiornikach wodnych.",
         "aliases": ["detrytusu"]
+    },
+    "dochod": {
+        "title": "Dochód",
+        "definition": "Kwota pozostająca po odjęciu określonych kosztów od uzyskanych przychodów. W zależności od kontekstu może oznaczać środki faktycznie pozostające osobie, firmie lub organizacji po uwzględnieniu poniesionych wydatków.",
+        "aliases": ["dochody", "dochodowe", "dochodowych", "dochodu", "dochodowo", "dochodowość"]
+    },
+    "dotacja": {
+        "title": "Dotacja",
+        "definition": "Środki finansowe przekazywane osobie, firmie, instytucji lub organizacji na określony cel, zwykle przez państwo, samorząd albo inną instytucję. Dotacja może służyć m.in. finansowaniu działalności, inwestycji lub realizacji konkretnego projektu.",
+        "aliases": ["dotacje"]
     },
     "draperia": {
         "title": "Draperia",
@@ -451,6 +466,10 @@
         "title": "Frontend",
         "definition": "Część aplikacji lub gry, z którą bezpośrednio wchodzi w interakcję użytkownik. Obejmuje interfejs użytkownika, menu, okna, przyciski oraz inne elementy widoczne na ekranie."
     },
+    "futurystyczny": {
+        "title": "Futurystyczny",
+        "definition": "Nawiązujący do przyszłości, nowoczesnych technologii oraz wyobrażeń o tym, jak mogą wyglądać świat, architektura, pojazdy lub przedmioty w przyszłości. Określenie często opisuje nietypowy, nowoczesny i wyprzedzający swoje czasy wygląd lub charakter."
+    },
     "gawra": {
         "title": "Gawra",
         "definition": "Zimowe legowisko niedźwiedzi, jaskinia w miejscu niedostępnym i ukrytym. Jest to też miejsce, w którym na świat przychodzą młode niedźwiedzie.",
@@ -512,6 +531,11 @@
         "definition": "Wiele samic będących kochankami jakiegoś samca.",
         "aliases": ["haremów", "haremowi", "haremy", "haremach", "haremu", "haremowych", "haremowej", "haremem"]
     },
+    "hedging": {
+        "title": "Hedging",
+        "definition": "Strategia ograniczania ryzyka finansowego poprzez podejmowanie działań, które mają zmniejszyć potencjalne straty wynikające z niekorzystnych zmian cen, kursów walut, stóp procentowych lub innych czynników rynkowych. Hedging może polegać m.in. na wykorzystaniu odpowiednich instrumentów finansowych.",
+        "aliases": ["hedgingowy"]
+    },
     "heksadecymalny": {
         "title": "Heksadecymalny",
         "definition": "Odnosi się do systemu liczbowego o podstawie 16, używanego m.in. do zapisu kolorów w postaci kodów.",
@@ -521,6 +545,11 @@
         "title": "Hermafrodytyzm (obojnactwo)",
         "definition": "Zjawisko występowania w ciele jednego osobnika jednocześnie męskich oraz żeńskich gruczołów rozrodczych albo występowanie w jego ciele gruczołu obojnaczego wytwarzającego jaja i plemniki.",
         "aliases": ["hermafrodytyczne", "hermafrodytyczny"]
+    },
+    "heroiczny": {
+        "title": "Heroiczny",
+        "definition": "Odznaczający się wyjątkową odwagą, poświęceniem lub gotowością do podejmowania trudnych działań w obliczu zagrożenia lub przeciwności. Określenie używane do opisywania czynów, postaw, zachowań lub wydarzeń kojarzących się z bohaterstwem.",
+        "aliases": ["heroicznych"]
     },
     "herpetologia": {
         "title": "Herpetologia",
@@ -571,10 +600,14 @@
         "definition": "Proces zabezpieczania materiału lub powierzchni specjalną substancją w celu ochrony przed wilgocią, zabrudzeniami lub innymi czynnikami zewnętrznymi.",
         "aliases": ["impregnuje"]
     },
+    "incognito": {
+        "title": "Incognito",
+        "definition": "W sposób ukrywający prawdziwą tożsamość, obecność lub cel działania. Określenie oznacza pozostawanie nierozpoznanym lub działanie w tajemnicy przed innymi osobami."
+    },
     "infrastruktura": {
         "title": "Infrastruktura",
         "definition": "Zespół obiektów, instalacji i systemów technicznych niezbędnych do funkcjonowania danego miejsca lub przedsięwzięcia.",
-        "aliases": ["infrastrukturze"]
+        "aliases": ["infrastrukturze", "infrastrukturę", "infrastrukturą"]
     },
     "inicjalizacja": {
         "title": "Inicjalizacja",
@@ -683,6 +716,21 @@
         "definition": "Osłonka z przędzy lub innego materiału ochronnego, w której składane są jaja lub rozwija się stadium młodociane niektórych zwierząt.",
         "aliases": ["kokonach", "kokonów", "kokonie", "kokonu"]
     },
+    "komercyjny": {
+        "title": "Komercyjny",
+        "definition": "Nastawiony przede wszystkim na osiąganie zysków finansowych poprzez sprzedaż produktów, usług lub dostęp do określonych atrakcji.",
+        "aliases": ["komercyjnego", "komercyjnych"]
+    },
+    "kompleks": {
+        "title": "Kompleks",
+        "definition": "Zbiór powiązanych ze sobą elementów, obiektów lub budynków tworzących spójną całość. Określenie może odnosić się m.in. do grupy budynków, terenów lub obiektów pełniących określone funkcje.",
+        "aliases": ["kompleksu", "kompleksem"]
+    },
+    "kompresja": {
+        "title": "Kompresja",
+        "definition": "Proces zmniejszania lub zagęszczania czegoś na określonej przestrzeni.",
+        "aliases": ["kompresji"]
+    },
     "komuna": {
         "title": "Komuna",
         "definition": "Grupa osobników żyjących razem w sposób społeczny, współdzieląca przestrzeń i zasoby.",
@@ -692,6 +740,16 @@
         "title": "Koncentryczny",
         "definition": "Mający wspólny środek; ułożony w kręgi lub pierścienie otaczające ten sam punkt.",
         "aliases": ["koncentryczne", "koncentrycznymi"]
+    },
+    "koncern": {
+        "title": "Koncern",
+        "definition": "Duże przedsiębiorstwo lub grupa powiązanych ze sobą przedsiębiorstw działających pod wspólnym zarządem lub kontrolą, często prowadzących działalność w wielu branżach, krajach lub na dużą skalę.",
+        "aliases": ["koncernem"]
+    },
+    "konfiskata": {
+        "title": "Konfiskata",
+        "definition": "Przymusowe odebranie i przejęcie własności lub przedmiotów przez uprawnioną osobę, instytucję albo organ, zwykle na podstawie przepisów prawa. W szerszym znaczeniu może oznaczać również odebranie czegoś w ramach określonych zasad lub działań.",
+        "aliases": ["konfiskat"]
     },
     "konwent": {
         "title": "Konwent",
@@ -706,6 +764,11 @@
     "korelacja": {
         "title": "Korelacja",
         "definition": "Zależność lub związek między dwiema cechami lub zjawiskami, w którym zmiana jednej wiąże się ze zmianą drugiej."
+    },
+    "korporacja": {
+        "title": "Korporacja",
+        "definition": "Duże przedsiębiorstwo lub organizacja prowadząca działalność na szeroką skalę, często posiadająca rozbudowaną strukturę, wiele oddziałów i dużą liczbę pracowników. Termin może odnosić się również do grupy powiązanych ze sobą spółek działających pod wspólnym zarządem.",
+        "aliases": ["korporacjami"]
     },
     "korpulentny": {
         "title": "Korpulentny",
@@ -746,6 +809,10 @@
         "definition": "Pokryty długą, gęstą i często nieco nastroszoną sierścią lub futrem.",
         "aliases": ["kudłatym"]
     },
+    "kurort": {
+        "title": "Kurort",
+        "definition": "Miejscowość lub obszar przeznaczony głównie do wypoczynku i turystyki, często oferujący atrakcje, miejsca noclegowe oraz obiekty związane z rekreacją, zdrowiem lub rozrywką."
+    },
     "kwilenie": {
         "title": "Kwilenie",
         "definition": "Cienki, wysoki dźwięk wydawany przez młode ptaki lub inne zwierzęta, przypominający pisk."
@@ -784,10 +851,20 @@
         "definition": "Grupa ryb lub innych zwierząt wodnych pływających razem w skoordynowany sposób. Tworzenie ławic zwiększa bezpieczeństwo przed drapieżnikami, ułatwia zdobywanie pożywienia oraz pozwala oszczędzać energię podczas pływania.",
         "aliases": ["ławic", "ławicę", "ławicy", "ławice", "ławicowe"]
     },
+    "malwersacja": {
+        "title": "Malwersacja",
+        "definition": "Nieuczciwe przywłaszczenie lub wykorzystanie powierzonych pieniędzy, majątku albo innych środków, zwykle w celu osiągnięcia osobistej korzyści.",
+        "aliases": ["malwersacje"]
+    },
     "markiza": {
         "title": "Markiza",
         "definition": "Ozdobne zadaszenie wykonane z tkaniny lub innego materiału, montowane nad wejściem, oknem albo tarasem w celu zapewnienia cienia i ochrony przed warunkami atmosferycznymi.",
         "aliases": ["markizy"]
+    },
+    "marza": {
+        "title": "Marża",
+        "definition": "Różnica między ceną sprzedaży produktu lub usługi a kosztem jego zakupu lub wytworzenia, wyrażana najczęściej jako kwota albo procent ceny sprzedaży. Określa, jaka część ceny pozostaje po uwzględnieniu bezpośredniego kosztu produktu lub usługi.",
+        "aliases": ["marżę"]
     },
     "matowy": {
         "title": "Matowy",
@@ -819,6 +896,11 @@
         "definition": "Zbiór lub kolekcja zwierząt utrzymywanych przez człowieka. Dawniej określenie to odnosiło się do prywatnych kolekcji egzotycznych zwierząt, natomiast współcześnie bywa używane jako synonim ogrodu zoologicznego lub grupy różnorodnych zwierząt.",
         "aliases": ["menażerii", "menażerię"]
     },
+    "metamorfoza": {
+        "title": "Metamorfoza",
+        "definition": "Głęboka przemiana wyglądu, budowy lub charakteru organizmu, obiektu albo osoby. W biologii oznacza proces rozwoju, podczas którego młodociana forma organizmu przechodzi w wyraźnie odmienną postać dorosłą, jak u owadów czy płazów.",
+        "aliases": ["metamorfozę"]
+    },
     "mezopelagiczny": {
         "title": "Mezopelagiczny",
         "definition": "Związany ze strefą mezopelagiczną, czyli warstwą oceanu położoną na głębokości od około 200 do 1 000 metrów. Dociera tam bardzo niewiele światła słonecznego, dlatego zamieszkujące ją organizmy są przystosowane do życia w półmroku lub ciemności.",
@@ -833,6 +915,10 @@
         "title": "Migracja",
         "definition": "Sezonowe i regularne przemieszczanie się zwierząt na różne odległości, zwykle związane z dostępnością pożywienia, warunkami klimatycznymi lub rozrodem.",
         "aliases": ["migrują", "migracyjne", "migracji", "migrujących"]
+    },
+    "mikroklimat": {
+        "title": "Mikroklimat",
+        "definition": "Warunki klimatyczne występujące na niewielkim, określonym obszarze, które mogą różnić się od warunków panujących w jego najbliższym otoczeniu. Na mikroklimat wpływają m.in. temperatura, wilgotność, nasłonecznienie, wiatr, ukształtowanie terenu oraz obecność roślinności i wody."
     },
     "miot": {
         "title": "Miot",
@@ -872,10 +958,25 @@
         "title": "Nominatywny",
         "definition": "Określający podgatunek typowy dla danego gatunku, od którego wywodzi się nazwa gatunku głównego."
     },
+    "nowatorski": {
+        "title": "Nowatorski",
+        "definition": "Wprowadzający nowe, oryginalne lub dotąd rzadko stosowane rozwiązania, pomysły albo metody. Określenie używane do opisywania czegoś, co wyróżnia się innowacyjnym podejściem i odchodzi od tradycyjnych sposobów działania.",
+        "aliases": ["nowatorskie"]
+    },
     "oaza": {
         "title": "Oaza",
         "definition": "Miejsce na pustyni lub półpustyni, w którym występuje dostęp do wody, umożliwiający rozwój roślinności i życia.",
         "aliases": ["oazie", "oazy", "oazę"]
+    },
+    "odpicowac": {
+        "title": "Odpicować",
+        "definition": "Starannie odnowić, udekorować lub ulepszyć coś w celu nadania temu atrakcyjnego i efektownego wyglądu. Jest to potoczne określenie używane np. w odniesieniu do budynku, pojazdu, pomieszczenia lub innego obiektu.",
+        "aliases": ["odpicowaniem"]
+    },
+    "odrestaurować": {
+        "title": "Odrestaurować",
+        "definition": "Przywrócić zabytkowemu lub uszkodzonemu obiektowi jego wcześniejszy wygląd, stan albo charakter poprzez odpowiednią naprawę, renowację i odnowienie.",
+        "aliases": ["odrestaurował"]
     },
     "odruchkumaka": {
         "title": "Odruch kumaka",
@@ -997,6 +1098,11 @@
         "definition": "Najniższa warstwa roślin i grzybów w lesie, pokrywająca jego dno.",
         "aliases": ["podszyciu lasu", "poszyciu leśnym", "poszycia leśnego", "ściółce leśnej", "ściółkę leśną", "leśnego poszycia"]
     },
+    "prestiz": {
+        "title": "Prestiż",
+        "definition": "Uznanie, szacunek i wysoka pozycja, jaką osoba, miejsce, organizacja lub marka cieszy się w oczach innych. Prestiż może wynikać m.in. z osiągnięć, jakości, renomy, wyjątkowego charakteru lub statusu.",
+        "aliases": ["prestiżu", "prestiżowych"]
+    },
     "prokreacja": {
         "title": "Prokreacja",
         "definition": "Stosunek seksualny odbywany w celu spłodzenia i urodzenia potomstwa.",
@@ -1012,15 +1118,34 @@
         "definition": "Odnoszący się do pierwotnych, odziedziczonych cech budowy lub umaszczenia, charakterystycznych dla przodków gatunku.",
         "aliases": ["prymitywne"]
     },
+    "przychod": {
+        "title": "Przychód",
+        "definition": "Wpływy pieniężne uzyskiwane przez osobę, przedsiębiorstwo lub inną organizację w związku z prowadzoną działalnością, sprzedażą produktów, świadczeniem usług albo innymi źródłami finansowania.",
+        "aliases": ["przychodów"]
+    },
+    "przyczołek": {
+        "title": "Przyczółek",
+        "definition": "Miejsce lub punkt stanowiący podstawę do dalszego działania, rozwoju lub prowadzenia określonych działań. W znaczeniu przenośnym może oznaczać również początek lub ważną bazę dla określonej inicjatywy, idei albo działalności."
+    },
     "przysadzisty": {
         "title": "Przysadzisty",
         "definition": "O zwartej, masywnej budowie ciała, stosunkowo niskiej i szerokiej w proporcjach.",
         "aliases": ["przysadziste", "przysadzistym"]
     },
+    "punkt_kulminacyjny": {
+        "title": "Punkt kulminacyjny",
+        "definition": "Najbardziej intensywny, przełomowy lub emocjonujący moment wydarzenia, procesu albo historii, w którym napięcie lub dane zjawisko osiąga swoje największe nasilenie.",
+        "aliases": ["punktem kulminacyjnym"]
+    },
     "ranczer": {
         "title": "Ranczer",
         "definition": "Osoba zajmująca się prowadzeniem rancza, czyli rozległego gospodarstwa hodowlanego, najczęściej nastawionego na chów zwierząt.",
         "aliases": ["ranczerami"]
+    },
+    "rebranding": {
+        "title": "Rebranding",
+        "definition": "Proces zmiany wizerunku istniejącej marki, obejmujący m.in. jej nazwę, logo, identyfikację wizualną, sposób komunikacji lub sposób prezentowania produktów i usług. Celem rebrandingu jest nadanie marce nowego charakteru lub dostosowanie jej do zmienionych założeń.",
+        "aliases": ["rebrandujesz"]
     },
     "regeneracja": {
         "title": "Regeneracja",
@@ -1032,6 +1157,11 @@
         "definition": "To ponowne wprowadzenie na stare miejsca bytowania rodzimych gatunków zwierząt i roślin, kiedyś tam żyjących, lecz wcześniej wytępionych.",
         "aliases": ["reintrodukcją", "reintrodukcję", "reintrodukcji"]
     },
+    "rekrutacja": {
+        "title": "Rekrutacja",
+        "definition": "Proces poszukiwania, wyboru i pozyskiwania osób do określonych zadań, stanowisk lub ról. Może obejmować m.in. zgłaszanie kandydatów, ocenę ich umiejętności oraz wybór odpowiednich osób.",
+        "aliases": ["rekrutacji"]
+    },
     "renaturyzacja": {
         "title": "Renaturyzacja",
         "definition": "Proces przywracania naturalnego charakteru przekształconym lub zdegradowanym obszarom poprzez odtwarzanie ich naturalnych warunków, procesów i ekosystemów. Może obejmować m.in. przywracanie naturalnego biegu rzek, odtwarzanie siedlisk oraz wspieranie powrotu rodzimych gatunków roślin i zwierząt.",
@@ -1041,6 +1171,11 @@
         "title": "Rendering",
         "definition": "Prawidłowo generowany i wyświetlany przez silnik gry lub aplikacji.",
         "aliases": ["renderowania", "renderowaniem", "Renderingu", "renderowany", "renderowane", "renderowania", "renderowaniu", "renderować"]
+    },
+    "renowacja": {
+        "title": "Renowacja",
+        "definition": "Proces odnawiania, naprawiania i przywracania obiektu, budynku lub innego elementu do dobrego stanu, często z zachowaniem jego dotychczasowego wyglądu i charakteru.",
+        "aliases": ["renowację"]
     },
     "reprodukcja": {
         "title": "Reprodukcja",
@@ -1246,6 +1381,10 @@
         "definition": "Pierwsza para odnóży gębowych u pajęczaków, służąca do chwytania i rozrywania pokarmu, obrony oraz wstrzykiwania jadu.",
         "aliases": ["szczękoczułków"]
     },
+    "szkopul": {
+        "title": "Szkopuł",
+        "definition": "Problem, trudność lub przeszkoda, która utrudnia wykonanie czegoś albo osiągnięcie określonego celu. Określenie często odnosi się do niewielkiego, ale istotnego problemu."
+    },
     "szpic": {
         "title": "Szpic",
         "definition": "Ostry, zwężający się ku końcowi wierzchołek lub zakończenie o spiczastym kształcie."
@@ -1254,6 +1393,11 @@
         "title": "Ślad węglowy",
         "definition": "Całkowita ilość gazów cieplarnianych, zwłaszcza dwutlenku węgla, emitowanych w wyniku działań człowieka.",
         "aliases": ["śladu węglowego"]
+    },
+    "tajfun": {
+        "title": "Tajfun",
+        "definition": "Silny cyklon tropikalny występujący nad północno-zachodnim Pacyfikiem, charakteryzujący się bardzo silnym wiatrem, intensywnymi opadami deszczu i często wysokimi falami. Tajfuny mogą powodować poważne zniszczenia oraz zagrożenie dla ludzi, zwierząt i infrastruktury.",
+        "aliases": ["tajfunie"]
     },
     "taksonomia": {
         "title": "Taksonomia",
@@ -1364,6 +1508,11 @@
         "definition": "Efekt wizualny przyciemniający lub rozjaśniający krawędzie obrazu, skupiający uwagę na jego centrum.",
         "aliases": ["winietowania", "winiety"]
     },
+    "wizjonerski": {
+        "title": "Wizjonerski",
+        "definition": "Nawiązujący do odważnych, nowatorskich i dalekosiężnych pomysłów lub koncepcji, które wyprzedzają swoje czasy i mogą znacząco wpłynąć na przyszły rozwój. Określenie używane do opisywania osób, projektów, idei lub rozwiązań cechujących się wyjątkową pomysłowością i szeroką wizją.",
+        "aliases": ["wizjonerskie"]
+    },
     "wokalizacja": {
         "title": "Wokalizacja",
         "definition": "Dźwięki wydawane przez zwierzęta, będące w większości wytworem aparatu głosowego.",
@@ -1415,6 +1564,15 @@
         "title": "Zapylenie",
         "definition": "Proces zachodzący w kwiatach roślin nasiennych, polegający na przeniesieniu pyłku i jego rozwoju zakończonym zapłodnieniem komórki jajowej.",
         "aliases": ["zapylaniu", "zapylaczy"]
+    },
+    "zjednywac": {
+        "title": "Zjednywać",
+        "definition": "Zdobywać czyjąś sympatię, przychylność, zaufanie lub poparcie poprzez swoje działania, zachowanie albo sposób postępowania.",
+        "aliases": ["zjednuje"]
+    },
+    "zloty_wiek": {
+        "title": "Złoty wiek",
+        "definition": "Okres uznawany za czas największego rozwoju, rozkwitu i sukcesów w historii określonej osoby, grupy, dziedziny, miejsca lub cywilizacji. Określenie może odnosić się zarówno do rzeczywistego okresu historycznego, jak i umownie najlepszego etapu rozwoju czegoś."
     },
     "zulusi": {
         "title": "Zulusi",
