@@ -10,7 +10,7 @@
         "fullBio": {
             "p1": "<p>Właścicielką i bezwzględną zarządcą <b>Fundacji Dziki Azyl</b> jest [[postacie:deianira-upjersliwa|Deianira Upjersliwa]], która w mediach kreuje park jako wielkoduszne schronienie dla zwierząt z interwencji i trudnych warunków. W rzeczywistości jest to wysoce komercyjny park rozrywki, w którym cała przestrzeń została zaprojektowana pod kątem maksymalnej kompresji tłumu i wyciągania zysków z biletów, drogich pamiątek oraz atrakcji pobocznych. Teren obiektu zdominowany jest przez krzykliwą infrastrukturę. Szerokie, betonowe aleje otoczone są ciągami jaskrawych punktów gastronomicznych, ekskluzywnymi strefami VIP oraz luksusowymi restauracjami z widokiem na wybiegi. Wzdłuż ogrodzeń rozciągają się agresywne banery sponsorów, a głośna muzyka z głośników zagłusza naturalne odgłosy przyrody. Same wybiegi dla zwierząt są małe, ciasne i pozbawione bogatej roślinności. Stanowią one jedynie tło dla komercyjnego widowiska.</p>",
             "p2": "<p>W <b>Dzikim Azylu</b> nie liczy się dobrostan podopiecznych, lecz wyłącznie rachunek zysków i strat. To miejsce, w którym bezapelacyjnie rządzi pieniądz. Każde działanie, od agresywnego marketingu po drastyczne cięcia kosztów utrzymania, jest przeliczane na potencjalny przychód, a państwowe dotacje oraz wpłaty od naiwnych darczyńców zasilają głównie biznesowe imperium właścicielki. [[postacie:deianira-upjersliwa|Deianira]] bezwzględnie wykorzystuje obecność rzadkich gatunków do przyciągania błysków aparatów i sponsorów, paraliżując pracę zespołu weterynaryjnego absurdalną biurokracją i narzucanymi oszczędnościami. To właśnie tutaj przez pewien czas pracowała lekarka weterynarii [[postacie:ethelien-mumba|Ethelien Mumba]], która mimo stałego oporu ze strony kierownictwa walczyła o zdrowie i bezpieczeństwo pacjentów. To do tych tłumnych, przesyconych chciwością sektorów trafiły ocalałe zwierzęta po tragicznej katastrofie w [[historia:zoo-w-andigawen|Zoo w Andigawen]], co tworzy dramatyczny kontrast z ich dawnym, spokojnym i botanicznym azylem.</p>",
-            "p3": "<p>Teren fundacji służy również jako przestrzeń dla zewnętrznych inicjatyw komercyjnych, w tym przedsięwzięć realizowanych we współpracy z koncernem [[postacie:dominic-myers|Dominika Myersa]]. W obiekcie regularnie odbywają się zamknięte pokazy dla inwestorów, imprezy firmowe oraz widowiskowe kampanie reklamowe z udziałem podopiecznych. Cała infrastruktura parku została w pełni podporządkowana obsłudze masowych wydarzeń komercyjnych, co ostatecznie przypieczętowało rolę tego miejsca jako widowiskowego zaplecza dla wielkiego biznesu, w którym idea ochrony przyrody służy jedynie za wygodną parawanową narrację.</p>"
+            "p3": "<p>Teren fundacji służy również jako przestrzeń dla zewnętrznych inicjatyw komercyjnych, w tym przedsięwzięć realizowanych we współpracy z koncernem [[postacie:dominic-myers|Dominica Myersa]]. W obiekcie regularnie odbywają się zamknięte pokazy dla inwestorów, imprezy firmowe oraz widowiskowe kampanie reklamowe z udziałem podopiecznych. Cała infrastruktura parku została w pełni podporządkowana obsłudze masowych wydarzeń komercyjnych, co ostatecznie przypieczętowało rolę tego miejsca jako widowiskowego zaplecza dla wielkiego biznesu, w którym idea ochrony przyrody służy jedynie za wygodną parawanową narrację.</p>"
         },
         "gallery": [
             "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788982289/dziki-azyl_1_uolw6l.webp",
@@ -1905,7 +1905,250 @@
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789488362/Give_21.PNG_upscayl_3x_upscayl-standard-4x_rycmo4.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789488362/Give_21.PNG_upscayl_3x_upscayl-standard-4x_rycmo4.webp",
         "fullBio": "Hej! Wracasz w samą porę, żeby zająć się nowym projektem w leśnych ostępach Transylwanii. Poprzedni właściciel tego zoo zostawił je w dość opłakanym stanie, ale na pewno bez trudu uda Ci się przywrócić je do dawnej świetności, prawda?",
-        "description": "[[postacie:nancy-jones|Nancy]] wita Cię ponownie i po uknutym z [[postacie:emma-goodwin|Emmą]] upadku [[postacie:dominic-myers|Dominika Myersa]] proponuje wspólne prowadzenie nowych azylów dla zwierząt, zaczynając od przejęcia i posprzątania dawnej, zaniedbanej placówki należącej wcześniej do [[postacie:dominic-myers|Myersa]]. Pod jej czujnym okiem radzisz sobie z wyzwaniami, przygotowujesz bezpieczny wybieg i dom dla uratowanego przed nieodpowiedzialną bogatą dziewczyną ([[postacie:tiffany-summers|Tiffany]]) zagrożonego niedźwiedzia brunatnego himalajskiego, a także radzisz sobie z oblężeniem reporterów. Mimo że zapowiadane na początku ciastko okazało się blefem, dzięki Twojej świetnej pracy azyl wspaniale prosperuje, a [[postacie:nancy-jones|Nancy]] doprowadza do tego, że [[postacie:tiffany-summers|Tiffany]] zgadza się odbyć wkrótce edukacyjny staż u Twojego boku.",
+        "description": "[[postacie:nancy-jones|Nancy]] wita Cię ponownie i po uknutym z [[postacie:emma-goodwin|Emmą]] upadku [[postacie:dominic-myers|Dominica Myersa]] proponuje wspólne prowadzenie nowych azylów dla zwierząt, zaczynając od przejęcia i posprzątania dawnej, zaniedbanej placówki należącej wcześniej do [[postacie:dominic-myers|Myersa]]. Pod jej czujnym okiem radzisz sobie z wyzwaniami, przygotowujesz bezpieczny wybieg i dom dla uratowanego przed nieodpowiedzialną bogatą dziewczyną ([[postacie:tiffany-summers|Tiffany]]) zagrożonego niedźwiedzia brunatnego himalajskiego, a także radzisz sobie z oblężeniem reporterów. Mimo że zapowiadane na początku ciastko okazało się blefem, dzięki Twojej świetnej pracy azyl wspaniale prosperuje, a [[postacie:nancy-jones|Nancy]] doprowadza do tego, że [[postacie:tiffany-summers|Tiffany]] zgadza się odbyć wkrótce edukacyjny staż u Twojego boku.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
+    },
+    {
+        "id": "rezerwat-edukacyjny-purmamarca",
+        "name": "Rezerwat Edukacyjny Purmamarca",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Pampasy i pozwolenia",
+        "dlcId": {
+            "pz1pc": "grasslands-animal-pack",
+            "pz1console": "grasslands&africa-bundle"
+        },
+        "reward": "Posąg pancernika",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515903/pancernik_p3oihm.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515903/pancernik_p3oihm.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515904/pancernik_1_xohsvt.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515902/pancernik_2_za0exx.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515906/pancernik_3_hew7d5.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789490239/Permits_and_Pampas_upscayl_3x_upscayl-standard-4x_oyai7z.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789490239/Permits_and_Pampas_upscayl_3x_upscayl-standard-4x_oyai7z.webp",
+        "fullBio": "Rezerwat Edukacyjny Purmamarca to niewielki ośrodek pomagający zwierzętom wrócić do zdrowia. Poświęcamy tu także dużo czasu na edukację zarówno uczniów, jak i odwiedzających, ale nasza najnowsza stażystka zdaje się wymagać wyjątkowo dużo pracy... Z drugiej strony czym byłoby życie bez niewielkich wyzwań, prawda?",
+        "description": "Bogata i rozpuszczona [[postacie:tiffany-summers|Tiffany]] rozpoczyna w zoo swój sądowy staż edukacyjny, pożyczając placówce część swoich egzotycznych zwierząt przyzwyczajonych do luksusów. Choć początkowo jest arogancka i uważa, że wszystko wie lepiej, z czasem pod Twoim okiem przechodzi realną metamorfozę, zyskując sympatię w social mediach i autentyczną troskę o los zagrożonych gatunków. Gdy na jaw wychodzi, że ukrywała kolejne zwierzęta w domku przy basenie, sprowadzasz je do zoo, a [[postacie:tiffany-summers|Tiffany]] – zaimponowana wspaniałymi warunkami i reakcją [[postacie:nancy-jones|Nancy]] – ostatecznie decyduje się pozostawić swoje pupile pod Twoją opieką, zyskując oficjalne pozwolenie i planując własną przyszłość w branży zoologicznej.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
+    },
+    {
+        "id": "letni-projekt",
+        "name": "Letni projekt",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Eg-zoo-tycznie",
+        "dlcId": {
+            "pz1pc": "tropical-pack",
+            "pz1console": "arid&tropical-bundle"
+        },
+        "reward": "Posąg fossy",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515926/fossa_pzntqe.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515926/fossa_pzntqe.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515927/fossa_1_evczqi.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515928/fossa_2_aumesc.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788515925/fossa_3_ptovjl.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789491726/Un-Bali-vable_upscayl_3x_upscayl-standard-4x_ss7tak.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789491726/Un-Bali-vable_upscayl_3x_upscayl-standard-4x_ss7tak.webp",
+        "fullBio": "Niewiele jest miejsc emanujących tak wielkim urokiem, jak ta dżungla, w której niedługo światło dzienne ujrzy „Letni projekt”: rajskie zoo w dżungli zaprojektowane i zbudowane przez młodą społeczniczkę i początkującą działaczkę ochrony przyrody, [[postacie:tiffany-summers|Tiffany Summers]]. Będzie je prowadziła pod czujnym okiem wyglądającej dość znajomo osoby wynajętej do pomocy przez jej ojca.<br>Wysłała Ci listę zadań, z którymi musisz się uporać przed jej przybyciem, więc zaczynajmy!",
+        "description": "Bogata i kapryśna [[postacie:tiffany-summers|Tiffany]], zachwycona swoim niedawnym stażem, otrzymuje od ojca w prezencie własne zoo, jednak zmuszona jest do współpracy z nowym menedżerem – chciwym i nieprzyjemnym [[postacie:dominic-myers|Dominiciem Myersem]]. Ponieważ [[postacie:dominic-myers|Dominic]] tnie koszty, lekceważy dobrostan zwierząt i wywołuje kryzys wizerunkowy, [[postacie:tiffany-summers|Tiffany]] w tajemnicy przed nim przekazuje Ci bezpośrednią listę zadań, oczekując uratowania parku i odzyskania sympatii znajomych. Dzięki Twoim działaniom, poprawie dobrostanu i rozkwitowi placówki, [[postacie:tiffany-summers|Tiffany]] ostatecznie demaskuje malwersacje [[postacie:dominic-myers|Dominica]], co skutkuje jego zwolnieniem przez jej tatę za trwonienie budżetu na przeterminowany szampan. W nagrodę za spektakularny sukces i uratowanie reputacji, [[postacie:tiffany-summers|Tiffany]] zaprasza Cię na ekskluzywną imprezę dla odzyskanych znajomych, celebrując triumf nowo uformowanego, zrównoważonego biznesu.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
+    },
+    {
+        "id": "rajski-park-tiffany",
+        "name": "Rajski park Tiffany",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Słońce, piasek i szpilki",
+        "dlcId": {
+            "pz1pc": "arid-animal-pack",
+            "pz1console": "arid&tropical-bundle"
+        },
+        "reward": "Posąg wielbłąda",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518771/dromader_yxf52d.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518771/dromader_yxf52d.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518773/dromader_1_jmaxfg.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518774/dromader_2_nug9nk.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518770/dromader_3_f2eeus.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789500029/Sun2C_Stilettos_upscayl_3x_upscayl-standard-4x_yw8fq4.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789500029/Sun2C_Stilettos_upscayl_3x_upscayl-standard-4x_yw8fq4.webp",
+        "fullBio": "Rajski park Tiffany to nowa atrakcja turystyczna, która przybliży gościom piękno, historię i faunę Arabii Saudyjskiej poprzez nowoczesne metody edukacji, sklepy i restauracje... Pod warunkiem, że Ty i [[postacie:tiffany-summers|Tiffany]] staniecie na wysokości zadania.",
+        "description": "[[postacie:tiffany-summers|Tiffany]] kontaktuje się z Tobą pod nazwą „Zoomaniak”, prosząc o pomoc w zbudowaniu luksusowego zoo w Arabii Saudyjskiej, które podarował jej ojciec jako pierwsze poważne, dorosłe wyzwanie. Choć początkowo narzeka na ciężką pracę, upał i marudzenie swoich znajomych, pod Twoim okiem sprawnie radzi sobie z luksusowymi wybiegami, dobrostanem zwierząt i obsługą gości. Ostatecznie placówka odnosi gigantyczny sukces, a odwiedzający ją ojciec [[postacie:tiffany-summers|Tiffany]] jest tak dumny z autentycznego zaangażowania córki, że oferuje jej posadę w zarządzie. [[postacie:tiffany-summers|Tiffany]] jednak postanawia kontynuować swoją nową pasję w branży zoologicznej i zaprasza Cię do dalszej wspólnej pracy, wciąż zastanawiając się nad Twoim prawdziwym imieniem.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
+    },
+    {
+        "id": "rezerwat-przyrody-goodwinow",
+        "name": "Rezerwat przyrody Goodwinów",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Wyzwanie w Oceanii",
+        "dlcId": {
+            "pz1pc": "oceania-pack",
+            "pz1console": "oceania&eurasia-bundle"
+        },
+        "reward": "Posąg kiwi",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518792/kiwi_erldq1.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518792/kiwi_erldq1.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518793/kiwi_1_wqs5yc.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518794/kiwi_2_vjoaxc.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788518796/kiwi_3_b3yogs.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789500729/An_Oceanic_Challenge_upscayl_3x_upscayl-standard-4x_pklwdt.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789500729/An_Oceanic_Challenge_upscayl_3x_upscayl-standard-4x_pklwdt.webp",
+        "fullBio": "Na skąpanej w słońcu rajskiej wyspie [[postacie:emma-goodwin|Emma Goodwin]] planuje założyć ogród zoologiczny w ramach pierwszego przedsięwzięcia realizowanego wspólnie z ojcem.<br>Czy [[postacie:bernard-goodwin|Bernie]] zdoła oddać stery, abyśmy mogli wspólnie zbudować to zoo od podstaw?",
+        "description": "[[postacie:emma-goodwin|Emma]] i [[postacie:bernard-goodwin|Bernie]] kontaktują się z Tobą, proponując udział w nowym, wyjątkowym projekcie rodzinnym – budowie i rozbudowie nowoczesnego zoo, które ma być bliskie ich sercom. Z entuzjazmem rzucasz się w wir pracy, dbając o infrastrukturę, edukację i roślinność. Pod czujnym okiem [[postacie:emma-goodwin|Emmy]] i dumnego [[postacie:bernard-goodwin|Berniego]] (którego zachwyt powstrzymał go nawet od opowiadania żartów na rodzinnym obiedzie) podnosisz dobrostan zwierząt, rozwijasz programy rozrodu i ochronne, a także sprowadzasz ulubione ptaki [[postacie:bernard-goodwin|Berniego]] – kiwi. Ostatecznie całkowicie odłączasz park od tradycyjnej sieci energetycznej, przechodząc na w pełni odnawialne źródła energii, wypuszczasz część zwierząt na wolność i przyciągasz rzesze zachwyconych gości, odnosząc kolejny spektakularny sukces pod szyldem rodziny Goodwinów.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
+    },
+    {
+        "id": "zoo-a-la-jones",
+        "name": "Zoo à la Jones",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Ciii, to niespodzianka",
+        "dlcId": {
+            "pz1pc": "eurasia-animal-pack",
+            "pz1console": "oceania&eurasia-bundle"
+        },
+        "reward": "Posąg takina",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520527/takin_vgbqxu.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520527/takin_vgbqxu.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520522/takin_1_awgyik.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520524/takin_2_kdtqqt.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520525/takin_3_suouru.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789501489/Shhh27s_a_surprise_upscayl_3x_upscayl-standard-4x_ygs6nx.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789501489/Shhh27s_a_surprise_upscayl_3x_upscayl-standard-4x_ygs6nx.webp",
+        "fullBio": "[[postacie:bernard-goodwin|Bernie]] zebrał ponownie całą ekipę, aby pomogła mu w drobnym, acz ważnym dla niego, projekcie — chodzi o przygotowanie prezentu dla [[postacie:nancy-jones|Nancy]] z okazji przejścia przez nią na emeryturę! Będziemy musieli postarać się jak najlepiej wykorzystać ograniczoną przestrzeń do stworzenia czegoś prawdziwie czarującego. [[postacie:bernard-goodwin|Bernie]] postara się czymś zająć [[postacie:nancy-jones|Nancy]], podczas gdy Ty zajmiesz się pracą!",
+        "description": "[[postacie:bernard-goodwin|Bernie]] kontaktuje się z Tobą z nietypową prośbą – [[postacie:nancy-jones|Nancy]] oficjalnie przechodzi na emeryturę, a ponieważ nuda z pewnością doprowadziłaby ją do szału, [[postacie:bernard-goodwin|Bernie]] postanawia zbudować dla niej w tajemnicy dedykowane zoo. Twoim zadaniem jest stworzenie od podstaw malutkiego, świetnie prosperującego parku, który zapewni doskonałe warunki zwierzętom, wysoki poziom satysfakcji gości oraz nienaganne zamożenie i organizację personelu. Gdy [[postacie:nancy-jones|Nancy]] domyśla się części planu i przesyła swoje uwagi dotyczące dobrostanu i rozrodu, do akcji wkracza [[postacie:emma-goodwin|Emma]], narzucając dodatkowe wymogi modernizacyjne: przejście na w pełni odnawialne źródła energii, spłacenie wszelkich pożyczek, podniesienie oceny ochrony oraz sprowadzenie kolejnych gatunków. Mimo presji czasu bezbłędnie realizujesz wszystkie wytyczne, a [[postacie:bernard-goodwin|Bernie]] z zachwytem oprowadza po ukończonym, nowoczesnym raju zaskoczoną i wzruszoną [[postacie:nancy-jones|Nancy]], ucinając sobie przy tym żarty na temat własnych słabości do ciastek i potencjalnej, nadchodzącej w przyszłości własnej emerytury.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
+    },
+    {
+        "id": "rezerwat-summersow",
+        "name": "Rezerwat Summersów",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Kozaki, nie kozy!",
+        "dlcId": {
+            "pz1pc": "barnyard-animal-pack",
+            "pz1console": "barnyard&zookeepers-bundle"
+        },
+        "reward": "Posąg kozy",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520546/koza_vcbqr0.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520546/koza_vcbqr0.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520548/koza_1_ufbvtq.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520545/koza_2_xrt9tc.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520543/koza_3_dvc6gd.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789502757/Coats21_upscayl_3x_upscayl-standard-4x_tbwqd6.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789502757/Coats21_upscayl_3x_upscayl-standard-4x_tbwqd6.webp",
+        "fullBio": "To małe wiejskie zoo zostało zakupione przez pana Summersa, który przesłyszał się, gdy jego córka [[postacie:tiffany-summers|Tiffany]] poprosiła o nowe kozaki na wyjazd w góry! Dziewczyna nie spodziewała się kóz, ale żadne wyzwanie jej nie straszne! [[postacie:tiffany-summers|Tiffany]] ma ambitne plany co do tego zoo, ale już zarezerwowała lot, więc to Ty musisz wziąć byka za rogi i stworzyć legendarny rezerwat!",
+        "description": "[[postacie:tiffany-summers|Tiffany]] kontaktuje się z Tobą z luksusowego wyjazdu w góry w Aspen, informując, że jej ojciec przez pomyłkę kupił jej kolejne zoo w formie wiejskiego gospodarstwa, zamiast obiecywanych kozaków. Zostawiając Cię całkowicie z zarządzaniem i „odpicowaniem” placówki pod swoją dłuższą nieobecność z powodu „śniegu” i VIP-ów, Tiffany prosi o ulepszenie wybiegów, edukacji oraz podniesienie prestiżu miejsca. Dzięki Twojej ciężkiej pracy i zaangażowaniu przekształcasz zwykłe gospodarstwo w luksusowy Rezerwat Summersów, wprowadzając edukacyjne interakcje z gośćmi oraz stylowy pociąg parowy. Ostatecznie park staje się hitem medialnym, przyciągając tłumy i zbierając ogromne uznanie, a [[postacie:tiffany-summers|Tiffany]] świętuje sukces na odległość.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
+    },
+    {
+        "id": "zoo-frontier",
+        "name": "Zoo Frontier",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Gwóźdź programu",
+        "dlcId": {
+            "pz1pc": "zookeepers-animal-pack",
+            "pz1console": "barnyard&zookeepers-bundle"
+        },
+        "reward": "Posąg żółwia",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525135/%C5%BC%C3%B3%C5%82w_xjfex0.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525135/%C5%BC%C3%B3%C5%82w_xjfex0.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525129/%C5%BC%C3%B3%C5%82w_1_lmit4g.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525130/%C5%BC%C3%B3%C5%82w_2_bnhjcp.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525137/%C5%BC%C3%B3%C5%82w_3_xfrbw4.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789503022/The_Mane_Event_upscayl_3x_upscayl-standard-4x_pdbals.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789503022/The_Mane_Event_upscayl_3x_upscayl-standard-4x_pdbals.webp",
+        "fullBio": "[[postacie:emma-goodwin|Emma]] pracuje nad nowym projektem, przy którym Twoje doświadczenie będzie bezcenne. Zoo Frontier kończy 5 lat i z tej okazji w ich siedzibie głównej ma się odbyć wielkie przyjęcie. Niech to będzie rocznica, której nikt nie zapomni!",
+        "description": "[[postacie:emma-goodwin|Emma]] kontaktuje się z Tobą z propozycją udziału w wyjątkowym projekcie z okazji 5-lecia organizacji Zoo Frontier, która zajmuje się ratowaniem i rehabilitacją zwierząt. Dołączając do przygotowań, od razu zabierasz się do pracy: przyjmujesz uratowane żółwie pustynne, uruchamiasz program rozrodu lampartów afrykańskich oraz – za sprawą włączającej się do akcji nadzoru entuzjastycznej [[postacie:tiffany-summers|Tiffany]], której ojciec sponsoruje studia dzięki sukcesowi imprezy – dbasz o budowę sklepów z pamiątkami i urozmaicenia dla zwierząt. Dodatkowo w parku pojawiają się niedźwiedzie okularowe, podarowane przez [[postacie:tiffany-summers|Tiffany]] sifaki biało-kasztanowe oraz dodatkowi edukatorzy. Dzięki Twojemu zaangażowaniu, restauracjom i świetnej organizacji, huczne obchody rocznicy stają się gigantycznym sukcesem, z którego dumni są zarówno [[postacie:bernard-goodwin|Bernie]] z [[postacie:nancy-jones|Nancy]], jak i sama [[postacie:tiffany-summers|Tiffany]], która oficjalnie rozpoczyna wymarzone studia zoologiczne.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
+    },
+    {
+        "id": "casa-dom",
+        "name": "Casa Dom",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Gepardy się nie rozwijają",
+        "dlcId": {
+            "pz1pc": "americas-animal-pack",
+            "pz1console": "americas&asia-bundle"
+        },
+        "reward": "Posąg kojota",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787946464/kojot_ulehuf.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787946464/kojot_ulehuf.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787946464/kojot_1_moehgc.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787946463/kojot_2_abho5a.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787946463/kojot_3_ydqxdq.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789504241/Cheetahs_Never_Prosper_upscayl_3x_upscayl-standard-4x_ttark5.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789504241/Cheetahs_Never_Prosper_upscayl_3x_upscayl-standard-4x_ttark5.webp",
+        "fullBio": "[[postacie:dominic-myers|Dominic Myers]] ukrywa się w Casa Dom w Meksyku, ale jego najgroźniejsi wrogowie depczą mu po piętach: reporterzy, protestujący, stado dzikich kojotów... U jego boku stoi tylko niedawno adoptowany kociak, więc czy pomożesz mu wyciągnąć wnioski z błędów?",
+        "description": "[[postacie:dominic-myers|Dominic Myers]] kontaktuje się z Tobą niespodziewanie w oficjalnej wiadomości, twierdząc, że przez biurokratyczny błąd poprzedniej asystentki Twoje wypowiedzenie nigdy nie zostało rozpatrzone. Przez poważne problemy finansowe i zamrożenie kont po aferze w Nowym Jorku, [[postacie:dominic-myers|Dominic]] zatrudnia Cię ponownie – tym razem jako nieodpłatnego, młodszego praktykanta na bezcennym „stażu” – i wysyła do małego, świeżo kupionego zoo. Park ma pełne ręce roboty: musisz usunąć protestujących, oswoić i wykorzystać do zarobku stado kojotów oraz zadbać o ulubioną gepardzicę [[postacie:dominic-myers|Dominica]], Smugę, czyszcząc jej wybieg i kupując zabawki. Z czasem, pod Twoim fachowym okiem i wbrew dawnym nawykom [[postacie:dominic-myers|Dominica]], zoo zaczyna działać w pełni legalnie i niezwykle dochodowo, co drastycznie poprawia nadszarpniętą reputację szefa i przyciąga nowych gości oraz zwierzęta. Zadowolony z profitów i nowo odkrytej książki weterynaryjnej [[postacie:dominic-myers|Dominic]] powierza Ci opiekę nad Smugą i udaje się do banku, by sprawdzić odblokowane fundusze.",
+        "objectives": {
+            "bronze": [],
+            "silver": [],
+            "gold": []
+        }
+    },
+    {
+        "id": "ogrod-zoologiczny-myers-bright-blossom",
+        "name": "Ogród zoologiczny Myers Bright Blossom",
+        "version": ["pz1pc", "pz1console"],
+        "scenario": "Jenot wiwerowaty – nowa odsłona",
+        "dlcId": {
+            "pz1pc": "asia-animal-pack",
+            "pz1console": "americas&asia-bundle"
+        },
+        "reward": "Posąg ratela",
+        "rewardImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525157/miodo%C5%BCer_egcs6p.webp",
+        "rewardImages": {
+            "stone": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525157/miodo%C5%BCer_egcs6p.webp",
+            "bronze": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525159/miodo%C5%BCer_1_wtimn9.webp",
+            "silver": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525154/miodo%C5%BCer_2_blbpky.webp",
+            "gold": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788525155/miodo%C5%BCer_3_ssluvy.webp"
+        },
+        "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789504873/Old_29_Dog2C_New_Tricks_upscayl_3x_upscayl-standard-4x_xqxfll.webp",
+        "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789504873/Old_29_Dog2C_New_Tricks_upscayl_3x_upscayl-standard-4x_xqxfll.webp",
+        "fullBio": "[[postacie:dominic-myers|Dominic Myers]] założył puste zoo w Korei Południowej, gdzie nawiązał niezwykłą więź z jenotem wiwerowatym. Ten mały futrzak może pomóc stanąć [[postacie:dominic-myers|Dominicowi]] na nogi, ale będzie trzeba się zdrowo przyłożyć, aby tchnąć życie w to miejsce!",
+        "description": "[[postacie:dominic-myers|Dominic]] kontaktuje się z Tobą z odzyskanej dzięki bankowi placówki w Korei Południowej, gdzie podczas wizyty w miejscowym azylu adoptował małego, podgryzającego portfele jenota wiwerowatego o imieniu Złotek. Przekonany, że zwierzę przynosi szczęście i widząc w nim bratnią duszę – a nawet otwarcie mu zazdroszcząc – [[postacie:dominic-myers|Dominic]] całkowicie zmienia swoje życiové priorytety. Zamiast bezwzględnego parcia na zysk i kombinowania, skupia się pod Twoim okiem na zapewnieniu doskonałych warunków dla zwierząt, budowie porządnego wybiegu, edukacji gości na temat jenotów oraz ulepszaniu opieki personelu. Choć dawni wspólnicy kuszą go odbudową Myers Fund, [[postacie:dominic-myers|Dominic]] ku własnemu zaskoczeniu woli zostać na miejscu, karmić Złotka i cieszyć się prostą, satysfakcjonującą pracą na rzecz ochrony przyrody.",
         "objectives": {
             "bronze": [],
             "silver": [],

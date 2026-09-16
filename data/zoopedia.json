@@ -1331,7 +1331,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520792/Bittern_Eurasian_illustration_tnnm7n.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["europa", "azja", "afryka", "ptaki", "LC", "i3", "siedlisko"],
+        "classes": ["europa", "azja", "afryka", "ptaki", "LC", "i3", "woliera"],
         "info": " ",
         "conservation": " ",
         "population": "Od 184 000<br>do 310 000",
@@ -1428,7 +1428,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786619685/Eagle_WhiteTailedSea_illustration_lz58nl.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["europa", "azja", "ptaki", "LC", "i3", "siedlisko"],
+        "classes": ["europa", "azja", "ptaki", "LC", "i3", "woliera"],
         "info": " ",
         "conservation": " ",
         "population": "Od 20 000 do 60 000",
@@ -1615,8 +1615,13 @@
         "aliases": ["niedźwiedź malajski"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1772478881/Biruang_malajski_yzly34.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1772478883/Biruang_malajski_-_Remaster_eidvaz.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789514749/Biruang_malajski_jrnjxa.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789515636/Bear_Sun_illustration_b56hkd.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["azja", "ssaki", "VU", "i3", "remaster", "siedlisko"],
-        "info": "Biruang malajski <i>(Helarctos malayanus)</i> to niewielki gatunek niedźwiedzia, który zamieszkuje tropikalne lasy Azji Południowo-Wschodniej. Ma ciemnobrązowe, a nawet czarne futro z żółto-jasnobrązową twarzą i nosem oraz charakterystyczny pomarańczowy półksiężyc w górnej części klatki piersiowej. Biruang malajski ma szeroką głowę, podłużny pysk i małe, zaokrąglone uszy. Samce i samice, wyglądają tak samo, ale samce są o 10-20% większe od samic. Mierzą od 120 do 150 cm i ważą od 27 do 65 kg.<br><br>Biruang malajski jest gatunkiem narażonym. Głównie zagraża mu niszczenie siedlisk na skutek wylesiania i przekształcania terenów na użytki rolne, często pod plantacje palmy olejowej. Niekiedy poluje się na nie, aby zdobyć części ciała wykorzystywane w medycynie tradycyjnej, przy czym szczególnie poszukiwane są pęcherzyki żółciowe. Chociaż obecna populacja biruangów malajskich jest nieznana, uważa się, że ich liczebność spadła o 30% w ostatnich dekadach. Wiele obszarów, na których zamieszkują, jest chronionych, ale nadal dochodzi na nich do nielegalnego wylesiania.",
+        "info": "Biruang malajski <i>(Helarctos malayanus)</i> to niewielki gatunek niedźwiedzia, który zamieszkuje tropikalne lasy Azji Południowo-Wschodniej. Ma ciemnobrązowe, a nawet czarne futro z żółto-jasnobrązową twarzą i nosem oraz charakterystyczny pomarańczowy półksiężyc w górnej części klatki piersiowej. Biruang malajski ma szeroką głowę, podłużny pysk i małe, zaokrąglone uszy. Samce i samice, wyglądają tak samo, ale samce są o 10-20% większe od samic. Mierzą od 120 do 150 cm i ważą od 27 do 65 kg.",
+        "conservation": "Biruang malajski jest gatunkiem narażonym. Głównie zagraża mu niszczenie siedlisk na skutek wylesiania i przekształcania terenów na użytki rolne, często pod plantacje palmy olejowej. Niekiedy poluje się na nie, aby zdobyć części ciała wykorzystywane w medycynie tradycyjnej, przy czym szczególnie poszukiwane są pęcherzyki żółciowe. Chociaż obecna populacja biruangów malajskich jest nieznana, uważa się, że ich liczebność spadła o 30% w ostatnich dekadach. Wiele obszarów, na których zamieszkują, jest chronionych, ale nadal dochodzi na nich do nielegalnego wylesiania.",
         "population": "Nieznana",
         "status": "Narażone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776789/VU_sdgfno.webp",
@@ -1696,10 +1701,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "dlc",
-            "pz1console": "dlc"
+            "pz1console": "dlc",
+            "pz2": "podstawa"
         },
         "dlc": {
             "pz1pc": {
@@ -1895,7 +1901,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785867851/Loach_Clown_illustration_or2dr1.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["azja", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -2460,7 +2466,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1782740837/Fusilier_BlueAndGold_illustration_iyxywm.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["azja", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -3730,7 +3736,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786619685/Hornbill_Great_illustration_e4sfrg.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["azja", "ptaki", "VU", "i3", "siedlisko"],
+        "classes": ["azja", "ptaki", "VU", "i3", "woliera"],
         "info": " ",
         "conservation": " ",
         "population": "Od 13 000 do 27 000",
@@ -4417,7 +4423,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785867642/Sergeant_IndoPacific_illustration_tamfh0.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["azja", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -5341,8 +5347,10 @@
         "latin": "Goliathus goliatus",
         "aliases": ["chrząszcz goliat"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773301801/Goliat_aqbzen.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789514752/Goliat_g23irb.webp",
         "classes": ["afryka", "stawonogi", "DD", "ekspozycja"],
         "info": "Goliat <i>(Goliathus goliatus)</i> to duży gatunek chrząszcza żyjący na sawannach i w lasach deszczowych Afryki Środkowej. Samce i samice różnią się od siebie wyglądem i rozmiarem. Samce są większe (od 60 do 100 mm), mają ciemnobrązowy odwłok, brązowy tułów w białe paski, czarne odnóża i białą głowę z „rogiem” w kształcie litery Y. Samice można rozpoznać po krótszych, cieńszych paskach na tułowiu. Są też mniejsze (od 50 do 80 mm) i nie mają na głowie żadnych narośli. Niewiele wiadomo na temat cyklu życia tego gatunku na wolności, ale zagraża mu utrata siedlisk spowodowana wyniszczaniem lasów deszczowych, w których żyje.",
+        "conservation": " ",
         "population": "Nieznana",
         "status": "Zbyt mało danych",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776792/DD_upjfda.webp",
@@ -5414,10 +5422,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         }
     },
     {
@@ -5605,8 +5614,13 @@
         "latin": "Phacochoerus africanus",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773302274/Guziec_zwyczajny_tiu38j.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773302275/Guziec_zwyczajny_-_Remaster_wopmk4.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789514742/Guziec_zwyczajny_hxuf1t.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789515629/Warthog_Common_illustration_qiqgi7.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["afryka", "ssaki", "LC", "i3", "remaster", "siedlisko"],
-        "info": "Guziec zwyczajny <i>(Phacochoerus africanus)</i> żyje na terenie Afryki Subsaharyjskiej w różnego rodzaju środowiskach. Gatunek ten nie jest wprawdzie obecnie zagrożony, jednak jest podatny na susze i spadek liczebności w wyniku polowań, ponieważ ludzie uznają często guźce za szkodniki. Są ku temu dwa powody. Po pierwsze, mogą rozprzestrzeniać choroby wśród zwierząt hodowlanych. Po drugie, mogą niszczyć uprawy na terenach rolnych, ryjąc ziemię kłami. Spowodowało to wytrzebienie części populacji.<br><br>Guziec zwyczajny ma dużą głowę z grzywą szorstkich włosów oraz charakterystycznymi kłami. Górne kły są duże, grube i tępo zakończone, natomiast dolne kły są krótkie i ostre. Guźce mają też duże chrzęstne wypustki na policzkach. Samce osiągają średnio od 1,3 do 1,5 m długości i ważą od 60 do 150 kg. Samice są zwykle niższe i lżejsze, osiągając średnio od 0,9 do 1,3 m długości i ważąc od 45 do 75 kg.",
+        "info": "Guziec zwyczajny <i>(Phacochoerus africanus)</i> żyje na terenie Afryki Subsaharyjskiej w różnego rodzaju środowiskach. Guziec zwyczajny ma dużą głowę z grzywą szorstkich włosów oraz charakterystycznymi kłami. Górne kły są duże, grube i tępo zakończone, natomiast dolne kły są krótkie i ostre. Guźce mają też duże chrzęstne wypustki na policzkach. Samce osiągają średnio od 1,3 do 1,5 m długości i ważą od 60 do 150 kg. Samice są zwykle niższe i lżejsze, osiągając średnio od 0,9 do 1,3 m długości i ważąc od 45 do 75 kg.",
+        "conservation": "Gatunek ten nie jest wprawdzie obecnie zagrożony, jednak jest podatny na susze i spadek liczebności w wyniku polowań, ponieważ ludzie uznają często guźce za szkodniki. Są ku temu dwa powody. Po pierwsze, mogą rozprzestrzeniać choroby wśród zwierząt hodowlanych. Po drugie, mogą niszczyć uprawy na terenach rolnych, ryjąc ziemię kłami. Spowodowało to wytrzebienie części populacji.",
         "population": "250 000",
         "status": "Najmniej zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
@@ -5682,10 +5696,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/1550"
     },
@@ -6079,6 +6094,88 @@
             }
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/1978"
+    },
+    {
+        "name": "Itajara goliat",
+        "latin": "Epinephelus lanceolatus",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789514747/Itajara_goliat_nxzmuy.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789515627/Grouper_Giant_illustration_rtnzba.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["azja", "ryby", "DD", "i3", "akwarium"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Nieznana",
+        "status": "Zbyt mało danych",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776792/DD_upjfda.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ryby",
+            "Rząd": "Okoniokształtne",
+            "Rodzina": "Strzępielowate",
+            "Rodzaj": "Epinephelus"
+        },
+        "habitat": {
+            "Kontynenty": ["Azja"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Azja",
+            "link": "../Mapa/Rezerwat Azja.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
     },
     {
         "name": "Jaguar",
@@ -11665,7 +11762,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788520791/Unicornfish_Bluespine_illustration_whb37v.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["azja", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -11840,7 +11937,7 @@
         "latin": "Pseudonaja textilis",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774207999/Nibykobra_siatkowana_py3952.webp",
         "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787079746/Nibykobra_siatkowana_fhofye.webp",
-        "classes": ["amerykapoludniowa", "gady", "LC", "ekspozycja"],
+        "classes": ["australia", "gady", "LC", "ekspozycja"],
         "info": "Nibykobra siatkowana <i>(Pseudonaja textilis)</i> jest jadowitym gatunkiem gada zamieszkującym Australię i Nową Gwineę. Preferuje tereny suche, wiec można go spotkać na obszarach trawiastych, w scrubie i w rzadkich lasach. Węże te mają kolor od jasno- do ciemnobrązowego, a spodnia strona ich ciała jest często jaśniejsza. Mają też kamuflaż w postaci lekko ciemniejszych cętek na łuskach. Nibykobry siatkowane mają zwykle od 1,5 do 2 m długości i są znane z postawy obronnej, w której unoszą głowę i część ciała nad ziemię, układając się w kształt litery S i otwierając przy tym paszczę. Takie zachowania często są mylnie uznawane za oznakę agresji.",
         "conservation": " ",
         "population": "Nieznana",
@@ -13742,7 +13839,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1782848788/Eagle_Golden_illustration_vsmbd1.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["europa", "azja", "amerykapolnocna", "ptaki", "LC", "i3", "siedlisko"],
+        "classes": ["europa", "azja", "amerykapolnocna", "ptaki", "LC", "i3", "woliera"],
         "info": " ",
         "conservation": " ",
         "population": "Od 85 000<br>do 160 000",
@@ -14524,8 +14621,13 @@
         "latin": "Ailuropoda melanoleuca",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774271931/Panda_wielka_qbuc47.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774271938/Panda_wielka_-_Remaster_ukrgwh.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789514741/Panda_wielka_afdpbb.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789515638/Panda_Giant_illustration_mxqpfc.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["azja", "ssaki", "VU", "i3", "siedlisko", "remaster"],
-        "info": "Panda wielka <i>(Ailuropoda melanoleuca)</i> to gatunek niedźwiedzia zamieszkujący góry w środkowej części Chin. Wyróżnia się czarno-białym umaszczeniem tworzącym specyficzny wzór. Ma czarne łapy i uszy oraz czarne kręgi wokół oczu. Pandy żywią się niemal wyłącznie bambusem, w związku z czym ich przeżycie jest wyjątkowo mocno uzależnione od bogatych lasów bambusowych. Jest to pożywienie niskoenergetyczne, a zatem by przeżyć, pandy muszą spożywać je w dużych ilościach, w związku z czym większość czasu spędzają na poszukiwaniu jedzenia i samym jedzeniu. Ubogie w kalorie pożywienie oznacza również, że młode pandy są bardzo małe i słabe.<br><br>Zagrożeniem dla tego gatunku jest utrata siedlisk i ich postępująca fragmentacja, spowodowane wylesianiem oraz urbanizacją. Pandy padają również ofiarami kłusowników, chcących pozyskać ich futra. Władze Chin podejmują wiele działań mających na celu utrzymanie populacji pand, ale jest to trudne ze względu na niską płodność pand, ich niechęć do kojarzenia się w pary oraz małą odporność młodych tego gatunku.",
+        "info": "Panda wielka <i>(Ailuropoda melanoleuca)</i> to gatunek niedźwiedzia zamieszkujący góry w środkowej części Chin. Wyróżnia się czarno-białym umaszczeniem tworzącym specyficzny wzór. Ma czarne łapy i uszy oraz czarne kręgi wokół oczu. Pandy żywią się niemal wyłącznie bambusem, w związku z czym ich przeżycie jest wyjątkowo mocno uzależnione od bogatych lasów bambusowych. Jest to pożywienie niskoenergetyczne, a zatem by przeżyć, pandy muszą spożywać je w dużych ilościach, w związku z czym większość czasu spędzają na poszukiwaniu jedzenia i samym jedzeniu. Ubogie w kalorie pożywienie oznacza również, że młode pandy są bardzo małe i słabe.",
+        "conservation": "Zagrożeniem dla tego gatunku jest utrata siedlisk i ich postępująca fragmentacja, spowodowane wylesianiem oraz urbanizacją. Pandy padają również ofiarami kłusowników, chcących pozyskać ich futra. Władze Chin podejmują wiele działań mających na celu utrzymanie populacji pand, ale jest to trudne ze względu na niską płodność pand, ich niechęć do kojarzenia się w pary oraz małą odporność młodych tego gatunku.",
         "population": "2 000",
         "status": "Narażone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776789/VU_sdgfno.webp",
@@ -14601,10 +14703,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/2362"
     },
@@ -14809,8 +14912,13 @@
         "latin": "Panthera uncia",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774271929/Pantera_%C5%9Bnie%C5%BCna_df0lv3.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774271930/Pantera_%C5%9Bnie%C5%BCna_-_Remaster_mkrs7w.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789514740/Pantera_%C5%9Bnie%C5%BCna_mjyz80.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789515632/Leopard_Snow_illustration_dzcvzh.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["azja", "ssaki", "VU", "i3", "siedlisko", "remaster"],
-        "info": "Irbis śnieżny <i>(Panthera uncia)</i>, zwany również panterą śnieżną, ma futro w kolorze od białego do szarego z charakterystycznymi czarnymi rozetkami na całym ciele i czarnymi cętkami na pysku. Zamieszkuje górzyste tereny w Nepalu, Tybecie, północnej części Indii, na południu Syberii, w Pakistanie, Bhutanie i Mongolii. Futro tego zwierzęcia jest wyjątkowo grube i zapewnia znakomitą izolację, dzięki czemu irbisy bez trudu wytrzymują ujemne temperatury, dochodzące nawet do -25°C. Żywią się najczęściej kozami i owcami, ale polują też na ptaki oraz gryzonie.<br><br>Gatunek ten jest z różnych powodów zagrożony. Rolnicy zabijają irbisy śnieżne, aby zwierzęta hodowlane nie padały ich ofiarami, ale kłusownicy polują też na irbisy w celu zdobycia futra oraz innych części ciała, które są cenionym surowcem w medycynie chińskiej. Innym powodem jest degradacja siedlisk, która ogranicza irbisom dostęp do pożywienia. W ramach działań na rzecz ochrony tego gatunku ustanowiono tereny chronione, rolnikom oferowana jest pomoc w zabezpieczaniu przed irbisami gospodarstw hodowlanych, a miejscowej ludności udostępniane są informacje na temat tych zwierząt. Na wielu terenach prowadzone są również zdecydowane akcje usuwania pułapek zastawianych przez kłusowników.",
+        "info": "Irbis śnieżny <i>(Panthera uncia)</i>, zwany również panterą śnieżną, ma futro w kolorze od białego do szarego z charakterystycznymi czarnymi rozetkami na całym ciele i czarnymi cętkami na pysku. Zamieszkuje górzyste tereny w Nepalu, Tybecie, północnej części Indii, na południu Syberii, w Pakistanie, Bhutanie i Mongolii. Futro tego zwierzęcia jest wyjątkowo grube i zapewnia znakomitą izolację, dzięki czemu irbisy bez trudu wytrzymują ujemne temperatury, dochodzące nawet do -25°C. Żywią się najczęściej kozami i owcami, ale polują też na ptaki oraz gryzonie.",
+        "conservation": "Gatunek ten jest z różnych powodów zagrożony. Rolnicy zabijają irbisy śnieżne, aby zwierzęta hodowlane nie padały ich ofiarami, ale kłusownicy polują też na irbisy w celu zdobycia futra oraz innych części ciała, które są cenionym surowcem w medycynie chińskiej. Innym powodem jest degradacja siedlisk, która ogranicza irbisom dostęp do pożywienia. W ramach działań na rzecz ochrony tego gatunku ustanowiono tereny chronione, rolnikom oferowana jest pomoc w zabezpieczaniu przed irbisami gospodarstw hodowlanych, a miejscowej ludności udostępniane są informacje na temat tych zwierząt. Na wielu terenach prowadzone są również zdecydowane akcje usuwania pułapek zastawianych przez kłusowników.",
         "population": "Od 4 000<br>do 9 000",
         "status": "Narażone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776789/VU_sdgfno.webp",
@@ -14881,12 +14989,95 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/642"
+    },
+    {
+        "name": "Parma czarnopasa",
+        "latin": "Plectorhinchus vittatus",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789514754/Parma_czarnopasa_rhsw0k.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789515634/Sweetlips_IndianOceanOriental_illustration_wo4e3v.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Nieznana",
+        "status": "Najmniej zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ryby",
+            "Rząd": "Okoniokształtne",
+            "Rodzina": "Luszczowate",
+            "Rodzaj": "Plectorhinchus"
+        },
+        "habitat": {
+            "Kontynenty": ["Azja"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Azja",
+            "link": "../Mapa/Rezerwat Azja.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
     },
     {
         "name": "Paw indyjski",
@@ -15422,7 +15613,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785859543/Cichlid_Blunthead_illustration_as9gnx.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["afryka", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["afryka", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -15895,7 +16086,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787080462/Surgeonfish_Palette_illustration_f6ed5l.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["azja", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -16074,7 +16265,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1782850331/Trout_Brown_illustration_uwgu7f.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["europa", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["europa", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -17454,7 +17645,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785867859/Tigerfish_African_illustration_lptlsh.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["afryka", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["afryka", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -18080,7 +18271,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1782740838/Secretarybird_illustration_caqphb.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["afryka", "ptaki", "EN", "i3", "siedlisko"],
+        "classes": ["afryka", "ptaki", "EN", "i3", "woliera"],
         "info": " ",
         "conservation": " ",
         "population": "Od 6 700<br>do 67 000",
@@ -18162,7 +18353,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788978293/Vulture_WhiteBacked_illustration_uxvhkz.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["afryka", "ptaki", "CR", "i3", "siedlisko"],
+        "classes": ["afryka", "ptaki", "CR", "i3", "woliera"],
         "info": " ",
         "conservation": " ",
         "population": "Od 27 000<br>do 51 000<br>(wartość szacunkowa)",
@@ -19955,7 +20146,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787080462/Rainbowfish_Boesemans_illustration_m8rc2h.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["azja", "ryby", "EN", "i3", "akwarium"],
+        "classes": ["azja", "ryby", "EN", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -20138,7 +20329,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786630700/Shoebill_illustration_kjlm3z.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["afryka", "ptaki", "VU", "i3", "siedlisko"],
+        "classes": ["afryka", "ptaki", "VU", "i3", "woliera"],
         "info": " ",
         "conservation": " ",
         "population": "Od 3 000<br>do 5 300",
@@ -20220,7 +20411,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785867646/Toucan_Toco_illustration_iu6xwk.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["amerykapoludniowa", "ptaki", "LC", "i3", "siedlisko"],
+        "classes": ["amerykapoludniowa", "ptaki", "LC", "i3", "woliera"],
         "info": " ",
         "conservation": " ",
         "population": "10 000<br>(wartość szacunkowa)",
@@ -21602,8 +21793,10 @@
         "name": "Wielki skorpion leśny",
         "latin": "Heterometrus swammerdami titanicus",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1772472600/Wielki_skorpion_le%C5%9Bny_abib4q.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789514745/Wielki_skorpion_le%C5%9Bny_cd7mbj.webp",
         "classes": ["azja", "stawonogi", "DD", "ekspozycja"],
         "info": "Wielki skorpion leśny <i>(Heterometrus swammerdami titanicus)</i> to duży gatunek skorpiona żyjący w lasach tropikalnych Indii i Sri Lanki. Jest to mocno zbudowany, czarny pajęczak z bardzo dużymi szczypcami, którego ciało pokrywa gruby chitynowy pancerz zbudowany z płyt. Jego oskórek może mieć również niebieski lub zielony połysk. Ma silne szczypce, zdolne do chwytania i miażdżenia zdobyczy, natomiast jego jad jest stosunkowo słaby - najprawdopodobniej dlatego, że skorpion ten bardziej polega na sile szczypiec niż na żądleniu ofiar.",
+        "conservation": " ",
         "population": "Nieznana",
         "status": "Zbyt mało danych",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776792/DD_upjfda.webp",
@@ -21670,10 +21863,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         }
     },
     {
@@ -22200,7 +22394,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788978312/Rudd_Common_illustration_tw50yb.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["europa", "azja", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["europa", "azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -22290,7 +22484,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785859543/Bannerfish_Schooling_illustration_sk7glg.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["azja", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
@@ -22372,7 +22566,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785867658/Owl_LongEared_illustration_l8xsfz.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["europa", "azja", "amerykapolnocna", "ptaki", "LC", "i3", "siedlisko"],
+        "classes": ["europa", "azja", "amerykapolnocna", "ptaki", "LC", "i3", "woliera"],
         "info": " ",
         "conservation": " ",
         "population": "Od 2 200 000<br>do 3 700 000",
@@ -22815,7 +23009,7 @@
         "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786619685/Tang_Yellow_illustration_syatn0.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
-        "classes": ["azja", "ryby", "LC", "i3", "akwarium"],
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
         "info": " ",
         "conservation": " ",
         "population": "Nieznana",
