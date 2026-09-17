@@ -653,6 +653,10 @@ window.PLACES = window.PLACES || {};
                     metaContent.push(`<b>Baner:</b> ${place.baner}`);
                 }
 
+                if (place.mapa) {
+                    metaContent.push(`<b>Mapa:</b> ${place.mapa}`);
+                }
+
                 if (place.scenario) {
                     metaContent.push(`<b>Scenariusz:</b> ${place.scenario}`);
                 }
@@ -693,6 +697,15 @@ window.PLACES = window.PLACES || {};
                         </div>
                     `);
                 }
+                else if (place.mapaImage) {
+                    metaContent.push(`
+                        <div class="place-reward-container place-map-container">
+                            <div class="reward-img-wrapper">
+                                <img src="${place.mapaImage}" alt="${place.name}" class="place-map-img" style="cursor: pointer;">
+                            </div>
+                        </div>
+                    `);
+                }
                 else if (place.bannerImage) {
                     metaContent.push(`
                         <div class="place-reward-container place-banner-container">
@@ -706,6 +719,16 @@ window.PLACES = window.PLACES || {};
                 // Wstawienie HTML TYLKO RAZ
                 metaEl.innerHTML = metaContent.join("<br>");
 
+                // Obsługa kliknięcia dla mapy
+                const mapImg = metaEl.querySelector(".place-map-img");
+                if (mapImg) {
+                    mapImg.onclick = () => {
+                        if (typeof window.openGallery === "function") {
+                            window.openGallery(0, [place.mapaImage]);
+                        }
+                    };
+                }
+                
                 // Obsługa kliknięcia dla baneru
                 const bannerImg = metaEl.querySelector(".place-banner-img");
                 if (bannerImg) {
