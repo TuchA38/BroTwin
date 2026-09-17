@@ -1,4 +1,134 @@
 [{
+        "id": "update2-beta-19",
+        "title": "Creature Feature: Znaczące zarządzanie!",
+        "versionTag": "BETA",
+        "date": "17 września 2026",
+        "gameVersion": ["pz2"],
+        "intro": [
+            "Witajcie Zookeeperzy!",
+            "Zbliżamy się wielkimi krokami do premiery Planet Zoo 2, która odbędzie się 13 października (uff, gdzież to minęły te miesiące?), ale wciąż mamy jeszcze trochę czasu na ostatnią odsłonę serii <b>„Creature Feature”</b>.",
+            "Czy może być lepszy sposób na podsumowanie tej serii niż przyjrzenie się temu, co sprawia, że w Waszych ogrodach zoologicznych świecą się światła, zwierzęta są nakarmione, a rachunki opłacone – czyli zarządzaniu!",
+            "<hr>",
+            "<h3>Świat ochrony przyrody</h3>",
+            "Zanim przejdziemy do codziennego zarządzania Waszymi ogrodami zoologicznymi i rezerwatami dzikiej przyrody, cofnijmy się nieco, aby zapoznać się z kolejną nową funkcją, która pojawi się w Planet Zoo 2.",
+            "<b>Planet Hub</b> to zupełnie nowy sposób zarządzania międzynarodową siecią ochrony przyrody oraz zakładania nowych ogrodów zoologicznych i rezerwatów dzikiej przyrody.",
+            "Z tego jednego miejsca możecie szybko przeglądać i odwiedzać swoje lokalizacje na całym świecie, niezależnie od tego, czy gracie w trybie Kariery, Piaskownicy czy Franczyzy.",
+            "W ramach Planet Hub możecie również zarządzać handlem, magazynowaniem i badaniami we wszystkich lokalizacjach w ramach aktualnego trybu gry, co sprawia, że prowadzenie sieci ogrodów zoologicznych jest łatwiejsze niż kiedykolwiek.",
+            "Nie musicie też opuszczać bieżącego stanu gry i wracać do menu głównego – Planet Hub można otworzyć w dowolnym momencie podczas rozgrywki, co pozwala na płynne przemieszczanie się po całym świecie.",
+            "<hr>",
+            "<h3>Obowiązek dbania o innych</h3>",
+            "Waszym zadaniem w Planet Zoo 2 jest stworzenie ogrodu zoologicznego, który zapewni gościom rozrywkę i poszerzy ich wiedzę, a jednocześnie pozwoli dbać o zwierzęta i wspierać ochronę przyrody.",
+            "[[IMAGE:1]]",
+            "Każde zwierzę, które umieścicie w swoim zoo, ma własne wymagania dotyczące dobrostanu, które musicie spełnić – obejmują one zapewnienie dostępu do pożywienia i wody, wystarczającej przestrzeni, odpowiedniego terenu i roślinności oraz satysfakcjonującego środowiska społecznego i stymulującego.",
+            "Dowiedzcie się więcej o tworzeniu siedlisk dla nowych gatunków zwierząt w Planet Zoo 2 z naszych artykułów z serii <b>„Creature Feature”</b> poświęconych {{update:update2-beta-9}} i {{update:update2-beta-12}}.",
+            "Musicie pamiętać o wszystkich tych kwestiach podczas budowania siedlisk i sieci wsparcia dla swoich zwierząt, aby zapewnić im wysoki standard dobrostanu.",
+            "W Planet Zoo 2 wprowadziliśmy coś więcej niż tylko zaspokajanie potrzeb dobrostanowych zwierząt – nowy stan <i>„Rozkwit”</i>.",
+            "Dodatkowy wysiłek włożony w stworzenie prawdziwie naturalnego i stymulującego środowiska dla zwierząt pozwoli im rozwijać się pod Waszą opieką, żyć dłużej oraz zachęci gości do przekazywania większych darowizn na rzecz Waszego zoo, ponieważ docenią Wasze wysiłki.",
+            "Aby osiągnąć status <i>„Rozkwitu”</i> dla danego zwierzęcia, musicie najpierw zainwestować w badania, aby lepiej zrozumieć dany gatunek i jego potrzeby w środowisku naturalnym.",
+            "<hr>",
+            "<h3>Niezapomniana wycieczka</h3>",
+            "Goście mają kluczowe znaczenie dla sukcesu Waszych ogrodów zoologicznych – to dzięki nim zarabiacie pieniądze potrzebne do opieki nad zwierzętami i rozbudowy ogrodów.",
+            "Podobnie jak zwierzęta, goście również mają potrzeby, które należy zaspokoić, jeśli chcecie zapewnić im zadowolenie i pozytywne wrażenia z wizyty w Waszym ogrodzie zoologicznym.",
+            "Aby goście byli zadowoleni podczas wizyty, muszą mieć dostęp do toalet, posiłków i napojów oraz miejsc do odpoczynku. Jeśli nie zadbacie o ich zadowolenie, mogą opuścić ogród przed czasem, a nawet poprosić o zwrot pieniędzy.",
+            "[[IMAGE:2]]",
+            "Oczywiście interesują ich również zwierzęta w Waszym zoo i chcą dowiedzieć się o nich więcej!",
+            "Możecie edukować swoich gości, zatrudniając nauczycieli, którzy będą prowadzić wykłady o zwierzętach, rozmieszczając w całym zoo materiały edukacyjne, w tym głośniki, tablice i kamery internetowe, a nawet organizując wycieczki z przewodnikiem!",
+            "Goście będą również chcieli dobrze obejrzeć same zwierzęta, więc musicie zaprojektować ich wybiegi z uwzględnieniem tej kwestii. Należy jednak zachować delikatną równowagę, ponieważ zwierzęta potrzebują czasem przestrzeni, by schronić się przed wzrokiem gości, zregenerować siły i uniknąć stresu.",
+            "Dobrostan zwierząt jest dla gości równie ważny jak dla Was, a goście nie lubią widoku zwierząt, których dobrostan jest zagrożony.",
+            "Jeśli poziom dobrostanu zwierząt spadnie zbyt nisko, do Waszego zoo mogą nawet przybyć protestujący i rozstawić się przed wybiegami, zwracając uwagę innych gości na zły stan zwierząt i potencjalnie denerwując ich do tego stopnia, że opuszczą zoo.",
+            "<hr>",
+            "<h3>Utrzymanie się na powierzchni</h3>",
+            "Zaspokojenie potrzeb zwierząt i gości wymaga budowy obiektów pomocniczych na terenie ogrodu zoologicznego.",
+            "Obiekty w ogrodach zoologicznych pełnią szereg różnych funkcji, takich jak zaspokajanie potrzeb gości, opieka nad zwierzętami, zapewnianie transportu oraz generowanie dochodów.",
+            "[[IMAGE:3]]",
+            "W zależności od tego, co zbudowaliście w swoim zoo, będziecie musieli również zapewnić zasilanie obiektów oraz doprowadzać wodę do wybiegu za pomocą sieci filtrów i pomp.",
+            "Zgodnie z koncepcją wielu współczesnych ogrodów zoologicznych nie musicie ukrywać przed gośćmi obiektów dla personelu ani instalacji technicznych. Goście z przyjemnością będą obserwować, jak weterynarze i dozorcy z zaangażowaniem dbają o zwierzęta.",
+            "Jednak zarówno goście, jak i pracownicy lubią spędzać czas w malowniczym ogrodzie zoologicznym, dlatego możecie skorzystać z setek dostępnych elementów scenerii, aby udekorować swoje obiekty i zwiększyć ich zadowolenie.",
+            "<hr>",
+            "<h3>Pomocna dłoń</h3>",
+            "Nie będziecie całkowicie zdani na siebie, jeśli chodzi o prowadzenie zoo – możecie liczyć na wsparcie personelu, z którym współpracujecie!",
+            "Możecie zatrudnić pracowników na różne stanowiska, w tym:<ul><li><b>Opiekunów</b>, którzy dbają o czystość i porządek w zoo.</li><li><b>Dozorców</b>, którzy będą karmić zwierzęta i dbać o nie.</li><li><b>Techników</b>, którzy zadbają o to, by obiekty i siedliska były w doskonałym stanie.</li><li><b>Sprzedawców</b>, którzy będą obsługiwać gości w sklepach i restauracjach.</li><li><b>Weterynarzy</b>, którzy będą leczyć chore zwierzęta i prowadzić badania.</li><li><b>Nauczycieli</b>, którzy będą prowadzić prelekcje i, cóż, edukować Waszych gości!</li></ul>",
+            "Po zatrudnieniu pracownicy będą wykonywać odpowiednie zadania w całym zoo i dbać o jego sprawne funkcjonowanie. Można ich również przydzielić do konkretnych stref roboczych, które sami tworzycie, dzieląc zoo na łatwiejsze do zarządzania części.",
+            "Musicie dbać o zadowolenie pracowników z pracy, chyba że chcecie, by odeszli!",
+            "Zapewnienie pracownikom szkoleń, wypłacanie im wystarczająco wysokich wynagrodzeń oraz utrzymywanie ich obciążenia pracą na rozsądnym poziomie – wszystko to pomoże im czerpać satysfakcję z kariery w Waszym zoo.",
+            "<hr>",
+            "<h3>Kluczowa kwestia</h3>",
+            "Zarządzanie globalną siecią ogrodów zoologicznych i rezerwatów dzikiej przyrody wymaga inwestycji, zarówno finansowych, jak i badawczych.",
+            "Rozbudowując ogród zoologiczny, adoptując zwierzęta lub zatrudniając pracowników, będziecie musieli pokrywać te wydatki ze środków pieniężnych. Wasz ogród zoologiczny będzie również ponosił różne koszty bieżące, od wynagrodzeń pracowników po rachunki za energię.",
+            "[[IMAGE:4]]",
+            "Utrzymanie dodatniego przepływu środków pieniężnych będzie kluczem do tego, by bramy Waszego zoo pozostały otwarte przez długi czas. Na szczęście macie do dyspozycji wiele narzędzi, które pomogą Wam to osiągnąć – od dostosowywania cen biletów i sprzedaży pamiątek po zachęcanie gości do przekazywania darowizn.",
+            "Wasze ogrody zoologiczne mogą również prowadzić kampanie marketingowe poświęcone poszczególnym zwierzętom, aby przyciągnąć więcej gości (za opłatą) lub, jeśli szczególnie brakuje Wam gotówki, możecie zaciągnąć pożyczkę, aby uzyskać natychmiastowy zastrzyk środków, co wiąże się z kosztami w postaci odsetek.",
+            "Oprócz finansowej strony prowadzenia zoo ważne będzie również zainwestowanie czasu weterynarza w badania, aby dowiedzieć się więcej o zwierzętach pozostających pod Waszą opieką, co pozwoli odblokować nowe przedmioty, ulepszone opcje zapewnienia dobrostanu, a nawet da szansę na wypuszczenie tych zwierząt na wolność w rezerwacie przyrody.",
+            "Dowiedzcie się więcej o {{update:update2-beta-17}} w naszym poprzednim artykule z serii <b>„Creature Feature”</b>.",
+            "<hr>",
+            "<h3>Mierzenie sukcesu</h3>",
+            "Ostatecznie ogólny sukces Waszego ogrodu zoologicznego oraz owoce Waszej pracy jako kierowników można ocenić na podstawie wskaźnika reputacji ogrodu zoologicznego.",
+            "W porównaniu z pierwotną wersją gry Planet Zoo wskaźnik reputacji ogrodu zoologicznego został w Planet Zoo 2 uproszczony, aby lepiej odzwierciedlać ogólne wyniki Waszego ogrodu zoologicznego.",
+            "Obecnie wskaźnik ten przyznaje Waszemu ogrodowi zoologicznemu ocenę w skali 5 gwiazdek, opartą na wynikach w czterech obszarach:<ul><li><b>Hodowla zwierząt</b> – jak dobrze Wasze zoo dba o zwierzęta, w tym o ich dobrostan i to, czy dobrze się rozwijają.</li><li><b>Zrównoważony rozwój</b> – na ile infrastruktura Waszego zoo jest zrównoważona, w tym liczba pojemników do recyklingu i wykorzystanie energii odnawialnej.</li><li><b>Edukacja gości</b> – jak skutecznie Wasze zoo edukuje odwiedzających, w tym średni poziom wiedzy gości oraz wykorzystanie tematów edukacyjnych dotyczących zwierząt w Waszym zoo.</li><li><b>Doświadczenia gości</b> – jakość wizyty gości, w tym ich zadowolenie, wystrój ogrodu zoologicznego oraz różnorodność zwierząt, którymi się opiekujecie.</li></ul>",
+            "Aby pomóc Wam osiągnąć te cele, wyposażyliśmy Wasz ogród zoologiczny w bogaty zestaw statystyk, obejmujących wszystko – od finansów po trendy w opiniach gości.",
+            "<hr>",
+            "<h3>Zarządzanie idealnym ogrodem zoologicznym</h3>",
+            "Biorąc pod uwagę wszystkie nowe funkcje, które pojawią się w Planet Zoo 2 – w tym zwierzęta wyłącznie wodne, ptaki i rezerwaty dzikiej przyrody – skupiliśmy się na tym, by system zarządzania pozostał znajomy dla dotychczasowych graczy, jednocześnie wygładzając kilka bardziej szorstkich krawędzi.",
+            "Fani oryginalnej gry Planet Zoo z pewnością rozpoznają wiele elementów, gdy w październiku zaczną zarządzać ogrodami zoologicznymi, ale dla nowych graczy lub tych, którzy powracają do serii, staraliśmy się uczynić rozgrywkę znacznie bardziej przystępną i łatwiejszą do opanowania. Nie martwcie się jednak – nasi doświadczeni opiekunowie zwierząt nadal będą mieli mnóstwo nowych rzeczy do nauczenia się!",
+            "[[IMAGE:5]]",
+            "No i proszę! Bardzo nam się podobało zgłębianie świata Planet Zoo 2 w ramach serii <b>„Creature Feature”</b>, ale nie martwcie się – czeka na Was jeszcze mnóstwo innych atrakcji, więc zapnijcie pasy i przygotujcie się na premierę!",
+            "<hr>",
+            "Planet Zoo 2 można już zamawiać w przedsprzedaży na PC, PS5 i Xbox Series X|S. Dołączcie do dyskusji i bądźcie z nami w kontakcie na naszych mediach społecznościowych na {{link:facebook}}, {{link:x}}, {{link:instagram}}, {{link:tiktok}} oraz na serwerze {{link:discord}} „Frontier Unlocked”, zapiszcie się do naszego {{link:newsletter}} (aby otrzymać ekskluzywną nagrodę w grze w dniu premiery!) i zaglądajcie na naszą {{link:strona}}, by być na bieżąco z najświeższymi wiadomościami!"
+        ],
+        "images": {
+            "1": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1784809834/PZ2_Beta_38_v6ifdy.webp",
+            "2": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789679322/PZ2_Beta_93_oguwv5.webp",
+            "3": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789679331/PZ2_Beta_94_i15wpg.webp",
+            "4": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789679346/PZ2_Beta_95_c37rmc.webp",
+            "5": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789679493/PZ2_Beta_96_pa8zqt.webp"
+        },
+        "related": {
+            "updates": [{
+                    "id": "update2-beta-9",
+                    "label": "akwariom"
+                },
+                {
+                    "id": "update2-beta-12",
+                    "label": "wolierom"
+                },
+                {
+                    "id": "update2-beta-17",
+                    "label": "rezerwatach przyrody"
+                }
+            ]
+        },
+        "links": {
+            "facebook": {
+                "url": "https://www.facebook.com/planetzoogame",
+                "label": "Facebooku"
+            },
+            "x": {
+                "url": "https://twitter.com/planetzoogame",
+                "label": "X"
+            },
+            "instagram": {
+                "url": "https://www.instagram.com/planetzoogame/",
+                "label": "Instagramie"
+            },
+            "tiktok": {
+                "url": "https://www.tiktok.com/@planetzoogame",
+                "label": "TikToku"
+            },
+            "discord": {
+                "url": "https://discord.com/invite/frontierunlocked",
+                "label": "Discord"
+            },
+            "strona": {
+                "url": "https://www.planetzoogame.com/",
+                "label": "stronę internetową"
+            },
+            "newsletter": {
+                "url": "https://www.planetzoogame.com/2/subscribe",
+                "label": "newslettera"
+            }
+        }
+    },
+    {
         "id": "update2-beta-18",
         "title": "Szczyt zoologiczny Planet Zoo 2, czyli wszystko, co musicie wiedzieć!",
         "versionTag": "BETA",
