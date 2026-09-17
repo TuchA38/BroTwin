@@ -878,6 +878,7 @@
     }
     
     [data-game-version="pz2"] .place-banner-img:hover,
+    [data-game-version="pz2"] .place-map-img:hover,
     [data-game-version="pz2"] .place-reward-img:hover {
         transform: scale(1.04);
         filter: drop-shadow(0px 8px 18px rgba(0, 0, 0, 0.6)) drop-shadow(0px 0px 8px #51413540);
@@ -900,7 +901,8 @@
    ========================================================= */
     /* Dedykowany kontener na baner */
     
-    .place-banner-container {
+    .place-banner-container,
+    .place-map-container {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -908,7 +910,8 @@
     }
     /* Stylizacja samego obrazka baneru */
     
-    .place-banner-img {
+    .place-banner-img,
+    .place-map-img {
         max-width: 180px;
         /* Ograniczenie szerokości, żeby nie był za duży */
         max-height: 320px;
@@ -923,9 +926,16 @@
         filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.4));
         transition: transform 0.3s ease, filter 0.3s ease;
     }
+    
+    .place-map-img {
+        max-width: 280px;
+        /* Ograniczenie szerokości, żeby nie był za duży */
+        max-height: 320px;
+    }
     /* Efekt najechania myszką (hover) */
     
-    .place-banner-img:hover {
+    .place-banner-img:hover,
+    .place-map-img:hover {
         transform: scale(1.04);
         filter: drop-shadow(0px 8px 18px rgba(0, 0, 0, 0.6)) drop-shadow(0px 0px 8px rgba(19, 196, 137, 0.5));
     }
