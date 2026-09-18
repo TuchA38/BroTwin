@@ -138,6 +138,11 @@
         "definition": "Właściwość polegająca na sumowaniu się składników lub efektów, prowadząca do ich łącznego nagromadzenia.",
         "aliases": ["addytywnie"]
     },
+    "adept": {
+        "title": "Adept",
+        "definition": "Osoba, która dopiero zaczyna zdobywać wiedzę, umiejętności lub doświadczenie w określonej dziedzinie i uczy się od bardziej doświadczonych osób.",
+        "aliases": ["adepta"]
+    },
     "aksamitny": {
         "title": "Aksamitny",
         "definition": "Pokryty krótką, gęstą, miękką w dotyku sierścią, sprawiającą wrażenie gładkiej i delikatnej.",
@@ -172,6 +177,11 @@
         "title": "Amulet",
         "definition": "Przedmiot noszony lub przechowywany jako talizman, któremu przypisuje się właściwości ochronne lub magiczne.",
         "aliases": ["amulety"]
+    },
+    "antagonista": {
+        "title": "Antagonista",
+        "definition": "Osoba, postać lub siła przeciwstawiająca się innej osobie, postaci albo grupie i pozostająca z nią w konflikcie lub rywalizacji. W opowieściach antagonistą jest zwykle postać stojąca w opozycji do głównego bohatera.",
+        "aliases": ["antagonisty"]
     },
     "antypody": {
         "title": "Antypody",
@@ -534,7 +544,7 @@
     "hedging": {
         "title": "Hedging",
         "definition": "Strategia ograniczania ryzyka finansowego poprzez podejmowanie działań, które mają zmniejszyć potencjalne straty wynikające z niekorzystnych zmian cen, kursów walut, stóp procentowych lub innych czynników rynkowych. Hedging może polegać m.in. na wykorzystaniu odpowiednich instrumentów finansowych.",
-        "aliases": ["hedgingowy"]
+        "aliases": ["hedgingowy", "hedgingowego"]
     },
     "heksadecymalny": {
         "title": "Heksadecymalny",
@@ -723,7 +733,7 @@
     "komercyjny": {
         "title": "Komercyjny",
         "definition": "Nastawiony przede wszystkim na osiąganie zysków finansowych poprzez sprzedaż produktów, usług lub dostęp do określonych atrakcji.",
-        "aliases": ["komercyjnego", "komercyjnych"]
+        "aliases": ["komercyjnego", "komercyjnych", "komercyjne", "komercjalizacji"]
     },
     "kompleks": {
         "title": "Kompleks",
@@ -754,6 +764,10 @@
         "title": "Konfiskata",
         "definition": "Przymusowe odebranie i przejęcie własności lub przedmiotów przez uprawnioną osobę, instytucję albo organ, zwykle na podstawie przepisów prawa. W szerszym znaczeniu może oznaczać również odebranie czegoś w ramach określonych zasad lub działań.",
         "aliases": ["konfiskat"]
+    },
+    "konsumpcjonizm": {
+        "title": "Konsumpcjonizm",
+        "definition": "Postawa społeczna polegająca na przywiązywaniu dużej wagi do kupowania i posiadania dóbr oraz traktowaniu konsumpcji jako ważnego elementu życia i osiągania satysfakcji."
     },
     "konwent": {
         "title": "Konwent",
@@ -1027,6 +1041,10 @@
         "definition": "Moment cyklu miesiączkowego, w którym z jajnika uwalniana jest komórka jajowa zdolna do zapłodnienia.",
         "aliases": ["owulacji"]
     },
+    "OZE": {
+        "title": "OZE (Odnawialne Źródła Energii)",
+        "definition": "Źródła energii wykorzystujące naturalne procesy, które uzupełniają się w krótkim czasie, takie jak energia słoneczna, wiatrowa, wodna, czy geotermalna."
+    },
     "palakowaty": {
         "title": "Pałąkowaty",
         "definition": "Wygięty w łuk lub przypominający swoim kształtem pałąk. W odniesieniu do budowy ciała zwierząt określa kończyny lub inne części ciała, które są lekko wygięte, co wpływa na sposób poruszania się i wygląd zwierzęcia.",
@@ -1112,6 +1130,11 @@
         "definition": "Najniższa warstwa roślin i grzybów w lesie, pokrywająca jego dno.",
         "aliases": ["podszyciu lasu", "poszyciu leśnym", "poszycia leśnego", "ściółce leśnej", "ściółkę leśną", "leśnego poszycia"]
     },
+    "pragmatyczny": {
+        "title": "Pragmatyczny",
+        "definition": "Kierujący się praktycznym podejściem i skupiający się przede wszystkim na tym, co jest możliwe do osiągnięcia oraz przynosi konkretne rezultaty, zamiast na samych teoriach lub idealnych założeniach.",
+        "aliases": ["pragmatyczne", "pragmatyzm"]
+    },
     "prestiz": {
         "title": "Prestiż",
         "definition": "Uznanie, szacunek i wysoka pozycja, jaką osoba, miejsce, organizacja lub marka cieszy się w oczach innych. Prestiż może wynikać m.in. z osiągnięć, jakości, renomy, wyjątkowego charakteru lub statusu.",
@@ -1160,6 +1183,11 @@
         "title": "Ranczer",
         "definition": "Osoba zajmująca się prowadzeniem rancza, czyli rozległego gospodarstwa hodowlanego, najczęściej nastawionego na chów zwierząt.",
         "aliases": ["ranczerami"]
+    },
+    "reaktywacja": {
+        "title": "Reaktywacja",
+        "definition": "Ponowne uruchomienie, przywrócenie do działania lub wznowienie działalności czegoś, co wcześniej zostało przerwane, zawieszone albo zakończone.",
+        "aliases": ["reaktywacji"]
     },
     "rebranding": {
         "title": "Rebranding",
@@ -1263,6 +1291,11 @@
         "title": "Ryzen",
         "definition": "Seria procesorów komputerowych firmy AMD stosowanych w komputerach osobistych."
     },
+    "sceptycyzm": {
+        "title": "Sceptycyzm",
+        "definition": "Postawa polegająca na powątpiewaniu w prawdziwość, skuteczność lub wartość czegoś oraz na ostrożnym podchodzeniu do nowych informacji, pomysłów lub osób.",
+        "aliases": ["sceptycyzmem", "sceptycyzmu"]
+    },
     "scypul": {
         "title": "Scypuł",
         "definition": "Obumierająca, delikatna warstwa skórna porośnięta drobną sierścią, pokrywająca poroże jeleniowatych w okresie jego wzrostu i odpadająca po zakończeniu rozwoju.",
@@ -1332,20 +1365,24 @@
         "title": "Splendor",
         "definition": "Zewnętrzne oznaki świetności, okazałości lub bogactwa."
     },
-    "spodnicabiomu": {
-        "title": "Spódnica biomu",
-        "definition": "Element graficzny w grze określający wygląd krawędzi lub obrzeża terenu danego biomu.",
-        "aliases": ["spódnic biomów", "spódnice biomów", "spódnicom biomów"]
-    },
     "sporran": {
         "title": "Sporran",
         "definition": "Część tradycyjnego stroju szkockiego – torebka ze skóry lub futra noszona z przodu na kilcie podczas uroczystości i wydarzeń folklorystycznych.",
         "aliases": ["sporranów"]
     },
+    "spodnicabiomu": {
+        "title": "Spódnica biomu",
+        "definition": "Element graficzny w grze określający wygląd krawędzi lub obrzeża terenu danego biomu.",
+        "aliases": ["spódnic biomów", "spódnice biomów", "spódnicom biomów"]
+    },
     "spolkowac": {
         "title": "Spółkować",
         "definition": "Odbywać stosunek płciowy w celu rozmnażania się.",
         "aliases": ["spółkowania", "spółkują", "spółkuje"]
+    },
+    "sprzeniewierzenie": {
+        "title": "Sprzeniewierzenie",
+        "definition": "Nieuczciwe wykorzystanie, przywłaszczenie lub roztrwonienie powierzonych pieniędzy, majątku, środków albo zaufania, zwykle wbrew obowiązkom lub przeznaczeniu."
     },
     "stadiumembrionalne": {
         "title": "Stadium embrionalne",
