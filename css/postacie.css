@@ -106,6 +106,8 @@
 
 #postacie-grid .character-card.visible {
     display: flex;
+    opacity: 0;
+    /* Ukrywa kafelek do momentu wyzwolenia animacji .in-view */
 }
 
 #postacie-grid .character-card img {

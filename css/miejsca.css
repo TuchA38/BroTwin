@@ -90,6 +90,8 @@
     
     #miejsca-grid .place-card.visible {
         display: flex;
+        opacity: 0;
+        /* Ukrywa kafelek do momentu wyzwolenia animacji .in-view */
     }
     
     #miejsca-grid .place-card img {
