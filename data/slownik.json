@@ -653,6 +653,10 @@
         "definition": "Przyrząd optyczny składający się z luster i kolorowych elementów, które podczas obracania tworzą zmieniające się, symetryczne wzory. Przenośnie słowo to oznacza także bogactwo różnorodnych, często barwnych i szybko zmieniających się elementów, tworzących efekt dużej różnorodności wizualnej lub wrażeń.",
         "aliases": ["kalejdoskopu"]
     },
+    "kameralny": {
+        "title": "Kameralny",
+        "definition": "Niewielki, spokojny i przeznaczony dla stosunkowo małej liczby osób, dzięki czemu zapewnia bardziej swobodną, przytulną i mniej formalną atmosferę."
+    },
     "kamuflaz": {
         "title": "Kamuflaż",
         "definition": "Ubarwienie lub wzór ciała pozwalający organizmowi zlewać się z otoczeniem i utrudniający jego dostrzeżenie.",
@@ -958,6 +962,11 @@
         "title": "Nominatywny",
         "definition": "Określający podgatunek typowy dla danego gatunku, od którego wywodzi się nazwa gatunku głównego."
     },
+    "nostalgiczny": {
+        "title": "Nostalgiczny",
+        "definition": "Wywołujący uczucie nostalgii, czyli tęsknoty lub wzruszenia związanych ze wspomnieniami o przeszłości, dawnych czasach, miejscach lub wydarzeniach.",
+        "aliases": ["nostalgię", "nostalgiczne"]
+    },
     "nowatorski": {
         "title": "Nowatorski",
         "definition": "Wprowadzający nowe, oryginalne lub dotąd rzadko stosowane rozwiązania, pomysły albo metody. Określenie używane do opisywania czegoś, co wyróżnia się innowacyjnym podejściem i odchodzi od tradycyjnych sposobów działania.",
@@ -1061,6 +1070,11 @@
         "definition": "Naturalny, cykliczny proces fizjologiczny u ptaków, polegający na zrzucaniu starych, zużytych piór i zastępowaniu ich nowymi. Umożliwia utrzymanie sprawności lotu, izolacji termicznej oraz prawidłowego wyglądu upierzenia.",
         "aliases": ["pierzenia", "opierzają"]
     },
+    "pionierski": {
+        "title": "Pionierski",
+        "definition": "Nowatorski i przecierający nowe szlaki, często związany z pierwszym zastosowaniem określonego rozwiązania, pomysłu lub sposobu działania. Określenie podkreśla, że coś jest jednym z pierwszych tego rodzaju i może wyznaczać kierunek dalszego rozwoju.",
+        "aliases": ["pionierskim"]
+    },
     "plantacja": {
         "title": "Plantacja",
         "definition": "Duży teren przeznaczony pod uprawę jednej rośliny.",
@@ -1102,6 +1116,11 @@
         "title": "Prestiż",
         "definition": "Uznanie, szacunek i wysoka pozycja, jaką osoba, miejsce, organizacja lub marka cieszy się w oczach innych. Prestiż może wynikać m.in. z osiągnięć, jakości, renomy, wyjątkowego charakteru lub statusu.",
         "aliases": ["prestiżu", "prestiżowych"]
+    },
+    "proekologia": {
+        "title": "Proekologia",
+        "definition": "Podejście lub działania mające na celu ochronę środowiska naturalnego, ograniczanie negatywnego wpływu człowieka na przyrodę oraz wspieranie zrównoważonego korzystania z zasobów naturalnych.",
+        "aliases": ["proekologicznej"]
     },
     "prokreacja": {
         "title": "Prokreacja",
@@ -1361,6 +1380,11 @@
         "title": "Subpopulacja",
         "definition": "Mniejsza, wyodrębniona grupa osób lub komórek wewnątrz większej populacji, posiadająca specyficzne, wspólne cechy.",
         "aliases": ["subpopulację", "subpopulacji"]
+    },
+    "substancja_budowlana": {
+        "title": "Substancja budowlana",
+        "definition": "Ogół zachowanych elementów i materiałów tworzących istniejący budynek lub obiekt budowlany, takich jak mury, konstrukcje, elewacje czy inne części budynku. W kontekście zabytków określenie odnosi się do oryginalnej lub historycznej części obiektu, która może wymagać ochrony, konserwacji albo odrestaurowania.",
+        "aliases": ["substancję budowlaną"]
     },
     "sus": {
         "title": "Sus",
