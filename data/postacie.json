@@ -334,17 +334,40 @@
     {
         "id": "orion-discord",
         "name": "Orion Discord",
-        "version": ["pz1pc", "pz1console", "pz2"],
-        "role": "Ochroniarz Muzeum",
-        "affiliation": "Goodwin House",
-        "status": "Aktywny / Mentor",
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
+        "role": "Kustosz Muzeum",
+        "affiliation": "Muzeum Ogrodu Zoologicznego w Andigawen",
+        "status": "Aktywny",
+        "motto": "To co zdarzyło się w przeszłości, wciąż ma wpływ na naszą teraźniejszość, a może i na przyszłość.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788866735/Orion_Discord_1_olcfme.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788866735/Orion_Discord_1_olcfme.webp",
-        "description": "Charyzmatyczny miłośnik zwierząt i założyciel sieci ogrodów zoologicznych Goodwin Trust z siedzibą w [[miejsca:rezydencja-goodwinow|Goodwin House]]. Bernie kieruje się sercem i troską o dobrostan zwierząt, wprowadzając gracza w świat odpowiedzialnego zarządzania zoo. Główny mentor w trybie kariery, współpracujący z [[nancy-jones|Nancy Jones]].",
-        "fullBio": "<b>O postaci</b><br>Bernie Goodwin to pasjonat przyrody, którego życiową misją jest ochrona zagrożonych gatunków oraz edukacja społeczna. Przez lata zbudował od zera wiele prestiżowych parków na całym świecie, zarządzając nimi z poziomu [[miejsca:goodwin-house|Goodwin House]].<br><br><b>Rola w kampanii</b><br>W trybie kariery Bernie pełni rolę przewodnika. Pomaga zrozumieć fundamentalne potrzeby zwierząt — od odpowiednio dobranego wybiegu po wzbogacenia środowiskowe i programy reintrodukcji.<br><br><b>Relacje</b><br>Jest bliskim przyjacielem [[nancy-jones|Nancy Jones]], która wspiera go od strony medycznej i operacyjnej. Często wchodzi w spory ideologiczne z chciwym przedsiębiorcą [[dominic-myers|Dominikiem Myersem]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801433/bernie_1.webp",
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1786801438/bernie_2.webp"
+        "about": "Orion Discord to pasjonat historii zoologii, wizjonerski działacz oraz założyciel i kustosz [[miejsca:muzeum-ogrodu-zoologicznego-w-andigawen|Muzeum Ogrodu Zoologicznego w Andigawen]]. Od najmłodszych lat z zachwytem przemierzał alejki pierwotnego parku stworzonego przez [[postacie:amiliana-empirejska|Amilianę Empirejską]], a tragedia, która doprowadziła do jego zamknięcia, głęboko nim wstrząsnęła. Nie mogąc pogodzić się z niszczeniem zabytkowego terenu, po latach postanowił własnymi siłami zabezpieczyć i odrestaurować ocalałą infrastrukturę. Dzięki jego determinacji dawne ruiny przekształciły się w nowoczesny ośrodek muzealno-edukacyjny, wyznaczający nowe standardy pamięci o dziedzictwie ochrony przyrody.",
+        "relations": "Darzy ogromnym szacunkiem założycieli pierwszego parku: [[postacie:amiliana-empirejska|Amilianę Empirejską]], [[postacie:ethelien-mumba|Ethelien Mumba]] oraz [[postacie:mondo-zeller|Mondo Zellera]]. To właśnie od nich uzyskał oficjalną zgodę na odrestaurowanie terenu i stworzenie muzeum upamiętniającego ich historię. Podczas prac nad zabezpieczeniem infrastruktury ściśle konsultował się z [[postacie:mondo-zeller|Mondo]], czerpiąc z jego wiedzy inżynieryjnej.",
+        "memories": [{
+                "question": "Jak pamięta dawne Zoo w Andigawen z dzieciństwa?",
+                "content": [
+                    "Zapytany o swoje dziecięce wspomnienia, Orion ze wzruszeniem przywołuje czasy świetności pierwszego parku:",
+                    "„Dla młodego chłopca spacer alejkami Andigawen był jak przeniesienie się do zupełnie innego świata. Pamiętam barwne pawie, wielbłądy dwugarbne i potężnego niedźwiedzia Derwarda, który mimo swoich rozmiarów miał w sobie niezwykłą łagodnością. Obserwowanie pracy Amiliany Empirejskiej i całego zespołu było dla mnie największą inspiracją. Kiedy doszło do tragedii w Morskiej Krainie i zoo zostało zamknięte, czułem, jakby cząstka mego dzieciństwa legła w gruzach. Obiecałem sobie wtedy, że to miejsce nie odejdzie w zapomnienie.”"
+                ]
+            },
+            {
+                "question": "Jak wyglądały kulisy odbudowy ruin i tworzenia Muzeum?",
+                "content": [
+                    "Podjęcie decyzji o odrestaurowaniu opuszczonego i niszczejącego terenu wymagało ogromnej odwagi oraz determinacji. Orion tak wspomina początki prac nad [[miejsca:muzeum-ogrodu-zoologicznego-w-andigawen|Muzeum Ogrodu Zoologicznego w Andigawen]]:",
+                    "„Gdy po latach wróciłem do Andigawen, zastałem gęste zarośla i niszczejące ruiny wybiegów. Wszyscy powtarzali, że to miejsce przynosi pecha, ale ja widziałem w nim kawałek pięknej, choć bolesnej historii. Nie chciałem porywać się na potężne inwestycje... Zrujnowaną Morską Krainę zostawiłem jako cichy symbol przeszłości. Zależało mi na kameralnej, bezpiecznej przestrzeni. Gdy Mondo Zeller wrócił już do branży po sukcesie w Magiotopii, skonsultowałem z nim zabezpieczenie dawnych budynków technicznych. Jego wskazówki były nieocenione! Zamiast skomplikowanych wybiegów stworzyliśmy zagrody dla łagodnych zwierząt. Dziś Muzeum Andigawen łączy pamięć o dawnych czasach z ciepłą, wiejską atmosferą.”"
+                ]
+            },
+            {
+                "question": "Jaka jest główna misja Muzeum Andigawen dzisiaj?",
+                "content": [
+                    "Dziś obiekt w Andigawen stanowi ważny punkt na mapie edukacji proekologicznej. Orion tak podsumowuje rolę stworzonej przez siebie placówki:",
+                    "„Naszym celem jest uczczenie pionierskich osiągnięć Amiliany, Ethelien i Mondo, przy jednoczesnym ukazywaniu, jak ważna jest troska o zwierzęta. Przypominamy o trudnych chwilach i uczymy na błędach z przeszłości. Zwiedzający mogą nie tylko poznać archiwalne eksponaty, ale też spędzić czas wśród naszych alpak, danieli czy wiejskiego inwentarza. Historia Andigawen zatoczyła koło... Z ruin powstało spokojne miejsce, które chroni pamięć i kształtuje wrażliwość kolejnych pokoleń.”"
+                ]
+            }
         ]
     },
     {

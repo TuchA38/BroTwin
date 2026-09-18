@@ -607,7 +607,7 @@
     "infrastruktura": {
         "title": "Infrastruktura",
         "definition": "Zespół obiektów, instalacji i systemów technicznych niezbędnych do funkcjonowania danego miejsca lub przedsięwzięcia.",
-        "aliases": ["infrastrukturze", "infrastrukturę", "infrastrukturą"]
+        "aliases": ["infrastrukturze", "infrastrukturę", "infrastrukturą", "infrastruktury"]
     },
     "inicjalizacja": {
         "title": "Inicjalizacja",
@@ -976,7 +976,7 @@
     "odrestaurować": {
         "title": "Odrestaurować",
         "definition": "Przywrócić zabytkowemu lub uszkodzonemu obiektowi jego wcześniejszy wygląd, stan albo charakter poprzez odpowiednią naprawę, renowację i odnowienie.",
-        "aliases": ["odrestaurował"]
+        "aliases": ["odrestaurował", "odrestaurowane", "odrestaurowanych", "odrestaurowanie", "odrestaurowaniu"]
     },
     "odruchkumaka": {
         "title": "Odruch kumaka",
