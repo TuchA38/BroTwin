@@ -1262,14 +1262,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-arctic-pack .music-link,
 #dlc-modal.dlc-theme-arctic-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-arctic-pack .species-link,
-#dlc-modal.dlc-theme-arctic-pack .glossary-link {
+#dlc-modal.dlc-theme-arctic-pack .glossary-link,
+#dlc-modal.dlc-theme-arctic-pack .scenario-link {
     color: #32ddff;
 }
 
 #dlc-modal.dlc-theme-arctic-pack .music-link:hover,
 #dlc-modal.dlc-theme-arctic-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-arctic-pack .species-link:hover,
-#dlc-modal.dlc-theme-arctic-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-arctic-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-arctic-pack .scenario-link:hover {
     color: #63e5ff;
 }
 
@@ -1806,14 +1808,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-twilight-pack .music-link,
 #dlc-modal.dlc-theme-twilight-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-twilight-pack .species-link,
-#dlc-modal.dlc-theme-twilight-pack .glossary-link {
+#dlc-modal.dlc-theme-twilight-pack .glossary-link,
+#dlc-modal.dlc-theme-twilight-pack .scenario-link {
     color: #af4360;
 }
 
 #dlc-modal.dlc-theme-twilight-pack .music-link:hover,
 #dlc-modal.dlc-theme-twilight-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-twilight-pack .species-link:hover,
-#dlc-modal.dlc-theme-twilight-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-twilight-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-twilight-pack .scenario-link:hover {
     color: #d35375;
 }
 
@@ -1859,14 +1863,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-grasslands-animal-pack .music-link,
 #dlc-modal.dlc-theme-grasslands-animal-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-grasslands-animal-pack .species-link,
-#dlc-modal.dlc-theme-grasslands-animal-pack .glossary-link {
+#dlc-modal.dlc-theme-grasslands-animal-pack .glossary-link,
+#dlc-modal.dlc-theme-grasslands-animal-pack .scenario-link {
     color: #ffaba6;
 }
 
 #dlc-modal.dlc-theme-grasslands-animal-pack .music-link:hover,
 #dlc-modal.dlc-theme-grasslands-animal-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-grasslands-animal-pack .species-link:hover,
-#dlc-modal.dlc-theme-grasslands-animal-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-grasslands-animal-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-grasslands-animal-pack .scenario-link:hover {
     color: #ffc0bc;
 }
 
@@ -1912,14 +1918,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-tropical-pack .music-link,
 #dlc-modal.dlc-theme-tropical-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-tropical-pack .species-link,
-#dlc-modal.dlc-theme-tropical-pack .glossary-link {
+#dlc-modal.dlc-theme-tropical-pack .glossary-link,
+#dlc-modal.dlc-theme-tropical-pack .scenario-link {
     color: #d7d06e;
 }
 
 #dlc-modal.dlc-theme-tropical-pack .music-link:hover,
 #dlc-modal.dlc-theme-tropical-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-tropical-pack .species-link:hover,
-#dlc-modal.dlc-theme-tropical-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-tropical-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-tropical-pack .scenario-link:hover {
     color: #fcf486;
 }
 
@@ -1965,14 +1973,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-arid-animal-pack .music-link,
 #dlc-modal.dlc-theme-arid-animal-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-arid-animal-pack .species-link,
-#dlc-modal.dlc-theme-arid-animal-pack .glossary-link {
+#dlc-modal.dlc-theme-arid-animal-pack .glossary-link,
+#dlc-modal.dlc-theme-arid-animal-pack .scenario-link {
     color: #ffdbac;
 }
 
 #dlc-modal.dlc-theme-arid-animal-pack .music-link:hover,
 #dlc-modal.dlc-theme-arid-animal-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-arid-animal-pack .species-link:hover,
-#dlc-modal.dlc-theme-arid-animal-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-arid-animal-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-arid-animal-pack .scenario-link:hover {
     color: #ffe3bf;
 }
 
@@ -2018,14 +2028,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-oceania-pack .music-link,
 #dlc-modal.dlc-theme-oceania-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-oceania-pack .species-link,
-#dlc-modal.dlc-theme-oceania-pack .glossary-link {
+#dlc-modal.dlc-theme-oceania-pack .glossary-link,
+#dlc-modal.dlc-theme-oceania-pack .scenario-link {
     color: #ffa8ce;
 }
 
 #dlc-modal.dlc-theme-oceania-pack .music-link:hover,
 #dlc-modal.dlc-theme-oceania-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-oceania-pack .species-link:hover,
-#dlc-modal.dlc-theme-oceania-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-oceania-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-oceania-pack .scenario-link:hover {
     color: #ffc3dd;
 }
 
@@ -2071,14 +2083,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-eurasia-animal-pack .music-link,
 #dlc-modal.dlc-theme-eurasia-animal-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-eurasia-animal-pack .species-link,
-#dlc-modal.dlc-theme-eurasia-animal-pack .glossary-link {
+#dlc-modal.dlc-theme-eurasia-animal-pack .glossary-link,
+#dlc-modal.dlc-theme-eurasia-animal-pack .scenario-link {
     color: #8095a0;
 }
 
 #dlc-modal.dlc-theme-eurasia-animal-pack .music-link:hover,
 #dlc-modal.dlc-theme-eurasia-animal-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-eurasia-animal-pack .species-link:hover,
-#dlc-modal.dlc-theme-eurasia-animal-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-eurasia-animal-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-eurasia-animal-pack .scenario-link:hover {
     color: #9bb1bd;
 }
 
@@ -2124,14 +2138,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-barnyard-animal-pack .music-link,
 #dlc-modal.dlc-theme-barnyard-animal-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-barnyard-animal-pack .species-link,
-#dlc-modal.dlc-theme-barnyard-animal-pack .glossary-link {
+#dlc-modal.dlc-theme-barnyard-animal-pack .glossary-link,
+#dlc-modal.dlc-theme-barnyard-animal-pack .scenario-link {
     color: #b1cd55;
 }
 
 #dlc-modal.dlc-theme-barnyard-animal-pack .music-link:hover,
 #dlc-modal.dlc-theme-barnyard-animal-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-barnyard-animal-pack .species-link:hover,
-#dlc-modal.dlc-theme-barnyard-animal-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-barnyard-animal-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-barnyard-animal-pack .scenario-link:hover {
     color: #c7e662;
 }
 
@@ -2177,14 +2193,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-zookeepers-animal-pack .music-link,
 #dlc-modal.dlc-theme-zookeepers-animal-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-zookeepers-animal-pack .species-link,
-#dlc-modal.dlc-theme-zookeepers-animal-pack .glossary-link {
+#dlc-modal.dlc-theme-zookeepers-animal-pack .glossary-link,
+#dlc-modal.dlc-theme-zookeepers-animal-pack .scenario-link {
     color: #6ce9ff;
 }
 
 #dlc-modal.dlc-theme-zookeepers-animal-pack .music-link:hover,
 #dlc-modal.dlc-theme-zookeepers-animal-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-zookeepers-animal-pack .species-link:hover,
-#dlc-modal.dlc-theme-zookeepers-animal-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-zookeepers-animal-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-zookeepers-animal-pack .scenario-link:hover {
     color: #87edff;
 }
 
@@ -2230,14 +2248,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-americas-animal-pack .music-link,
 #dlc-modal.dlc-theme-americas-animal-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-americas-animal-pack .species-link,
-#dlc-modal.dlc-theme-americas-animal-pack .glossary-link {
+#dlc-modal.dlc-theme-americas-animal-pack .glossary-link,
+#dlc-modal.dlc-theme-americas-animal-pack .scenario-link {
     color: #ff966c;
 }
 
 #dlc-modal.dlc-theme-americas-animal-pack .music-link:hover,
 #dlc-modal.dlc-theme-americas-animal-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-americas-animal-pack .species-link:hover,
-#dlc-modal.dlc-theme-americas-animal-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-americas-animal-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-americas-animal-pack .scenario-link:hover {
     color: #ffa683;
 }
 
@@ -2283,14 +2303,16 @@ svg path.dim {
 #dlc-modal.dlc-theme-asia-animal-pack .music-link,
 #dlc-modal.dlc-theme-asia-animal-pack #dlc-release-date-btn,
 #dlc-modal.dlc-theme-asia-animal-pack .species-link,
-#dlc-modal.dlc-theme-asia-animal-pack .glossary-link {
+#dlc-modal.dlc-theme-asia-animal-pack .glossary-link,
+#dlc-modal.dlc-theme-asia-animal-pack .scenario-link {
     color: #e25ecf;
 }
 
 #dlc-modal.dlc-theme-asia-animal-pack .music-link:hover,
 #dlc-modal.dlc-theme-asia-animal-pack #dlc-release-date-btn:hover,
 #dlc-modal.dlc-theme-asia-animal-pack .species-link:hover,
-#dlc-modal.dlc-theme-asia-animal-pack .glossary-link:hover {
+#dlc-modal.dlc-theme-asia-animal-pack .glossary-link:hover,
+#dlc-modal.dlc-theme-asia-animal-pack .scenario-link:hover {
     color: #ff79eb;
 }
 
@@ -2588,12 +2610,14 @@ svg path.dim {
 }
 
 #dlc-modal[class*="dlc-theme-arid&tropical-bundle"] #dlc-release-date-btn,
-#dlc-modal[class*="dlc-theme-arid&tropical-bundle"] .glossary-link {
+#dlc-modal[class*="dlc-theme-arid&tropical-bundle"] .glossary-link,
+#dlc-modal[class*="dlc-theme-arid&tropical-bundle"] .scenario-link {
     color: #d7d06e;
 }
 
 #dlc-modal[class*="dlc-theme-arid&tropical-bundle"] #dlc-release-date-btn:hover,
-#dlc-modal[class*="dlc-theme-arid&tropical-bundle"] .glossary-link:hover {
+#dlc-modal[class*="dlc-theme-arid&tropical-bundle"] .glossary-link:hover,
+#dlc-modal[class*="dlc-theme-arid&tropical-bundle"] .scenario-link:hover {
     color: #fcf486;
 }
 
@@ -2769,12 +2793,14 @@ svg path.dim {
 }
 
 #dlc-modal[class*="dlc-theme-oceania&eurasia-bundle"] #dlc-release-date-btn,
-#dlc-modal[class*="dlc-theme-oceania&eurasia-bundle"] .glossary-link {
+#dlc-modal[class*="dlc-theme-oceania&eurasia-bundle"] .glossary-link,
+#dlc-modal[class*="dlc-theme-oceania&eurasia-bundle"] .scenario-link {
     color: #8095a0;
 }
 
 #dlc-modal[class*="dlc-theme-oceania&eurasia-bundle"] #dlc-release-date-btn:hover,
-#dlc-modal[class*="dlc-theme-oceania&eurasia-bundle"] .glossary-link:hover {
+#dlc-modal[class*="dlc-theme-oceania&eurasia-bundle"] .glossary-link:hover,
+#dlc-modal[class*="dlc-theme-oceania&eurasia-bundle"] .scenario-link:hover {
     color: #9bb1bd;
 }
 
@@ -2828,12 +2854,14 @@ svg path.dim {
 }
 
 #dlc-modal[class*="dlc-theme-barnyard&zookeepers-bundle"] #dlc-release-date-btn,
-#dlc-modal[class*="dlc-theme-barnyard&zookeepers-bundle"] .glossary-link {
+#dlc-modal[class*="dlc-theme-barnyard&zookeepers-bundle"] .glossary-link,
+#dlc-modal[class*="dlc-theme-barnyard&zookeepers-bundle"] .scenario-link {
     color: #b1cd55;
 }
 
 #dlc-modal[class*="dlc-theme-barnyard&zookeepers-bundle"] #dlc-release-date-btn:hover,
-#dlc-modal[class*="dlc-theme-barnyard&zookeepers-bundle"] .glossary-link:hover {
+#dlc-modal[class*="dlc-theme-barnyard&zookeepers-bundle"] .glossary-link:hover,
+#dlc-modal[class*="dlc-theme-barnyard&zookeepers-bundle"] .scenario-link:hover {
     color: #c7e662;
 }
 
@@ -2887,12 +2915,14 @@ svg path.dim {
 }
 
 #dlc-modal[class*="dlc-theme-americas&asia-bundle"] #dlc-release-date-btn,
-#dlc-modal[class*="dlc-theme-americas&asia-bundle"] .glossary-link {
+#dlc-modal[class*="dlc-theme-americas&asia-bundle"] .glossary-link,
+#dlc-modal[class*="dlc-theme-americas&asia-bundle"] .scenario-link {
     color: #ff966c;
 }
 
 #dlc-modal[class*="dlc-theme-americas&asia-bundle"] #dlc-release-date-btn:hover,
-#dlc-modal[class*="dlc-theme-americas&asia-bundle"] .glossary-link:hover {
+#dlc-modal[class*="dlc-theme-americas&asia-bundle"] .glossary-link:hover,
+#dlc-modal[class*="dlc-theme-americas&asia-bundle"] .scenario-link:hover {
     color: #ffa683;
 }
 
