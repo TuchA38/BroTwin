@@ -46,12 +46,12 @@
             "pz2"
         ],
         "role": "Właściciel Zoo",
-        "affiliation": "Rezydencja Goodwinów",
+        "affiliation": "Fundacja Goodwinów",
         "status": "Aktywny Mentor",
         "motto": "Najlepsze, co możemy po sobie zostawić, to nie własne pomniki, ale uratowane gatunki, wypuszczone na wolność zwierzęta oraz ludzi, których nauczyliśmy miłości do przyrody.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787658370/Bernie_Goodwin_1_cjmihx.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787658370/Bernie_Goodwin_1_cjmihx.webp",
-        "about": "Bernard „Bernie” Goodwin to niezwykle charyzmatyczny pasjonat przyrody, wizjoner oraz założyciel sieci ogrodów zoologicznych. Swoją całożyciową misję opiera na głębokim szacunku do zwierząt, ochronie zagrożonych gatunków oraz edukowaniu społeczeństwa. Choć zarządza międzynarodowym imperium z poziomu [[miejsca:rezydencja-goodwinow|Rezydencji Goodwinów]], w sercu pozostaje bezpośrednim, ciepłym i pełnym humoru opiekunem, dla którego najważniejszy jest dobrostan podopiecznych. W trybie Kariery pełni rolę głównego przewodnika i mentora, wprowadzając nowych pracowników w tajniki odpowiedzialnego i etycznego prowadzenia nowoczesnych parków zoologicznych.",
+        "about": "Bernard „Bernie” Goodwin to niezwykle charyzmatyczny pasjonat przyrody, wizjoner oraz założyciel sieci ogrodów zoologicznych. Swoją całożyciową misję opiera na głębokim szacunku do zwierząt, ochronie zagrożonych gatunków oraz edukowaniu społeczeństwa. Choć zarządza międzynarodowym imperium z poziomu [[miejsca:rezydencja-goodwinow|Rezydencji Goodwinów]], w sercu pozostaje bezpośrednim, ciepłym i pełnym humoru opiekunem, dla którego najważniejszy jest dobrostan podopiecznych. W Trybie Kariery pełni rolę głównego przewodnika i mentora, wprowadzając nowych pracowników w tajniki odpowiedzialnego i etycznego prowadzenia nowoczesnych parków zoologicznych.",
         "relations": "Prywatnie Bernie jest ojcem [[emma-goodwin|Emmy]], która choć dzieli z nim miłość do przyrody, obrała własną drogę ratowania planety. Jego najbliższą i najbardziej zaufaną współpracowniczką jest szefowa opiekunów, [[postacie:nancy-jones|Nancy Jones]], z którą łączy go wieloletnia przyjaźń, wzajemna opiekuńczość oraz zabawne, codzienne zakłady. Na gruncie zawodowym i ideologicznym regularnie ściera się z bezwzględnym i nastawionym wyłącznie na zysk przedsiębiorcą [[postacie:dominic-myers|Dominiciem Myersem]].",
         "memories": [{
                 "question": "Jaki był przebieg całej trasy szkoleniowej oraz rozwój kolejnych parków?",
@@ -70,6 +70,27 @@
                     "Widząc profesjonalizm zespołu i ostateczny upadek [[postacie:dominic-myers|Myersa]], Bernie był ogromnie dumny z osiągnięć [[postacie:emma-goodwin|Emmy]] oraz menedżera i zaczął rozważać przejście na zasłużoną emeryturę:",
                     "„Zbudowali wspaniały park, przetrwali ataki wandalów i doprowadzili do tego, że władze zamknęły zniszczone zoo Dominica raz na zawsze. Widząc, jak doskonale radzili sobie z ochroną zwierząt, sam zacząłem mocno myśleć o emeryturze... Choć znając mnie, pewnie jeszcze nie teraz! Byłem z nich obojga ogromnie dumny!”"
                 ]
+            },
+            {
+                "question": "Jak przebiegały misje w tak skrajnych miejscach?",
+                "content": [
+                    "Po powrocie do działalności Bernie zaangażował się w naukowe projekty badawcze, tworząc [[miejsca:arktyczny-park-badawczy-goodwina|Arktyczny park badawczy Goodwina]] w Norwegii, a następnie podejmując się szalonego wyzwania budowy arktycznego rezerwatu napędzanego zieloną energią w słonecznym Meksyku w ramach [[miejsca:park-ochrony-przyrody-w-meksyku|Parku ochrony przyrody w Meksyku]]. Bernie tak wspomina te zmagania:",
+                    "„W Norwegii postawiliśmy na twardą naukę i ochronę gatunków, a menedżer wyznaczył dla niedźwiedzi polarnych wybieg większy niż moja rocznicowa pamięć do dat! Z kolei w Meksyku urządziliśmy nasz własny biegun północny zasilany w 100% zieloną energią, żeby uchronić zwierzaki przed upałem. Choć meksykański klimat bardziej pasował moim darmowym churros niż niedźwiedziom, menedżer ogarnął wszystko perfekcyjnie!”"
+                ]
+            },
+            {
+                "question": "Jak wspomina się czas spędzony w rodzinnym Rezerwacie przyrody Goodwinów?",
+                "content": [
+                    "Wspólny projekt z [[postacie:emma-goodwin|Emmą]] w ramach [[miejsca:rezerwat-przyrody-goodwinow|Rezerwatu przyrody Goodwinów]] przyniósł Berniemu mnóstwo wzruszeń, zwłaszcza dzięki przejściu na odnawialne źródła energii oraz sprowadzeniu jego ulubionych ptaków kiwi. Bernie tak to podsumowuje:",
+                    "„Stworzyliśmy park samowystarczalny energetycznie i nastawiony na ratowanie przyrody, a wisienką na torcie było sprowadzenie ptaków kiwi! To właśnie na ich wybiegu, sprzątając nieczystości, poznałem miłość mojego życia. Widząc ten sukces, na rodzinnej kolacji z wrażenia nie opowiedziałem ani jednego ze swoich okropnych dowcipów!”"
+                ]
+            },
+            {
+                "question": "Jak przebiegały wydarzenia związane z emeryturą Nancy oraz jubileuszem Zoo Frontier?",
+                "content": [
+                    "Kiedy [[postacie:nancy-jones|Nancy Jones]] ogłosiła, że czas „zawiesić kalosze na kołku”, Bernie postanowił uchronić ją przed nudą i potajemnie zbudował dla niej dedykowany park [[miejsca:zoo-a-la-jones|Zoo à la Jones]]. W projekt włączyła się także [[postacie:emma-goodwin|Emma]], dbając o pełną ekologię i brak długów, co zaowocowało wzruszającym otwarciem. Z kolei podczas obchodów 5-lecia organizacji [[miejsca:zoo-frontier|Zoo Frontier]] Bernie z dumą kibicował zespołowi. Bernie tak wspomina te chwile:",
+                    "„Nie wyobrażałem sobie Nancy siedzącej bezczynnie w fotelu, więc z pomocą menedżera uknułem plan budowy ukrytego dla niej zoo! Choć Nancy oczywiście przejrzała nas na wylot i od razu podsyłała uwagi o dobrostanie, a Emma zadbała o zieloną energię i spłatę pożyczek, efekt przerósł najśmielsze oczekiwania. Oprowadzanie jej po tym gotowym parku było bezcenne... Trzymanie przed nią tajemnicy było tak trudne, jak powstrzymanie mnie przed zjedzeniem ciastek! A kiedy chwilę później śledziliśmy z Nancy huczne obchody 5-lecia Zoo Frontier, gdzie nasza młodzież ratowała żółwie i uczyła Tiffany miłości do zwierząt, rozsadzała nas czysta, rodzicielska duma.”"
+                ]
             }
         ]
     },
@@ -81,7 +102,7 @@
             "pz1console",
             "pz2"
         ],
-        "role": "Zarządca Fundacji / Bizneswoman",
+        "role": "Właściciel Fundacji",
         "affiliation": "Fundacja Dziki Azyl",
         "status": "Aktywna",
         "motto": "Nie obchodzi mnie, co mówią o mnie za plecami, dopóki stać mnie na kupienie ich milczenia. Pieniądz to jedyna prawdziwa władza na tej ziemi.",
@@ -118,13 +139,13 @@
             "pz2"
         ],
         "role": "Właściciel Zoo",
-        "affiliation": "Myers Corp",
+        "affiliation": "Korporacja Myers",
         "status": "Aktywny",
         "motto": "Minimalizacja kosztów, maksymalizacja zysków — etyka i sentymenty to luksus, na który żaden szanujący się inwestor nie może sobie pozwolić.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787666369/Dominic_Mayers_1_agwvz3.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787666369/Dominic_Mayers_1_agwvz3.webp",
-        "about": "Dominic Myers to bezwzględny, nastawiony wyłącznie na zysk przedsiębiorca, zarządca funduszu hedgingowego oraz założyciel Myers Corp. Swoją strategię opiera na drastycznym cięciu kosztów, bezdusznej komercjalizacji oraz szukaniu oszczędności za wszelką cenę, bezapelacyjnie przedkładając bilans finansowy nad dobrostan zwierząt i etykę. Choć zarządza swoimi parkami z pozycji chłodnego kalkulatora, nieustannie zabiega o poklask i próbuje kreować w mediach wizerunek wielkiego wizjonera. W trybie Kariery pełni rolę głównego antagonisty oraz bezkompromisowego pracodawcy, który po przejęciu imperium Goodwina wymusza na graczu realizację absurdalnych planów finansowych.",
-        "relations": "Dominic jest głównym rywalem biznesowym i światopoglądowym [[postacie:bernard-goodwin|Bernarda Goodwina]], choć publicznie obłudnie nazywa go swoim „bliskim przyjacielem”, bez skrupułów wykorzystuje jego zaginięcie do przejęcia całego życiowego dorobku. Bez zawahania pozbywa się dotychczasowej szefowej opiekunów, [[postacie:nancy-jones|Nancy Jones]], uznając jej bezkompromisową troskę o zwierzęta za zbędny wydatek. Z cynizmem odnosi się również do córki Berniego, [[postacie:emma-goodwin|Emmy Goodwin]], wykorzystując rzekomą troskę o pamięć jej ojca wyłącznie do budowania własnego PR-u w mediach.",
+        "about": "Dominic Myers to początkowo bezwzględny, nastawiony wyłącznie na zysk przedsiębiorca, zarządca funduszu hedgingowego oraz założyciel Korporacji Myers. Przez lata opierał swoją strategię na drastycznym cięciu kosztów, bezdusznej komercjalizacji i szukaniu oszczędności za wszelką cenę. W Trybie Kariery pełni rolę głównego antagonisty i bezkompromisowego pracodawcy. Jednak w trakcie swojej drogi zawodowej przechodzi spektakularną przemianę duchową. Odrzuca dawny bezduszny konsumpcjonizm i pomysł reaktywacji Korporacji Myers na rzecz autentycznej troski o dobrostan zwierząt, edukację młodzieży oraz czerpanie radości z prostej, etycznej pracy w ogrodzie zoologicznym.",
+        "relations": "Dominic jest głównym rywalem biznesowym i światopoglądowym [[postacie:bernard-goodwin|Bernarda Goodwina]], a po jego zaginięciu bezwzględnie przejął jego imperium. Bez zawahania pozbył się szefowej opiekunów [[postacie:nancy-jones|Nancy Jones]] oraz manipulował córką Berniego, [[postacie:emma-goodwin|Emmą Goodwin]]. Czuje głęboką wściekłość i zazdrość wobec swojego dawnego menedżera, na którego widok lub samą wzmiankę reaguje wychodzącymi na czole żyłami. Współpracował również z [[postacie:tiffany-summers|Tiffany Summers]], którą traktował z wyższością i lekceważeniem, jednak młoda dziedziczka wraz z menedżerem zdemaskowały jego malwersacje finansowe, doprowadzając do jego zwolnienia przez jej ojca.",
         "memories": [{
                 "question": "Jakie wspomnienia budziło przejęcie imperium Goodwina?",
                 "content": [
@@ -150,6 +171,24 @@
                     "„Obiecałem temu menedżerowi, że w mojej firmie zawsze znajdzie się dla niego miejsce... Szkoda tylko, że po drugiej stronie ogrodzenia! W ramach odprawy pozwoliłem mu nawet zatrzymać uniform, chociaż koszt oczywiście odliczyłem od jego ostatniej wypłaty. A kiedy odszedł, zacząłem ciąć koszty do samej ziemi, na przykład sprzedając zwykłe koty domowe jako lwy pigmejskie. Gdy dowiedziałem się, że przeszedł do konkurencji, poczułem się potwornie zdradzony i nasłałem na ich nowe zoo całą masę opłaconych łobuzów!”", "Ostatecznie prymitywne oszczędności, tanie płoty i naruszenia przepisów doprowadziły do masowych ucieczek drapieżników i interwencji służb państwowych:",
                     "„Nie mam pojęcia, dlaczego te ogrodzenia zaczęły się nagle rozpadać... Wydałem przecież na nie całe grosze! Lokalne władze bezczelnie zamknęły moje ostatnie zoo i skonfiskowały zwierzęta przez drobne naruszenia przepisów. Moja reputacja została zrujnowana i zabroniono mi otwierania ogrodów zoologicznych na całym świecie. Ale to jeszcze nie koniec... Jeszcze o mnie usłyszycie!”"
                 ]
+            },
+            {
+                "question": "Jak przebiegały nieudane próby powrotu do biznesu?",
+                "content": [
+                    "Po utracie własnych parków Dominic próbował powrócić do branży. Najpierw podjął próbę doradztwa w przedsięwzięciu [[miejsca:letni-projekt|Letni projekt]] należącym do [[postacie:tiffany-summers|Tiffany Summers]], lecz został zwolniony za sprzeniewierzenie budżetu. Później, wykorzystując biurokratyczną lukę po aferze w Nowym Jorku, kupił mały park [[miejsca:casa-dom|Casa Dom]], zatrudniając dawnego menedżera jako nieodpłatnego praktykanta. Myers tak podsumowuje te dwa etapy:",
+                    "„Ta cała Tiffany oskarżyła mnie przed ojcem o malwersacje tylko dlatego, że zainwestowałem w rocznikowy szampan! Ale nie dałem za wygraną. Gdy po aferze nowojorskiej bank zamroził moje środki, kupiłem za resztki gotówki małe zoo i ściągnąłem mojego byłego menedżera na darmowy staż. Kazałem mu uciszyć protestujących, schwytać kojoty i zaopiekować się moją ulubioną gepardzicą Smugą.”",
+                    "Ku jego wielkiemu zaskoczeniu, uczciwe prowadzenie obiektu i dbałość o zwierzęta przyniosły ogromne zyski i odbudowały jego reputację:",
+                    "„Okazało się, że dbanie o zwierzęta naprawia wizerunek i przynosi gigantyczne zyski! Reporterzy dali mi spokój, reputacja skoczyła w górę, a bank z przeprosinami odblokował moje miliony. Zamiast szukać podstępów, zacząłem czytać książki weterynaryjne i zrozumiałem, że etyczny biznes naprawdę się opłaca.”"
+                ]
+            },
+            {
+                "question": "Jak wyglądała ta duchowa przemiana?",
+                "content": [
+                    "Po odzyskaniu aktywów w Korei Południowej Dominic wraz z menedżerem podjął się reaktywacji [[miejsca:ogrod-zoologiczny-myers-bright-blossom|Ogrodu Zoologicznego Myers Bright Blossom]]. Podczas wizyty PR-owej w miejscowym azylu zaadoptował małego jenota wiwerowatego, który podgryzał czyjś zgubiony portfel. Dominic dał mu na imię Złotek, wierząc początkowo, że zwierzę przyniesie mu fortunę. Myers tak zapamiętał ten moment:",
+                    "„To miało być tylko urocze zdjęcie dla prasy! Tuliliśmy zwierzaki w blasku fleszy, aż w kącie zauważyłem tego chciwego malucha podgryzającego portfel. Nazwałem go Złotek, bo obaj kochamy pieniądze! Ale kiedy zacząłem czytać o jenotach i dowiedziałem się, że żyją w monogamicznych parach i przytulają się na zimę, poczułem coś dziwnego... Zazdrościłem mu! On na swoim wybiegu miał wszystko, o czym mógł zamarzyć, a ja goniłem za milionami i byłem sam.”",
+                    "Obserwacja radosnego Złotka oraz wspólna praca z menedżerem nad edukacją i dobrostanem zwierząt doprowadziły do ostatecznego odrzucenia przez Myersa dawnego stylu życia:",
+                    "„Wpadłem do jego boksu uzupełnić karmę i w sekundzie ten łobuz usmarował mój drogi garnitur błotem, jedząc mi prosto z ręki! I wiecie co? Od dawna nie czułem się tak wspaniale! Kiedy dawni wspólnicy zaproponowali reaktywację Korporacji Myers i odmrożenie kolejnych milionów, zdałem sobie sprawę, że już mi na tym nie zależy. Zostałem w parku, by uczyć dzieciaki o jenotach i dbać o zwierzaki. Mojemu menedżerowi muszę z całego serca podziękować... Bez niego i Złotka nigdy nie zrozumiałbym, co tak naprawdę liczy się w życiu.”"
+                ]
             }
         ]
     },
@@ -168,7 +207,7 @@
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787656767/Emma_Goodwin_1_mwtkpl.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787656767/Emma_Goodwin_1_mwtkpl.webp",
         "about": "Emma Goodwin to idealistyczna ekolożka, dla której etyczna ochrona przyrody i zrównoważony rozwój stanowią absolutny priorytet. Po rzekomej śmierci ojca i podstępnym przejęciu jego firmy przez bezwzględny fundusz hedgingowy [[postacie:dominic-myers|Dominica Myersa]], Emma nie poddaje się i postanawia ratować rodzinne dziedzictwo. Widząc, że nowy właściciel traktuje zwierzęta wyłącznie jak maszynkę do zarabiania pieniędzy, nawiązuje tajną współpracę z menedżerem parku. W trakcie trybu Kariery wyrasta na dojrzałą liderkę. Tworzy sieć nowoczesnych, ekologicznych zoo opartych na odnawialnych źródłach energii (OZE) i programach reintrodukcji gatunków.",
-        "relations": "Córka [[postacie:bernard-goodwin|Bernarda Goodwina]], która po jego tajemniczym zaginięciu staje na czele walki o kontynuowanie jego proekologicznej misji. Bliska przyjaciółka i sojuszniczka [[postacie:nancy-jones|Nancy Jones]], z której pomocą nawiązuje tajny kontakt z menedżerem parku. Główna przeciwniczka chciwego inwestora [[postacie:dominic-myers|Dominica Myersa]], którego bezwzględne metody i chciwość konsekwencjonalnie zwalcza, tworząc konkurencyjną, w pełni etyczną sieć ogrodów zoologicznych.",
+        "relations": "Córka [[postacie:bernard-goodwin|Bernarda Goodwina]], która po jego tajemniczym zaginięciu staje na czele walki o kontynuowanie jego proekologicznej misji. Bliska przyjaciółka i sojuszniczka [[postacie:nancy-jones|Nancy Jones]], z której pomocą nawiązuje tajny kontakt z menedżerem parku. Główna przeciwniczka chciwego inwestora [[postacie:dominic-myers|Dominica Myersa]], którego bezwzględne metody i chciwość konsekwentnie zwalcza, tworząc konkurencyjną, w pełni etyczną sieć ogrodów zoologicznych. Z wyrozumiałością, sympatią i uśmiechem patronuje rozwój młodej [[postacie:tiffany-summers|Tiffany Summers]], angażując ją w kluczowe projekty edukacyjne i jubileuszowe.",
         "memories": [{
                 "question": "Jak wyglądały kulisy wizyty w Indiach i nawiązanie tajnej współpracy?",
                 "content": [
@@ -190,6 +229,22 @@
                 "content": [
                     "Aby zadać ostateczny cios [[postacie:dominic-myers|Dominicowi Myersowi]], Emma kupiła wyspę pod Nowym Jorkiem i stworzyła tam flagowe [[miejsca:zoo-imienia-berniego-goodwina|Zoo imienia Berniego Goodwina]]. Sukces nowej placówki odciągnął klientów od konkurencji, a w trakcie prac doszło do niespodziewanego odnalezienia zaginionego [[postacie:bernard-goodwin|Bernarda Goodwina]]. Emma tak podsumowuje ten finałowy krok:",
                     "„Kupiłam wyspę w sąsiedztwie placówki Myersa, żeby odciągnąć od niego wszystkich odwiedzających. Choć nasyłał na nas opłaconych chuliganów, nasz menedżer stworzył tam absolutnie wzorcowe zoo, z którego wszyscy mogliśmy być dumni. Całkowitym zaskoczeniem był powrót mojego ojca! Pogłoski o jego śmierci okazały się mocno przesadzone, bo przetrwał trzy miesiące w igloo! Ostatecznie władze zamknęły park Dominica za liczne naruszenia przepisów, odebrały mu zwierzęta i wykluczyły go z branży raz na zawsze. To był dla nas ogromny triumf i lekcja, jak połączyć globalną ochronę przyrody z troską o każde poszczególne stworzenie.”"
+                ]
+            },
+            {
+                "question": "Jakie wyzwania towarzyszyły budowie Rezerwatu Przyrody Goodwinów?",
+                "content": [
+                    "Po wyeliminowaniu [[postacie:dominic-myers|Dominica Myersa]] Emma wraz z ojcem postanowiła stworzyć całkowicie nowy projekt: [[miejsca:rezerwat-przyrody-goodwinow|Rezerwat Przyrody Goodwinów]]. Kluczowym założeniem było stworzenie parku w pełni niezależnego energetycznie, nastawionego na programy ochronne i reintrodukcję gatunków. Emma tak zapamiętała realizację tego przedsięwzięcia:",
+                    "„To był dla nas wyjątkowy, bardzo osobisty projekt. Chcieliśmy z tatą stworzyć miejsce, które całkowicie odłączy się od tradycyjnej sieci energetycznej i będzie działać wyłącznie na odnawialnych źródłach energii. Nasz menedżer przeszedł sam siebie! Podniósł dobrostan zwierząt na najwyższy poziom, rozbudował infrastrukturę edukacyjną i z powodzeniem wypuścił wiele gatunków na wolność. Mój tato był tak zachwycony efektami, że na rodzinnej kolacji z tego wszystkiego nie opowiedział ani jednego ze swoich słynnych dowcipów!”",
+                    "Niezwykle emocjonalnym punktem programu było również sprowadzenie do rezerwatu ptaków kiwi, co miało dla rodziny Goodwinów głębokie znaczenie osobiste:",
+                    "„Sprowadzenie kiwi było dla mojego taty spełnieniem marzeń. Maluchy zadomowiły się u nas wyśmienicie, a dla mojego taty to absolutnie wyjątkowe ptaki... Poznał moją mamę właśnie wtedy, gdy sprzątał wybieg kiwi! To spotkanie zmieniło jego życie i zawsze kojarzyło mu się z miłością. Dzięki cudownej pracy menedżera stworzyliśmy rezerwat, który stał się nową koroną naszej rodzinnej misji ochrony przyrody.”"
+                ]
+            },
+            {
+                "question": "Jak wyglądało przygotowanie parku dla Nancy oraz jubileusz Zoo Frontier?",
+                "content": [
+                    "Gdy [[postacie:nancy-jones|Nancy Jones]] ogłosiła przejście na emeryturę, Emma włączyła się z [[postacie:bernard-goodwin|Berniem]] i menedżerem w budowę nowoczesnego [[miejsca:zoo-a-la-jones|Zoo à la Jones]], dbając o zieloną energię i brak długów. Z kolei przy okazji 5-lecia organizacji [[miejsca:zoo-frontier|Zoo Frontier]] Emma koordynowała wielki jubileusz ratunkowy, poskramiając przy tym szalone pomysły [[postacie:tiffany-summers|Tiffany Summers]]. Emma tak podsumowuje te dwa etapy:",
+                    "„Kiedy tata planował dla Nancy kameralny park emerytalny, od razu zadbałam o to, by placówka przeszła na 100% zielonej energii i nie miała żadnych pożyczek. Nancy zasługiwała na absolutnie najlepsze warunki! A chwilę później rzuciliśmy się w wir przygotowań do 5-lecia Zoo Frontier. Musieliśmy ogarnąć uratowane żółwie pustynne i program rozrodu lampartów, a do tego współpracować z entuzjastyczną Tiffany, która chciała zakładać zwierzętom imprezowe czapeczki. Wyszło absolutnie fantastycznie, tata z Nancy pękali z dumy, a Tiffany zasłużyła na swoje studia zoologiczne. To była czysta przyjemność!”"
                 ]
             }
         ]
@@ -310,7 +365,7 @@
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787657857/Nancy_Jones_1_czp1xy.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787657857/Nancy_Jones_1_czp1xy.webp",
         "about": "Nancy Jones to twardo stąpająca po ziemi, niezwykle doświadczona szefowa opiekunów oraz prawa ręka [[postacie:bernard-goodwin|Bernarda Goodwina]]. Posiada wieloletnią praktykę w bezpośredniej opiece nad dzikimi zwierzętami na wszystkich kontynentach. Cechuje ją bezkompromisowe, pragmatyczne podejście do pracy. Przekłada praktyczną wiedzę, higienę i realny dobrostan podopiecznych nad teorię czy akademickie dyplomy. W trybie Kariery pełni rolę wymagającej, ale sprawiedliwej instruktorki, która nadzoruje techniczne i weterynaryjne aspekty prowadzenia parków oraz uczy nowych pracowników ciężkiej, codziennej pracy w zoo.",
-        "relations": "Nancy jest wieloletnią przyjaciółką i najbardziej zaufaną współpracowniczką [[postacie:bernard-goodwin|Bernarda Goodwina]], z którym tworzy zgrany, choć pełen kontrastów duet. Jej surowy pragmatyzm idealnie równoważy marzycielską naturę [[postacie:bernard-goodwin|Berniego]]. Choć z początku odnosi się ze sceptycyzmem do nowych adeptów, potrafi szybko docenić zaangażowanie i ciężką pracę. Z głęboką rezerwą i niechęcią traktuje cyniczne, komercyjne podejście [[postacie:dominic-myers|Dominica Myersa]], dla którego zwierzęta są jedynie tabelkami w arkuszu kalkulacyjnym.",
+        "relations": "Nancy jest wieloletnią przyjaciółką i najbardziej zaufaną współpracowniczką [[postacie:bernard-goodwin|Bernarda Goodwina]], z którym tworzy zgrany, choć pełen kontrastów duet. Jej surowy pragmatyzm idealnie równoważy marzycielską naturę [[postacie:bernard-goodwin|Berniego]]. Choć z początku odnosi się ze sceptycyzmem do nowych adeptów, potrafi szybko docenić zaangażowanie i ciężką pracę. Z głęboką rezerwą i niechęcią traktuje cyniczne, komercyjne podejście [[postacie:dominic-myers|Dominica Myersa]], dla którego zwierzęta są jedynie tabelkami w arkuszu kalkulacyjnym. Z kolei w stosunku do młodej [[postacie:tiffany-summers|Tiffany Summers]] przeszła drogę od surowego sceptycyzmu wobec jej kaprysów do szczerego uznania za jej przemianę i autentyczną troskę o podopiecznych.",
         "memories": [{
                 "question": "Jakie były początki nowego opiekuna i wspólne wyzwania w kolejnych parkach?",
                 "content": [
@@ -327,6 +382,22 @@
                     "„Musiałam przekazać najgorszą wiadomość o zaginięciu Berniego. Zanim Emma zdołała wrócić, zarząd sprzedał całe jego życiowe dzieło Dominicowi Myersowi. Mnie zwolnił od razu, ale wiedziałam, że nasz menedżer da z siebie wszystko. Myers dał mu awans bez podwyżki i rzucił go do zaniedbanego obiektu z demonstrantami pod bramą, a potem do opuszczonego kamieniołomu w Brazylii na terenie skażonym odpadami. Z deszczowej Walii czytałam w gazetach o jego poczynaniach i aż mną trzęsło z oburzenia!”",
                     "Pomimo manipulacji [[postacie:dominic-myers|Myersa]], takich jak potajemne sprowadzenie pandy Lin-Lin czy wymuszanie oszczędności, Nancy podziwiała profesjonalizm swojego podopiecznego i wierzyła w rychły upadek chciwego przedsiębiorcy:",
                     "„Mój chłopak pokazał absolutną klasę... Czyścił tereny ze skażenia, sprowadzał niedźwiedzie, ratował porzucone pantery śnieżne i budował kolejkę gondolową na stromych zboczach. Choć Dominic kombinował na boku, potajemnie ściągał Lin-Lin pod zmyślonym imieniem i gadał głupoty o księgowych, to zwierzęta były tam wreszcie bezpieczne. Szepnęłam już słówko komu trzeba i dałam namiarki Emmie. Czułam, że ta farsa pod wodzą Myersa nie potrwa wiecznie, a mój menedżer zasługuje na o wiele więcej!”"
+                ]
+            },
+            {
+                "question": "Jak przebiegały porządki w zamku Myersa i edukacyjny staż Tiffany?",
+                "content": [
+                    "Po upadku [[postacie:dominic-myers|Dominica Myersa]] Nancy wróciła do pracy, pomagając menedżerowi sprzątnąć chaotyczny [[miejsca:zamek-myers|Zamek Myersa]] i ratując tamtejszego niedźwiedzia brunatnego. Gdy na horyzoncie pojawiła się rozpieszczona [[postacie:tiffany-summers|Tiffany Summers]], Nancy skierowała ją na sądowy staż edukacyjny do [[miejsca:rezerwat-edukacyjny-purmamarca|Rezerwatu edukacyjnego Purmamarca]]. Nancy tak podsumowuje ten okres:",
+                    "„Co za ulga, że pozbyliśmy się tego oszusta Myersa! Na jego dawnym zamku czekały na nas biegające wolno zwierzęta i totalny bałagan, z którym szybko się musieliśmy uporać. A kiedy przyturlala się ta cała Tiffany ze swoimi pomysłami na ubieranie zwierzaków w ciuszki, od razu wiedziałam, że czeka nas ciężka praca. Na szczęście w Purmamarca menedżer pokazał jej, na czym polega prawdziwa troska o przyrodę. Tiffany oddała zwierzęta z domku przy basenie, zrobiła gigantyczne postępy, a ja w nagrodę dałam jej dożywotni wstęp do naszych parków!”"
+                ]
+            },
+            {
+                "question": "Jak wyglądało przejście na emeryturę oraz jubileusz Zoo Frontier?",
+                "content": [
+                    "Gdy Nancy oficjalnie ogłosiła przejście na emeryturę, [[postacie:bernard-goodwin|Bernie]] oraz [[postacie:emma-goodwin|Emma]] uknuli z menedżerem plan zbudowania dla niej dedykowanego parku [[miejsca:zoo-a-la-jones|Zoo à la Jones]]. Nawet na zasłużonym odpoczynku Nancy nie odpuściła jednak czujności, śledząc z [[postacie:bernard-goodwin|Berniem]] obchody 5-lecia organizacji [[miejsca:zoo-frontier|Zoo Frontier]]. Nancy tak wspomina ten etap:",
+                    "„Powiedziałam Berniemu, że idę na zasłużoną emeryturę, ale ten stary marzyciel od razu zaczął knuć z menedżerem budowę ukrytego dla mnie zoo! Oczywiście przejrzałam ich od razu i podesłałam garść poprawek o dobrostanie, a Emma zadbała o czystą energię i brak długów. Otrzymałam najpiękniejszy park na własność, w którym na własnych warunkach mogę doglądać podopiecznych.”",
+                    "Kiedy [[postacie:bernard-goodwin|Bernie]] próbował przekonać ją, że to w pełni niezależna inicjatywa, a [[postacie:emma-goodwin|Emma]] doglądała technicznych detali, Nancy szybko sprowadziła ich na ziemię:",
+                    "„Pamiętam, jak Bernie przyjechał z szerokim uśmiechem, udając zaskoczonego, że dostaję własny azyl. Powiedziałam mu wtedy prosto w oczy:<br>»Drogi Bernie, znam cię dłużej niż własne buty, w życiu nie uwierzę, że nagle wyrósł mi pod domem gotowy park bez twojego maczania palców!«<br>Mimo to wzruszyłam się jak dziecko. A jakbym miała mało wrażeń, siedząc już na tym swoim odpoczynku, z zapartym tchem kibicowałam Emmie i menedżerowi przy 5-leciu Zoo Frontier, gdzie ratowali żółwie i pilnowali, żeby Tiffany nie założyła zwierzętom imprezowych czapeczek... Człowiek może rzucić pracę w zoo, ale zoo w człowieku zostaje na zawsze.”"
                 ]
             }
         ]
@@ -389,16 +460,44 @@
     {
         "id": "tiffany-summers",
         "name": "Tiffany Summers",
-        "version": ["pz1pc", "pz1console", "pz2"],
-        "role": "Lwica salonowa",
-        "affiliation": "Myers Corp / Independent",
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
+        "role": "Właścicielka Parku / Influencerka",
+        "affiliation": "Niezależna",
         "status": "Aktywna",
+        "motto": "Idealne kadry są piękne, ale to w tych niedoskonałych momentach kryje się prawdziwe życie. Tworzymy przestrzeń, w której nie musimy być perfekcyjni – wystarczy, że będziemy prawdziwi.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787671212/Tiffany_Summers_1_qdr5oi.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787671212/Tiffany_Summers_1_qdr5oi.webp",
-        "description": "Córka [[dominic-myers|Dominica Myersa]], która dąży do zmiany filozofii firmy swojego ojca. Zależy jej na nowoczesnym podejściu do ochrony gatunków i zbalansowaniu celów finansowych z ideami [[bernie-goodwin|Berniego Goodwina]].",
-        "fullBio": "<b>O postaci</b><br>Emma wychowała się w świecie korporacyjnym, jednak jej pasją stała się ekologia i edukacja odwiedzających.<br><br><b>Rola w kampanii</b><br>Współpracuje z graczem w celu naprawy błędów popełnionych przez jej ojca w zarządzanych przez niego parkach.<br><br><b>Relacje</b><br>Córka [[dominic-myers|Dominica Myersa]], wzoruje się na etycznej pracy [[bernie-goodwin|Berniego Goodwina]] i [[nancy-jones|Nancy Jones]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783615845/emma_1.webp"
+        "about": "Tiffany Summers to 23-letnia, niezwykle popularna w mediach społecznościowych dziedziczka fortuny oraz początkowo skrajnie beztroska miłośniczka luksusu. Ze względu na brak ważnych zezwoleń i trzymanie zagrożonych gatunków w prywatnej rezydencji, zostaje zobowiązana przez sąd do odbycia stażu edukacyjnego pod okiem [[postacie:nancy-jones|Nancy Jones]] i menedżera. W Trybie Kariery pełni rolę początkowo kapryśnej praktykantki, która przechodzi głęboką metamorfozę — od traktowania zwierząt jak modnych rekwizytów do zdjęć, po samodzielne zarządzanie podarowanym przez ojca parkiem. Po stawieniu czoła chciwemu [[postacie:dominic-myers|Dominikowi Myersowi]] staje się odpowiedzialną właścicielką, stawiającą dobrostan zwierząt i autentyczną pasję ponad cięcie kosztów.",
+        "relations": "Początkowo Tiffany odnosi się do menedżera z wyższością i pobłażliwością, jednak szybko zaczyna doceniać jego profesjonalizm i czyni go swoim głównym partnerem w prowadzeniu parku. Jej relacja z [[postacie:nancy-jones|Nancy Jones]] ewoluuje od szorstkiej niechęci do wzajemnego szacunku przypieczętowanego wręczeniem Tiffany dożywotniego wstępu do parków Fundacji Goodwinów. Z dużym entuzjazmem i sympatią współpracuje także z [[postacie:emma-goodwin|Emmą Goodwin]], zwłaszcza przy organizacji dużych wydarzeń branżowych oraz akcji edukacyjnych. Zdecydowanie wrogi stosunek ma do [[postacie:dominic-myers|Dominica Myersa]], którego demaskuje przed swoim ojcem za oszustwa finansowe i ignorowanie dobrostanu zwierząt, doprowadzając do jego zwolnienia. W swoich działaniach stale polega na ogromnym majątku i wsparciu swojego zamożnego ojca („tatusia”).",
+        "memories": [{
+                "question": "Jak przebiegał staż sądowy, przejęcie pierwszego parku?",
+                "content": [
+                    "Sądowy staż w [[miejsca:rezerwat-edukacyjny-purmamarca|Rezerwacie edukacyjnym Purmamarca]] pod okiem [[postacie:nancy-jones|Nancy Jones]] miał być dla Tiffany uciążliwą karą, lecz stał się punktem zwrotnym w jej życiu. Tiffany tak podsumowuje ten pierwszy krok:",
+                    "„OMG, na początku myślałam, że to będzie totalny żal i że to ja będę uczyć menedżera, jak ubierać zwierzaki w markowe ciuchy! Ale patrzenie na pracę w zoo i konieczność oddania moich ukochanych zwierzaków z domku przy basenie całkowicie otworzyły mi oczy. Zrozumiałam, że one są tu o wiele szczęśliwsze niż na moich dywanach, a Nancy dała mi w nagrodę dożywotni wstęp do parków!”",
+                    "Gdy ojciec podarował jej w prezencie kolejny park w ramach projektu [[miejsca:letni-projekt|Letni projekt]], do współpracy oddelegowano [[postacie:dominic-myers|Dominica Myersa]], co doprowadziło do kolejnego kryzysu. Tiffany tak wspomina to starcie:",
+                    "„Gdy pochwaliłam się tatusiowi sukcesem, kupił mi w prezencie własne zoo, ale zatrudnił też tego całego Dominica Myersa, którego żyły na czole stawały dęciem na samą wzmiankę o menedżerze! Dominic chciał na wszystkim oszczędzać i przepuścił budżet na przeterminowany szampan. Miałam go potąd! Przekazałam stery menedżerowi, wyleczyliśmy biznes z opinii i wyrzuciliśmy Myersa na zbity pysk!”"
+                ]
+            },
+            {
+                "question": "Jak wyglądały prace nad budową nowych parków?",
+                "content": [
+                    "Kolejnymi wyzwaniami dla Tiffany były luksusowy [[miejsca:rajski-park-tiffany|Rajski Park Tiffany]] w Arabii Saudyjskiej oraz pomyłkowo zakupione przez ojca wiejskie gospodarstwo, czyli [[miejsca:rezerwat-summersow|Rezerwat Summersów]], którym zarządzała zdalnie z luksusowego kurortu w Aspen. Tiffany tak wspomina te projekty:",
+                    "„W Arabii Saudyjskiej tatuś po raz pierwszy potraktował mnie dorośle, a ja udowodniłam, że dobrostan zwierząt jest najważniejszy. Z kolei gdy zamiast kozaków w góry dostalam od tatusia farmę z kozami w Aspen, powierzyłam modernizację menedżerowi, wprowadzając pociąg parowy i wykłady dla nerdów! Wszyscy myśleli, że zrobiłam to sama z gór, ale to był nasz wspólny, szałowy sukces.”"
+                ]
+            },
+            {
+                "question": "Jakie wyzwania przyniosły obchody jubileuszu i jednoczesne rozpoczęcie studiów?",
+                "content": [
+                    "Zwieńczeniem jej transformacji stał się udział w hucznych obchodach 5-lecia [[miejsca:zoo-frontier|Zoo Frontier]], koordynowanych u boku [[postacie:emma-goodwin|Emmy]] i menedżera. Tiffany tak podsumowuje ten rozdział:",
+                    "„Ten projekt był po prostu kosmiczny! Tatuś ma udziały w Zoo Frontier i obiecał, że opłaci moje studia zoologiczne, jeśli rocznica wypali. Od razu przejęłam nadzór. Zadbałam o imprezowe czapeczki w sklepach z pamiątkami oraz super urozmaicenia, żeby zwierzaki też poczuły się częścią ekipy! A tatuś dorzucił do tego urocze sifaki biało-kasztanowe.”",
+                    "Współpraca z zespołem przyniosła jej upragniony cel i nową życiową drogę:",
+                    "„Zrobiliśmy z tej imprezy absolutny hit. Goście walili drzwiami i oknami, a zwierzęta miały najlepszą opiekę. Tatuś był tak dumny, że oficjalnie zapisał mnie na studia z zoologii. Z menedżerem pracowało mi się po prostu zarąbiście i w końcu wiem, co chcę w życiu robić!”"
+                ]
+            }
         ]
     }
 ]
