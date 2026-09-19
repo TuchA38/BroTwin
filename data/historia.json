@@ -134,6 +134,90 @@
                 ]
             },
             {
+                "id": "magiotopia",
+                "name": "Magiotopia",
+                "subtitle": "Mroźna Północ • Nowy Rozdział Zoologii",
+                "founded": "Niedługo po katastrofie w Andigawen",
+                "founder": "Amiliana Empirejska",
+                "badge": "Odrodzenie",
+                "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783197002/Kariera_vlu7uq.webp",
+                "summary": "Nowoczesny ośrodek wzniesiony na surowej, mroźnej Północy. Stanowi bezpieczną przystań dla zwierząt ewakuowanych z dawnego parku oraz symbol nieugiętej walki o odrodzenie dziedzictwa Amiliany.",
+                "historyText": {
+                    "p1": "<p>Po tragicznych wydarzeniach w Andigawen <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana Empirejska</b></a> nie zamierzała się poddawać i postanowiła rozpocząć nowy rozdział w swojej działalności. Na surowej Północy, tuż obok głębokiego jeziora polodowcowego, narodził się projekt Magiotopii, czyli nowoczesnego parku, który miał stać się bezpieczną przystanią dla zwierząt oraz bezpośrednią kontynuacją jej życiowej misji. Początki okazały się jednak ogromnym wyzwaniem logistycznym i klimatycznym. Sięgające -25°C mrozy sprawiły, że przed sprowadzeniem większości podopiecznych konieczna była budowa specjalistycznych, silnie ogrzewanych obiektów. Jedynym zwierzęciem zdolnym od razu sprostać tak surowym warunkom był wiekowy niedźwiedź grizzly Derward. Podczas gdy reszta stada z konieczności przebywała jeszcze w tymczasowych ośrodkach, <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana</b></a> skoncentrowała całą swoją energię i środki na przygotowaniu infrastruktury dla pozostałych gatunków, a Derward jako pierwszy zamieszkał na ośnieżonym wybiegu, stając się nieoficjalnym strażnikiem i żywym symbolem odrodzenia parku.</p>",
+                    "p2": "<p>Bolesne doświadczenia związane z pożarem i sabotażem w dawnej lokalizacji wpłynęły na każdy element planowania Magiotopii. Priorytetem zespołu stało się bezkompromisowe bezpieczeństwo. Cały teren wyposażono w zaawansowany monitoring, czujniki przeciwpożarowe, systemy ochrony przed intruzami oraz potężne instalacje grzewcze zdolne wytrzymać najcięższą zimę. Pozyskanie wykwalifikowanych służb i przebrnięcie przez nadmierne inspekcje pozwoliło w końcu przełamać opór urzędników i uzyskać komplet zezwoleń na otwarcie obiektu. Największym wyzwaniem pozostawało jednak odzyskanie ocalałych zwierząt przetrzymywanych w <a href='#miejsca' data-page='miejsca' data-id='dziki-azyl' class='zalacznik'><b>Dzikim Azylu</b></a>. Młodsza siostra <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliany</b></a>, wybitna lekarka weterynarii <a href='#postacie' data-page='postacie' data-id='ethelien-mumba' class='zalacznik'><b>Ethelien Mumba</b></a>, zatrudniła się tam celowo, by wbrew bezdusznej dyrektorce osobiście czuwać nad zdrowiem i bezpieczeństwem ich ukochanych podopiecznych. Kierująca azylem <a href='#postacie' data-page='postacie' data-id='deianira-upjersliwa' class='zalacznik'><b>Deianira Upjersliwa</b></a> chętnie przystała na ten układ, traktując <a href='#postacie' data-page='postacie' data-id='ethelien-mumba' class='zalacznik'><b>Ethelien</b></a> jako gwarant utrzymania cennego majątku w doskonałej kondycji na potrzeby własnej promocji. Jednocześnie <a href='#postacie' data-page='postacie' data-id='deianira-upjersliwa' class='zalacznik'><b>Deianira</b></a> wykorzystywała zawiłe przepisy i prawne haczyki, by jak najdłużej blokować powrót zwierząt do właścicieli, zmuszając głównego inżyniera <a href='#postacie' data-page='postacie' data-id='mondo-zeller' class='zalacznik'><b>Mondo Zellera</b></a> do toczenia z nią wycieńczających batalii proceduralnych.</p>",
+                    "p3": "<p>Mimo kłód rzucanych pod nogi przez dawną dyrektorkę azylu, gdy Magiotopia w końcu uroczyście otworzyła swoje bramy, echa dawnej sławy <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliany Empirejskiej</b></a> oraz wsparcie międzynarodowych funduszy sprawiły, że świat zoologii zamarł z zachwytu. W zaledwie pierwszy rok działalności mroźna placówka tętniła życiem, gromadząc ponad 20 fascynujących gatunków. Obok powracających pawi indyjskich, wielbłądów dwugarbnych oraz szczęśliwie odzyskanych z rąk <a href='#postacie' data-page='postacie' data-id='deianira-upjersliwa' class='zalacznik'><b>Deianiry</b></a> łuskowców chińskich, na nowo wybudowanych wybiegach zadomowiły się likaony, krokuty cętkowane, niedźwiedzie tajwańskie oraz wataha wilków szarych. Pod czujnym okiem <a href='#postacie' data-page='postacie' data-id='ethelien-mumba' class='zalacznik'><b>Ethelien Mumba</b></a> oraz dzięki niezrównanym innowacjom technologicznym <a href='#postacie' data-page='postacie' data-id='mondo-zeller' class='zalacznik'><b>Mondo Zellera</b></a>, Magiotopia w mgnieniu oka wspięła się na sam szczyt światowej awangardy. Park wyrósł na wiodące centrum badawczo-rehabilitacyjne, wymuszając na fundacji <a href='#miejsca' data-page='miejsca' data-id='dziki-azyl' class='zalacznik'><b>Dziki Azyl</b></a> układanie relacji na zupełnie nowych, w pełni partnerskich zasadach. W ramach uznania dla tych spektakularnych osiągnięć, do Magiotopii przekazano bezcenną, rzadką parę okapi. Gatunek był dotąd całkowicie nieobecny w krajowych ogrodach. Wkrótce potem, dzięki stabilnym dochodom oraz wsparciu hojnych sponsorów, zrealizowano kolejny wizjonerski projekt: wzniesiono zaawansowany technologicznie, ogrzewany pawilon dla naczelnych. Zamieszkały w nim dwa gatunki szympansów oraz wybitnie inteligentne orangutany borneańskie, nadając mroźnemu ogrodowi jeszcze większy, światowy rozmach.</p>",
+                    "p4": "<p>Równolegle z sukcesami na wybiegach lądowych, w głębi parku trwały gigantyczne, zakrojone na szeroką skalę prace nad odrodzeniem ikonicznej <b>„Morskiej Krainy”</b>. Pod czujnym okiem i dzięki genialnemu zmysłowi inżynieryjnemu <a href='#postacie' data-page='postacie' data-id='mondo-zeller' class='zalacznik'><b>Mondo Zellera</b></a>, po niemal dwóch latach wytężonego projektowania powstał kompleks o wiele bardziej zaawansowany, bezpieczny i monumentalny niż ten tragicznie utracony w <a href='#historia' data-page='historia' data-id='zoo-w-andigawen' class='zalacznik'><b>Zoo w Andigawen</b></a>. Nowa konstrukcja, odporna na ekstremalne północne mrozy i wyposażona w wielopoziomowe systemy bezpieczeństwa, stworzyła wewnątrz idealny, tropikalny mikroklimat. Do Magiotopii triumfalnie powróciły fascynujące gady, w tym gawiale gangesowe, warany z Komodo oraz żółwie słoniowe, a także bezpośredni ocaleńcy z tragicznego pożaru: parka hipopotamków karłowatych. Prawdziwą sensacją nowej Morskiej Krainy stało się jednak zapierające dech w piersiach, podwodne siedlisko z przeszklonym kompleksem obserwacyjnym dla hipopotamów nilowych oraz sąsiadujący wybieg dla mrówników afrykańskich, które z miejsca skradły serca zwiedzających.</p>",
+                    "p5": "<p>Kolejne miesiące przyniosły wieści, które rozbudziły ogromną ekscytację całego zespołu. Pod troskliwą opieką <a href='#postacie' data-page='postacie' data-id='ethelien-mumba' class='zalacznik'><b>Ethelien Mumba</b></a> oczekiwano historycznych narodzin małego okapi. Aby zapewnić ciężarnej samicy absolutny spokój i optymalne warunki, <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana Empirejska</b></a> osobiście zarządziła czasowe wyłączenie całego sektora z ruchu turystycznego, pilnując, by nic nie zakłócało precyzyjnej pracy lekarki. Z myślą o licznie przybywających gościach przygotowano jednak fascynujące alternatywy. Na nowo otwartych przestrzeniach Magiotopii zagościły majestatyczne pantery śnieżne, goryle nizinne, kangury rude oraz energiczne stado bizonów amerykańskich. Gdy po tygodniach niecierpliwego wyczekiwania na świecie pojawiło się w końcu silne, zdrowe cielę okapi, echa tego spektakularnego sukcesu obiegły światowe media i środowiska naukowe, ostatecznie ugruntowując pozycję mroźnego parku jako globalnego lidera w dziedzinie ochrony i rozmnażania najbardziej zagrożonych gatunków na Ziemi.</p>",
+                    "p6": "<p>Po siedmiu latach, od uroczystego otwarcia bram Magiotopia, lśniła już pełnym blaskiem, stanowiąc dom dla ponad 60 unikalnych gatunków zwierząt i przyciągając blisko milion zachwyconych gości rocznie. Imponujące, stabilne przychody bez trudu pokrywały gigantyczne koszty ogrzewania tak wymagającego, północnego terenu oraz utrzymania elitarnego zespołu specjalistów, otwierając drogę do realizacji najśmielszych marzeń dyrekcji. <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana</b></a>, łącząc swoje wizjonerskie podejście z bezgraniczną miłością do natury, tchnęła wówczas nowe życie w projekt, utracony przed laty w <a href='#historia' data-page='historia' data-id='zoo-w-andigawen' class='zalacznik'><b>Zoo w Andigawen</b></a>. Do łask powróciło monumentalne Safari Afrykańskie. Na rozległym, pieczołowicie zabezpieczonym terenie zamieszkały nie tylko ocalone z rąk <a href='#postacie' data-page='postacie' data-id='deianira-upjersliwa' class='zalacznik'><b>Deianiry</b></a> zebry, bawoły i gepardy, ale również nowe stada: żyraf siatkowanych oraz grzmiących donośnym rykiem, lwów afrykańskich.</p>",
+                    "p7": "<p>Ostatnim, wieńczącym to gigantyczne dzieło etapem rozbudowy było utworzenie tętniącej życiem strefy azjatyckiej oraz skutej lodem strefy polarnej. W samym sercu parku wzniesiono monumentalną, przeszkloną słoniarnię, w której <a href='#postacie' data-page='postacie' data-id='mondo-zeller' class='zalacznik'><b>Mondo Zeller</b></a> zainstalował autorski, zaawansowany system filtrowania powietrza oraz podgrzewane baseny dla słoni afrykańskich i azjatyckich. Z kolei w najdalszym, najbardziej surowym zakątku ogrodu powstał zapierający dech w piersiach kompleks dla niedźwiedzi polarnych. Genialny inżynier wyposażył go w podziemny, całkowicie przeszklony tunel obserwacyjny, który umożliwiał zwiedzającym fascynujący podgląd potężnych drapieżników nurkujących w krystalicznie czystej wodzie tuż nad ich głowami. Otwarcie tych architektonicznych cudów, będących popisem niesamowitego talentu <a href='#postacie' data-page='postacie' data-id='mondo-zeller' class='zalacznik'><b>Mondo</b></a> oraz owocem mądrego przywództwa <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliany Empirejskiej</b></a>, ostatecznie przypieczętowało rozpoczęcie prawdziwie złotej ery w historii Magiotopii.</p>",
+                    "p8": "<p>Ogród stale rósł w siłę, gromadząc ostatecznie blisko 80 unikalnych gatunków zwierząt. Międzynarodowe organizacje zoologiczne, fundacje ochronne oraz niezliczeni badacze z całego globu wiązali z mroźną placówką ogromne nadzieje, powierzając jej opiece kolejne, najbardziej zagrożone wyginięciem okazy. <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana Empirejska</b></a> stawała jednak przed coraz poważniejszym wyzwaniem. Zaczynało brakować wolnej przestrzeni do dalszej ekspansji, a nieuchronny upływ lat zaczął stopniowo odbijać się na jej siłach. Gdy ogród przez kolejne lata funkcjonował na najwyższych obrotach, do akcji wkroczył jej syn, <a href='#postacie' data-page='postacie' data-id='kendran-tycoon' class='zalacznik'><b>Kendran Tycoon</b></a>. Zafascynowany wielkim dziełem matki od najmłodszych lat, nie wyobrażał sobie, by stery nad tym rodzinnym dziedzictwem miała przejąć obca osoba. Przejmując rolę nowego zarządcy, podjął śmiałą i przełomową decyzję o przekształceniu mroźnego parku w nową markę – <a href='#miejsca' data-page='miejsca' data-id='brotwin-zoo' class='zalacznik'><b>BroTwin Zoo</b></a>. <a href='#postacie' data-page='postacie' data-id='kendran-tycoon' class='zalacznik'><b>Kendran</b></a> przeprowadził bezkompromisową, gruntowną przebudowę całego kompleksu od podstaw. Zmodernizował infrastrukturę do najwyższych światowych standardów, zoptymalizował koszty operacyjne i z genialną precyzją zagospodarował każdy skrawek terenu, uwalniając potężne rezerwy przestrzenne. Łącząc synowską pasję z powiewem nowoczesnego zarządzania, otworzył zupełnie nowy, ekscytujący rozdział w historii tej niezwykłej, północnej krainy.</p>"
+                },
+                "inlineImages": [{
+                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/3_mlpq4l.webp",
+                        "paragraphIndex": -1
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/5_qaxc86.webp",
+                        "paragraphIndex": -3
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412981/12_bdwhy5.webp",
+                        "paragraphIndex": -5
+                    }
+                ],
+                "stats": [{
+                        "label": "Liczba gatunków",
+                        "value": "Blisko 80 gatunków"
+                    },
+                    {
+                        "label": "Roczna frekwencja",
+                        "value": "Blisko 1 mln zwiedzających"
+                    },
+                    {
+                        "label": "Kluczowa hodowla",
+                        "value": "Okapi"
+                    }
+                ],
+                "timeline": [{
+                        "year": "Początki",
+                        "title": "Pionierska Budowa na Północy",
+                        "description": "Mimo mrozów sięgających -25°C powstaje nowoczesna, ogrzewana infrastruktura. Niedźwiedź Derward staje się pierwszym mieszkańcem i symbolem odrodzenia parku."
+                    },
+                    {
+                        "year": "Lata 1–2",
+                        "title": "Otwarcie i Odrodzenie Morskiej Krainy",
+                        "description": "Przełamanie oporu Dzikiego Azylu i odzyskanie zwierząt, a także wybudowanie przez Mondo Zellera nowego, monumentalnego kompleksu akwatycznego."
+                    },
+                    {
+                        "year": "Lata 3–5",
+                        "title": "Globalny Sukces Hodowlany",
+                        "description": "Historyczne narodziny okapi pod opieką Ethelien Mumba oraz sprowadzenie m.in. panter śnieżnych, goryli nizinnych i bizonów."
+                    },
+                    {
+                        "year": "Siedem lat od otwarcia",
+                        "title": "Złota Era i Strefa Polarna",
+                        "description": "Osiągnięcie miliona gości rocznie, reaktywacja wielkiego Safari Afrykańskiego oraz otwarcie przeszklonego tunelu podwodnego z niedźwiedziami polarnymi."
+                    },
+                    {
+                        "year": "Obecnie",
+                        "title": "Sukcesja i Rebranding (BroTwin Zoo)",
+                        "description": "Kendran Tycoon przejmuje dziedzictwo Amiliany, przeprowadza całkowitą modernizację infrastruktury i przekształca park w nowoczesne BroTwin Zoo."
+                    }
+                ],
+                "galleries": [{
+                    "id": "architektura",
+                    "title": "Architektura i Dziedzictwo Parku",
+                    "description": "Inżynieria dawnego ogrodu oraz ekspozycja odrestaurowanych zabytków na terenie muzealnym.",
+                    "images": [{
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783192747/Nieograniczona_kreatywno%C5%9B%C4%87_tdsi9n.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783178561/Dziel_si%C4%99_i_inspiruj_iwxk81.webp"
+                        }
+                    ]
+                }]
+            },
+            {
                 "id": "ape-sanctuary",
                 "name": "Madagaskar Ape Sanctuary",
                 "subtitle": "Madagaskar • Biome Zwrotnikowy",
