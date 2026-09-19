@@ -489,23 +489,32 @@ window.HISTORIA = window.HISTORIA || {
 
         e.preventDefault();
 
-        if (targetPage === "historia") {
-            if (window.CHARACTERS && typeof window.CHARACTERS.closeModal === "function") window.CHARACTERS.closeModal();
-            if (window.PLACES && typeof window.PLACES.closeModal === "function") window.PLACES.closeModal();
+        // Zastąp blok `if (targetPage === "historia")` w kodzie na dole pliku historia.js:
 
-            if (itemId) {
-                window.HISTORIA.pendingZooId = itemId;
-            }
+if (targetPage === "historia") {
+    if (window.CHARACTERS && typeof window.CHARACTERS.closeModal === "function") window.CHARACTERS.closeModal();
+    if (window.PLACES && typeof window.PLACES.closeModal === "function") window.PLACES.closeModal();
 
-            if (typeof window.loadPage === "function") {
-                await window.loadPage("historia");
-            }
+    // Jeśli jesteśmy już na stronie historii, tylko przełączamy zakładkę bez re-loadu podstrony
+    const isAlreadyOnHistoria = document.querySelector(".historia-page");
+    if (isAlreadyOnHistoria && itemId) {
+        window.HISTORIA.scrollToZoo(itemId);
+        return;
+    }
 
-            if (itemId && typeof window.HISTORIA.scrollToZoo === "function") {
-                window.HISTORIA.scrollToZoo(itemId);
-            }
-            return;
-        }
+    if (itemId) {
+        window.HISTORIA.pendingZooId = itemId;
+    }
+
+    if (typeof window.loadPage === "function") {
+        await window.loadPage("historia");
+    }
+
+    if (itemId && typeof window.HISTORIA.scrollToZoo === "function") {
+        window.HISTORIA.scrollToZoo(itemId);
+    }
+    return;
+}
 
         if (typeof window.loadPage === "function") {
             await window.loadPage(targetPage);
