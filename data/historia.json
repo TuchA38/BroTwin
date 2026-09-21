@@ -7,7 +7,7 @@
                 "founded": "Ponad 50 lat temu",
                 "founder": "Amiliana Empirejska",
                 "badge": "Pierwsze kroki",
-                "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783197002/Kariera_vlu7uq.webp",
+                "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413018/2_gk8nw9.webp",
                 "summary": "Legendarne zoo założone przez Amilianę Empirejską, słynące z innowacyjnej „Morskiej Krainy” oraz trudnej historii zwieńczonej tragicznym pożarem.",
                 "historyText": {
                     "p1": "<p>Powstanie Ogrodu Zoologicznego w Andigawen ponad pół wieku temu zapoczątkowało nowy rozdział w historii europejskiej zoologii. Śmiała wizja młodej pasjonatki natury, <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliany Empirejskiej</b></a>, szybko przekształciła się w pełnowymiarowy ośrodek badawczo-ochronny. Sukces przedsięwzięcia opierał się na ścisłej współpracy zgranej trójki przyjaciół. Niezwykle ważną rolę odgrywała młodsza siostra <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliany</b></a>, <a href='#postacie' data-page='postacie' data-id='ethelien-mumba' class='zalacznik'><b>Ethelien Mumba</b></a>, wybitna lekarka weterynarii o wyjątkowej wrażliwości na potrzeby zwierząt oraz ich przyjaciel z lat dziecięcych, <a href='#postacie' data-page='postacie' data-id='mondo-zeller' class='zalacznik'><b>Mondo Zeller</b></a>. Jako główny inżynier i technik obiektu, <a href='#postacie' data-page='postacie' data-id='mondo-zeller' class='zalacznik'><b>Mondo</b></a> z powodzeniem urzeczywistniał najbardziej wizjonerskie pomysły <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliany</b></a>, tworząc bezpieczne i nowatorskie konstrukcje.</p>",
@@ -21,6 +21,10 @@
                 "inlineImages": [{
                         "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/3_mlpq4l.webp",
                         "paragraphIndex": 1
+                    },
+                    {
+                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789984989/20_r5iwyo.webp",
+                        "paragraphIndex": 2
                     },
                     {
                         "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/5_qaxc86.webp",
@@ -66,72 +70,59 @@
                     }
                 ],
                 "galleries": [{
-                        "id": "siedliska",
-                        "title": "Zachowane Pamiątki",
-                        "description": "Archiwalne zdjęcia przedstawiające Zoo w Andigawen przed tragicznym pożarem.",
-                        "images": [{
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/1_bannjz.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413018/2_gk8nw9.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/4_llghjx.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/6_zbkorl.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412971/7_ffbxiw.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/8_fsgxtu.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412982/9_eb0l90.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412969/10_vatafb.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412969/11_xe6y0i.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413018/13_qvppr7.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412982/14_stxqji.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412981/15_corbyb.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413008/16_an6qxi.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/17_echjcc.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413016/18_l5shia.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789471294/19_pclutf.webp"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "architektura",
-                        "title": "Architektura i Dziedzictwo Parku",
-                        "description": "Inżynieria dawnego ogrodu oraz ekspozycja odrestaurowanych zabytków na terenie muzealnym.",
-                        "images": [{
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783192747/Nieograniczona_kreatywno%C5%9B%C4%87_tdsi9n.webp"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783178561/Dziel_si%C4%99_i_inspiruj_iwxk81.webp"
-                            }
-                        ]
-                    }
-                ]
+                    "id": "siedliska",
+                    "title": "Zachowane Pamiątki",
+                    "description": "Archiwalne zdjęcia przedstawiające Zoo w Andigawen przed tragicznym pożarem.",
+                    "images": [{
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/1_bannjz.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413018/2_gk8nw9.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/4_llghjx.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/6_zbkorl.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412971/7_ffbxiw.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/8_fsgxtu.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412982/9_eb0l90.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412969/10_vatafb.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412969/11_xe6y0i.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413018/13_qvppr7.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412982/14_stxqji.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412981/15_corbyb.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413008/16_an6qxi.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413017/17_echjcc.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789413016/18_l5shia.webp"
+                        },
+                        {
+                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789471294/19_pclutf.webp"
+                        }
+                    ]
+                }]
             },
             {
                 "id": "magiotopia",
@@ -140,7 +131,7 @@
                 "founded": "Niedługo po katastrofie w Andigawen",
                 "founder": "Amiliana Empirejska",
                 "badge": "Odrodzenie",
-                "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783197002/Kariera_vlu7uq.webp",
+                "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789985552/Magiotopia_efropo.webp",
                 "summary": "Nowoczesny ośrodek wzniesiony na surowej, mroźnej Północy. Stanowi bezpieczną przystań dla zwierząt ewakuowanych z dawnego parku oraz symbol nieugiętej walki o odrodzenie dziedzictwa Amiliany.",
                 "historyText": {
                     "p1": "<p>Po tragicznych wydarzeniach w Andigawen <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana Empirejska</b></a> nie zamierzała się poddawać i postanowiła rozpocząć nowy rozdział w swojej działalności. Na surowej Północy, tuż obok głębokiego jeziora polodowcowego, narodził się projekt Magiotopii, czyli nowoczesnego parku, który miał stać się bezpieczną przystanią dla zwierząt oraz bezpośrednią kontynuacją jej życiowej misji. Początki okazały się jednak ogromnym wyzwaniem logistycznym i klimatycznym. Sięgające -25°C mrozy sprawiły, że przed sprowadzeniem większości podopiecznych konieczna była budowa specjalistycznych, silnie ogrzewanych obiektów. Jedynym zwierzęciem zdolnym od razu sprostać tak surowym warunkom był wiekowy niedźwiedź grizzly Derward. Podczas gdy reszta stada z konieczności przebywała jeszcze w tymczasowych ośrodkach, <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana</b></a> skoncentrowała całą swoją energię i środki na przygotowaniu infrastruktury dla pozostałych gatunków, a Derward jako pierwszy zamieszkał na ośnieżonym wybiegu, stając się nieoficjalnym strażnikiem i żywym symbolem odrodzenia parku.</p>",
@@ -150,28 +141,19 @@
                     "p5": "<p>Kolejne miesiące przyniosły wieści, które rozbudziły ogromną ekscytację całego zespołu. Pod troskliwą opieką <a href='#postacie' data-page='postacie' data-id='ethelien-mumba' class='zalacznik'><b>Ethelien Mumba</b></a> oczekiwano historycznych narodzin małego okapi. Aby zapewnić ciężarnej samicy absolutny spokój i optymalne warunki, <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana Empirejska</b></a> osobiście zarządziła czasowe wyłączenie całego sektora z ruchu turystycznego, pilnując, by nic nie zakłócało precyzyjnej pracy lekarki. Z myślą o licznie przybywających gościach przygotowano jednak fascynujące alternatywy. Na nowo otwartych przestrzeniach Magiotopii zagościły majestatyczne pantery śnieżne, goryle nizinne, kangury rude oraz energiczne stado bizonów amerykańskich. Gdy po tygodniach niecierpliwego wyczekiwania na świecie pojawiło się w końcu silne, zdrowe cielę okapi, echa tego spektakularnego sukcesu obiegły światowe media i środowiska naukowe, ostatecznie ugruntowując pozycję mroźnego parku jako globalnego lidera w dziedzinie ochrony i rozmnażania najbardziej zagrożonych gatunków na Ziemi.</p>",
                     "p6": "<p>Po siedmiu latach, od uroczystego otwarcia bram Magiotopia, lśniła już pełnym blaskiem, stanowiąc dom dla ponad 60 unikalnych gatunków zwierząt i przyciągając blisko milion zachwyconych gości rocznie. Imponujące, stabilne przychody bez trudu pokrywały gigantyczne koszty ogrzewania tak wymagającego, północnego terenu oraz utrzymania elitarnego zespołu specjalistów, otwierając drogę do realizacji najśmielszych marzeń dyrekcji. <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana</b></a>, łącząc swoje wizjonerskie podejście z bezgraniczną miłością do natury, tchnęła wówczas nowe życie w projekt, utracony przed laty w <a href='#historia' data-page='historia' data-id='zoo-w-andigawen' class='zalacznik'><b>Zoo w Andigawen</b></a>. Do łask powróciło monumentalne Safari Afrykańskie. Na rozległym, pieczołowicie zabezpieczonym terenie zamieszkały nie tylko ocalone z rąk <a href='#postacie' data-page='postacie' data-id='deianira-upjersliwa' class='zalacznik'><b>Deianiry</b></a> zebry, bawoły i gepardy, ale również nowe stada: żyraf siatkowanych oraz grzmiących donośnym rykiem, lwów afrykańskich.</p>",
                     "p7": "<p>Ostatnim, wieńczącym to gigantyczne dzieło etapem rozbudowy było utworzenie tętniącej życiem strefy azjatyckiej oraz skutej lodem strefy polarnej. W samym sercu parku wzniesiono monumentalną, przeszkloną słoniarnię, w której <a href='#postacie' data-page='postacie' data-id='mondo-zeller' class='zalacznik'><b>Mondo Zeller</b></a> zainstalował autorski, zaawansowany system filtrowania powietrza oraz podgrzewane baseny dla słoni afrykańskich i azjatyckich. Z kolei w najdalszym, najbardziej surowym zakątku ogrodu powstał zapierający dech w piersiach kompleks dla niedźwiedzi polarnych. Genialny inżynier wyposażył go w podziemny, całkowicie przeszklony tunel obserwacyjny, który umożliwiał zwiedzającym fascynujący podgląd potężnych drapieżników nurkujących w krystalicznie czystej wodzie tuż nad ich głowami. Otwarcie tych architektonicznych cudów, będących popisem niesamowitego talentu <a href='#postacie' data-page='postacie' data-id='mondo-zeller' class='zalacznik'><b>Mondo</b></a> oraz owocem mądrego przywództwa <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliany Empirejskiej</b></a>, ostatecznie przypieczętowało rozpoczęcie prawdziwie złotej ery w historii Magiotopii.</p>",
-                    "p8": "<p>Ogród stale rósł w siłę, gromadząc ostatecznie blisko 80 unikalnych gatunków zwierząt. Międzynarodowe organizacje zoologiczne, fundacje ochronne oraz niezliczeni badacze z całego globu wiązali z mroźną placówką ogromne nadzieje, powierzając jej opiece kolejne, najbardziej zagrożone wyginięciem okazy. <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana Empirejska</b></a> stawała jednak przed coraz poważniejszym wyzwaniem. Zaczynało brakować wolnej przestrzeni do dalszej ekspansji, a nieuchronny upływ lat zaczął stopniowo odbijać się na jej siłach. Gdy ogród przez kolejne lata funkcjonował na najwyższych obrotach, do akcji wkroczył jej syn, <a href='#postacie' data-page='postacie' data-id='kendran-tycoon' class='zalacznik'><b>Kendran Tycoon</b></a>. Zafascynowany wielkim dziełem matki od najmłodszych lat, nie wyobrażał sobie, by stery nad tym rodzinnym dziedzictwem miała przejąć obca osoba. Przejmując rolę nowego zarządcy, podjął śmiałą i przełomową decyzję o przekształceniu mroźnego parku w nową markę – <a href='#miejsca' data-page='miejsca' data-id='brotwin-zoo' class='zalacznik'><b>BroTwin Zoo</b></a>. <a href='#postacie' data-page='postacie' data-id='kendran-tycoon' class='zalacznik'><b>Kendran</b></a> przeprowadził bezkompromisową, gruntowną przebudowę całego kompleksu od podstaw. Zmodernizował infrastrukturę do najwyższych światowych standardów, zoptymalizował koszty operacyjne i z genialną precyzją zagospodarował każdy skrawek terenu, uwalniając potężne rezerwy przestrzenne. Łącząc synowską pasję z powiewem nowoczesnego zarządzania, otworzył zupełnie nowy, ekscytujący rozdział w historii tej niezwykłej, północnej krainy.</p>"
+                    "p8": "<p>Ogród stale rósł w siłę, gromadząc ostatecznie blisko 90 unikalnych gatunków zwierząt. Międzynarodowe organizacje zoologiczne, fundacje ochronne oraz niezliczeni badacze z całego globu wiązali z mroźną placówką ogromne nadzieje, powierzając jej opiece kolejne, najbardziej zagrożone wyginięciem okazy. <a href='#postacie' data-page='postacie' data-id='amiliana-empirejska' class='zalacznik'><b>Amiliana Empirejska</b></a> stawała jednak przed coraz poważniejszym wyzwaniem. Zaczynało brakować wolnej przestrzeni do dalszej ekspansji, a nieuchronny upływ lat zaczął stopniowo odbijać się na jej siłach. Gdy ogród przez kolejne lata funkcjonował na najwyższych obrotach, do akcji wkroczył jej syn, <a href='#postacie' data-page='postacie' data-id='kendran-tycoon' class='zalacznik'><b>Kendran Tycoon</b></a>. Zafascynowany wielkim dziełem matki od najmłodszych lat, nie wyobrażał sobie, by stery nad tym rodzinnym dziedzictwem miała przejąć obca osoba. Przejmując rolę nowego zarządcy, podjął śmiałą i przełomową decyzję o przekształceniu mroźnego parku w nową markę – <a href='#miejsca' data-page='miejsca' data-id='brotwin-zoo' class='zalacznik'><b>BroTwin Zoo</b></a>. <a href='#postacie' data-page='postacie' data-id='kendran-tycoon' class='zalacznik'><b>Kendran</b></a> przeprowadził bezkompromisową, gruntowną przebudowę całego kompleksu od podstaw. Zmodernizował infrastrukturę do najwyższych światowych standardów, zoptymalizował koszty operacyjne i z genialną precyzją zagospodarował każdy skrawek terenu, uwalniając potężne rezerwy przestrzenne. Łącząc synowską pasję z powiewem nowoczesnego zarządzania, otworzył zupełnie nowy, ekscytujący rozdział w historii tej niezwykłej, północnej krainy.</p>"
                 },
                 "inlineImages": [{
-                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/3_mlpq4l.webp",
-                        "paragraphIndex": -1
-                    },
-                    {
-                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412970/5_qaxc86.webp",
-                        "paragraphIndex": -3
-                    },
-                    {
-                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789412981/12_bdwhy5.webp",
-                        "paragraphIndex": -5
-                    }
-                ],
+                    "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789985988/mapa_magiotopia_hxwle8.webp",
+                    "paragraphIndex": 7
+                }],
                 "stats": [{
                         "label": "Liczba gatunków",
-                        "value": "Blisko 80 gatunków"
+                        "value": "87 gatunków"
                     },
                     {
                         "label": "Roczna frekwencja",
-                        "value": "Blisko 1 mln zwiedzających"
+                        "value": "1 mln zwiedzających"
                     },
                     {
                         "label": "Kluczowa hodowla",
@@ -216,232 +198,6 @@
                         }
                     ]
                 }]
-            },
-            {
-                "id": "ape-sanctuary",
-                "name": "Madagaskar Ape Sanctuary",
-                "subtitle": "Madagaskar • Biome Zwrotnikowy",
-                "founded": "1999 r.",
-                "founder": "Olimpia Myers & Bernard Goodwin",
-                "badge": "Sanktuarium",
-                "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783178561/Dziel_si%C4%99_i_inspiruj_iwxk81.webp",
-                "summary": "Unikalny rezerwat i sanktuarium lemurowatych oraz małp człekokształtnych zlokalizowany w sercu gęstych lasów deszczowych Madagaskaru.",
-                "historyText": "<p><img src=\"https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783198187/Piaskownica_elmd9d.webp\" class=\"img-right\" alt=\"Sanktuarium\">Sanktuarium powstało jako odpowiedź na drastyczny spadek populacji lemurów katta oraz wari czarno-białych. Zinicjowane przez dr Olimpię Myers, otrzymało wsparcie finansowe i sprzętowe od Sir Bernarda Goodwina.</p><p>Dzięki bezklatkowym wybiegom, w których zwierzęta poruszają się po koronie drzew, sanktuarium stało się wzorcem prowadzenia obiektów rehabilitacyjnych dla naczelnych na świecie.</p>",
-                "stats": [{
-                        "label": "Powierzchnia",
-                        "value": "58 ha"
-                    },
-                    {
-                        "label": "Liczba gatunków",
-                        "value": "16 gatunków naczelnych"
-                    },
-                    {
-                        "label": "Program hodowlany",
-                        "value": "Lemury & Małpy"
-                    }
-                ],
-                "timeline": [{
-                        "year": "1999",
-                        "title": "Założenie Sanktuarium",
-                        "description": "Nabycie terenu dawnej plantacji i rozpoczęcie reforestacji."
-                    },
-                    {
-                        "year": "2008",
-                        "title": "Most Koron Drzew",
-                        "description": "Budowa unikalnego ciągu widokowego w koronach drzew dla zwiedzających."
-                    },
-                    {
-                        "year": "2017",
-                        "title": "Centrum Przywracania Naturze",
-                        "description": "Pierwsze udane wypuszczenie grupy lemurów do chronionego rezerwatu."
-                    }
-                ],
-                "galleries": [{
-                    "id": "lemury",
-                    "title": "Korona Drzew i Naczelne",
-                    "description": "Galeria przedstawiająca wyspy lemurów i otwarte wybiegi linowe.",
-                    "images": [{
-                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783177745/Symulacja_dzia%C5%82ania_czm4o4.webp",
-                            "caption": "Wybieg wolierowy dla lemurowatych"
-                        },
-                        {
-                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783198187/Piaskownica_elmd9d.webp",
-                            "caption": "Wiszące pomosty badawcze w lesie deszczowym"
-                        }
-                    ]
-                }]
-            },
-            {
-                "id": "nevada-state",
-                "name": "Nevada State Bio-Park",
-                "subtitle": "USA • Biome Pustynny",
-                "founded": "2005 r.",
-                "founder": "Dominic Myers",
-                "badge": "Rezerwat Pustynny",
-                "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783198183/Wyzwanie_rzdwv6.webp",
-                "summary": "Nowoczesny park technologiczny w sercu pustyni Mojave, specjalizujący się w faunie aridnej i ochronie zasobów wodnych.",
-                "historyText": "<p><img src=\"https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783198183/Wyzwanie_rzdwv6.webp\" class=\"img-left\" alt=\"Pustynia Bio-Park\">Projekt Nevada State Bio-Park powstał jako ambitna próba stworzenia samowystarczalnego biologicznie parku na teranie pustynnym. Choć komercyjne podejście Dominica Myersa wywoływało kontrowersje, park wyznaczył nowe standardy w zakresie klimatyzowanych schronień i mikroklimatów.</p>",
-                "stats": [{
-                        "label": "Powierzchnia",
-                        "value": "40 ha"
-                    },
-                    {
-                        "label": "Technologia",
-                        "value": "100% Recykling Wody"
-                    },
-                    {
-                        "label": "Gatunki",
-                        "value": "18 fauny pustynnej"
-                    }
-                ],
-                "timeline": [{
-                        "year": "2005",
-                        "title": "Wykupienie Terenu",
-                        "description": "Zakup obszaru pustynnego w stanie Nevada."
-                    },
-                    {
-                        "year": "2011",
-                        "title": "System Zamagławiania",
-                        "description": "Instalacja innowacyjnego systemu chłodzenia wybiegów."
-                    },
-                    {
-                        "year": "2021",
-                        "title": "Przejęcie przez FEN",
-                        "description": "Przekształcenie komercyjnego parku w ośrodek ochrony przyrody."
-                    }
-                ],
-                "galleries": [{
-                    "id": "pustynia",
-                    "title": "Oazy i Siedliska Pustynne",
-                    "description": "Wybiegi dla widłorogów, koraków i potworów gila.",
-                    "images": [{
-                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783198183/Wyzwanie_rzdwv6.webp",
-                            "caption": "Sztuczna oaza ze skałami z piaskowca"
-                        },
-                        {
-                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783198190/Franczyza_ffau9y.webp",
-                            "caption": "Centrum edukacji klimatycznej"
-                        }
-                    ]
-                }]
-            },
-            {
-
-                "id": "goodwin-house-console",
-                "name": "Goodwin House Zoo",
-                "subtitle": "Wielka Brytania • Edycja Konsolowa",
-                "founded": "1984 r.",
-                "founder": "Bernard Goodwin",
-                "badge": "Kultowy Ogród",
-                "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783197002/Kariera_vlu7uq.webp",
-                "summary": "Kultowy ogród zoologiczny Bernie'ego Goodwina zoptymalizowany dla graczy konsolowych.",
-                "historyText": "<p>Słynna posiadłość dworska Goodwin House reprezentuje szczytowe osiągnięcie w architekturze ogrodów zoologicznych. Zoptymalizowana strefa ścieżek oraz ergonomiczne wybiegi umożliwiają zachwycanie gości z poziomu kontrolera.</p>",
-                "stats": [{
-                        "label": "Powierzchnia",
-                        "value": "30 ha"
-                    },
-                    {
-                        "label": "Sterowanie",
-                        "value": "Dedykowany pad"
-                    },
-                    {
-                        "label": "Gatunki",
-                        "value": "22 gatunki"
-                    }
-                ],
-                "timeline": [{
-                        "year": "1984",
-                        "title": "Powstanie Posiadłości",
-                        "description": "Inauguracja ogrodu Bernie'ego Goodwina."
-                    },
-                    {
-                        "year": "2024",
-                        "title": "Premiera Konsolowa",
-                        "description": "Dostosowanie parku dla architektury nowej generacji konsol."
-                    }
-                ],
-                "galleries": [{
-                    "id": "glowne-konsola",
-                    "title": "Widoki Ogólne",
-                    "description": "Galeria głównych wybiegów.",
-                    "images": [{
-                        "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783177745/Symulacja_dzia%C5%82ania_czm4o4.webp",
-                        "caption": "Centralny staw z kapibarami"
-                    }]
-                }]
-            },
-            {
-                "id": "fen-hub",
-                "name": "Międzynarodowy Rezerwat FEN",
-                "subtitle": "Globalna Sieć Ochrony • Planet Hub",
-                "founded": "2026 r.",
-                "founder": "Koordynacja FEN",
-                "badge": "Rezerwat Dzikiej Przyrody",
-                "heroImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783287691/Planet_Hub_rtwpyg.webp",
-                "summary": "Pierwszy w historii w pełni zintegrowany rezerwat biosferyczny łączący woliery dla ptaków, wielkie akwaria morskie i swobodne tereny safari.",
-                "historyText": "<p><img src=\"https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783243241/Niesamowite_Gatunki_Wodne_jnxvex.webp\" class=\"img-left\" alt=\"Akwaria FEN\">Nowa era w historii Planet Zoo wyznaczona została przez integrację rezerwatów przyrody z tradycyjnymi ogrodami zoologicznymi. Rezerwat FEN stanowi centralny punkt globalnego programu rewitalizacji ekosystemów.</p><p><img src=\"https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783243242/Zdumiewaj%C4%85cy_Lotnicy_yuyi0j.webp\" class=\"img-right\" alt=\"Woliery przelotowe\">Dzięki zastosowaniu podwodnych tuneli akwariowych oraz gigantycznych wolier siatkowych, rezerwat umożliwia podziwianie zwierząt w środowisku zbliżonym do naturalnego.</p>",
-                "stats": [{
-                        "label": "Sektor Morski",
-                        "value": "12,000 m³ akwariów"
-                    },
-                    {
-                        "label": "Woliery",
-                        "value": "W pełni przelotowe"
-                    },
-                    {
-                        "label": "Status",
-                        "value": "Rezerwat Biosfery"
-                    }
-                ],
-                "timeline": [{
-                        "year": "2026",
-                        "title": "Inicjatywa FEN",
-                        "description": "Powołanie globalnej sieci rezerwatów w ramach Planet Hub."
-                    },
-                    {
-                        "year": "2027",
-                        "title": "Otwarcie Sektora Oceanicznego",
-                        "description": "Debiut rekinów rafowych i żółwi morskich."
-                    },
-                    {
-                        "year": "2028",
-                        "title": "Strefa Wolnego Lotu Ptaków",
-                        "description": "Uruchomienie największej woliery z tukanami i arami."
-                    }
-                ],
-                "galleries": [{
-                        "id": "akwaria",
-                        "title": "Akwaria Oceaniczne i Słodkowodne",
-                        "description": "Głębinowe ekspozycje morskich gatunków zwierząt.",
-                        "images": [{
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783243241/Niesamowite_Gatunki_Wodne_jnxvex.webp",
-                                "caption": "Podwodny tunel obserwacyjny z ławicami ryb rafowych"
-                            },
-                            {
-                                "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783427433/Przyroda_w_najdrobniejszych_szczeg%C3%B3%C5%82ach_fpgaoa.webp",
-                                "caption": "Ekspozycja słodkowodna rejonów Amazonii"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "woliery",
-                        "title": "Woliery i Lotnicy",
-                        "description": "Dynamiczne siatki i woliery dla ptaków przelotowych.",
-                        "images": [{
-                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783243242/Zdumiewaj%C4%85cy_Lotnicy_yuyi0j.webp",
-                            "caption": "Przelotowa woliera dla tukanów i sekretarzy"
-                        }]
-                    },
-                    {
-                        "id": "rezerwat-teren",
-                        "title": "Rozległe Tereny Safari",
-                        "description": "Otwarte krajobrazy bez tradycyjnych ogrodzeń.",
-                        "images": [{
-                            "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783243242/Rezerwaty_Przyrody_zraydr.webp",
-                            "caption": "Rezerwat dzikiej przyrody w dolinie rzecznej"
-                        }]
-                    }
-                ]
             }
         ]
     }
