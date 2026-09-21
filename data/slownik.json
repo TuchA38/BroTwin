@@ -193,6 +193,11 @@
         "definition": "Sztucznie wytworzony przedmiot, zjawisko lub informacja będąca rezultatem działalności ludzkiej (np. w archeologii lub kulturze) albo niepożądany efekt powstały wskutek błędu technicznego, np. w grafice, animacji lub obrazowaniu.",
         "aliases": ["artefakty", "artefakt wizualny"]
     },
+    "awangarda": {
+        "title": "Awangarda",
+        "definition": "Nurt lub grupa twórców i osób wprowadzających nowatorskie, często wyprzedzające swoją epokę pomysły, rozwiązania lub style. Określenie może odnosić się również do czegoś, co wyznacza nowe kierunki rozwoju w określonej dziedzinie.",
+        "aliases": ["awangardy"]
+    },
     "AZA": {
         "title": "AZA (Association of Zoos and Aquariums)",
         "definition": "Stowarzyszenie, którego celem jest wspieranie ogrodów zoologicznych i akwariów w zakresie ochrony środowiska, edukacji, nauki i rekreacji."
@@ -357,7 +362,7 @@
     "ekosystem": {
         "title": "Ekosystem",
         "definition": "Społeczność organizmów i ich środowisko fizyczne tworzące funkcjonalną jednostkę, w której zachodzą wzajemne zależności.",
-        "aliases": ["ekosystemu", "ekosystemów", "ekosystemie", "ekosystemy", "ekosystemach", "ekosystemami"]
+        "aliases": ["ekosystemu", "ekosystemów", "ekosystemie", "ekosystemy", "ekosystemach", "ekosystemami", "ekosystemem"]
     },
     "ekoturystyka": {
         "title": "Ekoturystyka",
@@ -408,6 +413,11 @@
         "title": "Eusocjalny",
         "definition": "O organizmach żyjących w społeczeństwach o silnie rozwiniętej strukturze, z podziałem ról między osobnikami i współpracą w opiece nad potomstwem.",
         "aliases": ["eusocjalne"]
+    },
+    "ewakuacja": {
+        "title": "Ewakuacja",
+        "definition": "Zorganizowane i zwykle czasowe przemieszczanie ludzi, zwierząt lub mienia z miejsca zagrożonego do bezpiecznego obszaru. Może być przeprowadzana m.in. w przypadku pożaru, klęski żywiołowej, katastrofy lub innego zagrożenia.",
+        "aliases": ["ewakuować", "ewakuowanych"]
     },
     "fanart": {
         "title": "Fanart",
@@ -617,7 +627,7 @@
     "infrastruktura": {
         "title": "Infrastruktura",
         "definition": "Zespół obiektów, instalacji i systemów technicznych niezbędnych do funkcjonowania danego miejsca lub przedsięwzięcia.",
-        "aliases": ["infrastrukturze", "infrastrukturę", "infrastrukturą", "infrastruktury"]
+        "aliases": ["infrastrukturze", "infrastrukturę", "infrastrukturą", "infrastruktury", "infrastruktury"]
     },
     "inicjalizacja": {
         "title": "Inicjalizacja",
@@ -952,6 +962,11 @@
         "definition": "System rolniczy lub leśny polegający na wieloletniej uprawie roślin jednego gatunku na tym samym obszarze.",
         "aliases": ["monokultury"]
     },
+    "monumentalny": {
+        "title": "Monumentalny",
+        "definition": "Bardzo duży, okazały i robiący silne wrażenie swoim rozmiarem, wyglądem lub charakterem. Określenie często odnosi się do budowli, pomników, dzieł sztuki lub innych obiektów o imponującej skali.",
+        "aliases": ["monumentalnego", "monumentalne", "monumentalną"]
+    },
     "nasadzenie": {
         "title": "Nasadzenie",
         "definition": "Proces umieszczania sadzonek roślin, drzew lub krzewów w ziemi.",
@@ -1049,6 +1064,11 @@
         "title": "Pałąkowaty",
         "definition": "Wygięty w łuk lub przypominający swoim kształtem pałąk. W odniesieniu do budowy ciała zwierząt określa kończyny lub inne części ciała, które są lekko wygięte, co wpływa na sposób poruszania się i wygląd zwierzęcia.",
         "aliases": ["pałąkowate"]
+    },
+    "panoramiczny": {
+        "title": "Panoramiczny",
+        "definition": "Obejmujący szeroki obszar widoku lub zapewniający szerokie, rozległe pole widzenia.",
+        "aliases": ["panoramiczne"]
     },
     "pasywny": {
         "title": "Pasywny",
@@ -1290,6 +1310,11 @@
     "ryzen": {
         "title": "Ryzen",
         "definition": "Seria procesorów komputerowych firmy AMD stosowanych w komputerach osobistych."
+    },
+    "sabotaz": {
+        "title": "Sabotaż",
+        "definition": "Celowe działanie mające na celu utrudnienie, zakłócenie lub uniemożliwienie prawidłowego funkcjonowania określonej osoby, organizacji, systemu lub przedsięwzięcia, często poprzez uszkadzanie mienia, sprzętu albo innych elementów.",
+        "aliases": ["sabotażem"]
     },
     "sceptycyzm": {
         "title": "Sceptycyzm",
