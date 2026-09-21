@@ -212,6 +212,11 @@
         "definition": "Sytuacja, w której osoba, przedsiębiorstwo lub inna organizacja traci zdolność do regulowania swoich zobowiązań finansowych. W przypadku przedsiębiorstwa może prowadzić do zakończenia działalności, postępowania upadłościowego lub likwidacji majątku.",
         "aliases": ["zbankrutowali", "bankructwa"]
     },
+    "batalia": {
+        "title": "Batalia",
+        "definition": "Zacięta walka, rywalizacja lub długotrwałe starania o osiągnięcie określonego celu. Określenie może odnosić się zarówno do rzeczywistego konfliktu zbrojnego, jak i do sytuacji, w której strony intensywnie konkurują lub próbują przeforsować swoje stanowisko.",
+        "aliases": ["batalii", "batalię", "batalie"]
+    },
     "bazar": {
         "title": "Bazar",
         "definition": "Plac lub pomieszczenie ze straganami i budkami, gdzie sprzedaje się towary lub wydzielona dzielnica handlowa w miastach Bliskiego Wschodu.",
@@ -997,6 +1002,10 @@
         "definition": "Powodować, przysparzać lub dostarczać czegoś, najczęściej trudności, problemy lub wątpliwości.",
         "aliases": ["nastręcza"]
     },
+    "naszpikowany": {
+        "title": "Naszpikowany",
+        "definition": "Zawierający bardzo dużą liczbę określonych elementów, często rozmieszczonych w wielu miejscach lub występujących w dużym zagęszczeniu. Określenie może być używane zarówno dosłownie, jak i w znaczeniu przenośnym."
+    },
     "nogogłaszczki": {
         "title": "Nogogłaszczki (pedipalpy, szczękonóżki)",
         "definition": "Druga para przydatków głowotułowia u pajęczaków i niektórych skorupiaków, położona za szczękoczułkami.",
@@ -1065,6 +1074,11 @@
     "oskorek": {
         "title": "Oskórek",
         "definition": "Zewnętrzna warstwa ciała bezkręgowców, pełniąca funkcję ochronną i często tworząca twardy pancerz."
+    },
+    "ostracyzm": {
+        "title": "Ostracyzm",
+        "definition": "Celowe unikanie, odrzucanie lub wykluczanie osoby albo grupy ze społeczności, często jako forma dezaprobaty, kary lub okazania niechęci.",
+        "aliases": ["ostracyzmu"]
     },
     "outback": {
         "title": "Outback",
@@ -1666,6 +1680,11 @@
         "title": "Wyzysk",
         "definition": "Nadmierne, nieetyczne lub szkodliwe wykorzystywanie zwierząt lub zasobów przyrody przez człowieka, prowadzące do ich cierpienia.",
         "aliases": ["wyzyskiem"]
+    },
+    "zakusy": {
+        "title": "Zakusy",
+        "definition": "Zamiary lub starania mające na celu zdobycie, przejęcie albo osiągnięcie czegoś, często z odcieniem silnej ambicji lub chęci.",
+        "aliases": ["zakusami"]
     },
     "zaplodnienie": {
         "title": "Zapłodnienie",
