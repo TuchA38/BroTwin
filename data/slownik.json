@@ -419,6 +419,11 @@
         "definition": "Zorganizowane i zwykle czasowe przemieszczanie ludzi, zwierząt lub mienia z miejsca zagrożonego do bezpiecznego obszaru. Może być przeprowadzana m.in. w przypadku pożaru, klęski żywiołowej, katastrofy lub innego zagrożenia.",
         "aliases": ["ewakuować", "ewakuowanych"]
     },
+    "fanaberia": {
+        "title": "Fanaberia",
+        "definition": "Nietypowy, często niepraktyczny lub przesadny pomysł, zachcianka albo wymaganie, wynikające bardziej z kaprysu niż z rzeczywistej potrzeby.",
+        "aliases": ["fanaberie"]
+    },
     "fanart": {
         "title": "Fanart",
         "definition": "Twórczość fanowska przybierająca formę artystycznego wyrazu inspirowanego dziełami innych twórców, takimi jak książki, filmy, gry czy seriale. Pojęcie zapożyczone z języka angielskiego.",
@@ -627,12 +632,17 @@
     "infrastruktura": {
         "title": "Infrastruktura",
         "definition": "Zespół obiektów, instalacji i systemów technicznych niezbędnych do funkcjonowania danego miejsca lub przedsięwzięcia.",
-        "aliases": ["infrastrukturze", "infrastrukturę", "infrastrukturą", "infrastruktury", "infrastruktury"]
+        "aliases": ["infrastrukturze", "infrastrukturę", "infrastrukturą", "infrastruktury", "infrastruktury", "infrastrukturalną"]
     },
     "inicjalizacja": {
         "title": "Inicjalizacja",
         "definition": "Rozpoczęcie lub zapoczątkowanie procesu, działania lub zachowania.",
         "aliases": ["inicjalizację", "zainicjować", "inicjuje"]
+    },
+    "inicjatywa": {
+        "title": "Inicjatywa",
+        "definition": "Pomysł lub działanie podjęte w celu osiągnięcia określonego celu, często będące początkiem większego przedsięwzięcia, projektu lub zmian. Inicjatywa może również oznaczać samodzielność i gotowość do podejmowania działań bez czekania na polecenie innych osób.",
+        "aliases": ["inicjatyw", "inicjatywy"]
     },
     "inkubacja": {
         "title": "Inkubacja",
@@ -643,6 +653,11 @@
         "title": "Instancja",
         "definition": "Pojedyncze, konkretne wystąpienie danego elementu, procesu lub błędu w programie lub systemie.",
         "aliases": ["instancję"]
+    },
+    "inwestycja": {
+        "title": "Inwestycja",
+        "definition": "Przeznaczenie pieniędzy, czasu lub innych zasobów na określony cel z zamiarem uzyskania korzyści w przyszłości. Może obejmować m.in. budowę, zakup, modernizację lub rozwój obiektu, przedsiębiorstwa albo przedsięwzięcia.",
+        "aliases": ["inwestycje", "inwestycji"]
     },
     "IUCN": {
         "title": "IUCN (International Union for Conservation of Nature)",
@@ -953,6 +968,11 @@
         "definition": "Potomstwo ssaków pochodzące z jednej ciąży.",
         "aliases": ["miotu", "mioty", "miotów"]
     },
+    "modernizacja": {
+        "title": "Modernizacja",
+        "definition": "Unowocześnienie lub ulepszenie istniejącego obiektu, miejsca, urządzenia albo systemu poprzez wprowadzenie nowych rozwiązań, technologii lub elementów poprawiających jego funkcjonowanie, wygląd albo wygodę użytkowania.",
+        "aliases": ["modernizację", "zmodernizował", "zmodernizować", "zmodernizujesz", "modernizacyjne"]
+    },
     "monit": {
         "title": "Monit",
         "definition": "Komunikat lub okno dialogowe wyświetlane użytkownikowi przez program, zawierające informację, ostrzeżenie albo prośbę o potwierdzenie wykonania określonej czynności."
@@ -1111,7 +1131,7 @@
     "pionierski": {
         "title": "Pionierski",
         "definition": "Nowatorski i przecierający nowe szlaki, często związany z pierwszym zastosowaniem określonego rozwiązania, pomysłu lub sposobu działania. Określenie podkreśla, że coś jest jednym z pierwszych tego rodzaju i może wyznaczać kierunek dalszego rozwoju.",
-        "aliases": ["pionierskim"]
+        "aliases": ["pionierskim", "pionierskiego"]
     },
     "plantacja": {
         "title": "Plantacja",
@@ -1272,6 +1292,11 @@
         "title": "Rewitalizacja",
         "definition": "Proces odnawiania, modernizacji lub przywracania do dobrego stanu miejsca, obiektu lub obszaru.",
         "aliases": ["rewitalizacji"]
+    },
+    "rezerwa": {
+        "title": "Rezerwa",
+        "definition": "Zapas lub wydzielona część czegoś zachowana z myślą o przyszłym wykorzystaniu. W odniesieniu do przestrzeni oznacza obszar pozostawiony wolny lub przeznaczony pod przyszłą zabudowę, rozbudowę albo inne zagospodarowanie.",
+        "aliases": ["rezerwy"]
     },
     "rigging": {
         "title": "Rigging (animacja szkieletowa)",
@@ -1597,7 +1622,7 @@
     "wizjonerski": {
         "title": "Wizjonerski",
         "definition": "Nawiązujący do odważnych, nowatorskich i dalekosiężnych pomysłów lub koncepcji, które wyprzedzają swoje czasy i mogą znacząco wpłynąć na przyszły rozwój. Określenie używane do opisywania osób, projektów, idei lub rozwiązań cechujących się wyjątkową pomysłowością i szeroką wizją.",
-        "aliases": ["wizjonerskie"]
+        "aliases": ["wizjonerskie", "wizjonerką"]
     },
     "wokalizacja": {
         "title": "Wokalizacja",
