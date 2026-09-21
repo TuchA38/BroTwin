@@ -430,13 +430,13 @@
 .historia-text-content img.img-left,
 .historia-text-content .img-left {
     float: left;
-    margin: 4px 20px 15px 0;
+    margin: 4px 20px 5px 0;
 }
 
 .historia-text-content img.img-right,
 .historia-text-content .img-right {
     float: right;
-    margin: 4px 0 15px 20px;
+    margin: 4px 0 5px 20px;
 }
 
 .historia-text-content img.img-left:hover,
@@ -581,5 +581,15 @@
         margin: 0 auto;
         padding: 0;
         color: #e0e6ed;
+    }
+}
+
+
+/* Przesunięcie kadru zdjęcia hero tylko dla Magiotopii na PC */
+
+@media (min-width: 769px) {
+    .historia-zoo-card[data-zoo-id="magiotopia"] .historia-zoo-hero {
+        background-position: center 25%;
+        /* Zmieniaj wartość % (np. 20%, 30%, 40%), aby idealnie obniżyć kadr */
     }
 }
