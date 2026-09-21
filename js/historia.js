@@ -563,4 +563,10 @@ if (targetPage === "historia") {
             }, 100);
         }
     });
+    // Jeśli słownik załaduje się później niż strona historii, przeładuj treść historii
+document.addEventListener("glossaryReady", () => {
+    if (document.querySelector(".historia-page")) {
+        renderHistoria();
+    }
+});
 })();
