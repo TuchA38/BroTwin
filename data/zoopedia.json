@@ -582,8 +582,8 @@
     {
         "name": "Amfiprion plamisty",
         "latin": "Amphiprion ocellaris",
-        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785863082/Bocja_wspania%C5%82a_pxc1o0.webp",
-        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785867851/Loach_Clown_illustration_or2dr1.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103626/Amfiprion_plamisty_scyqqt.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103729/Anemonefish_Clown_illustration_v26qdi.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
         "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
@@ -5694,8 +5694,8 @@
     {
         "name": "Gurami olbrzymi",
         "latin": "Osphronemus goramy",
-        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785863082/Bocja_wspania%C5%82a_pxc1o0.webp",
-        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785867851/Loach_Clown_illustration_or2dr1.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103623/Gurami_olbrzymi_xgcmwy.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103730/Gourami_Giant_illustration_sfbq43.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
         "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
@@ -9864,9 +9864,9 @@
         "latin": "Lycaon pictus",
         "aliases": ["dziki pies afrykański", "simir"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774208005/Likaon_pstry_xin5ta.webp",
-        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774208006/Lew_zachodnioafryka%C5%84ski_n8nhyr.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103625/Likaon_pstry_xe5lve.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774208006/Likaon_pstry_-_Remaster_ucqyl1.webp",
-        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787764292/Snapper_Sailfin_illustration_ojezl2.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103730/Dog_AfricanWild_illustration_ssj495.webp",
         "znakWidth": "280px",
         "znakHeight": "280px",
         "classes": ["afryka", "ssaki", "EN", "i3", "remaster", "siedlisko"],
@@ -16338,7 +16338,7 @@
         "latin": "Scarabeus sacer",
         "aliases": ["skarabeusz"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774271934/Po%C5%9Bwi%C4%99tnik_czczony_bcxcwm.webp",
-        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785863082/Bocja_wspania%C5%82a_pxc1o0.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103624/Po%C5%9Bwi%C4%99tnik_czczony_i6hohc.webp",
         "classes": ["afryka", "europa", "stawonogi", "DD", "ekspozycja"],
         "info": "Poświętnik czczony <i>(Scarabeus sacer)</i> to gatunek chrząszcza gnojowego występujący naturalnie wśród wydm nadmorskich i moczar nad Morzem Śródziemnomorskim, czyli w regionie Afryki Północnej, Europy i Bliskiego Wschodu. 6 wyrostków na głowie chrząszcza oraz po 4 wyrostki na każdej z jego przednich odnóży tworzą łuk promieni z przodu owada. Poświętnik czczony ma 10-25 mm długości i błyszczący, czarny pancerz.",
         "conservation": " ",
@@ -18885,7 +18885,7 @@
         "name": "Skolopendra olbrzymia",
         "latin": "Scolopendra gigantea",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773674338/Skolopendra_olbrzymia_abdiet.webp",
-        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785863082/Bocja_wspania%C5%82a_pxc1o0.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103624/Skolopendra_olbrzymia_bi8jnr.webp",
         "classes": ["amerykapoludniowa", "stawonogi", "DD", "ekspozycja"],
         "info": "Skolopendra olbrzymia <i>(Scolopendra gigantea)</i> to gatunek dużego i groźnego stawonoga drapieżnego, który zamieszkuje lasy w Ameryce Południowej i na Karaibach. Skolopendry olbrzymie potrafią łapać, zatruwać jadem i zabijać różnego rodzaju zwierzęta. Opanowały specjalne sposoby polowania na określone ofiary. Skolopendry osiągają do 30 cm długości i mogą mieć różne ubarwienie - zwykle czerwone, żółte, brązowe lub czarne - przy czym ich odnóża są żółte, a pomiędzy segmentami ciała widoczne są ciemne pręgi.",
         "conservation": " ",
@@ -19161,80 +19161,89 @@
     {
         "id": "slon_azjatycki",
         "name": "Słoń azjatycki",
-        "latin": "Panthera leo",
-        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783453029/Lew_tzcset.webp",
-        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783453006/Lion_African_illustration_wf6rsx.webp",
+        "latin": "Elephas maximus",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103626/S%C5%82o%C5%84_azjatycki_hdudpv.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790103729/Elephant_Indian_illustration_z1fgdy.webp",
         "znakWidth": "350px",
         "znakHeight": "350px",
-        "classes": ["afryka", "ssaki", "VU", "i3", "siedlisko"],
-        "info": "Według szacunków w Afryce w stanie dzikim żyje obecnie 20 000 lwów, jednak liczebność populacji lwa zachodnioafrykańskiego <i>(Panthera leo leo)</i> jest zdecydowanie niższa. Na całym kontynencie pozostało zaledwie 250 osobników, co oznacza, że jest to jeden z najbardziej zagrożonych podgatunków na świecie. Ma on obecnie klasyfikację „krytycznie zagrożony”.<br><br>Dla niewprawnego obserwatora lew zachodnioafrykański przypomina inne podgatunki lwa - ma bujne, piaskowożółte futro, intensywnie ciemny pędzel na ogonie oraz charakterystyczną grzywę, którą mogą się poszczycić imponujące samce. Grupa ta jednak stanowi odrębną genetycznie subpopulację gatunku, co oznacza, że jej przedstawiciele nie krzyżują się z innymi podgatunkami lwów, które mogą napotkać na subsaharyjskich równinach.",
-        "conservation": "Istnieją dwie główne przyczyny zmniejszania się populacji lwów. Pierwszą jest załamanie populacji na skutek działań kłusowników. Druga to ciągłe przekształcanie siedlisk, które zakłóca rytm życia lwów, skutkując zmniejszeniem się populacji zwierząt, na które polują. Ten spadek liczebności populacji był bodźcem do podjęcia działań na rzecz ochrony tego podgatunku, takich jak ustanowienie dużych parków narodowych na terytoriach łowieckich lwów. Głównym celem jest monitorowanie ich dalszej reprodukcji i przetrwania.",
-        "population": "Od 22 000<br>do 25 000<br>(wartość szacunkowa)",
-        "status": "Narażone",
-        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776789/VU_sdgfno.webp",
+        "classes": ["azja", "ssaki", "EN", "i3", "siedlisko", "remaster"],
+        "info": "Słoń azjatycki <i>(Elephas maximus)</i> to zamieszkujący środkową i południowo-wschodnią część Azji gatunek wyróżniający się charakterystyczną trąbą, niewielkimi uszami oraz szarą skórą i różowymi cętkami na pysku. Słonie te są mniejsze od swoich afrykańskich kuzynów. Samce osiągają średni wzrost 2,75 m i ważą 4 000 kg, a samice dorastają średnio do 2,40 m i ważą 2400 kg. Są to duże zwierzęta roślinożerne zamieszkujące różne siedliska, takie jak lasy, tereny trawiaste oraz góry, gdzie żywią się liśćmi drzew, korą i trawami.",
+        "conservation": "Jest to gatunek zagrożony, a głównym zagrożeniem jest dla niego utrata, degradacja i fragmentacja siedlisk. Dzieje się tak w wyniku zajmowania tych terenów przez ludzi, a wspólne życie na tych terenach powoduje powstawanie dalszych konfliktów - zwierzęta tratują uprawy i niszczą tereny rolne, w związku z czym ludzie często je zabijają. Zagrożenie stanowią również kłusownicy, ale w mniejszym stopniu niż w przypadku słoni afrykańskich, ponieważ kły słoni indyjskich są znacznie mniejsze i można je znaleźć tylko u dojrzałych samców.<br><br>W celu utrzymania populacji słonia indyjskiego podejmowane są działania zmierzające do ochrony siedlisk oraz nawiązania kontaktów pomiędzy populacjami rozdzielonymi w wyniku zmian w sposobie użytkowania terenów. Indyjscy działacze na rzecz ochrony środowiska naturalnego prowadzą również badania nad konfliktami pomiędzy rolnikami i słoniami oraz na bieżąco przedstawiają adaptacyjne plany rozwiązywania problemów.",
+        "population": "Od 41 000<br>do 52 000",
+        "status": "Zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776782/EN_ihqn2p.webp",
         "taxonomy": {
             "Typ": "Strunowce",
             "Gromada": "Ssaki",
-            "Rząd": "Drapieżne",
-            "Rodzina": "Kotowate",
-            "Rodzaj": "Lampart"
+            "Rząd": "Trąbowce",
+            "Rodzina": "Słoniowate",
+            "Rodzaj": "Słoń"
         },
         "habitat": {
-            "Kontynenty": ["Afryka"],
-            "Regiony": ["Senegal", "Mali", "Niger"],
+            "Kontynenty": ["Azja"],
+            "Regiony": ["Indie", "Nepal", "Sri Lanka", "Bhutan", "Mjanma", "Tajlandia", "Laos", "Wietnam"],
             "mapa": {
                 "land": true,
                 "water": false,
                 "highlightLand": true
             },
             "Biomy": [{
-                "name": "Step",
-                "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769777571/Step_njt6px.webp"
-            }]
+                    "name": "Tropiki",
+                    "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769777600/Tropiki_md0mxp.webp"
+                },
+                {
+                    "name": "Step",
+                    "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769777571/Step_njt6px.webp"
+                },
+                {
+                    "name": "Klimat umiarkowany",
+                    "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769777560/Klimat_umiarkowany_pj6ffm.webp"
+                }
+            ]
         },
         "social": [
-            { "Wielkość grupy": "2-30 (maks. 1 samiec, samice do 29)" },
-            { "Wielkość grupy kawalerskiej samców": "2-4" },
-            { "Wielkość grupy kawalerskiej samic": "2-30" },
-            { "Hierarchia dominacji": "Samiec" },
-            { "Strategia rozrodcza": "Promiskuityzm" },
+            { "Wielkość grupy": "3-30 (maks. 1 samiec, samice do 29)" },
+            { "Wielkość grupy kawalerskiej samców": "3-5" },
+            { "Wielkość grupy kawalerskiej samic": "3-30" },
+            { "Hierarchia dominacji": "Matriarchat" },
+            { "Strategia rozrodcza": "Poligynia" },
             { "Zasady dotyczące dojrzałości": "Matrylinearność: dojrzałe samce spokrewnione z osobnikiem alfa stają się wyrzutkami" },
             { "Stosunek do człowieka": "Ufność" }
         ],
         "speciesNumbers": {
             "Wielkość": {
-                "samiec": "105 cm wysokości w kłębie",
-                "samica": "105 cm wysokości w kłębie"
+                "samiec": "3,00 m wysokości w kłębie",
+                "samica": "2,10 m wysokości w kłębie"
             },
             "Długość życia": {
-                "samiec": "14 lat",
-                "samica": "14 lat"
+                "samiec": "61 lat",
+                "samica": "61 lat"
             },
             "Waga": {
-                "samiec": "200 kg",
-                "samica": "150 kg"
+                "samiec": "4 000 kg",
+                "samica": "2 700 kg"
             }
         },
         "lifeCycle": [
-            { "Wiek dojrzałości płciowej": "3 lata" },
-            { "Wiek zakończenia okresu reprodukcyjnego": "15 lat" },
-            { "Liczba młodych przypadająca na okres godowy": "1-3" },
-            { "Długość ciąży/inkubacji": "3 mies." },
-            { "Okres międzyurodzeniowy": "36 mies." },
-            { "Rozmnażanie w niewoli": "Łatwe" }
+            { "Wiek dojrzałości płciowej": "13 lat" },
+            { "Wiek zakończenia okresu reprodukcyjnego": "Śmierć" },
+            { "Liczba młodych przypadająca na okres godowy": "1" },
+            { "Długość ciąży/inkubacji": "22 mies." },
+            { "Okres międzyurodzeniowy": "96 mies." },
+            { "Rozmnażanie w niewoli": "Średnie" }
         ],
-        "needs": "Lwy zachodnioafrykańskie to zwierzęta zdecydowanie społeczne - w stanie dzikim tworzą hierarchiczne stada złożone z jednego samca alfa, jednego lub dwóch samców beta, kilku spokrewnionych ze sobą samic oraz ich młodych. W grupie panują przyjazne relacje i rzadko zdarzają się zachowania agresywne, z wyjątkiem sytuacji, gdy samiec alfa zostaje sprowokowany przez rywalizującego z nim innego samca. Są także młode samce, którym nie udaje się dołączyć do stada o tradycyjnej hierarchii. Tacy „kawalerowie” tworzą często małe grupy, w których wspólnie wędrują i polują.",
-        "reproduction": "W stadzie lwów samiec alfa zapładnia dojrzałe samice, które po trwającej 3,5 miesiąca ciąży rodzą zwykle miot liczący 2-3 młode. Dojrzewanie przebiega u młodych lwów różnie w zależności od płci. Samce, gdy podrosną, opuszczają stado, aby założyć własne, a młode samice pozostają przy matce. Jeśli samiec alfa zostanie zdominowany lub zabity przez rywala, nowy samiec dominujący zabija młode, których sam nie spłodził. Dzieje się tak dlatego, że samice w stadzie parzą się tylko wówczas, gdy nie mają pod opieką młodych.",
+        "needs": "Słonie są w przeważającej mierze zwierzętami towarzyskimi. Samice tworzą zwarte grupy z innymi samicami oraz młodymi i żyją wspólnie, wędrując w poszukiwaniu pożywienia. Dbają również o siebie nawzajem i pomagają sobie w opiece nad młodymi. Takie stada mają charakter matrylinearny - zwykle w grupie przewodzi najstarsza samica, a kiedy umrze, jej rolę przejmuje najstarsza z pozostałych samic. Młodociane samce żyją w luźno powiązanych stadach kawalerskich i wędrują wspólnie, poszukując pożywienia i partnerek do rozrodu. Wyjątek stanowią dojrzałe samce, które często żyją samotnie.",
+        "reproduction": "Aby znaleźć partnerki do rozrodu, młode samce podążają za stadami samic. O sukcesie decyduje dojrzałość samca, a także przychylność samicy, przy czym samiec ma większe szanse na zdobycie zainteresowania samicy, gdy przechodzi okres wzmożonej agresji i jurności zwany „must”, związany z podwyższeniem poziomu testosteronu. Para odbywa zaloty, podczas których słonie uganiają się za sobą nawzajem i nawołują się, wydając dźwięki. Ciąża trwa u słoni od 18 do 22 miesięcy, po czym samica rodzi jedno młode, które pozostaje przy niej do 8 roku życia. Samice pozostają wówczas w stadzie matki, natomiast samce opuszczają to stado i dołączają do stada złożonego z innych młodych samców.",
         "curiosities": [
-            "Ryk dorosłego samca jest słyszalny z odległości 8 km.",
-            "Lwy są najbardziej społecznym ze wszystkich gatunków wielkich kotów.",
-            "Lwy mogą rozwijać w biegu prędkość 80 km/h.",
-            "W 90% polowaniem zajmują się samice lwa.",
-            "Samce lwa zajmują się głównie obroną terytorium oraz samic przed rywalami."
+            "Na początku pory suchej słonie migrują na tereny bardziej obfitujące w pożywienie i wodę.",
+            "Mimo powszechnej opinii słonie nie używają trąb do picia. Trąba służy jedynie do podawania wody do pyska.",
+            "Wiadomo, że słonie używają gałęzi drzew jako pacek na muchy oraz do usuwania pasożytów i drapania się.",
+            "Słonie żyjące na wolności nawiązują relacje z ptakami, które usuwają z ich skóry pasożyty.",
+            "Słonie indyjskie są bliżej spokrewnione z mamutami niż słonie afrykańskie."
         ],
         "reservoirs": [{
-            "name": "Rezerwat Afryka",
-            "link": "../Mapa/Rezerwat Afryka.html",
+            "name": "Rezerwat Azja",
+            "link": "../Mapa/Rezerwat Azja.html",
             "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
             "male": 0,
             "female": 0
