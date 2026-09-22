@@ -76,38 +76,64 @@ window.ZOOPEDIA = window.ZOOPEDIA || {};
 
         const animalMigrationMap = {
             "lew_zachodnioafrykanski": "lew",
-            // Tutaj w przyszłości dopisujesz kolejne pary
+            "slon_indyjski": "slon_azjatycki", // Domyślny wybór przy przejściu z PZ2 -> PZ1
+            "slon_borneanski": "slon_azjatycki",
+            "niedzwiedz_brunatny_himalajski": "niedzwiedz_brunatny"
         };
 
-        function switchGameVersion(targetVersion, currentAnimalId, fullAnimalList) {
+        function switchGameVersion(targetVersion, currentAnimal, fullAnimalList) {
+            // 1. Pobieramy pełny obiekt zwierzęcia (niezależnie czy przekazano obiekt czy samo ID)
+            const currentAnimalObj = typeof currentAnimal === "object" ?
+                currentAnimal :
+                fullAnimalList.find(a => a.id === currentAnimal);
+
+            if (!currentAnimalObj) return null;
+
+            const currentAnimalId = currentAnimalObj.id;
             let nextAnimalId = null;
 
-            // Jeśli chcemy iść do PZ2, szukamy czy obecne ID z PZ1 ma odpowiednika w PZ2
             if (targetVersion === "pz2") {
+                // --- PRZEJŚCIE Z PZ1 DO PZ2 ---
                 if (animalMigrationMap[currentAnimalId]) {
                     nextAnimalId = animalMigrationMap[currentAnimalId];
                 } else if (Object.values(animalMigrationMap).includes(currentAnimalId)) {
-                    // Jesteśmy już w PZ2
                     nextAnimalId = currentAnimalId;
                 }
-            }
-            // Jeśli chcemy wrócić do PZ1, szukamy klucza (PZ1) na podstawie wartości (PZ2)
-            else if (targetVersion === "pz1pc" || targetVersion === "pz1console") {
-                const reverseKey = Object.keys(animalMigrationMap).find(
-                    key => animalMigrationMap[key] === currentAnimalId
-                );
-                if (reverseKey) {
-                    nextAnimalId = reverseKey;
-                } else if (animalMigrationMap[currentAnimalId]) {
-                    // Jesteśmy już w PZ1
-                    nextAnimalId = currentAnimalId;
+
+                if (!nextAnimalId) return null;
+
+                const newAnimalData = fullAnimalList.find(animal => animal.id === nextAnimalId);
+
+                // Zapamiętujemy dokładnie, z którego słonia/zwierzęcia z PZ1 przyszliśmy
+                if (newAnimalData) {
+                    newAnimalData.lastPz1Id = currentAnimalId;
                 }
+
+                return newAnimalData || null;
+
+            } else if (targetVersion === "pz1pc" || targetVersion === "pz1console") {
+                // --- PRZEJŚCIE Z PZ2 DO PZ1 ---
+                if (currentAnimalObj.lastPz1Id) {
+                    // Jeśli gracz przyszedł z konkretnego słonia z PZ1 (np. borneańskiego) – wraca do niego
+                    nextAnimalId = currentAnimalObj.lastPz1Id;
+                } else {
+                    // Jeśli gracz zaczął bezpośrednio w PZ2 – bierzemy pierwszą pasującą wartość z mapy (Słoń indyjski)
+                    const reverseKey = Object.keys(animalMigrationMap).find(
+                        key => animalMigrationMap[key] === currentAnimalId
+                    );
+                    if (reverseKey) {
+                        nextAnimalId = reverseKey;
+                    } else if (animalMigrationMap[currentAnimalId]) {
+                        nextAnimalId = currentAnimalId;
+                    }
+                }
+
+                if (!nextAnimalId) return null;
+
+                return fullAnimalList.find(animal => animal.id === nextAnimalId) || null;
             }
 
-            if (!nextAnimalId) return null;
-
-            const newAnimalData = fullAnimalList.find(animal => animal.id === nextAnimalId);
-            return newAnimalData || null;
+            return null;
         }
 
         /* ===============================
@@ -622,7 +648,7 @@ UI – PRZYCISKI & MODALE
     const targetEra = (currentGameEra === "PZ1") ? "pz2" : "pz1pc";
     
     // 1. Sprawdzamy migrację między obiektami
-    const migratedAnimal = switchGameVersion(targetEra, animal.id, Z.data);
+    const migratedAnimal = switchGameVersion(targetEra, animal, Z.data);
     
     if (migratedAnimal) {
         // 2. Scenariusz migracji obiektów (np. lew <-> lew_zachodnioafrykanski)
