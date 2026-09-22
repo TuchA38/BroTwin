@@ -580,6 +580,88 @@
         }
     },
     {
+        "name": "Amfiprion plamisty",
+        "latin": "Amphiprion ocellaris",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785863082/Bocja_wspania%C5%82a_pxc1o0.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785867851/Loach_Clown_illustration_or2dr1.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Nieznana",
+        "status": "Najmniej zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ryby",
+            "Rząd": "Okoniokształtne",
+            "Rodzina": "Garbikowate",
+            "Rodzaj": "Amphiprion"
+        },
+        "habitat": {
+            "Kontynenty": ["Azja"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Azja",
+            "link": "../Mapa/Rezerwat Azja.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
+    },
+    {
         "name": "Anakonda żółta",
         "latin": "Eunectes notaeus",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770130586/Anakonda_%C5%BC%C3%B3%C5%82ta_mawlo4.webp",
@@ -5610,6 +5692,88 @@
         }
     },
     {
+        "name": "Gurami olbrzymi",
+        "latin": "Osphronemus goramy",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785863082/Bocja_wspania%C5%82a_pxc1o0.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785867851/Loach_Clown_illustration_or2dr1.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Nieznana",
+        "status": "Najmniej zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ryby",
+            "Rząd": "Okoniokształtne",
+            "Rodzina": "Guramiowate",
+            "Rodzaj": "Osphronemus"
+        },
+        "habitat": {
+            "Kontynenty": ["Azja"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Azja",
+            "link": "../Mapa/Rezerwat Azja.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
+    },
+    {
         "name": "Guziec zwyczajny",
         "latin": "Phacochoerus africanus",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773302274/Guziec_zwyczajny_tiu38j.webp",
@@ -9700,9 +9864,14 @@
         "latin": "Lycaon pictus",
         "aliases": ["dziki pies afrykański", "simir"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774208005/Likaon_pstry_xin5ta.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774208006/Lew_zachodnioafryka%C5%84ski_n8nhyr.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774208006/Likaon_pstry_-_Remaster_ucqyl1.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787764292/Snapper_Sailfin_illustration_ojezl2.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["afryka", "ssaki", "EN", "i3", "remaster", "siedlisko"],
-        "info": "Likaon pstry <i>(Lycaon pictus)</i> jest również znany pod nazwą „simir”. Żyje na całym obszarze Afryki Subsaharyjskiej. Na kontynencie znajduje się kilka różnych populacji tego gatunku i można tu spotkać łącznie pięć podgatunków. Likaony są szczuplejsze i wyższe od innych psowatych, mają wyjątkowo duże, zaokrąglone uszy i charakterystyczne ubarwienie. Z reguły ich futro w kolorach żółtym i czarnym jest cętkowane, z białymi łatami na łapach, klatce piersiowej i ogonie, jednak wygląd każdego podgatunku jest inny. U niektórych osobników da się zauważyć również przypominające plamki wzory na pewnych częściach ciała.<br><br>Likaon pstry jest zagrożony głównie z powodu kurczenia się jego siedlisk. Zasięg gatunku maleje wraz ze wzrostem populacji człowieka i zmianami w sposobie użytkowania gruntów, przez co likaon wchodzi również w kontakt ze zwierzętami domowymi, narażając się na choroby niewystępujące w środowisku naturalnym. Likaon pstry jest także gatunkiem bardzo szeroko rozprzestrzenionym, w związku z czym trudno go monitorować na obszarach chronionych, ponieważ często się przemieszcza. Ponadto często pada ofiarą lwów i hien.<br><br>Organizacje działające na rzecz ochrony zwierząt, takie jak „Kompleksowy program ochrony geparda i likaona pstrego”, chronią likaony w drodze pracy na rzecz ulepszania koegzystencji tego gatunku z człowiekiem. Pomagają też w planowaniu zagospodarowania terenu, dzięki czemu likaony zyskują większe obszary łowieckie. Ma to spowodować zwiększenie liczebności ich populacji. Ponieważ obecna angielska nazwa gatunku - „wild dog” (dziki pies) - niezbyt dobrze się kojarzy, w ostatnich latach podjęto działania mające na celu zmianę tej nazwy na „painted dog” (malowany pies) lub „painted wolf” (malowany wilk). Nowe nazwy nie są jeszcze szeroko rozpowszechnione, ale organizacje zajmujące się ochroną przyrody mają nadzieję, że w ten sposób poprawią postrzeganie tych zwierząt przez ludzi.",
+        "info": "Likaon pstry <i>(Lycaon pictus)</i> jest również znany pod nazwą „simir”. Żyje na całym obszarze Afryki Subsaharyjskiej. Na kontynencie znajduje się kilka różnych populacji tego gatunku i można tu spotkać łącznie pięć podgatunków. Likaony są szczuplejsze i wyższe od innych psowatych, mają wyjątkowo duże, zaokrąglone uszy i charakterystyczne ubarwienie. Z reguły ich futro w kolorach żółtym i czarnym jest cętkowane, z białymi łatami na łapach, klatce piersiowej i ogonie, jednak wygląd każdego podgatunku jest inny. U niektórych osobników da się zauważyć również przypominające plamki wzory na pewnych częściach ciała.<br><br>Organizacje działające na rzecz ochrony zwierząt, takie jak „Kompleksowy program ochrony geparda i likaona pstrego”, chronią likaony w drodze pracy na rzecz ulepszania koegzystencji tego gatunku z człowiekiem. Pomagają też w planowaniu zagospodarowania terenu, dzięki czemu likaony zyskują większe obszary łowieckie. Ma to spowodować zwiększenie liczebności ich populacji. Ponieważ obecna angielska nazwa gatunku - „wild dog” (dziki pies) - niezbyt dobrze się kojarzy, w ostatnich latach podjęto działania mające na celu zmianę tej nazwy na „painted dog” (malowany pies) lub „painted wolf” (malowany wilk). Nowe nazwy nie są jeszcze szeroko rozpowszechnione, ale organizacje zajmujące się ochroną przyrody mają nadzieję, że w ten sposób poprawią postrzeganie tych zwierząt przez ludzi.",
+        "conservation": "Likaon pstry jest zagrożony głównie z powodu kurczenia się jego siedlisk. Zasięg gatunku maleje wraz ze wzrostem populacji człowieka i zmianami w sposobie użytkowania gruntów, przez co likaon wchodzi również w kontakt ze zwierzętami domowymi, narażając się na choroby niewystępujące w środowisku naturalnym. Likaon pstry jest także gatunkiem bardzo szeroko rozprzestrzenionym, w związku z czym trudno go monitorować na obszarach chronionych, ponieważ często się przemieszcza. Ponadto często pada ofiarą lwów i hien.",
         "population": "6 600",
         "status": "Zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776782/EN_ihqn2p.webp",
@@ -9778,10 +9947,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/1344"
     },
@@ -16168,8 +16338,10 @@
         "latin": "Scarabeus sacer",
         "aliases": ["skarabeusz"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774271934/Po%C5%9Bwi%C4%99tnik_czczony_bcxcwm.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785863082/Bocja_wspania%C5%82a_pxc1o0.webp",
         "classes": ["afryka", "europa", "stawonogi", "DD", "ekspozycja"],
         "info": "Poświętnik czczony <i>(Scarabeus sacer)</i> to gatunek chrząszcza gnojowego występujący naturalnie wśród wydm nadmorskich i moczar nad Morzem Śródziemnomorskim, czyli w regionie Afryki Północnej, Europy i Bliskiego Wschodu. 6 wyrostków na głowie chrząszcza oraz po 4 wyrostki na każdej z jego przednich odnóży tworzą łuk promieni z przodu owada. Poświętnik czczony ma 10-25 mm długości i błyszczący, czarny pancerz.",
+        "conservation": " ",
         "population": "Nieznana",
         "status": "Zbyt mało danych",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776792/DD_upjfda.webp",
@@ -16244,10 +16416,11 @@
                 "female": 0
             }
         ],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "dlc",
-            "pz1console": "dlc"
+            "pz1console": "dlc",
+            "pz2": "podstawa"
         },
         "dlc": {
             "pz1pc": {
@@ -18712,8 +18885,10 @@
         "name": "Skolopendra olbrzymia",
         "latin": "Scolopendra gigantea",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773674338/Skolopendra_olbrzymia_abdiet.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1785863082/Bocja_wspania%C5%82a_pxc1o0.webp",
         "classes": ["amerykapoludniowa", "stawonogi", "DD", "ekspozycja"],
         "info": "Skolopendra olbrzymia <i>(Scolopendra gigantea)</i> to gatunek dużego i groźnego stawonoga drapieżnego, który zamieszkuje lasy w Ameryce Południowej i na Karaibach. Skolopendry olbrzymie potrafią łapać, zatruwać jadem i zabijać różnego rodzaju zwierzęta. Opanowały specjalne sposoby polowania na określone ofiary. Skolopendry osiągają do 30 cm długości i mogą mieć różne ubarwienie - zwykle czerwone, żółte, brązowe lub czarne - przy czym ich odnóża są żółte, a pomiędzy segmentami ciała widoczne są ciemne pręgi.",
+        "conservation": " ",
         "population": "Nieznana",
         "status": "Zbyt mało danych",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776792/DD_upjfda.webp",
@@ -18780,10 +18955,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         }
     },
     {
