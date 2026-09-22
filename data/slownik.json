@@ -193,6 +193,11 @@
         "definition": "Sztucznie wytworzony przedmiot, zjawisko lub informacja będąca rezultatem działalności ludzkiej (np. w archeologii lub kulturze) albo niepożądany efekt powstały wskutek błędu technicznego, np. w grafice, animacji lub obrazowaniu.",
         "aliases": ["artefakty", "artefakt wizualny"]
     },
+    "autorytet": {
+        "title": "Autorytet",
+        "definition": "Osoba, której wiedza, doświadczenie, osiągnięcia lub postawa sprawiają, że cieszy się dużym uznaniem, szacunkiem i zaufaniem innych. Określenie może również oznaczać samą wysoką pozycję lub wpływ, jakim ktoś cieszy się w określonej dziedzinie.",
+        "aliases": ["autorytetem"]
+    },
     "awangarda": {
         "title": "Awangarda",
         "definition": "Nurt lub grupa twórców i osób wprowadzających nowatorskie, często wyprzedzające swoją epokę pomysły, rozwiązania lub style. Określenie może odnosić się również do czegoś, co wyznacza nowe kierunki rozwoju w określonej dziedzinie.",
@@ -696,6 +701,11 @@
     "kameralny": {
         "title": "Kameralny",
         "definition": "Niewielki, spokojny i przeznaczony dla stosunkowo małej liczby osób, dzięki czemu zapewnia bardziej swobodną, przytulną i mniej formalną atmosferę."
+    },
+    "kamien_milowy": {
+        "title": "Kamień milowy",
+        "definition": "Ważne wydarzenie, osiągnięcie lub etap w rozwoju czegoś, który stanowi wyraźny punkt odniesienia i często oznacza znaczący postęp.",
+        "aliases": ["kamieniem milowym"]
     },
     "kamuflaz": {
         "title": "Kamuflaż",
