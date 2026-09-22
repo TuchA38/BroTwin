@@ -195,8 +195,7 @@
     },
     "autorytet": {
         "title": "Autorytet",
-        "definition": "Osoba, której wiedza, doświadczenie, osiągnięcia lub postawa sprawiają, że cieszy się dużym uznaniem, szacunkiem i zaufaniem innych. Określenie może również oznaczać samą wysoką pozycję lub wpływ, jakim ktoś cieszy się w określonej dziedzinie.",
-        "aliases": ["autorytetem"]
+        "definition": "Osoba, której wiedza, doświadczenie, osiągnięcia lub postawa sprawiają, że cieszy się dużym uznaniem, szacunkiem i zaufaniem innych. Określenie może również oznaczać samą wysoką pozycję lub wpływ, jakim ktoś cieszy się w określonej dziedzinie."
     },
     "awangarda": {
         "title": "Awangarda",
@@ -701,11 +700,6 @@
     "kameralny": {
         "title": "Kameralny",
         "definition": "Niewielki, spokojny i przeznaczony dla stosunkowo małej liczby osób, dzięki czemu zapewnia bardziej swobodną, przytulną i mniej formalną atmosferę."
-    },
-    "kamien_milowy": {
-        "title": "Kamień milowy",
-        "definition": "Ważne wydarzenie, osiągnięcie lub etap w rozwoju czegoś, który stanowi wyraźny punkt odniesienia i często oznacza znaczący postęp.",
-        "aliases": ["kamieniem milowym"]
     },
     "kamuflaz": {
         "title": "Kamuflaż",
