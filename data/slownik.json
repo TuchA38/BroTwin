@@ -181,7 +181,7 @@
     "antagonista": {
         "title": "Antagonista",
         "definition": "Osoba, postać lub siła przeciwstawiająca się innej osobie, postaci albo grupie i pozostająca z nią w konflikcie lub rywalizacji. W opowieściach antagonistą jest zwykle postać stojąca w opozycji do głównego bohatera.",
-        "aliases": ["antagonisty"]
+        "aliases": ["antagonisty", "antagonistką"]
     },
     "antypody": {
         "title": "Antypody",
@@ -318,6 +318,11 @@
     "crescendo": {
         "title": "Crescendo",
         "definition": "Stopniowe narastanie siły lub intensywności dźwięku, emocji albo wydarzenia. W kontekście zachowania zwierząt oznacza stopniowo nasilające się odgłosy lub reakcje, które osiągają punkt kulminacyjny, a następnie stopniowo cichną."
+    },
+    "cyniczny": {
+        "title": "Cyniczny",
+        "definition": "Wyrażający brak wiary w szczerość, dobre intencje lub bezinteresowność innych osób, często połączony z przekonaniem, że ludzie kierują się przede wszystkim własnym interesem. Określenie może również oznaczać lekceważący lub bezwzględny stosunek do powszechnie uznawanych wartości.",
+        "aliases": ["cynicznym", "cynicznych", "cynizmem"]
     },
     "czop": {
         "title": "Czop",
@@ -721,6 +726,10 @@
         "definition": "Podstawa lub punkt wyjścia do dalszego tworzenia, tło pozwalające na podkreślenie i rozwijanie kolejnych elementów. W znaczeniu przenośnym oznacza ramę, na której buduje się całą koncepcję lub projekt.",
         "aliases": ["kanwę"]
     },
+    "kapitał": {
+        "title": "Kapitał",
+        "definition": "Zasoby majątkowe lub finansowe, które mogą zostać wykorzystane do prowadzenia działalności, inwestowania, rozwoju albo uzyskiwania dochodu. Kapitałem mogą być m.in. pieniądze, nieruchomości, maszyny lub inne wartościowe zasoby."
+    },
     "karawana": {
         "title": "Karawana",
         "definition": "Grupa kupców, pielgrzymów lub podróżników przemieszczająca się wspólnie przez trudne tereny dla bezpieczeństwa i prowadzenia handlu.",
@@ -990,6 +999,11 @@
         "title": "Monokultura",
         "definition": "System rolniczy lub leśny polegający na wieloletniej uprawie roślin jednego gatunku na tym samym obszarze.",
         "aliases": ["monokultury"]
+    },
+    "monopolistyczny": {
+        "title": "Monopolistyczny",
+        "definition": "Związany z monopolem, czyli sytuacją, w której jeden podmiot ma dominującą lub wyłączną pozycję na danym rynku albo w określonej dziedzinie i może w znacznym stopniu kontrolować dostęp do produktów, usług lub zasobów.",
+        "aliases": ["monopolistyczną"]
     },
     "monumentalny": {
         "title": "Monumentalny",
@@ -1640,7 +1654,7 @@
     "wizjonerski": {
         "title": "Wizjonerski",
         "definition": "Nawiązujący do odważnych, nowatorskich i dalekosiężnych pomysłów lub koncepcji, które wyprzedzają swoje czasy i mogą znacząco wpłynąć na przyszły rozwój. Określenie używane do opisywania osób, projektów, idei lub rozwiązań cechujących się wyjątkową pomysłowością i szeroką wizją.",
-        "aliases": ["wizjonerskie", "wizjonerką"]
+        "aliases": ["wizjonerskie", "wizjonerką", "wizjonerek", "wizjoner"]
     },
     "wokalizacja": {
         "title": "Wokalizacja",
