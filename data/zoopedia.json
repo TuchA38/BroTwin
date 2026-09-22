@@ -12023,6 +12023,7 @@
         }
     },
     {
+        "id": "niedzwiedz_brunatny",
         "name": "Niedźwiedź brunatny",
         "latin": "Ursus arctos arctos",
         "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783453030/Nied%C5%BAwied%C5%BA_brunatny_dv7tij.webp",
@@ -12113,6 +12114,7 @@
         }
     },
     {
+        "id": "niedzwiedz_brunatny_himalajski",
         "name": "Niedźwiedź brunatny himalajski",
         "latin": "Ursus arctos isabellinus",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774207997/Nied%C5%BAwied%C5%BA_brunatny_himalajski_gqv1d7.webp",
@@ -18981,6 +18983,93 @@
         "mod": "https://www.nexusmods.com/planetzoo/mods/1254"
     },
     {
+        "id": "slon_azjatycki",
+        "name": "Słoń azjatycki",
+        "latin": "Panthera leo",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783453029/Lew_tzcset.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783453006/Lion_African_illustration_wf6rsx.webp",
+        "znakWidth": "350px",
+        "znakHeight": "350px",
+        "classes": ["afryka", "ssaki", "VU", "i3", "siedlisko"],
+        "info": "Według szacunków w Afryce w stanie dzikim żyje obecnie 20 000 lwów, jednak liczebność populacji lwa zachodnioafrykańskiego <i>(Panthera leo leo)</i> jest zdecydowanie niższa. Na całym kontynencie pozostało zaledwie 250 osobników, co oznacza, że jest to jeden z najbardziej zagrożonych podgatunków na świecie. Ma on obecnie klasyfikację „krytycznie zagrożony”.<br><br>Dla niewprawnego obserwatora lew zachodnioafrykański przypomina inne podgatunki lwa - ma bujne, piaskowożółte futro, intensywnie ciemny pędzel na ogonie oraz charakterystyczną grzywę, którą mogą się poszczycić imponujące samce. Grupa ta jednak stanowi odrębną genetycznie subpopulację gatunku, co oznacza, że jej przedstawiciele nie krzyżują się z innymi podgatunkami lwów, które mogą napotkać na subsaharyjskich równinach.",
+        "conservation": "Istnieją dwie główne przyczyny zmniejszania się populacji lwów. Pierwszą jest załamanie populacji na skutek działań kłusowników. Druga to ciągłe przekształcanie siedlisk, które zakłóca rytm życia lwów, skutkując zmniejszeniem się populacji zwierząt, na które polują. Ten spadek liczebności populacji był bodźcem do podjęcia działań na rzecz ochrony tego podgatunku, takich jak ustanowienie dużych parków narodowych na terytoriach łowieckich lwów. Głównym celem jest monitorowanie ich dalszej reprodukcji i przetrwania.",
+        "population": "Od 22 000<br>do 25 000<br>(wartość szacunkowa)",
+        "status": "Narażone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776789/VU_sdgfno.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ssaki",
+            "Rząd": "Drapieżne",
+            "Rodzina": "Kotowate",
+            "Rodzaj": "Lampart"
+        },
+        "habitat": {
+            "Kontynenty": ["Afryka"],
+            "Regiony": ["Senegal", "Mali", "Niger"],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": [{
+                "name": "Step",
+                "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769777571/Step_njt6px.webp"
+            }]
+        },
+        "social": [
+            { "Wielkość grupy": "2-30 (maks. 1 samiec, samice do 29)" },
+            { "Wielkość grupy kawalerskiej samców": "2-4" },
+            { "Wielkość grupy kawalerskiej samic": "2-30" },
+            { "Hierarchia dominacji": "Samiec" },
+            { "Strategia rozrodcza": "Promiskuityzm" },
+            { "Zasady dotyczące dojrzałości": "Matrylinearność: dojrzałe samce spokrewnione z osobnikiem alfa stają się wyrzutkami" },
+            { "Stosunek do człowieka": "Ufność" }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": "105 cm wysokości w kłębie",
+                "samica": "105 cm wysokości w kłębie"
+            },
+            "Długość życia": {
+                "samiec": "14 lat",
+                "samica": "14 lat"
+            },
+            "Waga": {
+                "samiec": "200 kg",
+                "samica": "150 kg"
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": "3 lata" },
+            { "Wiek zakończenia okresu reprodukcyjnego": "15 lat" },
+            { "Liczba młodych przypadająca na okres godowy": "1-3" },
+            { "Długość ciąży/inkubacji": "3 mies." },
+            { "Okres międzyurodzeniowy": "36 mies." },
+            { "Rozmnażanie w niewoli": "Łatwe" }
+        ],
+        "needs": "Lwy zachodnioafrykańskie to zwierzęta zdecydowanie społeczne - w stanie dzikim tworzą hierarchiczne stada złożone z jednego samca alfa, jednego lub dwóch samców beta, kilku spokrewnionych ze sobą samic oraz ich młodych. W grupie panują przyjazne relacje i rzadko zdarzają się zachowania agresywne, z wyjątkiem sytuacji, gdy samiec alfa zostaje sprowokowany przez rywalizującego z nim innego samca. Są także młode samce, którym nie udaje się dołączyć do stada o tradycyjnej hierarchii. Tacy „kawalerowie” tworzą często małe grupy, w których wspólnie wędrują i polują.",
+        "reproduction": "W stadzie lwów samiec alfa zapładnia dojrzałe samice, które po trwającej 3,5 miesiąca ciąży rodzą zwykle miot liczący 2-3 młode. Dojrzewanie przebiega u młodych lwów różnie w zależności od płci. Samce, gdy podrosną, opuszczają stado, aby założyć własne, a młode samice pozostają przy matce. Jeśli samiec alfa zostanie zdominowany lub zabity przez rywala, nowy samiec dominujący zabija młode, których sam nie spłodził. Dzieje się tak dlatego, że samice w stadzie parzą się tylko wówczas, gdy nie mają pod opieką młodych.",
+        "curiosities": [
+            "Ryk dorosłego samca jest słyszalny z odległości 8 km.",
+            "Lwy są najbardziej społecznym ze wszystkich gatunków wielkich kotów.",
+            "Lwy mogą rozwijać w biegu prędkość 80 km/h.",
+            "W 90% polowaniem zajmują się samice lwa.",
+            "Samce lwa zajmują się głównie obroną terytorium oraz samic przed rywalami."
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Afryka",
+            "link": "../Mapa/Rezerwat Afryka.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
+    },
+    {
+        "id": "slon_borneanski",
         "name": "Słoń borneański",
         "latin": "",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1782645998/S%C5%82o%C5%84_bornea%C5%84ski_gbdyfr.webp",
@@ -19070,6 +19159,7 @@
         }
     },
     {
+        "id": "slon_indyjski",
         "name": "Słoń indyjski",
         "latin": "Elephas maximus indicus",
         "aliases": ["słoń azjatycki"],
