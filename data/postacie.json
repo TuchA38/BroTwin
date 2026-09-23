@@ -354,13 +354,39 @@
         "version": ["pz1pc", "pz1console", "pz2"],
         "role": "Zwiadowca terenowy",
         "affiliation": "Niezależny",
-        "status": "Aktywna",
+        "status": "Aktywny",
+        "motto": "Kiedyś myślałem, że znajomość ścieżek drapieżnika czyni ze mnie łowcę. Dziś wiem, że ta wiedza została mi dana po to, by chronić tych, którzy nie mają własnego głosu.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790067627/Lorran_Wonder_1_hmsclm.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790067627/Lorran_Wonder_1_hmsclm.webp",
-        "description": "Córka [[dominic-myers|Dominica Myersa]], która dąży do zmiany filozofii firmy swojego ojca. Zależy jej na nowoczesnym podejściu do ochrony gatunków i zbalansowaniu celów finansowych z ideami [[bernie-goodwin|Berniego Goodwina]].",
-        "fullBio": "<b>O postaci</b><br>Emma wychowała się w świecie korporacyjnym, jednak jej pasją stała się ekologia i edukacja odwiedzających.<br><br><b>Rola w kampanii</b><br>Współpracuje z graczem w celu naprawy błędów popełnionych przez jej ojca w zarządzanych przez niego parkach.<br><br><b>Relacje</b><br>Córka [[dominic-myers|Dominica Myersa]], wzoruje się na etycznej pracy [[bernie-goodwin|Berniego Goodwina]] i [[nancy-jones|Nancy Jones]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783615845/emma_1.webp"
+        "about": "Lorran Wonder to dawny kłusownik, który przeszedł niezwykłą przemianę, stając się jednym z najskuteczniejszych zwiadowców terenowych oraz analityków wywiadu w walce z nielegalnym handlem dziką fauną. W młodości, całkowicie nieświadomy okrucieństwa procederu, padł ofiarą manipulacji bezwzględnych handlarzy. Przełomem w jego życiu stało się ujęcie go przez nieustraszoną ekolożkę [[postacie:roseliana-widlifowna|Roselianę Widlifowną]], która otworzyła mu oczy na prawdę i podarowała drugą szansę. Od tamtej pory Lorran wykorzystuje swoje unikalne umiejętności tropicielskie, bezszelestne poruszanie się po gęstwinie oraz dogłębną znajomość metod kłusowników, by w ukryciu rozbijać międzynarodowe siatki przemycające zagrożone gatunki i dostarczać kluczowe informacje służbom ochrony przyrody.",
+        "relations": "Kluczową postacią w jego życiu jest [[postacie:roseliana-widlifowna|Roseliana Widlifowna]] – osoba, która zamiast go potępić i wtrącić do więzienia, pokazała mu potworne konsekwencje jego działań i dała szansę na zmianę. [[postacie:roseliana-widlifowna|Roseliana]] pozostaje dla niego najważniejszym autorytetem moralnym oraz zaufaną sojuszniczką. W swojej operacyjnej działalności utrzymuje nieformalne kontakty ze służbami ochrony środowiska oraz ekspertami związanymi z Fundacją Goodwinów, dostarczając im bezcenne dane wywiadowcze o nielegalnych szlakach handlowych. Z kolei do międzynarodowych handlarzy i kłusowników – swoich dawnych mocodawców – czuje głęboką wzgardę, czyniąc z bezwzględnego rozbijania ich struktur swoją życiową misję.",
+        "memories": [{
+                "question": "Jak wyglądały jego młode lata?",
+                "content": [
+                    "Jako młody chłopak Lorran trafił w środowisko ludzi, którzy bezwzględnie wykorzystali jego naiwność i doskonały zmysł obserwacji. Przez długi czas żył w przekonaniu, że jego praca nie wyrządza nikomu krzywdy:",
+                    "„Byłem młody, zagubiony i szukałem swojego miejsca. Handlarze, dla których pracowałem, wmawiali mi gładkie kłamstwa, że zwierzęta są jedynie odurzane, że pozyskiwanie cennego trofeum odbywa się bezszkodowo, a oszołomiony osobnik po prostu budzi się i żyje dalej. Ślepo w to wierzyłem... Aż do dnia, w którym w głębi chronionego rezerwatu dopadła mnie Roseliana.”",
+                    "Ujęcie na gorącym uczynku przy odurzonym stworzeniu stało się dla niego momentem bolesnego zderzenia z rzeczywistością:",
+                    "„Kiedy Roseliana zaciągnęła mnie wprost w miejsce, gdzie przetrzymywano ofiary handlarzy, mój świat w jednej chwili legł w zgliszczach. Zobaczyłem zwierzęta konające w męczarniach, poobijane, przerażone, przetrzymywane w potwornych warunkach. Czułem niewyobrażalny wstyd i paraliżujący strach. Roseliana nie krzyczała... Po prostu pokazała mi prawdę, a potem podjęła decyzję, której się nie spodziewałem. Nie wydała mnie służbom. Dała mi wolność i wolną rękę, bym sam zdecydował, kim chcę być. Zniknąłem tamtej nocy, ale poprzysiągłem sobie, że naprawię każdy błąd z przeszłości.”"
+                ]
+            },
+            {
+                "question": "W jaki sposób przeszedł przemianę w zwiadowcę?",
+                "content": [
+                    "Przez kolejne lata Lorran żył w ukryciu, ucząc się przetrwania w surowych warunkach i dogłębnie analizując schematy działania przestępczych grup. Wykorzystał dawne kontakty, by poznać całą architekturę nielegalnego handlu fauną, jednocześnie zdobywając wiedzę analityczną i doskonaląc sztukę tajnego zwiadu terenowego. Jego drogi ponowne skrzyżowały się z [[postacie:roseliana-widlifowna|Roselianą Widlifowną]] w okolicach [[miejsca:posiadlosc-scholeya|Posiadłości Scholeya]] oraz w azjatyckiej dżungli [[miejsca:kuala-bintu-taman|Kuala Bintu Taman]]:",
+                    "„Nie mogłem po prostu wrócić i powiedzieć przepraszam... Musiałem ciężką pracą zasłużyć na zaufanie. Lata spędzone na cichym obserwowaniu i rozpracowywaniu kłusowników uczyniły ze mnie kogoś w rodzaju duchowego strażnika. Gdy po latach stałem przed Roselianą w okolicach Posiadłości Scholeya, widziałem w jej oczach niedowierzanie. Ale w Kuala Bintu Taman nie było już czasu na wspomnienia – handlarze zagrażali panterom mglistym i tapirom malajskim.”",
+                    "Wspólna, niezwykle ryzykowna operacja w gęstwinie dżungli przypieczętowała ich podziemny sojusz i dała Lorranowi upragnione poczucie sensu:",
+                    "„Znałem każdy podstęp kłusowników, każdą ich kryjówkę, schemat łączności i pułapkę. Roseliana wnosiła wiedzę zoologiczną, determinację i serce, ja – precyzję zwiadowcy i wywiad operacyjny. Razem wyrwaliśmy te wspaniałe zwierzęta z rąk handlarzy i bezpiecznie zabezpieczyliśmy ich transport. Gdy patrzyłem, jak Roseliana dogląda ich ran, poczułem, że powoli spłacam swój dług wdzięczności.”"
+                ]
+            },
+            {
+                "question": "Jak przebiegało dostarczanie informacji wywiadowczych?",
+                "content": [
+                    "Z biegiem lat Lorran stał się kluczowym, tajnym informatorem działającym na zapleczu największych kryzysów biologicznych. Jego raporty wywiadowcze umożliwiły m.in. rozbicie szlaków przemycających rzadkie drapieżniki z [[miejsca:rezerwat-nadzieja|Rezerwatu Nadzieja]] oraz zhańbionego [[miejsca:bazar-el-darar|Bazaru El Darar]]:",
+                    "„Bazar El Darar był prawdziwym piekłem na ziemi – gwarny, mroczny, przepełniony przemycanymi zwierzętami. Infiltracja tego miejsca wymagała ogromnej zimnej krwi. Działałem w ukryciu, rozpracowując struktury, numery rejestracyjne i trasy transportowe. Przekazywałem Roselianie precyzyjne raporty operacyjne, dzięki czemu mogła uderzać dokładnie tam, gdzie handlarze czuli się najbezpieczniej.”",
+                    "Dzięki jego cichej pracy setki poturbowanych i uratowanych z handlu stworzeń trafiły ostatecznie do azylu w [[historia:brotwin-zoo|BroTwin Zoo]]:",
+                    "„Dla świata pozostaję niewidzialny – kimś w cieniu, kto dostarcza szyfrowane wiadomości i znika w gęstwinie. Ale kiedy dowiaduję się, że uratowane przez nas zwierzęta bezpiecznie docierają do BroTwin Zoo i pod opieką Kendrana i Roseliany wracają do zdrowia, wiem, że moja droga miała sens. Z dawnego łowcy stałem się tarczą dla tych, którzy sami uciec nie potrafią.”"
+                ]
+            }
         ]
     },
     {
