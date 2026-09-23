@@ -446,7 +446,7 @@
     "fauna": {
         "title": "Fauna",
         "definition": "Zbiór wszystkich zwierząt występujących naturalnie na danym obszarze geograficznym.",
-        "aliases": ["fauny", "faunie", "faunę"]
+        "aliases": ["fauny", "faunie", "faunę", "fauną"]
     },
     "fermentacja": {
         "title": "Fermentacja",
@@ -761,7 +761,7 @@
     "klusownictwo": {
         "title": "Kłusownictwo",
         "definition": "Zabijanie, chwytanie lub ściganie zwierzyny oraz łowienie ryb z naruszeniem obowiązującego prawa, bez wymaganych uprawnień, w niedozwolony prawem sposób, a także w niedozwolonym czasie lub miejscu.",
-        "aliases": ["kłusownictwa", "kłusowników", "kłusownictwu", "kłusownicy", "kłusownictwem"]
+        "aliases": ["kłusownictwa", "kłusowników", "kłusownictwu", "kłusownicy", "kłusownictwem", "kłusownik"]
     },
     "koegzystencja": {
         "title": "Koegzystencja",
@@ -985,6 +985,11 @@
         "title": "Miot",
         "definition": "Potomstwo ssaków pochodzące z jednej ciąży.",
         "aliases": ["miotu", "mioty", "miotów"]
+    },
+    "mocodawca": {
+        "title": "Mocodawca",
+        "definition": "Osoba, organizacja lub instytucja, która zleca komuś wykonanie określonego działania i często finansuje je lub zapewnia do tego środki. Termin może również odnosić się do osoby stojącej za określonym działaniem, zwłaszcza gdy jej rola nie jest bezpośrednio widoczna.",
+        "aliases": ["mocodawców"]
     },
     "modernizacja": {
         "title": "Modernizacja",
@@ -1211,6 +1216,11 @@
         "title": "Prestiż",
         "definition": "Uznanie, szacunek i wysoka pozycja, jaką osoba, miejsce, organizacja lub marka cieszy się w oczach innych. Prestiż może wynikać m.in. z osiągnięć, jakości, renomy, wyjątkowego charakteru lub statusu.",
         "aliases": ["prestiżu", "prestiżowych"]
+    },
+    "proceder": {
+        "title": "Proceder",
+        "definition": "Działalność lub sposób postępowania, zwykle powtarzalny i często nieuczciwy, nielegalny albo budzący zastrzeżenia moralne. Określenie jest często używane w odniesieniu do działalności prowadzonej w sposób ukryty lub szkodliwy.",
+        "aliases": ["procederu"]
     },
     "proekologia": {
         "title": "Proekologia",
