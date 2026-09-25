@@ -115,24 +115,31 @@ window.HISTORIA = window.HISTORIA || {
             });
         }
 
-        // 🌟 Obserwator scrolla: elementy pojawiają się płynnie w miarę przewijania i zostają na stałe
+        // 🌟 Obserwator scrolla: odporny na szybkie przewijanie na telefonach i długie karty
+        // 🌟 Obserwator scrolla: odpalanie animacji na oczach użytkownika w momencie wjechania w kadr
         function initScrollObserver() {
             const observer = new IntersectionObserver((entries, obs) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("historia-visible");
-                        obs.unobserve(entry.target); // raz pokazany element zostaje widoczny
+                        obs.unobserve(entry.target); // Raz wywołana animacja zostawia element widoczny
                     }
                 });
-            }, { threshold: 0.05 });
+            }, {
+                threshold: 0.01, // Wystarczy, że 1% elementu pojawi się na ekranie
+                rootMargin: "0px 0px -30px 0px" // Animacja startuje dokładnie w momencie przekroczenia dolnej krawędzi ekranu
+            });
 
             document.querySelectorAll(".historia-zoo-card, .historia-timeline-item").forEach(el => {
-                if (!el.classList.contains("historia-visible")) {
+                const rect = el.getBoundingClientRect();
+                // Zabezpieczenie: jeśli element już znajduje się w obszarze widocznym (np. pierwsza karta na górze strony)
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add("historia-visible");
+                } else if (!el.classList.contains("historia-visible")) {
                     observer.observe(el);
                 }
             });
         }
-
         // ---------------------------------
         // 3️⃣ RENDER LOGIC
         // ---------------------------------
@@ -182,14 +189,9 @@ window.HISTORIA = window.HISTORIA || {
                                 const cards = document.querySelectorAll(".historia-zoo-card");
                                 cards.forEach(c => {
                                     c.style.display = "block";
-                                    c.classList.remove("historia-visible"); // reset klasy, aby móc je na nowo obserwować przy scrollu
                                 });
 
-                                document.querySelectorAll(".historia-timeline-item").forEach(item => {
-                                    item.classList.remove("historia-visible");
-                                });
-
-                                // Po kliknięciu "Wszystkie ogrody" włączamy z powrotem scroll-obserwator
+                                // Po ponownym włączeniu "Wszystkie ogrody" weryfikujemy widoczność kart
                                 initScrollObserver();
                             };
                             tabsContainer.appendChild(allTab);
@@ -262,8 +264,7 @@ window.HISTORIA = window.HISTORIA || {
                             ${zoo.galleries.map((gal, galIdx) => `
                                 <div class="historia-gallery-block">
                                     <div class="historia-gallery-header">
-                                        <h5 class="historia-gallery-title">${gal.title}</h5>
-                                        ${gal.description ? `<p class="historia-gallery-desc">${gal.description}</p>` : ""}
+                                        <h5 class="historia-gallery-title">${gal.title}</h5>${gal.description ? `<p class="historia-gallery-desc">${gal.description}</p>` : ""}
                                     </div>
                                     <div class="historia-gallery-grid" data-zoo-id="${zoo.id}" data-gal-idx="${galIdx}">
                                         ${gal.images.map((img, imgIdx) => `
@@ -286,16 +287,14 @@ window.HISTORIA = window.HISTORIA || {
 
                 tempDiv.innerHTML = rawHistory;
 
-                tempDiv.querySelectorAll('p, th, td, span, div').forEach(el => {
-                    if (typeof enrichTextWithGlossary === "function") {
-                        enrichTextWithGlossary(el);
-                    }
-                });
-                
+                // 🌟 Poprawione, jednolite nakładanie słowniczka bez dublowania wywołań
                 if (typeof enrichTextWithGlossary === "function") {
-                    enrichTextWithGlossary(tempDiv);
+                    tempDiv.querySelectorAll('p, li, td, th').forEach(el => {
+                        enrichTextWithGlossary(el);
+                    });
                 }
-                // 🌟 Czyszczenie: usuwanie słowniczka z wnętrza linków <a>, żeby linki pozostały czyste
+                
+                // Czyszczenie: usuwanie słowniczka z wnętrza linków <a>, żeby odnośniki pozostały czyste
                 tempDiv.querySelectorAll('a').forEach(aTag => {
                     aTag.querySelectorAll('.glossary-link').forEach(gLink => {
                         gLink.replaceWith(document.createTextNode(gLink.textContent));
@@ -390,14 +389,14 @@ window.HISTORIA = window.HISTORIA || {
             if (targetZooId) {
                 window.HISTORIA.scrollToZoo(targetZooId);
             } else {
-                window.scrollTo(0, 0); // 🌟 Zawsze na górę, jeśli nie wybrano konkretnego zoo
+                window.scrollTo(0, 0); // Zawsze na górę, jeśli nie wybrano konkretnego zoo
             }
 
             document.dispatchEvent(new CustomEvent("historiaReady"));
         });
     }
 
-    // Funkcja do aktywowania i przewijania konkretnego zoo po ID (oraz wywołania animacji)
+    // Funkcja do aktywowania i przewijania konkretnego zoo po ID
     window.HISTORIA.scrollToZoo = function(zooId) {
         if (!zooId) return;
 
@@ -425,7 +424,6 @@ window.HISTORIA = window.HISTORIA || {
                         card.classList.toggle("active", isActive);
                         
                         if (isActive) {
-                            // Po kliknięciu konkretnej zakładki zoo ma się od razu animować
                             triggerAnimation([card]);
                             triggerAnimation(card.querySelectorAll(".historia-timeline-item"));
                         }
@@ -469,7 +467,6 @@ window.HISTORIA = window.HISTORIA || {
 
     initHistoriaWhenReady();
 
-    // Reagowanie na zmiany w adresie URL (#hash)
     window.addEventListener("hashchange", () => {
         const hashId = window.location.hash.replace("#", "");
         if (hashId && typeof window.HISTORIA.scrollToZoo === "function") {
@@ -489,32 +486,29 @@ window.HISTORIA = window.HISTORIA || {
 
         e.preventDefault();
 
-        // Zastąp blok `if (targetPage === "historia")` w kodzie na dole pliku historia.js:
+        if (targetPage === "historia") {
+            if (window.CHARACTERS && typeof window.CHARACTERS.closeModal === "function") window.CHARACTERS.closeModal();
+            if (window.PLACES && typeof window.PLACES.closeModal === "function") window.PLACES.closeModal();
 
-if (targetPage === "historia") {
-    if (window.CHARACTERS && typeof window.CHARACTERS.closeModal === "function") window.CHARACTERS.closeModal();
-    if (window.PLACES && typeof window.PLACES.closeModal === "function") window.PLACES.closeModal();
+            const isAlreadyOnHistoria = document.querySelector(".historia-page");
+            if (isAlreadyOnHistoria && itemId) {
+                window.HISTORIA.scrollToZoo(itemId);
+                return;
+            }
 
-    // Jeśli jesteśmy już na stronie historii, tylko przełączamy zakładkę bez re-loadu podstrony
-    const isAlreadyOnHistoria = document.querySelector(".historia-page");
-    if (isAlreadyOnHistoria && itemId) {
-        window.HISTORIA.scrollToZoo(itemId);
-        return;
-    }
+            if (itemId) {
+                window.HISTORIA.pendingZooId = itemId;
+            }
 
-    if (itemId) {
-        window.HISTORIA.pendingZooId = itemId;
-    }
+            if (typeof window.loadPage === "function") {
+                await window.loadPage("historia");
+            }
 
-    if (typeof window.loadPage === "function") {
-        await window.loadPage("historia");
-    }
-
-    if (itemId && typeof window.HISTORIA.scrollToZoo === "function") {
-        window.HISTORIA.scrollToZoo(itemId);
-    }
-    return;
-}
+            if (itemId && typeof window.HISTORIA.scrollToZoo === "function") {
+                window.HISTORIA.scrollToZoo(itemId);
+            }
+            return;
+        }
 
         if (typeof window.loadPage === "function") {
             await window.loadPage(targetPage);
@@ -563,10 +557,11 @@ if (targetPage === "historia") {
             }, 100);
         }
     });
-    // Jeśli słownik załaduje się później niż strona historii, przeładuj treść historii
-document.addEventListener("glossaryReady", () => {
-    if (document.querySelector(".historia-page")) {
-        renderHistoria();
-    }
-});
+
+    // Reakcja na załadowanie słowniczka – jeśli załaduje się po wyrenderowaniu historii
+    document.addEventListener("glossaryReady", () => {
+        if (document.querySelector(".historia-page")) {
+            renderHistoria();
+        }
+    });
 })();

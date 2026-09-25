@@ -328,6 +328,7 @@ window.CHARACTERS = window.CHARACTERS || {};
     }
 
     function renderCharacters() {
+        window.scrollTo(0, 0)
         const grid = document.getElementById("postacie-grid");
         if (!grid) return;
 
