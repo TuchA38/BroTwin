@@ -403,42 +403,47 @@
                     "paragraphIndex": 2
                 }],
                 "stats": [{
-                        "label": "Główny Zarządców",
+                        "label": "Główny zarządca",
                         "value": "Kendran Tycoon"
                     },
                     {
-                        "label": "Innowacja",
-                        "value": "Lustra weneckie & Kolejka"
+                        "label": "Główne innowacje",
+                        "value": "Lustra weneckie, cicha kolejka i zautomatyzowane obiekty"
                     },
                     {
                         "label": "Kluczowy sukces",
-                        "value": "Rozród orangutanów i pand"
+                        "value": "Rozród pand wielkich, orangutanów i słoni"
                     }
                 ],
                 "timeline": [{
                         "year": "Etap I",
-                        "title": "Przejęcie i Reorganizacja",
-                        "description": "Kendran Tycoon przejmuje stery, wprowadza zautomatyzowane centra handlowe i przenosi zwierzęta do stref kwarantanny Ethelien."
+                        "title": "Przejęcie i reorganizacja",
+                        "description": "Kendran Tycoon przejmuje stery, wprowadza zautomatyzowane punkty obsługi, a zwierzęta przekazuje do bezpiecznych stref kwarantanny dr Ethelien Mumba."
                     },
                     {
                         "year": "Etap II",
-                        "title": "Infrastruktura i Dom Hipopotama",
-                        "description": "Mondo Zeller buduje trasa kolejki wokół ogrodu, powstaje nowoczesny Dom Hipopotama oraz sektor Insektów."
+                        "title": "Rozwój infrastruktury i Dom Hipopotama",
+                        "description": "Mondo Zeller projektuje pierwszy odcinek kolejki widokowej. Powstaje nowoczesny Dom Hipopotama, pawilon Insektów oraz nowe strefy dla bizonów i okapi."
                     },
                     {
                         "year": "Etap III",
-                        "title": "Lustra Weneckie i Naczelne",
-                        "description": "Przebudowa kompleksu małp z użyciem luster weneckich odcinających zwierzęta od stresującego wzroku zwiedzających."
+                        "title": "Modernizacja kompleksu naczelnych",
+                        "description": "Przebudowa wybiegów dla małp z wykorzystaniem luster weneckich, co osłania zwierzęta przed stresem i zapewnia im komfort."
                     },
                     {
                         "year": "Etap IV",
-                        "title": "Misja Pingwinia Roseliany",
-                        "description": "Roseliana sprowadza 24 pingwiny królewskie, a wody z dawnego jeziora zostają wykorzystane do stworzenia wybiegu lodowego."
+                        "title": "Misje ratunkowe Roseliany i sekcja lodowa",
+                        "description": "Roseliana sprowadza do parku 24 pingwiny królewskie. Wody z dawnego jeziora zostają wykorzystane do budowy nowoczesnego wybiegu lodowego."
+                    },
+                    {
+                        "year": "Etap V",
+                        "title": "Słoniarnia, Gadarium i Akwen Niedźwiedzi",
+                        "description": "Powstaje wielopiętrowy obiekt dla gadów, przejrzysty akwen dla niedźwiedzi polarnych oraz nowa słoniarnia, w której rodzi się pierwsze słoniątko."
                     },
                     {
                         "year": "Obecnie",
-                        "title": "Globalne Centrum Rozrodu",
-                        "description": "Współpraca z Lorranem i Ethelien owocuje narodzinami orangutanów, pand, słoni oraz lampartów amurskich."
+                        "title": "Centrum rozrodu i plan nowych filii",
+                        "description": "Park odnosi światowe sukcesy w rozrodzie m.in. pand wielkich i lampartów amurskich. Pętla kolejki zostaje domknięta, a zarząd przygotowuje się do otwarcia dwóch filii."
                     }
                 ],
                 "galleries": [{
