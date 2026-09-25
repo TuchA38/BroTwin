@@ -208,9 +208,9 @@
                     }
                 ],
                 "galleries": [{
-                    "id": "architektura",
-                    "title": "Architektura i Dziedzictwo Parku",
-                    "description": "Inżynieria dawnego ogrodu oraz ekspozycja odrestaurowanych zabytków na terenie muzealnym.",
+                    "id": "magiotopia_w_obiektywie",
+                    "title": "Magiotopia w Obiektywie",
+                    "description": "Zbiorcza galeria prezentująca pełną przestrzeń, architekturę i mieszkańców Magiotopii.",
                     "images": [{
                             "url": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790335942/Planet_Zoo_Screenshot_2026.09.24_-_20.40.13.32_ikrkfm.webp"
                         },
