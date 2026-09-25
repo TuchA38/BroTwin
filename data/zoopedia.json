@@ -10988,6 +10988,88 @@
         }
     },
     {
+        "name": "Manat karaibski",
+        "latin": "Trichechus manatus",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790334971/Manat_karaibski_uy4scj.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790335081/Manatee_WestIndian_illustration_u0rt57.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["amerykapoludniowa", "ssaki", "VU", "i3", "akwarium"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Od 8 197<br>do 11 328<br>(wartość szacunkowa)",
+        "status": "Narażone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776789/VU_sdgfno.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ssaki",
+            "Rząd": "Brzegowce",
+            "Rodzina": "Manatowate",
+            "Rodzaj": "Manat"
+        },
+        "habitat": {
+            "Kontynenty": ["Ameryka Południowa"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Ameryka Południowa",
+            "link": "../Mapa/Rezerwat Ameryka Południowa.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
+    },
+    {
         "name": "Mandryl",
         "latin": "Mandrillus sphinx",
         "aliases": ["mandryl barwnolicy"],
