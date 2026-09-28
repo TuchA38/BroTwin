@@ -1307,6 +1307,11 @@
         "definition": "Proces odnawiania, naprawiania i przywracania obiektu, budynku lub innego elementu do dobrego stanu, często z zachowaniem jego dotychczasowego wyglądu i charakteru.",
         "aliases": ["renowację"]
     },
+    "reorganizacja": {
+        "title": "Reorganizacja",
+        "definition": "Zmiana sposobu organizacji, struktury lub funkcjonowania czegoś w celu poprawy działania, dostosowania do nowych warunków albo zwiększenia efektywności. Może dotyczyć m.in. przedsiębiorstwa, instytucji, zespołu, przestrzeni lub sposobu wykonywania określonych zadań.",
+        "aliases": ["reorganizacji", "zreorganizowane", "reorganizacją", "reorganizację"]
+    },
     "reprodukcja": {
         "title": "Reprodukcja",
         "definition": "Proces rozmnażania się organizmów, prowadzący do wydania na świat potomstwa i zapewniający przetrwanie gatunku.",
