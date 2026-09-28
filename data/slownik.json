@@ -704,7 +704,8 @@
     },
     "kameralny": {
         "title": "Kameralny",
-        "definition": "Niewielki, spokojny i przeznaczony dla stosunkowo małej liczby osób, dzięki czemu zapewnia bardziej swobodną, przytulną i mniej formalną atmosferę."
+        "definition": "Niewielki, spokojny i przeznaczony dla stosunkowo małej liczby osób, dzięki czemu zapewnia bardziej swobodną, przytulną i mniej formalną atmosferę.",
+        "aliases": ["kameralnymi"]
     },
     "kamuflaz": {
         "title": "Kamuflaż",
