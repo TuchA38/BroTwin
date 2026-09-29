@@ -1292,6 +1292,11 @@
         "definition": "Proces poszukiwania, wyboru i pozyskiwania osób do określonych zadań, stanowisk lub ról. Może obejmować m.in. zgłaszanie kandydatów, ocenę ich umiejętności oraz wybór odpowiednich osób.",
         "aliases": ["rekrutacji"]
     },
+    "relokacja": {
+        "title": "Relokacja",
+        "definition": "Przeniesienie osoby, grupy, obiektu, firmy lub innego zasobu z jednego miejsca do innego. Relokacja może dotyczyć zarówno tymczasowej, jak i stałej zmiany lokalizacji, np. przeniesienia pracowników, siedziby firmy, zwierząt lub infrastruktury.",
+        "aliases": ["relokację"]
+    },
     "renaturyzacja": {
         "title": "Renaturyzacja",
         "definition": "Proces przywracania naturalnego charakteru przekształconym lub zdegradowanym obszarom poprzez odtwarzanie ich naturalnych warunków, procesów i ekosystemów. Może obejmować m.in. przywracanie naturalnego biegu rzek, odtwarzanie siedlisk oraz wspieranie powrotu rodzimych gatunków roślin i zwierząt.",
