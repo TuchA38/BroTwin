@@ -13,6 +13,41 @@ window.HISTORIA = window.HISTORIA || {
 
 (function() {
 
+        // 🌟 Helper zapewniający wczytanie słownika przed wyrenderowaniem tekstu
+        async function ensureGlossaryReady() {
+            if (typeof enrichTextWithGlossary === "function" && window.glossaryData) {
+                return true;
+            }
+
+            if (typeof window.loadGlossary === "function") {
+                try {
+                    await window.loadGlossary();
+                } catch (e) {
+                    console.warn("Błąd ładowania słownika przez loadGlossary:", e);
+                }
+            } else if (window.glossaryPromise) {
+                try {
+                    await window.glossaryPromise;
+                } catch (e) {}
+            }
+
+            if (typeof enrichTextWithGlossary !== "function" || !window.glossaryData) {
+                await new Promise(resolve => {
+                    const onReady = () => {
+                        document.removeEventListener("glossaryReady", onReady);
+                        resolve();
+                    };
+                    document.addEventListener("glossaryReady", onReady);
+                    setTimeout(() => {
+                        document.removeEventListener("glossaryReady", onReady);
+                        resolve();
+                    }, 1000);
+                });
+            }
+
+            return typeof enrichTextWithGlossary === "function" && Boolean(window.glossaryData);
+        }
+
         // ---------------------------------
         // 1️⃣ LOADER – CACHE SINGLE FETCH
         // ---------------------------------
@@ -105,7 +140,7 @@ window.HISTORIA = window.HISTORIA || {
             }
         }
 
-        // 🌟 Pomocnicza funkcja do natychmiastowego resetu i odtworzenia animacji (używana przy wyborze konkretnego zoo)
+        // 🌟 Pomocnicza funkcja do natychmiastowego resetu i odtworzenia animacji
         function triggerAnimation(elements) {
             if (!elements) return;
             elements.forEach(el => {
@@ -115,24 +150,22 @@ window.HISTORIA = window.HISTORIA || {
             });
         }
 
-        // 🌟 Obserwator scrolla: odporny na szybkie przewijanie na telefonach i długie karty
-        // 🌟 Obserwator scrolla: odpalanie animacji na oczach użytkownika w momencie wjechania w kadr
+        // 🌟 Obserwator scrolla
         function initScrollObserver() {
             const observer = new IntersectionObserver((entries, obs) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add("historia-visible");
-                        obs.unobserve(entry.target); // Raz wywołana animacja zostawia element widoczny
+                        obs.unobserve(entry.target);
                     }
                 });
             }, {
-                threshold: 0.01, // Wystarczy, że 1% elementu pojawi się na ekranie
-                rootMargin: "0px 0px -30px 0px" // Animacja startuje dokładnie w momencie przekroczenia dolnej krawędzi ekranu
+                threshold: 0.01,
+                rootMargin: "0px 0px -30px 0px"
             });
 
             document.querySelectorAll(".historia-zoo-card, .historia-timeline-item").forEach(el => {
                 const rect = el.getBoundingClientRect();
-                // Zabezpieczenie: jeśli element już znajduje się w obszarze widocznym (np. pierwsza karta na górze strony)
                 if (rect.top < window.innerHeight && rect.bottom > 0) {
                     el.classList.add("historia-visible");
                 } else if (!el.classList.contains("historia-visible")) {
@@ -140,6 +173,7 @@ window.HISTORIA = window.HISTORIA || {
                 }
             });
         }
+
         // ---------------------------------
         // 3️⃣ RENDER LOGIC
         // ---------------------------------
@@ -151,8 +185,11 @@ window.HISTORIA = window.HISTORIA || {
                 window.AppState.get() :
                 "pz1pc";
 
-            loadHistoriaOnce().then(allVersions => {
+            loadHistoriaOnce().then(async allVersions => {
                         if (!allVersions) return;
+
+                        // 🌟 Czekamy, aż słownik oraz funkcja podświetlania będą gotowe
+                        await ensureGlossaryReady();
 
                         const versionData = allVersions[currentVersion] || allVersions["pz1pc"];
                         if (!versionData) return;
@@ -191,7 +228,6 @@ window.HISTORIA = window.HISTORIA || {
                                     c.style.display = "block";
                                 });
 
-                                // Po ponownym włączeniu "Wszystkie ogrody" weryfikujemy widoczność kart
                                 initScrollObserver();
                             };
                             tabsContainer.appendChild(allTab);
@@ -287,11 +323,9 @@ window.HISTORIA = window.HISTORIA || {
 
                 tempDiv.innerHTML = rawHistory;
 
-                // 🌟 Poprawione, jednolite nakładanie słowniczka bez dublowania wywołań
-                if (typeof enrichTextWithGlossary === "function") {
-                    tempDiv.querySelectorAll('p, li, td, th').forEach(el => {
-                        enrichTextWithGlossary(el);
-                    });
+                // 🌟 Nakładanie słowniczka na treść
+                if (typeof enrichTextWithGlossary === "function" && window.glossaryData) {
+                    enrichTextWithGlossary(tempDiv);
                 }
                 
                 // Czyszczenie: usuwanie słowniczka z wnętrza linków <a>, żeby odnośniki pozostały czyste
@@ -377,10 +411,8 @@ window.HISTORIA = window.HISTORIA || {
                 window.addNonBreakingSpaces(root);
             }
 
-            // Uruchomienie obserwatora scrolla po wyrenderowaniu strony
             initScrollObserver();
 
-            // Sprawdzenie oczekującego ID (z kliknięcia w odnośnik, URL lub kotwicy)
             const hashId = window.location.hash.replace("#", "");
             const urlParams = new URLSearchParams(window.location.search);
             const zooParam = urlParams.get("zoo");
@@ -389,7 +421,7 @@ window.HISTORIA = window.HISTORIA || {
             if (targetZooId) {
                 window.HISTORIA.scrollToZoo(targetZooId);
             } else {
-                window.scrollTo(0, 0); // Zawsze na górę, jeśli nie wybrano konkretnego zoo
+                window.scrollTo(0, 0);
             }
 
             document.dispatchEvent(new CustomEvent("historiaReady"));
