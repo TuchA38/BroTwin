@@ -143,6 +143,11 @@
         "definition": "Osoba, która dopiero zaczyna zdobywać wiedzę, umiejętności lub doświadczenie w określonej dziedzinie i uczy się od bardziej doświadczonych osób.",
         "aliases": ["adepta"]
     },
+    "aklimatyzacja": {
+        "title": "Aklimatyzacja",
+        "definition": "Proces stopniowego przystosowywania się organizmu do nowych warunków środowiska, takich jak temperatura, wilgotność, wysokość nad poziomem morza lub inne czynniki. W szerszym znaczeniu może oznaczać również przyzwyczajanie się do nowego miejsca, sytuacji lub warunków życia.",
+        "aliases": ["aklimatyzacji"]
+    },
     "aksamitny": {
         "title": "Aksamitny",
         "definition": "Pokryty krótką, gęstą, miękką w dotyku sierścią, sprawiającą wrażenie gładkiej i delikatnej.",
@@ -262,6 +267,11 @@
         "title": "Brachiacja",
         "definition": "Sposób poruszania się w koronach drzew charakterystyczny dla niektórych gatunków małp.",
         "aliases": ["brachiacji", "brachiację"]
+    },
+    "brawurowy": {
+        "title": "Brawurowy",
+        "definition": "Wykonywany z dużą odwagą, śmiałością i pewnością siebie, często w sposób ryzykowny lub lekkomyślny. Określenie może odnosić się do działania, zachowania, decyzji albo sposobu wykonania czegoś.",
+        "aliases": ["brawurowej"]
     },
     "broszura": {
         "title": "Broszura",
@@ -386,7 +396,7 @@
     "ekspansja": {
         "title": "Ekspansja",
         "definition": "Proces polegający na zwiększaniu zasięgu lub rozprzestrzenianiu się czegoś na określonym obszarze.",
-        "aliases": ["ekspansji"]
+        "aliases": ["ekspansji", "ekspansyjnych"]
     },
     "ekstensywnie": {
         "title": "Ekstensywnie",
@@ -1349,7 +1359,7 @@
     "rezerwa": {
         "title": "Rezerwa",
         "definition": "Zapas lub wydzielona część czegoś zachowana z myślą o przyszłym wykorzystaniu. W odniesieniu do przestrzeni oznacza obszar pozostawiony wolny lub przeznaczony pod przyszłą zabudowę, rozbudowę albo inne zagospodarowanie.",
-        "aliases": ["rezerwy"]
+        "aliases": ["rezerwy", "rezerw"]
     },
     "rigging": {
         "title": "Rigging (animacja szkieletowa)",
