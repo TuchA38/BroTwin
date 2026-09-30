@@ -1,6 +1,7 @@
 {
     "albums": [{
             "id": "pz-all",
+            "game": "pz1",
             "title": "Planet Zoo – Wszystkie utwory",
             "cover": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783855877/Planet_Zoo_All_hor2ox.webp",
             "tracks": [{
@@ -697,6 +698,7 @@
         },
         {
             "id": "pz-afryka",
+            "game": "pz1",
             "title": "Planet Zoo – Afryka",
             "version": "pz1pc",
             "version2": "pz1console",
@@ -741,6 +743,7 @@
         },
         {
             "id": "pz-indie",
+            "game": "pz1",
             "title": "Planet Zoo – Indie",
             "version": "pz1pc",
             "version2": "pz1console",
@@ -773,6 +776,7 @@
         },
         {
             "id": "pz-ameryka-polnocna",
+            "game": "pz1",
             "title": "Planet Zoo – Ameryka Północna",
             "version": "pz1pc",
             "version2": "pz1console",
@@ -805,6 +809,7 @@
         },
         {
             "id": "pz-azja",
+            "game": "pz1",
             "title": "Planet Zoo – Azja",
             "version": "pz1pc",
             "version2": "pz1console",
@@ -837,6 +842,7 @@
         },
         {
             "id": "pz-klasyka",
+            "game": "pz1",
             "title": "Planet Zoo – Klasyka",
             "version": "pz1pc",
             "version2": "pz1console",
@@ -869,6 +875,7 @@
         },
         {
             "id": "pz-planet-zoo",
+            "game": "pz1",
             "title": "Planet Zoo – Planet Zoo",
             "version": "pz1pc",
             "version2": "pz1console",
@@ -895,6 +902,7 @@
         },
         {
             "id": "pz-deluxe",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Delux",
@@ -1011,6 +1019,7 @@
         },
         {
             "id": "pz-arctic-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Arktyka",
@@ -1043,6 +1052,7 @@
         },
         {
             "id": "pz-south-america-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Ameryka Południowa",
@@ -1075,6 +1085,7 @@
         },
         {
             "id": "pz-australia-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Australia",
@@ -1107,6 +1118,7 @@
         },
         {
             "id": "pz-aquatic-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Woda",
@@ -1139,6 +1151,7 @@
         },
         {
             "id": "pz-southeast-asia-animal-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Azja Południowo-Wschodnia",
@@ -1171,6 +1184,7 @@
         },
         {
             "id": "pz-africa-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Afryka",
@@ -1203,6 +1217,7 @@
         },
         {
             "id": "pz-north-america-animal-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Ameryka Północna",
@@ -1235,6 +1250,7 @@
         },
         {
             "id": "pz-europe-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Europa",
@@ -1267,6 +1283,7 @@
         },
         {
             "id": "pz-conservation-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Ochrona Przyrody",
@@ -1299,6 +1316,7 @@
         },
         {
             "id": "pz-lo-fi",
+            "game": "pz1",
             "title": "Lo-fi (Dźwięki lata)",
             "cover": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1784477748/Lo-fi_epnrkc.webp",
             "tracks": [{
@@ -1377,6 +1395,7 @@
         },
         {
             "id": "pz-twilight-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Zmierzch",
@@ -1409,6 +1428,7 @@
         },
         {
             "id": "pz-grasslands-animal-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Stepy",
@@ -1441,6 +1461,7 @@
         },
         {
             "id": "pz-tropical-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Tropiki",
@@ -1473,6 +1494,7 @@
         },
         {
             "id": "pz-arid-animal-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Klimatu suchego",
@@ -1505,6 +1527,7 @@
         },
         {
             "id": "pz-oceania-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Oceania",
@@ -1537,6 +1560,7 @@
         },
         {
             "id": "pz-eurasia-animal-pack",
+            "game": "pz1",
             "version": "pz1pc",
             "version2": "pz1console",
             "title": "Pakiet Eurazja",
@@ -1564,6 +1588,57 @@
                     "author": "Eurasia Animal Pack",
                     "duration": "3:18",
                     "url": "bN6ghCyO09o"
+                }
+            ]
+        },
+        {
+            "id": "pz-zwiastuny",
+            "game": "pz1",
+            "version": "pz1pc",
+            "version2": "pz1console",
+            "title": "Zwiastuny",
+            "cover": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1784477758/Zwiastuny_ebodnx.webp",
+            "tracks": [{
+                "title": " ",
+                "author": "Planet Zoo",
+                "duration": "X:XX",
+                "url": ""
+            }]
+        },
+        {
+            "id": "pz2-all",
+            "game": "pz2",
+            "title": "Planet Zoo 2 – Wszystkie utwory",
+            "cover": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790793881/planet_zoo_2_soundtracks_1_h7cep9.webp",
+            "tracks": [{
+                    "title": " ",
+                    "author": "Planet Zoo 2",
+                    "duration": "X:XX",
+                    "url": ""
+                },
+                {
+                    "title": " ",
+                    "author": "Planet Zoo 2",
+                    "duration": "X:XX",
+                    "url": ""
+                },
+                {
+                    "title": " ",
+                    "author": "Planet Zoo 2",
+                    "duration": "X:XX",
+                    "url": ""
+                },
+                {
+                    "title": " ",
+                    "author": "Planet Zoo 2",
+                    "duration": "X:XX",
+                    "url": ""
+                },
+                {
+                    "title": " ",
+                    "author": "Planet Zoo 2",
+                    "duration": "X:XX",
+                    "url": ""
                 }
             ]
         }
