@@ -6,6 +6,7 @@ const playBtn = document.getElementById("play");
 
 let albumsData = null;
 let currentAlbum = null;
+let selectedGameFilter = "pz1"; // "pz1" | "pz2"
 
 let currentAlbumIndex = 0;
 let currentTrackIndex = 0;
@@ -272,31 +273,91 @@ async function openMusic() {
     albumsPanel.classList.remove("open");
 }
 
-function renderAlbums() {
+
+function renderAlbums(shouldAnimate = false) {
     if (!albumsData) return;
 
     const list = document.getElementById("album-list");
+    if (!list) return;
+
+    // 1. Aktualizacja stanu aktywnej zakładki
+    document.querySelectorAll(".game-tab").forEach(tab => {
+        const isSelected = tab.dataset.game === selectedGameFilter;
+        tab.classList.toggle("active", isSelected);
+    });
+
     list.innerHTML = "";
 
-    albumsData.albums.forEach((album, i) => {
+    // 2. Obsługa animacji tylko przy przełączaniu wersji gry
+    if (shouldAnimate) {
+        list.classList.remove("fade-in-list");
+        void list.offsetWidth; // Wymuszenie przeliczenia styli (reflow)
+        list.classList.add("fade-in-list");
+    } else {
+        list.classList.remove("fade-in-list");
+    }
+
+    // 3. Filtrowanie albumów
+    const filteredAlbums = albumsData.albums.filter(album => {
+        const albumGame = album.game || "pz1";
+        return albumGame === selectedGameFilter;
+    });
+
+    // 4. Renderowanie elementów listy
+    filteredAlbums.forEach((album, index) => {
+        const realIndex = albumsData.albums.findIndex(a => a.id === album.id);
+
         const li = document.createElement("li");
+
+        // Staggerowanie animacji tylko wtedy, gdy animujemy przełączenie gier
+        if (shouldAnimate) {
+            li.style.animationDelay = `${index * 0.04}s`;
+        } else {
+            li.style.animationDelay = "0s";
+        }
+
         li.innerHTML = `
             <span class="title">${album.title}</span>
-            <span class="count">${album.tracks.length}</span>
+            <span class="count">${album.tracks ? album.tracks.length : 0}</span>
         `;
 
-        if (i === currentAlbumIndex) {
+        if (currentAlbum && album.id === currentAlbum.id) {
             li.classList.add("active");
         }
 
-        li.onclick = () => {
-            if (i === currentAlbumIndex) return;
-            loadAlbumByIndex(i);
+        li.onclick = (e) => {
+            e.stopPropagation();
+            if (realIndex === currentAlbumIndex) return;
+
+            // Kliknięcie w album NIE przekazuje flagi animacji
+            loadAlbumByIndex(realIndex);
         };
 
         list.appendChild(li);
     });
 }
+
+// Obsługa kliknięć w zakładki gier
+function initGameTabs() {
+    const tabs = document.querySelectorAll(".game-tab");
+    tabs.forEach(tab => {
+        tab.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const targetGame = tab.dataset.game;
+
+            if (selectedGameFilter !== targetGame) {
+                selectedGameFilter = targetGame;
+                // Przekazujemy true -> animacja wykona się TYLKO TERAZ
+                renderAlbums(true);
+            }
+        });
+    });
+}
+
+// Inicjalizacja zakładek po załadowaniu drzewa DOM
+document.addEventListener("DOMContentLoaded", () => {
+    initGameTabs();
+});
 
 function renderTracks() {
     if (!currentAlbum) return;
@@ -475,6 +536,9 @@ function format(sec) {
 function loadAlbum(album, autoPlay = false) {
     currentAlbum = album;
     currentTrackIndex = 0;
+
+    // Ustawiamy filtr na grę z załadowanego albumu
+    selectedGameFilter = album.game || "pz1";
 
     triggerContentBlur(() => {
         // Zmiana klasy pudła dla stylów pod dany album
@@ -683,10 +747,19 @@ tracksPanel.addEventListener("click", e => e.stopPropagation());
 albumsPanel.addEventListener("click", e => e.stopPropagation());
 
 document.addEventListener("click", e => {
+    const tabBtn = e.target.closest(".game-tab");
+    if (tabBtn) {
+        selectedGameFilter = tabBtn.dataset.game;
+        renderAlbums();
+    }
+});
+
+document.addEventListener("click", e => {
     if (tracksPanel.classList.contains("open") && !tracksPanel.contains(e.target) && !e.target.closest("#toggle-tracks")) {
         tracksPanel.classList.remove("open");
     }
     if (albumsPanel.classList.contains("open") && !albumsPanel.contains(e.target) && !e.target.closest("#toggle-albums")) {
         albumsPanel.classList.remove("open");
     }
+
 });
