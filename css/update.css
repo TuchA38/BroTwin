@@ -161,7 +161,9 @@
 .stacked-maj26_1-stack .img-1,
 .stacked-czerwiec26_1-stack .img-1,
 .stacked-lipiec26-stack .img-1,
-.stacked-sierpien26_1-stack .img-1 {
+.stacked-sierpien26_1-stack .img-1,
+.stacked-wrzesien26_1-stack .img-1,
+.stacked-wrzesien26_2-stack .img-1 {
     width: 50%;
     position: relative;
     z-index: 0;
@@ -171,7 +173,9 @@
 .stacked-maj26_1-stack .img-2,
 .stacked-czerwiec26_1-stack .img-2,
 .stacked-lipiec26-stack .img-2,
-.stacked-sierpien26_1-stack .img-2 {
+.stacked-sierpien26_1-stack .img-2,
+.stacked-wrzesien26_1-stack .img-2,
+.stacked-wrzesien26_2-stack .img-2 {
     width: 50%;
     position: relative;
     margin-top: 2%;
@@ -182,7 +186,9 @@
 .stacked-maj26_1-stack .img-3,
 .stacked-czerwiec26_1-stack .img-3,
 .stacked-lipiec26-stack .img-3,
-.stacked-sierpien26_1-stack .img-3 {
+.stacked-sierpien26_1-stack .img-3,
+.stacked-wrzesien26_1-stack .img-3,
+.stacked-wrzesien26_2-stack .img-3 {
     width: 50%;
     position: absolute;
     left: 52%;
@@ -194,7 +200,9 @@
 .stacked-maj26_1-stack .img-4,
 .stacked-czerwiec26_1-stack .img-4,
 .stacked-lipiec26-stack .img-4,
-.stacked-sierpien26_1-stack .img-4 {
+.stacked-sierpien26_1-stack .img-4,
+.stacked-wrzesien26_1-stack .img-4,
+.stacked-wrzesien26_2-stack .img-4 {
     width: 50%;
     position: absolute;
     left: 52%;
@@ -230,7 +238,9 @@
 .stacked-czerwiec26_2-stack,
 .stacked-lipiec26-stack,
 .stacked-sierpien26_1-stack,
-.stacked-sierpien26_2-stack {
+.stacked-sierpien26_2-stack,
+.stacked-wrzesien26_1-stack,
+.stacked-wrzesien26_2-stack {
     margin: 20px 0 30px 0;
 }
 
