@@ -7,6 +7,92 @@
 }
 
 
+/* ================= PASEK PRZEŁĄCZANIA GIER (ZAKŁADKI) ================= */
+
+.game-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0 16px 0;
+    position: relative;
+    z-index: 20;
+}
+
+.game-tab {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #093c2b;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 7px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    user-select: none;
+    outline: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.game-tab:hover {
+    background: #0b4f38e0;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.game-tab.active {
+    background: #148b63;
+    border-color: #148b63;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #148b63e6;
+}
+
+.game-tab.active:hover {
+    background: #18a576e6;
+}
+
+[data-game-version="pz2"] .game-tab {
+    background: rgb(158, 126, 103);
+    color: #4d3d32;
+    text-shadow: none;
+}
+
+[data-game-version="pz2"] .game-tab:hover {
+    background: rgba(158, 126, 103, 0.68);
+}
+
+[data-game-version="pz2"] .game-tab.active {
+    background: rgb(150, 164, 87);
+    border-color: rgb(150, 164, 87);
+    color: #4d3d32;
+    font-weight: 300;
+    box-shadow: 0 4px 12px rgba(150, 164, 87, 0.9);
+}
+
+[data-game-version="pz2"] .game-tab.active:hover {
+    background: rgba(150, 164, 87, 0.78);
+}
+
+
+/* ================= ANIMACJA TYLKO DLA ZMIANY WERSJI ================= */
+
+#album-list.fade-in-list li {
+    animation: albumTabSwitch 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes albumTabSwitch {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 /* Przycisk DLC w lewym górnym rogu */
 
 .album-dlc-btn {
@@ -104,9 +190,31 @@
 [data-game-version="pz2"] .music-box.pz-deluxe .track-info,
 [data-game-version="pz2"] .music-box.pz-deluxe .tekst,
 [data-game-version="pz2"] .music-box.pz-deluxe #albums-panel,
-[data-game-version="pz2"] .music-box.pz-deluxe #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-deluxe #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-deluxe .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-deluxe .game-tab {
+    background: #093c2b;
+    color: white;
+}
+
+.music-box.pz-deluxe .game-tab:hover {
+    background: #0b4f38e0;
+}
+
+.music-box.pz-deluxe .game-tab.active {
+    background: #148b63;
+    border-color: #148b63;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #148b63e6;
+}
+
+.music-box.pz-deluxe .game-tab.active:hover {
+    background: #18a576e6;
 }
 
 .music-box.pz-deluxe {
@@ -206,9 +314,32 @@
 [data-game-version="pz2"] .music-box.pz-arctic-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-arctic-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-arctic-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-arctic-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-arctic-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-arctic-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-arctic-pack .game-tab {
+    background: #167b8f;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-arctic-pack .game-tab:hover {
+    background: #1b97b1e0;
+}
+
+.music-box.pz-arctic-pack .game-tab.active {
+    background: #20b0cd;
+    border-color: #20b0cd;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #20b0cde6;
+}
+
+.music-box.pz-arctic-pack .game-tab.active:hover {
+    background: #26c9eae6;
 }
 
 .music-box.pz-arctic-pack {
@@ -300,9 +431,32 @@
 [data-game-version="pz2"] .music-box.pz-south-america-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-south-america-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-south-america-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-south-america-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-south-america-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-south-america-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-south-america-pack .game-tab {
+    background: #81ab24;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-south-america-pack .game-tab:hover {
+    background: #94c62ae0;
+}
+
+.music-box.pz-south-america-pack .game-tab.active {
+    background: #a7df2f;
+    border-color: #a7df2f;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #a7df2fe6;
+}
+
+.music-box.pz-south-america-pack .game-tab.active:hover {
+    background: #b3ee34e6;
 }
 
 .music-box.pz-south-america-pack {
@@ -394,9 +548,32 @@
 [data-game-version="pz2"] .music-box.pz-australia-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-australia-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-australia-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-australia-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-australia-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-australia-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-australia-pack .game-tab {
+    background: #e3a700;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-australia-pack .game-tab:hover {
+    background: #f9b500e0;
+}
+
+.music-box.pz-australia-pack .game-tab.active {
+    background: #ffbe0b;
+    border-color: #ffbe0b;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #ffbe0be6;
+}
+
+.music-box.pz-australia-pack .game-tab.active:hover {
+    background: #ffc31de6;
 }
 
 .music-box.pz-australia-pack {
@@ -488,9 +665,32 @@
 [data-game-version="pz2"] .music-box.pz-aquatic-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-aquatic-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-aquatic-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-aquatic-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-aquatic-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-aquatic-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-aquatic-pack .game-tab {
+    background: #509596;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-aquatic-pack .game-tab:hover {
+    background: #5ca9aae0;
+}
+
+.music-box.pz-aquatic-pack .game-tab.active {
+    background: #67bdbe;
+    border-color: #67bdbe;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #67bdbee6;
+}
+
+.music-box.pz-aquatic-pack .game-tab.active:hover {
+    background: #74d4d5e6;
 }
 
 .music-box.pz-aquatic-pack {
@@ -582,9 +782,32 @@
 [data-game-version="pz2"] .music-box.pz-southeast-asia-animal-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-southeast-asia-animal-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-southeast-asia-animal-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-southeast-asia-animal-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-southeast-asia-animal-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-southeast-asia-animal-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-southeast-asia-animal-pack .game-tab {
+    background: #796077;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-southeast-asia-animal-pack .game-tab:hover {
+    background: #8d708ae0;
+}
+
+.music-box.pz-southeast-asia-animal-pack .game-tab.active {
+    background: #a785a4;
+    border-color: #a785a4;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #a785a4e6;
+}
+
+.music-box.pz-southeast-asia-animal-pack .game-tab.active:hover {
+    background: #c099bce6;
 }
 
 .music-box.pz-southeast-asia-animal-pack {
@@ -676,9 +899,32 @@
 [data-game-version="pz2"] .music-box.pz-africa-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-africa-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-africa-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-africa-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-africa-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-africa-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-africa-pack .game-tab {
+    background: #b83714;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-africa-pack .game-tab:hover {
+    background: #d03f16e0;
+}
+
+.music-box.pz-africa-pack .game-tab.active {
+    background: #e7461a;
+    border-color: #e7461a;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #e7461ae6;
+}
+
+.music-box.pz-africa-pack .game-tab.active:hover {
+    background: #f84e1fe6;
 }
 
 .music-box.pz-africa-pack {
@@ -770,9 +1016,32 @@
 [data-game-version="pz2"] .music-box.pz-north-america-animal-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-north-america-animal-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-north-america-animal-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-north-america-animal-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-north-america-animal-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-north-america-animal-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-north-america-animal-pack .game-tab {
+    background: #ecc32f;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-north-america-animal-pack .game-tab:hover {
+    background: #fbd132e0;
+}
+
+.music-box.pz-north-america-animal-pack .game-tab.active {
+    background: #ffd53e;
+    border-color: #ffd53e;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #ffd53ee6;
+}
+
+.music-box.pz-north-america-animal-pack .game-tab.active:hover {
+    background: #ffd84ae6;
 }
 
 .music-box.pz-north-america-animal-pack {
@@ -864,9 +1133,32 @@
 [data-game-version="pz2"] .music-box.pz-europe-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-europe-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-europe-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-europe-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-europe-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-europe-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-europe-pack .game-tab {
+    background: #014f73;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-europe-pack .game-tab:hover {
+    background: #015f89e0;
+}
+
+.music-box.pz-europe-pack .game-tab.active {
+    background: #006c9e;
+    border-color: #006c9e;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #006c9ee6;
+}
+
+.music-box.pz-europe-pack .game-tab.active:hover {
+    background: #0078b0e6;
 }
 
 .music-box.pz-europe-pack {
@@ -958,9 +1250,32 @@
 [data-game-version="pz2"] .music-box.pz-conservation-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-conservation-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-conservation-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-conservation-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-conservation-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-conservation-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-conservation-pack .game-tab {
+    background: #756659;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-conservation-pack .game-tab:hover {
+    background: #867567e0;
+}
+
+.music-box.pz-conservation-pack .game-tab.active {
+    background: #9c8878;
+    border-color: #9c8878;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #9c8878e6;
+}
+
+.music-box.pz-conservation-pack .game-tab.active:hover {
+    background: #b09a88e6;
 }
 
 .music-box.pz-conservation-pack {
@@ -1052,9 +1367,32 @@
 [data-game-version="pz2"] .music-box.pz-twilight-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-twilight-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-twilight-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-twilight-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-twilight-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-twilight-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-twilight-pack .game-tab {
+    background: #4a1a27;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-twilight-pack .game-tab:hover {
+    background: #5a202fe0;
+}
+
+.music-box.pz-twilight-pack .game-tab.active {
+    background: #72293c;
+    border-color: #72293c;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #72293ce6;
+}
+
+.music-box.pz-twilight-pack .game-tab.active:hover {
+    background: #853047e6;
 }
 
 .music-box.pz-twilight-pack {
@@ -1146,9 +1484,32 @@
 [data-game-version="pz2"] .music-box.pz-grasslands-animal-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-grasslands-animal-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-grasslands-animal-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-grasslands-animal-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-grasslands-animal-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-grasslands-animal-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-grasslands-animal-pack .game-tab {
+    background: #db7c77;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-grasslands-animal-pack .game-tab:hover {
+    background: #ef8983e0;
+}
+
+.music-box.pz-grasslands-animal-pack .game-tab.active {
+    background: #fd9a95;
+    border-color: #fd9a95;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #fd9a95e6;
+}
+
+.music-box.pz-grasslands-animal-pack .game-tab.active:hover {
+    background: #ffa4a0e6;
 }
 
 .music-box.pz-grasslands-animal-pack {
@@ -1240,9 +1601,32 @@
 [data-game-version="pz2"] .music-box.pz-tropical-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-tropical-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-tropical-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-tropical-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-tropical-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-tropical-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-tropical-pack .game-tab {
+    background: #99944d;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-tropical-pack .game-tab:hover {
+    background: #aba656e0;
+}
+
+.music-box.pz-tropical-pack .game-tab.active {
+    background: #c1bb61;
+    border-color: #c1bb61;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #c1bb61e6;
+}
+
+.music-box.pz-tropical-pack .game-tab.active:hover {
+    background: #d4cd6de6;
 }
 
 .music-box.pz-tropical-pack {
@@ -1334,9 +1718,32 @@
 [data-game-version="pz2"] .music-box.pz-arid-animal-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-arid-animal-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-arid-animal-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-arid-animal-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-arid-animal-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-arid-animal-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-arid-animal-pack .game-tab {
+    background: #dab381;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-arid-animal-pack .game-tab:hover {
+    background: #edc38ce0;
+}
+
+.music-box.pz-arid-animal-pack .game-tab.active {
+    background: #fcd097;
+    border-color: #fcd097;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #fcd097e6;
+}
+
+.music-box.pz-arid-animal-pack .game-tab.active:hover {
+    background: #ffd69fe6;
 }
 
 .music-box.pz-arid-animal-pack {
@@ -1428,9 +1835,32 @@
 [data-game-version="pz2"] .music-box.pz-oceania-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-oceania-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-oceania-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-oceania-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-oceania-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-oceania-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-oceania-pack .game-tab {
+    background: #c47899;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-oceania-pack .game-tab:hover {
+    background: #d683a7e0;
+}
+
+.music-box.pz-oceania-pack .game-tab.active {
+    background: #e98fb6;
+    border-color: #e98fb6;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #e98fb6e6;
+}
+
+.music-box.pz-oceania-pack .game-tab.active:hover {
+    background: #f599c1e6;
 }
 
 .music-box.pz-oceania-pack {
@@ -1522,9 +1952,32 @@
 [data-game-version="pz2"] .music-box.pz-eurasia-animal-pack .track-info,
 [data-game-version="pz2"] .music-box.pz-eurasia-animal-pack .tekst,
 [data-game-version="pz2"] .music-box.pz-eurasia-animal-pack #albums-panel,
-[data-game-version="pz2"] .music-box.pz-eurasia-animal-pack #tracks-panel {
+[data-game-version="pz2"] .music-box.pz-eurasia-animal-pack #tracks-panel,
+[data-game-version="pz2"] .music-box.pz-eurasia-animal-pack .game-tab {
     color: white !important;
     text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.music-box.pz-eurasia-animal-pack .game-tab {
+    background: #526067;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.music-box.pz-eurasia-animal-pack .game-tab:hover {
+    background: #5d6d75e0;
+}
+
+.music-box.pz-eurasia-animal-pack .game-tab.active {
+    background: #6f828b;
+    border-color: #6f828b;
+    color: white;
+    font-weight: 300;
+    box-shadow: 0 4px 12px #6f828be6;
+}
+
+.music-box.pz-eurasia-animal-pack .game-tab.active:hover {
+    background: #7e939de6;
 }
 
 .music-box.pz-eurasia-animal-pack {
