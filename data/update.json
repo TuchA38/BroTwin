@@ -1,4 +1,251 @@
 [{
+        "id": "update2-beta-20",
+        "title": "Wrześniowe nadrabianie zaległości!",
+        "versionTag": "BETA",
+        "date": "30 września 2026",
+        "gameVersion": ["pz2"],
+        "intro": [
+            "Witajcie Zookeeperzy!",
+            "W tym miesiącu działo się naprawdę wiele, w tym nasz Szczyt Zoologiczny w {{link:ChesterZoo}}. Przyjrzeliśmy się bliżej zupełnie nowym rezerwatom dzikiej przyrody oraz omówiliśmy kwestie związane z zarządzaniem personelem, ich codziennymi obowiązkami oraz utrzymywaniem finansów na plusie.",
+            "Przyjrzyjmy się razem wszystkim nowościom z Planet Zoo 2 z września!",
+            "<hr>",
+            "<h3>Creature Feature: Rezerwaty Przyrody</h3>",
+            "[[IMAGE:1]]",
+            "W tym {{update:update2-beta-17}} z serii <b>„Creature Feature”</b> przyjrzeliśmy się bliżej rezerwatom dzikiej przyrody. Rezerwaty dzikiej przyrody to zupełnie nowa funkcja w Planet Zoo 2, która oferuje nowy sposób wspierania międzynarodowych działań na rzecz ochrony przyrody. Ożywcie populację gatunków występujących na danym obszarze, usuwajcie zanieczyszczenia i odbudujcie naturalne środowiska.",
+            "<hr>",
+            "<h3>„Feature Focus” – „Rezerwaty Przyrody”</h3>",
+            "[[VIDEO:trailer1]]",
+            "W naszym filmie z serii <b>„Feature Focus”</b> przedstawiliśmy bardziej szczegółowe informacje na temat rezerwatów dzikiej przyrody, które pojawią się w Planet Zoo 2. Rzućcie okiem i przygotujcie się na pierwsze spojrzenie na rezerwat lasu deszczowego na Sumatrze.",
+            "<hr>",
+            "<h3>Creature Feature: Znaczące zarządzanie</h3>",
+            "[[IMAGE:2]]",
+            "W naszym ostatnim {{update:update2-beta-19}} z serii <b>„Creature Feature”</b> rzuciliśmy okiem na zarządzanie w Planet Zoo 2, bo bez niego żadne zoo by nie istniało. Jednak samo zarządzanie globalną siecią ogrodów zoologicznych i rezerwatów dzikiej przyrody to nie lada wyzwanie! Dowiedzcie się więcej o pracownikach, z którymi będziecie współpracować, zapewniając gościom wspaniałą rozrywkę oraz o tym, jak zadbać o sprawne funkcjonowanie wszystkich obiektów.",
+            "<hr>",
+            "<h3>Zoopedia się powiększa</h3>",
+            "W {{change-page-version:zoopedia|pz2|Zoopedii}} stopniowo ujawniamy coraz więcej zwierząt, które będzie można zobaczyć w Planet Zoo 2 w dniu premiery. Już teraz można zapoznać się z mnóstwem zwierząt, w tym z likaonem pstrym, pandą wielką, panterą śnieżną, sępem afrykańskim i wiele więcej. Zapoznajcie się z ciekawostkami na temat tych zwierząt oraz informacjami dotyczącymi ich ochrony!",
+            "Zapiszcie się do naszego {{link:newsletter}} Planet Zoo 2, aby co tydzień otrzymywać zapowiedź kolejnego zwierzęcia, które wkrótce zostanie ujawnione! Razem z Wami bawimy się przeglądając, jak nasza społeczność dochodzi do ustalenia danego gatunku! A oto wszystkie zapowiedzi z września:",
+            "[[STACKEDIMAGES:wrzesien26_1-stack]]",
+            "<hr>",
+            "<h3>Animal Spotlight: Orangutan sumatrzański</h3>",
+            "[[VIDEO:trailer2]]",
+            "W czwartym odcinku naszej serii <b>„Animal Spotlight”</b> przedstawiliśmy orangutana sumatrzańskiego! Te pełne wyrazu naczelne uwielbiają się wspinać i odkrywać otoczenie. Pomóżcie im dobrze się rozwijać, zapewniając im platformy do wspinania się i przedmioty wzbogacające środowisko w swoich ogrodach zoologicznych lub odtwarzając ich naturalne siedliska w rezerwatach dzikiej przyrody.",
+            "<hr>",
+            "<h3>Animal Spotlight: Manat karaibski</h3>",
+            "[[VIDEO:trailer3]]",
+            "Już w piątym odcinku serii <b>„Animal Spotlight”</b> widzieliśmy manaty karaibskie! Manaty to ciekawe, ale spokojne zwierzęta! Większość dnia spędzają na pasieniu się, więc w ich zbiornikach w akwarium trzeba zapewnić im duży wybór pokarmu.",
+            "<hr>",
+            "<h3>Szczyt zoologiczny Planet Zoo 2</h3>",
+            "[[VIDEO:trailer4]]",
+            "12 września mieliśmy przyjemność zorganizować w {{link:ChesterZoo}} <b>Zoological Summit</b> poświęcony Planet Zoo 2! Kilku szczęśliwcom daliśmy szansę na nieco wcześniejsze wypróbowanie Planet Zoo 2 oraz zorganizowaliśmy szereg wykładów z udziałem ekspertów z Chester Zoo i naszego zespołu deweloperskiego na temat wolier, akwariów, ekspozycji i wielu innych tematów! Wszystkie możecie nadrobić:",
+            "[[MINIVIDEOS:pz2-keepertalks]]",
+            "Krytycznie zagrożona wyginięciem kitta krótkosterna zostanie wprowadzona jako nowy gatunek w Planet Zoo 2.<br>Nasi przyjaciele z {{link:ChesterZoo}} wykonują niesamowitą pracę we współpracy z Cikananga Conservation Breeding Centre (CCBC) oraz partnerami w Indonezji i Wielkiej Brytanii, aby zapewnić przyszłość tym pięknym ptakom, dlatego podczas transmisji prosiliśmy o Wasze dobrowolne darowizny, które mogą pomóc w utrzymaniu tego niezwykłego gatunku, dzięki czemu nadal będzie śpiewał w lasach jawajskich.",
+            "[[IMAGE:3]]",
+            "Podczas transmisji z wielką radością ogłosiliśmy nawiązanie współpracy z {{link:BIAZA}}, organizacją charytatywną wspierającą najlepsze ogrody zoologiczne i akwaria w Wielkiej Brytanii i Irlandii.<br>Nowa współpraca z BIAZA odzwierciedla nasze wspólne dążenia do promowania tego, co najlepsze w ogrodach zoologicznych i akwariach, w tym projektowania siedlisk, dobrostanu zwierząt i ochrony przyrody.",
+            "[[VIDEO:trailer5]]",
+            "Podczas września był czas, aby wziąć udział w naszym {{link:konkurs}} i mieć szansę na wygranie jednego z pięciu zestawów nagród związanych z Planet Zoo 2, w tym klucza cyfrowego do gry w dniu premiery! Niesamowite było odliczenie i gratulujemy zwycięzcom!",
+            "[[STACKEDIMAGES:wrzesien26_2-stack]]",
+            "Nie martwcie się jeśli przegapiliście to {{update:update2-beta-18}}, ponieważ transmitowaliśmy je na żywo w całości! Zobaczcie, co się działo, i obejrzyjcie ekskluzywne fragmenty rozgrywki z udziałem naszego zespołu.",
+            "[[VIDEO:trailer6]]",
+            "<hr>",
+            "<h3>Certyfikat zgodności ze Steam Deck</h3>",
+            "Przygotujcie się na tworzenie jeszcze bardziej dzikiego świata gdziekolwiek jesteście! Planet Zoo 2 otrzymała oficjalny certyfikat zgodności ze Steam Deck!",
+            "[[IMAGE:4]]",
+            "<hr>",
+            "<h3>Oficjalna ścieżka dźwiękowa</h3>",
+            "Cieszcie się dźwiękami Planet Zoo 2 dzięki oficjalnej ścieżce dźwiękowej. Posłuchajcie kilku utworów i przygotujcie się na premierę 13 października!",
+            "[[IMAGE:5]]",
+            "<hr>",
+            "<h3>Humorystyczne treści</h3>",
+            "Nowe zwierzęta w Planet Zoo 2 to idealna okazja do humoru! Oprócz materiałów wideo zza kulis pokazujących, jak nasz artysta koncepcyjny <b>Josh</b> ożywia lwa, twórcy podzielili się decyzjami podjętymi na Zoological Summit oraz wrażeniami graczy, którzy po raz pierwszy mogli osobiście testować grę przed premierą 13 października 2026 roku!",
+            "[[MINISHORTVIDEOS:pz2-wrzesien26]]",
+            "<hr>",
+            "<h3>Zapiszcie się do newslettera</h3>",
+            "Zapisz się do naszego {{link:newsletter}}, a otrzymacie mosiężną figurkę żółwia szylkretowego. Zarejestrujcie się, aby być na bieżąco z najnowszymi wiadomościami, zapowiedziami, materiałami zza kulis oraz innymi ekskluzywnymi treściami!",
+            "[[IMAGE:6]]",
+            "<hr>",
+            "Przez wrzesień również towarzyszyły nam różne fakty z Zoopedii:"
+        ],
+        "images": {
+            "1": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790794596/PZ2_Beta_100_wh5xts.webp",
+            "2": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790796932/PZ2_Beta_101_ngeit1.webp",
+            "3": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789326410/PZ2_Beta_91_o1zsta.webp",
+            "4": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789578510/PZ2_Beta_92_zs0ouo.webp",
+            "5": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790798080/PZ2_Beta_102_v5htfi.webp",
+            "6": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788804717/PZ2_Beta_85_b0fei6.webp"
+        },
+        "stackedimages": {
+            "wrzesien26_1-stack": {
+                "images": ["https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788477140/PZ2_Beta_78_klkr8o.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789821408/PZ2_Beta_97_tiuctj.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789821414/PZ2_Beta_98_biv1er.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790671338/PZ2_Beta_99_w5bmtf.webp"]
+            },
+            "wrzesien26_2-stack": {
+                "images": ["https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789326396/PZ2_Beta_90_hqtje8.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789069512/PZ2_Beta_87_w45axi.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789326358/PZ2_Beta_89_jtgysg.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789069504/PZ2_Beta_86_sz9jxc.webp"]
+            }
+        },
+        "videos": {
+            "trailer1": {
+                "url": "https://www.youtube.com/embed/ZhBKxHpFTZ8?rel=0&loop=1&playlist=ZhBKxHpFTZ8"
+            },
+            "trailer2": {
+                "url": "https://www.youtube.com/embed/JkPHS25Fo_I?rel=0&loop=1&playlist=JkPHS25Fo_I"
+            },
+            "trailer3": {
+                "url": "https://www.youtube.com/embed/LKC_e3p6ACc?rel=0&loop=1&playlist=LKC_e3p6ACc"
+            },
+            "trailer4": {
+                "url": "https://www.youtube.com/embed/cHQszvro2yg?rel=0&loop=1&playlist=cHQszvro2yg"
+            },
+            "trailer5": {
+                "url": "https://www.youtube.com/embed/Wqvcf2WepAU?rel=0&loop=1&playlist=Wqvcf2WepAU"
+            },
+            "trailer6": {
+                "url": "https://www.youtube.com/embed/562e8fWbN6c?rel=0&loop=1&playlist=562e8fWbN6c"
+            }
+        },
+        "minivideos": {
+            "pz2-keepertalks": {
+                "items": [{
+                        "text": "<b>Kitta krótkosterna</b>",
+                        "url": "https://www.youtube.com/embed/bbuLTfCYdf8?rel=0&loop=1&playlist=bbuLTfCYdf8"
+                    },
+                    {
+                        "text": "<b>Liściołaz żółty</b>",
+                        "url": "https://www.youtube.com/embed/sWqzjafJw3s?rel=0&loop=1&playlist=sWqzjafJw3s"
+                    },
+                    {
+                        "text": "<b>Szympans zachodni</b>",
+                        "url": "https://www.youtube.com/embed/PEg5evhhKK0?rel=0&loop=1&playlist=PEg5evhhKK0"
+                    },
+                    {
+                        "text": "<b>Poza Ekspozycją</b>",
+                        "url": "https://www.youtube.com/embed/xa7ues009n4?rel=0&loop=1&playlist=xa7ues009n4"
+                    },
+                    {
+                        "text": "<b>Tygrys sumatrzański</b>",
+                        "url": "https://www.youtube.com/embed/wOmZtvsIQb0?rel=0&loop=1&playlist=wOmZtvsIQb0"
+                    },
+                    {
+                        "text": "<b>Centrum Weterynaryjne</b>",
+                        "url": "https://www.youtube.com/embed/6sOlqUtk5WQ?rel=0&loop=1&playlist=6sOlqUtk5WQ"
+                    },
+                    {
+                        "text": "<b>Pandka ruda</b>",
+                        "url": "https://www.youtube.com/embed/qOm-8-CdLf4?rel=0&loop=1&playlist=qOm-8-CdLf4"
+                    },
+                    {
+                        "text": "<b>Sekretarz</b>",
+                        "url": "https://www.youtube.com/embed/AElJVW7f76o?rel=0&loop=1&playlist=AElJVW7f76o"
+                    }
+                ]
+            }
+        },
+        "minishortvideos": {
+            "pz2-wrzesien26": {
+                "items": [{
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/rHdkV4ga84I?rel=0&loop=1&playlist=rHdkV4ga84I"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/ShfW7nYd0hA?rel=0&loop=1&playlist=ShfW7nYd0hA"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/IHraTve27d4?rel=0&loop=1&playlist=IHraTve27d4"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/dUmWQtqWPiI?rel=0&loop=1&playlist=dUmWQtqWPiI"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/Rp8bMPLZo6U?rel=0&loop=1&playlist=Rp8bMPLZo6U"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/WagwNPkNaqQ?rel=0&loop=1&playlist=WagwNPkNaqQ"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/2vtTzKXevlg?rel=0&loop=1&playlist=2vtTzKXevlg"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/VmYE5Eg-vV8?rel=0&loop=1&playlist=VmYE5Eg-vV8"
+                    }
+                ]
+            }
+        },
+        "related": {
+            "updates": [{
+                    "id": "update2-beta-17",
+                    "label": "artykule"
+                },
+                {
+                    "id": "update2-beta-19",
+                    "label": "artykule"
+                },
+                {
+                    "id": "update2-beta-18",
+                    "label": "wydarzenie"
+                }
+            ]
+        },
+        "links": {
+            "ChesterZoo": {
+                "url": "https://www.chesterzoo.org/",
+                "label": "Chester Zoo"
+            },
+            "BIAZA": {
+                "url": "https://x.com/BIAZA",
+                "label": "BIAZA"
+            },
+            "konkurs": {
+                "url": "https://gleam.io/m7v3C/planet-zoo-2-zoological-summit-giveaway",
+                "label": "konkursie"
+            },
+            "facebook": {
+                "url": "https://www.facebook.com/planetzoogame",
+                "label": "Facebooku"
+            },
+            "x": {
+                "url": "https://twitter.com/planetzoogame",
+                "label": "X"
+            },
+            "instagram": {
+                "url": "https://www.instagram.com/planetzoogame/",
+                "label": "Instagramie"
+            },
+            "tiktok": {
+                "url": "https://www.tiktok.com/@planetzoogame",
+                "label": "TikToku"
+            },
+            "discord": {
+                "url": "https://discord.com/invite/frontierunlocked",
+                "label": "Discord"
+            },
+            "strona": {
+                "url": "https://www.planetzoogame.com/",
+                "label": "stronę internetową"
+            },
+            "newsletter": {
+                "url": "https://www.planetzoogame.com/2/subscribe",
+                "label": "newslettera"
+            }
+        },
+        "facts": [
+            "Ogon lemura katta jest dłuższy niż jego ciało.",
+            "Sępy afrykańskie potrafią pokonywać setki kilometrów w ciągu jednego dnia w poszukiwaniu pożywienia.",
+            "Niale wydają odgłos przypominający psie szczekanie, aby ostrzec pozostałych członków stada przed niebezpieczeństwem.",
+            "Panda wielka jest jedynym gatunkiem niedźwiedzia, który jest całkowicie roślinożerny. W przeciwieństwie do wielu innych zwierząt, pandy nie są wykorzystywane w tradycyjnej medycynie chińskiej.",
+            "Guźce zwyczajne śpią w opuszczonych norach innych zwierząt, zazwyczaj mrówników.",
+            "Potwierdzono, że ukąszenie i jad skolopendry olbrzymiej spowodowały śmierć jednej osoby.",
+            "Likaony pstre trzymane w niewoli można tresować tak samo jak psy domowe.",
+            "W stadium larwalnym gąsienica danaida wędrownego zjada ilość mleczu równoważną 200-krotności swojej masy ciała.",
+            "Dwa garby wielbłąda dwugarbnego składają się z tłuszczu, gromadzą się one w okresach obfitości pożywienia, a następnie zmniejszają się, zapewniając wielbłądowi pożywienie w czasach niedoboru."
+        ],
+        "outro": "<hr><h3>Więcej w przygotowaniu</h3>Do premiery pozostało już niewiele czasu, ale wciąż mamy kilka asów w rękawie! Nie możemy się doczekać, by pokazać wam jeszcze więcej zwierząt, które pojawią się w Planet Zoo 2 dzięki niewielkiej pomocy naszych przyjaciół.<br><br><hr>Planet Zoo 2 można już zamawiać w przedsprzedaży na PC, PS5 i Xbox Series X|S. Dołączcie do dyskusji i bądźcie z nami w kontakcie na naszych mediach społecznościowych na {{link:facebook}}, {{link:x}}, {{link:instagram}}, {{link:tiktok}} oraz na serwerze {{link:discord}} „Frontier Unlocked”, zapiszcie się do naszego {{link:newsletter}} (aby otrzymać ekskluzywną nagrodę w grze w dniu premiery!) i zaglądajcie na naszą {{link:strona}}, by być na bieżąco z najświeższymi wiadomościami!"
+    },
+    {
         "id": "update2-beta-19",
         "title": "Creature Feature: Znaczące zarządzanie!",
         "versionTag": "BETA",
@@ -390,8 +637,8 @@
             "<hr>",
             "<h3>Zoopedia się powiększa</h3>",
             "W {{change-page-version:zoopedia|pz2|Zoopedii}} stopniowo ujawniamy coraz więcej zwierząt, które będzie można zobaczyć w Planet Zoo 2 w dniu premiery. Już teraz można zapoznać się z mnóstwem zwierząt, w tym z żółwiem słoniowym, zającem bielakiem, rysiem euroazjatyckim i wiele więcej. Zapoznajcie się z ciekawostkami na temat tych zwierząt oraz informacjami dotyczącymi ich ochrony!",
-            "[[MINISHORTVIDEOS:pz2-sierpien26-1]]",
-            "Zapiszcie się do naszego {{link:newsletter}} Planet Zoo 2, aby co tydzień otrzymywać zapowiedź kolejnego zwierzęcia, które wkrótce zostanie ujawnione! Tym razem postawiliśmy na większe wyzwanie. Czy to może być trąba? A może ogon? Czymkolwiek jest ta część ciała i do jakiego zwierzęcia należy, dowiecie się w przyszłym tygodniu już w sierpniu! A oto wszystkie zapowiedzi z lipca:",
+            "[[MINIVIDEOS:pz2-zoopedia]]",
+            "Zapiszcie się do naszego {{link:newsletter}} Planet Zoo 2, aby co tydzień otrzymywać zapowiedź kolejnego zwierzęcia, które wkrótce zostanie ujawnione! Tym razem postawiliśmy na większe wyzwanie. Czy to może być trąba? A może ogon? Czymkolwiek jest ta część ciała i do jakiego zwierzęcia należy, dowiecie się w przyszłym tygodniu już w sierpniu! A oto wszystkie zapowiedzi z sierpnia:",
             "[[STACKEDIMAGES:sierpien26_1-stack]]",
             "<hr>",
             "<h3>Animal Spotlight: Trzewikodziób</h3>",
@@ -414,7 +661,7 @@
             "Nie tylko zajęci byliśmy przekazywaniem Wam najświeższych informacji o Planet Zoo 2, ale potrafimy też trochę się zabawić!",
             "[[STACKEDIMAGES:sierpien26_2-stack]]",
             "Nowe zwierzęta to także doskonała okazja do odrobiny humoru! Twórcy postanowili wykorzystać ją, przygotowując kilka zabawnych materiałów, które w lekki sposób przedstawiają nowych mieszkańców zoo i ich wyjątkowe zachowania. W końcu dzielenie się kolejnymi nowościami ze świata Planet Zoo 2 jest jeszcze przyjemniejsze, gdy towarzyszy mu dobra zabawa!",
-            "[[MINISHORTVIDEOS:pz2-sierpien26-2]]",
+            "[[MINISHORTVIDEOS:pz2-sierpien26]]",
             "<hr>",
             "<h3>Xbox @ Gamescom broadcast</h3>",
             "[[IMAGE:4]]",
@@ -460,26 +707,7 @@
             }
         },
         "minishortvideos": {
-            "pz2-sierpien26-1": {
-                "items": [{
-                        "text": "",
-                        "url": "https://www.youtube.com/embed/dV5FgUi_K9w?rel=0&loop=1&playlist=dV5FgUi_K9w"
-                    },
-                    {
-                        "text": "",
-                        "url": "https://www.youtube.com/embed/RIvoxG8KfYs?rel=0&loop=1&playlist=RIvoxG8KfYs"
-                    },
-                    {
-                        "text": "",
-                        "url": "https://www.youtube.com/embed/u7SNVqyHlMw?rel=0&loop=1&playlist=u7SNVqyHlMw"
-                    },
-                    {
-                        "text": "",
-                        "url": "https://www.youtube.com/embed/_q4sd3E5Qho?rel=0&loop=1&playlist=_q4sd3E5Qho"
-                    }
-                ]
-            },
-            "pz2-sierpien26-2": {
+            "pz2-sierpien26": {
                 "items": [{
                         "text": "",
                         "url": "https://www.youtube.com/embed/3GdHPG2SLpg?rel=0&loop=1&playlist=3GdHPG2SLpg"
@@ -503,6 +731,27 @@
                     {
                         "text": "",
                         "url": "https://www.youtube.com/embed/cwVdgKqqc1w?rel=0&loop=1&playlist=cwVdgKqqc1w"
+                    }
+                ]
+            }
+        },
+        "minivideos": {
+            "pz2-zoopedia": {
+                "items": [{
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/_ROGZBsWDaQ?rel=0&loop=1&playlist=_ROGZBsWDaQ"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/MBqjIkAfuNE?rel=0&loop=1&playlist=MBqjIkAfuNE"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/LdXT-ypodRg?rel=0&loop=1&playlist=LdXT-ypodRg"
+                    },
+                    {
+                        "text": "",
+                        "url": "https://www.youtube.com/embed/kAxpJLRdVn4?rel=0&loop=1&playlist=kAxpJLRdVn4"
                     }
                 ]
             }
