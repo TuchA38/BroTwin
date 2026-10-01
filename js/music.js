@@ -4,9 +4,12 @@ const tracksPanel = document.getElementById("tracks-panel");
 const albumsPanel = document.getElementById("albums-panel");
 const playBtn = document.getElementById("play");
 
+// Stała określająca ID domyślnego albumu (np. "pz-planet-zoo", "pz2-all", "pz-deluxe" itp.)
+const DEFAULT_ALBUM_ID = "pz2-all";
+
 let albumsData = null;
 let currentAlbum = null;
-let selectedGameFilter = "pz1"; // "pz1" | "pz2"
+let selectedGameFilter = "pz2"; // "pz1" | "pz2"
 
 let currentAlbumIndex = 0;
 let currentTrackIndex = 0;
@@ -20,6 +23,12 @@ const albumsPanelClose = document.querySelector("#albums-panel .panel-close");
 // na start ukryte
 tracksPanel.classList.remove("open");
 albumsPanel.classList.remove("open");
+
+function getDefaultAlbumIndex() {
+    if (!albumsData || !albumsData.albums) return 0;
+    const index = albumsData.albums.findIndex(a => a.id === DEFAULT_ALBUM_ID);
+    return index !== -1 ? index : 0;
+}
 
 function openPanel(panel) {
     panel.classList.remove("open"); // stan startowy
@@ -248,23 +257,22 @@ function updateDlcButton(album) {
 
 async function openMusic() {
     musicModal.classList.add("show");
-    musicModal.classList.remove("hidden"); // Upewniamy się, że zdejmujemy klasę hidden
+    musicModal.classList.remove("hidden");
     document.body.classList.add("modal-open");
 
-    // Jeśli dane nie zostały jeszcze pobrane — pobieramy je po raz pierwszy
     if (!albumsData) {
         const res = await fetch("data/music.json");
         albumsData = await res.json();
 
-        currentAlbumIndex = 0;
-        currentAlbum = albumsData.albums[0];
+        currentAlbumIndex = getDefaultAlbumIndex();
+        currentAlbum = albumsData.albums[currentAlbumIndex];
+        selectedGameFilter = currentAlbum.game || "pz1";
         currentTrackIndex = 0;
 
         renderAlbums();
         renderTracks();
     }
 
-    // Aktualizujemy TYLKO stan przycisku DLC pod kątem bieżącego AppState bez wywoływania loadAlbum
     if (currentAlbum) {
         updateDlcButton(currentAlbum);
     }
@@ -682,16 +690,23 @@ async function initMusicPlayer() {
     albumsData = await res.json();
 
     const allAlbum = albumsData.albums.find(album => album.id === "pz-all");
+    const allAlbum2 = albumsData.albums.find(album => album.id === "pz2-all");
     let totalTracksCount = allAlbum ? allAlbum.tracks.length : 0;
+    let totalTracksCount2 = allAlbum2 ? allAlbum2.tracks.length : 0;
+    let totalTracks = totalTracksCount + totalTracksCount2;
 
     const tracksCountEl = document.getElementById("tracks-count");
     if (tracksCountEl) {
-        tracksCountEl.textContent = totalTracksCount;
+        tracksCountEl.textContent = totalTracks;
     }
 
-    currentAlbumIndex = 0;
-    currentAlbum = albumsData.albums[0];
+    // Ustawienie domyślnego albumu po ID
+    currentAlbumIndex = getDefaultAlbumIndex();
+    currentAlbum = albumsData.albums[currentAlbumIndex];
     currentTrackIndex = 0;
+
+    // Automatyczna synchronizacja zakładki (gry) z domyślnym albumem
+    selectedGameFilter = currentAlbum.game || "pz1";
 
     const firstTrack = currentAlbum.tracks[0];
 
