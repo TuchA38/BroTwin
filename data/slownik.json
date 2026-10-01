@@ -595,6 +595,11 @@
         "definition": "Zjawisko występowania w ciele jednego osobnika jednocześnie męskich oraz żeńskich gruczołów rozrodczych albo występowanie w jego ciele gruczołu obojnaczego wytwarzającego jaja i plemniki.",
         "aliases": ["hermafrodytyczne", "hermafrodytyczny"]
     },
+    "hermetyczny": {
+        "title": "Hermetyczny",
+        "definition": "Trudno dostępny, zamknięty dla osób z zewnątrz lub przeznaczony wyłącznie dla wąskiej grupy osób. W odniesieniu do środowiska, grupy lub języka może oznaczać również ograniczoną zrozumiałość dla osób spoza danego środowiska.",
+        "aliases": ["hermetycznej"]
+    },
     "heroiczny": {
         "title": "Heroiczny",
         "definition": "Odznaczający się wyjątkową odwagą, poświęceniem lub gotowością do podejmowania trudnych działań w obliczu zagrożenia lub przeciwności. Określenie używane do opisywania czynów, postaw, zachowań lub wydarzeń kojarzących się z bohaterstwem.",
@@ -652,6 +657,11 @@
     "incognito": {
         "title": "Incognito",
         "definition": "W sposób ukrywający prawdziwą tożsamość, obecność lub cel działania. Określenie oznacza pozostawanie nierozpoznanym lub działanie w tajemnicy przed innymi osobami."
+    },
+    "infiltracja": {
+        "title": "Infiltracja",
+        "definition": "Stopniowe i często ukryte przenikanie do określonego miejsca, grupy, organizacji lub środowiska w celu uzyskania dostępu, informacji albo wpływu. Termin może również oznaczać przenikanie cieczy lub innych substancji przez materiał lub podłoże.",
+        "aliases": ["infiltrować"]
     },
     "infrastruktura": {
         "title": "Infrastruktura",
@@ -1729,6 +1739,11 @@
         "title": "Wyzysk",
         "definition": "Nadmierne, nieetyczne lub szkodliwe wykorzystywanie zwierząt lub zasobów przyrody przez człowieka, prowadzące do ich cierpienia.",
         "aliases": ["wyzyskiem"]
+    },
+    "wzgarda": {
+        "title": "Wzgarda",
+        "definition": "Silne lekceważenie, brak szacunku lub pogarda wobec osoby, grupy, zachowania albo wartości, często połączone z przekonaniem o ich niższości lub braku znaczenia.",
+        "aliases": ["wzgardę"]
     },
     "zakusy": {
         "title": "Zakusy",
