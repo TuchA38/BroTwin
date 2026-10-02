@@ -336,16 +336,46 @@
     {
         "id": "kendran-tycoon",
         "name": "Kendran Tycoon",
-        "version": ["pz1pc", "pz1console", "pz2"],
-        "role": "Opiekun",
-        "affiliation": "Myers Corp / Independent",
-        "status": "Aktywna",
+        "version": [
+            "pz1pc",
+            "pz1console",
+            "pz2"
+        ],
+        "role": "Właściciel Zoo",
+        "affiliation": "BroTwin Zoo",
+        "status": "Aktywny",
+        "motto": "Prawdziwa logistyka nie polega na kontrolowaniu świata, lecz na tworzeniu przestrzeni, w której może on swobodnie oddychać.",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787690863/Kendran_Tycoon_1_gddt5n.webp",
         "headerImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1787690863/Kendran_Tycoon_1_gddt5n.webp",
-        "description": "Córka [[dominic-myers|Dominica Myersa]], która dąży do zmiany filozofii firmy swojego ojca. Zależy jej na nowoczesnym podejściu do ochrony gatunków i zbalansowaniu celów finansowych z ideami [[bernie-goodwin|Berniego Goodwina]].",
-        "fullBio": "<b>O postaci</b><br>Emma wychowała się w świecie korporacyjnym, jednak jej pasją stała się ekologia i edukacja odwiedzających.<br><br><b>Rola w kampanii</b><br>Współpracuje z graczem w celu naprawy błędów popełnionych przez jej ojca w zarządzanych przez niego parkach.<br><br><b>Relacje</b><br>Córka [[dominic-myers|Dominica Myersa]], wzoruje się na etycznej pracy [[bernie-goodwin|Berniego Goodwina]] i [[nancy-jones|Nancy Jones]].",
-        "gallery": [
-            "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1783615845/emma_1.webp"
+        "about": "Kendran Tycoon to genialny strateg logistyczny, wizjonerski architekt krajobrazu oraz główny dyrektor zarządzający [[historia:brotwin-zoo|BroTwin Zoo]]. Jako syn założycielki ogrodu [[postacie:amiliana-empirejska|Amiliany Empirejskiej]], od najmłodszych lat dorastał w otoczeniu wielkiej pasji do świata przyrody, by z czasem przejąć stery nad rodzinnym dziedzictwem. Gdy dawna [[historia:magiotopia|Magiotopia]] zaczęła pękać w szwach, Kendran przeprowadził bezkompromisową, przestrzenną i inżynieryjną rewolucję. Zamiast burzyć tradycję, zoptymalizował każdy skrawek terenu, wdrażając ciche systemy transportowe, zautomatyzowane strefy serwisowe oraz nowoczesne wybiegi stawiające na najwyższy dobrostan zwierząt. Pod jego mądrym, pragmatycznym kierownictwem park przekształcił się w renomowany, światowej klasy ośrodek zoologiczny. Kendran słynie z niezwykłego opanowania, zmysłu wielotorowego planowania oraz unikalnej zdolności do godzenia komercyjnego sukcesu z etyczną ochroną zagrożonych gatunków.",
+        "relations": "Prywatnie Kendran jest synem wybitnej zoolog [[postacie:amiliana-empirejska|Amiliany Empirejskiej]], mężem odważnej badaczki terenowej [[postacie:roseliana-widlifowna|Roseliany Widlifownej]] oraz dumnym ojcem dorastającej [[postacie:nisa-planetarna|Nisy Planetarnej]], która pod jego okiem stawia pierwsze kroki w zarządzaniu parkiem. Jego ciotką i kluczową doradczynią weterynaryjną jest ceniona lekarka [[postacie:ethelien-mumba|Ethelien Mumba]]. W sprawach inżynieryjnych i technicznych bezgranicznie ufa głównemu technikowi [[postacie:mondo-zeller|Mondo Zellerowi]], z którym zrealizował najambitniejsze projekty architektoniczne, takie jak wielopiętrowe Gadarium czy ultracicha kolejka widokowa. Blisko współpracuje również z cichym zwiadowcą [[postacie:lorran-wonder|Lorranem Wonderem]], wspierając jego misje ratunkowe i przyjmując do zoo ocalone z nielegalnego handlu zwierzęta. W swojej działalności czerpie głęboką inspirację z etycznej pracy legendarnych opiekunów, na czele z [[postacie:bernard-goodwin|Berniem Goodwinem]].",
+        "memories": [{
+                "question": "Jak wyglądały kulisy przejęcia sterówi transformacja Magiotopii w BroTwin Zoo?",
+                "content": [
+                    "Przekształcenie dawnej [[historia:magiotopia|Magiotopii]] w nowoczesny park oraz przejęcie obowiązków po matce, [[postacie:amiliana-empirejska|Amilianie Empirejskiej]], wymusiło na Kendranie wdrożenie dojrzałej strategii. Zarządca tak wspomina moment decyzji i wsparcie ze strony żony [[postacie:roseliana-widlifowna|Roseliany Widlifownej]] oraz narodziny córki [[postacie:nisa-planetarna|Nisy Planetarnej]]:",
+                    "„Sama mama dała mi najpiękniejszą lekcję w życiu – pokazała, że prawdziwa miłość do zwierząt wymaga nie tylko wielkiego serca, ale też zimnej krwi w zarządzaniu. Kiedy po latach sukcesów nasza ukochana Magiotopia gromadziła blisko setkę gatunków i pękała w szwach, stało się jasne, że dotychczasowy model organizacyjny się wyczerpał. Przełomem było powitanie na świecie mojej córki, Nisy Planetarnej. Mama pragnęła z czystym sercem poświęcić się roli babci, a my z moją żoną Roselianą podjęliśmy decyzję o przeprowadzeniu głębokiej ewolucji parku.”",
+                    "Przebudowa wymagała śmiałych posunięć architektonicznych, reorganizacji logistycznej i bliskiego współdziałania z [[postacie:ethelien-mumba|Ethelien Mumbą]], co ostatecznie doprowadziło do narodzin [[historia:brotwin-zoo|BroTwin Zoo]]:",
+                    "„Nie chcieliśmy niszczyć ducha tego miejsca. Zachowaliśmy zabytkową bramę wejściową, ale wokół niej wznieśliśmy funkcjonalne centrum zarządzania z centralnym magazynem i siecią zautomatyzowanych punktów serwisowych. Zrezygnowałem z nierentownego safari i szlaku łódkowego, a ich flotę przekazałem personelowi technicznemu. Zreorganizowaliśmy wybiegi, przemieszczając drapieżniki do sterylnej kwarantanny pod opiekę cioci Ethelien, by wznieść nowoczesny Pawilon Insektów, Dom Hipopotama, nową Słoniarnię i wreszcie przekształcić park w słynne na cały świat BroTwin Zoo. To był logistyczny majstersztyk, który otworzył zupełnie nowy rozdział w naszej historii.”"
+                ]
+            },
+            {
+                "question": "Jak przebiegało rozwiązywanie wyzwań architektoniczno-transportowych oraz współpraca ze zgranym zespołem?",
+                "content": [
+                    "Osiągnięcie sukcesu wymagało przełomowych rozwiązań inżynieryjnych, w czym kluczową rolę odegrał główny mechanik [[postacie:mondo-zeller|Mondo Zeller]]. Kendran tak wspomina kulisy projektowania nowoczesnego transportu oraz optymalizacji terenu dawnej [[historia:magiotopia|Magiotopii]]:",
+                    "„Kluczem była ścisła współpraca z Mondo Zellerem. Zbudowaliśmy bezszelestną kolejkę widokową wokół parku – poprowadzenie torów bezpośrednio nad wybiegiem pand wielkich wymagało nowatorskiego wygłuszenia, ale zwierzęta przyjęły ją całkowicie bezstresowo. Podobnie było przy projektowaniu monumentalnego Gadarium, Domu Tygrysa czy wybiegu niedźwiedzi polarnych, który opierając się na badaniach behawioralnych zmniejszyliśmy o dwie trzecie względem dawnej Magiotopii. Architektura ma chronić naturę, a nie ją przytłaczać – dzięki tej precyzji zwierzęta poczuły się tak bezpiecznie, że doczekaliśmy się narodzin zdrowych bliźniąt.”",
+                    "Równie istotne dla rozwoju [[historia:brotwin-zoo|BroTwin Zoo]] okazało się jasne rozdzielenie zadań. Podczas gdy Kendran nadzorował budżet i infrastrukturę, jego żona [[postacie:roseliana-widlifowna|Roseliana Widlifowna]] połączyła siły ze zwiadowcą [[postacie:lorran-wonder|Lorranem Wonderem]], a ciotka [[postacie:ethelien-mumba|Ethelien Mumba]] objęła pieczę nad opieką weterynaryjną:",
+                    "„Tworzymy zgrany, wzajemnie uzupełniający się zespół. Podczas gdy ja czuwam nad logistyką na miejscu, Roseliana i Lorran Wonder sprowadzili do parku pierwsze tapiry malajskie, binturongi oraz unikalne zwierzęta ocalone z nielegalnego handlu. Lorran przekazał nam nawet swoją kolekcję złocistych statuetek jako symbol walki z kłusownictwem. Z kolei ciocia Ethelien stanęła na czele nowo utworzonego sztabu młodych weterynarzy. To pod jej czujnym okiem w nowej Słoniarni przyszło na świat afrykańskie słoniątko, a także małe pandy, orangutany i oryksy szablorogie, co przyniosło naszemu parkowi międzynarodowe uznanie.”"
+                ]
+            },
+            {
+                "question": "Dlaczego podjęto przełomową decyzję o otwarciu filii BroTwin Zoo?",
+                "content": [
+                    "Mimo maksymalnej optymalizacji terenu i dbałości o dobrostan zwierząt, główny obszar parku osiągnął granicę swojej pojemności. Kendran tak tłumaczy kulisy strategicznej decyzji o rozbudowie [[historia:brotwin-zoo|BroTwin Zoo]] o dwie nowe filie:",
+                    "„Mimo naszej perfekcyjnej optymalizacji terenu i stworzenia ostatecznych wybiegów dla leniwców czy foss, zderzyliśmy się z nieuniknioną granicą. Koszty operacyjne utrzymania tak gigantycznej populacji rzadkich zwierząt w jednym miejscu osiągnęły astronomiczną skalę, a chłonność obszaru w centralnym parku dobiegła końca. Nie chciałem dopuścić do oddawania podopiecznych ani do spadku jakości opieki. Przeanalizowałem koszty i podjąłem odważną decyzję: musimy utworzyć dwie dodatkowe filie BroTwin Zoo.”",
+                    "Plan wieloośrodkowej ekspansji poparła jego żona [[postacie:roseliana-widlifowna|Roseliana Widlifowna]], jednak kluczową nadzieją dla przyszłości parku stała się rosnąca rola ich córki, [[postacie:nisa-planetarna|Nisy Planetarnej]], dorastającej pod czujnym okiem babci [[postacie:amiliana-empirejska|Amiliany Empirejskiej]]:",
+                    "„Wizję tę gorąco poparła Roseliana, deklarując gotowość do poprowadzenia ekspansji na nowych obszarach. Największą dumą napawa mnie jednak nasza córka, Nisa Planetarna. Wychowana od dziecka w samym sercu parku pod czujnym okiem babci Amiliany, wsiąkła tą pasją do głębi. Dziś Nisa śmiało stawia pierwsze kroki w codziennym zarządzaniu, przejmuje kluczowe obowiązki i przygotowuje się do współkierowania naszym wieloośrodkowym imperium. Widząc jej entuzjazm i mądrość, wiem, że przyszłość BroTwin Zoo jest w najlepszych możliwych rękach.”"
+                ]
+            }
         ]
     },
     {
