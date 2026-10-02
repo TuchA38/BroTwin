@@ -398,6 +398,11 @@
         "definition": "Proces polegający na zwiększaniu zasięgu lub rozprzestrzenianiu się czegoś na określonym obszarze.",
         "aliases": ["ekspansji", "ekspansyjnych"]
     },
+    "ekspertyza": {
+        "title": "Ekspertyza",
+        "definition": "Specjalistyczna analiza, ocena lub opinia dotycząca określonego zagadnienia, wykonana przez osobę posiadającą odpowiednią wiedzę i doświadczenie. Ekspertyza ma na celu przedstawienie fachowych ustaleń, ocenę stanu czegoś lub pomoc w podjęciu decyzji.",
+        "aliases": ["ekspertyzę"]
+    },
     "ekstensywnie": {
         "title": "Ekstensywnie",
         "definition": "W sposób mało intensywny, oparty na zwiększaniu skali lub powierzchni, a nie nakładów czy zagęszczenia.",
@@ -1000,7 +1005,8 @@
     },
     "mikroklimat": {
         "title": "Mikroklimat",
-        "definition": "Warunki klimatyczne występujące na niewielkim, określonym obszarze, które mogą różnić się od warunków panujących w jego najbliższym otoczeniu. Na mikroklimat wpływają m.in. temperatura, wilgotność, nasłonecznienie, wiatr, ukształtowanie terenu oraz obecność roślinności i wody."
+        "definition": "Warunki klimatyczne występujące na niewielkim, określonym obszarze, które mogą różnić się od warunków panujących w jego najbliższym otoczeniu. Na mikroklimat wpływają m.in. temperatura, wilgotność, nasłonecznienie, wiatr, ukształtowanie terenu oraz obecność roślinności i wody.",
+        "aliases": ["mikroklimatu"]
     },
     "miot": {
         "title": "Miot",
@@ -1231,7 +1237,7 @@
     "pragmatyczny": {
         "title": "Pragmatyczny",
         "definition": "Kierujący się praktycznym podejściem i skupiający się przede wszystkim na tym, co jest możliwe do osiągnięcia oraz przynosi konkretne rezultaty, zamiast na samych teoriach lub idealnych założeniach.",
-        "aliases": ["pragmatyczne", "pragmatyzm"]
+        "aliases": ["pragmatyczne", "pragmatyzm", "pragmatycznym"]
     },
     "prestiz": {
         "title": "Prestiż",
