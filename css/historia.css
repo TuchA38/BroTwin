@@ -593,3 +593,10 @@
         /* Zmieniaj wartość % (np. 20%, 30%, 40%), aby idealnie obniżyć kadr */
     }
 }
+
+@media (min-width: 769px) {
+    .historia-zoo-card[data-zoo-id="brotwin-zoo"] .historia-zoo-hero {
+        background-position: center 55%;
+        /* Zmieniaj wartość % (np. 20%, 30%, 40%), aby idealnie obniżyć kadr */
+    }
+}
