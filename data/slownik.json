@@ -448,6 +448,11 @@
         "definition": "Zorganizowane i zwykle czasowe przemieszczanie ludzi, zwierząt lub mienia z miejsca zagrożonego do bezpiecznego obszaru. Może być przeprowadzana m.in. w przypadku pożaru, klęski żywiołowej, katastrofy lub innego zagrożenia.",
         "aliases": ["ewakuować", "ewakuowanych"]
     },
+    "ex–situ": {
+        "title": "Ex–situ",
+        "definition": "Określenie oznaczające „poza miejscem” lub „poza miejscem występowania”. Odnosi się do działań, projektów, obiektów albo organizmów przeniesionych lub znajdujących się poza ich naturalnym, pierwotnym albo przeznaczonym do tego miejscem.",
+        "aliases": ["ex–situ"]
+    },
     "fanaberia": {
         "title": "Fanaberia",
         "definition": "Nietypowy, często niepraktyczny lub przesadny pomysł, zachcianka albo wymaganie, wynikające bardziej z kaprysu niż z rzeczywistej potrzeby.",
@@ -692,6 +697,11 @@
         "title": "Inkubacja",
         "definition": "Wylęganie się piskląt/młodych zwierząt z jaj.",
         "aliases": ["inkubacji"]
+    },
+    "insitu": {
+        "title": "In–situ",
+        "definition": "Określenie oznaczające „na miejscu” lub „w miejscu występowania”. Odnosi się do działań, projektów, obiektów albo zjawisk realizowanych lub zachodzących bezpośrednio w ich naturalnym, pierwotnym albo przeznaczonym do tego miejscu.",
+        "aliases": ["in–situ"]
     },
     "instancja": {
         "title": "Instancja",

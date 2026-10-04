@@ -1,4 +1,91 @@
 [{
+        "id": "update2-beta-23",
+        "title": "Wywiad z ekspertem – dr Alexander Silwa z Cologne Zoo!",
+        "versionTag": "BETA",
+        "date": "4 października 2026",
+        "gameVersion": ["pz2"],
+        "intro": [
+            "Witajcie Zookeeperzy!",
+            "Mieliśmy okazję porozmawiać z <b>dr. Alexandrem Silwą</b>, kustoszem w {{link:CologneZoo}}, który opowiedział nam o działaniach na rzecz ochrony panter śnieżnych prowadzonych zarówno w ogrodzie zoologicznym, jak i w środowisku naturalnym.",
+            "Przejdźmy więc od razu do rzeczy!",
+            "<hr>",
+            "<h3>Wywiad z dr Alexandrem Silwą</h3>",
+            "<b>Czy mógłby Pan opowiedzieć nam trochę o sobie i o tym, czym się Pan zajmuje w Ogrodzie Zoologicznym w Kolonii?</b>",
+            "<i>„Od 19 lat pełnię funkcję kustosza w Cologne Zoo. Już przed przyjściem do tego zoo określałem się mianem specjalisty ds. kotów. Odpowiadam za opiekunów i zwierzęta, a także za całą komunikację z projektami in–situ w środowisku naturalnym, obejmującą zarówno koty, jak i afrykańskie ssaki w sekcji Hippodrome oraz zwierzęta z Ameryki Południowej.”</i>",
+            "<b>Dzisiaj zajmujemy się panterami śnieżnymi. Co możesz nam opowiedzieć o działaniach, jakie Ogród Zoologiczny w Kolonii prowadzi na rzecz panter śnieżnych w środowisku naturalnym?</b>",
+            "<i>„Głównie wspieramy organizację pozarządową o nazwie <b>Snow Leopard Trust</b> z siedzibą w Seattle w Stanach Zjednoczonych, która zajmuje się panterami śnieżnymi w Mongolii i wielu innych krajach. Prowadzi ona różnorodne badania, takie jak monitorowanie dzikich panter śnieżnych za pomocą GPS. Myślę, że w terenie pracuje z nimi od 3 do 5 osób. Organizacja angażuje również lokalną społeczność i bada zwierzęta stanowiące pożywienie panter śnieżnych, więc zakres ich działań jest naprawdę szeroki!<br>W zoo w Kolonii, oprócz hodowli naszych panter śnieżnych i ich prezentacji, prowadzimy również działania praktyczne. Nawiązaliśmy na przykład współpracę z organizacją <b>Snow Leopard Trust</b> w ramach pilotażowego badania z wykorzystaniem fotopułapek, mającego na celu rozpoznawanie poszczególnych osobników. Udało nam się faktycznie dostrzec wzór plam na łapach i ciele każdej pantery śnieżnej.<br>Ponadto, pełniąc tę funkcję, od 22 lat kieruję Grupą Specjalistów ds. Kotów przy Europejskim Stowarzyszeniu Ogrodów Zoologicznych i Akwariów (EAZA), więc nadzoruję wszystkie programy hodowlane dotyczące wszystkich kotów – od tygrysów, przez koty pustynne, aż po pantery śnieżne. Na naszych corocznych konferencjach zapewniam organizacjom zajmującym się ochroną przyrody możliwość zabrania głosu, dzięki czemu wiele osób może się z nich uczyć, a dzięki prezentacjom organizacji <b>Snow Leopard Trust</b> nawiązano wiele różnych kontaktów. Od dawna zajmuję się obserwacją i badaniami nad panterami śnieżnymi.”</i>",
+            "<b>Jeśli goście odwiedzają nas i chcą dowiedzieć się więcej o poszczególnych gatunkach, jakie działania prowadzicie również w terenie?</b>",
+            "<i>„Tak, zakres naszych działań jest bardzo szeroki.<br>Oczywiście pomagamy w edukacji ludzi, a następnie staramy się przekazać te informacje i chęć zrozumienia zespołom badawczym pracującym w środowisku naturalnym. Zasadniczo przekazujemy im plany, ale pomagamy im również w badaniach. W tym przypadku chodzi o pracę z fotopułapkami, którą prowadzimy. Bardzo dobrze jest łączyć te dwa aspekty – pracę in–situ w środowisku naturalnym oraz ex–situ w ogrodzie zoologicznym. W moim przypadku od ponad 30 lat kieruję programem dotyczącym kota czarnołapego i jestem światowym ekspertem w tej dziedzinie.<br>Następnie w zoo, jako kustosz, nadzoruję podstawowe sprawy, takie jak składanie zamówień, nadzorowanie opiekunów zwierząt, rozmowy z przełożonymi w sprawie funduszy, więc wszystko to stanowi dodatek do pracy nad projektem. Są to dwie bardzo różne role, które staramy się połączyć.”</i>",
+            "<b>Co najbardziej podoba Ci się w pracy z dużymi kotami? Dlaczego pracujesz z nimi już tak długo? Co w nich, a konkretnie w panterach śnieżnych, sprawia, że przeżywasz te naprawdę niesamowite chwile?</b>",
+            "<i>„To właściwie dość osobista więź. Od 26 lat pracuję jako kustosz w dwóch różnych ogrodach zoologicznych i zawsze miałem pod opieką pantery śnieżne. Nie było ani jednego dnia, w którym nie opiekowałbym się panterą śnieżną. Uważam, że są niesamowicie piękne i mają bardzo miłe usposobienie. Powiedziałbym nawet, że spośród wszystkich dużych kotów mają najłagodniejsze i najmilsze usposobienie. Podczas pracy z nimi nie są tak kapryśne jak lamparty czy lwy, więc praca z nimi jest naprawdę przyjemna.<br>Jest to również okazja do połączenia badań terenowych z pracą, którą wykonujemy tutaj w ogrodach zoologicznych, oraz do bliskich spotkań z naszymi panterami śnieżnymi – zarówno na widoku, w obecności odwiedzających, jak i za kulisami.”</i>",
+            "<b>Na koniec, czy mógłbyś nam opowiedzieć trochę o tym, jak wygląda Twoja praca polegająca na edukowaniu gości na temat tych niesamowitych zwierząt?</b>",
+            "<i>„Cóż, osobiście bywam dość zajęty, ale kilka razy w roku prowadzę wykłady, a także oprowadzam zwiedzających. Zawsze staram się przedstawić wszystkim, a zwłaszcza członkom stowarzyszenia „Przyjaciele Ogrodu Zoologicznego w Kolonii”, bardzo szczegółowy obraz tego, czym faktycznie zajmujemy się w odniesieniu do tych zwierząt. Mamy też naszych przewodników, którzy regularnie prowadzą wieczorne wycieczki, a nasze pantery śnieżne są wtedy bardzo aktywne.<br>Mamy tablice informacyjne, ale zaczęliśmy też nieco bardziej wykorzystywać technologie cyfrowe, więc mamy kody QR, dzięki którym ludzie mogą przeczytać o środowisku naturalnym panter śnieżnych oraz o tym, jak się nimi opiekujemy. Możemy uczyć ludzi o wzbogacaniu środowiska, na przykład o wzbogacaniu zapachowym dla panter śnieżnych: to naprawdę różnorodne zagadnienia!<br>Odpowiadam nawet na e-maile. Jeśli ktoś napisze do zoo e-mail dotyczący panter śnieżnych, odpowiadam. To bardzo szeroka współpraca z publicznością, ale jednocześnie bardzo specjalistyczna. Naukowcy czasami zadają pytania i proszą o próbki, zdjęcia oraz wszelkiego rodzaju materiały wspierające ich pracę!”</i>",
+            "<hr>",
+            "<h3>Odzwierciedlenie rzeczywistych działań na rzecz ochrony przyrody</h3>",
+            "Tworząc Planet Zoo 2, chcieliśmy zadbać o to, by odzwierciedlić działania na rzecz ochrony przyrody prowadzone w {{link:CologneZoo}} oraz w innych ogrodach zoologicznych na całym świecie.",
+            "Jak wspomnieliśmy w naszym {{update:update2-beta-19}} z serii <b>„Creature Feature”</b>, w Planet Zoo 2 można podjąć wiele działań na rzecz ochrony przyrody w swoich ogrodach zoologicznych, które naśladują pracę wykonywaną przez prawdziwych konserwatorów przyrody.",
+            "Jako opiekunowie zoo będziecie mogli organizować wycieczki i prelekcje z udziałem nauczycieli, a także instalować tablice informacyjne, głośniki, a nawet kamery internetowe, aby edukować swoich gości. Im lepiej wyedukowani są Wasi goście, tym więcej środków przekazują na Wasze działania na rzecz ochrony przyrody.",
+            "[[GIF:gif48]]",
+            "<hr>",
+            "<h3>Spacer po dzikiej stronie</h3>",
+            "Nasza przygoda z panterami śnieżnymi jeszcze się nie skończyła, bo mieliśmy też okazję zwiedzić Cologne Zoo wraz z kilkoma twórcami Planet Zoo 2!",
+            "Zobaczcie, jak zwiedzają Cologne Zoo i skorzystajcie z okazji, by z bliska przyjrzeć się środowisku życia panter śnieżnych.",
+            "[[VIDEO:trailer1]]",
+            "<hr>",
+            "Planet Zoo 2 można już zamawiać w przedsprzedaży na PC, PS5 i Xbox Series X|S. Dołączcie do dyskusji i bądźcie z nami w kontakcie na naszych mediach społecznościowych na {{link:facebook}}, {{link:x}}, {{link:instagram}}, {{link:tiktok}} oraz na serwerze {{link:discord}} „Frontier Unlocked”, zapiszcie się do naszego {{link:newsletter}} (aby otrzymać ekskluzywną nagrodę w grze w dniu premiery!) i zaglądajcie na naszą {{link:strona}}, by być na bieżąco z najświeższymi wiadomościami!"
+        ],
+        "videos": {
+            "trailer1": {
+                "url": "https://www.youtube.com/embed/4x5-DsSO-SE?rel=0&loop=1&playlist=4x5-DsSO-SE"
+            }
+        },
+        "gifs": {
+            "gif48": {
+                "url": "https://res.cloudinary.com/ddqbmcmoe/video/upload/v1788463103/Creature_Feature_Wildlife_Reserves_-_Planet_Zoo_2_4_mci8r1.mp4"
+            }
+        },
+        "related": {
+            "updates": [{
+                "id": "update2-beta-19",
+                "label": "artykule"
+            }]
+        },
+        "links": {
+            "CologneZoo": {
+                "url": "https://x.com/koelner_zoo",
+                "label": "Cologne Zoo"
+            },
+            "facebook": {
+                "url": "https://www.facebook.com/planetzoogame",
+                "label": "Facebooku"
+            },
+            "x": {
+                "url": "https://twitter.com/planetzoogame",
+                "label": "X"
+            },
+            "instagram": {
+                "url": "https://www.instagram.com/planetzoogame/",
+                "label": "Instagramie"
+            },
+            "tiktok": {
+                "url": "https://www.tiktok.com/@planetzoogame",
+                "label": "TikToku"
+            },
+            "discord": {
+                "url": "https://discord.com/invite/frontierunlocked",
+                "label": "Discord"
+            },
+            "strona": {
+                "url": "https://www.planetzoogame.com/",
+                "label": "stronę internetową"
+            },
+            "newsletter": {
+                "url": "https://www.planetzoogame.com/2/subscribe",
+                "label": "newslettera"
+            }
+        }
+    },
+    {
         "id": "update2-beta-22",
         "title": "Ostateczne ujawnienia Zoopedii!",
         "versionTag": "BETA",
