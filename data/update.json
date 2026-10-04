@@ -1,4 +1,223 @@
 [{
+        "id": "update2-beta-22",
+        "title": "Ostateczne ujawnienia Zoopedii!",
+        "versionTag": "BETA",
+        "date": "2 października 2026",
+        "gameVersion": ["pz2"],
+        "intro": [
+            "Witajcie Zookeeperzy!",
+            "Z wielką przyjemnością śledziliśmy Wasze domysły dotyczące zwierząt, które pojawią się w Planet Zoo 2, opublikowane w cotygodniowych zapowiedziach e-mailowych (dzięki, <b>George</b>!). Czy może być lepszy sposób na zakończenie tej przygody niż ostatnia wielka zagadka?",
+            "Dołączcie do nas i śledźcie uważnie wszystkie nasze kanały, gdzie w ramach <b>zwierzęcego bingo</b> ujawnimy ostatnie nowości w Planet Zoo 2!",
+            "[[IMAGE:1]]",
+            "<h3>Zostało jeszcze 12 zwierząt!</h3>",
+            "Wśród tych 12 gatunków znajdują się te, które pojawią się we wtorek w {{change-page-version:zoopedia|pz2|Zoopedii}} – są to ostatnie gatunki, które zostaną dodane do Zoopedii i będą dostępne, gdy 13 października rozpoczniecie swoją przygodę w jeszcze bardziej dzikim świecie Planet Zoo 2.",
+            "Bardzo nam się podobało, że razem z Wami spekulowaliśmy, podekscytowani i dyskutowaliśmy o tym, które gatunki pojawią się jako następne! Pełna lista gatunków w Planet Zoo 2 zostanie ujawniona, gdy ten obrazek zostanie ukończony, co oznacza, że otrzymacie kompletną listę, ZANIM dostaniecie klucze do swojego zoo.",
+            "Planet Zoo 2 będzie się z czasem rozrastać i nie możemy się doczekać, aby w przyszłości odkrywać z Wami kolejne zakątki świata oraz kolejne niesamowite gatunki.",
+            "<hr>",
+            "<h3>Bliższe spojrzenie</h3>",
+            "[[STACKEDIMAGES:zoopedia_1_pazdziernik26-stack]]",
+            "[[STACKEDIMAGES:zoopedia_2_pazdziernik26-stack]]",
+            "[[STACKEDIMAGES:zoopedia_3_pazdziernik26-stack]]"
+        ],
+        "images": {
+            "1": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117702/PZ2_Beta_120_f4dqqj.webp"
+        },
+        "stackedimages": {
+            "zoopedia_1_pazdziernik26-stack": {
+                "images": ["https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117870/PZ2_Beta_121_qynutg.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117885/PZ2_Beta_122_ds59fb.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117910/PZ2_Beta_123_sgz5md.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117926/PZ2_Beta_124_yzztv3.webp"]
+            },
+            "zoopedia_2_pazdziernik26-stack": {
+                "images": ["https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117939/PZ2_Beta_125_pmmeqk.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117954/PZ2_Beta_126_eq8hyc.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117969/PZ2_Beta_127_xdiuyb.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117981/PZ2_Beta_128_jppjjc.webp"]
+            },
+            "zoopedia_3_pazdziernik26-stack": {
+                "images": ["https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791117995/PZ2_Beta_129_oyg2ei.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791118013/PZ2_Beta_130_qeyjzb.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791118078/PZ2_Beta_131_umqbao.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791118091/PZ2_Beta_132_hr4glw.webp"]
+            }
+        }
+    },
+    {
+        "id": "update2-beta-21",
+        "title": "Za kulisami: Budowanie Zoo!",
+        "versionTag": "BETA",
+        "date": "1 października 2026",
+        "gameVersion": ["pz2"],
+        "intro": [
+            "Witajcie Zookeeperzy!",
+            "Wracamy z ostatnim wpisem z serii <b>„Za kulisami”</b> przed premierą Planet Zoo 2, która odbędzie się jeszcze w tym miesiącu, 13 października!",
+            "Tym razem dołączyli do nas artyści zajmujący się tworzeniem środowisk marketingowych, <b>Mel Cox</b> i <b>Josef Griffiths</b>, aby opowiedzieć nam, jak stworzyli ogrody zoologiczne, siedliska i rezerwaty dzikiej przyrody, które pojawiały się w materiałach marketingowych Planet Zoo 2 w ciągu ostatnich kilku miesięcy!",
+            "<hr>",
+            "<h3>Jak wygląda proces tworzenia ogrodu zoologicznego lub siedliska na potrzeby promocji Planet Zoo 2?</h3>",
+            "<b>Mel</b>: <i>„Tworzymy ogrody zoologiczne lub siedliska na potrzeby różnych filmów marketingowych i zrzutów ekranu, które zazwyczaj skupiają się na konkretnych zwierzętach lub elementach gry.<br>Wszystko zaczyna się od zestawu wytycznych, w którym określamy, co chcemy pokazać. Na przykład w przypadku naszego zwiastuna zapowiadającego grę chcieliśmy zaprezentować motyw „Wschód” i umieścić go na mapie przedstawiającej tropikalną Azję.”</i>",
+            "[[VIDEO:trailer1]]",
+            "<b>Josef</b>: <i>„Często zaczynamy od zwiastuna zapowiadającego grę i pokazujemy jeden lub dwa motywy osobno, aby gracze mogli poczuć przedsmak tego, czego mogą się spodziewać po grze. Pracujemy razem jako zespół, aby zdecydować, który motyw naszym zdaniem wzbudzi największe zainteresowanie oraz upewnić się, że elementy potrzebne do jego stworzenia są gotowe już na tym wczesnym etapie.<br>Trudno jest znaleźć właściwą równowagę, ponieważ trzeba przekazać zespołowi deweloperskiemu listę wszystkich potrzebnych elementów, zanim jeszcze zacznie się budować!<br>Właśnie dlatego etap planowania jest tak ważny, zanim jeszcze zaczniemy układać jakiekolwiek elementy, aby zapewnić, że wszystko przebiegnie sprawnie i efektywnie.”</i>",
+            "[[IMAGE:1]]",
+            "<b>Mel</b>: <i>„Organizujemy obszerne rozmowy z udziałem wszystkich osób zaangażowanych w realizację filmu, takich jak montażysta, grafik animacji, reżyser gry i menedżer ds. marketingu produktu. Podczas tych rozmów dzielimy się pomysłami i uzgadniamy ogólną wizję projektu.<br>Kiedy już zrozumiemy obrany kierunek, nadchodzi czas na rozpoczęcie pracy twórczej, a ta zawsze zaczyna się od stworzenia scenariusza obrazkowego. Rola projektanta zoo jest podobna do roli scenografa filmowego, dlatego musimy wiedzieć, co chcemy pokazać w każdym ujęciu, jakie oświetlenie preferujemy, jak mają przebiegać ruchy kamery, czy będą wykorzystywane animacje graficzne oraz czy na ekranie ma pojawiać się interfejs użytkownika gry.<br>Na tym etapie sporządzamy listę kontrolną zawierającą wszystko, co jest potrzebne w zoo.”</i>",
+            "<b>Josef</b>: <i>„Komunikacja stanowi ogromną część naszej pracy, a nasze projekty muszą zawsze być bardzo elastyczne i podatne na zmiany.<br>Nad poziomem, na którym zbudowano zoo w ramach zapowiedzi Planet Zoo 2, równolegle pracowały również zespoły programistów. Musieliśmy pozostawać w bardzo ścisłym kontakcie, ponieważ poziom, nad którym pracowaliśmy, podlegał ciągłym zmianom.”</i>",
+            "<b>Mel</b>: <i>„W miarę postępów prac nad scenariuszem graficznym projektant zoo zacznie gromadzić materiały referencyjne, opracowując wstępną koncepcję opartą na scenariuszu graficznym oraz tworząc papierowy plan proponowanego zoo.<br>Plan projektu zoo wraz z rysunkiem przedstawiającym jego układ jest następnie przedstawiany kierownikowi ds. marketingu produktu oraz dyrektorowi artystycznemu gry do oceny.”</i>",
+            "[[IMAGE:2]]",
+            "<b>Josef</b>: <i>„A potem zabieramy się do budowania!”</i>",
+            "<b>Mel</b>: <i>„Tworzenie motywu przewodniego i dekorowanie zoo to najlepsza część tego procesu, bo dzięki temu koncepcja naprawdę zaczyna ożywać. Układamy wszystkie elementy w scenerii, a także roślinność i skały, a potem po prostu zaczynamy eksperymentować, tworząc ciekawe projekty lub elementy dekoracyjne.<br>To właśnie na tym etapie spędzamy najwięcej czasu i zazwyczaj podczas budowania lubimy wyobrażać sobie, jak wyglądałoby to dla gościa, gdyby spacerował po zoo.<br>W miarę jak zoo nabiera kształtu, jest ono regularnie sprawdzane, aby upewnić się, że zachowana jest pierwotna wizja twórcza.”</i>",
+            "<hr>",
+            "<h3>Gdzie szukacie inspiracji?</h3>",
+            "<b>Mel</b>: <i>„Filmy z wycieczek po prawdziwych ogrodach zoologicznych i akwariach są fantastycznym źródłem inspiracji przy planowaniu układu, który chcemy stworzyć. Przyglądamy się temu, co zostało zaprojektowane z myślą o wrażeniach gości, gdy przechodzą przez wejście, zbliżają się do wybiegu lub przemieszczają się między różnymi 'strefami'.”</i>",
+            "<b>Josef</b>: <i>„Mieszkam dość blisko Chester Zoo i zazwyczaj odwiedzam je kilka razy w roku, więc robię mnóstwo zdjęć referencyjnych, bo to świetny przykład niesamowitego, różnorodnego ogrodu zoologicznego. Oglądam też zdjęcia zwierząt w ich naturalnych siedliskach, które staram się uwzględniać w moich projektach siedlisk i ogrodów zoologicznych.</i>",
+            "[[VIDEO:trailer2]]",
+            "<i>Na przykład w przypadku manatów zebrałem mnóstwo zdjęć referencyjnych z gorących źródeł na Florydzie i zaprojektowałem ich siedlisko tak, by przypominało ich naturalne środowisko, ale w celowo sztuczny i starannie zaaranżowany sposób.”</i>",
+            "<b>Mel</b>: <i>„Google Earth jest również niezwykle przydatne do zapoznawania się z obszarami zabudowanymi, takimi jak miasta, czy też obszarami o pięknie przyrodniczym, jak parki narodowe.”</i>",
+            "<b>Josef</b>: <i>„Wiele z naszych motywów czerpie również inspirację z wpływów kulturowych, dlatego lubię przyglądać się paletom kolorów i wzorom, które reprezentują tę część świata, którą przedstawiamy. W przypadku motywu „Południe” czerpaliśmy wiele inspiracji z kolorów widocznych na flagach tych regionów, pastelowych barw oraz niesamowitych ręcznie wykonanych dzieł z południowej Afryki.”</i>",
+            "<b>Mel</b>: <i>„Filmy przedstawiające proces budowy, tworzone przez społeczność Planet Zoo, to kolejne źródło inspiracji, z którego chętnie korzystamy, ponieważ jest to świetny sposób na zapoznanie się z pomysłami, o których być może wcześniej nie pomyśleliśmy.”</i>",
+            "<hr>",
+            "<h3>Czy przed rozpoczęciem pracy nad grą tworzycie jakieś „papierowe prototypy”?</h3>",
+            "<b>Mel</b>: <i>„Tak, rzeczywiście to robimy, nazywamy je projektami papierowymi. Nie stosowaliśmy tej metody podczas tworzenia ogrodów zoologicznych do oryginalnej gry Planet Zoo, zazwyczaj po prostu od razu zabieraliśmy się do pracy i zaczynaliśmy budować.<br>Robimy zdjęcie z lotu ptaka obszaru, na którym zamierzamy budować i rysujemy zgrubny plan ogrodu zoologicznego oraz siedlisk. Czasami nakładamy na niego zdjęcia referencyjne, aby lepiej wyobrazić sobie, jak będą wyglądać poszczególne obszary i czym się inspirowaliśmy.”</i>",
+            "[[SHORTIMAGE:1]]",
+            "<b>Josef</b>: <i>„W przypadku naszych większych projektów, takich jak zwiastun premierowy, poświęcamy sporo czasu na upewnienie się, że te szkice spełniają wszystkie wymagania dotyczące takich elementów, jak pożądane funkcje, ujęcia kamery, nowe elementy rozgrywki itp.”</i>",
+            "<b>Mel</b>: <i>„Współpracujemy również z głównym artystą koncepcyjnym.<br>Robimy zrzuty ekranu z obszarów, nad którymi pracujemy, aby je mu udostępnić, a on w zamian przerabia obraz, proponując dodatkowe pomysły, takie jak zalecana sceneria lub sposoby na dodanie większej ilości szczegółów do budynku.”</i>",
+            "[[STACKEDIMAGES:zakulisamipazdziernik26-stack]]",
+            "<hr>",
+            "<h3>Jak podchodzisz do tworzenia nowego ogrodu zoologicznego lub siedliska?</h3>",
+            "<b>Josef</b>: <i>„Zaczynam od przyjrzenia się obszarowi, na którym chciałbym pracować, a następnie wyznaczam granice siedliska. Zazwyczaj staram się uwzględniać naturalne bariery tam, gdzie to możliwe, takie jak woda oraz elementy, które maskują fizyczne bariery między gośćmi a zwierzętami.<br>Następnie zajmuję się większymi elementami, które zaplanowałem dla tego wybiegu. Na przykład w przypadku wybiegu dla hipopotamów najpierw tworzę odpowiednią objętość wody, aby dobrze wyczuć obszar, nad którym chcę pracować i zaplanować, jaką powierzchnię lądową należy uwzględnić.<br>Potem zazwyczaj przechodzę do mniejszej skali, zaczynając od większych elementów, takich jak drzewa, skały i bariery wybiegu, a następnie przechodząc do drobniejszych szczegółów, takich jak małe kamienie, gałęzie itp.</i>",
+            "[[IMAGE:3]]",
+            "<i>Lubię rozszerzać atmosferę siedlisk na otaczające je strefy dla zwiedzających, wykorzystując między innymi bardzo podobną roślinność oraz, tam gdzie to możliwe, zacierając granice siedlisk, tak aby sprawiało to wrażenie, jakby goście i zwierzęta dzielili tę samą przestrzeń.<br>Zbieram mnóstwo zdjęć referencyjnych przedstawiających naturalne siedliska zwierząt, aby zastanowić się, jak ukryć te bariery w sposób, który będzie pasował do środowiska zwierząt. Na przykład w przypadku manatów wykorzystuję takie elementy jak powalone drzewa lub brzegi rzeki, aby zasłonić przeszklone fragmenty, które w przeciwnym razie tworzyłyby bardzo sztuczną barierę.”</i>",
+            "<b>Mel</b>: <i>„Albo rysuję zgrubny układ ogrodu zoologicznego, wykorzystując malowanie terenu, albo, jeśli mam w głowie bardzo konkretną wizję, od razu zabieram się do pracy i pozwalam, by kierowała mną wyobraźnia.<br>Zasadniczo, pracując nad ogrodem zoologicznym lub siedliskiem, zawsze stosuję warstwy, więc zazwyczaj zaczynam od terenu i spłaszczam go do jednego poziomu, aby był równy.<br>Następnie przechodzę do tworzenia zgrubnego rozmieszczenia ścieżek, wyznaczając kilka podstawowych elementów, takich jak wejście, pierwsze siedlisko, strefa dla gości i strefa dla personelu. Korzystam również z opcji „ścieżka stemplowa”, aby wyznaczyć zgrubne przestrzenie, które chcę zabudować, na przykład mierząc powierzchnię podłogi budynku z akwarium wewnętrznym, który zamierzam stworzyć.</i>",
+            "[[IMAGE:4]]",
+            "<i>Lubię wykorzystywać strefę wejściową jako okazję do określenia stylu i ogólnej koncepcji artystycznej mojego zoo. Na przykład w zwiastunie rozgrywki przedstawiającym zoo osadzone na mapie sawanny południowej Afryki chciałam sprawdzić, jak za pomocą roślinności oddać charakter fynbosu unikalnego biomu krzewiastego występującego wyłącznie w RPA.<br>Następnie przechodzę do strefy dla gości. Lubię wyobrażać sobie to z perspektywy gościa przebywającego w zoo, więc staram się umieścić stoiska z jedzeniem i napojami w pobliżu wejścia dla gości. W miarę rozbudowy zoo rozważę stworzenie większej liczby niewielkich stref dla gości, aby zapewnić odpowiednie rozmieszczenie udogodnień, a nawet po prostu pięknych miejsc z widokiem na zoo.<br>Tak jak wokół ogrodu zoologicznego będzie wiele stref dla gości, tak samo powstanie wiele stref dla personelu, które pomogą w zarządzaniu różnorodnymi siedliskami. Obszary te zazwyczaj będą powstawać równolegle z tworzeniem samych siedlisk, ponieważ będę chciała mieć pewność, że w pobliżu znajduje się Budynek Dozorcy, z którego będzie można karmić zwierzęta.<br>Fajną cechą obiektów dla personelu w Planet Zoo 2 jest to, że nie mają one negatywnego wpływu na gości, a ponadto można zburzyć ściany, tworząc otwarte budynki. To urocze miejsce, w którym można pobawić się uroczymi elementami scenografii, takimi jak zegary, stosy książek i szafki, służące do dekoracji. W tych obiektach można tworzyć zabawne elementy opowiadające historię, które mogą odzwierciedlać dzień pracy pracownika w zoo, na przykład kubek obok stosu książek, które opiekun lubi czytać przy porannej kawie.<br>Kiedy zaczynam myśleć o moich siedliskach, zazwyczaj kontynuuję pracę nad ukształtowaniem terenu i siecią ścieżek, aby upewnić się, że układ zoo rozwija się zgodnie z moim planem.</i>",
+            "[[IMAGE:5]]",
+            "<i>Chcę, aby zoo płynnie przechodziło między poszczególnymi strefami, a także szukam możliwości wprowadzenia różnic wysokości. Być może umieszczę wejście i pierwszą strefę dla zwiedzających na jednym poziomie, a następnie zaprojektuję ścieżkę prowadzącą pod górę, aby dotrzeć do pierwszego wybiegu.<br>Dzięki temu będę miała możliwość stworzenia ładnego punktu widokowego z widokiem na strefę dla zwiedzających i wejście.”</i>",
+            "<hr>",
+            "<h3>Jakie są Twoje najważniejsze priorytety przy podejmowaniu się realizacji nowego projektu?</h3>",
+            "<b>Mel</b>: <i>„Projektując zoo, często najpierw skupiamy się na ogólnej koncepcji.<br>Określenie ogólnej koncepcji artystycznej ogrodu zoologicznego jest niezbędnym punktem wyjścia i w tym celu bierzemy pod uwagę takie czynniki, jak układ terenu, liczbę zwierząt oraz narrację ogrodu. Mamy tu na myśli to, czy chcemy, aby goście czuli się tak, jakby spacerowali po rezerwacie dzikiej przyrody w RPA? A może po tropikalnym lesie w Indonezji?<br>Zadawanie tych pytań to świetny sposób na zgłębienie potencjału Waszego ogrodu zoologicznego, a to z kolei wpłynie na to, jak chcecie go zaprojektować.<br>Rozpoczynając budowę, niezwykle przydatna może być świadomość tego, co stanowi główną atrakcję Waszego ogrodu zoologicznego. Na przykład piękne akwarium mogłoby pełnić rolę centralnego punktu, co wpłynęłoby na rozplanowanie linii widokowych. Gdy goście przemieszczają się po ogrodzie zoologicznym, mogliby napotykać różne punkty widokowe, które strategicznie kierują wzrok ku tej centralnej atrakcji.</i>",
+            "[[IMAGE:6]]",
+            "<i>Projektując wybiegi, skupiamy się raczej na perspektywie mikro w obrębie ogrodu zoologicznego, biorąc pod uwagę naturalne środowisko zwierząt, ich potrzeby związane z dobrostanem, punkty widzenia gości itp.”</i>",
+            "<b>Josef</b>: <i>„Jednym z moich najważniejszych priorytetów jest spełnienie wymagań każdego zwierzęcia, które prezentujemy.<br>Ochrona przyrody i dobrostan zwierząt mają dla nas ogromne znaczenie, dlatego chcemy pokazać zwierzęta tak szczęśliwe i wyraziste, jak to tylko możliwe!</i>",
+            "[[IMAGE:7]]",
+            "<i>Chcę, aby moje ogrody zoologiczne miały charakter fantazyjny i zabawny, ale były też edukacyjne i zawsze staram się to odzwierciedlić w środowisku naturalnym zwierząt oraz w strefach przeznaczonych dla zwiedzających. Usunięcie stałych barier między zwiedzającymi a zwierzętami jest dla mnie ogromnym priorytetem, aby pokazać, jak dzielimy ten sam świat z tymi niesamowitymi zwierzętami.”</i>",
+            "<hr>",
+            "<h3>Jakie nowe lub ulepszone narzędzia miały znaczący wpływ na ten proces w porównaniu z pierwotną wersją Planet Zoo?</h3>",
+            "<b>Josef</b>: <i>„Ulepszone tekstury terenu i pędzle z efektem mieszania całkowicie zmieniły zasady gry, jeśli chodzi o szybkie tworzenie siedlisk. Bardzo podobają mi się nowe pędzle trawy i dynamika, jaką wnoszą, są naprawdę niesamowite!”</i>",
+            "<b>Mel</b>: <i>„Z punktu widzenia naturalnej oprawy środowiskowej narzędzia do kształtowania terenu oraz pędzel natury okazały się niesamowitymi dodatkami do gry. Narzędzia do kształtowania terenu są teraz jeszcze potężniejsze i można je ustawić na bardzo duży rozmiar, aby pokryć rozległe obszary lub nawet na mały rozmiar, aby dopracować szczegóły. Okazało się to bardzo przydatne podczas tworzenia rezerwatów dzikiej przyrody i siedlisk.</i>",
+            "[[GIF:gif49]]",
+            "<i>Możliwość skalowania elementów scenerii i krajobrazu naturalnego to prawdziwy atut przy tworzeniu ogrodów zoologicznych i siedlisk. Szczególnie lubię korzystać z tej funkcji podczas projektowania donic i zmniejszania liści, dzięki czemu wszystko idealnie do siebie pasuje.”</i>",
+            "<b>Josef</b>: <i>„Pędzel środowiska świetnie sprawdza się również przy tworzeniu większych rezerwatów dzikiej przyrody i bardzo szybkim uzupełnianiu naszych ogrodów zoologicznych! Pozwala to skupić czas i wysiłek na najbardziej widocznych obszarach ogrodu zoologicznego.”</i>",
+            "[[IMAGE:8]]",
+            "<b>Mel</b>: <i>„Pędzel środowiska całkowicie zmienił zasady gry, zwłaszcza gdy chce się wypełnić obszar roślinnością. Można stworzyć własny, spersonalizowany pędzel z wybranymi elementami roślinności, a podczas malowania każda roślina pozostaje oddzielnym elementem scenerii, który można zaznaczyć i przesuwać.<br>Praca z nowym systemem ścieżek również przebiega jak marzenie, a tworzenie dużych placów lub różnorodnych stylów i kolorów nigdy nie było łatwiejsze. Narzędzie „stempel” jest dostępne w wielu kształtach i rozmiarach, dzięki czemu można nim wytyczać ścieżki oraz wycinać ciekawe kształty na dużych placach, aby na przykład zrobić miejsce na ogrody.”</i>",
+            "<hr>",
+            "<h3>Jakie jest Twoje ulubione narzędzie lub funkcja w Planet Zoo 2?</h3>",
+            "<b>Josef</b>: <i>„Nowe tekstury krajobrazu są po prostu przepiękne i praca z nimi to czysta przyjemność, to mój numer jeden!”</i>",
+            "[[IMAGE:9]]",
+            "<b>Mel</b>: <i>„Pędzel wyrównania do podłoża to mój najlepszy przyjaciel. Uważam, że świetnie sprawdza się podczas pracy nad wyniosłymi obszarami w połączeniu z narzędziem stempel.<br>Często używam kostki i piramidy, aby stworzyć zgrubny kształt 'góry', a następnie długimi pociągnięciami pędzlem wyrównania do podłoża tworzę grzbiety wzdłuż boków. Zmniejszając intensywność, mogę następnie wygładzić niektóre ostre krawędzie, a nawet stworzyć płaskie płaskowyże.<br>Świetna jest też możliwość edycji terenu w zbiorniku wodnym po umieszczeniu wody. Korzystam z tego regularnie przy tworzeniu siedlisk lub dekoracyjnych rzek i jezior w zoo.”</i>",
+            "[[GIF:gif50]]",
+            "<hr>",
+            "<h3>W jaki sposób weryfikujecie i udoskonalacie swoją realizację w trakcie tego procesu?</h3>",
+            "<b>Mel</b>: <i>„Naszym przewodnikiem podczas tego procesu jest zawsze nasz scenariusz obrazkowy i plan zagospodarowania terenu.<br>Scenorys jest naszym najważniejszym narzędziem, które prowadzi nas przez cały proces od początku do końca, ponieważ określa on scenę i ustala, co musimy zbudować. Nieustannie odwołujemy się do ujęć w nim nakreślonych, aby upewnić się, że tworzymy odpowiednie obszary do kręcenia, oraz porównujemy kierunek artystyczny z planem zoo, aby upewnić się, że nie zboczyliśmy z naszej wizji twórczej.</i>",
+            "[[SHORTIMAGE:2]]",
+            "<i>Omawiamy również postępy w pracach nad ogrodami zoologicznymi wraz z dyrektorem artystycznym, artystami koncepcyjnymi i menedżerem ds. marketingu produktów, aby mieć pewność, że uwzględniliśmy wszystkie niezbędne elementy.<br>Są to doskonałe przestrzenie, w których przydaje się świeże spojrzenie, a podczas oceny danej przestrzeni dosłownie spacerujemy po ogrodzie zoologicznym lub siedlisku.”</i>",
+            "<hr>",
+            "<h3>W jaki sposób te ogrody zoologiczne lub siedliska stają się filmem marketingowym?</h3>",
+            "<b>Mel</b>: <i>„Weźmy za przykład filmy z serii <b>„Animal Spotlight”</b>, bo ich tworzenie sprawiło nam naprawdę dużo radości.<br>Chcieliśmy stworzyć serię skupiającą się na różnych zwierzętach w stylu zbliżonym do filmu dokumentalnego, prezentującą ich unikalne zachowania, pokazującą je w ciekawych lokalizacjach i opatrzoną narracją lektorską.<br>Zaczęliśmy od napisania scenariuszy narracji lektorskiej, aby nadać ton całej serii i ostatecznie ukierunkować tworzenie scenariuszy obrazkowych.</i>",
+            "[[SHORTIMAGE:3]]",
+            "<i>Po sfinalizowaniu scenariusza i scenorysu wykorzystuje się je do określenia środowiska naturalnego i/lub rezerwatu dzikiej przyrody, które były potrzebne do realizacji ujęcia.”</i>",
+            "<b>Josef</b>: <i>„Zazwyczaj podczas tworzenia scenorysu przygotowujemy coś bardzo prostego i szybkiego, aby sprawdzić, czy koncepcja się sprawdza, a następnie, w miarę przechodzenia przez kolejne etapy zbierania opinii na temat zwiastunów, dostosowujemy i modyfikujemy projekt, aby spełnić wszystkie wymagania i naprawdę uchwycić to, co nasi gracze chcieliby zobaczyć!”</i>",
+            "<b>Mel</b>: <i>„Siedlisko to mniejszy, bardziej zamknięty obszar do kręcenia i choć z punktu widzenia budowy pozwala to na szybsze przygotowanie, trzeba zwrócić większą uwagę na szczegóły i ogólny układ projektu, ponieważ wszystko znajduje się bliżej kamery.<br>Początkowe ujęcia filmów z serii <b>„Animal Spotlight”</b> były często aranżowane pod kątem bardzo konkretnych ujęć kamery. Ponieważ miały one naprawdę przyciągać wzrok, lepiej sprawdza się praca z jednej perspektywy, ustalamy pozycję kamery i dodajemy scenerię, mając na uwadze techniki kompozycyjne, takie jak zasada trójpodziału czy linie prowadzące.</i>",
+            "[[VIDEO:trailer3]]",
+            "<i>Podczas tworzenia pozostałej części wybiegu w dużym stopniu kierujemy się scenariuszem. Jako konstruktorzy musimy nie tylko zadbać o estetyczny wygląd sceny, ale także o jej funkcjonalność z punktu widzenia zwierzęcia i jego zachowań, co wiąże się z testowaniem budowanych elementów, aby upewnić się, że spełniają one potrzeby zwierzęcia.<br>Gdy siedlisko, a nawet całe zoo, jest gotowe, można przystąpić do kręcenia ujęć, które następnie trafiają do montażu. W trakcie tego procesu konstruktor pomaga w dopracowaniu elementów scenografii pod kątem ujęć, a czasem nawet przeprojektowuje przestrzenie, aby lepiej pasowały do kadru. Następnie montażysta składa materiał marketingowy w ostateczny produkt.”</i>",
+            "<hr>",
+            "<h3>Czym różni się proces tworzenia zoo lub siedliska na potrzeby marketingu od tego, co zazwyczaj robi gracz?</h3>",
+            "<b>Josef</b>: <i>„Gracze otrzymują wszystkie elementy gotowe prosto z pudła!<br>Ponieważ tworzymy je w trakcie aktywnego rozwoju gry, musimy pozostawać w stałym kontakcie z zespołem deweloperskim w sprawie gotowości zasobów gry. Praktycznie wszystko może ulec zmianie w trakcie tworzenia naszych zoo i musimy zawsze wykazywać się ogromną elastycznością, aby w razie potrzeby wprowadzać zmiany.”</i>",
+            "<b>Mel</b>: <i>„Będziemy tworzyć coś, co nazywamy 'pięknymi zakątkami'. Są to mniejsze przestrzenie, które często są zaaranżowane pod kątem konkretnego ujęcia kamery, a patrząc na nie z innej perspektywy, mogą wyglądać dość dziwacznie.”</i>",
+            "[[IMAGE:10]]",
+            "<b>Josef</b>: <i>„Musimy też wziąć pod uwagę takie kwestie, jak wybór ujęć do zwiastunów oraz wielokrotne wykorzystanie tego samego materiału w różnych filmach marketingowych.<br>Kompozycja musi sprawdzać się w wielu różnych filmach, więc poświęcamy sporo czasu na ustalenie ujęć, które będą pasowały do wszystkich naszych zwiastunów i zrzutów ekranu.<br>To spore wyzwanie i wymaga komunikacji między działami, żeby wszystko wyszło jak należy. To proces oparty w ogromnym stopniu na współpracy!”</i>",
+            "<hr>",
+            "<h3>Jakie to uczucie widzieć swoje dzieła w naszych materiałach marketingowych?</h3>",
+            "<b>Mel</b>: <i>„To jedno z najwspanialszych uczuć na świecie, widzieć coś, w co włożyło się tyle czasu i wysiłku. Kiedy materiały trafiają do sieci, najbardziej lubię czytać komentarze i dowiadywać się, co gracze o tym myślą i co ich najbardziej ekscytuje.<br>Jako artystka, która jest pasjonatką Planet Zoo 2, nie mogę oprzeć się wrażeniu, że we wszystkim, co tworzę, jest cząstka mnie, a kiedy widzę reakcje na film, daje mi to ogromną motywację, by dalej próbować tworzyć jeszcze fajniejsze rzeczy.”</i>",
+            "<b>Josef</b>: <i>„To absolutnie niesamowite. Uwielbiam patrzeć, jak nasi gracze są podekscytowani i nie mogą się doczekać, by zagrać w nasze gry.<br>We wszystkim, co robię, wkładam całe serce i chcę oddać sprawiedliwość naszemu niesamowitemu zespołowi deweloperskiemu, prezentując nasze gry w jak najlepszy możliwy sposób! Cały zespół Planet Zoo 2 jest niezwykle zaangażowany i bardzo zależy mu na tej grze.”</i>",
+            "[[VIDEO:trailer4]]",
+            "<b>Mel</b>: <i>„Najbardziej podobał mi się moment, kiedy zobaczyłam, że zrzuty ekranu, które zrobiłam dla tygrysa sumatrzańskiego i hipopotama, pojawiły się w magazynie „PC Gamer”. To świetne przykłady scen zaaranżowanych specjalnie pod kątem ujęcia kamery.</i>",
+            "[[IMAGE:11]]",
+            "<i>I wreszcie, możliwość obejrzenia filmów z serii <b>„Animal Spotlight”</b>. To były filmy, o których tworzeniu zawsze marzyłam przy okazji oryginalnej gry Planet Zoo, a marzenie to stało się rzeczywistością, gdy mogłam pracować nad nimi przy Planet Zoo 2!<br>Nie tylko brałam udział w tworzeniu siedlisk dla tych zwierząt, ale także napisałam scenariusz narracji do wszystkich odcinków, a także nakręciłam i zmontowałam pierwsze trzy odcinki.<br>Praca nad czymś, co kocham i co jest moją pasją, nigdy nie przestaje sprawiać mi ogromnej radości.”</i>",
+            "<hr>",
+            "<h3>Tworzenie bardziej dzikiego świata</h3>",
+            "Ogromne podziękowania dla Mel i Josef'a za to spojrzenie za kulisy!",
+            "Cały zespół Planet Zoo 2 w Frontier podchodzi do tej gry z ogromną pasją i z wielką przyjemnością dzieliliśmy się z Wami szczegółowymi informacjami na temat tego, jak powstawała gra, w ramach serii <b>„Za kulisami”</b>.",
+            "To nie ostatnia wiadomość od Mel i Josef'a! Po premierze gry ponownie pojawią się na stronach serwisu Planet Zoo 2, dzieląc się z Wami wskazówkami przydatnymi podczas tworzenia własnych ogrodów zoologicznych.",
+            "<hr>",
+            "Planet Zoo 2 można już zamawiać w przedsprzedaży na PC, PS5 i Xbox Series X|S. Dołączcie do dyskusji i bądźcie z nami w kontakcie na naszych mediach społecznościowych na {{link:facebook}}, {{link:x}}, {{link:instagram}}, {{link:tiktok}} oraz na serwerze {{link:discord}} „Frontier Unlocked”, zapiszcie się do naszego {{link:newsletter}} (aby otrzymać ekskluzywną nagrodę w grze w dniu premiery!) i zaglądajcie na naszą {{link:strona}}, by być na bieżąco z najświeższymi wiadomościami!"
+        ],
+        "images": {
+            "1": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791106846/PZ2_Beta_104_nnjyae.webp",
+            "2": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791107316/PZ2_Beta_105_kmfjgh.webp",
+            "3": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791108412/PZ2_Beta_109_atolze.webp",
+            "4": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791109694/PZ2_Beta_110_uz7qrg.webp",
+            "5": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791110524/PZ2_Beta_111_fpwpwo.webp",
+            "6": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791111520/PZ2_Beta_112_bkqz6a.webp",
+            "7": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791112945/PZ2_Beta_113_blqyns.webp",
+            "8": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791113471/PZ2_Beta_114_iba96j.webp",
+            "9": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791114739/PZ2_Beta_115_icmt9n.webp",
+            "10": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791115873/PZ2_Beta_118_hn7dcw.webp",
+            "11": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791116353/PZ2_Beta_119_hkhznv.webp"
+        },
+        "shortimages": {
+            "1": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791107317/PZ2_Beta_106_qpp2va.webp",
+            "2": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791114758/PZ2_Beta_116_giedzc.webp",
+            "3": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791114782/PZ2_Beta_117_lhmxg1.webp"
+        },
+        "stackedimages": {
+            "zakulisamipazdziernik26-stack": {
+                "images": ["https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791107324/PZ2_Beta_107_nqu0s2.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791107330/PZ2_Beta_108_dbcono.webp"]
+            }
+        },
+        "videos": {
+            "trailer1": {
+                "url": "https://www.youtube.com/embed/Lbn-TRYc0wE?rel=0&loop=1&playlist=Lbn-TRYc0wE"
+            },
+            "trailer2": {
+                "url": "https://www.youtube.com/embed/Z4vGnQ6UACY?rel=0&loop=1&playlist=Z4vGnQ6UACY"
+            },
+            "trailer3": {
+                "url": "https://www.youtube.com/embed/JkPHS25Fo_I?rel=0&loop=1&playlist=JkPHS25Fo_I"
+            },
+            "trailer4": {
+                "url": "https://www.youtube.com/embed/tCYOuqyuMcg?rel=0&loop=1&playlist=tCYOuqyuMcg"
+            }
+        },
+        "gifs": {
+            "gif49": {
+                "url": "https://res.cloudinary.com/ddqbmcmoe/video/upload/v1791106491/Behind_the_Scenes_Building_Zoos_-_Planet_Zoo_2_1_qmznno.mp4"
+            },
+            "gif50": {
+                "url": "https://res.cloudinary.com/ddqbmcmoe/video/upload/v1791106500/Behind_the_Scenes_Building_Zoos_-_Planet_Zoo_2_2_iizsua.mp4"
+            }
+        },
+        "links": {
+            "facebook": {
+                "url": "https://www.facebook.com/planetzoogame",
+                "label": "Facebooku"
+            },
+            "x": {
+                "url": "https://twitter.com/planetzoogame",
+                "label": "X"
+            },
+            "instagram": {
+                "url": "https://www.instagram.com/planetzoogame/",
+                "label": "Instagramie"
+            },
+            "tiktok": {
+                "url": "https://www.tiktok.com/@planetzoogame",
+                "label": "TikToku"
+            },
+            "discord": {
+                "url": "https://discord.com/invite/frontierunlocked",
+                "label": "Discord"
+            },
+            "strona": {
+                "url": "https://www.planetzoogame.com/",
+                "label": "stronę internetową"
+            },
+            "newsletter": {
+                "url": "https://www.planetzoogame.com/2/subscribe",
+                "label": "newslettera"
+            }
+        }
+    },
+    {
         "id": "update2-beta-20",
         "title": "Wrześniowe nadrabianie zaległości!",
         "versionTag": "BETA",
@@ -78,7 +297,7 @@
                 "images": ["https://res.cloudinary.com/ddqbmcmoe/image/upload/v1788477140/PZ2_Beta_78_klkr8o.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789821408/PZ2_Beta_97_tiuctj.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789821414/PZ2_Beta_98_biv1er.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1790671338/PZ2_Beta_99_w5bmtf.webp"]
             },
             "wrzesien26_2-stack": {
-                "images": ["https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789326396/PZ2_Beta_90_hqtje8.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789069512/PZ2_Beta_87_w45axi.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789326358/PZ2_Beta_89_jtgysg.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789069504/PZ2_Beta_86_sz9jxc.webp"]
+                "images": ["https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789326396/PZ2_Beta_90_hqtje8.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789326358/PZ2_Beta_89_jtgysg.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789069512/PZ2_Beta_87_w45axi.webp", "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1789069504/PZ2_Beta_86_sz9jxc.webp"]
             }
         },
         "videos": {
@@ -15581,8 +15800,8 @@
             "„Kto tam?” zawołała Lumi, po czym rozejrzała się i westchnęła cicho, bo tam, przycupnięte przy omszałym pniu drzewa, było stworzenie, którego Lumi nigdy wcześniej nie widziała, z ciemnym, smukłym ciałem i dużymi, wyrazistymi oczami.",
             "„No, witaj kotku!” powiedziało stworzenie.",
             "„Witam!!! Jak dobrze mieć gościa w lesie! Tak dawno nie miałam towarzystwa!” wykrzyknęła Lumi, zajmując miejsce przy ognisku.",
-            "„Och, mogę sobie wyobrazić, wydaje się, że jest to bardzo spokojne miejsce, które można nazwać domem.”. Powiedziała jej towarzyszka.",
-            "„Tak jest! Chciałabym wypełnić je muzyką, ale niestety nie mam przyjaciół, z którymi mogłabym grać melodie...”.",
+            "„Och, mogę sobie wyobrazić, wydaje się, że jest to bardzo spokojne miejsce, które można nazwać domem.” Powiedziała jej towarzyszka.",
+            "„Tak jest! Chciałabym wypełnić je muzyką, ale niestety nie mam przyjaciół, z którymi mogłabym grać melodie...”",
             "„Mogę sobie tylko wyobrazić! Sama nie gram, ale jeśli byłabyś taka miła, z przyjemnością posłucham twojej melodii, nowa przyjaciółko!” I tak Lumi zagrała na swojej trąbce dla gościa, który tańczył do wesołej melodii, a po jej zakończeniu entuzjastycznie klaskał, nazywając melodię „wspaniałą”.",
             "„Dziękuję bardzo”, powiedziała Lumi, „chciałabym mieć przyjaciół, z którymi mogłabym grać!”. Jej gość patrzył na nią przez chwilę zamyślony.",
             "„Jeśli tego pragniesz bardziej niż czegokolwiek innego, musisz udać się na Most Życzeń!”, oświadczyła istota, zanim zauważyła zdezorientowany wyraz Lumi i zdecydowała, że dalsze wyjaśnienia mogą być potrzebne. „Most Życzeń to magiczny most na południu, który spełnia jedno życzenie każdego, kto wrzuci z niego mosiężną monetę do rzeki! To długa podróż, ale z pewnością warto ją odbyć, aby spełnić swoje życzenie!”.",

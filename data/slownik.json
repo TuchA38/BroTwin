@@ -524,6 +524,11 @@
         "title": "Futurystyczny",
         "definition": "Nawiązujący do przyszłości, nowoczesnych technologii oraz wyobrażeń o tym, jak mogą wyglądać świat, architektura, pojazdy lub przedmioty w przyszłości. Określenie często opisuje nietypowy, nowoczesny i wyprzedzający swoje czasy wygląd lub charakter."
     },
+    "fynbos": {
+        "title": "Fynbos",
+        "definition": "Typ roślinności charakterystyczny dla południowo-zachodniej części Republiki Południowej Afryki, szczególnie regionu Kraju Przylądkowego. Tworzą go głównie niskie krzewy, trawy i rośliny zielne przystosowane do suchego klimatu oraz częstych pożarów.",
+        "aliases": ["fynbosu"]
+    },
     "gawra": {
         "title": "Gawra",
         "definition": "Zimowe legowisko niedźwiedzi, jaskinia w miejscu niedostępnym i ukrytym. Jest to też miejsce, w którym na świat przychodzą młode niedźwiedzie.",
@@ -1420,6 +1425,11 @@
         "definition": "Celowe działanie mające na celu utrudnienie, zakłócenie lub uniemożliwienie prawidłowego funkcjonowania określonej osoby, organizacji, systemu lub przedsięwzięcia, często poprzez uszkadzanie mienia, sprzętu albo innych elementów.",
         "aliases": ["sabotażem"]
     },
+    "scenorys": {
+        "title": "Scenorys",
+        "definition": "Plan przedstawiający kolejność i sposób realizacji poszczególnych scen lub ujęć, najczęściej w formie rysunków, opisów albo ich połączenia. Służy do zaplanowania przebiegu filmu, animacji, reklamy, przedstawienia lub innego materiału wizualnego.",
+        "aliases": ["scenorysu"]
+    },
     "sceptycyzm": {
         "title": "Sceptycyzm",
         "definition": "Postawa polegająca na powątpiewaniu w prawdziwość, skuteczność lub wartość czegoś oraz na ostrożnym podchodzeniu do nowych informacji, pomysłów lub osób.",
@@ -1458,7 +1468,7 @@
     "skalowanie": {
         "title": "Skalowanie",
         "definition": "Zmiana skali, rozmiaru lub proporcji obiektu, modelu albo elementu, dostosowując go do określonych wymagań lub warunków.",
-        "aliases": ["skalować", "przeskalowano", "skalowaniem", "skalowaniu"]
+        "aliases": ["skalować", "przeskalowano", "skalowaniem", "skalowaniu", "skalowania"]
     },
     "sklepieniejaskini": {
         "title": "Sklepienie jaskini",
@@ -1526,7 +1536,7 @@
     "stemplowanie": {
         "title": "Stemplowanie",
         "definition": "Technika modyfikowania powierzchni poprzez nakładanie na nią gotowych wzorów lub kształtów za pomocą specjalnego narzędzia. Oznacza sposób kształtowania terenu przez odciskanie na nim wybranych form i struktur.",
-        "aliases": ["stemplowania", "stemple"]
+        "aliases": ["stemplowania", "stemple", "stemplowa", "stempel"]
     },
     "stulac": {
         "title": "Stulać",
