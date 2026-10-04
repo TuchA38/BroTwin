@@ -1929,9 +1929,102 @@
         "fullBio": "Hej! Wracasz w samą porę, żeby zająć się nowym projektem w leśnych ostępach Transylwanii. Poprzedni właściciel tego zoo zostawił je w dość opłakanym stanie, ale na pewno bez trudu uda Ci się przywrócić je do dawnej świetności, prawda?",
         "description": "[[postacie:nancy-jones|Nancy]] wita Cię ponownie i po uknutym z [[postacie:emma-goodwin|Emmą]] upadku [[postacie:dominic-myers|Dominica Myersa]] proponuje wspólne prowadzenie nowych azylów dla zwierząt, zaczynając od przejęcia i posprzątania dawnej, zaniedbanej placówki należącej wcześniej do [[postacie:dominic-myers|Myersa]]. Pod jej czujnym okiem radzisz sobie z wyzwaniami, przygotowujesz bezpieczny wybieg i dom dla uratowanego przed nieodpowiedzialną bogatą dziewczyną ([[postacie:tiffany-summers|Tiffany]]) zagrożonego niedźwiedzia brunatnego himalajskiego, a także radzisz sobie z oblężeniem reporterów. Mimo że zapowiadane na początku ciastko okazało się blefem, dzięki Twojej świetnej pracy azyl wspaniale prosperuje, a [[postacie:nancy-jones|Nancy]] doprowadza do tego, że [[postacie:tiffany-summers|Tiffany]] zgadza się odbyć wkrótce edukacyjny staż u Twojego boku.",
         "objectives": {
-            "bronze": [],
-            "silver": [],
-            "gold": []
+            "bronze": [{
+                    "title": "Złap wszystkie zbiegłe zwierzęta"
+                },
+                {
+                    "title": "Zatrudnij 4 pracowników"
+                },
+                {
+                    "title": "Uzyskaj w zoo przynajmniej 1 norę"
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 3",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 60%"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Rudawiec nilowy: 5"
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 350 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                    ]
+                }
+            ],
+            "silver": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu: Niedźwiedź brunatny himalajski (1)",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Doprowadź badania w dziedzinie Niedźwiedź brunatny himalajski do poziomu 4"
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 7",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 70%"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków w ekspozycjach w zoo: 4"
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 1 100 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                    ]
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Zadowolenie gości do 40%",
+                    "tasks": [
+                        "Zbierz w zoo co najmniej 1 100 gości"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj w zoo co najmniej następującą liczbę kamer na wybiegach: 4"
+                }
+            ],
+            "gold": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 12",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 80%"
+                    ]
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 1 900 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                    ]
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Zadowolenie gości do 60%",
+                    "tasks": [
+                        "Zbierz w zoo co najmniej 1 900 gości"
+                    ]
+                },
+                {
+                    "title": "Utrzymaj przestępczość poniżej 8",
+                    "tasks": [
+                        "Na czas wizyty reportera"
+                    ]
+                },
+                {
+                    "title": "Zapewnij zasilanie wszystkich obiektów w zoo energią odnawialną"
+                },
+                {
+                    "title": "Wyhoduj: Niedźwiedź brunatny himalajski (6)"
+                },
+                {
+                    "title": "Zbuduj atrakcję transportową Gondola podwieszana: 700 m"
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji do 2,0 gwiazdek"
+                }
+            ]
         }
     },
     {
@@ -1956,9 +2049,87 @@
         "fullBio": "Rezerwat Edukacyjny Purmamarca to niewielki ośrodek pomagający zwierzętom wrócić do zdrowia. Poświęcamy tu także dużo czasu na edukację zarówno uczniów, jak i odwiedzających, ale nasza najnowsza stażystka zdaje się wymagać wyjątkowo dużo pracy... Z drugiej strony czym byłoby życie bez niewielkich wyzwań, prawda?",
         "description": "Bogata i rozpuszczona [[postacie:tiffany-summers|Tiffany]] rozpoczyna w zoo swój sądowy staż edukacyjny, pożyczając placówce część swoich egzotycznych zwierząt przyzwyczajonych do luksusów. Choć początkowo jest arogancka i uważa, że wszystko wie lepiej, z czasem pod Twoim okiem przechodzi realną metamorfozę, zyskując sympatię w social mediach i autentyczną troskę o los zagrożonych gatunków. Gdy na jaw wychodzi, że ukrywała kolejne zwierzęta w domku przy basenie, sprowadzasz je do zoo, a [[postacie:tiffany-summers|Tiffany]] – zaimponowana wspaniałymi warunkami i reakcją [[postacie:nancy-jones|Nancy]] – ostatecznie decyduje się pozostawić swoje pupile pod Twoją opieką, zyskując oficjalne pozwolenie i planując własną przyszłość w branży zoologicznej.",
         "objectives": {
-            "bronze": [],
-            "silver": [],
-            "gold": []
+            "bronze": [{
+                    "title": "Wybuduj: Centrum handlu zwierzętami"
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 6",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 80%"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków w ekspozycjach w zoo: 3"
+                },
+                {
+                    "title": "Zatrudnij: Weterynarz (1)"
+                }
+            ],
+            "silver": [{
+                    "title": "Wybuduj: Centrum badawcze"
+                },
+                {
+                    "title": "Adoptuj i umieść w odpowiednim miejscu uratowane zwierzęta",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Miej wszystkie wymagane zwierzęta w zoo.",
+                    "tasks": [
+                        "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Danaid wędrowny: 3",
+                        "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Phoebis sennae: 2",
+                        "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Paź królowej: 3",
+                        "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Rusałka pawik: 2"
+                    ]
+                },
+                {
+                    "title": "Doprowadź badania dotyczące gatunków (2) z wybiegów do poziomu 3"
+                },
+                {
+                    "title": "Doprowadź badania w dziedzinie Guziec zwyczajny do poziomu 4"
+                },
+                {
+                    "title": "Zorganizuj co najmniej następującą liczbę wykładów o zwierzętach w roku: 2"
+                },
+                {
+                    "title": "Uzyskaj w zoo co najmniej następującą liczbę punktów wycieczki: 3"
+                },
+                {
+                    "title": "Zorganizuj wycieczkę, której ogólna ocena wyniesie co najmniej następującą liczbę gwiazdek: 2,0"
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji do 3,0 gwiazdek"
+                }
+            ],
+            "gold": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu uratowane zwierzęta",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 11",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 80%"
+                    ]
+                },
+                {
+                    "title": "W ciągu 2 lat wydaj $10 000,00 na marketing"
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Zadowolenie gości do 80%"
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Głód gości do 70%"
+                },
+                {
+                    "title": "Zorganizuj wycieczkę, której ogólna ocena wyniesie co najmniej następującą liczbę gwiazdek: 3,0"
+                },
+                {
+                    "title": "Uzyskaj ogólną ocenę zoo: 4,0/5,0"
+                }
+            ]
         }
     },
     {
@@ -1983,7 +2154,28 @@
         "fullBio": "Niewiele jest miejsc emanujących tak wielkim urokiem, jak ta dżungla, w której niedługo światło dzienne ujrzy „Letni projekt”: rajskie zoo w dżungli zaprojektowane i zbudowane przez młodą społeczniczkę i początkującą działaczkę ochrony przyrody, [[postacie:tiffany-summers|Tiffany Summers]]. Będzie je prowadziła pod czujnym okiem wyglądającej dość znajomo osoby wynajętej do pomocy przez jej ojca.<br>Wysłała Ci listę zadań, z którymi musisz się uporać przed jej przybyciem, więc zaczynajmy!",
         "description": "Bogata i kapryśna [[postacie:tiffany-summers|Tiffany]], zachwycona swoim niedawnym stażem, otrzymuje od ojca w prezencie własne zoo, jednak zmuszona jest do współpracy z nowym menedżerem – chciwym i nieprzyjemnym [[postacie:dominic-myers|Dominiciem Myersem]]. Ponieważ [[postacie:dominic-myers|Dominic]] tnie koszty, lekceważy dobrostan zwierząt i wywołuje kryzys wizerunkowy, [[postacie:tiffany-summers|Tiffany]] w tajemnicy przed nim przekazuje Ci bezpośrednią listę zadań, oczekując uratowania parku i odzyskania sympatii znajomych. Dzięki Twoim działaniom, poprawie dobrostanu i rozkwitowi placówki, [[postacie:tiffany-summers|Tiffany]] ostatecznie demaskuje malwersacje [[postacie:dominic-myers|Dominica]], co skutkuje jego zwolnieniem przez jej tatę za trwonienie budżetu na przeterminowany szampan. W nagrodę za spektakularny sukces i uratowanie reputacji, [[postacie:tiffany-summers|Tiffany]] zaprasza Cię na ekskluzywną imprezę dla odzyskanych znajomych, celebrując triumf nowo uformowanego, zrównoważonego biznesu.",
         "objectives": {
-            "bronze": [],
+            "bronze": [{
+                    "title": "Umieść różne gatunki zwierząt (3) na jednym wybiegu",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 90%"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj czystość jezior na poziomie: 90%"
+                },
+                {
+                    "title": "Uzyskaj w zoo co najmniej następującą liczbę skarbonek na darowizny: 6"
+                },
+                {
+                    "title": "Wypracuj roczny zysk z darowizn: $6 000,00"
+                },
+                {
+                    "title": "Wypracuj roczny zysk: $5 000,00"
+                },
+                {
+                    "title": "Uzyskaj ogólną ocenę zoo: 1,5/5,0"
+                }
+            ],
             "silver": [],
             "gold": []
         }
