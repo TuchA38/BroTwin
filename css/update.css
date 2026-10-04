@@ -163,7 +163,10 @@
 .stacked-lipiec26-stack .img-1,
 .stacked-sierpien26_1-stack .img-1,
 .stacked-wrzesien26_1-stack .img-1,
-.stacked-wrzesien26_2-stack .img-1 {
+.stacked-wrzesien26_2-stack .img-1,
+.stacked-zoopedia_1_pazdziernik26-stack .img-1,
+.stacked-zoopedia_2_pazdziernik26-stack .img-1,
+.stacked-zoopedia_3_pazdziernik26-stack .img-1 {
     width: 50%;
     position: relative;
     z-index: 0;
@@ -175,7 +178,10 @@
 .stacked-lipiec26-stack .img-2,
 .stacked-sierpien26_1-stack .img-2,
 .stacked-wrzesien26_1-stack .img-2,
-.stacked-wrzesien26_2-stack .img-2 {
+.stacked-wrzesien26_2-stack .img-2,
+.stacked-zoopedia_1_pazdziernik26-stack .img-2,
+.stacked-zoopedia_2_pazdziernik26-stack .img-2,
+.stacked-zoopedia_3_pazdziernik26-stack .img-2 {
     width: 50%;
     position: relative;
     margin-top: 2%;
@@ -188,7 +194,10 @@
 .stacked-lipiec26-stack .img-3,
 .stacked-sierpien26_1-stack .img-3,
 .stacked-wrzesien26_1-stack .img-3,
-.stacked-wrzesien26_2-stack .img-3 {
+.stacked-wrzesien26_2-stack .img-3,
+.stacked-zoopedia_1_pazdziernik26-stack .img-3,
+.stacked-zoopedia_2_pazdziernik26-stack .img-3,
+.stacked-zoopedia_3_pazdziernik26-stack .img-3 {
     width: 50%;
     position: absolute;
     left: 52%;
@@ -202,7 +211,10 @@
 .stacked-lipiec26-stack .img-4,
 .stacked-sierpien26_1-stack .img-4,
 .stacked-wrzesien26_1-stack .img-4,
-.stacked-wrzesien26_2-stack .img-4 {
+.stacked-wrzesien26_2-stack .img-4,
+.stacked-zoopedia_1_pazdziernik26-stack .img-4,
+.stacked-zoopedia_2_pazdziernik26-stack .img-4,
+.stacked-zoopedia_3_pazdziernik26-stack .img-4 {
     width: 50%;
     position: absolute;
     left: 52%;
@@ -213,7 +225,8 @@
 .stacked-styczen26-stack .img-1,
 .stacked-maj26_2-stack .img-1,
 .stacked-czerwiec26_2-stack .img-1,
-.stacked-sierpien26_2-stack .img-1 {
+.stacked-sierpien26_2-stack .img-1,
+.stacked-zakulisamipazdziernik26-stack .img-1 {
     width: 50%;
     position: relative;
     z-index: 0;
@@ -222,7 +235,8 @@
 .stacked-styczen26-stack .img-2,
 .stacked-maj26_2-stack .img-2,
 .stacked-czerwiec26_2-stack .img-2,
-.stacked-sierpien26_2-stack .img-2 {
+.stacked-sierpien26_2-stack .img-2,
+.stacked-zakulisamipazdziernik26-stack .img-2 {
     width: 50%;
     position: relative;
     margin-left: 52%;
@@ -240,7 +254,11 @@
 .stacked-sierpien26_1-stack,
 .stacked-sierpien26_2-stack,
 .stacked-wrzesien26_1-stack,
-.stacked-wrzesien26_2-stack {
+.stacked-wrzesien26_2-stack,
+.stacked-zakulisamipazdziernik26-stack,
+.stacked-zoopedia_1_pazdziernik26-stack,
+.stacked-zoopedia_2_pazdziernik26-stack,
+.stacked-zoopedia_3_pazdziernik26-stack {
     margin: 20px 0 30px 0;
 }
 
