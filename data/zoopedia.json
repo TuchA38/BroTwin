@@ -280,6 +280,88 @@
         }
     },
     {
+        "name": "Aleksandretta długosterna",
+        "latin": "Belocercus longicaudus",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024072/Aleksandretta_d%C5%82ugosterna_uebqdi.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024093/Parakeet_LongTailed_illustration_rpgmm6.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["azja", "ptaki", "VU", "i3", "woliera"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Nieznana",
+        "status": "Narażone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776789/VU_sdgfno.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ptaki",
+            "Rząd": "Papugowe",
+            "Rodzina": "Papugi wschodnie",
+            "Rodzaj": "Psittacula"
+        },
+        "habitat": {
+            "Kontynenty": ["Azja"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Azja",
+            "link": "../Mapa/Rezerwat Azja.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
+    },
+    {
         "name": "Aligator amerykański",
         "latin": "Alligator mississippiensis",
         "aliases": ["aligator missisipski", "aligator missisipijski"],
@@ -595,7 +677,7 @@
         "taxonomy": {
             "Typ": "Strunowce",
             "Gromada": "Ryby",
-            "Rząd": "Okoniokształtne",
+            "Rząd": "Blenniiformes",
             "Rodzina": "Garbikowate",
             "Rodzaj": "Amphiprion"
         },
@@ -2630,6 +2712,85 @@
         }
     },
     {
+        "name": "Chełbia modra",
+        "latin": "Aurelia aurita",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024071/Che%C5%82bia_modra_q8lasq.webp",
+        "classes": ["europa", "parzydelkowce", "DD", "i3", "ekspozycja"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Nieznana",
+        "status": "Zbyt mało danych",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776792/DD_upjfda.webp",
+        "taxonomy": {
+            "Typ": "Parzydełkowce",
+            "Gromada": "Krążkopławy",
+            "Rząd": "Płatomeduzy",
+            "Rodzina": "Ulmaridae",
+            "Rodzaj": "Aurelia"
+        },
+        "habitat": {
+            "Kontynenty": ["Europa"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Europa",
+            "link": "../Mapa/Rezerwat Europa.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
+    },
+    {
         "name": "Chrząszcz tytan",
         "latin": "Titanus giganteus",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773067379/Chrz%C4%85szcz_tytan_htwbth.webp",
@@ -2816,12 +2977,96 @@
         "mod": "https://www.nexusmods.com/planetzoo/mods/1536"
     },
     {
+        "name": "Dascyllus trimaculatus",
+        "latin": "Dascyllus trimaculatus",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024072/Dascyllus_trimaculatus_jouukk.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024090/Damselfish_Threespot_illustration_ithuqj.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["azja", "ryby", "LC", "i3", "akwarium", "ekspozycja"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Nieznana",
+        "status": "Najmniej zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ryby",
+            "Rząd": "Blenniiformes",
+            "Rodzina": "Garbikowate",
+            "Rodzaj": "Dascyllus"
+        },
+        "habitat": {
+            "Kontynenty": ["Azja"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Azja",
+            "link": "../Mapa/Rezerwat Azja.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
+    },
+    {
         "name": "Danaid wędrowny",
         "latin": "Danaus plexippus",
         "aliases": ["monarszka księżna", "monarcha wędrowny"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1780989140/Danaid_w%C4%99drowny_tr4npf.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024072/Danaid_w%C4%99drowny_zdeghn.webp",
         "classes": ["europa", "amerykapolnocna", "amerykapoludniowa", "stawonogi", "CR", "ekspozycja"],
-        "info": "Danaid wędrowny <i>(Danaus plexippus)</i> to motyl występujący w różnych miejscach świata, widywany jednak najczęściej w Ameryce Północnej i Ameryce Południowej. Motyle te osiągają rozpiętość skrzydeł od 8,9 do 10,2 cm a ich waga to około 0,5 g. Skrzydła są pomarańczowoczerwone z wyraźnym czarnym żyłkowaniem oraz grubym czarnym obramowaniem z białymi plamkami. Nogi i czułki również są czarne, a korpus jest czarny w białe plamki. Gąsienice danaida wędrownego mają pulchne ciała w żółte, czarne i białe pasy.<br><br>Jeden z podgatunków danaida wędrownego, migrujący każdego roku przez Amerykę Północną, został sklasyfikowany jako zagrożony, natomiast danaidy wędrowne zamieszkujące inne regiony świata uznaje się za gatunek najmniejszej troski. Ze względu na skutki zmian klimatycznych, utratę siedlisk i powszechne używanie na całym świecie pestycydów populacja danaida wędrownego zmniejszyła się w ciągu ostatnich 30 lat o 80%. Motyl ten zimuje zwykle w lasach, jednak wylesianie rozległych terenów oznacza, że hibernujące motyle częściej giną w zetknięciu z siłami natury lub drapieżnikami. Działania podejmowane w ramach ochrony przyrody mają zachęcać do ochrony siedlisk tych motyli w Meksyku, aby złagodzić ten problem.",
+        "info": "Danaid wędrowny <i>(Danaus plexippus)</i> to motyl występujący w różnych miejscach świata, widywany jednak najczęściej w Ameryce Północnej i Ameryce Południowej. Motyle te osiągają rozpiętość skrzydeł od 8,9 do 10,2 cm a ich waga to około 0,5 g. Skrzydła są pomarańczowoczerwone z wyraźnym czarnym żyłkowaniem oraz grubym czarnym obramowaniem z białymi plamkami. Nogi i czułki również są czarne, a korpus jest czarny w białe plamki. Gąsienice danaida wędrownego mają pulchne ciała w żółte, czarne i białe pasy.",
+        "conservation": "Jeden z podgatunków danaida wędrownego, migrujący każdego roku przez Amerykę Północną, został sklasyfikowany jako zagrożony, natomiast danaidy wędrowne zamieszkujące inne regiony świata uznaje się za gatunek najmniejszej troski. Ze względu na skutki zmian klimatycznych, utratę siedlisk i powszechne używanie na całym świecie pestycydów populacja danaida wędrownego zmniejszyła się w ciągu ostatnich 30 lat o 80%. Motyl ten zimuje zwykle w lasach, jednak wylesianie rozległych terenów oznacza, że hibernujące motyle częściej giną w zetknięciu z siłami natury lub drapieżnikami. Działania podejmowane w ramach ochrony przyrody mają zachęcać do ochrony siedlisk tych motyli w Meksyku, aby złagodzić ten problem.",
         "population": "Nieznana",
         "status": "Krytycznie zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776791/CR_x0nblf.webp",
@@ -2912,10 +3157,11 @@
                 "female": 0
             }
         ],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "dlc",
-            "pz1console": "dlc"
+            "pz1console": "dlc",
+            "pz2": "podstawa"
         },
         "dlc": {
             "pz1pc": {
@@ -3490,8 +3736,13 @@
         "name": "Dzik euroazjatycki",
         "latin": "Sus scrofa",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1782568447/Dzik_euroazjatycki_hegphj.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024072/Dzik_euroazjatycki_azoalz.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024090/Boar_Wild_illustration_u7g047.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["europa", "azja", "ssaki", "LC", "i3", "siedlisko"],
-        "info": "Dzik euroazjatycki <i>(Sus scrofa)</i> to ssak z rodziny świniowatych występujący w regionach strefy umiarkowanej Eurazji, u wybrzeży Morza Śródziemnego w Afryce Północnej, na terenach zakrzewionych i pustyniach w Azji, a także na stepach i w tropikalnych lasach deszczowych Azji Południowo-Wschodniej. Gatunek został też sprowadzony do Ameryki Północnej, Ameryki Południowej i Oceanii. Ze względu na liczne obszary występowania dzika euroazjatyckiego i jego zdolności do przystosowywania się, wyróżnia się 16 podgatunków dzika euroazjatyckiego, które znacznie różnią się od siebie wyglądem. Największe dziki żyją w Europie Środkowej i Europie Wschodniej. Ich sierść tworzy ciemnobrązowa, szorstka szczecina, która u samców przybiera na karku postać grzywy. Dziki mają duże głowy, które stanowią nawet jedną trzecią długości ich ciała, co w połączeniu z potężnymi mięśniami karku umożliwia im kopanie nawet w zamarzniętej ziemi. U tego gatunku występuje dymorfizm płciowy - samce są większe i cięższe od samic. Samce mają od 1,45 do 1,75 m długości, mierzą od 85 do 100 cm w kłębie i ważą od 75 do 130 kg. Samice mają od 1,3 do 1,57 m długości, mierzą od 75 do 90 cm w kłębie i ważą od 60 do 90 kg.<br><br>Dzik euroazjatycki to niezwykle liczny i rozprzestrzeniony niemal na całym świecie gatunek, dlatego uznaje się go za gatunek najmniejszej troski. W wyniku zbyt intensywnego polowania dziki euroazjatyckie wyginęły w średniowieczu w Wielkiej Brytanii, ale w latach 80. XX wieku reintrodukowano je w południowej Anglii. Sprowadzono je również do Ameryki Północnej, aby móc na nie polować, a osobniki, którym udało się uciec, utworzyły populację inwazyjną będącą mieszanką żyjących na wolności dzików euroazjatyckich i świń domowych. Dziki euroazjatyckie trafiły także do Ameryki Południowej, gdzie miano je rozmnażać. Wypuszczone celowo i zbiegłe osobniki stworzyły w Brazylii populację inwazyjną. W obszarach ich naturalnego występowania na dziki poluje się ze względu na ich mięso. Stanowią one także podstawowy element ekosystemu siedlisk, które zamieszkują, jednak w obu Amerykach wprowadzane są środki, które mają ograniczyć ich populacje inwazyjne, aby chronić rodzime gatunki.",
+        "info": "Dzik euroazjatycki <i>(Sus scrofa)</i> to ssak z rodziny świniowatych występujący w regionach strefy umiarkowanej Eurazji, u wybrzeży Morza Śródziemnego w Afryce Północnej, na terenach zakrzewionych i pustyniach w Azji, a także na stepach i w tropikalnych lasach deszczowych Azji Południowo-Wschodniej. Gatunek został też sprowadzony do Ameryki Północnej, Ameryki Południowej i Oceanii. Ze względu na liczne obszary występowania dzika euroazjatyckiego i jego zdolności do przystosowywania się, wyróżnia się 16 podgatunków dzika euroazjatyckiego, które znacznie różnią się od siebie wyglądem. Największe dziki żyją w Europie Środkowej i Europie Wschodniej. Ich sierść tworzy ciemnobrązowa, szorstka szczecina, która u samców przybiera na karku postać grzywy. Dziki mają duże głowy, które stanowią nawet jedną trzecią długości ich ciała, co w połączeniu z potężnymi mięśniami karku umożliwia im kopanie nawet w zamarzniętej ziemi. U tego gatunku występuje dymorfizm płciowy - samce są większe i cięższe od samic. Samce mają od 1,45 do 1,75 m długości, mierzą od 85 do 100 cm w kłębie i ważą od 75 do 130 kg. Samice mają od 1,3 do 1,57 m długości, mierzą od 75 do 90 cm w kłębie i ważą od 60 do 90 kg.",
+        "conservation": "Dzik euroazjatycki to niezwykle liczny i rozprzestrzeniony niemal na całym świecie gatunek, dlatego uznaje się go za gatunek najmniejszej troski. W wyniku zbyt intensywnego polowania dziki euroazjatyckie wyginęły w średniowieczu w Wielkiej Brytanii, ale w latach 80. XX wieku reintrodukowano je w południowej Anglii. Sprowadzono je również do Ameryki Północnej, aby móc na nie polować, a osobniki, którym udało się uciec, utworzyły populację inwazyjną będącą mieszanką żyjących na wolności dzików euroazjatyckich i świń domowych. Dziki euroazjatyckie trafiły także do Ameryki Południowej, gdzie miano je rozmnażać. Wypuszczone celowo i zbiegłe osobniki stworzyły w Brazylii populację inwazyjną. W obszarach ich naturalnego występowania na dziki poluje się ze względu na ich mięso. Stanowią one także podstawowy element ekosystemu siedlisk, które zamieszkują, jednak w obu Amerykach wprowadzane są środki, które mają ograniczyć ich populacje inwazyjne, aby chronić rodzime gatunki.",
         "population": "Nieznana",
         "status": "Najmniej zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
@@ -3587,10 +3838,11 @@
                 "female": 0
             }
         ],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "dlc",
-            "pz1console": "dlc"
+            "pz1console": "dlc",
+            "pz2": "podstawa"
         },
         "dlc": {
             "pz1pc": {
@@ -4514,7 +4766,7 @@
         "taxonomy": {
             "Typ": "Strunowce",
             "Gromada": "Ryby",
-            "Rząd": "Okoniokształtne",
+            "Rząd": "Blenniiformes",
             "Rodzina": "Garbikowate",
             "Rodzaj": "Abudefduf"
         },
@@ -19526,8 +19778,13 @@
         "aliases": ["struś masajski", "struś północnoafrykański"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773674341/Stru%C5%9B_czerwonosk%C3%B3ry_m55fc9.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773674339/Stru%C5%9B_czerwonosk%C3%B3ry_-_Remaster_ggxfff.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024072/Stru%C5%9B_czerwonosk%C3%B3ry_rycr6j.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024091/Ostrich_Common_illustration_xvvv98.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["afryka", "ptaki", "LC", "i3", "siedlisko", "remaster"],
-        "info": "Struś czerwonoskóry <i>(Struthio camelus)</i> to największy ze znanych gatunków ptaków na świecie. Samce mają czarne pióra na korpusie i białe pióra na czubkach skrzydeł oraz w ogonach, natomiast pióra na korpusach samic są szarobrązowe. U obu płci głowa, szyja i nogi mają kolor od różowego po biały i w zależności od tego, w którym miejscu Afryki żyją dane ptaki, występują u nich pewne różnice w wyglądzie. Samce osiągają średnio wzrost od 2,1 do 2,8 m, a samice są mniejsze i mierzą od 1,7 do 2,0 m.<br><br>Strusie występują powszechnie na kontynencie afrykańskim (jednak nie na pustyniach ani w lasach deszczowych), ale rozpowszechniły się też na całym świecie, często jako zwierzęta hodowane na mięso, jaja i pióra. Nie są wprawdzie aktualnie gatunkiem zagrożonym, jednak jego zasięg zmniejsza się, a liczebność niektórych podgatunków strusia spada z powodu wzrostu liczby ludności oraz zmian w sposobie użytkowania terenów.",
+        "info": "Struś czerwonoskóry <i>(Struthio camelus)</i> to największy ze znanych gatunków ptaków na świecie. Samce mają czarne pióra na korpusie i białe pióra na czubkach skrzydeł oraz w ogonach, natomiast pióra na korpusach samic są szarobrązowe. U obu płci głowa, szyja i nogi mają kolor od różowego po biały i w zależności od tego, w którym miejscu Afryki żyją dane ptaki, występują u nich pewne różnice w wyglądzie. Samce osiągają średnio wzrost od 2,1 do 2,8 m, a samice są mniejsze i mierzą od 1,7 do 2,0 m.",
+        "conservation": "Strusie występują powszechnie na kontynencie afrykańskim (jednak nie na pustyniach ani w lasach deszczowych), ale rozpowszechniły się też na całym świecie, często jako zwierzęta hodowane na mięso, jaja i pióra. Nie są wprawdzie aktualnie gatunkiem zagrożonym, jednak jego zasięg zmniejsza się, a liczebność niektórych podgatunków strusia spada z powodu wzrostu liczby ludności oraz zmian w sposobie użytkowania terenów.",
         "population": "Nieznana",
         "status": "Najmniej zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
@@ -19603,10 +19860,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/1547"
     },
@@ -21882,8 +22140,13 @@
         "aliases": ["baktrian"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1772473269/Wielb%C5%82%C4%85d_dwugarbny_nzdggn.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1772473272/Wielb%C5%82%C4%85d_dwugarbny_-_Remaster_ovzvwv.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024071/Wielb%C5%82%C4%85d_dwugarbny_nq2zu2.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791024092/Camel_Bactrian_illustration_fnkcru.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["azja", "ssaki", "DM", "i1", "siedlisko", "remaster"],
-        "info": "Wielbłąd dwugarbny <i>(Camelus bactrianus)</i>, zwany także baktrianem, to duży ssak kopytny pochodzący z Azji Środkowej. Ma dwa garby i grube wełniste futro o piaskowym ubarwieniu, które może również przyjmować barwę ciemnobrązową lub białą. Ma zazwyczaj 2 m wysokości w kłębie, a garby dodają mu dodatkowe 30 cm wysokości. Samce są znacznie większe od samic.<br><br>Istnieją dwa rodzaje wielbłądów dwugarbnych - udomowiony i dziki - ale niełatwo je rozróżnić. Niektóre udomowione wielbłądy dwugarbne żyją na wolności (uznaje się je za zdziczałe), obok prawdziwych „dzikich wielbłądów dwugarbnych”. Ustalono, że obie odmiany baktrianów - udomowiona i dzika - pochodzą od różnych gatunków.<br><br>Wielbłądy udomowione nie są gatunkiem zagrożonym ani wymierającym, a wielkość ich populacji jest stabilna. Natomiast dzikie wielbłądy dwugarbne padają ofiarą ludzkich polowań oraz wilków, przez co są krytycznie zagrożone i bliskie wyginięcia. Organizacje działające na rzecz ochrony zwierząt starają się zapobiec zniknięciu tego gatunku z powierzchni ziemi. Choć pustynia Gobi, na której żyją dzikie baktriany, to park narodowy, wielbłądy te migrują na tak dużych obszarach, że trudno jest zapewnić im pełną ochronę również na innych terenach.",
+        "info": "Wielbłąd dwugarbny <i>(Camelus bactrianus)</i>, zwany także baktrianem, to duży ssak kopytny pochodzący z Azji Środkowej. Ma dwa garby i grube wełniste futro o piaskowym ubarwieniu, które może również przyjmować barwę ciemnobrązową lub białą. Ma zazwyczaj 2 m wysokości w kłębie, a garby dodają mu dodatkowe 30 cm wysokości. Samce są znacznie większe od samic.<br><br>Istnieją dwa rodzaje wielbłądów dwugarbnych - udomowiony i dziki - ale niełatwo je rozróżnić. Niektóre udomowione wielbłądy dwugarbne żyją na wolności (uznaje się je za zdziczałe), obok prawdziwych „dzikich wielbłądów dwugarbnych”. Ustalono, że obie odmiany baktrianów - udomowiona i dzika - pochodzą od różnych gatunków.",
+        "conservation": "Wielbłądy udomowione nie są gatunkiem zagrożonym ani wymierającym, a wielkość ich populacji jest stabilna. Natomiast dzikie wielbłądy dwugarbne padają ofiarą ludzkich polowań oraz wilków, przez co są krytycznie zagrożone i bliskie wyginięcia. Organizacje działające na rzecz ochrony zwierząt starają się zapobiec zniknięciu tego gatunku z powierzchni ziemi. Choć pustynia Gobi, na której żyją dzikie baktriany, to park narodowy, wielbłądy te migrują na tak dużych obszarach, że trudno jest zapewnić im pełną ochronę również na innych terenach.",
         "population": "2 000 000<br>(wartość szacunkowa)",
         "status": "Udomowione",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776780/DM_iuaufc.webp",
@@ -21959,10 +22222,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/1265"
     },
