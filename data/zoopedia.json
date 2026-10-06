@@ -1198,8 +1198,13 @@
         "name": "Babirussa sulaweska",
         "latin": "Babyrousa celebensis",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1773067380/Babirussa_sulaweska_i5zkvx.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301940/Babirussa_sulaweska_c3sli3.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301963/Babirusa_NorthSulawesi_illustration_uslgnm.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["azja", "ssaki", "VU", "i3", "siedlisko"],
-        "info": "Babirussa sulaweska <i>(Babyrousa celebensis)</i> to gatunek z rodziny świniowatych występujący na indonezyjskiej wyspie Celebes (Sulawesi) i kilku sąsiednich pomniejszych wyspach. Babirussy sulaweskie mają w większości nieowłosioną szarą skórę. Samce babirussy wyróżniają się czterema dużymi kłami, które zakrzywiają się w stronę czaszki. Długość ciała tego gatunku to od 85 do 110 cm, długość ogona mieści się w zakresie od 29 do 32 cm, a wysokość w kłębie to od 58 do 66 cm. Samce babirussy ważą od 70 do 100 kg, a samice od 45 do 80 kg.<br><br>Babirussy to gatunek narażony ze względu na zbyt intensywne polowania w celu zdobycia mięsa, a także z powodu utraty siedlisk. Zwierzęta te są też często atakowane i zabijane przez psy domowe i dzikie. Mimo że babirussy są w Indonezji gatunkiem chronionym, nadal się zagrożone.",
+        "info": "Babirussa sulaweska <i>(Babyrousa celebensis)</i> to gatunek z rodziny świniowatych występujący na indonezyjskiej wyspie Celebes (Sulawesi) i kilku sąsiednich pomniejszych wyspach. Babirussy sulaweskie mają w większości nieowłosioną szarą skórę. Samce babirussy wyróżniają się czterema dużymi kłami, które zakrzywiają się w stronę czaszki. Długość ciała tego gatunku to od 85 do 110 cm, długość ogona mieści się w zakresie od 29 do 32 cm, a wysokość w kłębie to od 58 do 66 cm. Samce babirussy ważą od 70 do 100 kg, a samice od 45 do 80 kg.",
+        "conservation": "Babirussy to gatunek narażony ze względu na zbyt intensywne polowania w celu zdobycia mięsa, a także z powodu utraty siedlisk. Zwierzęta te są też często atakowane i zabijane przez psy domowe i dzikie. Mimo że babirussy są w Indonezji gatunkiem chronionym, nadal się zagrożone.",
         "population": "9 999",
         "status": "Narażone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776789/VU_sdgfno.webp",
@@ -1275,10 +1280,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "dlc",
-            "pz1console": "dlc"
+            "pz1console": "dlc",
+            "pz2": "podstawa"
         },
         "dlc": {
             "pz1pc": {
@@ -4433,6 +4439,7 @@
         }
     },
     {
+        "id": "flaming-rozowy-pz1",
         "name": "Flaming różowy",
         "latin": "Phoenicopterus roseus",
         "aliases": ["czerwoniak", "czerwonak"],
@@ -4544,6 +4551,121 @@
             "pz1console": "podstawa"
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/1542"
+    },
+    {
+        "id": "flaming-rozowy-pz2",
+        "name": "Flaming różowy",
+        "latin": "Phoenicopterus roseus",
+        "aliases": ["czerwoniak", "czerwonak"],
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301940/Flaming_r%C3%B3%C5%BCowy_yosfoo.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301964/Flamingo_Greater_illustration_bh1fsg.webp",
+        "znakWidth": "350px",
+        "znakHeight": "350px",
+        "classes": ["afryka", "europa", "azja", "ptaki", "LC", "i1", "woliera"],
+        "info": "Flaming różowy <i>(Phoenicopterus roseus)</i> to gatunek dużych ptaków migrujących, występujący powszechnie w Europie, na Bliskim Wschodzie, w Azji oraz w Afryce. Ptaki te zamieszkuja błotniste równiny pływowe i wybrzeża lagunowe w klimacie ciepłym i umiarkowanym. Zdobywają pożywienie, mieszając dziobem błotnistą wodę i odfiltrowując z niej glony, bezkręgowce i nasiona.<br><br>Samce i samice flamingów wyglądają tak samo. Ich upierzenie ma kolor od jasnoróżowego po pomarańczoworóżowy. Maja różowe nogi i różowy dziób z czarną końcówką, a na skrzydłach często znajdują się plamy w jaskrawszym różowym odcieniu. Mają również czarne lotki o długości od 110 do 150 cm. Ważą od 2 do 4 kg.",
+        "conservation": "Gatunek nie jest zagrożony, ale jest narażony na skutki działalności człowieka. Ptaki te są na przykład bardzo wrażliwe na zanieczyszczenia wód ściekami z terenów rolnych i fabryk. Ścieki powodują skażenie terenów lęgowych flamingów i zabijają wiele bezkręgowców stanowiących ich pożywienie. Niekorzystny wpływ na flamingi ma również naruszanie przez ludzi ich naturalnych siedlisk. W związku z tym w Unii Europejskiej objęto ochroną wiele nadmorskich równin oraz wybrzeży lagunowych, aby zapewnić populacji flamingów możliwość powrotu na tereny, na których znajdują pożywienie i mogą się rozmnażać.",
+        "population": "790 000<br>(wartość szacowana)",
+        "status": "Najmniej zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ptaki",
+            "Rząd": "Flamingowe",
+            "Rodzina": "Flamingi",
+            "Rodzaj": "Flaming"
+        },
+        "habitat": {
+            "Kontynenty": ["Afryka", "Azja", "Europa"],
+            "Regiony": ["Bangladesz", "Maroko", "Tunezja", "Pakistan", "Sahara Zachodnia", "Indie", "Sri Lanka", "Turcja", "Izrael", "Liban", "Zjednoczone Emiraty Arabskie", "Senegal", "Gambia", "Gwinea Bissau", "Gwinea", "Sierra Leone", "Wybrzeże Kości Słoniowej", "Ghana", "Benin", "Kuwejt", "Bahrajn", "Irak", "Jordania", "Syria", "Katar", "Hiszpania", "Albania", "Macedonia", "Afganistan", "Gruzja", "Armenia", "Azerbejdżan", "Iran", "Turkmenistan", "Grecja", "Liberia", "Republika Południowej Afryki", "Eswatini", "Mozambik", "Somalia", "Tanzania", "Arabia Saudyjska", "Jemen", "Oman", "Kenia", "Dżibuti", "Erytrea", "Cypr", "Portugalia", "Włochy"],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": [{
+                    "name": "Woda",
+                    "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769777616/Woda_pbf5dy.webp"
+                },
+                {
+                    "name": "Tropiki",
+                    "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769777600/Tropiki_md0mxp.webp"
+                },
+                {
+                    "name": "Klimat umiarkowany",
+                    "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769777560/Klimat_umiarkowany_pj6ffm.webp"
+                },
+                {
+                    "name": "Step",
+                    "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769777571/Step_njt6px.webp"
+                }
+            ]
+        },
+        "social": [
+            { "Wielkość grupy": "10-500 (samce do 500, samice do 500)" },
+            { "Wielkość grupy kawalerskiej samców": "10-500" },
+            { "Wielkość grupy kawalerskiej samic": "10-500" },
+            { "Hierarchia dominacji": "Brak" },
+            { "Strategia rozrodcza": "Monogamia i poligynia" },
+            { "Zasady dotyczące dojrzałości": "Stadność: całe dojrzałe potomstwo jest tolerowane w grupie" },
+            { "Stosunek do człowieka": "Neutralność" }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": "1,60 m wysokości",
+                "samica": "1,35 m wysokości"
+            },
+            "Długość życia": {
+                "samiec": "59 lat",
+                "samica": "59 lat"
+            },
+            "Waga": {
+                "samiec": "3 kg",
+                "samica": "3 kg"
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": "3 lata" },
+            { "Wiek zakończenia okresu reprodukcyjnego": "Śmierć" },
+            { "Liczba młodych przypadająca na okres godowy": "1" },
+            { "Długość ciąży/inkubacji": "1 miesiąc" },
+            { "Okres międzyurodzeniowy": "12 mies." },
+            { "Rozmnażanie w niewoli": "Bardzo łatwe" }
+        ],
+        "needs": "Flamingi różowe to ptaki towarzyskie, które najczęściej żyją w dużych stadach. Rozmnażają się wprawdzie monogamicznie, jednak członkowie stada często pomagają sobie nawzajem w ochronie i karmieniu piskląt.",
+        "reproduction": "Aby zdobyć zainteresowanie partnera, flamingi obu płci wykonują zsynchronizowany „taniec”, obejmujący wyciąganie szyi, czyszczenie piór oraz ruchy skrzydeł, wykonywane równocześnie przez dużą grupę ptaków. Gdy samiec zdobędzie już swoim wyglądem i tańcem uznanie samicy, ta oddziela się od grupy, a samiec podąża za nią. Samica opuszcza wtedy głowę i rozpościera skrzydła, zapraszając samca do godów.<br><br>Flamingi są monogamiczne - niektóre dobierają partnera na jeden sezon, a niektóre na całe życie. Para zakłada wspólnie gniazdo, budując kopiec z błota z wgłębieniem na szczycie, w którym samica składa jedno jajo. Wysiadywanie trwa od 27 do 31 dni i zajmują się nim zarówno matka, jak i ojciec. W pierwszych 3-4 tygodniach życia pisklę karmione jest pokarmem częściowo przetrawionym przez rodzica. Po tym okresie młode zaczynają, same filtrować pokarm, a gdy mają 10 tygodni, wyrastają im pióra. Na kolejny miesiąc trafiają pod opiekę dorosłego osobnika, który nie ma własnego potomstwa.<br><br>Ptaki te osiągają dorosłość w wieku 2 lat, a dojrzałość płciową w wieku 3 lat, jednak zaczynają się rozmnażać zwykle dopiero pomiędzy 5 a 10 rokiem życia.",
+        "curiosities": [
+            "Flamingi zawdzięczają różowe umaszczenie swojej diecie. W ich piórach gromadzą się karotenoidy z glonów i bezkręgowców, którymi się żywią.",
+            "Rodzice są w stanie rozpoznać kwilenie swojego pisklęcia wśród głosów tysięcy młodych flamingów.",
+            "Gdy flamingi przychodzą na świat, ich dzioby są proste. Zaczynają się zakrzywiać po pierwszym miesiącu życia, co umożliwia filtrowanie wody i zdobywanie pożywienia.",
+            "Flamingi stoją często na jednej nodze, również podczas snu. Podobno robią tak, by ograniczyć utratę ciepła. Tylko jedna noga ma wtedy kontakt z zimnym powietrzem lub wodą.",
+            "Według zapisu kopalnego pierwsze formy flamingów pojawiły się 40 mln lat temu."
+        ],
+        "reservoirs": [{
+                "name": "Rezerwat Afryka",
+                "link": "../Mapa/Rezerwat Afryka.html",
+                "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+                "male": 0,
+                "female": 0
+            },
+            {
+                "name": "Rezerwat Europa",
+                "link": "../Mapa/Rezerwat Europa.html",
+                "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+                "male": 0,
+                "female": 0
+            },
+            {
+                "name": "Rezerwat Azja",
+                "link": "../Mapa/Rezerwat Azja.html",
+                "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+                "male": 0,
+                "female": 0
+            }
+        ],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
+        }
     },
     {
         "name": "Foka szara",
@@ -7876,6 +7998,88 @@
                 "id": "australia&south-america-bundle",
                 "name": "Australia & South America Bundle"
             }
+        }
+    },
+    {
+        "name": "Kitta krótkosterna",
+        "latin": "Cissa thalassina",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301940/Kitta_kr%C3%B3tkosterna_fazivm.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301965/Magpie_JavanGreen_illustration_yw1hlu.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
+        "classes": ["azja", "ptaki", "CR", "i3", "woliera"],
+        "info": " ",
+        "conservation": " ",
+        "population": "Od 50<br>do 250",
+        "status": "Krytycznie zagrożone",
+        "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776791/CR_x0nblf.webp",
+        "taxonomy": {
+            "Typ": "Strunowce",
+            "Gromada": "Ptaki",
+            "Rząd": "Wróblowe",
+            "Rodzina": "Krukowate",
+            "Rodzaj": "Cissa"
+        },
+        "habitat": {
+            "Kontynenty": ["Azja"],
+            "Regiony": [" "],
+            "mapa": {
+                "land": true,
+                "water": false,
+                "highlightLand": true
+            },
+            "Biomy": []
+        },
+        "social": [
+            { "Wielkość grupy": " " },
+            { "Wielkość grupy kawalerskiej samców": " " },
+            { "Wielkość grupy kawalerskiej samic": " " },
+            { "Hierarchia dominacji": " " },
+            { "Strategia rozrodcza": " " },
+            { "Zasady dotyczące dojrzałości": " " },
+            { "Stosunek do człowieka": " " }
+        ],
+        "speciesNumbers": {
+            "Wielkość": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Długość życia": {
+                "samiec": " ",
+                "samica": " "
+            },
+            "Waga": {
+                "samiec": " ",
+                "samica": " "
+            }
+        },
+        "lifeCycle": [
+            { "Wiek dojrzałości płciowej": " " },
+            { "Wiek zakończenia okresu reprodukcyjnego": " " },
+            { "Liczba młodych przypadająca na okres godowy": " " },
+            { "Długość ciąży/inkubacji": " " },
+            { "Okres międzyurodzeniowy": " " },
+            { "Rozmnażanie w niewoli": " " }
+        ],
+        "needs": " ",
+        "reproduction": " ",
+        "curiosities": [
+            " ",
+            " ",
+            " ",
+            " ",
+            " "
+        ],
+        "reservoirs": [{
+            "name": "Rezerwat Azja",
+            "link": "../Mapa/Rezerwat Azja.html",
+            "icon": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1770847045/brak-wybiegu_cfsrao.webp",
+            "male": 0,
+            "female": 0
+        }],
+        "availability": ["pz2"],
+        "contentByVersion": {
+            "pz2": "podstawa"
         }
     },
     {
@@ -12713,8 +12917,13 @@
         "aliases": ["niedźwiedź grizli", "niedźwiedź szary"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774207990/Nied%C5%BAwied%C5%BA_grizzly_h1tlqo.webp",
         "remasterImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1774207989/Nied%C5%BAwied%C5%BA_grizzly_-_Remaster_rcs78z.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301942/Nied%C5%BAwied%C5%BA_grizzly_iq7odf.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301964/Bear_Grizzly_illustration_scfm0b.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["amerykapolnocna", "ssaki", "LC", "i3", "remaster", "siedlisko"],
-        "info": "Zamieszkujący północną część Stanów Zjednoczonych oraz Kanadę niedźwiedź grizzly <i>(Ursus arctos horribilis)</i> jest tak naprawdę podgatunkiem niedźwiedzia brunatnego i często dla odróżnienia nazywany jest północnoamerykańskim niedźwiedziem brunatnym. Niedźwiedzia grizzly można rozpoznać po grubym, brązowym futrze, dużych zgrubieniach na barkach oraz prostej linii pyska i zaokrąglonych uszach. Ma mocne przednie łapy z długimi pazurami, których używa do kopania i polowania. Niedźwiedzie te mogą osiągać wyjątkowo duże rozmiary, ale często występują też duże różnice wielkości osobników w różnych populacjach – średnio samce osiągają masę 240 kg i długość ciała 2,2 m, natomiast samice ważą średnio 160 kg i dorastają do 1,8 m.<br><br>Populacja tych niedźwiedzi nie została wprawdzie zaliczona do gatunków zagrożonych, jednak niektóre z subpopulacji głównie na obszarach rozwoju gospodarczego ludzi - uznano za narażone. Ponadto niedźwiedzie często interesują się terenami, które zamieszkują ludzie, ponieważ daje im to mnóstwo okazji do zdobywania pokarmu, ale często powoduje, że zwierzęta te są zabijane, ponieważ są postrzegane jako niedogodność lub zagrożenie.<br><br>Na niedźwiedzie poluje się również dla sportu oraz w celu zdobycia trofeów i odbywa się to często w sposób naruszający równowagę ekologiczną. Niedźwiedzie grizzly są zarejestrowane jako gatunek zagrożony w Stanach Zjednoczonych i Kanadzie, a agencja U.S. Fish and Wildlife Service (Służba Połowu i Dzikiej Przyrody Stanów Zjednoczonych) podejmuje działania mające na celu przywrócenie populacji niedźwiedzi w stanach Montana, Wyoming, Idaho i Waszyngton oraz ochronę tego gatunku. Ponadto w różnych regionach Kanady populacja niedźwiedzi jest ściśle monitorowana na podstawie próbek DNA oraz przeprowadzanych spisów, w których dokumentuje się wzrosty i spadki liczebności populacji, co pomaga obrońcom zwierząt w ukierunkowaniu działań na populacje narażone.",
+        "info": "Zamieszkujący północną część Stanów Zjednoczonych oraz Kanadę niedźwiedź grizzly <i>(Ursus arctos horribilis)</i> jest tak naprawdę podgatunkiem niedźwiedzia brunatnego i często dla odróżnienia nazywany jest północnoamerykańskim niedźwiedziem brunatnym. Niedźwiedzia grizzly można rozpoznać po grubym, brązowym futrze, dużych zgrubieniach na barkach oraz prostej linii pyska i zaokrąglonych uszach. Ma mocne przednie łapy z długimi pazurami, których używa do kopania i polowania. Niedźwiedzie te mogą osiągać wyjątkowo duże rozmiary, ale często występują też duże różnice wielkości osobników w różnych populacjach – średnio samce osiągają masę 240 kg i długość ciała 2,2 m, natomiast samice ważą średnio 160 kg i dorastają do 1,8 m.",
+        "conservation": "Populacja tych niedźwiedzi nie została wprawdzie zaliczona do gatunków zagrożonych, jednak niektóre z subpopulacji głównie na obszarach rozwoju gospodarczego ludzi - uznano za narażone. Ponadto niedźwiedzie często interesują się terenami, które zamieszkują ludzie, ponieważ daje im to mnóstwo okazji do zdobywania pokarmu, ale często powoduje, że zwierzęta te są zabijane, ponieważ są postrzegane jako niedogodność lub zagrożenie.<br><br>Na niedźwiedzie poluje się również dla sportu oraz w celu zdobycia trofeów i odbywa się to często w sposób naruszający równowagę ekologiczną. Niedźwiedzie grizzly są zarejestrowane jako gatunek zagrożony w Stanach Zjednoczonych i Kanadzie, a agencja U.S. Fish and Wildlife Service (Służba Połowu i Dzikiej Przyrody Stanów Zjednoczonych) podejmuje działania mające na celu przywrócenie populacji niedźwiedzi w stanach Montana, Wyoming, Idaho i Waszyngton oraz ochronę tego gatunku. Ponadto w różnych regionach Kanady populacja niedźwiedzi jest ściśle monitorowana na podstawie próbek DNA oraz przeprowadzanych spisów, w których dokumentuje się wzrosty i spadki liczebności populacji, co pomaga obrońcom zwierząt w ukierunkowaniu działań na populacje narażone.",
         "population": "55 000",
         "status": "Najmniej zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
@@ -12794,10 +13003,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "podstawa",
-            "pz1console": "podstawa"
+            "pz1console": "podstawa",
+            "pz2": "podstawa"
         },
         "mod": "https://www.nexusmods.com/planetzoo/mods/1482"
     },
@@ -18345,8 +18555,10 @@
         "latin": "Agalychnis callidryas",
         "aliases": ["chwytnica kolorowa"],
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1771511371/Rzekotka_czerwonooka_lljkyr.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301940/Rzekotka_czerwonooka_yfxwem.webp",
         "classes": ["amerykapoludniowa", "plazy", "LC", "ekspozycja"],
-        "info": "Rzekotka czerwonooka <i>(Agalychnis callidryas)</i> to gatunek nadrzewnego płaza zamieszkujący lasy tropikalne Ameryki Środkowej. Samice tego gatunku są większe od samców, ale u obu płci występuje takie samo umaszczenie. Zgodnie z nazwą oczy tych żab mają intensywny czerwony kolor, a ich źrenice są czarne. Górna część ciała i górna powierzchnia nóg są bladozielone, w związku z czym po zamknięciu oczu i przyciągnięciu nóg do ciała żaba jest dobrze zamaskowana na tle liści, wśród których żeruje. Rzekotka czerwonooka ma jaskrawoniebieskie boki z żółtym siatkowym wzorem i niebieskie uda. Łapy mają kolor pomarańczowy a brzuch jest jasny.<br><br>Rzekotka czerwonooka nie jest gatunkiem zagrożonym, jednak jej populacji zagraża wylesianie i niezrównoważone odławianie w celu sprzedaży do hodowli.",
+        "info": "Rzekotka czerwonooka <i>(Agalychnis callidryas)</i> to gatunek nadrzewnego płaza zamieszkujący lasy tropikalne Ameryki Środkowej. Samice tego gatunku są większe od samców, ale u obu płci występuje takie samo umaszczenie. Zgodnie z nazwą oczy tych żab mają intensywny czerwony kolor, a ich źrenice są czarne. Górna część ciała i górna powierzchnia nóg są bladozielone, w związku z czym po zamknięciu oczu i przyciągnięciu nóg do ciała żaba jest dobrze zamaskowana na tle liści, wśród których żeruje. Rzekotka czerwonooka ma jaskrawoniebieskie boki z żółtym siatkowym wzorem i niebieskie uda. Łapy mają kolor pomarańczowy a brzuch jest jasny.",
+        "conservation": "Rzekotka czerwonooka nie jest gatunkiem zagrożonym, jednak jej populacji zagraża wylesianie i niezrównoważone odławianie w celu sprzedaży do hodowli.",
         "population": "Nieznana",
         "status": "Najmniej zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776785/LC_hfxxtc.webp",
@@ -18413,10 +18625,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "dlc",
-            "pz1console": "dlc"
+            "pz1console": "dlc",
+            "pz2": "podstawa"
         },
         "dlc": {
             "pz1pc": {
@@ -18941,8 +19154,13 @@
         "name": "Siamang wielki",
         "latin": "Symphalangus syndactylus",
         "image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1780250525/Siamang_wielki_ulgblr.webp",
+        "pz2image": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301940/Siamang_wielki_fybkjb.webp",
+        "znak": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791301963/Gibbon_Siamang_illustration_nj45jj.webp",
+        "znakWidth": "280px",
+        "znakHeight": "280px",
         "classes": ["azja", "ssaki", "EN", "i3", "siedlisko"],
-        "info": "Siamang wielki <i>(Symphalangus syndactylus)</i> to gatunek gibbona zamieszkujący lasy deszczowe Półwyspu Malajskiego oraz indonezyjską wyspę Sumatra. Jego ciało pokryte jest czarnym, kudłatym futrem, które na pysku jest rzadsze i szare. Siamang wielki ma bardzo długie kończyny górne - ich rozstaw niemal dwukrotnie przekracza długość jego ciała - krótkie, solidnie zbudowane nogi i nie ma ogona. Jedną z najbardziej rzucających się w oczy cech tego gatunku jest znajdujący się pod brodą worek krtaniowy, który nadyma się, gdy zwierzęta te wydają swoje charakterystyczne odgłosy. Siamangi osiągają zwykle wzrost 75-100 cm i ważą od 10 do 13 kg. Podobnie jak u innych gibbonowatych, u tego gatunku dymorfizm płciowy występuje w niewielkim stopniu lub wcale.<br><br>Siamang wielki jest uznawany za gatunek zagrożony z powodu znacznego zmniejszenia jego populacji w ostatnich dekadach. Wylesianie oraz przekształcanie terenów w grunty rolne stanowią największe zagrożenie dla przetrwania tych zwierząt, ponieważ ich siedliska są często niszczone w celu zakładania plantacji olejowców do pozyskiwania oleju palmowego. Innym zagrożeniem jest nielegalny handel zwierzętami. Kłusownicy zabijają często matki, aby ułatwić sobie schwytanie młodych, które następnie sprzedają. Siamang wielki jest gatunkiem chronionym, dlatego na kilku zamieszkiwanych przez te zwierzęta obszarach utworzono strefy chronione w celu zachowania pozostałych populacji nie tylko tego, ale również innych gatunków gibbonów.",
+        "info": "Siamang wielki <i>(Symphalangus syndactylus)</i> to gatunek gibbona zamieszkujący lasy deszczowe Półwyspu Malajskiego oraz indonezyjską wyspę Sumatra. Jego ciało pokryte jest czarnym, kudłatym futrem, które na pysku jest rzadsze i szare. Siamang wielki ma bardzo długie kończyny górne - ich rozstaw niemal dwukrotnie przekracza długość jego ciała - krótkie, solidnie zbudowane nogi i nie ma ogona. Jedną z najbardziej rzucających się w oczy cech tego gatunku jest znajdujący się pod brodą worek krtaniowy, który nadyma się, gdy zwierzęta te wydają swoje charakterystyczne odgłosy. Siamangi osiągają zwykle wzrost 75-100 cm i ważą od 10 do 13 kg. Podobnie jak u innych gibbonowatych, u tego gatunku dymorfizm płciowy występuje w niewielkim stopniu lub wcale.",
+        "conservation": "Siamang wielki jest uznawany za gatunek zagrożony z powodu znacznego zmniejszenia jego populacji w ostatnich dekadach. Wylesianie oraz przekształcanie terenów w grunty rolne stanowią największe zagrożenie dla przetrwania tych zwierząt, ponieważ ich siedliska są często niszczone w celu zakładania plantacji olejowców do pozyskiwania oleju palmowego. Innym zagrożeniem jest nielegalny handel zwierzętami. Kłusownicy zabijają często matki, aby ułatwić sobie schwytanie młodych, które następnie sprzedają. Siamang wielki jest gatunkiem chronionym, dlatego na kilku zamieszkiwanych przez te zwierzęta obszarach utworzono strefy chronione w celu zachowania pozostałych populacji nie tylko tego, ale również innych gatunków gibbonów.",
         "population": "Nieznana",
         "status": "Zagrożone",
         "statusImage": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1769776782/EN_ihqn2p.webp",
@@ -19013,10 +19231,11 @@
             "male": 0,
             "female": 0
         }],
-        "availability": ["pz1pc", "pz1console"],
+        "availability": ["pz1pc", "pz1console", "pz2"],
         "contentByVersion": {
             "pz1pc": "dlc",
-            "pz1console": "dlc"
+            "pz1console": "dlc",
+            "pz2": "podstawa"
         },
         "dlc": {
             "pz1pc": {
