@@ -78,7 +78,8 @@ window.ZOOPEDIA = window.ZOOPEDIA || {};
             "lew_zachodnioafrykanski": "lew",
             "slon_indyjski": "slon_azjatycki", // Domyślny wybór przy przejściu z PZ2 -> PZ1
             "slon_borneanski": "slon_azjatycki",
-            "niedzwiedz_brunatny_himalajski": "niedzwiedz_brunatny"
+            "niedzwiedz_brunatny_himalajski": "niedzwiedz_brunatny",
+            "flaming-rozowy-pz1": "flaming-rozowy-pz2"
         };
 
         function switchGameVersion(targetVersion, currentAnimal, fullAnimalList) {
