@@ -2176,8 +2176,50 @@
                     "title": "Uzyskaj ogólną ocenę zoo: 1,5/5,0"
                 }
             ],
-            "silver": [],
-            "gold": []
+            "silver": [{
+                    "title": "Zastosuj w zoo co najmniej następującą liczbę elementów Znaki bezpieczeństwa „Nie drażnić zwierząt”: 6"
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 6"
+                },
+                {
+                    "title": "Doprowadź badania dotyczące gatunków (3) z wybiegów do poziomu 3"
+                },
+                {
+                    "title": "Wydaj rocznie $9 000,00 na marketing"
+                },
+                {
+                    "title": "Wypracuj roczny zysk w sklepach: $5 000,00"
+                },
+                {
+                    "title": "Wypracuj roczny zysk w stoiskach z pamiątkami: $1 000,00"
+                }
+            ],
+            "gold": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 9",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 80%"
+                    ]
+                },
+                {
+                    "title": "Zapewnij zasilanie wszystkich obiektów w zoo energią odnawialną",
+                    "tasks": [
+                        "Przez 6 mies."
+                    ]
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji do 3,0 gwiazdek"
+                },
+                {
+                    "title": "Przeszkól 8 pracowników typu Personel do poziomu 2"
+                },
+                {
+                    "title": "Wypuść na wolność osobniki 9 różnych gatunków z wybiegów"
+                },
+                {
+                    "title": "Uzyskaj ogólną ocenę zoo: 4,0/5,0"
+                }
+            ]
         }
     },
     {
