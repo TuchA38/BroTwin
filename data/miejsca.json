@@ -2244,9 +2244,80 @@
         "fullBio": "Rajski park Tiffany to nowa atrakcja turystyczna, która przybliży gościom piękno, historię i faunę Arabii Saudyjskiej poprzez nowoczesne metody edukacji, sklepy i restauracje... Pod warunkiem, że Ty i [[postacie:tiffany-summers|Tiffany]] staniecie na wysokości zadania.",
         "description": "[[postacie:tiffany-summers|Tiffany]] kontaktuje się z Tobą pod nazwą „Zoomaniak”, prosząc o pomoc w zbudowaniu luksusowego zoo w Arabii Saudyjskiej, które podarował jej ojciec jako pierwsze poważne, dorosłe wyzwanie. Choć początkowo narzeka na ciężką pracę, upał i marudzenie swoich znajomych, pod Twoim okiem sprawnie radzi sobie z luksusowymi wybiegami, dobrostanem zwierząt i obsługą gości. Ostatecznie placówka odnosi gigantyczny sukces, a odwiedzający ją ojciec [[postacie:tiffany-summers|Tiffany]] jest tak dumny z autentycznego zaangażowania córki, że oferuje jej posadę w zarządzie. [[postacie:tiffany-summers|Tiffany]] jednak postanawia kontynuować swoją nową pasję w branży zoologicznej i zaprasza Cię do dalszej wspólnej pracy, wciąż zastanawiając się nad Twoim prawdziwym imieniem.",
         "objectives": {
-            "bronze": [],
-            "silver": [],
-            "gold": []
+            "bronze": [{
+                    "title": "Zbuduj wiele obiektów",
+                    "tasks": [
+                        "Wybuduj: Centrum handlu zwierzętami",
+                        "Wybuduj: Kwarantanna",
+                        "Wybuduj: Budynek dozorcy"
+                    ]
+                },
+                {
+                    "title": "Zatrudnij wymagany personel",
+                    "tasks": [
+                        "Zatrudnij: Dozorcy (2)",
+                        "Zatrudnij: Technik (1)",
+                        "Zatrudnij: Weterynarz (1)"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj na wybiegach w zoo następującą liczbę gatunków z biomu Pustynia: 3"
+                },
+                {
+                    "title": "Zwiększ średni dobrostan gatunków z wybiegów (Ogólny) do 70%",
+                    "tasks": [
+                        "Uzyskaj następującą liczbę gatunków na wybiegach w zoo: 3"
+                    ]
+                },
+                {
+                    "title": "Doprowadź zasilanie do wszystkich obiektów i wybiegów"
+                }
+            ],
+            "silver": [{
+                    "title": "Zmień kolor strojów personelu na karcie Zarządzanie personelem",
+                    "tasks": [
+                        "Zmień strój pracowników typu Dozorcy"
+                    ]
+                },
+                {
+                    "title": "Przeszkól 1 pracownika typu Weterynarz do poziomu 3"
+                },
+                {
+                    "title": "Adoptuj i umieść w odpowiednim miejscu różne gatunki z wybiegów: 6"
+                },
+                {
+                    "title": "Zwiększ średni dobrostan gatunków z wybiegów (Ogólny) do 80%"
+                },
+                {
+                    "title": "Zbuduj: Gulpee Slush"
+                },
+                {
+                    "title": "Zbuduj: Cosmic Cow Ice Cream"
+                }
+            ],
+            "gold": [{
+                    "title": "Doprowadź badania w dziedzinie Atrakcje transportowe do poziomu 4"
+                },
+                {
+                    "title": "Adoptuj i umieść w odpowiednim miejscu różne gatunki z ekspozycji: 5"
+                },
+                {
+                    "title": "Zwiększ średni dobrostan gatunków z wybiegów (Ogólny) do 90%",
+                    "tasks": [
+                        "Uzyskaj następującą liczbę gatunków na wybiegach w zoo: 10"
+                    ]
+                },
+                {
+                    "title": "Zbuduj atrakcję transportową Wycieczka 4x4: 700 m"
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 1 200 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo",
+                        "Uzyskaj średni poziom zadowolenia gości: 70%"
+                    ]
+                }
+            ]
         }
     },
     {
@@ -2271,9 +2342,66 @@
         "fullBio": "Na skąpanej w słońcu rajskiej wyspie [[postacie:emma-goodwin|Emma Goodwin]] planuje założyć ogród zoologiczny w ramach pierwszego przedsięwzięcia realizowanego wspólnie z ojcem.<br>Czy [[postacie:bernard-goodwin|Bernie]] zdoła oddać stery, abyśmy mogli wspólnie zbudować to zoo od podstaw?",
         "description": "[[postacie:emma-goodwin|Emma]] i [[postacie:bernard-goodwin|Bernie]] kontaktują się z Tobą, proponując udział w nowym, wyjątkowym projekcie rodzinnym – budowie i rozbudowie nowoczesnego zoo, które ma być bliskie ich sercom. Z entuzjazmem rzucasz się w wir pracy, dbając o infrastrukturę, edukację i roślinność. Pod czujnym okiem [[postacie:emma-goodwin|Emmy]] i dumnego [[postacie:bernard-goodwin|Berniego]] (którego zachwyt powstrzymał go nawet od opowiadania żartów na rodzinnym obiedzie) podnosisz dobrostan zwierząt, rozwijasz programy rozrodu i ochronne, a także sprowadzasz ulubione ptaki [[postacie:bernard-goodwin|Berniego]] – kiwi. Ostatecznie całkowicie odłączasz park od tradycyjnej sieci energetycznej, przechodząc na w pełni odnawialne źródła energii, wypuszczasz część zwierząt na wolność i przyciągasz rzesze zachwyconych gości, odnosząc kolejny spektakularny sukces pod szyldem rodziny Goodwinów.",
         "objectives": {
-            "bronze": [],
-            "silver": [],
-            "gold": []
+            "bronze": [{
+                    "title": "Zbuduj wiele obiektów",
+                    "tasks": [
+                        "Wybuduj: Centrum badawcze",
+                        "Wybuduj: Centrum handlu zwierzętami",
+                        "Wybuduj: Warsztat",
+                        "Wybuduj: Kwarantanna"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 3"
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków w ekspozycjach w zoo: 4"
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji do 1,0 gwiazdek"
+                },
+                {
+                    "title": "Uzyskaj różnorodność roślinności 15% na następującej liczbie wybiegów: 3"
+                }
+            ],
+            "silver": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 6"
+                },
+                {
+                    "title": "Umieść kopuły obserwacyjne (1) na co najmniej 2 wybiegach"
+                },
+                {
+                    "title": "Zwiększ średni dobrostan gatunków z wybiegów (Ogólny) do 60%",
+                    "tasks": [
+                        "Uzyskaj następującą liczbę gatunków na wybiegach w zoo: 6"
+                    ]
+                },
+                {
+                    "title": "Wyhoduj nowe zwierzęta do wybiegów różnych gatunków: 4"
+                },
+                {
+                    "title": "Zwiększ ocenę ochrony do 2,2 gwiazdek"
+                }
+            ],
+            "gold": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu 1 nowe zwierzę: Kiwi północny",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 80%"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 9"
+                },
+                {
+                    "title": "Zapewnij zasilanie wszystkich obiektów w zoo energią odnawialną",
+                    "tasks": [
+                        "Zbierz w zoo co najmniej 1 300 gości"
+                    ]
+                },
+                {
+                    "title": "Wypuść na wolność osobniki 9 różnych gatunków z wybiegów"
+                }
+            ]
         }
     },
     {
@@ -2298,9 +2426,48 @@
         "fullBio": "[[postacie:bernard-goodwin|Bernie]] zebrał ponownie całą ekipę, aby pomogła mu w drobnym, acz ważnym dla niego, projekcie — chodzi o przygotowanie prezentu dla [[postacie:nancy-jones|Nancy]] z okazji przejścia przez nią na emeryturę! Będziemy musieli postarać się jak najlepiej wykorzystać ograniczoną przestrzeń do stworzenia czegoś prawdziwie czarującego. [[postacie:bernard-goodwin|Bernie]] postara się czymś zająć [[postacie:nancy-jones|Nancy]], podczas gdy Ty zajmiesz się pracą!",
         "description": "[[postacie:bernard-goodwin|Bernie]] kontaktuje się z Tobą z nietypową prośbą – [[postacie:nancy-jones|Nancy]] oficjalnie przechodzi na emeryturę, a ponieważ nuda z pewnością doprowadziłaby ją do szału, [[postacie:bernard-goodwin|Bernie]] postanawia zbudować dla niej w tajemnicy dedykowane zoo. Twoim zadaniem jest stworzenie od podstaw malutkiego, świetnie prosperującego parku, który zapewni doskonałe warunki zwierzętom, wysoki poziom satysfakcji gości oraz nienaganne zaopatrzenie i organizację personelu. Gdy [[postacie:nancy-jones|Nancy]] domyśla się części planu i przesyła swoje uwagi dotyczące dobrostanu i rozrodu, do akcji wkracza [[postacie:emma-goodwin|Emma]], narzucając dodatkowe wymogi modernizacyjne: przejście na w pełni odnawialne źródła energii, spłacenie wszelkich pożyczek, podniesienie oceny ochrony oraz sprowadzenie kolejnych gatunków. Mimo presji czasu bezbłędnie realizujesz wszystkie wytyczne, a [[postacie:bernard-goodwin|Bernie]] z zachwytem oprowadza po ukończonym, nowoczesnym raju zaskoczoną i wzruszoną [[postacie:nancy-jones|Nancy]], ucinając sobie przy tym żarty na temat własnych słabości do ciastek i potencjalnej, nadchodzącej w przyszłości własnej emerytury.",
         "objectives": {
-            "bronze": [],
-            "silver": [],
-            "gold": []
+            "bronze": [{
+                    "title": "Zatrudnij 4 pracowników"
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 4"
+                },
+                {
+                    "title": "Uzyskaj ogólną ocenę zoo: 2,0/5,0"
+                }
+            ],
+            "silver": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 7"
+                },
+                {
+                    "title": "Uzyskaj ogólną ocenę zoo: 3,0/5,0"
+                },
+                {
+                    "title": "Wyhoduj nowe zwierzęta do wybiegów różnych gatunków: 3"
+                },
+                {
+                    "title": "Uzyskaj w raporcie z inspekcji zoo ocenę ogólną z liczbą gwiazdek 3,5"
+                }
+            ],
+            "gold": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 10",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 90%"
+                    ]
+                },
+                {
+                    "title": "Spłać wszystkie pożyczki"
+                },
+                {
+                    "title": "Zapewnij zasilanie wszystkich obiektów w zoo energią odnawialną",
+                    "tasks": [
+                        "Przez 3 mies."
+                    ]
+                },
+                {
+                    "title": "Uzyskaj ogólną ocenę zoo: 4,0/5,0"
+                }
+            ]
         }
     },
     {
@@ -2325,9 +2492,84 @@
         "fullBio": "To małe wiejskie zoo zostało zakupione przez pana Summersa, który przesłyszał się, gdy jego córka [[postacie:tiffany-summers|Tiffany]] poprosiła o nowe kozaki na wyjazd w góry! Dziewczyna nie spodziewała się kóz, ale żadne wyzwanie jej nie straszne! [[postacie:tiffany-summers|Tiffany]] ma ambitne plany co do tego zoo, ale już zarezerwowała lot, więc to Ty musisz wziąć byka za rogi i stworzyć legendarny rezerwat!",
         "description": "[[postacie:tiffany-summers|Tiffany]] kontaktuje się z Tobą z luksusowego wyjazdu w góry w Aspen, informując, że jej ojciec przez pomyłkę kupił jej kolejne zoo w formie wiejskiego gospodarstwa, zamiast obiecywanych kozaków. Zostawiając Cię całkowicie z zarządzaniem i „odpicowaniem” placówki pod swoją dłuższą nieobecność z powodu „śniegu” i VIP-ów, Tiffany prosi o ulepszenie wybiegów, edukacji oraz podniesienie prestiżu miejsca. Dzięki Twojej ciężkiej pracy i zaangażowaniu przekształcasz zwykłe gospodarstwo w luksusowy Rezerwat Summersów, wprowadzając edukacyjne interakcje z gośćmi oraz stylowy pociąg parowy. Ostatecznie park staje się hitem medialnym, przyciągając tłumy i zbierając ogromne uznanie, a [[postacie:tiffany-summers|Tiffany]] świętuje sukces na odległość.",
         "objectives": {
-            "bronze": [],
-            "silver": [],
-            "gold": []
+            "bronze": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 7",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 85%"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj czystość jezior na poziomie: 95%"
+                },
+                {
+                    "title": "Zatrudnij: Opiekunowie (3)",
+                    "tasks": [
+                        "Uzyskaj średni poziom zadowolenia personelu: 80%"
+                    ]
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 800 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo",
+                        "Uzyskaj średni poziom zadowolenia gości: 70%"
+                    ]
+                },
+                {
+                    "title": "Wypracuj roczny zysk: $10 000,00"
+                },
+                {
+                    "title": "Zorganizuj co najmniej następującą liczbę wykładów o zwierzętach w roku: 3"
+                }
+            ],
+            "silver": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 10",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 90%"
+                    ]
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 1 200 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo",
+                        "Uzyskaj średni poziom zadowolenia gości: 70%"
+                    ]
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Pragnienie gości do 60%",
+                    "tasks": [
+                        "Zbierz w zoo co najmniej 1 200 gości"
+                    ]
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji do 3,0 gwiazdek"
+                }
+            ],
+            "gold": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 15",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 95%"
+                    ]
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 1 700 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo",
+                        "Uzyskaj średni poziom zadowolenia gości: 70%"
+                    ]
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Głód gości do 60%"
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji do 3,5 gwiazdek"
+                },
+                {
+                    "title": "Zbuduj atrakcję transportową Mały pociąg parowy: 1 km"
+                },
+                {
+                    "title": "Uzyskaj w raporcie z inspekcji zoo ocenę ogólną z liczbą gwiazdek 4,0"
+                }
+            ]
         }
     },
     {
@@ -2352,8 +2594,81 @@
         "fullBio": "[[postacie:emma-goodwin|Emma]] pracuje nad nowym projektem, przy którym Twoje doświadczenie będzie bezcenne. Zoo Frontier kończy 5 lat i z tej okazji w ich siedzibie głównej ma się odbyć wielkie przyjęcie. Niech to będzie rocznica, której nikt nie zapomni!",
         "description": "[[postacie:emma-goodwin|Emma]] kontaktuje się z Tobą z propozycją udziału w wyjątkowym projekcie z okazji 5-lecia organizacji Zoo Frontier, która zajmuje się ratowaniem i rehabilitacją zwierząt. Dołączając do przygotowań, od razu zabierasz się do pracy: przyjmujesz uratowane żółwie pustynne, uruchamiasz program rozrodu lampartów afrykańskich oraz – za sprawą włączającej się do akcji nadzoru entuzjastycznej [[postacie:tiffany-summers|Tiffany]], której ojciec sponsoruje studia dzięki sukcesowi imprezy – dbasz o budowę sklepów z pamiątkami i urozmaicenia dla zwierząt. Dodatkowo w parku pojawiają się niedźwiedzie okularowe, podarowane przez [[postacie:tiffany-summers|Tiffany]] sifaki biało-kasztanowe oraz dodatkowi edukatorzy. Dzięki Twojemu zaangażowaniu, restauracjom i świetnej organizacji, huczne obchody rocznicy stają się gigantycznym sukcesem, z którego dumni są zarówno [[postacie:bernard-goodwin|Bernie]] z [[postacie:nancy-jones|Nancy]], jak i sama [[postacie:tiffany-summers|Tiffany]], która oficjalnie rozpoczyna wymarzone studia zoologiczne.",
         "objectives": {
-            "bronze": [],
-            "silver": [],
+            "bronze": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu podarowane zwierzęta: Żółwie pustynne",
+                    "tasks": [
+                        "Przenieś zwierzęta z gatunku Żółw pustynny do centrum handlowego",
+                        "Przenieś zwierzęta z gatunku Żółw pustynny do kwarantanny"
+                    ]
+                },
+                {
+                    "title": "Przygotuj wybieg dla: Żółw pustynny",
+                    "tasks": [
+                        "Dodaj stację żywieniową",
+                        "Dodaj urozmaicenia żywieniowe",
+                        "Dodaj urozmaicenia zabawek",
+                        "Zwiększ dobrostan (Teren) do 90%"
+                    ]
+                },
+                {
+                    "title": "Adoptuj i umieść w odpowiednim miejscu: Żółw pustynny (3)",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Zwiększ dobrostan gatunku Lampart afrykański (Ogólny) do 90%",
+                    "tasks": [
+                        "Przez 3 mies."
+                    ]
+                },
+                {
+                    "title": "Wypuść na wolność: Lamparty afrykańskie (3)"
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji (Żółw pustynny) do: 20%"
+                },
+                {
+                    "title": "Doprowadź badania w dziedzinie Żółw pustynny do poziomu 3"
+                },
+                {
+                    "title": "Zorganizuj co najmniej następującą liczbę wykładów o zwierzętach w roku: 1"
+                }
+            ],
+            "silver": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu: Andoniedźwiedź okularowy (2)",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 5",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 80%"
+                    ]
+                },
+                {
+                    "title": "Zbierz w zoo co najmniej 1 200 gości",
+                    "tasks": [
+                        "Im bardziej atrakcyjne są zwierzęta, tym więcej gości w zoo"
+                    ]
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Głód gości do 70%",
+                    "tasks": [
+                        "Przez 3 mies."
+                    ]
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Pragnienie gości do 65%",
+                    "tasks": [
+                        "Przez 3 mies."
+                    ]
+                },
+                {
+                    "title": "Uzyskaj stopień jakości pożywienia 2 dla gatunku Andoniedźwiedź okularowy"
+                }
+            ],
             "gold": []
         }
     },
