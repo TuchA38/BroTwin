@@ -2669,7 +2669,38 @@
                     "title": "Uzyskaj stopień jakości pożywienia 2 dla gatunku Andoniedźwiedź okularowy"
                 }
             ],
-            "gold": []
+            "gold": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu: Sifaka biało-kasztanowa (3)",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Zbuduj: Loony Blooons"
+                },
+                {
+                    "title": "Zbuduj: Hat's Fantastic"
+                },
+                {
+                    "title": "Zwiększ średni dobrostan gatunków z wybiegów (Ogólny) do 90%",
+                    "tasks": [
+                        "Przez 3 mies.",
+                        "Uzyskaj następującą liczbę gatunków na wybiegach w zoo: 7"
+                    ]
+                },
+                {
+                    "title": "Wyhoduj nowe zwierzęta do wybiegów różnych gatunków: 6"
+                },
+                {
+                    "title": "Wypuść na wolność osobniki dowolnych gatunków z wybiegów (7)"
+                },
+                {
+                    "title": "Uzyskaj w zoo co najmniej następującą liczbę punktów wycieczki: 7"
+                },
+                {
+                    "title": "Uzyskaj ogólną ocenę zoo: 4,5/5,0"
+                }
+            ]
         }
     },
     {
