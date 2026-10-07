@@ -1794,6 +1794,11 @@
         "title": "Złoty wiek",
         "definition": "Okres uznawany za czas największego rozwoju, rozkwitu i sukcesów w historii określonej osoby, grupy, dziedziny, miejsca lub cywilizacji. Określenie może odnosić się zarówno do rzeczywistego okresu historycznego, jak i umownie najlepszego etapu rozwoju czegoś."
     },
+    "zoom": {
+        "title": "Zoom",
+        "definition": "Zmiana stopnia powiększenia obrazu, widoku lub fragmentu przestrzeni, pozwalająca przybliżyć albo oddalić obserwowany element. W materiałach wizualnych i interfejsach zoom służy do dokładniejszego oglądania szczegółów lub uzyskania szerszego widoku.",
+        "aliases": ["zoomem"]
+    },
     "zulusi": {
         "title": "Zulusi",
         "definition": "Lud zamieszkujący południową Afrykę, znany z bogatej kultury i tradycji."

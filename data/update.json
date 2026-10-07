@@ -1,4 +1,124 @@
 [{
+        "id": "update2-beta-24",
+        "title": "Wskazówki dotyczące fotografowania zwierząt w trybie fotograficznym Planet Zoo 2!",
+        "versionTag": "BETA",
+        "date": "7 października 2026",
+        "gameVersion": ["pz2"],
+        "intro": [
+            "Witajcie Zookeeperzy!",
+            "Wiemy, że wielu z Was uwielbia fotografować dziką przyrodę, a niektórzy z Was są nawet utalentowanymi fotografami – a co, gdybyście mogli wykorzystać te umiejętności w Planet Zoo 2?",
+            "Cóż, teraz macie taką możliwość!",
+            "Przyjrzyjmy się szczegółom trybu fotograficznego w Planet Zoo 2, wraz z kilkoma przydatnymi wskazówkami, które pomogą Wam ulepszyć Wasze zdjęcia oraz informacjami o współpracy z niesamowitą organizacją {{link:WWFUK}}.",
+            "<hr>",
+            "<h3>Tryb fotograficzny w Planet Zoo 2</h3>",
+            "Istnieje wiele sposobów na podziwianie fantastycznych zwierząt zamieszkujących rezerwaty dzikiej przyrody i ogrody zoologiczne w Planet Zoo 2.",
+            "[[IMAGE:1]]",
+            "Tryb fotograficzny to Tryb Kamery dostępny w zupełnie nowych rezerwatach dzikiej przyrody i ogrodach zoologicznych w Planet Zoo 2, który pozwala robić zapierające dech w piersiach zdjęcia zwierząt w ich naturalnym środowisku.",
+            "[[IMAGE:2]]",
+            "Tryb fotograficzny znajdziecie w opcjach aparatu w przeglądarce.",
+            "Po przejściu do trybu fotograficznego widok z aparatu zmienia się tak, że przypomina aparat cyfrowy z imponującym obiektywem z zoomem!",
+            "Możecie sterować obrotem i zoomem, a także dostosowywać głębię ostrości, kontrast, nasycenie, ekspozycję i odcień koloru – a wszystko to jeszcze przed zrobieniem zdjęcia.",
+            "[[IMAGE:3]]",
+            "Każdy dobry fotograf przyrody wie, że najlepsze ujęcie można wykonać o każdej porze dnia. Czekanie w ukryciu aż zapadnie noc może być również świetnym sposobem na zaobserwowanie wyjątkowych zachowań zwierząt, których nie da się dostrzec w ciągu dnia!",
+            "W ramach trybu fotograficznego będziecie więc mogli zastosować filtry w aparacie, aby nadać zdjęciu odpowiedni nastrój lub uwydatnić szczegóły.",
+            "Filtry te obejmują tryb noktowizyjny, czarno-biały oraz różne opcje kolorystyczne.",
+            "[[IMAGE:4]]",
+            "Gdy wszystko będzie już skonfigurowane i gotowe do działania, ukryjcie interfejs użytkownika kamery i zróbcie zdjęcie, korzystając z funkcji zrzutu ekranu w swoim urządzeniu.",
+            "Wasze inspirujące zdjęcia zwierząt zostaną zapisane bezpośrednio w folderze zrzutów ekranu na platformie, na której gracie w Planet Zoo 2.",
+            "<hr>",
+            "<h3>Najważniejsze wskazówki dotyczące fotografowania dzikich zwierząt w Planet Zoo 2</h3>",
+            "[[IMAGE:5]]",
+            "Mamy dla Was kilka przydatnych wskazówek, jak uzyskać idealne zdjęcia dzikich zwierząt w trybie fotograficznym po premierze Planet Zoo 2.<ul><li>Skorzystajcie z ustawień powiększenia i obrotu, aby uzyskać idealne ujęcie – zajęcie najlepszej pozycji przed rozpoczęciem regulacji ustawień, takich jak głębia ostrości, czy dodawaniem filtrów, zapewni Wam sukces.</li><li>Zastosujcie zasadę trójpodziału – jeśli nie macie pewności, jak skomponować zdjęcie, wyobraźcie sobie, że obraz jest podzielony na siatkę 3x3 i postarajcie się, aby obiekt znajdował się w środkowej trzeciej części kadru.</li><li>Ustawcie się na wysokości oczu! Spróbujcie skierować aparat z dołu, tak jakbyście leżeli w liściach przed zwierzęciem.</li><li>Dodajcie winietę – tworzy ona centralny punkt zdjęcia, co idealnie nadaje się do skupienia uwagi na obiekcie.</li><li>Nie zapomnijcie o tle! Chociaż zwierzęta są głównym motywem Waszych zdjęć, skomponowanie ujęcia z pięknym tłem może mieć ogromne znaczenie.</li></ul>",
+            "Nie możemy się doczekać, aby wkrótce zobaczyć wszystkie wspaniałe zdjęcia, które zrobicie w Planet Zoo 2. Pamiętajcie, aby śledzić nasze kanały w mediach społecznościowych, ponieważ uwielbiamy dzielić się naszymi ulubionymi zrzutami ekranu. Być może zobaczycie tam swoje zdjęcie!",
+            "[[IMAGE:6]]",
+            "Nie wierzcie tylko nam na słowo! Cieszymy się, że po wydaniu będziemy współpracować z {{link:WWFUK}} przy wirtualnym konkursie fotografii przyrodniczej, ale na razie oto kilka porad od ekspertów!",
+            "<hr>",
+            "<h3>Siła fotografii przyrodniczej z WWF UK</h3>",
+            "Fotografia przyrodnicza ma wyjątkową moc. Potrafi sprawić, że zatrzymamy się w miejscu, wzbudzić zachwyt, odkryć ukryte światy i stworzyć emocjonalną więź z miejscami i gatunkami, z którymi sami być może nigdy się nie spotkamy.",
+            "[[SHORTIMAGE:1]]",
+            "<h5>Greg Armfield / WWF – Wielka Brytania</h5>",
+            "<h3>Tworzy emocjonalne więzi</h3>",
+            "Wpływający na wyobraźnię obraz może w jednej chwili wywołać radość, podziw, empatię, ciekawość lub niepokój, pomagając nam nawiązać głęboką, ludzką więź z dziką przyrodą.",
+            "<h3>Opowiada historie, których nie da się wyrazić słowami</h3>",
+            "Pojedyncze zdjęcie potrafi uchwycić chwilę triumfu, zmagań, czułości czy przetrwania, często przekazując więcej niż strony tekstu.",
+            "<h3>Inspiruje do działania</h3>",
+            "Fotografia przyrodnicza pomogła ukształtować stosunek społeczeństwa do ochrony środowiska, przybliżając ludziom odległe gatunki, dzikie miejsca i wyzwania związane z ochroną środowiska.",
+            "W najlepszym wydaniu fotografia przyrodnicza nie tylko pokazuje nam naturę, ale także pomaga nam o nią troszczyć się.",
+            "[[SHORTIMAGE:2]]",
+            "<h5>Greg Armfield / WWF – Wielka Brytania</h5>",
+            "<h3>Najważniejsze wskazówki dotyczące fotografii dzikiej przyrody</h3>",
+            "<b>Kultowe portrety</b>",
+            "Oczy są najważniejsze. Ostra ostrość na oczach i czyste tło mogą przekształcić zwykłe ujęcie w niezapomniany portret.",
+            "<b>Dzika przyroda w krajobrazie</b>",
+            "Pokażcie świat zwierząt. Ujęcie siedliska pomaga opowiedzieć bogatszą historię oraz podkreśla skalę i piękno dzikich miejsc.",
+            "<b>Uchwycenie zachowania</b>",
+            "Cierpliwość wygrywa z szczęściem. Poświęćcie czas na obserwację obiektu i przewidujcie kluczowe momenty, takie jak żerowanie, polowanie, pielęgnacja lub interakcje z innymi osobnikami.",
+            "[[SHORTIMAGE:3]]",
+            "<h5>wildlifewithholly / WWF – Wielka Brytania</h5>",
+            "<b>Zbliżenia i detale</b>",
+            "Wyjdźcie poza to, co oczywiste. Skupcie się na fakturach, wzorach, piórach, futrze, oczach lub śladach, aby odkryć inne spojrzenie na dziką przyrodę.",
+            "<b>Opowiadanie historii</b>",
+            "Myślcie nie tylko o pojedynczym zdjęciu. Szukajcie chwil, które ukazują początek, środek lub koniec, i uchwyćcie kontekst, akcję oraz emocje.",
+            "<b>Kreatywne wykorzystanie światła</b>",
+            "Światło wczesnego poranka i późnego popołudnia może dodać ciepła, dramatyzmu i atmosfery, zmieniając potencjalnie zwyczajną scenę w wyjątkowy moment fotograficzny.",
+            "<b>Okazanie szacunku</b>",
+            "Dobro zwierząt i otoczenia powinno zawsze być na pierwszym miejscu. Zapewnijcie dzikim zwierzętom przestrzeń i pozwólcie, by to ich naturalne zachowanie dyktowało kadr, a nie na odwrót.",
+            "<hr>",
+            "<h3>Wkrótce więcej informacji</h3>",
+            "Współpracujemy z organizacją {{link:WWFUK}} nad wirtualnym konkursem fotografii dzikiej przyrody, który odbędzie się jeszcze w tym miesiącu, więc już wkrótce podamy szczegóły. Nie możemy się doczekać, aby zobaczyć, jakie ujęcia uda Wam się uchwycić i co stworzycie dzięki trybowi fotograficznemu w Planet Zoo 2.",
+            "Zbliża się dzień premiery! Być może mamy jeszcze kilka asów w rękawie, którymi podzielimy się przed wydaniem Planet Zoo 2 na wasze ekrany, więc śledźcie nasze kanały społecznościowe, listę mailingową i {{link:strona}}, aby być na bieżąco z odliczaniem do premiery.",
+            "<hr>",
+            "Planet Zoo 2 można już zamawiać w przedsprzedaży na PC, PS5 i Xbox Series X|S. Dołączcie do dyskusji i bądźcie z nami w kontakcie na naszych mediach społecznościowych na {{link:facebook}}, {{link:x}}, {{link:instagram}}, {{link:tiktok}} oraz na serwerze {{link:discord}} „Frontier Unlocked”, zapiszcie się do naszego {{link:newsletter}} (aby otrzymać ekskluzywną nagrodę w grze w dniu premiery!) i zaglądajcie na naszą {{link:strona}}, by być na bieżąco z najświeższymi wiadomościami!"
+        ],
+        "images": {
+            "1": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791385213/PZ2_Beta_133_natdfu.webp",
+            "2": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791385238/PZ2_Beta_134_nk56s4.webp",
+            "3": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791385333/PZ2_Beta_135_pripqx.webp",
+            "4": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791385339/PZ2_Beta_136_dmwrvc.webp",
+            "5": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791385358/PZ2_Beta_137_st2r5x.webp",
+            "6": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791385367/PZ2_Beta_138_xd8q2o.webp"
+        },
+        "shortimages": {
+            "1": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791385387/PZ2_Beta_139_evdfde.webp",
+            "2": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791385393/PZ2_Beta_140_osdfaz.webp",
+            "3": "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791385402/PZ2_Beta_141_zbtc5o.webp"
+        },
+        "links": {
+            "WWFUK": {
+                "url": "https://www.wwf.org.uk/",
+                "label": "WWF UK"
+            },
+            "facebook": {
+                "url": "https://www.facebook.com/planetzoogame",
+                "label": "Facebooku"
+            },
+            "x": {
+                "url": "https://twitter.com/planetzoogame",
+                "label": "X"
+            },
+            "instagram": {
+                "url": "https://www.instagram.com/planetzoogame/",
+                "label": "Instagramie"
+            },
+            "tiktok": {
+                "url": "https://www.tiktok.com/@planetzoogame",
+                "label": "TikToku"
+            },
+            "discord": {
+                "url": "https://discord.com/invite/frontierunlocked",
+                "label": "Discord"
+            },
+            "strona": {
+                "url": "https://www.planetzoogame.com/",
+                "label": "stronę internetową"
+            },
+            "newsletter": {
+                "url": "https://www.planetzoogame.com/2/subscribe",
+                "label": "newslettera"
+            }
+        }
+    },
+    {
         "id": "update2-beta-23",
         "title": "Wywiad z ekspertem – dr Alexander Silwa z Cologne Zoo!",
         "versionTag": "BETA",
