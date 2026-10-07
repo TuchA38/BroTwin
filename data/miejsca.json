@@ -2725,9 +2725,91 @@
         "fullBio": "[[postacie:dominic-myers|Dominic Myers]] ukrywa się w Casa Dom w Meksyku, ale jego najgroźniejsi wrogowie depczą mu po piętach: reporterzy, protestujący, stado dzikich kojotów... U jego boku stoi tylko niedawno adoptowany kociak, więc czy pomożesz mu wyciągnąć wnioski z błędów?",
         "description": "[[postacie:dominic-myers|Dominic Myers]] kontaktuje się z Tobą niespodziewanie w oficjalnej wiadomości, twierdząc, że przez biurokratyczny błąd poprzedniej asystentki Twoje wypowiedzenie nigdy nie zostało rozpatrzone. Przez poważne problemy finansowe i zamrożenie kont po aferze w Nowym Jorku, [[postacie:dominic-myers|Dominic]] zatrudnia Cię ponownie – tym razem jako nieodpłatnego, młodszego praktykanta na bezcennym „stażu” – i wysyła do małego, świeżo kupionego zoo. Park ma pełne ręce roboty: musisz usunąć protestujących, oswoić i wykorzystać do zarobku stado kojotów oraz zadbać o ulubioną gepardzicę [[postacie:dominic-myers|Dominica]], Smugę, czyszcząc jej wybieg i kupując zabawki. Z czasem, pod Twoim fachowym okiem i wbrew dawnym nawykom [[postacie:dominic-myers|Dominica]], zoo zaczyna działać w pełni legalnie i niezwykle dochodowo, co drastycznie poprawia nadszarpniętą reputację szefa i przyciąga nowych gości oraz zwierzęta. Zadowolony z profitów i nowo odkrytej książki weterynaryjnej [[postacie:dominic-myers|Dominic]] powierza Ci opiekę nad Smugą i udaje się do banku, by sprawdzić odblokowane fundusze.",
         "objectives": {
-            "bronze": [],
-            "silver": [],
-            "gold": []
+            "bronze": [{
+                    "title": "Złap wszystkie zbiegłe zwierzęta",
+                    "tasks": [
+                        "Przez 3 mies."
+                    ]
+                },
+                {
+                    "title": "Przygotuj wybieg dla: Smuga",
+                    "tasks": [
+                        "Dodaj stację żywieniową",
+                        "Dodaj urozmaicenia zabawek",
+                        "Zwiększ dobrostan (Teren) do 90%"
+                    ]
+                },
+                {
+                    "title": "Zadbaj, aby w zoo nie było demonstrantów",
+                    "tasks": [
+                        "Przez 3 mies.",
+                        "Demonstranci są widoczni na mapach cieplnych dobrostanu zwierząt i potrzeb gości"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj w zoo co najmniej następującą liczbę skarbonek na darowizny: 3"
+                },
+                {
+                    "title": "Uzyskaj w raporcie z inspekcji zoo ocenę ogólną z liczbą gwiazdek 4,0"
+                }
+            ],
+            "silver": [{
+                    "title": "Wypracuj roczny zysk z biletów wstępu: $3 000,00",
+                    "tasks": [
+                        "Nie miej żadnych niespłaconych pożyczek"
+                    ]
+                },
+                {
+                    "title": "Adoptuj i umieść w odpowiednim miejscu uratowane zwierzęta: 3",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 6",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 80%"
+                    ]
+                },
+                {
+                    "title": "Doprowadź badania dotyczące gatunków (3) z wybiegów do poziomu 2"
+                },
+                {
+                    "title": "Uzyskaj stopień jakości pożywienia 2 dla gatunku Gepard"
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Zadowolenie gości do 70%",
+                    "tasks": [
+                        "Zbierz w zoo co najmniej 600 gości"
+                    ]
+                }
+            ],
+            "gold": [{
+                    "title": "Adoptuj i umieść w odpowiednim miejscu uratowane zwierzęta",
+                    "tasks": [
+                        "Dostępne w obszarze „Nagrody” sekcji Handel zwierzętami"
+                    ]
+                },
+                {
+                    "title": "Zwiększ średni dobrostan gatunków z wybiegów (Ogólny) do 90%",
+                    "tasks": [
+                        "Przez 3 mies.",
+                        "Uzyskaj następującą liczbę gatunków na wybiegach w zoo: 9"
+                    ]
+                },
+                {
+                    "title": "Przeszkól 6 pracowników typu Personel do poziomu 3"
+                },
+                {
+                    "title": "Doprowadź badania dotyczące gatunków (7) z wybiegów do poziomu 4"
+                },
+                {
+                    "title": "Uzyskaj w raporcie z inspekcji zoo ocenę ogólną z liczbą gwiazdek 4,5"
+                },
+                {
+                    "title": "Uzyskaj ogólną ocenę zoo: 4,0/5,0"
+                }
+            ]
         }
     },
     {
@@ -2752,9 +2834,57 @@
         "fullBio": "[[postacie:dominic-myers|Dominic Myers]] założył puste zoo w Korei Południowej, gdzie nawiązał niezwykłą więź z jenotem wiwerowatym. Ten mały futrzak może pomóc stanąć [[postacie:dominic-myers|Dominicowi]] na nogi, ale będzie trzeba się zdrowo przyłożyć, aby tchnąć życie w to miejsce!",
         "description": "[[postacie:dominic-myers|Dominic]] kontaktuje się z Tobą z odzyskanej dzięki bankowi placówki w Korei Południowej, gdzie podczas wizyty w miejscowym azylu adoptował małego, podgryzającego portfele jenota wiwerowatego o imieniu Złotek. Przekonany, że zwierzę przynosi szczęście i widząc w nim bratnią duszę – a nawet otwarcie mu zazdroszcząc – [[postacie:dominic-myers|Dominic]] całkowicie zmienia swoje życiowe priorytety. Zamiast bezwzględnego parcia na zysk i kombinowania, skupia się pod Twoim okiem na zapewnieniu doskonałych warunków dla zwierząt, budowie porządnego wybiegu, edukacji gości na temat jenotów oraz ulepszaniu opieki personelu. Choć dawni wspólnicy kuszą go odbudową Korporacji Myers, [[postacie:dominic-myers|Dominic]] ku własnemu zaskoczeniu woli zostać na miejscu, karmić Złotka i cieszyć się prostą, satysfakcjonującą pracą na rzecz ochrony przyrody.",
         "objectives": {
-            "bronze": [],
-            "silver": [],
-            "gold": []
+            "bronze": [{
+                    "title": "Uzyskaj w zoo co najmniej następującą liczbę zwierząt z gatunku Jenot wiwerowaty: 3",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 80%"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków w ekspozycjach w zoo: 6"
+                },
+                {
+                    "title": "Doprowadź badania w dziedzinie Jenot wiwerowaty do poziomu 2"
+                },
+                {
+                    "title": "Przeszkól 4 pracowników typu Personel do poziomu 2"
+                }
+            ],
+            "silver": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 6"
+                },
+                {
+                    "title": "Wyhoduj nowe zwierzęta do wybiegów różnych gatunków: 3"
+                },
+                {
+                    "title": "Wypuść na wolność osobniki dowolnych gatunków z wybiegów (5)"
+                },
+                {
+                    "title": "Uzyskaj stopień jakości pożywienia 2 dla gatunku Jenot wiwerowaty"
+                }
+            ],
+            "gold": [{
+                    "title": "Uzyskaj przynajmniej następującą liczbę różnych gatunków na wybiegach w zoo: 9",
+                    "tasks": [
+                        "Zwiększ dobrostan (Ogólny) do 80%"
+                    ]
+                },
+                {
+                    "title": "Wyhoduj nowe zwierzęta do wybiegów różnych gatunków: 6"
+                },
+                {
+                    "title": "Zwiększ ocenę edukacji do 3,0 gwiazdek"
+                },
+                {
+                    "title": "Zwiększ średni poziom zaspokojenia potrzeby Zadowolenie gości do 70%",
+                    "tasks": [
+                        "Zbierz w zoo co najmniej 1 700 gości"
+                    ]
+                },
+                {
+                    "title": "Uzyskaj ogólną ocenę zoo: 4,0/5,0"
+                }
+            ]
         }
     }
 ]
