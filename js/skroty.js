@@ -58,6 +58,11 @@ function updateLEDs(e) {
     if (scrollLed) scrollLed.classList.toggle("active", e.getModifierState("ScrollLock"));
 }
 
+// Rejestracja nasłuchiwania stanu NumLock / CapsLock / ScrollLock przy różnych zdarzeniach
+['mousemove', 'mousedown', 'keydown', 'keyup', 'focus'].forEach(eventType => {
+    window.addEventListener(eventType, updateLEDs, { passive: true });
+});
+
 // Rejestracja zdarzeń klawiatury i myszy (jednorazowo)
 if (!window.SHORTCUTS_LISTENERS_BOUND) {
     window.SHORTCUTS_LISTENERS_BOUND = true;
@@ -132,13 +137,14 @@ function renderCurrentVersionView() {
     `;
 
     list.forEach(item => {
+        // Wewnątrz renderCurrentVersionView() podczas budowania wierszy tabeli:
         html += `
-            <tr id="row-${item.id}">
-                <th><span class="key-badge">${item.display}</span></th>
-                <td>${item.title}</td>
-                <td><small>${item.category || "Ogólne"}</small></td>
-            </tr>
-        `;
+    <tr id="row-${item.id}">
+        <th><span class="key-badge">${item.display}</span></th>
+        <td>${item.title}</td>
+        <td><small>${item.category || "Ogólne"}</small></td>
+    </tr>
+`;
     });
 
     html += `</tbody></table>`;
@@ -148,6 +154,7 @@ function renderCurrentVersionView() {
 function generatePCControlsHTML() {
     return `
         <div class="pc-controls-wrapper">
+            <!-- Klawiatura po lewej stronie -->
             <div class="keyboard-container">
                 <div class="keyboard-main">
                     <!-- Rząd Esc + F1-F12 z odstępami -->
@@ -186,7 +193,7 @@ function generatePCControlsHTML() {
                         <div class="key" data-code="Equal">=</div>
                         <div class="key medium" data-code="Backspace">⌫</div>
                     </div>
-                    <!-- Rząd Tab + QWERTY + [, ], \ -->
+                    <!-- Rząd Tab + QWERTY + [, ], \\ -->
                     <div class="key-row">
                         <div class="key medium" data-code="Tab">Tab</div>
                         <div class="key" data-code="KeyQ">Q</div>
@@ -299,7 +306,7 @@ function generatePCControlsHTML() {
                 </div>
             </div>
 
-            <!-- Myszka -->
+            <!-- Myszka po prawej stronie -->
             <div class="mouse-container">
                 <div class="mouse-body">
                     <div class="mouse-btn left" data-code="MouseLeft">LMB</div>
@@ -336,10 +343,14 @@ function generateGamepadHTML() {
 }
 
 function initToast() {
-    if (!document.getElementById("shortcut-toast")) {
-        const toast = document.createElement("div");
-        toast.id = "shortcut-toast";
-        document.body.appendChild(toast);
+    let toast = document.getElementById("shortcut-toast");
+    if (!toast) {
+        const shortcutsLayout = document.querySelector(".shortcuts-layout");
+        if (shortcutsLayout) {
+            toast = document.createElement("div");
+            toast.id = "shortcut-toast";
+            shortcutsLayout.prepend(toast);
+        }
     }
 }
 
@@ -347,6 +358,8 @@ function checkAndShowShortcut(e) {
     const currentVersion = getActiveVersion();
     const list = SHORTCUTS.data ? SHORTCUTS.data[currentVersion] : null;
     if (!list) return;
+
+    const mappedCode = getTargetCode(e);
 
     let combo = [];
     if (e.ctrlKey) combo.push("ControlLeft");
@@ -357,7 +370,11 @@ function checkAndShowShortcut(e) {
     const comboStr = combo.join("+");
 
     const matched = list.find(item =>
-        item.codes && (item.codes.includes(e.code) || item.codes.includes(comboStr))
+        item.codes && (
+            item.codes.includes(e.code) ||
+            item.codes.includes(mappedCode) ||
+            item.codes.includes(comboStr)
+        )
     );
 
     if (matched) {
@@ -366,8 +383,12 @@ function checkAndShowShortcut(e) {
 }
 
 function showToast(text) {
+    // Nie wyświetlaj toastów na ekranach mobilnych (poniżej 900px)
+    if (window.innerWidth <= 900) return;
+
     const toast = document.getElementById("shortcut-toast");
     if (!toast) return;
+
     toast.textContent = text;
     toast.classList.add("visible");
 
@@ -377,24 +398,52 @@ function showToast(text) {
     }, 2000);
 }
 
-// Mapa zamienna dla klawiszy numerycznych działających jako nawigacja
+// Zamiana klawiszy numerycznych na odpowiedniki wizualne w zależności od stanu NumLock
 function getTargetCode(e) {
-    const numpadToNav = {
-        "Home": "Home",
-        "End": "End",
-        "PageUp": "PageUp",
-        "PageDown": "PageDown",
-        "Insert": "Insert",
-        "Delete": "Delete",
-        "ArrowUp": "ArrowUp",
-        "ArrowDown": "ArrowDown",
-        "ArrowLeft": "ArrowLeft",
-        "ArrowRight": "ArrowRight"
-    };
+    if (!e || !e.code) return "";
 
-    if (e.code.startsWith("Numpad") && numpadToNav[e.key]) {
-        return numpadToNav[e.key];
+    const isNumLockOn = e.getModifierState ? e.getModifierState("NumLock") : false;
+
+    if (e.code.startsWith("Numpad")) {
+        // Gdy NumLock jest WYŁĄCZONY - obsługujemy wyłącznie klawisze nawigacyjne
+        if (!isNumLockOn) {
+            const numpadToNav = {
+                "Numpad7": "Home",
+                "Numpad8": "ArrowUp",
+                "Numpad9": "PageUp",
+                "Numpad4": "ArrowLeft",
+                "Numpad6": "ArrowRight",
+                "Numpad1": "End",
+                "Numpad2": "ArrowDown",
+                "Numpad3": "PageDown",
+                "Numpad0": "Insert",
+                "NumpadDecimal": "Delete"
+            };
+            // Jeśli kliknięto 5, /, *, -, + przy wyłączonym NumLocku, funkcja zwróci "", więc nic się nie podświetli
+            return numpadToNav[e.code] || "";
+        }
+
+        // Gdy NumLock jest WŁĄCZONY - mapujemy na cyfry i znaki głównej klawiatury
+        const numpadToDigit = {
+            "Numpad0": "Digit0",
+            "Numpad1": "Digit1",
+            "Numpad2": "Digit2",
+            "Numpad3": "Digit3",
+            "Numpad4": "Digit4",
+            "Numpad5": "Digit5",
+            "Numpad6": "Digit6",
+            "Numpad7": "Digit7",
+            "Numpad8": "Digit8",
+            "Numpad9": "Digit9",
+            "NumpadDecimal": "Period",
+            "NumpadDivide": "Slash",
+            "NumpadSubtract": "Minus",
+            "NumpadAdd": "Equal",
+            "NumpadEnter": "Enter"
+        };
+        return numpadToDigit[e.code] || "";
     }
+
     return e.code;
 }
 
