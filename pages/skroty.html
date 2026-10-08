@@ -13,18 +13,26 @@
 
 <body>
     <h2 class="tytuł">Skróty Klawiszowe</h2>
+    <center>
+        <div class="logo-frame">
+            <img class="logo logo-dlc" width="440px" src="https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791481385/przyciski_dtao82.webp" alt="Przyciski">
+        </div>
+    </center>
     <div class="opis"><i>Naciskaj klawisze na fizycznej klawiaturze, aby zobaczyć ich podświetlenie i przypisane akcje.</i></div>
 
-    <!-- Główny kontener 2-kolumnowy -->
+    <!-- Toast osadzony wyłącznie w obrębie podstrony skrótów -->
+    <div id="shortcut-toast"></div>
+
+    <!-- Główny kontener jednokolumnowy (Góra: Kontroler, Dół: Tabela) -->
     <div class="shortcuts-layout">
 
-        <!-- Lewa strona: Wizualna Klawiatura / Pad -->
+        <!-- Góra: Wizualna Klawiatura (lewo) + Myszka (prawo) -->
         <div class="visual-panel">
             <b class="panel-title">Wizualny Kontroler</b>
             <div id="controller-view"></div>
         </div>
 
-        <!-- Prawa strona: Tabela ze skrótami -->
+        <!-- Dół: Tabela ze skrótami -->
         <div class="table-panel">
             <b class="panel-title">Tabela Akcji</b>
             <div id="skroty-table-container"></div>
