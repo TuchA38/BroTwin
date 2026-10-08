@@ -488,6 +488,19 @@
                 node.nodeValue = text;
             });
         };
+
+        // Globalna blokada przeładowywania strony klawiszem Enter (z wyjątkiem pól tekstowych)
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                const activeTag = document.activeElement ? document.activeElement.tagName : "";
+                const isEditable = document.activeElement && document.activeElement.isContentEditable;
+
+                // Jeśli użytkownik NIE pisze w input, textarea ani polu edytowalnym – blokuj domyślny Enter
+                if (activeTag !== "INPUT" && activeTag !== "TEXTAREA" && !isEditable) {
+                    e.preventDefault();
+                }
+            }
+        });
     </script>
     <script src="js/footer.js"></script>
 
