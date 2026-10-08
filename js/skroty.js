@@ -84,6 +84,33 @@ if (!window.SHORTCUTS_LISTENERS_BOUND) {
     });
     htmlObserver.observe(document.documentElement, { attributes: true });
 
+    // Obsługa ruchu myszy (MouseMove)
+    let mouseMoveTimeout;
+    window.addEventListener("mousemove", (e) => {
+        // Ignorujemy pojedyncze drgania kursora
+        if (Math.abs(e.movementX) > 1 || Math.abs(e.movementY) > 1) {
+
+            activeInputCodes.add("MouseMove");
+
+            // Rozróżnienie kierunku
+            if (Math.abs(e.movementX) > Math.abs(e.movementY)) {
+                activeInputCodes.add("MouseMoveX");
+            } else {
+                activeInputCodes.add("MouseMoveY");
+            }
+
+            checkAndShowShortcut();
+
+            // Reset stanu po zaprzestaniu ruchu
+            clearTimeout(mouseMoveTimeout);
+            mouseMoveTimeout = setTimeout(() => {
+                activeInputCodes.delete("MouseMove");
+                activeInputCodes.delete("MouseMoveX");
+                activeInputCodes.delete("MouseMoveY");
+            }, 150);
+        }
+    }, { passive: true });
+
     // Obsługa Myszki
     window.addEventListener("mousedown", (e) => {
         const buttonCode = e.button === 0 ? "MouseLeft" : e.button === 2 ? "MouseRight" : "MouseMiddle";
@@ -384,46 +411,70 @@ function checkAndShowShortcut() {
     const list = SHORTCUTS.data ? SHORTCUTS.data[currentVersion] : null;
     if (!list || activeInputCodes.size === 0) return;
 
-    let bestMatch = null;
     let maxMatchLength = 0;
+    let matchingItems = [];
 
     // Przeglądamy wszystkie zarejestrowane skróty dla danej wersji
     list.forEach(item => {
         if (!item.codes) return;
 
+        let bestItemComboLength = 0;
+
         item.codes.forEach(comboStr => {
             const requiredCodes = comboStr.split("+");
 
-            // Sprawdzamy, czy WSZYSTKIE przyciski z danej kombinacji są teraz wciśnięte
+            // Sprawdzamy, czy WSZYSTKIE przyciski z danej kombinacji są wciśnięte
             const allMatched = requiredCodes.every(code => activeInputCodes.has(code));
 
-            // Wybieramy pasujący skrót o największej liczbie połączonych klawiszy (np. 2 > 1)
-            if (allMatched && requiredCodes.length > maxMatchLength) {
-                maxMatchLength = requiredCodes.length;
-                bestMatch = item;
+            if (allMatched) {
+                if (requiredCodes.length > bestItemComboLength) {
+                    bestItemComboLength = requiredCodes.length;
+                }
             }
         });
+
+        if (bestItemComboLength > 0) {
+            // Jeśli znaleźliśmy bardziej złożoną kombinację (np. 2 klawisze wygrywają z 1)
+            if (bestItemComboLength > maxMatchLength) {
+                maxMatchLength = bestItemComboLength;
+                matchingItems = [item];
+            } else if (bestItemComboLength === maxMatchLength) {
+                // Jeśli kombinacja ma ten sam poziom ważności, dodajemy do listy
+                matchingItems.push(item);
+            }
+        }
     });
 
-    if (bestMatch) {
-        showToast(bestMatch.title, bestMatch.display);
+    if (matchingItems.length > 0) {
+        showToast(matchingItems);
     }
 }
 
-// Funkcja wyświetlająca wyskakujące powiadomienie (Toast) z pełną obsługą HTML (obrazków)
-function showToast(title, displayHtml) {
+// Wyświetlanie powiadomienia ze wsparciem dla wielu pasujących skrótów i kategorii
+function showToast(matchingItems) {
     if (window.innerWidth <= 900) return;
 
     const toast = document.getElementById("shortcut-toast");
     if (!toast) return;
 
-    toast.innerHTML = `${title} <span class="toast-display">(${displayHtml})</span>`;
+    let html = "";
+    matchingItems.forEach(item => {
+        const categoryLabel = item.category ? `<span class="toast-category">[${item.category}]</span> ` : "";
+        html += `
+            <div class="toast-item">
+                ${categoryLabel}<strong class="toast-title">${item.title}</strong>
+                <span class="toast-display">(${item.display})</span>
+            </div>
+        `;
+    });
+
+    toast.innerHTML = html;
     toast.classList.add("visible");
 
     clearTimeout(window.toastTimer);
     window.toastTimer = setTimeout(() => {
         toast.classList.remove("visible");
-    }, 2000);
+    }, 2500);
 }
 
 function getTargetCode(e) {
