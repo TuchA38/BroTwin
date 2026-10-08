@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    max-width: 1250px;
+    max-width: 1280px;
     margin: 20px auto;
     padding: 0 15px;
     position: relative;
@@ -18,7 +18,7 @@
 }
 
 
-/* Kontrolery PC (Klawiatura + Numpad + Myszka) */
+/* Kontrolery PC (Ciemnozielony motyw PZ1) */
 
 .pc-controls-wrapper {
     display: flex;
@@ -29,14 +29,15 @@
     flex-wrap: wrap;
 }
 
-.keyboard-container {
+.keyboard-container,
+.mouse-container {
     display: flex;
     gap: 12px;
-    background: #111827;
+    background: #0e2a1f;
     padding: 16px;
     border-radius: 12px;
-    border: 1px solid #374151;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    border: 1px solid #118d64;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .keyboard-main {
@@ -53,43 +54,6 @@
     width: 115px;
 }
 
-
-/* Klawiatura Numeryczna (Numpad) Grid */
-
-.keyboard-numpad {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.numpad-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4px;
-}
-
-.numpad-grid .key {
-    min-width: 0;
-    width: 100%;
-}
-
-.numpad-grid .tall-add {
-    grid-column: 4;
-    grid-row: 2 / span 2;
-    height: 100%;
-}
-
-.numpad-grid .tall-enter {
-    grid-column: 4;
-    grid-row: 4 / span 2;
-    height: 100%;
-}
-
-.numpad-grid .wide-zero {
-    grid-column: 1 / span 2;
-}
-
 .key-row {
     display: flex;
     gap: 4px;
@@ -97,10 +61,10 @@
 }
 
 .key {
-    background: #1f2937;
+    background: #1b4332;
     color: #e5e7eb;
-    border: 1px solid #4b5563;
-    border-bottom: 3px solid #000;
+    border: 1px solid #2d6a4f;
+    border-bottom: 3px solid #081c15;
     border-radius: 5px;
     height: 36px;
     flex: 1;
@@ -149,13 +113,13 @@
 }
 
 
-/* Wizualizacja Myszki */
+/* Myszka */
 
 .mouse-container {
-    background: #111827;
+    background: #0e2a1f;
     padding: 20px 14px;
     border-radius: 12px;
-    border: 1px solid #374151;
+    border: 1px solid #118d64;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,18 +130,18 @@
 .mouse-body {
     width: 85px;
     height: 140px;
-    border: 2px solid #4b5563;
+    border: 2px solid #118d64;
     border-radius: 40px 40px 30px 30px;
     position: relative;
-    background: #1f2937;
+    background: #1b4332;
     display: flex;
     flex-wrap: wrap;
 }
 
 .mouse-btn {
     height: 50px;
-    background: #374151;
-    color: #9ca3af;
+    background: #2d6a4f;
+    color: #a7f3d0;
     font-size: 0.65rem;
     font-weight: bold;
     display: flex;
@@ -189,13 +153,13 @@
 .mouse-btn.left {
     width: 40px;
     border-radius: 35px 0 0 0;
-    border-right: 1px solid #111827;
+    border-right: 1px solid #0e2a1f;
 }
 
 .mouse-btn.right {
     width: 40px;
     border-radius: 0 35px 0 0;
-    border-left: 1px solid #111827;
+    border-left: 1px solid #0e2a1f;
 }
 
 .mouse-btn.wheel {
@@ -205,20 +169,20 @@
     transform: translateX(-50%);
     width: 10px;
     height: 22px;
-    background: #4b5563;
+    background: #118d64;
     border-radius: 5px;
 }
 
 
-/* Kontrolki LED */
+/* LED */
 
 .led-panel {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 3px 6px;
-    background: #111827;
-    border: 1px solid #374151;
+    background: #081c15;
+    border: 1px solid #2d6a4f;
     border-radius: 4px;
     margin-bottom: 2px;
 }
@@ -234,19 +198,19 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #374151;
+    background-color: #2d6a4f;
     box-shadow: inset 0 0 2px #000;
     transition: background-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .led-dot.active {
-    background-color: #10b981;
-    box-shadow: 0 0 6px #10b981, 0 0 10px #10b981;
+    background-color: #34d399;
+    box-shadow: 0 0 6px #34d399, 0 0 10px #34d399;
 }
 
 .led-label {
     font-size: 0.55rem;
-    color: #6b7280;
+    color: #6ee7b7;
     font-weight: 600;
     text-transform: lowercase;
 }
@@ -262,85 +226,119 @@
 }
 
 
-/* Tabela */
+/* Siatka Kafelków (Grid) dla Kategorii Skrótów */
 
-.table-panel {
+.shortcuts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 18px;
     width: 100%;
 }
+
+.category-card {
+    background: #0e2a1f;
+    border: 1px solid #118d64;
+    border-radius: 10px;
+    padding: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+
+.category-title {
+    margin: 0 0 10px 0;
+    font-size: 0.95rem;
+    color: #6ee7b7;
+    border-bottom: 2px solid #0b6144;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* Tabela wewnątrz kafelka */
 
 .skroty-table {
     width: 100%;
     border-collapse: collapse;
-    background: #111827;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #374151;
 }
 
 .skroty-table th,
 .skroty-table td {
-    padding: 12px 16px;
+    padding: 8px 10px;
     text-align: left;
-    border-bottom: 1px solid #1f2937;
+    border-bottom: 1px solid #1b4332;
     color: #e5e7eb;
+    font-size: 0.85rem;
 }
 
 .skroty-table thead th {
-    background-color: #1f2937;
-    color: #9ca3af;
+    background-color: #1b4332;
+    color: #a7f3d0;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 }
 
-.shortcut-display {
+.key-badge {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    flex-wrap: wrap;
-}
-
-.mouse-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #1f2937;
-    color: #38bdf8;
-    border: 1px solid #0284c7;
+    background: #1b4332;
     padding: 3px 8px;
-    border-radius: 6px;
-    font-size: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #2d6a4f;
     font-weight: bold;
+    color: #34d399;
 }
 
-.mouse-badge.lmb {
-    color: #4ade80;
-    border-color: #16a34a;
+
+/* Dopasowanie grafiki i ikon wewnątrz badge'y */
+
+.key-badge img,
+.key-badge .sterowanie,
+.key-badge .kolo,
+.key-badge .mouse-icon {
+    max-height: 22px;
+    width: auto;
+    object-fit: contain;
+    vertical-align: middle;
 }
 
-.mouse-badge.rmb {
-    color: #f43f5e;
-    border-color: #e11d48;
-}
+
+/* Toast notification */
 
 #shortcut-toast {
     position: fixed;
     top: -60px;
     left: 50%;
     transform: translateX(-50%);
-    background: #065f46;
+    background: #0b6144;
     color: #ecfdf5;
     border: 1px solid #34d399;
     padding: 10px 24px;
     border-radius: 20px;
     font-weight: bold;
-    z-index: 9999;
+    z-index: 1;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 #shortcut-toast.visible {
-    top: 20px;
+    top: 80px;
+}
+
+#shortcut-toast img {
+    max-height: 20px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0 3px;
+}
+
+#shortcut-toast .toast-display {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
 }
 
 @media (max-width: 900px) {
