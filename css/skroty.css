@@ -29,6 +29,39 @@
     flex-wrap: wrap;
 }
 
+#shortcut-toast {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+#shortcut-toast .toast-item {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+#shortcut-toast .toast-category {
+    color: rgb(33, 208, 150);
+    /* Kolor dopasowany do motywu */
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+#shortcut-toast .toast-display {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+}
+
+#shortcut-toast img {
+    max-height: 18px;
+    width: auto;
+    vertical-align: middle;
+}
+
 .keyboard-container,
 .mouse-container {
     display: flex;
@@ -318,9 +351,9 @@
     border: 1px solid #34d399;
     padding: 10px 24px;
     border-radius: 20px;
-    font-weight: bold;
     z-index: 1;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
     transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
