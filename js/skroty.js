@@ -2,7 +2,9 @@ window.SHORTCUTS = window.SHORTCUTS || {
     data: null
 };
 
-// Funkcja pobierająca aktualną wersję z <html>, AppState lub localStorage
+// Zbiór obecnie wciśniętych klawiszy i przycisków myszy
+const activeInputCodes = new Set();
+
 function getActiveVersion() {
     const htmlVer = document.documentElement.dataset.gameVersion;
     if (htmlVer) return normalizeVersion(htmlVer);
@@ -23,7 +25,6 @@ function normalizeVersion(ver) {
     return "pz1pc";
 }
 
-// Główna funkcja inicjalizująca dla podstrony
 function initShortcuts() {
     initToast();
     renderCurrentVersionView();
@@ -39,13 +40,12 @@ function initShortcuts() {
                 console.error("Błąd JSON:", err);
                 const tableContainer = document.getElementById("skroty-table-container");
                 if (tableContainer) {
-                    tableContainer.innerHTML = "<p class='no-data'>⚠️ Nie udało się wczytać pliku data/skroty.json. Uruchom stronę przez lokalny serwer (np. Live Server).</p>";
+                    tableContainer.innerHTML = "<p class='no-data'>⚠️ Nie udało się wczytać pliku data/skroty.json.</p>";
                 }
             });
     }
 }
 
-// Aktualizacja diod LED na podstawie stanu klawiatury
 function updateLEDs(e) {
     if (!e || typeof e.getModifierState !== "function") return;
 
@@ -58,12 +58,16 @@ function updateLEDs(e) {
     if (scrollLed) scrollLed.classList.toggle("active", e.getModifierState("ScrollLock"));
 }
 
-// Rejestracja nasłuchiwania stanu NumLock / CapsLock / ScrollLock przy różnych zdarzeniach
 ['mousemove', 'mousedown', 'keydown', 'keyup', 'focus'].forEach(eventType => {
     window.addEventListener(eventType, updateLEDs, { passive: true });
 });
 
-// Rejestracja zdarzeń klawiatury i myszy (jednorazowo)
+// Czyszczenie stanu przy utracie ostrości okna
+window.addEventListener("blur", () => {
+    activeInputCodes.clear();
+    document.querySelectorAll('.key.pressed, .mouse-btn.pressed').forEach(el => el.classList.remove('pressed'));
+});
+
 if (!window.SHORTCUTS_LISTENERS_BOUND) {
     window.SHORTCUTS_LISTENERS_BOUND = true;
 
@@ -80,18 +84,40 @@ if (!window.SHORTCUTS_LISTENERS_BOUND) {
     });
     htmlObserver.observe(document.documentElement, { attributes: true });
 
+    // Obsługa Myszki
     window.addEventListener("mousedown", (e) => {
-        if (e.target.closest("#controller-view")) return;
         const buttonCode = e.button === 0 ? "MouseLeft" : e.button === 2 ? "MouseRight" : "MouseMiddle";
         const mouseVisual = document.querySelector(`.mouse-btn[data-code="${buttonCode}"]`);
         if (mouseVisual) mouseVisual.classList.add("pressed");
+
+        activeInputCodes.add(buttonCode);
+        checkAndShowShortcut();
     });
 
     window.addEventListener("mouseup", (e) => {
         const buttonCode = e.button === 0 ? "MouseLeft" : e.button === 2 ? "MouseRight" : "MouseMiddle";
         const mouseVisual = document.querySelector(`.mouse-btn[data-code="${buttonCode}"]`);
         if (mouseVisual) mouseVisual.classList.remove("pressed");
+
+        activeInputCodes.delete(buttonCode);
     });
+
+    // Zdarzenie przewijania (scroll)
+    let wheelTimeout;
+    window.addEventListener("wheel", () => {
+        const wheelVisual = document.querySelector('.mouse-btn[data-code="MouseMiddle"]');
+        if (wheelVisual) {
+            wheelVisual.classList.add("pressed");
+            clearTimeout(wheelTimeout);
+            wheelTimeout = setTimeout(() => {
+                wheelVisual.classList.remove("pressed");
+                activeInputCodes.delete("MouseMiddle");
+            }, 150);
+        }
+
+        activeInputCodes.add("MouseMiddle");
+        checkAndShowShortcut();
+    }, { passive: true });
 }
 
 function renderCurrentVersionView() {
@@ -101,7 +127,6 @@ function renderCurrentVersionView() {
 
     if (!controllerContainer || !tableContainer) return;
 
-    // Generowanie wizualnego kontrolera
     if (currentVersion === "pz1pc") {
         controllerContainer.innerHTML = generatePCControlsHTML();
     } else if (currentVersion === "pz1console") {
@@ -114,7 +139,6 @@ function renderCurrentVersionView() {
         `;
     }
 
-    // Generowanie tabeli ze skrótami
     if (!SHORTCUTS.data) return;
 
     const list = SHORTCUTS.data[currentVersion] || [];
@@ -124,40 +148,54 @@ function renderCurrentVersionView() {
         return;
     }
 
-    let html = `
-        <table class="skroty-table">
-            <thead>
-                <tr>
-                    <th>Przycisk</th>
-                    <th>Akcja</th>
-                    <th>Kategoria</th>
-                </tr>
-            </thead>
-            <tbody>
-    `;
-
+    const categories = {};
     list.forEach(item => {
-        // Wewnątrz renderCurrentVersionView() podczas budowania wierszy tabeli:
-        html += `
-    <tr id="row-${item.id}">
-        <th><span class="key-badge">${item.display}</span></th>
-        <td>${item.title}</td>
-        <td><small>${item.category || "Ogólne"}</small></td>
-    </tr>
-`;
+        const cat = item.category || "Inne";
+        if (!categories[cat]) categories[cat] = [];
+        categories[cat].push(item);
     });
 
-    html += `</tbody></table>`;
+    let html = `<div class="shortcuts-grid">`;
+
+    for (const [categoryName, items] of Object.entries(categories)) {
+        html += `
+            <div class="category-card">
+                <h3 class="category-title">${categoryName}</h3>
+                <table class="skroty-table">
+                    <thead>
+                        <tr>
+                            <th>Przycisk</th>
+                            <th>Akcja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        `;
+
+        items.forEach(item => {
+            html += `
+                <tr id="row-${item.id}">
+                    <th><span class="key-badge">${item.display}</span></th>
+                    <td>${item.title}</td>
+                </tr>
+            `;
+        });
+
+        html += `
+                    </tbody>
+                </table>
+            </div>
+        `;
+    }
+
+    html += `</div>`;
     tableContainer.innerHTML = html;
 }
 
 function generatePCControlsHTML() {
     return `
         <div class="pc-controls-wrapper">
-            <!-- Klawiatura po lewej stronie -->
             <div class="keyboard-container">
                 <div class="keyboard-main">
-                    <!-- Rząd Esc + F1-F12 z odstępami -->
                     <div class="key-row">
                         <div class="key small" data-code="Escape">Esc</div>
                         <div class="key-spacer"></div>
@@ -176,7 +214,6 @@ function generatePCControlsHTML() {
                         <div class="key small" data-code="F11">F11</div>
                         <div class="key small" data-code="F12">F12</div>
                     </div>
-                    <!-- Rząd cyfr i znaków -->
                     <div class="key-row">
                         <div class="key" data-code="Backquote">~</div>
                         <div class="key" data-code="Digit1">1</div>
@@ -193,7 +230,6 @@ function generatePCControlsHTML() {
                         <div class="key" data-code="Equal">=</div>
                         <div class="key medium" data-code="Backspace">⌫</div>
                     </div>
-                    <!-- Rząd Tab + QWERTY + [, ], \\ -->
                     <div class="key-row">
                         <div class="key medium" data-code="Tab">Tab</div>
                         <div class="key" data-code="KeyQ">Q</div>
@@ -210,7 +246,6 @@ function generatePCControlsHTML() {
                         <div class="key" data-code="BracketRight">]</div>
                         <div class="key" data-code="Backslash">\\</div>
                     </div>
-                    <!-- Rząd CapsLock + ASDF + Enter -->
                     <div class="key-row">
                         <div class="key wide" data-code="CapsLock">Caps</div>
                         <div class="key" data-code="KeyA">A</div>
@@ -226,7 +261,6 @@ function generatePCControlsHTML() {
                         <div class="key" data-code="Quote">'</div>
                         <div class="key wide" data-code="Enter">Enter</div>
                     </div>
-                    <!-- Rząd Shift + ZXCV + Shift Prawy -->
                     <div class="key-row">
                         <div class="key extra-wide" data-code="ShiftLeft">Shift</div>
                         <div class="key" data-code="KeyZ">Z</div>
@@ -241,7 +275,6 @@ function generatePCControlsHTML() {
                         <div class="key" data-code="Slash">/</div>
                         <div class="key extra-wide" data-code="ShiftRight">Shift</div>
                     </div>
-                    <!-- Dolny Rząd -->
                     <div class="key-row">
                         <div class="key medium" data-code="ControlLeft">Ctrl</div>
                         <div class="key" data-code="Fn">Fn</div>
@@ -253,9 +286,7 @@ function generatePCControlsHTML() {
                     </div>
                 </div>
 
-                <!-- Blok Nawigacyjny / Systemowy -->
                 <div class="keyboard-nav">
-                    <!-- Kontrolki LED -->
                     <div class="led-panel">
                         <div class="led-item">
                             <span class="led-dot" id="led-num"></span>
@@ -270,19 +301,16 @@ function generatePCControlsHTML() {
                             <span class="led-label">scroll</span>
                         </div>
                     </div>
-                    <!-- Linia F12: PrtScn, ScrLk, Pause -->
                     <div class="key-row">
                         <div class="key small" data-code="PrintScreen">PrtSc</div>
                         <div class="key small" data-code="ScrollLock">ScrLk</div>
                         <div class="key small" data-code="Pause">Pause</div>
                     </div>
-                    <!-- Linia cyfr: Ins, Home, PgUp -->
                     <div class="key-row">
                         <div class="key" data-code="Insert">Ins</div>
                         <div class="key" data-code="Home">Home</div>
                         <div class="key" data-code="PageUp">PgUp</div>
                     </div>
-                    <!-- Linia QWERTY: Del, End, PgDn -->
                     <div class="key-row">
                         <div class="key" data-code="Delete">Del</div>
                         <div class="key" data-code="End">End</div>
@@ -291,13 +319,11 @@ function generatePCControlsHTML() {
                     
                     <div class="nav-spacer"></div>
 
-                    <!-- Strzałka w górę -->
                     <div class="key-row">
                         <div class="key-placeholder"></div>
                         <div class="key" data-code="ArrowUp">↑</div>
                         <div class="key-placeholder"></div>
                     </div>
-                    <!-- Strzałki lewo, dół, prawo -->
                     <div class="key-row">
                         <div class="key" data-code="ArrowLeft">←</div>
                         <div class="key" data-code="ArrowDown">↓</div>
@@ -306,7 +332,6 @@ function generatePCControlsHTML() {
                 </div>
             </div>
 
-            <!-- Myszka po prawej stronie -->
             <div class="mouse-container">
                 <div class="mouse-body">
                     <div class="mouse-btn left" data-code="MouseLeft">LMB</div>
@@ -322,21 +347,21 @@ function generateGamepadHTML() {
     return `
         <div class="gamepad-container">
             <svg class="gamepad-svg" viewBox="0 0 500 300">
-                <path d="M 120,40 Q 250,20 380,40 Q 480,80 450,240 Q 400,280 340,220 Q 250,240 160,220 Q 100,280 50,240 Q 20,80 120,40 Z" fill="#1f2937" stroke="#374151" stroke-width="4"/>
-                <g class="pad-dpad" fill="#374151">
+                <path d="M 120,40 Q 250,20 380,40 Q 480,80 450,240 Q 400,280 340,220 Q 250,240 160,220 Q 100,280 50,240 Q 20,80 120,40 Z" fill="#0e2a1f" stroke="#118d64" stroke-width="4"/>
+                <g class="pad-dpad" fill="#1b4332">
                     <rect x="110" y="110" width="20" height="60" rx="4"/>
                     <rect x="90" y="130" width="60" height="20" rx="4"/>
                 </g>
                 <g class="pad-buttons">
-                    <circle cx="370" cy="115" r="12" fill="#374151"/><text x="370" y="119" fill="#fff" font-size="12" text-anchor="middle">Y</text>
-                    <circle cx="345" cy="140" r="12" fill="#374151"/><text x="345" y="144" fill="#fff" font-size="12" text-anchor="middle">X</text>
-                    <circle cx="395" cy="140" r="12" fill="#374151"/><text x="395" y="144" fill="#fff" font-size="12" text-anchor="middle">B</text>
-                    <circle cx="370" cy="165" r="12" fill="#374151"/><text x="370" y="169" fill="#fff" font-size="12" text-anchor="middle">A</text>
+                    <circle cx="370" cy="115" r="12" fill="#1b4332"/><text x="370" y="119" fill="#fff" font-size="12" text-anchor="middle">Y</text>
+                    <circle cx="345" cy="140" r="12" fill="#1b4332"/><text x="345" y="144" fill="#fff" font-size="12" text-anchor="middle">X</text>
+                    <circle cx="395" cy="140" r="12" fill="#1b4332"/><text x="395" y="144" fill="#fff" font-size="12" text-anchor="middle">B</text>
+                    <circle cx="370" cy="165" r="12" fill="#1b4332"/><text x="370" y="169" fill="#fff" font-size="12" text-anchor="middle">A</text>
                 </g>
-                <circle cx="180" cy="180" r="28" fill="#111827" stroke="#4b5563" stroke-width="3"/>
-                <circle cx="310" cy="180" r="28" fill="#111827" stroke="#4b5563" stroke-width="3"/>
-                <rect x="215" y="115" width="25" height="12" rx="4" fill="#4b5563"/>
-                <rect x="260" y="115" width="25" height="12" rx="4" fill="#4b5563"/>
+                <circle cx="180" cy="180" r="28" fill="#081c15" stroke="#118d64" stroke-width="3"/>
+                <circle cx="310" cy="180" r="28" fill="#081c15" stroke="#118d64" stroke-width="3"/>
+                <rect x="215" y="115" width="25" height="12" rx="4" fill="#118d64"/>
+                <rect x="260" y="115" width="25" height="12" rx="4" fill="#118d64"/>
             </svg>
         </div>
     `;
@@ -354,42 +379,45 @@ function initToast() {
     }
 }
 
-function checkAndShowShortcut(e) {
+function checkAndShowShortcut() {
     const currentVersion = getActiveVersion();
     const list = SHORTCUTS.data ? SHORTCUTS.data[currentVersion] : null;
-    if (!list) return;
+    if (!list || activeInputCodes.size === 0) return;
 
-    const mappedCode = getTargetCode(e);
+    let bestMatch = null;
+    let maxMatchLength = 0;
 
-    let combo = [];
-    if (e.ctrlKey) combo.push("ControlLeft");
-    if (e.shiftKey) combo.push("ShiftLeft");
-    if (!["ControlLeft", "ControlRight", "ShiftLeft", "ShiftRight"].includes(e.code)) {
-        combo.push(e.code);
-    }
-    const comboStr = combo.join("+");
+    // Przeglądamy wszystkie zarejestrowane skróty dla danej wersji
+    list.forEach(item => {
+        if (!item.codes) return;
 
-    const matched = list.find(item =>
-        item.codes && (
-            item.codes.includes(e.code) ||
-            item.codes.includes(mappedCode) ||
-            item.codes.includes(comboStr)
-        )
-    );
+        item.codes.forEach(comboStr => {
+            const requiredCodes = comboStr.split("+");
 
-    if (matched) {
-        showToast(`${matched.display} — ${matched.title}`);
+            // Sprawdzamy, czy WSZYSTKIE przyciski z danej kombinacji są teraz wciśnięte
+            const allMatched = requiredCodes.every(code => activeInputCodes.has(code));
+
+            // Wybieramy pasujący skrót o największej liczbie połączonych klawiszy (np. 2 > 1)
+            if (allMatched && requiredCodes.length > maxMatchLength) {
+                maxMatchLength = requiredCodes.length;
+                bestMatch = item;
+            }
+        });
+    });
+
+    if (bestMatch) {
+        showToast(bestMatch.title, bestMatch.display);
     }
 }
 
-function showToast(text) {
-    // Nie wyświetlaj toastów na ekranach mobilnych (poniżej 900px)
+// Funkcja wyświetlająca wyskakujące powiadomienie (Toast) z pełną obsługą HTML (obrazków)
+function showToast(title, displayHtml) {
     if (window.innerWidth <= 900) return;
 
     const toast = document.getElementById("shortcut-toast");
     if (!toast) return;
 
-    toast.textContent = text;
+    toast.innerHTML = `${title} <span class="toast-display">(${displayHtml})</span>`;
     toast.classList.add("visible");
 
     clearTimeout(window.toastTimer);
@@ -398,14 +426,12 @@ function showToast(text) {
     }, 2000);
 }
 
-// Zamiana klawiszy numerycznych na odpowiedniki wizualne w zależności od stanu NumLock
 function getTargetCode(e) {
     if (!e || !e.code) return "";
 
     const isNumLockOn = e.getModifierState ? e.getModifierState("NumLock") : false;
 
     if (e.code.startsWith("Numpad")) {
-        // Gdy NumLock jest WYŁĄCZONY - obsługujemy wyłącznie klawisze nawigacyjne
         if (!isNumLockOn) {
             const numpadToNav = {
                 "Numpad7": "Home",
@@ -419,11 +445,9 @@ function getTargetCode(e) {
                 "Numpad0": "Insert",
                 "NumpadDecimal": "Delete"
             };
-            // Jeśli kliknięto 5, /, *, -, + przy wyłączonym NumLocku, funkcja zwróci "", więc nic się nie podświetli
             return numpadToNav[e.code] || "";
         }
 
-        // Gdy NumLock jest WŁĄCZONY - mapujemy na cyfry i znaki głównej klawiatury
         const numpadToDigit = {
             "Numpad0": "Digit0",
             "Numpad1": "Digit1",
@@ -462,21 +486,28 @@ window.addEventListener("keydown", (e) => {
     }
 
     const codeToHighlight = getTargetCode(e);
+    if (codeToHighlight) {
+        activeInputCodes.add(codeToHighlight);
+    }
+
     const keyVisuals = document.querySelectorAll(`.key[data-code="${codeToHighlight}"]`);
     keyVisuals.forEach(el => el.classList.add("pressed"));
 
     updateLEDs(e);
-    checkAndShowShortcut(e);
+    checkAndShowShortcut();
 });
 
 window.addEventListener("keyup", (e) => {
     const codeToHighlight = getTargetCode(e);
+    if (codeToHighlight) {
+        activeInputCodes.delete(codeToHighlight);
+    }
+
     const keyVisuals = document.querySelectorAll(`.key[data-code="${codeToHighlight}"]`);
     keyVisuals.forEach(el => el.classList.remove("pressed"));
 
     updateLEDs(e);
 });
 
-// Uruchomienie natychmiastowe przy dołączeniu skryptu do DOM
 window.initShortcuts = initShortcuts;
 initShortcuts();
