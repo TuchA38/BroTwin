@@ -1,10 +1,24 @@
 {
     "pz1pc": [{
-            "id": "cam_forward",
-            "title": "Kamera do przodu",
-            "category": "Kamera",
+            "id": "sterowanie_mysza_1",
+            "title": "Ruch kursorem",
+            "category": "Strerowanie myszą",
             "codes": ["KeyW"],
-            "display": "W"
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
+        },
+        {
+            "id": "sterowanie_mysza_6",
+            "title": "Powiększ",
+            "category": "Strerowanie myszą",
+            "codes": ["KeyW"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/kolo_u3fvur.webp' class='kolo' alt='kolo'> (przewiń)"
+        },
+        {
+            "id": "zoom",
+            "display": "Z + <img src='img/mouse-right.svg' class='mouse-icon' alt='PPM'>",
+            "title": "Przybliżenie widoku",
+            "category": "Kamera",
+            "codes": ["KeyZ+MouseRight"]
         },
         {
             "id": "cam_back",
@@ -103,6 +117,20 @@
             "category": "Interfejs",
             "codes": ["Escape"],
             "display": "Esc"
+        },
+        {
+            "id": "zoom",
+            "display": "Z + <img src='img/mouse-right.svg' class='mouse-icon' alt='PPM'>",
+            "title": "Przybliżenie widoku",
+            "category": "Kamera",
+            "codes": ["KeyZ+MouseRight"]
+        },
+        {
+            "id": "rotate",
+            "display": "Z + 🖱️ (PPM)",
+            "title": "Obrót kamery",
+            "category": "Kamera",
+            "codes": ["KeyZ+MouseRight"]
         }
     ],
     "pz1console": [{
