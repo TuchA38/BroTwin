@@ -59,7 +59,7 @@
             "id": "sterowanie_rozmieszczaniem_obiektow_3",
             "title": "Anuluj rozmieszczenie",
             "category": "Sterowanie rozmieszczaniem obiektów",
-            "codes": ["Esc"],
+            "codes": ["Escape"],
             "display": "Esc"
         },
         {
@@ -103,6 +103,69 @@
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["Space"],
             "display": "Space"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_9",
+            "title": "Wyrównaj do powierzchni - wł./wył.",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["KeyV"],
+            "display": "V"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_10",
+            "title": "Płaski teren - wł./wył.",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["KeyK"],
+            "display": "K"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_11",
+            "title": "Blokuj dodatki/dekoracje na środku fragmentu ściany",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["KeyF"],
+            "display": "F"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_12",
+            "title": "Losowy obrót - wł./wył.",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["Semicolon"],
+            "display": ";"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_13",
+            "title": "Przełącz na następny przedmiot",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["Backslash"],
+            "display": "\\"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_14",
+            "title": "Przełącz na poprzedni przedmiot",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["Quote"],
+            "display": "'"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_15",
+            "title": "Zresetuj obrót",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["KeyC"],
+            "display": "C"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_16",
+            "title": "Zwiększ szybkość przesuwania",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["Equal"],
+            "display": "="
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_17",
+            "title": "Zmniejsz szybkość przesuwania",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["Minus"],
+            "display": "-"
         }
     ],
     "pz1console": [{
