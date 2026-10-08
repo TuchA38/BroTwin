@@ -3,7 +3,7 @@
             "id": "sterowanie_mysza_1",
             "title": "Ruch kursorem",
             "category": "Sterowanie myszą",
-            "codes": ["ArrowUp", "ArrowLeft", "ArrowDown", "ArrowRight"],
+            "codes": ["MouseMove"],
             "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
         },
         {
@@ -17,21 +17,21 @@
             "id": "sterowanie_mysza_3",
             "title": "Kamera - panorama",
             "category": "Sterowanie myszą",
-            "codes": ["MouseRight+ArrowUp", "MouseRight+ArrowLeft", "MouseRight+ArrowDown", "MouseRight+ArrowRight"],
+            "codes": ["MouseRight+MouseMove"],
             "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484693/pkm_eymaqm.webp' class='pkm' alt='pkm'> + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
         },
         {
             "id": "sterowanie_mysza_4",
             "title": "Przechyl/obróć kamerę",
             "category": "Sterowanie myszą",
-            "codes": ["MouseMiddle+ArrowUp", "MouseMiddle+ArrowLeft", "MouseMiddle+ArrowDown", "MouseMiddle+ArrowRight"],
+            "codes": ["MouseMiddle+MouseMove"],
             "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484668/kolo_u3fvur.webp' class='kolo' alt='kolo'> + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
         },
         {
             "id": "sterowanie_mysza_5",
             "title": "Przechyl/obróć kamerę",
             "category": "Sterowanie myszą",
-            "codes": ["MouseLeft+MouseRight+ArrowUp", "MouseLeft+MouseRight+ArrowLeft", "MouseLeft+MouseRight+ArrowDown", "MouseLeft+MouseRight+ArrowRight"],
+            "codes": ["MouseLeft+MouseRight+MouseMove"],
             "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'> + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484693/pkm_eymaqm.webp' class='pkm' alt='pkm'> + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
         },
         {
@@ -66,7 +66,7 @@
             "id": "sterowanie_rozmieszczaniem_obiektow_4",
             "title": "Obróć",
             "category": "Sterowanie rozmieszczaniem obiektów",
-            "codes": ["KeyZ+"],
+            "codes": ["KeyZ+MouseMoveX"],
             "display": "Z + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484717/lp_m92gsp.webp' class='lp' alt='lp'>"
         },
         {
@@ -80,127 +80,29 @@
             "id": "sterowanie_rozmieszczaniem_obiektow_6",
             "title": "Zmień wysokość pionową",
             "category": "Sterowanie rozmieszczaniem obiektów",
-            "codes": ["ShiftLeft"],
+            "codes": ["ShiftLeft+MouseMoveY"],
             "display": "Shift + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484717/lp_m92gsp.webp' class='lp' alt='lp'>"
         },
         {
-            "id": "zoom",
-            "display": "Z + <img src='img/mouse-right.svg' class='mouse-icon' alt='PPM'>",
-            "title": "Przybliżenie widoku",
-            "category": "Kamera",
-            "codes": ["KeyZ+MouseRight"]
+            "id": "sterowanie_rozmieszczaniem_obiektow_7",
+            "title": "Resetuj wysokość pionową",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["ShiftLeft"],
+            "display": "Shift"
         },
         {
-            "id": "cam_back",
-            "title": "Kamera do tyłu",
-            "category": "Kamera",
-            "codes": ["KeyS"],
-            "display": "S"
+            "id": "sterowanie_rozmieszczaniem_obiektow_8",
+            "title": "Resetuj wysokość pionową",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["ControlLeft+MouseMove"],
+            "display": "Ctrl + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
         },
         {
-            "id": "cam_left",
-            "title": "Kamera w lewo",
-            "category": "Kamera",
-            "codes": ["KeyA"],
-            "display": "A"
-        },
-        {
-            "id": "cam_right",
-            "title": "Kamera w prawo",
-            "category": "Kamera",
-            "codes": ["KeyD"],
-            "display": "D"
-        },
-        {
-            "id": "cam_up",
-            "title": "Podnieś kamerę",
-            "category": "Kamera",
-            "codes": ["KeyE"],
-            "display": "E"
-        },
-        {
-            "id": "cam_down",
-            "title": "Opuść kamerę",
-            "category": "Kamera",
-            "codes": ["KeyQ"],
-            "display": "Q"
-        },
-        {
-            "id": "pause",
-            "title": "Pauza / Wznowienie gry",
-            "category": "Gra",
-            "codes": ["Space", "KeyP"],
-            "display": "Spacja / P"
-        },
-        {
-            "id": "speed_up",
-            "title": "Przyspieszenie upływu czasu",
-            "category": "Gra",
-            "codes": ["KeyO"],
-            "display": "O"
-        },
-        {
-            "id": "undo",
-            "title": "Cofnij Ostatnią Akcję",
-            "category": "Edycja",
-            "codes": ["ControlLeft+KeyZ"],
-            "display": "Ctrl + Z"
-        },
-        {
-            "id": "redo",
-            "title": "Ponów Akcję",
-            "category": "Edycja",
-            "codes": ["ControlLeft+KeyY"],
-            "display": "Ctrl + Y"
-        },
-        {
-            "id": "delete",
-            "title": "Usuń zaznaczony obiekt",
-            "category": "Edycja",
-            "codes": ["Delete"],
-            "display": "Delete"
-        },
-        {
-            "id": "duplicate",
-            "title": "Duplikuj obiekt",
-            "category": "Budowanie",
-            "codes": ["ControlLeft+KeyD"],
-            "display": "Ctrl + D"
-        },
-        {
-            "id": "advanced_move",
-            "title": "Zaawansowany ruch / obrót",
-            "category": "Budowanie",
-            "codes": ["KeyX"],
-            "display": "X"
-        },
-        {
-            "id": "rotate",
-            "title": "Szybki obrót obiektu",
-            "category": "Budowanie",
-            "codes": ["KeyZ"],
-            "display": "Z"
-        },
-        {
-            "id": "cancel",
-            "title": "Zamknij okno / Anuluj tryb",
-            "category": "Interfejs",
-            "codes": ["Escape"],
-            "display": "Esc"
-        },
-        {
-            "id": "zoom",
-            "display": "Z + <img src='img/mouse-right.svg' class='mouse-icon' alt='PPM'>",
-            "title": "Przybliżenie widoku",
-            "category": "Kamera",
-            "codes": ["KeyZ+MouseRight"]
-        },
-        {
-            "id": "rotate",
-            "display": "Z + 🖱️ (PPM)",
-            "title": "Obrót kamery",
-            "category": "Kamera",
-            "codes": ["KeyZ+MouseRight"]
+            "id": "sterowanie_rozmieszczaniem_obiektow_8",
+            "title": "Blokada kątowa - wł./wył.",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["Space"],
+            "display": "Space"
         }
     ],
     "pz1console": [{
