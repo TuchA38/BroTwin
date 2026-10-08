@@ -2,16 +2,86 @@
     "pz1pc": [{
             "id": "sterowanie_mysza_1",
             "title": "Ruch kursorem",
-            "category": "Strerowanie myszą",
-            "codes": ["KeyW"],
+            "category": "Sterowanie myszą",
+            "codes": ["ArrowUp", "ArrowLeft", "ArrowDown", "ArrowRight"],
             "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
+        },
+        {
+            "id": "sterowanie_mysza_2",
+            "title": "Przycisk aktywacji i wyboru obiektu",
+            "category": "Sterowanie myszą",
+            "codes": ["MouseLeft"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
+        },
+        {
+            "id": "sterowanie_mysza_3",
+            "title": "Kamera - panorama",
+            "category": "Sterowanie myszą",
+            "codes": ["MouseRight+ArrowUp", "MouseRight+ArrowLeft", "MouseRight+ArrowDown", "MouseRight+ArrowRight"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484693/pkm_eymaqm.webp' class='pkm' alt='pkm'> + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
+        },
+        {
+            "id": "sterowanie_mysza_4",
+            "title": "Przechyl/obróć kamerę",
+            "category": "Sterowanie myszą",
+            "codes": ["MouseMiddle+ArrowUp", "MouseMiddle+ArrowLeft", "MouseMiddle+ArrowDown", "MouseMiddle+ArrowRight"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484668/kolo_u3fvur.webp' class='kolo' alt='kolo'> + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
+        },
+        {
+            "id": "sterowanie_mysza_5",
+            "title": "Przechyl/obróć kamerę",
+            "category": "Sterowanie myszą",
+            "codes": ["MouseLeft+MouseRight+ArrowUp", "MouseLeft+MouseRight+ArrowLeft", "MouseLeft+MouseRight+ArrowDown", "MouseLeft+MouseRight+ArrowRight"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'> + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484693/pkm_eymaqm.webp' class='pkm' alt='pkm'> + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
         },
         {
             "id": "sterowanie_mysza_6",
             "title": "Powiększ",
-            "category": "Strerowanie myszą",
-            "codes": ["KeyW"],
+            "category": "Sterowanie myszą",
+            "codes": ["MouseMiddle"],
             "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/kolo_u3fvur.webp' class='kolo' alt='kolo'> (przewiń)"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_1",
+            "title": "Umieść obiekt",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["MouseLeft"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_2",
+            "title": "Anuluj rozmieszczenie",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["MouseRight"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484693/pkm_eymaqm.webp' class='pkm' alt='pkm'>"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_3",
+            "title": "Anuluj rozmieszczenie",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["Esc"],
+            "display": "Esc"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_4",
+            "title": "Obróć",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["KeyZ+"],
+            "display": "Z + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484717/lp_m92gsp.webp' class='lp' alt='lp'>"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_5",
+            "title": "Obróć o 90 stopni",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["KeyZ"],
+            "display": "Z"
+        },
+        {
+            "id": "sterowanie_rozmieszczaniem_obiektow_6",
+            "title": "Zmień wysokość pionową",
+            "category": "Sterowanie rozmieszczaniem obiektów",
+            "codes": ["ShiftLeft"],
+            "display": "Shift + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484717/lp_m92gsp.webp' class='lp' alt='lp'>"
         },
         {
             "id": "zoom",
