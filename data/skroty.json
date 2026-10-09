@@ -523,6 +523,97 @@
             "category": "Tryb edycji toru",
             "codes": ["Space"],
             "display": "Spacja"
+        },
+        {
+            "id": "tryb_edycji_budynku_1",
+            "title": "Zbuduj fragment ...",
+            "category": "Tryb edycji budynku",
+            "codes": ["MouseLeft"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
+        },
+        {
+            "id": "tryb_edycji_budynku_2",
+            "title": "Anuluj rozmieszczenie ...",
+            "category": "Tryb edycji budynku",
+            "codes": ["MouseRight"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484693/pkm_eymaqm.webp' class='pkm' alt='pkm'>"
+        },
+        {
+            "id": "tryb_edycji_budynku_3",
+            "title": "Wybierz wiele fragmentów",
+            "category": "Tryb edycji budynku",
+            "codes": ["ControlLeft+MouseLeft"],
+            "display": "Ctrl + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
+        },
+        {
+            "id": "tryb_edycji_budynku_4",
+            "title": "Obróć (dodatki i dekoracje)",
+            "category": "Tryb edycji budynku",
+            "codes": ["KeyZ+MouseMoveX"],
+            "display": "Z + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484717/lp_m92gsp.webp' class='lp' alt='lp'>"
+        },
+        {
+            "id": "tryb_edycji_budynku_5",
+            "title": "Obróć o 90 stopni",
+            "category": "Tryb edycji budynku",
+            "codes": ["KeyZ"],
+            "display": "Z"
+        },
+        {
+            "id": "tryb_edycji_budynku_6",
+            "title": "Przełącz zaawansowany ruch/obrót ...",
+            "category": "Tryb edycji budynku",
+            "codes": ["KeyX"],
+            "display": "X"
+        },
+        {
+            "id": "tryb_edycji_budynku_7",
+            "title": "Zmień wysokość pionową",
+            "category": "Tryb edycji budynku",
+            "codes": ["ShiftLeft+MouseMoveY"],
+            "display": "Shift + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484728/gd_oexfpb.webp' class='gd' alt='gd'>"
+        },
+        {
+            "id": "tryb_edycji_budynku_8",
+            "title": "Resetuj wysokość pionową",
+            "category": "Tryb edycji budynku",
+            "codes": ["ShiftLeft"],
+            "display": "Shift"
+        },
+        {
+            "id": "tryb_edycji_budynku_9",
+            "title": "Blokuj do osi powierzchni",
+            "category": "Tryb edycji budynku",
+            "codes": ["ControlLeft+MouseMove"],
+            "display": "Ctrl + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
+        },
+        {
+            "id": "tryb_edycji_budynku_10",
+            "title": "Blokada kątowa - wł./wył.",
+            "category": "Tryb edycji budynku",
+            "codes": ["Space"],
+            "display": "Spacja"
+        },
+        {
+            "id": "tryb_edycji_budynku_11",
+            "title": "Wyrównaj do powierzchni - wł./wył.",
+            "category": "Tryb edycji budynku",
+            "codes": ["KeyV"],
+            "display": "V"
+        },
+        {
+            "id": "tryb_edycji_budynku_12",
+            "title": "Płaski teren - wł./wył.",
+            "category": "Tryb edycji budynku",
+            "codes": ["KeyK"],
+            "display": "K"
+        },
+        {
+            "id": "tryb_edycji_budynku_13",
+            "title": "Wybierz elementy w tym samym kolorze",
+            "category": "Tryb edycji budynku",
+            "codes": ["AltLeft+MouseLeft"],
+            "display": "Alt + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
         }
     ],
     "pz1console": [{
