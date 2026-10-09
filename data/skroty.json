@@ -789,35 +789,160 @@
             "category": "Skróty ogólne",
             "codes": ["Home"],
             "display": "Home"
-        }
-    ],
-    "pz1console": [{
-            "id": "pause_console",
-            "title": "Menu Pauzy / Opcje",
-            "category": "Gra",
-            "codes": ["ButtonOptions"],
-            "display": "Options / Menu"
         },
         {
-            "id": "cancel_console",
-            "title": "Anuluj / Wstecz",
-            "category": "Interfejs",
-            "codes": ["ButtonB"],
-            "display": "B / Circle"
+            "id": "skroty_menu_1",
+            "title": "Pomoc dot. sterowania (pokaż/ukryj)",
+            "category": "Skróty menu",
+            "codes": ["F1"],
+            "display": "F1"
         },
         {
-            "id": "confirm_console",
-            "title": "Zatwierdź / Wybierz",
-            "category": "Interfejs",
-            "codes": ["ButtonA"],
-            "display": "A / Cross"
+            "id": "skroty_menu_2",
+            "title": "Zoopedia (pokaż/ukryj)",
+            "category": "Skróty menu",
+            "codes": ["F3"],
+            "display": "F3"
         },
         {
-            "id": "cam_radial",
-            "title": "Menu kołowe kamery",
-            "category": "Kamera",
-            "codes": ["DPadUp"],
-            "display": "D-Pad Góra"
+            "id": "skroty_menu_3",
+            "title": "Otwórz menu zapisu",
+            "category": "Skróty menu",
+            "codes": ["F5"],
+            "display": "F5"
+        },
+        {
+            "id": "skroty_menu_4",
+            "title": "Otwórz menu wczytywania",
+            "category": "Skróty menu",
+            "codes": ["F9"],
+            "display": "F9"
+        },
+        {
+            "id": "skroty_menu_5",
+            "title": "Otwórz sekcję Zarządzanie Zoo",
+            "category": "Skróty menu",
+            "codes": ["Digit1"],
+            "display": "1"
+        },
+        {
+            "id": "skroty_menu_6",
+            "title": "Otwórz sekcję Handel zwierzętami",
+            "category": "Skróty menu",
+            "codes": ["Digit2"],
+            "display": "2"
+        },
+        {
+            "id": "skroty_menu_7",
+            "title": "Handel zwierzętami w ekspozycjach",
+            "category": "Skróty menu",
+            "codes": ["F2"],
+            "display": "F2"
+        },
+        {
+            "id": "skroty_menu_8",
+            "title": "Otwórz sekcję Bariery",
+            "category": "Skróty menu",
+            "codes": ["Digit3"],
+            "display": "3"
+        },
+        {
+            "id": "skroty_menu_9",
+            "title": "Otwórz sekcję Wybieg",
+            "category": "Skróty menu",
+            "codes": ["Digit4"],
+            "display": "4"
+        },
+        {
+            "id": "skroty_menu_10",
+            "title": "Otwórz sekcję Natura",
+            "category": "Skróty menu",
+            "codes": ["Digit5"],
+            "display": "5"
+        },
+        {
+            "id": "skroty_menu_11",
+            "title": "Otwórz sekcję Obiekty zoo",
+            "category": "Skróty menu",
+            "codes": ["Digit6"],
+            "display": "6"
+        },
+        {
+            "id": "skroty_menu_12",
+            "title": "Otwórz sekcję Budowa",
+            "category": "Skróty menu",
+            "codes": ["Digit7"],
+            "display": "7"
+        },
+        {
+            "id": "skroty_menu_13",
+            "title": "Otwórz sekcję Projekty",
+            "category": "Skróty menu",
+            "codes": ["Digit8"],
+            "display": "8"
+        },
+        {
+            "id": "skroty_menu_14",
+            "title": "Otwórz sekcję Ścieżki",
+            "category": "Skróty menu",
+            "codes": ["Digit9"],
+            "display": "9"
+        },
+        {
+            "id": "skroty_menu_15",
+            "title": "Otwórz sekcję Teren",
+            "category": "Skróty menu",
+            "codes": ["Digit0"],
+            "display": "0"
+        },
+        {
+            "id": "skroty_menu_16",
+            "title": "Otwórz sekcję Mapy cieplne",
+            "category": "Skróty menu",
+            "codes": ["KeyH"],
+            "display": "H"
+        },
+        {
+            "id": "skroty_menu_17",
+            "title": "Otwórz sekcję Wybór wielokrotny",
+            "category": "Skróty menu",
+            "codes": ["KeyI"],
+            "display": "I"
+        },
+        {
+            "id": "rozne_elementy_sterujace_kamera_1",
+            "title": "Poprzednia kamera atrakcji",
+            "category": "Różne elementy sterujące kamerą",
+            "codes": ["ArrowLeft"],
+            "display": "Lewo"
+        },
+        {
+            "id": "rozne_elementy_sterujace_kamera_2",
+            "title": "Następna kamera atrakcji",
+            "category": "Różne elementy sterujące kamerą",
+            "codes": ["ArrowRight"],
+            "display": "Prawo"
+        },
+        {
+            "id": "rozne_elementy_sterujace_kamera_3",
+            "title": "Kontynuuj trasę kamery",
+            "category": "Różne elementy sterujące kamerą",
+            "codes": ["Space"],
+            "display": "Spacja"
+        },
+        {
+            "id": "rozne_elementy_sterujace_kamera_4",
+            "title": "Dodaj klatkę kluczową po",
+            "category": "Różne elementy sterujące kamerą",
+            "codes": ["KeyF"],
+            "display": "F"
+        },
+        {
+            "id": "rozne_elementy_sterujace_kamera_5",
+            "title": "Dodaj klatkę kluczową przed",
+            "category": "Różne elementy sterujące kamerą",
+            "codes": ["KeyR"],
+            "display": "R"
         }
     ],
     "pz2": []
