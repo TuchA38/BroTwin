@@ -390,6 +390,83 @@
             "category": "Tryb edycji barier",
             "codes": ["BracketRight"],
             "display": "]"
+        },
+        {
+            "id": "tryb_edycji_terenu_1",
+            "title": "Zastosuj pędzel",
+            "category": "Tryb edycji terenu",
+            "codes": ["MouseLeft"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
+        },
+        {
+            "id": "tryb_edycji_terenu_2",
+            "title": "Zastosuj pędzel odwrotny (pchnięcie/pociągnięcie)",
+            "category": "Tryb edycji terenu",
+            "codes": ["MouseLeft+ControlLeft"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>+Ctrl"
+        },
+        {
+            "id": "tryb_edycji_terenu_3",
+            "title": "Zmniejsz intensywność pędzla",
+            "category": "Tryb edycji terenu",
+            "codes": ["Minus"],
+            "display": "-"
+        },
+        {
+            "id": "tryb_edycji_terenu_4",
+            "title": "Zwiększ intensywność pędzla",
+            "category": "Tryb edycji terenu",
+            "codes": ["Equal"],
+            "display": "="
+        },
+        {
+            "id": "tryb_edycji_terenu_5",
+            "title": "Mniejszy pędzel",
+            "category": "Tryb edycji terenu",
+            "codes": ["BracketLeft"],
+            "display": "["
+        },
+        {
+            "id": "tryb_edycji_terenu_6",
+            "title": "Większy pędzel",
+            "category": "Tryb edycji terenu",
+            "codes": ["BracketRight"],
+            "display": "]"
+        },
+        {
+            "id": "tryb_edycji_terenu_7",
+            "title": "Przełącz tryb stempla (Dodaj/Odejmij)",
+            "category": "Tryb edycji terenu",
+            "codes": ["ControlLeft"],
+            "display": "Ctrl"
+        },
+        {
+            "id": "tryb_edycji_terenu_8",
+            "title": "Zmniejsz wysokość stempla",
+            "category": "Tryb edycji terenu",
+            "codes": ["Minus"],
+            "display": "-"
+        },
+        {
+            "id": "tryb_edycji_terenu_9",
+            "title": "Zwiększ wysokość stempla",
+            "category": "Tryb edycji terenu",
+            "codes": ["Equal"],
+            "display": "="
+        },
+        {
+            "id": "tryb_edycji_terenu_10",
+            "title": "Zwiększ szerokość stempla",
+            "category": "Tryb edycji terenu",
+            "codes": ["BracketLeft"],
+            "display": "["
+        },
+        {
+            "id": "tryb_edycji_terenu_11",
+            "title": "Zmniejsz szerokość stempla",
+            "category": "Tryb edycji terenu",
+            "codes": ["BracketRight"],
+            "display": "]"
         }
     ],
     "pz1console": [{
