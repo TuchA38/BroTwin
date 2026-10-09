@@ -98,74 +98,186 @@
             "display": "Ctrl + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_8",
+            "id": "sterowanie_rozmieszczaniem_obiektow_9",
             "title": "Blokada kątowa - wł./wył.",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["Space"],
-            "display": "Space"
+            "display": "Spacja"
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_9",
+            "id": "sterowanie_rozmieszczaniem_obiektow_10",
             "title": "Wyrównaj do powierzchni - wł./wył.",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["KeyV"],
             "display": "V"
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_10",
+            "id": "sterowanie_rozmieszczaniem_obiektow_11",
             "title": "Płaski teren - wł./wył.",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["KeyK"],
             "display": "K"
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_11",
+            "id": "sterowanie_rozmieszczaniem_obiektow_12",
             "title": "Blokuj dodatki/dekoracje na środku fragmentu ściany",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["KeyF"],
             "display": "F"
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_12",
+            "id": "sterowanie_rozmieszczaniem_obiektow_13",
             "title": "Losowy obrót - wł./wył.",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["Semicolon"],
             "display": ";"
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_13",
+            "id": "sterowanie_rozmieszczaniem_obiektow_14",
             "title": "Przełącz na następny przedmiot",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["Backslash"],
             "display": "\\"
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_14",
+            "id": "sterowanie_rozmieszczaniem_obiektow_15",
             "title": "Przełącz na poprzedni przedmiot",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["Quote"],
             "display": "'"
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_15",
+            "id": "sterowanie_rozmieszczaniem_obiektow_16",
             "title": "Zresetuj obrót",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["KeyC"],
             "display": "C"
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_16",
+            "id": "sterowanie_rozmieszczaniem_obiektow_17",
             "title": "Zwiększ szybkość przesuwania",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["Equal"],
             "display": "="
         },
         {
-            "id": "sterowanie_rozmieszczaniem_obiektow_17",
+            "id": "sterowanie_rozmieszczaniem_obiektow_18",
             "title": "Zmniejsz szybkość przesuwania",
             "category": "Sterowanie rozmieszczaniem obiektów",
             "codes": ["Minus"],
             "display": "-"
+        },
+        {
+            "id": "tryb_edycji_sciezki_1",
+            "title": "Umieść ścieżkę",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["MouseLeft"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
+        },
+        {
+            "id": "tryb_edycji_sciezki_2",
+            "title": "Usuń ścieżkę",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["MouseRight"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484693/pkm_eymaqm.webp' class='pkm' alt='pkm'>"
+        },
+        {
+            "id": "tryb_edycji_sciezki_3",
+            "title": "Unieś/obniż ścieżkę",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["MouseLeft+MouseMoveY"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'> na podglądzie ścieżki, a następnie <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484728/gd_oexfpb.webp' class='gd' alt='gd'>"
+        },
+        {
+            "id": "tryb_edycji_sciezki_4",
+            "title": "Unieś ścieżkę (bez umieszczania)",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["KeyU"],
+            "display": "U"
+        },
+        {
+            "id": "tryb_edycji_sciezki_5",
+            "title": "Obniż ścieżkę (bez umieszczania)",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["KeyJ"],
+            "display": "J"
+        },
+        {
+            "id": "tryb_edycji_sciezki_6",
+            "title": "Obróć kąt skrzyżowania",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["KeyZ+MouseMove"],
+            "display": "Z na podglądzie skrzyżowania, a następnie <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
+        },
+        {
+            "id": "tryb_edycji_sciezki_7",
+            "title": "Dołącz pod kątem prostym",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["KeyZ"],
+            "display": "Z przytrzymaj, gdy podgląd łączy się z istniejącą ścieżką"
+        },
+        {
+            "id": "tryb_edycji_sciezki_8",
+            "title": "Zmień wysokość pionową",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["ShiftLeft+MouseMoveY"],
+            "display": "Shift + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484728/gd_oexfpb.webp' class='gd' alt='gd'>"
+        },
+        {
+            "id": "tryb_edycji_sciezki_9",
+            "title": "Resetuj wysokość pionową",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["ShiftLeft"],
+            "display": "Shift"
+        },
+        {
+            "id": "tryb_edycji_sciezki_10",
+            "title": "Wyłącz połączenia ścieżek",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["ControlLeft"],
+            "display": "Ctrl podczas umieszczania ścieżki"
+        },
+        {
+            "id": "tryb_edycji_sciezki_11",
+            "title": "Blokada kątowa - wł./wył.",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["Space"],
+            "display": "Spacja"
+        },
+        {
+            "id": "tryb_edycji_sciezki_12",
+            "title": "Skróć ścieżkę",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["Minus"],
+            "display": "-"
+        },
+        {
+            "id": "tryb_edycji_sciezki_13",
+            "title": "Wydłuż ścieżkę",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["Equal"],
+            "display": "="
+        },
+        {
+            "id": "tryb_edycji_sciezki_14",
+            "title": "Zwęź ścieżkę",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["BracketLeft"],
+            "display": "["
+        },
+        {
+            "id": "tryb_edycji_sciezki_15",
+            "title": "Poszerz ścieżkę",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["BracketRight"],
+            "display": "]"
+        },
+        {
+            "id": "tryb_edycji_sciezki_16",
+            "title": "Pędzel Usuń ścieżkę",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["Delete+MouseLeft+MouseMove"],
+            "display": "Delete + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>, a następnie <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
         }
     ],
     "pz1console": [{
