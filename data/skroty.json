@@ -313,6 +313,83 @@
             "category": "Tryb edycji ścieżki",
             "codes": ["KeyB"],
             "display": "B"
+        },
+        {
+            "id": "tryb_edycji_barier_1",
+            "title": "Umieść barierę",
+            "category": "Tryb edycji barier",
+            "codes": ["MouseLeft"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
+        },
+        {
+            "id": "tryb_edycji_barier_2",
+            "title": "Usuń barierę",
+            "category": "Tryb edycji barier",
+            "codes": ["MouseRight"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484693/pkm_eymaqm.webp' class='pkm' alt='pkm'>"
+        },
+        {
+            "id": "tryb_edycji_barier_3",
+            "title": "Podnieś/obniż barierę",
+            "category": "Tryb edycji barier",
+            "codes": ["MouseLeft+MouseMoveY"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'> na podglądzie bariery, a następnie <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484728/gd_oexfpb.webp' class='gd' alt='gd'>"
+        },
+        {
+            "id": "tryb_edycji_barier_4",
+            "title": "Obróć słup",
+            "category": "Tryb edycji barier",
+            "codes": ["KeyZ+MouseMoveX"],
+            "display": "Z + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484717/lp_m92gsp.webp' class='lp' alt='lp'>"
+        },
+        {
+            "id": "tryb_edycji_barier_5",
+            "title": "Obróć słup o 90 stopni",
+            "category": "Tryb edycji barier",
+            "codes": ["KeyZ"],
+            "display": "Z"
+        },
+        {
+            "id": "tryb_edycji_barier_6",
+            "title": "Skróć barierę",
+            "category": "Tryb edycji barier",
+            "codes": ["Minus"],
+            "display": "-"
+        },
+        {
+            "id": "tryb_edycji_barier_7",
+            "title": "Wydłuż barierę",
+            "category": "Tryb edycji barier",
+            "codes": ["Equal"],
+            "display": "="
+        },
+        {
+            "id": "tryb_edycji_barier_8",
+            "title": "Przełącz bariery na proste/zakrzywione",
+            "category": "Tryb edycji barier",
+            "codes": ["Slash"],
+            "display": "/"
+        },
+        {
+            "id": "tryb_edycji_barier_9",
+            "title": "Włącz/wyłącz blokadę kątową",
+            "category": "Tryb edycji barier",
+            "codes": ["Space"],
+            "display": "Spacja"
+        },
+        {
+            "id": "tryb_edycji_barier_10",
+            "title": "Pomniejsz blokadę kątową",
+            "category": "Tryb edycji barier",
+            "codes": ["BracketLeft"],
+            "display": "["
+        },
+        {
+            "id": "tryb_edycji_barier_11",
+            "title": "Powiększ blokadę kątową",
+            "category": "Tryb edycji barier",
+            "codes": ["BracketRight"],
+            "display": "]"
         }
     ],
     "pz1console": [{
