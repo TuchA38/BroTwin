@@ -2,6 +2,86 @@ window.SHORTCUTS = window.SHORTCUTS || {
     data: null
 };
 
+// Funkcja zapobiegająca sierotom (przykleja małe słowa i ikony do sąsiedniego tekstu)
+function formatShortcutDisplay(display) {
+    if (!display) return "";
+
+    const smallWords = ['a', 'o', 'w', 'z', 'u', 'na', 'do', 'i', 'czy', 'A', 'O', 'W', 'Z', 'Na', 'Do', 'I', 'Czy'];
+    let formatted = display;
+
+    // Zamiana zwykłych spacji po spójnikach na niełamliwe spacje (&nbsp;)
+    smallWords.forEach(word => {
+        const regex = new RegExp(`(?:^|\\s)(${word})\\s+`, 'g');
+        formatted = formatted.replace(regex, (match, p1) => {
+            const hasLeadingSpace = match.startsWith(' ');
+            return (hasLeadingSpace ? ' ' : '') + p1 + '&nbsp;';
+        });
+    });
+
+    // Przyklejanie obrazków do sąsiedniego słowa
+    formatted = formatted
+        .replace(/(<img[^>]*>)\s+/gi, '$1&nbsp;')
+        .replace(/\s+(<img[^>]*>)/gi, '&nbsp;$1');
+
+    return formatted;
+}
+
+// Obrazy sterowania na konsoli dla galerii
+const CONSOLE_IMAGES = [
+    "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1781178627/Alpha_Console_18_ca6tqf.webp",
+    "https://res.cloudinary.com/ddqbmcmoe/image/upload/v1781178619/Alpha_Console_17_cvi5lt.webp"
+];
+
+// Efekt bluru na kontenerze strony (#content) podczas zmiany wersji
+function triggerContentBlur() {
+    const content = document.getElementById("content");
+    if (content) {
+        content.classList.add("page-loading");
+        setTimeout(() => {
+            requestAnimationFrame(() => {
+                content.classList.remove("page-loading");
+            });
+        }, 220);
+    }
+}
+
+// Automatyczne tworzenie struktury lightboxa, jeśli nie istnieje w DOM
+function ensureGalleryLightbox() {
+    let lightbox = document.getElementById("gallery-lightbox");
+    if (!lightbox) {
+        lightbox = document.createElement("div");
+        lightbox.id = "gallery-lightbox";
+        lightbox.className = "gallery-lightbox hidden";
+        lightbox.innerHTML = `
+            <button class="gallery-close" aria-label="Zamknij">✖</button>
+            <button class="gallery-prev" aria-label="Poprzednie">&#9664;</button>
+            <img id="gallery-lightbox-img" src="" alt="Sterowanie Konsola">
+            <button class="gallery-next" aria-label="Następne">&#9654;</button>
+        `;
+        document.body.appendChild(lightbox);
+    }
+    return lightbox;
+}
+
+// Otwieranie pełnoekranowej galerii po kliknięciu w zdjęcie konsoli
+function openConsoleGallery(index) {
+    ensureGalleryLightbox();
+
+    if (typeof window.openGallery === "function") {
+        window.openGallery(index, CONSOLE_IMAGES);
+    } else {
+        const script = document.createElement("script");
+        script.src = "js/gallery.js";
+        script.onload = () => {
+            if (typeof window.openGallery === "function") {
+                window.openGallery(index, CONSOLE_IMAGES);
+            }
+        };
+        document.body.appendChild(script);
+    }
+}
+window.openConsoleGallery = openConsoleGallery;
+
 // Zbiór obecnie wciśniętych klawiszy i przycisków myszy
 const activeInputCodes = new Set();
 
@@ -24,6 +104,25 @@ function normalizeVersion(ver) {
     if (v.includes("pz2")) return "pz2";
     return "pz1pc";
 }
+
+// Funkcja do płynnego przełączania wersji na PC z efektami przejścia
+function switchVersionToPC(e) {
+    if (e) e.preventDefault();
+
+    triggerContentBlur();
+
+    if (typeof AppState !== "undefined" && AppState.set) {
+        AppState.set("pz1pc");
+    } else {
+        localStorage.setItem("zoopedia-version", "pz1pc");
+        document.documentElement.dataset.gameVersion = "pz1pc";
+        document.dispatchEvent(new CustomEvent("versionChanged", { detail: { version: "pz1pc" } }));
+    }
+    if (typeof window.syncIconWithState === "function") {
+        window.syncIconWithState();
+    }
+}
+window.switchVersionToPC = switchVersionToPC;
 
 function initShortcuts() {
     initToast();
@@ -62,7 +161,6 @@ function updateLEDs(e) {
     window.addEventListener(eventType, updateLEDs, { passive: true });
 });
 
-// Czyszczenie stanu przy utracie ostrości okna
 window.addEventListener("blur", () => {
     activeInputCodes.clear();
     document.querySelectorAll('.key.pressed, .mouse-btn.pressed').forEach(el => el.classList.remove('pressed'));
@@ -72,27 +170,25 @@ if (!window.SHORTCUTS_LISTENERS_BOUND) {
     window.SHORTCUTS_LISTENERS_BOUND = true;
 
     document.addEventListener("versionChanged", () => {
+        triggerContentBlur();
         renderCurrentVersionView();
     });
 
     const htmlObserver = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
             if (mutation.type === "attributes" && mutation.attributeName === "data-game-version") {
+                triggerContentBlur();
                 renderCurrentVersionView();
             }
         });
     });
     htmlObserver.observe(document.documentElement, { attributes: true });
 
-    // Obsługa ruchu myszy (MouseMove)
     let mouseMoveTimeout;
     window.addEventListener("mousemove", (e) => {
-        // Ignorujemy pojedyncze drgania kursora
         if (Math.abs(e.movementX) > 1 || Math.abs(e.movementY) > 1) {
-
             activeInputCodes.add("MouseMove");
 
-            // Rozróżnienie kierunku
             if (Math.abs(e.movementX) > Math.abs(e.movementY)) {
                 activeInputCodes.add("MouseMoveX");
             } else {
@@ -101,7 +197,6 @@ if (!window.SHORTCUTS_LISTENERS_BOUND) {
 
             checkAndShowShortcut();
 
-            // Reset stanu po zaprzestaniu ruchu
             clearTimeout(mouseMoveTimeout);
             mouseMoveTimeout = setTimeout(() => {
                 activeInputCodes.delete("MouseMove");
@@ -111,7 +206,6 @@ if (!window.SHORTCUTS_LISTENERS_BOUND) {
         }
     }, { passive: true });
 
-    // Obsługa Myszki
     window.addEventListener("mousedown", (e) => {
         const buttonCode = e.button === 0 ? "MouseLeft" : e.button === 2 ? "MouseRight" : "MouseMiddle";
         const mouseVisual = document.querySelector(`.mouse-btn[data-code="${buttonCode}"]`);
@@ -129,7 +223,6 @@ if (!window.SHORTCUTS_LISTENERS_BOUND) {
         activeInputCodes.delete(buttonCode);
     });
 
-    // Zdarzenie przewijania (scroll)
     let wheelTimeout;
     window.addEventListener("wheel", () => {
         const wheelVisual = document.querySelector('.mouse-btn[data-code="MouseMiddle"]');
@@ -152,18 +245,50 @@ function renderCurrentVersionView() {
     const controllerContainer = document.getElementById("controller-view");
     const tableContainer = document.getElementById("skroty-table-container");
 
+    // Ustawienie atrybutu wersji na głównym układzie
+    const layoutContainer = document.querySelector(".shortcuts-layout");
+    if (layoutContainer) {
+        layoutContainer.dataset.version = currentVersion;
+    }
+
     if (!controllerContainer || !tableContainer) return;
 
+    // Pobranie i obsługa nagłówków sekcji
+    const titles = document.querySelectorAll(".shortcuts-layout .panel-title");
+    const controllerTitle = titles[0] || null;
+    const tableTitle = titles[1] || null;
+
     if (currentVersion === "pz1pc") {
+        if (controllerTitle) {
+            controllerTitle.innerText = "Interaktywne sterowanie PC";
+            controllerTitle.style.display = "block";
+        }
+        if (tableTitle) {
+            tableTitle.innerText = "Tabela akcji";
+            tableTitle.style.display = "block";
+        }
         controllerContainer.innerHTML = generatePCControlsHTML();
     } else if (currentVersion === "pz1console") {
+        if (controllerTitle) {
+            controllerTitle.innerText = "Sterowanie na konsoli";
+            controllerTitle.style.display = "block";
+        }
+        if (tableTitle) {
+            tableTitle.style.display = "none";
+        }
         controllerContainer.innerHTML = generateGamepadHTML();
+        tableContainer.innerHTML = "";
+        return;
     } else {
+        if (controllerTitle) controllerTitle.style.display = "none";
+        if (tableTitle) tableTitle.style.display = "none";
         controllerContainer.innerHTML = `
             <div class="empty-state">
                 <p>🛠️ Brak zdefiniowanego kontrolera dla wybranej wersji (${currentVersion}).</p>
             </div>
         `;
+        tableContainer.innerHTML = "";
+        return;
     }
 
     if (!SHORTCUTS.data) return;
@@ -201,7 +326,7 @@ function renderCurrentVersionView() {
         items.forEach(item => {
             html += `
                 <tr id="row-${item.id}">
-                    <th><span class="key-badge">${item.display}</span></th>
+                    <th><span class="key-badge">${formatShortcutDisplay(item.display)}</span></th>
                     <td>${item.title}</td>
                 </tr>
             `;
@@ -216,6 +341,11 @@ function renderCurrentVersionView() {
 
     html += `</div>`;
     tableContainer.innerHTML = html;
+
+    // Aplikowanie funkcji usuwania sierotek
+    if (typeof window.addNonBreakingSpaces === "function") {
+        window.addNonBreakingSpaces(tableContainer);
+    }
 }
 
 function generatePCControlsHTML() {
@@ -372,24 +502,15 @@ function generatePCControlsHTML() {
 
 function generateGamepadHTML() {
     return `
-        <div class="gamepad-container">
-            <svg class="gamepad-svg" viewBox="0 0 500 300">
-                <path d="M 120,40 Q 250,20 380,40 Q 480,80 450,240 Q 400,280 340,220 Q 250,240 160,220 Q 100,280 50,240 Q 20,80 120,40 Z" fill="#0e2a1f" stroke="#118d64" stroke-width="4"/>
-                <g class="pad-dpad" fill="#1b4332">
-                    <rect x="110" y="110" width="20" height="60" rx="4"/>
-                    <rect x="90" y="130" width="60" height="20" rx="4"/>
-                </g>
-                <g class="pad-buttons">
-                    <circle cx="370" cy="115" r="12" fill="#1b4332"/><text x="370" y="119" fill="#fff" font-size="12" text-anchor="middle">Y</text>
-                    <circle cx="345" cy="140" r="12" fill="#1b4332"/><text x="345" y="144" fill="#fff" font-size="12" text-anchor="middle">X</text>
-                    <circle cx="395" cy="140" r="12" fill="#1b4332"/><text x="395" y="144" fill="#fff" font-size="12" text-anchor="middle">B</text>
-                    <circle cx="370" cy="165" r="12" fill="#1b4332"/><text x="370" y="169" fill="#fff" font-size="12" text-anchor="middle">A</text>
-                </g>
-                <circle cx="180" cy="180" r="28" fill="#081c15" stroke="#118d64" stroke-width="3"/>
-                <circle cx="310" cy="180" r="28" fill="#081c15" stroke="#118d64" stroke-width="3"/>
-                <rect x="215" y="115" width="25" height="12" rx="4" fill="#118d64"/>
-                <rect x="260" y="115" width="25" height="12" rx="4" fill="#118d64"/>
-            </svg>
+        <div class="console-controls-wrapper">
+            <div class="console-notice">
+                <span>Gra na konsoli obsługuje również myszkę i klawiaturę. Podłączyłeś je do konsoli? <a href="#" onclick="switchVersionToPC(event)">Zobacz sterowanie PC dla Planet Zoo</a>.</span>
+            </div>
+
+            <div class="console-images-container">
+                <img src="${CONSOLE_IMAGES[0]}" class="console-img" style="cursor: pointer;" onclick="openConsoleGallery(0)" alt="Sterowanie Konsola – Część 1">
+                <img src="${CONSOLE_IMAGES[1]}" class="console-img" style="cursor: pointer;" onclick="openConsoleGallery(1)" alt="Sterowanie Konsola – Część 2">
+            </div>
         </div>
     `;
 }
@@ -414,7 +535,9 @@ function checkAndShowShortcut() {
     let maxMatchLength = 0;
     let matchingItems = [];
 
-    // Przeglądamy wszystkie zarejestrowane skróty dla danej wersji
+    const mouseButtons = ["MouseLeft", "MouseRight", "MouseMiddle"];
+    const isAnyMouseButtonPressed = mouseButtons.some(btn => activeInputCodes.has(btn));
+
     list.forEach(item => {
         if (!item.codes) return;
 
@@ -423,7 +546,11 @@ function checkAndShowShortcut() {
         item.codes.forEach(comboStr => {
             const requiredCodes = comboStr.split("+");
 
-            // Sprawdzamy, czy WSZYSTKIE przyciski z danej kombinacji są wciśnięte
+            const isPureMouseMove = requiredCodes.every(code => ["MouseMove", "MouseMoveX", "MouseMoveY"].includes(code));
+            if (isPureMouseMove && isAnyMouseButtonPressed) {
+                return;
+            }
+
             const allMatched = requiredCodes.every(code => activeInputCodes.has(code));
 
             if (allMatched) {
@@ -434,12 +561,10 @@ function checkAndShowShortcut() {
         });
 
         if (bestItemComboLength > 0) {
-            // Jeśli znaleźliśmy bardziej złożoną kombinację (np. 2 klawisze wygrywają z 1)
             if (bestItemComboLength > maxMatchLength) {
                 maxMatchLength = bestItemComboLength;
                 matchingItems = [item];
             } else if (bestItemComboLength === maxMatchLength) {
-                // Jeśli kombinacja ma ten sam poziom ważności, dodajemy do listy
                 matchingItems.push(item);
             }
         }
@@ -450,7 +575,6 @@ function checkAndShowShortcut() {
     }
 }
 
-// Wyświetlanie powiadomienia ze wsparciem dla wielu pasujących skrótów i kategorii
 function showToast(matchingItems) {
     if (window.innerWidth <= 900) return;
 
@@ -463,7 +587,7 @@ function showToast(matchingItems) {
         html += `
             <div class="toast-item">
                 ${categoryLabel}<strong class="toast-title">${item.title}</strong>
-                <span class="toast-display">(${item.display})</span>
+                <span class="toast-display">(${formatShortcutDisplay(item.display)})</span>
             </div>
         `;
     });
