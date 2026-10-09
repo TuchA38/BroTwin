@@ -29,39 +29,6 @@
     flex-wrap: wrap;
 }
 
-#shortcut-toast {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    align-items: flex-start;
-}
-
-#shortcut-toast .toast-item {
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 4px;
-}
-
-#shortcut-toast .toast-category {
-    color: rgb(33, 208, 150);
-    /* Kolor dopasowany do motywu */
-    font-weight: 600;
-    font-size: 0.9em;
-}
-
-#shortcut-toast .toast-display {
-    display: inline-flex;
-    align-items: center;
-    gap: 3px;
-}
-
-#shortcut-toast img {
-    max-height: 18px;
-    width: auto;
-    vertical-align: middle;
-}
-
 .keyboard-container,
 .mouse-container {
     display: flex;
@@ -294,6 +261,7 @@
 .skroty-table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: auto;
 }
 
 .skroty-table th,
@@ -303,6 +271,8 @@
     border-bottom: 1px solid #1b4332;
     color: #e5e7eb;
     font-size: 0.85rem;
+    vertical-align: middle;
+    box-sizing: border-box;
 }
 
 .skroty-table thead th {
@@ -313,99 +283,245 @@
     font-size: 0.7rem;
 }
 
-.key-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    background: #1b4332;
-    padding: 3px 8px;
-    border-radius: 5px;
-    border: 1px solid #2d6a4f;
-    font-weight: bold;
-    color: #34d399;
+.skroty-table thead th:nth-child(1),
+.skroty-table tbody th {
+    width: 48%;
+    background: transparent;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.skroty-table thead th:nth-child(2),
+.skroty-table tbody td {
+    width: 52%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
 }
 
 
-/* Dopasowanie grafiki i ikon wewnątrz badge'y */
+/* Plakietka przycisku – naturalny przepływ inline słów i grafik */
+
+.key-badge {
+    display: inline-block;
+    background: #1b4332;
+    padding: 5px 9px;
+    border-radius: 6px;
+    border: 1px solid #2d6a4f;
+    font-weight: bold;
+    color: #34d399;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+
+/* Grafiki i ikony wewnątrz badge'a jako elementy inline */
 
 .key-badge img,
 .key-badge .sterowanie,
 .key-badge .kolo,
 .key-badge .mouse-icon {
-    max-height: 22px;
+    display: inline-block;
+    max-height: 18px;
     width: auto;
     object-fit: contain;
-    vertical-align: middle;
+    vertical-align: -3px;
+    margin: 0 3px;
+    flex-shrink: 0;
 }
 
 
-/* Toast notification */
+/* Toast notification (Wyskakujący panel sterowania z prawej strony) */
 
 #shortcut-toast {
     position: fixed;
-    top: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #0b6144;
+    top: 80px;
+    right: -550px;
+    width: auto;
+    min-width: 280px;
+    max-width: 520px;
+    background: linear-gradient(135deg, #0e3a29 0%, #08261b 100%);
     color: #ecfdf5;
     border: 1px solid #34d399;
-    padding: 10px 24px;
-    border-radius: 20px;
-    z-index: 1;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    font-weight: 300;
-    transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 14px 18px;
+    border-radius: 12px;
+    z-index: 9999;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    transition: right 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
 }
 
 #shortcut-toast.visible {
-    top: 80px;
+    right: 25px;
+    opacity: 1;
 }
 
-#shortcut-toast img {
-    max-height: 20px;
-    width: auto;
-    vertical-align: middle;
-    margin: 0 3px;
+#shortcut-toast .toast-item {
+    display: block;
+    line-height: 1.4;
+    font-size: 0.88rem;
+    color: #e5e7eb;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+#shortcut-toast .toast-category {
+    color: #34d399;
+    font-weight: 700;
+    font-size: 0.82rem;
+    margin-right: 6px;
+    display: inline;
+}
+
+#shortcut-toast .toast-title {
+    color: #ffffff;
+    font-weight: 600;
+    display: inline;
 }
 
 #shortcut-toast .toast-display {
     display: inline-flex;
     align-items: center;
     gap: 4px;
-}
-
-
-/* Wymuszenie braku łamania tekstu wewnątrz plakietek i powiadomień */
-
-.key-badge,
-.toast-display,
-.toast-item {
+    color: #a7f3d0;
+    font-size: 0.82rem;
+    font-weight: 500;
     white-space: nowrap;
-    /* Zapobiega przenoszeniu części skrótu (np. +) do nowej linii */
+    margin-left: 4px;
 }
 
-
-/* Jeśli do układu ikon i plusa używasz flexboksa */
-
-.toast-display {
-    display: inline-flex;
-    align-items: center;
-    white-space: nowrap;
-    gap: 4px;
-}
-
-
-/* Zapobiega spiętrzeniu ikon przy braku miejsca */
-
-.toast-display img,
-.key-badge img {
+#shortcut-toast img {
+    max-height: 18px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0 2px;
     flex-shrink: 0;
 }
 
+
+/* Styling dla Wersji Konsolowej */
+
+.console-controls-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+}
+
+
+/* Baner informacyjny o klawiaturze i myszce */
+
+.console-notice {
+    background: #0e2a1f;
+    border: 1px solid #118d64;
+    color: #ecfdf5;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.console-notice a {
+    color: #34d399;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 4px;
+    transition: color 0.15s ease;
+}
+
+.console-notice a:hover {
+    color: #6ee7b7;
+}
+
+
+/* Kontener na dwa duże zdjęcia obok siebie */
+
+.console-images-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.console-img {
+    flex: 1;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #118d64;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    object-fit: contain;
+    background: #0e2a1f;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1), border-color 0.4s ease;
+}
+
+
+/* Efekt aktywuje się tylko na najechanym obrazku */
+
+.console-img:hover {
+    transform: translateY(-6px) scale(1.015);
+    box-shadow: 0 20px 40px rgba(19, 196, 137, 0.25), 0 15px 35px rgba(0, 0, 0, 0.7);
+    border-color: #13c489;
+}
+
+
+/* RWD – na tabletach i mniejszych ekranach zdjęcia układają się jedno pod drugim */
+
+@media (max-width: 1024px) {
+    .console-images-container {
+        flex-direction: column;
+    }
+    .console-img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Responsywność dla małych ekranów (telefony) */
+
 @media (max-width: 900px) {
-    .visual-panel,
+    /* W wersji PC ukrywamy kontrolery PC, ale ZOSTAWIAMY nagłówek "Tabela akcji" */
+    .shortcuts-layout[data-version="pz1pc"] .panel-title:nth-of-type(1),
+    .pc-controls-wrapper,
     #shortcut-toast {
         display: none !important;
+    }
+    .shortcuts-layout[data-version="pz1pc"] .panel-title:nth-of-type(2) {
+        display: block !important;
+    }
+    /* W wersji Konsolowej POKAZUJEMY nagłówek "Sterowanie na konsoli", a UKRYWAMY "Tabela akcji" */
+    .shortcuts-layout[data-version="pz1console"] .panel-title:nth-of-type(1) {
+        display: block !important;
+    }
+    .shortcuts-layout[data-version="pz1console"] .panel-title:nth-of-type(2) {
+        display: none !important;
+    }
+    .console-controls-wrapper,
+    .console-images-container {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+    }
+    .console-img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
     }
     .skroty-table-container {
         width: 100%;
