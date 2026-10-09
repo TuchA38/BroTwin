@@ -467,6 +467,62 @@
             "category": "Tryb edycji terenu",
             "codes": ["BracketRight"],
             "display": "]"
+        },
+        {
+            "id": "tryb_edycji_toru_1",
+            "title": "Użyj uchwytów",
+            "category": "Tryb edycji toru",
+            "codes": ["MouseLeft+MouseMove"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'> + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
+        },
+        {
+            "id": "tryb_edycji_toru_2",
+            "title": "Zbuduj fragment toru",
+            "category": "Tryb edycji toru",
+            "codes": ["MouseLeft"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
+        },
+        {
+            "id": "tryb_edycji_toru_3",
+            "title": "Zbuduj fragment toru",
+            "category": "Tryb edycji toru",
+            "codes": ["Enter"],
+            "display": "Enter"
+        },
+        {
+            "id": "tryb_edycji_toru_4",
+            "title": "Usuń fragment toru",
+            "category": "Tryb edycji toru",
+            "codes": ["MouseRight"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484693/pkm_eymaqm.webp' class='pkm' alt='pkm'>"
+        },
+        {
+            "id": "tryb_edycji_toru_5",
+            "title": "Usuń fragment toru",
+            "category": "Tryb edycji toru",
+            "codes": ["Delete"],
+            "display": "Delete"
+        },
+        {
+            "id": "tryb_edycji_toru_6",
+            "title": "Wybierz fragment toru",
+            "category": "Tryb edycji toru",
+            "codes": ["MouseLeft"],
+            "display": "<img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'> rozmieszczony element"
+        },
+        {
+            "id": "tryb_edycji_toru_7",
+            "title": "Anuluj/zamknij",
+            "category": "Tryb edycji toru",
+            "codes": ["Escape"],
+            "display": "Esc"
+        },
+        {
+            "id": "tryb_edycji_toru_8",
+            "title": "Blokada kątowa - wł./wył.",
+            "category": "Tryb edycji toru",
+            "codes": ["Space"],
+            "display": "Spacja"
         }
     ],
     "pz1console": [{
