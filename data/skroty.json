@@ -278,6 +278,41 @@
             "category": "Tryb edycji ścieżki",
             "codes": ["Delete+MouseLeft+MouseMove"],
             "display": "Delete + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>, a następnie <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791482757/sterowanie_fjtezd.webp' class='sterowanie' alt='sterowanie'>"
+        },
+        {
+            "id": "tryb_edycji_sciezki_17",
+            "title": "Łączenie ścieżek skrzyżowaniem T",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["KeyX"],
+            "display": "X"
+        },
+        {
+            "id": "tryb_edycji_sciezki_18",
+            "title": "Utwórz skrzyżowanie Y",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["KeyZ"],
+            "display": "Z przytrzymaj podczas tworzenia nowego skrzyżowania od istniejącej ścieżki"
+        },
+        {
+            "id": "tryb_edycji_sciezki_19",
+            "title": "Nachylenia zakrzywione - wł./wył.",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["KeyV"],
+            "display": "V"
+        },
+        {
+            "id": "tryb_edycji_sciezki_20",
+            "title": "Wł./wył. wyrównanie do siatki",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["KeyN"],
+            "display": "N"
+        },
+        {
+            "id": "tryb_edycji_sciezki_21",
+            "title": "Włącz/wyłącz wyrównanie ścieżek do barier",
+            "category": "Tryb edycji ścieżki",
+            "codes": ["KeyB"],
+            "display": "B"
         }
     ],
     "pz1console": [{
