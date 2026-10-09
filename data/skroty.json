@@ -614,6 +614,181 @@
             "category": "Tryb edycji budynku",
             "codes": ["AltLeft+MouseLeft"],
             "display": "Alt + <img src='https://res.cloudinary.com/ddqbmcmoe/image/upload/v1791484681/lkm_a3eae8.webp' class='lkm' alt='lkm'>"
+        },
+        {
+            "id": "skroty_ogolne_1",
+            "title": "Panorama - przód",
+            "category": "Skróty ogólne",
+            "codes": ["KeyW"],
+            "display": "W"
+        },
+        {
+            "id": "skroty_ogolne_2",
+            "title": "Panorama - tył",
+            "category": "Skróty ogólne",
+            "codes": ["KeyS"],
+            "display": "S"
+        },
+        {
+            "id": "skroty_ogolne_3",
+            "title": "Panorama - lewo",
+            "category": "Skróty ogólne",
+            "codes": ["KeyA"],
+            "display": "A"
+        },
+        {
+            "id": "skroty_ogolne_4",
+            "title": "Panorama - prawo",
+            "category": "Skróty ogólne",
+            "codes": ["KeyD"],
+            "display": "D"
+        },
+        {
+            "id": "skroty_ogolne_5",
+            "title": "Unieś kamerę",
+            "category": "Skróty ogólne",
+            "codes": ["KeyE"],
+            "display": "E"
+        },
+        {
+            "id": "skroty_ogolne_6",
+            "title": "Opuść kamerę",
+            "category": "Skróty ogólne",
+            "codes": ["KeyQ"],
+            "display": "Q"
+        },
+        {
+            "id": "skroty_ogolne_7",
+            "title": "Obróć kamerę w lewo",
+            "category": "Skróty ogólne",
+            "codes": ["KeyQ"],
+            "display": "Q"
+        },
+        {
+            "id": "skroty_ogolne_8",
+            "title": "Obróć kamerę w prawo",
+            "category": "Skróty ogólne",
+            "codes": ["KeyE"],
+            "display": "E"
+        },
+        {
+            "id": "skroty_ogolne_9",
+            "title": "Przybliż kamerę",
+            "category": "Skróty ogólne",
+            "codes": ["PageUp"],
+            "display": "PageUp"
+        },
+        {
+            "id": "skroty_ogolne_10",
+            "title": "Oddal kamerę",
+            "category": "Skróty ogólne",
+            "codes": ["PageDown"],
+            "display": "PageDown"
+        },
+        {
+            "id": "skroty_ogolne_11",
+            "title": "Wł./wył. kamerę swobodną",
+            "category": "Skróty ogólne",
+            "codes": ["KeyT"],
+            "display": "T"
+        },
+        {
+            "id": "skroty_ogolne_12",
+            "title": "Szybsza kamera swobodna",
+            "category": "Skróty ogólne",
+            "codes": ["ShiftLeft"],
+            "display": "Shift"
+        },
+        {
+            "id": "skroty_ogolne_13",
+            "title": "Anuluj rozmieszczenie, Zamknij przeglądarkę, Usuń zaznaczenie obiektu ...",
+            "category": "Skróty ogólne",
+            "codes": ["Escape"],
+            "display": "Esc"
+        },
+        {
+            "id": "skroty_ogolne_14",
+            "title": "Usuń wybrany obiekt",
+            "category": "Skróty ogólne",
+            "codes": ["Delete"],
+            "display": "Delete"
+        },
+        {
+            "id": "skroty_ogolne_15",
+            "title": "Zmień szybkość symulacji",
+            "category": "Skróty ogólne",
+            "codes": ["KeyO"],
+            "display": "O"
+        },
+        {
+            "id": "skroty_ogolne_16",
+            "title": "Wstrzymaj symulację",
+            "category": "Skróty ogólne",
+            "codes": ["KeyP"],
+            "display": "P"
+        },
+        {
+            "id": "skroty_ogolne_17",
+            "title": "Cofnij",
+            "category": "Skróty ogólne",
+            "codes": ["ControlLeft+KeyZ"],
+            "display": "Ctrl + Z"
+        },
+        {
+            "id": "skroty_ogolne_18",
+            "title": "Ponów",
+            "category": "Skróty ogólne",
+            "codes": ["ControlLeft+KeyY"],
+            "display": "Ctrl + Y"
+        },
+        {
+            "id": "skroty_ogolne_19",
+            "title": "Powiel obiekt/budynek",
+            "category": "Skróty ogólne",
+            "codes": ["ControlLeft+KeyD"],
+            "display": "Ctrl + D"
+        },
+        {
+            "id": "skroty_ogolne_20",
+            "title": "Powielanie i przemieszczanie zaawansowane/obrót",
+            "category": "Skróty ogólne",
+            "codes": ["ControlLeft+KeyX"],
+            "display": "Ctrl + X"
+        },
+        {
+            "id": "skroty_ogolne_21",
+            "title": "Przenieś wybór",
+            "category": "Skróty ogólne",
+            "codes": ["KeyM"],
+            "display": "M"
+        },
+        {
+            "id": "skroty_ogolne_22",
+            "title": "Przejdź do trybu edycji grupowej",
+            "category": "Skróty ogólne",
+            "codes": ["KeyR"],
+            "display": "R"
+        },
+        {
+            "id": "skroty_ogolne_23",
+            "title": "Pokaż/ukryj interfejs",
+            "category": "Skróty ogólne",
+            "codes": ["KeyG"],
+            "display": "G"
+        },
+        {
+            "id": "skroty_ogolne_24",
+            "title": "Odświetlenie kamery",
+            "category": "Skróty ogólne",
+            "codes": ["KeyL"],
+            "display": "L"
+        },
+        {
+            "id": "skroty_ogolne_25",
+            "title": "Resetowanie kamery",
+            "category": "Skróty ogólne",
+            "codes": ["Home"],
+            "display": "Home"
         }
     ],
     "pz1console": [{
